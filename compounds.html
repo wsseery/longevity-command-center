@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Race to Slow Aging — Live Scoreboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanline-overlay"></div>
+
+  <!-- SITE NAVIGATION -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">News</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Protocols</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">NIA INTERVENTIONS TESTING PROGRAM × CLINICALTRIALS.GOV</div>
+      <h1 class="hero-title">THE RACE TO <span class="highlight">SLOW AGING</span></h1>
+      <p class="hero-subtitle">Live Scoreboard — ITP Mouse Data × Human Clinical Trials</p>
+      <p class="hero-intro">Tracking every compound tested by the NIA Interventions Testing Program for lifespan extension in mice, plus peer-reviewed longevity compounds validated in published studies — cross-referenced with human clinical trial status from ClinicalTrials.gov.</p>
+      <div class="hero-updated">
+        <span class="pulse-dot"></span>
+        LAST UPDATED: FEBRUARY 2026
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip" id="statsStrip">
+    <div class="stat-cell" data-delay="0">
+      <div class="stat-value" data-count="52">0</div>
+      <div class="stat-label">Compounds Tracked</div>
+    </div>
+    <div class="stat-cell" data-delay="100">
+      <div class="stat-value" data-count="32">0</div>
+      <div class="stat-label">ITP Tested</div>
+    </div>
+    <div class="stat-cell" data-delay="200">
+      <div class="stat-value" data-count="20">0</div>
+      <div class="stat-label">Peer-Reviewed New</div>
+    </div>
+    <div class="stat-cell" data-delay="300">
+      <div class="stat-value" data-count="3">0</div>
+      <div class="stat-label">FDA Approved</div>
+    </div>
+    <div class="stat-cell" data-delay="400">
+      <div class="stat-value" data-count="26">0</div>
+      <div class="stat-label">In Human Trials</div>
+    </div>
+    <div class="stat-cell" data-delay="500">
+      <div class="stat-value" data-count="109">0</div>
+      <div class="stat-label">Best Δ% (OSK)</div>
+    </div>
+    <div class="stat-cell" data-delay="600">
+      <div class="stat-value" data-count="21800">0</div>
+      <div class="stat-label">Peak Enrollment</div>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="controls-section">
+    <div class="controls-row">
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search compounds..." autocomplete="off">
+      </div>
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="itp_positive">ITP Positive</button>
+        <button class="filter-btn" data-filter="human_trials">In Human Trials</button>
+        <button class="filter-btn" data-filter="both">Both</button>
+        <button class="filter-btn" data-filter="no_effect">No Effect</button>
+        <button class="filter-btn" data-filter="peer_reviewed">Peer-Reviewed New</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN TABLE -->
+  <section class="table-section">
+    <div class="table-wrapper">
+      <table id="scoreboardTable">
+        <thead>
+          <tr>
+            <th class="col-rank" data-sort="rank">#</th>
+            <th class="col-compound" data-sort="name">Compound</th>
+            <th class="col-category" data-sort="category">Category</th>
+            <th class="col-itp" data-sort="itpResult">ITP Result</th>
+            <th class="col-male" data-sort="bestMale">Best ♂ Δ%<span class="sort-arrow"></span></th>
+            <th class="col-female" data-sort="bestFemale">Best ♀ Δ%<span class="sort-arrow"></span></th>
+            <th class="col-phase" data-sort="humanPhase">Human Phase<span class="sort-arrow"></span></th>
+            <th class="col-trials" data-sort="activeTrials">Active Trials<span class="sort-arrow"></span></th>
+            <th class="col-score" data-sort="compositeScore">Score<span class="sort-arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- LEGEND SIDEBAR (rendered as an inline section on this single-page layout) -->
+  <section class="legend-section" id="legendSection">
+    <div class="legend-grid">
+      <div class="legend-card">
+        <h3>What is the ITP?</h3>
+        <p>The <strong>NIA Interventions Testing Program</strong> is the gold standard for aging research. Each compound is tested at <strong>3 independent sites</strong> (Jackson Lab, U-Michigan, UT Health San Antonio) with genetically heterogeneous mice, making results uniquely robust and reproducible.</p>
+      </div>
+      <div class="legend-card">
+        <h3>Composite Score</h3>
+        <p>Calculated from three weighted factors:</p>
+        <ul>
+          <li><span class="legend-pct">40%</span> Best lifespan extension (mouse data)</li>
+          <li><span class="legend-pct">40%</span> Human trial phase advancement</li>
+          <li><span class="legend-pct">20%</span> Number of active human trials</li>
+        </ul>
+      </div>
+      <div class="legend-card">
+        <h3>ITP Result Icons</h3>
+        <div class="legend-icons">
+          <div><span class="itp-icon positive">✓</span> Extended both sexes</div>
+          <div><span class="itp-icon males">♂</span> Males only</div>
+          <div><span class="itp-icon null-result">✗</span> No effect</div>
+          <div><span class="itp-icon harmful">⚠</span> Harmful</div>
+          <div><span class="itp-icon in-progress">🔬</span> In progress / not tested</div>
+        </div>
+      </div>
+      <div class="legend-card">
+        <h3>Trial Phase Colors</h3>
+        <div class="legend-phases">
+          <span class="phase-badge phase-fda">FDA Approved</span>
+          <span class="phase-badge phase-3">Phase 3</span>
+          <span class="phase-badge phase-2">Phase 2</span>
+          <span class="phase-badge phase-1">Phase 1</span>
+          <span class="phase-badge preclinical">Preclinical</span>
+          <span class="phase-badge none">None</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARTS SECTION -->
+  <section class="charts-section" id="chartsSection">
+    <h2 class="section-title">Data Visualization</h2>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Top 10 Compounds — Lifespan Extension %</h3>
+        <div class="chart-container">
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>Translational Pipeline — Mouse Effect vs. Human Trials</h3>
+        <p class="chart-subtitle">X = Best mouse lifespan Δ% · Y = Human trial phase · Bubble size = Active trials</p>
+        <div class="chart-container chart-container-bubble">
+          <canvas id="bubbleChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Data compiled from NIA Interventions Testing Program publications (2004–2025), ClinicalTrials.gov, and peer-reviewed studies in Science, Nature Aging, Cell, NEJM, and other journals. This dashboard is for informational purposes only and does not constitute medical advice.</p>
+    <div class="footer-links">
+      <a href="https://www.nia.nih.gov/research/dab/interventions-testing-program-itp" target="_blank" rel="noopener noreferrer">NIA ITP</a>
+      <span class="footer-sep">·</span>
+      <a href="https://clinicaltrials.gov" target="_blank" rel="noopener noreferrer">ClinicalTrials.gov</a>
+      <span class="footer-sep">·</span>
+      <a href="https://agingbiotech.info/therapeutics/" target="_blank" rel="noopener noreferrer">AgingBiotech.info</a>
+      <span class="footer-sep">·</span>
+      <a href="https://genomics.senescence.info/drugs/" target="_blank" rel="noopener noreferrer">DrugAge</a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
