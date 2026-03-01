@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longevity News Feed — Anti-Aging Science &amp; Biotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .hero-eyebrow,.hero-title,.hero-subtitle,.hero-intro,.hero-updated{opacity:1!important;transform:translateY(0)!important;animation:fadeUp 0.8s ease forwards!important}
+    .news-section{max-width:1400px;margin:0 auto;padding:40px 24px}
+    .news-controls{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:32px}
+    .news-search{position:relative;flex:0 1 340px}
+    .news-search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-dim)}
+    .news-search input{width:100%;font-family:var(--font-mono);font-size:0.85rem;padding:12px 16px 12px 44px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);color:var(--text-primary);outline:none;transition:border-color 0.3s,box-shadow 0.3s}
+    .news-search input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,221,255,0.1)}
+    .news-search input::placeholder{color:var(--text-dim)}
+    .news-filters{display:flex;gap:6px;flex-wrap:wrap}
+    .news-filter-btn{font-family:var(--font-mono);font-size:0.72rem;padding:9px 16px;background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);color:var(--text-secondary);cursor:pointer;transition:all 0.25s;white-space:nowrap;text-transform:uppercase;letter-spacing:0.5px}
+    .news-filter-btn:hover{background:var(--bg-card-hover);color:var(--text-primary)}
+    .news-filter-btn.active{background:rgba(0,221,255,0.1);border-color:var(--cyan);color:var(--cyan)}
+    .news-stats{display:flex;gap:24px;margin-bottom:28px;flex-wrap:wrap;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}
+    .news-stats span.count-val{color:var(--cyan);font-weight:600}
+    .news-feed{display:flex;flex-direction:column;gap:16px}
+    .news-card{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:14px 20px;transition:all 0.3s;position:relative;overflow:hidden;display:flex;align-items:center;gap:16px}
+    .news-card:hover{background:var(--bg-card-hover);border-color:rgba(0,221,255,0.3);box-shadow:0 2px 12px rgba(0,0,0,0.2)}
+    .news-card.high-importance{border-left:3px solid var(--amber)}
+    .news-card.high-importance .news-impact-badge{display:inline-block}
+    .news-impact-badge{display:none;font-family:var(--font-mono);font-size:0.55rem;font-weight:700;color:var(--amber);background:rgba(255,176,32,0.1);border:1px solid rgba(255,176,32,0.25);padding:1px 6px;border-radius:3px;letter-spacing:0.5px;white-space:nowrap;flex-shrink:0}
+    .news-card-left{display:flex;align-items:center;gap:10px;flex-shrink:0;min-width:200px}
+    .news-date{font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);letter-spacing:0.5px;white-space:nowrap}
+    .news-category{display:inline-block;font-family:var(--font-heading);font-size:0.6rem;font-weight:600;padding:2px 8px;border-radius:100px;white-space:nowrap;letter-spacing:0.3px;text-transform:uppercase}
+    .cat-clinical{background:rgba(0,255,136,0.12);color:#66ffaa;border:1px solid rgba(0,255,136,0.25)}
+    .cat-research{background:rgba(0,221,255,0.12);color:#66eeff;border:1px solid rgba(0,221,255,0.25)}
+    .cat-funding{background:rgba(168,124,255,0.12);color:#c4a6ff;border:1px solid rgba(168,124,255,0.25)}
+    .cat-industry{background:rgba(255,176,32,0.12);color:#ffcc66;border:1px solid rgba(255,176,32,0.25)}
+    .cat-biotech{background:rgba(255,110,199,0.12);color:#ff99d4;border:1px solid rgba(255,110,199,0.25)}
+    .cat-protocols{background:rgba(0,255,200,0.12);color:#66ffdd;border:1px solid rgba(0,255,200,0.25)}
+    .news-card-body{flex:1;min-width:0}
+    .news-title{font-family:var(--font-heading);font-size:0.9rem;font-weight:600;color:var(--text-primary);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .news-title a{color:var(--text-primary);text-decoration:none;transition:color 0.2s}
+    .news-title a:hover{color:var(--cyan)}
+    .news-summary{font-family:var(--font-mono);font-size:0.72rem;color:var(--text-secondary);line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+    .news-summary a{color:var(--text-secondary);text-decoration:none;transition:color 0.2s}
+    .news-summary a:hover{color:var(--cyan)}
+    .news-card-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .news-source{font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);white-space:nowrap}
+    .news-source a{color:var(--cyan-dim);text-decoration:none;transition:color 0.2s}
+    .news-source a:hover{color:var(--cyan)}
+    .news-tags{display:none}
+    .news-sources-section{margin-top:48px;padding-top:40px;border-top:1px solid var(--border)}
+    .sources-header{font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--text-primary);margin-bottom:8px}
+    .sources-subtext{font-family:var(--font-heading);font-size:0.82rem;color:var(--text-dim);margin-bottom:24px}
+    .sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+    .source-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;transition:all 0.25s}
+    .source-card:hover{border-color:var(--border-bright);background:var(--bg-card-hover)}
+    .source-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;background:rgba(0,221,255,0.08);border:1px solid rgba(0,221,255,0.15)}
+    .source-name{font-family:var(--font-heading);font-size:0.82rem;font-weight:600;color:var(--text-primary)}
+    .source-name a{color:var(--text-primary);text-decoration:none;transition:color 0.2s}
+    .source-name a:hover{color:var(--cyan)}
+    .source-freq{font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);margin-top:2px}
+    .news-empty{text-align:center;padding:60px 24px;color:var(--text-dim);font-family:var(--font-heading)}
+    .news-empty .empty-icon{font-size:2.5rem;margin-bottom:16px;opacity:0.4}
+    .news-empty p{font-size:0.9rem}
+    @media(max-width:768px){.news-controls{flex-direction:column;align-items:stretch}.news-search{flex:1}.news-filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.news-title{font-size:0.82rem}.news-card{padding:12px 16px;flex-wrap:wrap}.news-card-left{min-width:auto}.news-card-right{display:none}.sources-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="scanline-overlay"></div>
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">News</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Protocols</a>
+      </div>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">LONGEVITY SCIENCE &times; BIOTECH &times; ANTI-AGING RESEARCH</div>
+      <h1 class="hero-title">THE <span class="highlight">NEWS</span> FEED</h1>
+      <p class="hero-subtitle">Curated Longevity &amp; Anti-Aging Intelligence</p>
+      <p class="hero-intro">Tracking clinical trials, research breakthroughs, biotech funding, and industry developments across the longevity and aging science landscape. Aggregated from 16+ specialized sources.</p>
+      <div class="hero-updated"><span class="pulse-dot"></span>LOOKBACK: JAN 1 &mdash; FEB 27, 2026</div>
+    </div>
+  </header>
+  <section class="news-section">
+    <div class="news-controls">
+      <div class="news-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="newsSearch" placeholder="Search news..." autocomplete="off">
+      </div>
+      <div class="news-filters" id="newsFilters">
+        <button class="news-filter-btn active" data-filter="all">All</button>
+        <button class="news-filter-btn" data-filter="Clinical Trials">Clinical Trials</button>
+        <button class="news-filter-btn" data-filter="Research">Research</button>
+        <button class="news-filter-btn" data-filter="Biotech">Biotech</button>
+        <button class="news-filter-btn" data-filter="Funding">Funding</button>
+        <button class="news-filter-btn" data-filter="Industry">Industry</button>
+        <button class="news-filter-btn" data-filter="Protocols">Protocols</button>
+        <button class="news-filter-btn" data-filter="high">High Impact</button>
+      </div>
+    </div>
+    <div class="news-stats" id="newsStats">
+      <span>Showing <span class="count-val" id="showCount">25</span> articles</span>
+      <span>Date range: <span class="count-val">Jan 2 &mdash; Feb 27, 2026</span></span>
+      <span>Sources: <span class="count-val">16+</span></span>
+    </div>
+    <div class="news-feed" id="newsFeed"></div>
+    <div class="news-empty" id="newsEmpty" style="display:none;">
+      <div class="empty-icon">&#128269;</div>
+      <p>No articles match your search or filter criteria.</p>
+    </div>
+    <div class="news-sources-section">
+      <div class="sources-header">Newsletter Sources</div>
+      <div class="sources-subtext">Aggregating longevity intelligence from these curated sources, identified from email subscriptions and key industry outlets.</div>
+      <div class="sources-grid" id="sourcesGrid"></div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <p>News aggregated from peer-reviewed journals, clinical trial registries, longevity biotech companies, and curated newsletters. This feed is for informational purposes only and does not constitute medical or investment advice.</p>
+    <div class="footer-links">
+      <a href="./compounds.html">Aging Scoreboard</a><span class="footer-sep">&middot;</span>
+      <a href="./finance.html">Investment Tracker</a><span class="footer-sep">&middot;</span>
+      <a href="https://longevity.technology" target="_blank" rel="noopener noreferrer">Longevity.Technology</a><span class="footer-sep">&middot;</span>
+      <a href="https://agingbiotech.info/blogs/" target="_blank" rel="noopener noreferrer">AgingBiotech.info</a><span class="footer-sep">&middot;</span>
+      <a href="https://lifespan.io" target="_blank" rel="noopener noreferrer">Lifespan.io</a>
+    </div>
+  </footer>
+  <script>
+  (function(){
+    'use strict';
+    var newsData=[
+      {id:1,date:'2026-02-26',title:'ARPA-H Launches First Phase 3 Aging Trial: Rapamycin, GLP-1, SGLT-2i Combo',summary:"ARPA-H's PROSPR program announces the first-ever Phase 3 clinical trial targeting biological aging, combining rapamycin, a GLP-1 receptor agonist, and an SGLT-2 inhibitor.",source:'TIME / Columbia University',sourceUrl:'https://time.com',category:'Clinical Trials',importance:'high'},
+      {id:2,date:'2026-02-26',title:'Columbia Wins ARPA-H FAST Award for Aging Biomarker Development',summary:'Columbia University receives funding under ARPA-H FAST program to develop validated biomarkers of biological aging for use in clinical trials.',source:'Columbia University',sourceUrl:'https://www.cuimc.columbia.edu',category:'Research',importance:'medium'},
+      {id:3,date:'2026-02-25',title:"Rapamycin Lifespan Benefits Vary Widely 'Like a Lottery' in Mice",summary:'New research in Nature Aging shows rapamycin extends average mouse lifespan but with enormous individual variation, suggesting genetic or epigenetic factors play a critical role.',source:'New Scientist',sourceUrl:'https://www.newscientist.com',category:'Research',importance:'high'},
+      {id:4,date:'2026-02-25',title:'Blood piRNA Test Predicts Survival in Older Adults',summary:'A study in Aging Cell identifies Piwi-interacting RNA (piRNA) signatures in blood that can predict survival outcomes in older adults.',source:'Medical Xpress / Aging Cell',sourceUrl:'https://medicalxpress.com',category:'Research',importance:'medium'},
+      {id:5,date:'2026-02-25',title:'U. of Rochester Wins $22M ARPA-H Award for Anti-Retroviral Aging Therapy TPN-101',summary:'The University of Rochester receives a $22 million ARPA-H award to advance TPN-101, targeting retrotransposon activity linked to aging, into clinical trials.',source:'University of Rochester',sourceUrl:'https://www.rochester.edu',category:'Funding',importance:'medium'},
+      {id:6,date:'2026-02-24',title:'Linnaeus Therapeutics Receives $22M ARPA-H Award for Healthspan Drug LNS8801',summary:'Linnaeus secures $22 million from ARPA-H to advance LNS8801, a small molecule targeting GPER, as a healthspan-extending therapy.',source:'Longevity.Technology',sourceUrl:'https://longevity.technology',category:'Funding',importance:'high'},
+      {id:7,date:'2026-02-25',title:'NOVOS Core Clinical Trial Shows Vascular Aging Improvements',summary:'NOVOS Labs publishes results from a placebo-controlled clinical trial showing NOVOS Core significantly improved markers of vascular aging.',source:'NOVOS / Medical News Today',sourceUrl:'https://novoslabs.com',category:'Clinical Trials',importance:'high'},
+      {id:8,date:'2026-02-19',title:'Hyperglutaminolysis Drives Senescence via Arginine/mTORC1 Pathway',summary:'Research in Nature Signal Transduction reveals excess glutamine metabolism drives cellular senescence through arginine accumulation and mTORC1 activation.',source:'Nature Signal Transduction',sourceUrl:'https://www.nature.com/sigtrans',category:'Research',importance:'medium'},
+      {id:9,date:'2026-02-18',title:'Metformin Linked to 30% Lower Mortality Risk and Exceptional Longevity in Women',summary:'A large retrospective cohort study finds metformin use is associated with a 30% reduction in all-cause mortality, with particularly strong effects in women.',source:'ScienceAlert',sourceUrl:'https://www.sciencealert.com',category:'Research',importance:'high'},
+      {id:10,date:'2026-02-18',title:'Longevity Market Report: $740B Industry in 2026 with Projected Growth',summary:'Global longevity economy reaches $740 billion in 2026, forecast to exceed $1 trillion by 2030.',source:'Yahoo Finance / Global Market Insights',sourceUrl:'https://finance.yahoo.com',category:'Industry',importance:'medium'},
+      {id:11,date:'2026-02-14',title:'NAD+ and NMN Science Review: 2026 State of the Evidence',summary:'Comprehensive review of the latest NAD+ and NMN research covering recent clinical trial results, bioavailability studies, and emerging evidence for dosing and timing protocols.',source:'Synchronicity Health',sourceUrl:'https://www.synchronicityhealth.co.uk',category:'Research',importance:'medium'},
+      {id:12,date:'2026-02-10',title:'Targeting Longevity 2026 Berlin Congress Announced',summary:'The Targeting Longevity 2026 congress announced for Berlin, bringing together researchers, biotech companies, and investors.',source:'EurekAlert / AAAS',sourceUrl:'https://www.eurekalert.org',category:'Industry',importance:'low'},
+      {id:13,date:'2026-02-04',title:'Taurine Supplementation Extends Lifespan in New Mouse Study',summary:'Follow-up study confirms taurine supplementation significantly extends lifespan in mice, with researchers identifying the specific metabolic pathways involved.',source:'Science / Rapamycin News',sourceUrl:'https://rapamycin.news',category:'Research',importance:'high'},
+      {id:14,date:'2026-02-12',title:'Bryan Johnson Blueprint Protocol 2026 Update: New Stack Additions',summary:'Bryan Johnson publishes his 2026 Blueprint protocol update, adding rapamycin cycling, updated NMN dosing, and a novel mitochondrial support stack.',source:'Blueprint / Bryan Johnson',sourceUrl:'https://blueprint.bryanjohnson.com',category:'Protocols',importance:'medium'},
+      {id:15,date:'2026-02-08',title:'Retro Biosciences Advances Partial Reprogramming to IND-Enabling Studies',summary:'Retro Biosciences, backed by Sam Altman, announces its partial reprogramming platform has advanced to IND-enabling studies.',source:'Endpoints News',sourceUrl:'https://endpts.com',category:'Biotech',importance:'high'},
+      {id:16,date:'2026-02-01',title:'Life Extension Feb 2026 Digest: Vitamin D, Olive Oil, B Vitamins',summary:'Monthly digest highlighting vitamin D effects on telomere length, olive oil polyphenols reducing biological aging markers, and B vitamins lowering homocysteine.',source:'Life Extension Magazine',sourceUrl:'https://www.lifeextension.com',category:'Research',importance:'low'},
+      {id:17,date:'2026-01-30',title:'Life Biosciences Wins FDA Approval for Epigenetic Reprogramming Phase 1 Trial',summary:'Life Biosciences receives FDA clearance to begin a Phase 1 clinical trial for in-vivo epigenetic reprogramming therapy.',source:'Fortune / Clinical Trials Arena',sourceUrl:'https://fortune.com',category:'Clinical Trials',importance:'high'},
+      {id:18,date:'2026-01-29',title:'Longevity Biotech Stocks Surge as $27T Healthcare Shift Gains Momentum',summary:'Morningstar reports a surge in longevity biotech stocks as analysts project aging interventions could reshape the $27 trillion global healthcare market.',source:'PR Newswire / Morningstar',sourceUrl:'https://www.morningstar.com',category:'Industry',importance:'medium'},
+      {id:19,date:'2026-01-26',title:'Lifespan.io Rejuvenation Roundup January 2026',summary:'Monthly roundup: rapamycin may cause DNA damage at high doses, shingles vaccine appears to slow epigenetic aging, gut microbe imbalance linked to age-related weight gain.',source:'Lifespan.io',sourceUrl:'https://lifespan.io',category:'Research',importance:'medium'},
+      {id:20,date:'2026-01-22',title:'Unity Biotechnology Senolytics Show Positive Phase 2 Results for Knee Osteoarthritis',summary:'Unity Biotechnology reports positive Phase 2 data for UBX1325, demonstrating statistically significant improvements in pain and function for knee osteoarthritis patients.',source:'Unity Biotechnology / BioSpace',sourceUrl:'https://www.unitybiotechnology.com',category:'Clinical Trials',importance:'high'},
+      {id:21,date:'2026-01-19',title:'Exercise Combined with Anti-Inflammatories in Aging Trial',summary:'New clinical trial investigates combined effects of structured exercise programs and anti-inflammatory agents on biological aging markers.',source:'NPR',sourceUrl:'https://www.npr.org',category:'Clinical Trials',importance:'medium'},
+      {id:22,date:'2026-01-15',title:'Altos Labs Reports Breakthrough in Tissue-Specific Rejuvenation in Primates',summary:'Altos Labs publishes preclinical data showing tissue-specific rejuvenation in non-human primates using their proprietary reprogramming approach.',source:'STAT News / Cell',sourceUrl:'https://www.statnews.com',category:'Biotech',importance:'high'},
+      {id:23,date:'2026-01-12',title:'Peter Attia: Updated Longevity Framework — Medicine 3.0 in Practice',summary:'Peter Attia MD publishes an updated longevity framework integrating the latest evidence on exercise, nutrition, sleep, and pharmacological interventions.',source:'Peter Attia MD',sourceUrl:'https://peterattiamd.com',category:'Protocols',importance:'medium'},
+      {id:24,date:'2026-01-08',title:'Survey: 74% of US Adults Ready to Slow Aging in 2026',summary:'A national survey finds 74% of American adults express interest in science-backed interventions to slow biological aging.',source:'Longevity.Technology',sourceUrl:'https://longevity.technology',category:'Industry',importance:'medium'},
+      {id:25,date:'2026-02-22',title:'Calico Labs Publishes New Insights on Naked Mole-Rat Aging Resistance',summary:'Google-backed Calico Labs publishes research elucidating molecular mechanisms behind the naked mole-rat exceptional resistance to aging.',source:'Calico Labs / Nature Aging',sourceUrl:'https://www.calicolabs.com',category:'Research',importance:'medium'}
+    ];
+    var sources=[
+      {name:'Longevity.Technology',url:'https://longevity.technology',freq:'Daily (weekdays)',icon:'&#9672;'},
+      {name:'Bryan Johnson / Blueprint',url:'https://blueprint.bryanjohnson.com',freq:'Several times/week',icon:'&#9733;'},
+      {name:'Peter Attia MD',url:'https://peterattiamd.com',freq:'Weekly/bi-weekly',icon:'&#9733;'},
+      {name:'NOVOS Labs',url:'https://novoslabs.com',freq:'Several times/week',icon:'&#9672;'},
+      {name:'Examine',url:'https://examine.com',freq:'Monthly digest',icon:'&#9672;'},
+      {name:'Clock Foundation',url:'https://clockfoundation.org',freq:'Weekly (Tuesdays)',icon:'&#9672;'},
+      {name:'Lifespan.io',url:'https://lifespan.io',freq:'Weekly (Sundays)',icon:'&#9672;'},
+      {name:'Dave Asprey / Superhuman',url:'https://daveasprey.com',freq:'2-3x/week',icon:'&#9733;'},
+      {name:'Mark Hyman MD',url:'https://drhyman.com',freq:'2-3x/week',icon:'&#9733;'},
+      {name:'SynBioBeta',url:'https://synbiobeta.com',freq:'Weekly',icon:'&#9672;'},
+      {name:'Tally Health',url:'https://tallyhealth.com',freq:'Weekly',icon:'&#9672;'},
+      {name:'SelfDecode',url:'https://selfdecode.com',freq:'Weekly',icon:'&#9672;'},
+      {name:'Gundry MD',url:'https://gundrymd.com',freq:'Daily',icon:'&#9672;'},
+      {name:'Life Extension',url:'https://www.lifeextension.com',freq:'Monthly',icon:'&#9672;'},
+      {name:'AgingBiotech.info',url:'https://agingbiotech.info/blogs/',freq:'Irregular',icon:'&#9672;'},
+      {name:'Rapamycin News',url:'https://rapamycin.news',freq:'Irregular',icon:'&#9672;'}
+    ];
+    var catClassMap={'Clinical Trials':'cat-clinical','Research':'cat-research','Funding':'cat-funding','Industry':'cat-industry','Biotech':'cat-biotech','Protocols':'cat-protocols'};
+    var currentFilter='all',currentSearch='';
+    function formatDate(s){var d=new Date(s+'T12:00:00'),m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();}
+    function renderNewsFeed(){
+      var feed=document.getElementById('newsFeed'),empty=document.getElementById('newsEmpty'),cnt=document.getElementById('showCount');
+      var sorted=newsData.slice().sort(function(a,b){return b.date.localeCompare(a.date)});
+      var filtered=sorted.filter(function(item){
+        var mf=currentFilter==='all'||(currentFilter==='high'&&item.importance==='high')||item.category===currentFilter;
+        var ms=!currentSearch||item.title.toLowerCase().indexOf(currentSearch)!==-1||item.summary.toLowerCase().indexOf(currentSearch)!==-1;
+        return mf&&ms;
+      });
+      cnt.textContent=filtered.length;
+      if(filtered.length===0){feed.style.display='none';empty.style.display='block';return;}
+      feed.style.display='flex';empty.style.display='none';
+      var html='';
+      for(var i=0;i<filtered.length;i++){
+        var n=filtered[i],cc=catClassMap[n.category]||'cat-research',ic=n.importance==='high'?' high-importance':'';
+        html+='<article class="news-card'+ic+'">'+
+          '<div class="news-card-left"><span class="news-date">'+formatDate(n.date)+'</span><span class="news-category '+cc+'">'+n.category+'</span></div>'+
+          '<div class="news-card-body"><div class="news-title"><a href="'+n.sourceUrl+'" target="_blank" rel="noopener noreferrer">'+n.title+'</a></div><div class="news-summary"><a href="'+n.sourceUrl+'" target="_blank" rel="noopener noreferrer">'+n.summary+'</a></div></div>'+
+          '<div class="news-card-right"><span class="news-impact-badge">HIGH IMPACT</span><span class="news-source">'+n.source+'</span></div>'+
+        '</article>';
+      }
+      feed.innerHTML=html;
+    }
+    function renderSources(){
+      var grid=document.getElementById('sourcesGrid'),html='';
+      for(var i=0;i<sources.length;i++){var s=sources[i];html+='<div class="source-card"><div class="source-icon">'+s.icon+'</div><div><div class="source-name"><a href="'+s.url+'" target="_blank" rel="noopener noreferrer">'+s.name+'</a></div><div class="source-freq">'+s.freq+'</div></div></div>';}
+      grid.innerHTML=html;
+    }
+    var filterBtns=document.querySelectorAll('.news-filter-btn');
+    for(var i=0;i<filterBtns.length;i++){filterBtns[i].addEventListener('click',function(){for(var j=0;j<filterBtns.length;j++)filterBtns[j].classList.remove('active');this.classList.add('active');currentFilter=this.getAttribute('data-filter');renderNewsFeed();});}
+    var si=document.getElementById('newsSearch'),st;
+    si.addEventListener('input',function(){clearTimeout(st);var v=this.value.toLowerCase().trim();st=setTimeout(function(){currentSearch=v;renderNewsFeed();},200);});
+    renderNewsFeed();
+    renderSources();
+  })();
+  </script>
+</body>
+</html>
