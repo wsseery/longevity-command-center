@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longevity Protocols — Published Regimens from Leading Researchers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* ===== PROTOCOLS PAGE SPECIFIC ===== */
+    .hero-eyebrow,
+    .hero-title,
+    .hero-subtitle,
+    .hero-intro,
+    .hero-updated {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      animation: fadeUp 0.8s ease forwards !important;
+    }
+
+    /* Protocols grid */
+    .protocols-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+    .protocols-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    /* Protocol card */
+    .protocol-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .protocol-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .protocol-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Card accent colors per person */
+    .card-johnson::before { background: linear-gradient(90deg, var(--cyan), var(--teal)); }
+    .card-sinclair::before { background: linear-gradient(90deg, var(--purple), var(--pink)); }
+    .card-attia::before { background: linear-gradient(90deg, var(--amber), var(--orange)); }
+    .card-huberman::before { background: linear-gradient(90deg, var(--teal), var(--cyan)); }
+    .card-patrick::before { background: linear-gradient(90deg, var(--pink), var(--purple)); }
+    .card-kaeberlein::before { background: linear-gradient(90deg, var(--orange), var(--amber)); }
+    .card-hyman::before { background: linear-gradient(90deg, var(--green), var(--teal)); }
+    .card-longo::before { background: linear-gradient(90deg, var(--cyan), var(--purple)); }
+
+    /* Card header */
+    .protocol-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .protocol-avatar {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      border: 1px solid rgba(0, 221, 255, 0.2);
+    }
+    .card-johnson .protocol-avatar { background: rgba(0, 221, 255, 0.1); color: var(--cyan); }
+    .card-sinclair .protocol-avatar { background: rgba(168, 124, 255, 0.1); color: var(--purple); }
+    .card-attia .protocol-avatar { background: rgba(255, 176, 32, 0.1); color: var(--amber); border-color: rgba(255, 176, 32, 0.2); }
+    .card-huberman .protocol-avatar { background: rgba(0, 255, 200, 0.1); color: var(--teal); border-color: rgba(0, 255, 200, 0.2); }
+    .card-patrick .protocol-avatar { background: rgba(255, 110, 199, 0.1); color: var(--pink); border-color: rgba(255, 110, 199, 0.2); }
+    .card-kaeberlein .protocol-avatar { background: rgba(255, 140, 66, 0.1); color: var(--orange); border-color: rgba(255, 140, 66, 0.2); }
+    .card-hyman .protocol-avatar { background: rgba(0, 255, 136, 0.1); color: var(--green); border-color: rgba(0, 255, 136, 0.2); }
+    .card-longo .protocol-avatar { background: rgba(0, 221, 255, 0.1); color: var(--cyan); }
+
+    .protocol-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .protocol-focus {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* Focus tags */
+    .protocol-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .protocol-tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.3px;
+      font-weight: 500;
+      background: rgba(0, 221, 255, 0.08);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 221, 255, 0.15);
+    }
+    .tag-supplements { background: rgba(0, 255, 200, 0.08); color: var(--teal); border-color: rgba(0, 255, 200, 0.15); }
+    .tag-diet { background: rgba(255, 176, 32, 0.08); color: var(--amber); border-color: rgba(255, 176, 32, 0.15); }
+    .tag-exercise { background: rgba(255, 110, 199, 0.08); color: var(--pink); border-color: rgba(255, 110, 199, 0.15); }
+    .tag-sleep { background: rgba(168, 124, 255, 0.08); color: var(--purple); border-color: rgba(168, 124, 255, 0.15); }
+    .tag-rapamycin { background: rgba(255, 140, 66, 0.08); color: var(--orange); border-color: rgba(255, 140, 66, 0.15); }
+    .tag-fasting { background: rgba(0, 255, 136, 0.08); color: var(--green); border-color: rgba(0, 255, 136, 0.15); }
+
+    /* Key supplements list */
+    .protocol-supps {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .protocol-supps strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* Links row */
+    .protocol-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .protocol-link {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--cyan);
+      text-decoration: none;
+      padding: 5px 14px;
+      border: 1px solid rgba(0, 221, 255, 0.2);
+      border-radius: 4px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .protocol-link:hover {
+      background: rgba(0, 221, 255, 0.08);
+      border-color: rgba(0, 221, 255, 0.4);
+      box-shadow: 0 0 12px rgba(0, 221, 255, 0.1);
+    }
+
+    /* Disclaimer */
+    .protocols-disclaimer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .protocols-disclaimer p {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 176, 32, 0.03);
+    }
+
+    /* Section header */
+    .section-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 16px;
+    }
+    .section-header h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-header h2::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: var(--cyan);
+      border-radius: 2px;
+    }
+    .section-header p {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      padding-left: 16px;
+    }
+
+    /* Footer */
+    .landing-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+    }
+    .landing-footer p {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .landing-footer .footer-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .landing-footer .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .landing-footer .footer-links a:hover { color: var(--cyan); }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .protocols-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanline-overlay"></div>
+
+  <!-- SITE NAVIGATION -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">News</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Protocols</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">PUBLISHED REGIMENS &times; SUPPLEMENT STACKS &times; LONGEVITY PROTOCOLS</div>
+      <h1 class="hero-title">LONGEVITY <span class="highlight">PROTOCOLS</span></h1>
+      <p class="hero-subtitle">What the Leading Researchers and Biohackers Actually Take</p>
+      <p class="hero-intro">A curated directory of publicly documented anti-aging protocols from researchers, physicians, and biohackers who have shared their supplement stacks, dietary strategies, and lifestyle interventions.</p>
+      <div class="hero-updated">
+        <span class="pulse-dot"></span>
+        8 PROTOCOLS TRACKED &mdash; FEBRUARY 2026
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION: PROTOCOLS -->
+  <div class="section-header">
+    <h2>Published Protocols</h2>
+    <p>Supplement stacks, dietary strategies, and lifestyle interventions from leading longevity figures</p>
+  </div>
+
+  <div class="protocols-section">
+    <div class="protocols-grid">
+
+      <!-- BRYAN JOHNSON -->
+      <div class="protocol-card card-johnson">
+        <div class="protocol-header">
+          <div class="protocol-avatar">BJ</div>
+          <div>
+            <div class="protocol-name">Bryan Johnson</div>
+            <div class="protocol-focus">Blueprint Protocol &mdash; Total Biological Optimization</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-diet">Diet</span>
+          <span class="protocol-tag tag-exercise">Exercise</span>
+          <span class="protocol-tag tag-sleep">Sleep</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> Acarbose, Metformin, NMN/NR, NAC, Collagen peptides, Creatine, CoQ10, Vitamin D3 + K2, Lithium, EPA/DHA, Ashwagandha, DHEA, Lycopene, Spermidine, Taurine, Glucosamine, Hyaluronic acid, and 10+ more across morning/midday/evening stacks.<br>
+          <strong>Diet:</strong> ~1,977 cal/day vegan, calorie-restricted, structured meal timing. <strong>Exercise:</strong> Daily structured resistance + cardio. <strong>Sleep:</strong> Strict 8:30pm bedtime, temperature-controlled.
+        </div>
+        <div class="protocol-links">
+          <a href="https://blueprint.bryanjohnson.com/" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Blueprint Official</a>
+          <a href="https://protocol.bryanjohnson.com/" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Full Protocol</a>
+        </div>
+      </div>
+
+      <!-- DAVID SINCLAIR -->
+      <div class="protocol-card card-sinclair">
+        <div class="protocol-header">
+          <div class="protocol-avatar">DS</div>
+          <div>
+            <div class="protocol-name">David Sinclair</div>
+            <div class="protocol-focus">NAD+ &amp; Sirtuin Activation &mdash; Harvard Genetics</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-fasting">Fasting</span>
+          <span class="protocol-tag tag-exercise">Exercise</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> NMN 1g/day, Resveratrol 1g (with yogurt fat), TMG 500mg, Metformin 800mg (evening), Spermidine, Fisetin 500mg, Quercetin, CoQ10, Vitamin D3 + K2, Taurine 2g, Low-dose aspirin 81mg.<br>
+          <strong>Diet:</strong> Intermittent fasting, plant-forward, skips breakfast most days. <strong>Exercise:</strong> Prioritizes frequent movement, sauna, cold exposure.
+        </div>
+        <div class="protocol-links">
+          <a href="https://www.nad.com/david-sinclairs-nmn-supplements" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Sinclair Stack</a>
+          <a href="https://www.hello100.com/article/david-sinclair-supplements" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Full Breakdown</a>
+        </div>
+      </div>
+
+      <!-- PETER ATTIA -->
+      <div class="protocol-card card-attia">
+        <div class="protocol-header">
+          <div class="protocol-avatar">PA</div>
+          <div>
+            <div class="protocol-name">Peter Attia, MD</div>
+            <div class="protocol-focus">Medicine 3.0 &mdash; Lifespan + Healthspan</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-exercise">Exercise</span>
+          <span class="protocol-tag tag-sleep">Sleep</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> Fish oil (EPA 2.5g/DHA 1g), Vitamin D3 5,000 IU, Magnesium 1g (multiple forms), Glycine 2g, Ashwagandha 600mg, Phosphatidylserine 400mg, B vitamins, AG1, Pendulum probiotic.<br>
+          <strong>Exercise:</strong> 4&times;4 VO2 max protocol (Norwegian method), zone 2 training 3-4 hrs/week, stability/strength work. <strong>Focus:</strong> Centenarian Decathlon concept &mdash; functional fitness for the last decade of life.
+        </div>
+        <div class="protocol-links">
+          <a href="https://peterattiamd.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; The Drive</a>
+          <a href="https://www.nad.com/peter-attia-supplements" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Attia Stack</a>
+        </div>
+      </div>
+
+      <!-- ANDREW HUBERMAN -->
+      <div class="protocol-card card-huberman">
+        <div class="protocol-header">
+          <div class="protocol-avatar">AH</div>
+          <div>
+            <div class="protocol-name">Andrew Huberman, PhD</div>
+            <div class="protocol-focus">Neuroscience-Driven Health &mdash; Stanford</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-sleep">Sleep</span>
+          <span class="protocol-tag tag-exercise">Exercise</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> AG1, Omega-3 EPA, Vitamin D3 5,000&ndash;10,000 IU, NMN 1&ndash;2g, NR 500mg, Tongkat ali 400mg, Fadogia agrestis 600mg (cycled 8 weeks on/off), Apigenin 50mg, L-theanine 100&ndash;400mg, Magnesium L-threonate 145mg, Creatine 5g.<br>
+          <strong>Sleep:</strong> Apigenin + L-theanine + Mg-threonate nightly stack. <strong>Exercise:</strong> Periodized schedule. Morning sunlight 10min daily.
+        </div>
+        <div class="protocol-links">
+          <a href="https://www.hubermanlab.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Huberman Lab</a>
+          <a href="https://www.nad.com/andrew-huberman-supplements" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Huberman Stack</a>
+        </div>
+      </div>
+
+      <!-- RHONDA PATRICK -->
+      <div class="protocol-card card-patrick">
+        <div class="protocol-header">
+          <div class="protocol-avatar">RP</div>
+          <div>
+            <div class="protocol-name">Rhonda Patrick, PhD</div>
+            <div class="protocol-focus">FoundMyFitness &mdash; Micronutrient Optimization</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-diet">Diet</span>
+          <span class="protocol-tag tag-exercise">Exercise</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> Omega-3 2g+, Vitamin D3 6,000 IU, Vitamin K2, Magnesium glycinate, Alpha lipoic acid 600mg, PQQ 20mg, Creatine 5g, Sulforaphane (broccoli sprouts), Cocoa extract, Melatonin 10mg.<br>
+          <strong>Diet:</strong> Time-restricted eating, micronutrient-dense whole foods, emphasis on sulforaphane-rich crucifers. <strong>Exercise:</strong> Sauna 4&times;/week (20 min at 174&deg;F), regular cold exposure.
+        </div>
+        <div class="protocol-links">
+          <a href="https://www.foundmyfitness.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; FoundMyFitness</a>
+          <a href="https://www.jinfiniti.com/rhonda-patrick-supplements/" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Patrick Stack</a>
+        </div>
+      </div>
+
+      <!-- MATT KAEBERLEIN -->
+      <div class="protocol-card card-kaeberlein">
+        <div class="protocol-header">
+          <div class="protocol-avatar">MK</div>
+          <div>
+            <div class="protocol-name">Matt Kaeberlein, PhD</div>
+            <div class="protocol-focus">Rapamycin Research &mdash; Dog Aging Project</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-rapamycin">Rapamycin</span>
+          <span class="protocol-tag tag-supplements">Supplements</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key focus:</strong> Low-dose intermittent rapamycin (3&ndash;10mg weekly), mTOR inhibition as the most evidence-backed longevity intervention. Led the Dog Aging Project studying rapamycin in companion dogs.<br>
+          <strong>Approach:</strong> Evidence-first, cautious about unproven supplements. Advocates rapamycin as the compound with the strongest preclinical lifespan data. Emphasis on translational research from mice to dogs to humans.
+        </div>
+        <div class="protocol-links">
+          <a href="https://rapamycin.news" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Rapamycin News</a>
+          <a href="https://dogagingproject.org" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Dog Aging Project</a>
+          <a href="https://optispan.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Optispan</a>
+        </div>
+      </div>
+
+      <!-- MARK HYMAN -->
+      <div class="protocol-card card-hyman">
+        <div class="protocol-header">
+          <div class="protocol-avatar">MH</div>
+          <div>
+            <div class="protocol-name">Mark Hyman, MD</div>
+            <div class="protocol-focus">Functional Medicine &mdash; Pegan Diet &amp; Longevity</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-supplements">Supplements</span>
+          <span class="protocol-tag tag-diet">Diet</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key compounds:</strong> Vitamin D3, NMN 900mg, Omega-3 fish oil, Quercetin + Fisetin (senolytic stack), Urolithin A, CoQ10, Multivitamin, HTB Rejuvenate, Seed probiotics.<br>
+          <strong>Diet:</strong> Pegan diet (paleo + vegan hybrid) &mdash; plant-heavy, healthy fats, quality protein, low glycemic. <strong>Focus:</strong> Functional medicine approach targeting root causes of aging.
+        </div>
+        <div class="protocol-links">
+          <a href="https://drhyman.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Dr. Hyman</a>
+          <a href="https://www.youngforever.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Young Forever</a>
+        </div>
+      </div>
+
+      <!-- VALTER LONGO -->
+      <div class="protocol-card card-longo">
+        <div class="protocol-header">
+          <div class="protocol-avatar">VL</div>
+          <div>
+            <div class="protocol-name">Valter Longo, PhD</div>
+            <div class="protocol-focus">Fasting-Mimicking Diet &mdash; USC Longevity Institute</div>
+          </div>
+        </div>
+        <div class="protocol-tags">
+          <span class="protocol-tag tag-fasting">Fasting</span>
+          <span class="protocol-tag tag-diet">Diet</span>
+        </div>
+        <div class="protocol-supps">
+          <strong>Key innovation:</strong> Fasting-Mimicking Diet (FMD/ProLon) &mdash; 5-day cycle, ~800&ndash;1,100 cal/day, designed to trigger autophagy and stem cell regeneration while providing essential nutrition.<br>
+          <strong>Longevity Diet:</strong> Low protein if under 65, moderate protein if over 65, plant-heavy, fish 2&ndash;3&times;/week, 12-hour eating window, no snacking. Minimal supplement use. FMD cycles 2&ndash;4&times;/year.
+        </div>
+        <div class="protocol-links">
+          <a href="https://www.valterlongo.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; Valter Longo</a>
+          <a href="https://prolonlife.com" target="_blank" rel="noopener noreferrer" class="protocol-link">&#9654; ProLon FMD</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="protocols-disclaimer">
+    <p>&#9888; These protocols are documented from publicly available sources for informational purposes only. They do not constitute medical advice. Individual protocols change over time. Always consult a physician before starting any supplement or dietary regimen. Dosages and compounds listed reflect publicly stated regimens as of early 2026.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <p>Longevity Command Center is an independent research and intelligence platform. Content is for informational purposes only and does not constitute medical or investment advice. Built by Bill Seery.</p>
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./compounds.html">Compounds</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./finance.html">Finance</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./news.html">News</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./protocols.html">Protocols</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="https://www.linkedin.com/in/billseery/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
