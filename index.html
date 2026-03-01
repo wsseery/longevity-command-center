@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longevity Command Center — Anti-Aging Science, Investment &amp; Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* ===== LANDING PAGE SPECIFIC ===== */
+    .hero-eyebrow,
+    .hero-title,
+    .hero-subtitle,
+    .hero-intro,
+    .hero-updated {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      animation: fadeUp 0.8s ease forwards !important;
+    }
+
+    /* Bio section */
+    .bio-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px 40px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .bio-avatar {
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cyan), var(--teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--bg-deep);
+      border: 2px solid rgba(0, 221, 255, 0.3);
+      box-shadow: 0 0 30px rgba(0, 221, 255, 0.15);
+    }
+    .bio-content h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .bio-content .bio-role {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--cyan);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .bio-content p {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .bio-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .bio-link {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--cyan);
+      text-decoration: none;
+      padding: 6px 16px;
+      border: 1px solid rgba(0, 221, 255, 0.25);
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .bio-link:hover {
+      background: rgba(0, 221, 255, 0.1);
+      box-shadow: 0 0 12px rgba(0, 221, 255, 0.15);
+    }
+
+    /* Dashboard cards */
+    .dash-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 24px 60px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .dash-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-decoration: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .dash-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+    .dash-card.card-compounds::before { background: linear-gradient(90deg, var(--cyan), var(--teal)); }
+    .dash-card.card-finance::before { background: linear-gradient(90deg, var(--amber), var(--orange)); }
+    .dash-card.card-news::before { background: linear-gradient(90deg, var(--purple), var(--pink)); }
+    .dash-card.card-protocols::before { background: linear-gradient(90deg, var(--orange), var(--amber)); }
+
+    .dash-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+    .dash-card-icon {
+      font-size: 1.6rem;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: rgba(0, 221, 255, 0.06);
+      border: 1px solid var(--border);
+    }
+    .card-finance .dash-card-icon { background: rgba(255, 176, 32, 0.06); }
+    .card-news .dash-card-icon { background: rgba(168, 124, 255, 0.06); }
+    .card-protocols .dash-card-icon { background: rgba(255, 140, 66, 0.06); }
+
+    .dash-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .dash-card-desc {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .dash-card-stats {
+      display: flex;
+      gap: 20px;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .dash-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dash-stat-value {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+    .card-finance .dash-stat-value { color: var(--amber); }
+    .card-news .dash-stat-value { color: var(--purple); }
+    .card-protocols .dash-stat-value { color: var(--orange); }
+    .dash-stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .dash-card-cta {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+    .card-finance .dash-card-cta { color: var(--amber); }
+    .card-news .dash-card-cta { color: var(--purple); }
+    .card-protocols .dash-card-cta { color: var(--orange); }
+    .dash-card:hover .dash-card-cta { opacity: 1; }
+
+    /* Section headers */
+    .section-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 16px;
+    }
+    .section-header h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-header h2::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: var(--cyan);
+      border-radius: 2px;
+    }
+    .section-header p {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      padding-left: 16px;
+    }
+
+    /* Scrolling news ticker */
+    .news-ticker-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .news-ticker-wrap {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--bg-card);
+    }
+    .news-ticker-wrap::before,
+    .news-ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .news-ticker-wrap::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--bg-card), transparent);
+    }
+    .news-ticker-wrap::after {
+      right: 0;
+      background: linear-gradient(-90deg, var(--bg-card), transparent);
+    }
+    .news-ticker-track {
+      display: flex;
+      animation: tickerScroll 120s linear infinite;
+      will-change: transform;
+    }
+    .news-ticker-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-item {
+      flex-shrink: 0;
+      padding: 20px 32px;
+      border-right: 1px solid var(--border);
+      max-width: 420px;
+      min-width: 340px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+    .ticker-item:hover {
+      background: rgba(0, 221, 255, 0.03);
+    }
+    .ticker-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .ticker-date {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+    }
+    .ticker-cat {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .ticker-cat-clinical { background: rgba(0, 221, 255, 0.15); color: var(--cyan); }
+    .ticker-cat-research { background: rgba(0, 255, 200, 0.12); color: var(--teal); }
+    .ticker-cat-biotech { background: rgba(168, 124, 255, 0.15); color: var(--purple); }
+    .ticker-cat-funding { background: rgba(255, 176, 32, 0.15); color: var(--amber); }
+    .ticker-cat-industry { background: rgba(255, 110, 199, 0.15); color: var(--pink); }
+    .ticker-cat-protocols { background: rgba(255, 140, 66, 0.15); color: var(--orange); }
+    .ticker-title {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .ticker-source {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+    }
+    .ticker-high {
+      border-left: 3px solid var(--amber);
+    }
+
+    /* News sources strip */
+    .sources-strip {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+    .sources-strip-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .source-pill {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.3s;
+      letter-spacing: 0.3px;
+    }
+    .source-pill:hover {
+      color: var(--cyan);
+      border-color: rgba(0, 221, 255, 0.25);
+    }
+
+    /* Footer */
+    .landing-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+    }
+    .landing-footer p {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .landing-footer .footer-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .landing-footer .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .landing-footer .footer-links a:hover { color: var(--cyan); }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .dash-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .dash-grid {
+        grid-template-columns: 1fr;
+      }
+      .bio-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .bio-links {
+        justify-content: center;
+      }
+    }
+    @media (max-width: 600px) {
+      .ticker-item {
+        min-width: 280px;
+        max-width: 320px;
+        padding: 16px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanline-overlay"></div>
+
+  <!-- SITE NAVIGATION -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;">
+        <a href="./index.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">News</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Protocols</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">AGING SCIENCE &times; BIOTECH INVESTMENT &times; INTELLIGENCE</div>
+      <h1 class="hero-title">LONGEVITY <span class="highlight">COMMAND CENTER</span></h1>
+      <p class="hero-subtitle">Where Science Meets Capital in the Race Against Aging</p>
+      <p class="hero-intro">A live intelligence platform tracking lifespan extension compounds, longevity investment vehicles, and breaking anti-aging research &mdash; curated from peer-reviewed journals, clinical trial registries, and the global longevity biotech ecosystem.</p>
+      <div class="hero-updated">
+        <span class="pulse-dot"></span>
+        LIVE DATA &mdash; UPDATED FEBRUARY 2026
+      </div>
+    </div>
+  </header>
+
+  <!-- BIO SECTION -->
+  <section class="bio-section">
+    <div class="bio-avatar">BS</div>
+    <div class="bio-content">
+      <h2>Bill Seery</h2>
+      <div class="bio-role">Anti-Aging Enthusiast &amp; Investor</div>
+      <p>Passionate about the science of aging since 2006 &mdash; long before longevity became mainstream. Two decades of tracking supplements, geroprotectors, and lifespan research, combined with a background in finance and venture capital, have shaped a hands-on approach to both personal protocols and aging-science investing.</p>
+      <div class="bio-links">
+        <a href="https://www.linkedin.com/in/billseery/" target="_blank" rel="noopener noreferrer" class="bio-link">&#9654; LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: DASHBOARD MODULES -->
+  <div class="section-header">
+    <h2>Command Modules</h2>
+    <p>Live dashboards tracking compounds, capital markets, and breaking research</p>
+  </div>
+
+  <div class="dash-grid">
+    <!-- Compounds Card -->
+    <a href="./compounds.html" class="dash-card card-compounds">
+      <div class="dash-card-icon">&#9883;</div>
+      <div class="dash-card-title">Aging Compound Scoreboard</div>
+      <div class="dash-card-desc">Every compound tested by the NIA Interventions Testing Program for lifespan extension in mice, plus peer-reviewed longevity compounds &mdash; cross-referenced with human clinical trial status.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">52</div><div class="dash-stat-label">Compounds</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">32</div><div class="dash-stat-label">ITP Tested</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">26</div><div class="dash-stat-label">In Human Trials</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">3</div><div class="dash-stat-label">FDA Approved</div></div>
+      </div>
+      <div class="dash-card-cta">Open Scoreboard &#8594;</div>
+    </a>
+
+    <!-- Finance Card -->
+    <a href="./finance.html" class="dash-card card-finance">
+      <div class="dash-card-icon">&#9670;</div>
+      <div class="dash-card-title">Longevity Investment Tracker</div>
+      <div class="dash-card-desc">Public ETFs, private venture capital, and pure-play longevity stocks &mdash; mapping where capital flows in the aging science economy. Daily market cap tracking with drill-down to holdings.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">$97B</div><div class="dash-stat-label">Total Market Cap</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">19</div><div class="dash-stat-label">Funds &amp; Stocks</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">+$11B</div><div class="dash-stat-label">YTD Change</div></div>
+      </div>
+      <div class="dash-card-cta">Open Tracker &#8594;</div>
+    </a>
+
+    <!-- News Card -->
+    <a href="./news.html" class="dash-card card-news">
+      <div class="dash-card-icon">&#9881;</div>
+      <div class="dash-card-title">Anti-Aging News Feed</div>
+      <div class="dash-card-desc">Curated intelligence from 16+ specialized sources &mdash; clinical trials, research breakthroughs, biotech funding, and protocol developments across the longevity landscape.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">25</div><div class="dash-stat-label">Articles</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">16+</div><div class="dash-stat-label">Sources</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">7</div><div class="dash-stat-label">Categories</div></div>
+      </div>
+      <div class="dash-card-cta">Open News Feed &#8594;</div>
+    </a>
+
+    <!-- Protocols Card -->
+    <a href="./protocols.html" class="dash-card card-protocols">
+      <div class="dash-card-icon">&#9883;</div>
+      <div class="dash-card-title">Longevity Protocols</div>
+      <div class="dash-card-desc">Published supplement stacks and lifestyle regimens from leading researchers and biohackers &mdash; Bryan Johnson, David Sinclair, Peter Attia, Andrew Huberman, and more.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">8</div><div class="dash-stat-label">Protocols</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">50+</div><div class="dash-stat-label">Compounds</div></div>
+      </div>
+      <div class="dash-card-cta">Open Protocols &#8594;</div>
+    </a>
+  </div>
+
+  <!-- SECTION: SCROLLING NEWS -->
+  <div class="section-header">
+    <h2>Latest Headlines</h2>
+    <p>Real-time anti-aging news aggregated from journals, biotech sites, and curated newsletters</p>
+  </div>
+
+  <div class="news-ticker-section">
+    <div class="news-ticker-wrap">
+      <div class="news-ticker-track" id="tickerTrack">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- News Sources -->
+  <div class="section-header" style="padding-top:0;">
+    <h2>Monitored Sources</h2>
+    <p>Aggregating from the leading voices in longevity science and biotech</p>
+  </div>
+
+  <div class="sources-strip">
+    <div class="sources-strip-inner" id="sourcesPills">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <p>Longevity Command Center is an independent research and intelligence platform. Content is for informational purposes only and does not constitute medical or investment advice. Built by Bill Seery. Data sourced from NIA ITP, ClinicalTrials.gov, peer-reviewed journals, and public market feeds.</p>
+    <div class="footer-links">
+      <a href="./compounds.html">Compounds</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./finance.html">Finance</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./news.html">News</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./protocols.html">Protocols</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="https://www.linkedin.com/in/billseery/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    var catClassMap = {
+      'Clinical Trials': 'ticker-cat-clinical',
+      'Research': 'ticker-cat-research',
+      'Biotech': 'ticker-cat-biotech',
+      'Funding': 'ticker-cat-funding',
+      'Industry': 'ticker-cat-industry',
+      'Protocols': 'ticker-cat-protocols'
+    };
+
+    var sources = [
+      { name: 'Longevity.Technology', url: 'https://longevity.technology' },
+      { name: 'Aging Biotech Info', url: 'https://agingbiotech.info/blogs/' },
+      { name: 'Fight Aging!', url: 'https://www.fightaging.org' },
+      { name: 'Life Extension Advocacy Foundation', url: 'https://www.lifespan.io' },
+      { name: 'Nature Aging', url: 'https://www.nature.com/nataging/' },
+      { name: 'GeroScience (Springer)', url: 'https://link.springer.com/journal/11357' },
+      { name: 'Aging Cell (Wiley)', url: 'https://onlinelibrary.wiley.com/journal/14749726' },
+      { name: 'ClinicalTrials.gov', url: 'https://clinicaltrials.gov' },
+      { name: 'STAT News', url: 'https://www.statnews.com' },
+      { name: 'Endpoints News', url: 'https://endpts.com' },
+      { name: 'FierceBiotech', url: 'https://www.fiercebiotech.com' },
+      { name: 'BioPharma Dive', url: 'https://www.biopharmadive.com' },
+      { name: 'Peter Attia (The Drive)', url: 'https://peterattiamd.com' },
+      { name: 'David Sinclair Lab', url: 'https://genetics.med.harvard.edu/sinclair/' },
+      { name: 'NIA ITP Program', url: 'https://www.nia.nih.gov/research/dab/interventions-testing-program-itp' },
+      { name: 'Rapamycin News', url: 'https://rapamycin.news' }
+    ];
+
+    function formatDate(dateStr) {
+      var d = new Date(dateStr + 'T00:00:00');
+      var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+    }
+
+    fetch('./news_data.json')
+      .then(function(r) { return r.json(); })
+      .then(function(articles) { buildTicker(articles); })
+      .catch(function() {
+        document.getElementById('tickerTrack').innerHTML = '<div style="padding:20px;color:var(--text-dim);font-family:var(--font-mono);font-size:0.75rem;">Unable to load news feed.</div>';
+      });
+
+    function buildTicker(articles) {
+      var track = document.getElementById('tickerTrack');
+      var html = '';
+      for (var i = 0; i < articles.length; i++) {
+        var a = articles[i];
+        var catClass = catClassMap[a.category] || 'ticker-cat-research';
+        var highClass = a.importance === 'high' ? ' ticker-high' : '';
+        html += '<div class="ticker-item' + highClass + '">' +
+          '<div class="ticker-meta">' +
+            '<span class="ticker-date">' + formatDate(a.date) + '</span>' +
+            '<span class="ticker-cat ' + catClass + '">' + a.category + '</span>' +
+          '</div>' +
+          '<div class="ticker-title">' + a.title + '</div>' +
+          '<div class="ticker-source">' + a.source + '</div>' +
+        '</div>';
+      }
+      track.innerHTML = html + html;
+    }
+
+    var pillsContainer = document.getElementById('sourcesPills');
+    var pillsHtml = '';
+    for (var i = 0; i < sources.length; i++) {
+      pillsHtml += '<a href="' + sources[i].url + '" target="_blank" rel="noopener noreferrer" class="source-pill">' + sources[i].name + '</a>';
+    }
+    pillsContainer.innerHTML = pillsHtml;
+  })();
+  </script>
+
+</body>
+</html>
