@@ -1,227 +1,227 @@
 [
   {
-    "title": "ARPA-H Awards $22M for Anti-Retrotransposon Aging Trial",
-    "source": "UConn Today",
-    "date": "2026-02-27",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "A multi-institutional consortium led by University of Rochester will test TPN-101, an antiviral drug, to suppress retrotransposon-driven inflammation in 200 adults aged 60-65, funded by ARPA-H's PROSPR program.",
-    "url": "https://today.uconn.edu/2026/02/aging-research-in-u-s-accelerated-by-major-arpa-h-contract/"
-  },
-  {
-    "title": "First Human Cellular Reprogramming Trial Cleared by the FDA",
-    "source": "Lifespan.io",
-    "date": "2026-02-06",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Life Biosciences received IND clearance for ER-100, the first-ever partial epigenetic reprogramming trial in humans, targeting glaucoma and NAION with results expected by year-end.",
-    "url": "https://lifespan.io/news/first-human-cellular-reprogramming-trial-cleared-by-the-fda/"
-  },
-  {
-    "title": "Klothea Bio Launches Phase 1b Alpha-Klotho mRNA Trial",
-    "source": "BioSpace",
-    "date": "2026-02-19",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Klothea Bio began a randomized, double-blind Phase 1b study of AKL003, an alpha-Klotho mRNA therapeutic, enrolling 21 healthy adults to measure longevity biomarkers and safety.",
-    "url": "https://www.biospace.com/press-releases/klothea-bio-announces-the-launch-of-a-phase-1b-clinical-trial-of-akl003-an-alpha-klotho-mrna-therapeutic-for-the-extension-of-human-lifespan"
-  },
-  {
-    "title": "Longeveron Stem Cell Therapy for Age-Related Frailty Published in Cell Stem Cell",
-    "source": "Longeveron Investors",
-    "date": "2026-02-25",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Phase 2b results demonstrate allogeneic stem cell therapy improved condition of patients with age-related frailty, published in the high-impact journal Cell Stem Cell.",
-    "url": "https://investors.longeveron.com/news/News/news-details/2026/Longeveron-Results-of-Phase-2b-Clinical-Trial-Demonstrating-Stem-Cell-Therapy-Improved-Condition-of-Patients-with-Age-Related-Frailty-Published-in-Cell-Stem-Cell/default.aspx"
-  },
-  {
-    "title": "$80M NIH Grant Renews Long Life Family Study for Longevity Genetics",
-    "source": "Health Tech World",
-    "date": "2026-02-24",
-    "category": "Funding",
-    "importance": "high",
-    "description": "The NIH renewed the Long Life Family Study with $80M to analyze 7,800 participants using long-read sequencing to identify genetic variants that protect against aging.",
-    "url": "https://www.htworld.co.uk/news/research-news/us80m-grant-supports-exceptional-longevity-research/"
-  },
-  {
-    "title": "Scientists Turn Gut Bacteria into Anti-Aging Factories",
-    "source": "ScienceDaily / HHMI",
-    "date": "2026-02-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "Howard Hughes researchers found low-dose cephaloridine prompts gut bacteria to produce colanic acid, extending worm lifespan and improving cholesterol and insulin markers in mice without systemic side effects.",
-    "url": "https://www.sciencedaily.com/releases/2026/01/260131085024.htm"
-  },
-  {
-    "title": "Rapamycin: Comprehensive Review Shows Limited Human Evidence Despite Animal Promise",
-    "source": "Center for Food As Medicine",
-    "date": "2026-02-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A 2026 Aging Cell review and multiple meta-analyses confirm rapamycin is safe for ~1 year in healthy adults but insufficient evidence exists to confirm longevity benefits in humans.",
-    "url": "https://foodmedcenter.org/rapamycin-slow-aging/"
-  },
-  {
-    "title": "Longevity News Roundup: Nanoplastics, Klotho mRNA Trials, and FDA Regulatory Shift",
-    "source": "Longevity Technology",
-    "date": "2026-02-27",
+    "title": "Longevity Might Be Biopharma's Next Big Thing",
+    "source": "Clarivate",
+    "date": "2026-03-02",
     "category": "Industry",
     "importance": "high",
-    "description": "Weekly roundup covers nanoplastics crossing the blood-brain barrier, Klothea mRNA human trials, wearable lactate sensors, and the FDA ending the two-trial dogma for drug approvals.",
+    "description": "Longevity startups attracted $8.5B in VC in 2024. Major pharma companies are building entire divisions around aging biology, driven by GLP-1 success and AI-powered drug discovery.",
+    "url": "https://clarivate.com/life-sciences-healthcare/blog/why-longevity-might-be-biopharmas-next-big-thing/"
+  },
+  {
+    "title": "Klothea Launches Phase 1b Human Trial for AKL003 mRNA Longevity Therapy",
+    "source": "Longevity Technology (via YouTube)",
+    "date": "2026-02-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Klothea has begun a phase 1b human trial for AKL003, an mRNA therapy boosting alpha-Klotho protein levels. The trial in Honduras measures epigenetic clocks, inflammatory markers, and quality of life.",
     "url": "https://www.youtube.com/watch?v=wA_NHzz5JB4"
   },
   {
-    "title": "Life Biosciences Secures First FDA Approval for Longevity Trial",
-    "source": "Fortune",
-    "date": "2026-01-30",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "Life Biosciences, co-founded by David Sinclair, leads the longevity race with FDA-approved Phase 1 trial of partial epigenetic reprogramming for vision restoration, ahead of Altos Labs and NewLimit.",
-    "url": "https://fortune.com/2026/01/30/billionaires-longevity-aging-fda-human-clinical-trial-life-biosciences-jerry-mclaughlin-david-sinclair-harvard-science/"
-  },
-  {
-    "title": "Longevity Biotech Stocks Surge as $27 Trillion Healthcare Shift Accelerates",
-    "source": "PR Newswire",
-    "date": "2026-01-29",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "Cell therapy markets are projected at $8.85B by 2026 and AI drug discovery at $24.51B, as institutional capital rotates into regenerative medicine and longevity infrastructure.",
-    "url": "https://www.prnewswire.com/news-releases/longevity-biotech-stocks-surge-as-27-trillion-healthcare-shift-favors-cell-restoration-302674367.html"
-  },
-  {
-    "title": "Multi-Scale Longevity: New Preprint from Michael Levin on Defeating Aging",
-    "source": "X / Michael Levin",
+    "title": "FDA Ends 'Two Trial Dogma' -- One Pivotal Trial May Now Suffice for Drug Approval",
+    "source": "Longevity Technology (via YouTube)",
     "date": "2026-02-27",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Tufts scientist Michael Levin published a Springer Nature chapter on multi-scale longevity, framing aging as a challenge to embodied minds and proposing collective cell intelligence approaches.",
-    "url": "https://x.com/drmichaellevin/status/2027387377555997077"
-  },
-  {
-    "title": "Dr. Rhonda Patrick: Weight Training Reduces Brain Age by 1.4-2.3 Years",
-    "source": "X / FoundMyFitness",
-    "date": "2026-02-24",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Rhonda Patrick highlighted research showing one year of strength training reduced older adults' brain age by up to 2.3 years with effects persisting at two-year follow-up.",
-    "url": "https://x.com/foundmyfitness/status/2026411802737737963"
-  },
-  {
-    "title": "Rhonda Patrick on Heat Exposure as Antidepressant and Longevity Tool",
-    "source": "X / FoundMyFitness",
-    "date": "2026-02-27",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A single session raising core body temperature produced an antidepressant effect lasting 6-8 weeks; combined with CBT showed approximately 16-point improvement on depression scales.",
-    "url": "https://x.com/foundmyfitness/status/2027470790812225660"
-  },
-  {
-    "title": "GLP-1 Pills, Gene Therapy in Dogs, and Amazon Longevity Integration",
-    "source": "Longevity Technology",
-    "date": "2026-02-20",
     "category": "Industry",
-    "importance": "normal",
-    "description": "Oral GLP-1 drugs advance from Novo and Lilly; GenFlow's SIRT6 gene therapy shows improved survival in aged dogs; Amazon One Medical integrates LifeForce longevity biomarkers.",
-    "url": "https://longevity.technology/unlocked/glp1-dogs-amazon/"
+    "importance": "high",
+    "description": "The FDA officially ended the requirement for two pivotal trials, allowing one rigorous trial for drug approval. This could shave 3-5 years off development timelines for aging-targeted therapies.",
+    "url": "https://www.youtube.com/watch?v=wA_NHzz5JB4"
+  },
+  {
+    "title": "Multi-Ingredient Longevity Supplement Improves Vascular Aging Markers",
+    "source": "Medical News Today",
+    "date": "2026-02-24",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "A clinical trial of NOVOS Core (12 bioactive compounds) showed improved endothelial function, arterial flexibility, and systolic blood pressure over six months compared to placebo.",
+    "url": "https://www.medicalnewstoday.com/articles/longevity-supplement-improves-vascular-aging-markers-clinical-trial-novos-magnesium-ginger-root"
   },
   {
     "title": "The 10 Breakthroughs That Changed Longevity in 2025",
-    "source": "Unfold Longevity / FOXO",
+    "source": "Unfold Longevity",
     "date": "2026-02-28",
     "category": "Research",
     "importance": "high",
-    "description": "Comprehensive review of 2025's top longevity advances: sleep as top predictor, AI screening 1.1B compounds, senolytic RCTs, organ-specific aging clocks, combination therapies, and partial reprogramming in animals.",
+    "description": "Sleep emerged as a stronger longevity predictor than diet or exercise. AI screened 1.1B compounds for aging drugs. Combination therapies outperformed single interventions across multiple studies.",
     "url": "https://unfoldlongevity.substack.com/p/the-10-breakthroughs-that-changed-longevity-in-2025"
   },
   {
-    "title": "Top 10 Longevity Breakthroughs of 2025: PEARL Trial, GLP-1, SGLT2 Inhibitors",
+    "title": "Multi-Scale Longevity: Defeating Aging from Cells to Embodied Human Minds",
+    "source": "Michael Levin (preprint)",
+    "date": "2026-02-27",
+    "category": "Research",
+    "importance": "high",
+    "description": "New preprint by Michael Levin framing aging within collective intelligence of cells. An invited chapter for Springer Nature's 'Frontiers of Longevity Science' exploring multi-scale longevity approaches.",
+    "url": "https://x.com/drmichaellevin/status/2027387377555997077"
+  },
+  {
+    "title": "Blocking IL-11 Makes Mice Live Healthier and Longer",
+    "source": "Dr. Samuel Hume (X/Twitter)",
+    "date": "2026-02-28",
+    "category": "Research",
+    "importance": "high",
+    "description": "Study shows blocking the pro-inflammatory cytokine IL-11 (by deletion or therapeutic antibody) extends mouse healthspan and lifespan, with visible rejuvenation effects.",
+    "url": "https://x.com/DrSamuelBHume/status/2027778301343715740"
+  },
+  {
+    "title": "Therapeutic Plasma Exchange Reduces Biological Age by 2.6 Years",
+    "source": "Buck Institute / Aging Cell",
+    "date": "2026-02-28",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "First placebo-controlled trial shows TPE combined with IVIG reduced biological age by 2.6 years via multi-omics biomarkers, reversing age-related immune decline.",
+    "url": "https://www.buckinstitute.org/news/clinical-trial-and-multi-omics-analysis-demonstrates-the-impact-of-therapeutic-plasma-exchange-on-biological-age/"
+  },
+  {
+    "title": "Rapamycin for Longevity: Pros, Cons, and Future Perspectives",
+    "source": "Frontiers in Aging",
+    "date": "2026-02-25",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Comprehensive review covering PEARL trial results showing low-dose intermittent rapamycin was well-tolerated over 1 year with modest biomarker changes. Long-term clinical benefits remain to be established.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12226543/"
+  },
+  {
+    "title": "Top 10 Longevity & Anti-Aging Breakthroughs of 2025",
     "source": "Healthspan",
     "date": "2025-12-29",
     "category": "Research",
-    "importance": "high",
-    "description": "Key 2025 milestones include the PEARL rapamycin trial in women, GLP-1 drugs as potential first longevity medications, SGLT2 inhibitors lengthening telomeres, and urolithin A cardioprotection.",
+    "importance": "normal",
+    "description": "ITP's 20-year review confirms rapamycin as the most reliable lifespan extender. Rapamycin plus acarbose showed up to 36.6% median lifespan increase. GLP-1s proposed as first true longevity medications.",
     "url": "https://www.gethealthspan.com/research/article/top-ten-longevity-anti-aging-breakthroughs-of-2025"
   },
   {
-    "title": "Could Humans Live to 150? Researchers Debate Lifespan Extension",
-    "source": "Nature",
-    "date": "2025-11-12",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Nature explores the longevity debate: IL-11 blockers extended mouse lifespan 25%, rapamycin-calorie restriction meta-analysis, and sirtuin-NAD+ clinical trials showing reduced inflammation markers.",
-    "url": "https://www.nature.com/articles/d41586-025-03524-4"
+    "title": "Novartis-BioAge Collaboration Worth Up to $550M for Aging-Exercise Biology",
+    "source": "Clarivate",
+    "date": "2026-03-02",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Novartis partnered with BioAge Labs ($20M upfront, up to $550M) to discover drug targets at the intersection of aging and exercise biology using human longevity datasets.",
+    "url": "https://clarivate.com/life-sciences-healthcare/blog/why-longevity-might-be-biopharmas-next-big-thing/"
   },
   {
-    "title": "Fight Aging Newsletter: CAR-T for Brain Plaques, Partial Reprogramming of Memory Neurons",
-    "source": "Fight Aging!",
-    "date": "2026-02-23",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Weekly digest covers CAR-T therapy targeting amyloid plaques, partial reprogramming improving cognitive function in aged mice, IL-6 and cognitive impairment, and cytomegalovirus in neurodegeneration.",
-    "url": "https://www.fightaging.org/archives/2026/02/fight-aging-newsletter-february-23rd-2026/"
+    "title": "ARPA-H Launches PROSPR Program to Extend Healthspan by 20 Years",
+    "source": "Clarivate",
+    "date": "2026-03-02",
+    "category": "Funding",
+    "importance": "high",
+    "description": "ARPA-H committed up to $52M to Buck Institute's PATH project, recruiting people 50+ for advanced aging analytics. Extending healthspan by 1 year in 10% of the aging population could save $29B annually.",
+    "url": "https://clarivate.com/life-sciences-healthcare/blog/why-longevity-might-be-biopharmas-next-big-thing/"
   },
   {
-    "title": "Senolytics Review: From Pharmacological Inhibitors to Immunotherapies",
-    "source": "Nature / npj Aging",
-    "date": "2024-02-06",
-    "category": "Research",
+    "title": "Insilico Medicine Unveils Oral GLP-1 Small Molecule Longevity Portfolio",
+    "source": "LinkedIn / Alex Zhavoronkov",
+    "date": "2026-02-25",
+    "category": "Biotech",
     "importance": "normal",
-    "description": "Comprehensive review of senolytic approaches including dasatinib+quercetin, navitoclax, fisetin, antibody-drug conjugates targeting B2M and ApoD, CAR-T cells, and the GPNMB vaccine extending lifespan in mice.",
-    "url": "https://www.nature.com/articles/s41514-024-00138-4"
+    "description": "Insilico Medicine revealed two unique oral GLP-1 small molecule drugs (QD and QW dosing) plus oral NLRP3 and APJ candidates targeting cardiometabolism and longevity.",
+    "url": "https://www.linkedin.com/posts/zhavoronkov_new-longevity-therapeutics-alert-activity-7393549560825995264-BiD7"
   },
   {
-    "title": "The Longevity Show 2026 Confirms First Partners",
-    "source": "Longevity Technology",
-    "date": "2026-02-09",
+    "title": "Longevity Biotech in 2025: The Expert Roundup",
+    "source": "Lifespan.io / Karl Pfleger",
+    "date": "2026-01-06",
     "category": "Industry",
     "importance": "normal",
-    "description": "The 2026 Longevity Show at Tobacco Dock, London announces partners spanning biotech, diagnostics, AI, nutrition, and investment including ProLon, Viome, Technogym, and Quris.ai.",
-    "url": "https://longevity.technology/news/longevity-show-announces-first-partners-for-2026/"
+    "description": "Five leading experts reflect on 2025: GLP-1s validated longevity beyond weight loss, big pharma embraced aging biology, and partial reprogramming advanced toward human trials in 2026.",
+    "url": "https://www.linkedin.com/posts/karl-r-pfleger_longevity-biotech-in-2025-the-expert-roundup-activity-7414395753881579520-3TOk"
   },
   {
-    "title": "The Ethical Case for Treating Aging as a Medical Condition",
-    "source": "Fight Aging!",
-    "date": "2026-02-13",
+    "title": "Longevity Biotech Fellowship Announces Cohort 6 in SF Bay Area",
+    "source": "Longevity Biotech Fellowship",
+    "date": "2026-02-28",
     "category": "Industry",
     "importance": "normal",
-    "description": "Analysis argues the moral burden now falls on defenders of forced aging to justify preventable suffering, grounding longevity research in autonomy, self-ownership, and intrinsic value of life.",
-    "url": "https://www.fightaging.org/archives/2026/02/the-ethical-case-for-the-development-of-means-to-treat-aging-as-a-medical-condition/"
+    "description": "LBF Cohort 6 launches with a kickoff retreat in Berkeley, March 31 - April 4. Over 700 members work on solving aging through biostasis, replacement, and bioengineering approaches.",
+    "url": "https://www.linkedin.com/company/longbiofellowship"
   },
   {
-    "title": "Mitochondrial Circular RNAs Decline with Age, Link to Cellular Senescence",
-    "source": "X / RathBiotaClan",
-    "date": "2026-03-01",
+    "title": "Lifting Weights Reduces Brain Age by Up to 2.3 Years",
+    "source": "Dr. Rhonda Patrick (X/Twitter)",
+    "date": "2026-02-24",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "One year of strength training reduced older adults' estimated brain age by 1.4-2.3 years and enhanced functional brain connectivity, with effects persisting at 2-year follow-up.",
+    "url": "https://x.com/foundmyfitness/status/2026411802737737963"
+  },
+  {
+    "title": "Heat Exposure as Antidepressant: Sauna Effects Last 6-8 Weeks",
+    "source": "Dr. Rhonda Patrick (X/Twitter)",
+    "date": "2026-02-27",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A single session raising core body temperature by 2.6-3.7F produced antidepressant effects lasting 6-8 weeks. Combined with CBT, improvements reached ~16 points on depression scales.",
+    "url": "https://x.com/foundmyfitness/status/2027470790812225660"
+  },
+  {
+    "title": "Panaxatriol Discovered as Novel Senolytic; Voclosporin Extends C. elegans Lifespan",
+    "source": "Molecules / PMC",
+    "date": "2026-02-25",
     "category": "Research",
     "importance": "normal",
-    "description": "New research shows circMT-RNR2 and GRSF1 regulate the TCA cycle and cellular senescence, suggesting mitochondrial RNA targeting could slow aging.",
-    "url": "https://x.com/rathbiotaclan/status/2028019907712192514"
+    "description": "AI-based senolytic predictor identified panaxatriol as a novel senolytic agent. Voclosporin extended C. elegans lifespan by 19.1%, outperforming metformin's 11.3%.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12196162/"
   },
   {
-    "title": "Telomere Science and Age Reversal: Research Compilation Goes Viral on X",
-    "source": "X / GP Q",
+    "title": "SGLT2 Inhibitors May Lengthen Telomeres in Humans",
+    "source": "Healthspan",
+    "date": "2026-02-28",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Henagliflozin lengthened telomeres in 90.5% of participants after 26 weeks vs. 65.6% for placebo. SGLT2 inhibitors also showed senolytic properties and extended mouse lifespan by 14%.",
+    "url": "https://www.gethealthspan.com/research/article/top-ten-longevity-anti-aging-breakthroughs-of-2025"
+  },
+  {
+    "title": "ER-Phagy Identified as Novel Druggable Aging Pathway",
+    "source": "LinkedIn / Science",
+    "date": "2026-02-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Study in Science found dramatic reduction in rough ER with age via ER-phagy in C. elegans. This structural remodeling presents a new therapeutic target for age-related conditions.",
+    "url": "https://www.linkedin.com/posts/alla-sergueeva-239b13210_aging-researchers-find-new-puzzle-piece-in-activity-7428486931803697152-Ieg0"
+  },
+  {
+    "title": "The $63 Billion Longevity Revolution: Market Projected to Triple by 2035",
+    "source": "LinkedIn",
+    "date": "2026-02-07",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Global longevity market valued at $21.3B in 2024 is projected to reach $63B by 2035 (10.37% CAGR). Driven by cellular reprogramming, senolytics, AI drug discovery, and demographic shifts.",
+    "url": "https://www.linkedin.com/pulse/63-billion-longevity-revolution-how-science-rewriting-monali-raut-cyvnf"
+  },
+  {
+    "title": "Rapamycin Shows Limited Evidence for Longevity in Healthy Adults",
+    "source": "Aging-US",
+    "date": "2026-02-24",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Systematic review found no clear clinical evidence that low-dose rapamycin extends healthspan in healthy humans. Off-label use growing but long-term safety unknown. Larger trials urgently needed.",
+    "url": "https://www.aging-us.com/news-room/rapamycin-shows-limited-evidence-for-longevity-benefits-in-healthy-adults"
+  },
+  {
+    "title": "Telomere Science and Age Reversal: 5 Real Innovations for 2026",
+    "source": "X/Twitter (GP Q / @argosaki)",
     "date": "2026-02-27",
     "category": "Research",
     "importance": "normal",
-    "description": "A viral thread compiling telomere science research including HBOT telomere extension in older adults garnered 117K impressions and 700+ bookmarks, showing growing public interest in age reversal.",
+    "description": "Viral thread (350+ reposts, 120K impressions) covering top 2026 longevity breakthroughs including telomere-related anti-aging trials and hyperbaric oxygen therapy for biological age reversal.",
     "url": "https://x.com/argosaki/status/2027363343082918069"
   },
   {
-    "title": "PEARL Trial: Low-Dose Weekly Rapamycin Shows Lean Mass Benefits in Women",
-    "source": "Aging (journal)",
-    "date": "2025-12-29",
-    "category": "Clinical Trials",
+    "title": "Human Longevity Is ~50% Heritable, Not 25% as Previously Thought",
+    "source": "LinkedIn / Science",
+    "date": "2026-02-24",
+    "category": "Research",
     "importance": "high",
-    "description": "The landmark PEARL trial demonstrated 48 weeks of low-dose intermittent rapamycin is safe in healthy adults, with significant lean tissue mass and pain improvements in women at the 10mg dose.",
-    "url": "https://www.gethealthspan.com/research/article/top-ten-longevity-anti-aging-breakthroughs-of-2025"
+    "description": "Study in Science using Danish/Swedish twin cohorts shows intrinsic lifespan heritability is 50-55%. Dementia had highest heritability (~0.7 by age 80). Genetics play a larger role in longevity than believed.",
+    "url": "https://www.linkedin.com/pulse/extending-our-healthy-lives-what-science-says-lloyd-minor-52c2c"
   },
   {
-    "title": "Gimv Pulls Back from Early-Stage Aging Biotech, Signals Capital Shift",
-    "source": "Longevity Technology",
-    "date": "2026-02-20",
-    "category": "Funding",
+    "title": "Calico VP Cynthia Kenyon Reflects on Redefining Aging Research",
+    "source": "Calico / TIME",
+    "date": "2026-02-27",
+    "category": "Industry",
     "importance": "normal",
-    "description": "European investment firm Gimv reduces early-stage aging biotech exposure, redirecting capital toward diagnostics, digital longevity platforms, and tech-enabled services with faster ROI.",
-    "url": "https://longevity.technology/news/what-gimvs-biotech-pullback-says-about-aging-markets/"
+    "description": "In TIME's new Longevity series, Calico VP of Aging Research Cynthia Kenyon discusses how foundational research on aging mechanisms continues to guide efforts toward real-world human health impact.",
+    "url": "https://x.com/calico/status/2016195965124759684"
   }
 ]
