@@ -1,227 +1,227 @@
 [
   {
-    "title": "ARPA-H Awards $144M to 7 Teams for PROSPR Aging Research Initiative",
-    "source": "Forbes / ARPA-H",
+    "title": "Jim O'Neill Nominated as NSF Director — Major Win for Longevity Advocacy",
+    "source": "X / @DeryaTR_",
+    "date": "2026-03-05",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Jim O'Neill, a vocal longevity advocate, has been nominated as Director of the National Science Foundation, signaling potential increased federal support for aging research.",
+    "url": "https://x.com/DeryaTR_/status/2029453622505844874"
+  },
+  {
+    "title": "HAGR Aging Databases at Risk of Going Offline Due to Funding Gap",
+    "source": "VitaDAO / X",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "high",
+    "description": "The Human Ageing Genomic Resources databases, a cornerstone of aging research for two decades, may go offline due to a funding shortfall. VitaDAO and researchers are calling for community support.",
+    "url": "https://x.com/vitadao/status/2029514232400617902"
+  },
+  {
+    "title": "Diet Quality Shapes Sleep Quality Day-to-Day: Fiber and Plant Diversity Boost Deep Sleep",
+    "source": "Dr. Rhonda Patrick / X",
+    "date": "2026-03-04",
+    "category": "Protocols",
+    "importance": "high",
+    "description": "New research shared by Dr. Rhonda Patrick shows higher-fiber, more plant-diverse days lead to more deep and REM sleep, while processed foods increase nighttime wakefulness.",
+    "url": "https://x.com/foundmyfitness/status/2029273849397952567"
+  },
+  {
+    "title": "Strength Training in Aging: The 'Protection from Load' Myth Debunked",
+    "source": "Dr. Rhonda Patrick / X",
+    "date": "2026-03-05",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Dr. Rhonda Patrick amplifies orthopedic surgeon Howard Luks's message that aging bodies should be prepared for load, not protected from it — challenging one of fitness's most persistent myths.",
+    "url": "https://x.com/foundmyfitness/status/2029364727789584875"
+  },
+  {
+    "title": "Buntanetap Late-Stage Trial Advances Toward FDA Milestone for Alzheimer's",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "CEO says late-stage buntanetap trial is advancing toward an FDA milestone in a bid to slow Alzheimer's and dementia progression.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "WHOOP Joins $34.5M ARPA-H Initiative for FDA-Grade Healthspan Score",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Industry",
+    "importance": "high",
+    "description": "WHOOP has joined a $34.5 million ARPA-H initiative to develop the first FDA-grade Intrinsic Capacity score to predict healthspan using wearable biomarkers.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "Eight Sleep Valued at $1.5B in Funding Round for Sleep Prediction Tech",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Smart mattress firm Eight Sleep has been valued at $1.5 billion in a new funding round to support its shift from observation to prediction to prevention in sleep health.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "Hungarian Pharma Expands Ovarian Aging Pipeline into Longevity Mainstream",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "A Hungarian pharmaceutical company is expanding its women's health pipeline, bringing ovarian aging and fertility biology closer to the longevity mainstream.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "ArentFox Schiff Launches Dedicated Longevity Law Practice",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Law firm ArentFox Schiff has launched a new practice tailored to healthspan science, reflecting growing demand for legal strategies in the maturing longevity sector.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "piRNAs Identified as Powerful Longevity Biomarkers (AUC 0.92 for 2-Year Survival)",
+    "source": "Fight Aging! / Aging Cell",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "high",
+    "description": "Nine piRNAs reduced in long-lived elderly predict 2-year survival with AUC of 0.92, supported by C. elegans lifespan data — potential new therapeutic targets.",
+    "url": "https://doi.org/10.1111/acel.70403"
+  },
+  {
+    "title": "Circular MT-RNR2 Links Mitochondrial Aging to Cellular Senescence",
+    "source": "Fight Aging! / Aging",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Mitochondrial circular RNA circMT-RNR2 is depleted in old cohorts and senescent cells; GRSF1 depletion reduces it and accelerates senescence, revealing a new aging mechanism.",
+    "url": "https://doi.org/10.18632/aging.206354"
+  },
+  {
+    "title": "ARPA-H Invests $144M in PROSPR Program for Aging Healthspan Trials",
+    "source": "Fight Aging! / Forbes",
     "date": "2026-02-25",
     "category": "Funding",
     "importance": "high",
-    "description": "ARPA-H's PROSPR program awards $144M to Stanford, UT San Antonio, Columbia, and four other teams to pioneer in-home clinical trials testing rapamycin, GLP-1 agonists, and SGLT2 inhibitors for aging.",
-    "url": "https://www.forbes.com/sites/michaeltnietzel/2026/02/25/7-research-teams-awarded-144-million-to-study-age-related-illnesses/"
+    "description": "ARPA-H is investing up to $144M in the PROSPR program, funding Cambrian (rapamycin analog, $30.8M) and Linnaeus (GPER drug, $22M) for healthspan extension clinical trials.",
+    "url": "https://www.fightaging.org"
   },
   {
-    "title": "First Phase 3 Clinical Trial Targeting Aging Launched via PROSPR",
-    "source": "Rapamycin News",
+    "title": "Rapamycin, SGLT2i, and GLP-1a Chosen for First Phase 3 Clinical Trial in Aging",
+    "source": "Rapamycin Longevity News",
     "date": "2026-02-27",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "ARPA-H partners with FDA to run the first Phase 3 trial targeting aging in healthy adults, evaluating rapamycin, GLP-1 agonists, and SGLT2 inhibitors with a goal of a $100 home testing kit by 2031.",
+    "description": "In a partnership between ARPA-H and the FDA, rapamycin, SGLT2 inhibitors, and GLP-1 agonists have been selected for the first Phase 3 clinical trial targeting aging in healthy individuals.",
     "url": "https://www.rapamycin.news/t/time-rapa-sglt2i-and-glpa-chosen-for-first-phase-3-clinical-trial-in-aging/23772"
   },
   {
-    "title": "Rejuvenation Roundup February 2026: Reprogramming Trial, CAR-T Alzheimer's",
-    "source": "Lifespan.io",
-    "date": "2026-03-02",
+    "title": "Tyrosine Amino Acid Linked to Reduced Longevity in Large UK Biobank Study",
+    "source": "Longevity Technology",
+    "date": "2026-03-03",
     "category": "Research",
-    "importance": "high",
-    "description": "Life Biosciences receives FDA clearance for first human cellular reprogramming trial targeting age-related vision diseases. Also covers CAR-T cells for Alzheimer's plaques and reprogramming for memory rescue.",
-    "url": "https://lifespan.io/news/rejuvenation-roundup-february-2026/"
+    "importance": "normal",
+    "description": "A large UK Biobank study links the common amino acid tyrosine to reduced longevity, with stronger effects observed in men.",
+    "url": "https://longevity.technology"
   },
   {
-    "title": "10 Breakthroughs That Changed Longevity in 2025",
-    "source": "Unfold Longevity / FOXO",
+    "title": "Epigenetic Clocks (GrimAge2) Predict Incident Dementia Risk",
+    "source": "Fight Aging! / Aging Cell",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "GrimAge2 acceleration (HR 1.11) is associated with incident dementia risk, adding to evidence that epigenetic clocks can predict neurodegenerative disease onset.",
+    "url": "https://doi.org/10.1111/acel.70424"
+  },
+  {
+    "title": "cGAS-STING Pathway Drives Age-Related Neuroinflammation — Inhibitors Show Preclinical Promise",
+    "source": "Fight Aging! / Molecular Biomedicine",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Aberrant cGAS-STING activation by cytoplasmic DNA drives neuroinflammation in aging and neurodegeneration. Inhibitors show preclinical promise but need cell-specific modulation.",
+    "url": "https://doi.org/10.1186/s40364-026-00906-2"
+  },
+  {
+    "title": "BCI Partnership Aims to Cut Costs and Accelerate Brain Therapies",
+    "source": "Longevity Technology",
+    "date": "2026-03-04",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "A new brain-computer interface partnership with Science Corp aims to cut costs, shorten timelines, and bring brain therapies closer to patients.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "AI Supercomputing Enters Pharma, Promising Shorter Drug Timelines for Longevity Research",
+    "source": "Longevity Technology",
+    "date": "2026-03-03",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "AI-driven supercomputing is coming to pharmaceutical development, promising shorter drug discovery timelines and new opportunities in longevity research.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "The 10 Breakthroughs That Changed Longevity in 2025",
+    "source": "Unfold Longevity / Substack",
     "date": "2026-02-28",
     "category": "Research",
-    "importance": "high",
-    "description": "Sleep outranks diet and exercise as a longevity predictor, movement diversity emerges as the most accessible intervention, and senolytic randomized controlled trials advance significantly.",
+    "importance": "normal",
+    "description": "Comprehensive review of 2025's top longevity breakthroughs including sleep as the top longevity predictor, rapamycin clinical advances, and GLP-1 as a potential first gerotherapeutic.",
     "url": "https://unfoldlongevity.substack.com/p/the-10-breakthroughs-that-changed-longevity-in-2025"
   },
   {
-    "title": "Top 10 Longevity & Anti-Aging Breakthroughs of 2025",
-    "source": "Healthspan",
-    "date": "2025-12-29",
-    "category": "Research",
-    "importance": "high",
-    "description": "Rapamycin confirmed as most reliable lifespan extender in 20 years of NIA ITP data. PEARL trial results, GLP-1 as longevity drug, and SGLT2 telomere lengthening among key breakthroughs.",
-    "url": "https://www.gethealthspan.com/research/article/top-ten-longevity-anti-aging-breakthroughs-of-2025"
-  },
-  {
-    "title": "Visceral Fat Linked to 44% Higher Cancer Risk \u2014 Rhonda Patrick",
-    "source": "X / @FoundMyFitness",
-    "date": "2026-03-03",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Dr. Rhonda Patrick highlights that visceral fat raises cancer risk by up to 44% and doubles early mortality risk. Fasting and HIIT are the most effective interventions for reducing it.",
-    "url": "https://x.com/foundmyfitness/status/2028971550960136283"
-  },
-  {
-    "title": "HIIT Is the Most Powerful Way to Improve Endothelial Function",
-    "source": "X / @FoundMyFitness",
-    "date": "2026-03-03",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Meta-analysis finds HIIT improves flow-mediated dilation by ~4%, meaningfully more than moderate cardio or resistance training, delivering a potent vascular training stimulus against cardiovascular disease.",
-    "url": "https://x.com/foundmyfitness/status/2028861683288952947"
-  },
-  {
-    "title": "Tyrosine Linked to Reduced Longevity in UK Biobank Study",
-    "source": "Longevity Technology",
-    "date": "2026-03-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Large UK Biobank study finds the amino acid tyrosine is associated with reduced longevity, with stronger effects observed in men.",
-    "url": "https://x.com/LongevityTech/status/2028903454534496542"
-  },
-  {
-    "title": "AI-Driven Supercomputing Comes to Pharma for Longevity Research",
-    "source": "Longevity Technology",
-    "date": "2026-03-03",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "AI-powered supercomputing enters pharmaceutical development, promising shorter drug timelines and new opportunities for longevity-focused drug discovery.",
-    "url": "https://x.com/LongevityTech/status/2028904036347384096"
-  },
-  {
-    "title": "Brain Blood Flow Wearable Backed by Former Zomato CEO",
-    "source": "Longevity Technology",
-    "date": "2026-03-03",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "A temple-worn wearable that tracks brain blood flow receives backing, signaling a shift from food tech to human performance and neurotech.",
-    "url": "https://x.com/LongevityTech/status/2028905361386693040"
-  },
-  {
-    "title": "Centenarians' Blood Proteins Resemble Those of Much Younger Adults",
-    "source": "Longevity Technology",
-    "date": "2026-03-02",
-    "category": "Research",
-    "importance": "normal",
-    "description": "First-of-its-kind Swiss proteomics study finds proteins in centenarians' blood closely resemble those of much younger adults, offering new biomarker insights.",
-    "url": "https://x.com/LongevityTech/status/2028539082171699295"
-  },
-  {
-    "title": "Juvenescence Completes Phase 1 for First-in-Class PAI-1 Inhibitor",
-    "source": "Longevity Technology",
-    "date": "2026-03-02",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Juvenescence advances its first-in-class PAI-1 inhibitor through Phase 1, targeting key aging mechanisms and fibrotic disease pathways.",
-    "url": "https://x.com/LongevityTech/status/2028536459930550284"
-  },
-  {
-    "title": "Gut Protein Solubility Declines With Age \u2014 New Research Funded",
-    "source": "ResearchHub Foundation",
-    "date": "2026-03-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "ResearchHub funds a study testing whether gut proteins become less soluble with aging, potentially linking immune metabolic remodeling to region-specific proteostasis instability.",
-    "url": "https://x.com/ResearchHubF/status/2028862997561815227"
-  },
-  {
-    "title": "ERG Phase Separation Attenuates Cellular Senescence",
-    "source": "Fight Aging!",
-    "date": "2026-03-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New research shows the ERG transcription factor reduces cellular senescence through phase separation mechanisms, with insights from centenarian immune cell chromatin accessibility.",
-    "url": "https://www.fightaging.org"
-  },
-  {
-    "title": "Dietary Restriction Mechanisms Reviewed Across Species",
-    "source": "Fight Aging!",
-    "date": "2026-03-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Comprehensive review examines molecular mechanisms behind dietary restriction's lifespan benefits, including nutrient-sensing pathways and autophagy across multiple species.",
-    "url": "https://www.fightaging.org"
-  },
-  {
-    "title": "Senolytic Mitochondrial Determinants of Efficacy and Resistance",
-    "source": "Lifespan.io",
-    "date": "2026-02-02",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Comparative analysis reveals mitochondrial quality control as a key determinant of resistance to senolytic drugs ABT263 and ARV825, providing a framework for combination senotherapies.",
-    "url": "https://lifespan.io/news/rejuvenation-roundup-january-2026/"
-  },
-  {
-    "title": "Machine Learning Senolytic Predictor Identifies New Drug Candidates",
-    "source": "Molecules (PMC)",
-    "date": "2025-06-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "ML-based senolytic predictor identifies panaxatriol as a new senolytic agent and voclosporin as a lifespan extender in C. elegans, outperforming metformin.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12196162/"
-  },
-  {
-    "title": "Biohacking Goes Mainstream: Longevity Economy to Reach $63B by 2035",
-    "source": "LinkedIn News",
-    "date": "2025-12-19",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "LinkedIn's Big Ideas 2026 report projects the longevity economy will reach $63 billion by 2035, nearly triple its 2024 value, as biohacking tools become accessible to consumers.",
-    "url": "https://www.linkedin.com/posts/linkedin-news_bigideas2026-activity-7407849499202691072-58kM"
-  },
-  {
-    "title": "New Longevity Tech Boosts 100-Year Lifespan Prospects",
-    "source": "Milken Institute / LinkedIn",
-    "date": "2026-02-27",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Daily biometrics, smart scales, and AI companions are making it more likely that current and future generations will achieve a 100-year lifespan, per Milken Institute analysis.",
-    "url": "https://www.linkedin.com/posts/milken-institute-the-future-of-aging_so-are-we-all-going-to-live-to-100-now-activity-7433216878006657024-wiZI"
-  },
-  {
-    "title": "Stanford THRIVE Coalition Secures $34.5M from ARPA-H",
-    "source": "Longevity Technology",
-    "date": "2026-02-27",
+    "title": "Longevity Market Funding: 12 Deals Totaling $530M+ (Nov 2025 – Jan 2026)",
+    "source": "New Market Pitch",
+    "date": "2026-01-13",
     "category": "Funding",
     "importance": "normal",
-    "description": "Stanford-led THRIVE coalition receives up to $34.5M from ARPA-H to build an FDA-grade intrinsic capacity score predicting 20-year health outcomes.",
-    "url": "https://x.com/LongevityTech/status/2027452823667904874"
+    "description": "Twelve longevity pure-players raised over $530M, led by Function Health's $298M Series B. Therapies dominated deal count with mTOR and cell reprogramming bets.",
+    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-news"
   },
   {
-    "title": "Nir Barzilai: 'Looking Young Doesn't Mean You're Healthy'",
-    "source": "X / Corax News",
-    "date": "2026-03-04",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Gerontologist Nir Barzilai warns that biological age clocks can be misleading, arguing the practical question is turning average death at 80 into 35 healthy years rather than extended frailty.",
-    "url": "https://x.com/coraxnews/status/2029059261993464039"
-  },
-  {
-    "title": "NAD+ Revolution 2026: NMN, NR, and Latest Booster Research",
-    "source": "X / @argosaki",
-    "date": "2026-03-04",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Viral thread compiles 2025-2026 NAD+ supplement research including NMN vs NR comparisons, human trials, and brain health applications for Alzheimer's reversal models.",
-    "url": "https://x.com/argosaki/status/2028984210883789181"
-  },
-  {
-    "title": "5 Clinical Readouts to Watch in H1 2026",
-    "source": "BioSpace",
-    "date": "2026-01-05",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Key readouts include Eli Lilly's next-gen Alzheimer's drug remternetug and Novartis' cardiovascular candidate pelacarsen, both with major implications for aging-related disease.",
-    "url": "https://www.biospace.com/drug-development/5-clinical-readouts-to-watch-in-h1-2026"
-  },
-  {
-    "title": "Longevity Summit Dublin 2026 Opens Abstract Submissions",
-    "source": "Longevity Summit Dublin",
-    "date": "2026-03-04",
+    "title": "New Longevity Tech Boosts 100-Year Lifespan Prospects — Milken Institute",
+    "source": "LinkedIn / Milken Institute",
+    "date": "2026-02-27",
     "category": "Industry",
     "importance": "normal",
-    "description": "Longevity Summit Dublin 2026 opens poster abstract submissions for aging science research, taking place July 2-4 at Trinity College Dublin.",
-    "url": "https://x.com/LongevityDublin/status/2029165092747481327"
+    "description": "The Milken Institute Future of Aging highlights how emerging longevity technologies are rewriting the rules of aging with potential for 100-year lifespans.",
+    "url": "https://www.linkedin.com/posts/milken-institute-the-future-of-aging_so-are-we-all-going-to-live-to-100-now-activity-7433"
   },
   {
-    "title": "Rapamycin for Longevity: Comprehensive Pros, Cons, and Future Perspectives",
-    "source": "Frontiers in Aging",
-    "date": "2025-06-19",
+    "title": "Longevity Investing in 2026: A Strategic Guide for Family Offices",
+    "source": "LinkedIn",
+    "date": "2026-02-14",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "2026 marks a critical inflection point where scientific advances converge with growing economic recognition of longevity's potential — a strategic guide for family office investors.",
+    "url": "https://www.linkedin.com/pulse/longevity-investing-2026-strategic-guide-family-tm01f"
+  },
+  {
+    "title": "Former Zomato CEO Backs Temple-Worn Wearable to Track Brain Blood Flow",
+    "source": "Longevity Technology",
+    "date": "2026-03-03",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Former Zomato CEO invests in a temple-worn wearable tracking brain blood flow, signaling a shift from food tech to human performance and longevity monitoring.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "ERG Phase Separation in Centenarian Immune Cells Attenuates Cellular Senescence",
+    "source": "Fight Aging! / Aging",
+    "date": "2026-03-05",
     "category": "Research",
     "importance": "normal",
-    "description": "Comprehensive review finds rapamycin extends mouse lifespan 9-14% from mid-life, but the PEARL trial shows only modest biomarker changes in humans. Timing and dosing remain critical open questions.",
-    "url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1628187/full"
+    "description": "Centenarian immune cells show unique chromatin accessibility; ERG transcription factor forms condensates that reduce senescence genes like CDKN2A — a potential anti-aging mechanism.",
+    "url": "https://www.fightaging.org"
+  },
+  {
+    "title": "Cholesterol Paradox: Business Implications of Biomarker Research in Aging Populations",
+    "source": "X / Longevity Community",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "New discussion on the cholesterol paradox and its implications for the longevity economy, challenging traditional statin strategies for aging populations.",
+    "url": "https://x.com/_MyRealName_/status/2029414278663471113"
   }
 ]
