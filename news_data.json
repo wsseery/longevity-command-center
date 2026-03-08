@@ -1,227 +1,227 @@
 [
   {
-    "title": "ARPA-H Awards $144M Across 7 Teams for PROSPR Healthy Aging Initiative",
-    "source": "Forbes",
-    "date": "2026-02-25",
+    "title": "ARPA-H PROSPR Program Awards $144M to Seven Teams Targeting Aging",
+    "source": "ARPA-H",
+    "date": "2026-02-24",
     "category": "Funding",
     "importance": "high",
-    "description": "Federal government awards up to $144M in five-year contracts to universities and research teams studying age-related illnesses through the PROSPR program, including first Phase 3 trial targeting aging itself.",
-    "url": "https://www.forbes.com/sites/michaeltnietzel/2026/02/25/7-research-teams-awarded-144-million-to-study-age-related-illnesses/"
+    "description": "ARPA-H announced seven research teams funded through its PROSPR program, investing up to $144M to develop tools and therapies for extending healthspan, including the first Phase 3 clinical trials targeting aging with rapamycin, SGLT2 inhibitors, and semaglutide.",
+    "url": "https://arpa-h.gov/news-and-events/research-teams-add-more-healthy-years-americans-lives-they-age"
   },
   {
-    "title": "First Phase 3 Aging Trial: Rapamycin, SGLT2i, and Semaglutide Selected for VITAL-H Trial",
-    "source": "Rapamycin News / EurekAlert",
+    "title": "First Phase 3 Clinical Trial in Aging: Rapamycin, SGLT2i, and GLP-1 Selected",
+    "source": "Rapamycin News",
     "date": "2026-02-27",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "UT Health San Antonio launches the first Phase 3 clinical trial targeting aging in healthy adults 60-65, testing rapamycin, dapagliflozin, and semaglutide with up to $38M ARPA-H funding.",
+    "description": "UT Health San Antonio will launch the VITAL-H Trial backed by $38M in ARPA-H funding, testing rapamycin, dapagliflozin, and semaglutide in healthy adults aged 60-65 in the first nationwide Phase 3 study focused on healthy longevity.",
     "url": "https://www.rapamycin.news/t/time-rapa-sglt2i-and-glpa-chosen-for-first-phase-3-clinical-trial-in-aging/23772"
   },
   {
-    "title": "Brown University Wins $22M ARPA-H Award to Test HIV Drug Censavudine for Slowing Aging",
-    "source": "Brown University",
-    "date": "2026-02-24",
+    "title": "Life Biosciences Clears FDA for First Human Cellular Reprogramming Trial",
+    "source": "Lifespan.io",
+    "date": "2026-02-06",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Multi-institution trial will test whether Censavudine can reduce DNA-triggered inflammation to slow aging in 200+ healthy adults aged 60-65 over 48 weeks.",
+    "description": "Life Biosciences received FDA IND clearance for ER-100, the first-ever human trial of partial epigenetic reprogramming technology, targeting vision loss from glaucoma and NAION. Patient enrollment began in March.",
+    "url": "https://lifespan.io/news/first-human-cellular-reprogramming-trial-cleared-by-the-fda/"
+  },
+  {
+    "title": "$22M Federal Award to Study HIV Drug Censavudine for Slowing Aging",
+    "source": "Brown University",
+    "date": "2026-02-24",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Brown University and University of Rochester will lead a clinical trial testing whether Censavudine, an HIV drug, can suppress retrotransposon activity and reduce biological aging in 200 healthy adults aged 60-65 over 48 weeks.",
     "url": "https://www.brown.edu/news/2026-02-24/aging-research-arpa"
   },
   {
-    "title": "FDA Clears Life Biosciences ER-100 Epigenetic Reprogramming for Phase 1 Human Trial",
-    "source": "Nature Biotechnology / MIT Technology Review",
-    "date": "2026-02-17",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "First partial epigenetic reprogramming therapy cleared for human trials, using OCT-4, SOX-2, and KLF-4 transcription factors to reverse cellular aging in eye disease patients.",
-    "url": "https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/"
-  },
-  {
-    "title": "Cambrian Bio Awarded $30.8M ARPA-H PROSPR Funding for mTORC1-Selective Inhibitor",
-    "source": "Longevity Technology",
-    "date": "2026-02-26",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Cambrian Bio receives $30.8M to test a next-gen mTORC1-selective inhibitor for preserving intrinsic capacity in older adults, part of the broader PROSPR initiative.",
-    "url": "https://longevity.technology/news/30-8m-funds-cambrian-bios-bid-to-preserve-resilience-in-aging/"
-  },
-  {
-    "title": "NIH: Manipulating Transcription Factors Reverses Aging in Mice",
-    "source": "NIH",
-    "date": "2026-02-24",
-    "category": "Research",
-    "importance": "high",
-    "description": "UCSF researchers identified four transcription factors (EZH2, E2F3, STAT3, ZFX) that reversed age-related gene changes in fibroblasts and improved health in old mice.",
-    "url": "https://www.nih.gov/news-events/nih-research-matters/manipulating-gene-activity-reverse-aging"
-  },
-  {
-    "title": "Shingles Vaccine May Slow Biological Aging and Reduce Inflammation",
-    "source": "ScienceDaily",
-    "date": "2026-02-26",
-    "category": "Research",
-    "importance": "high",
-    "description": "Study of 3,800+ Americans age 70+ found shingles vaccine recipients showed slower biological aging, suggesting vaccines may have broader anti-aging effects.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Popular Brain Supplement Tyrosine Linked to Shorter Lifespan in Men",
-    "source": "ScienceDaily",
-    "date": "2026-02-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Study of 270,000+ people found higher levels of tyrosine, a common amino acid supplement, linked to shorter lifespan in men.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Longeveron Phase 2b Stem Cell Therapy for Frailty Published in Cell Stem Cell",
-    "source": "Longeveron",
+    "title": "Columbia University Joins ARPA-H PROSPR to Identify Aging Biomarkers",
+    "source": "Columbia Mailman School",
     "date": "2026-02-25",
-    "category": "Clinical Trials",
+    "category": "Research",
     "importance": "high",
-    "description": "Phase 2b results show stem cell therapy improved physical function in patients with age-related frailty, published in Cell Stem Cell.",
-    "url": "https://investors.longeveron.com/news/News/news-details/2026/Longeveron-Results-of-Phase-2b-Clinical-Trial-Demonstrating-Stem-Cell-Therapy-Improved-Condition-of-Patients-with-Age-Related-Frailty-Published-in-Cell-Stem-Cell/default.aspx"
+    "description": "Columbia's FAST project will analyze data from completed clinical trials of metformin, SGLT-2 inhibitors, GLP-1 agonists, and rapamycin to discover novel biomarkers revealing how these drugs affect aging biology.",
+    "url": "https://www.publichealth.columbia.edu/news/arpa-h-contract-advance-science-healthy-aging"
   },
   {
-    "title": "Anti-Aging Market Targeting $420B; Klothonova Advances Alpha-Klotho Production",
-    "source": "PR Newswire",
-    "date": "2026-03-03",
-    "category": "Industry",
+    "title": "Fat Composition Found to Affect T Cell-Mediated Immunity in Aging",
+    "source": "Lifespan.io",
+    "date": "2026-03-06",
+    "category": "Research",
     "importance": "normal",
-    "description": "Anti-aging market projected to surpass $420B by 2030. Klothonova achieves GMP production milestone for alpha-Klotho longevity protein therapeutic development.",
-    "url": "https://www.prnewswire.com/news-releases/investors-eye-explosive-growth-in-anti-aging-therapies-as-market-targets-420b-milestone-302701578.html"
+    "description": "Scientists discovered that the ratio between poly- and monounsaturated fatty acids affects T cell viability and both humoral and cellular immunity, with implications for aging immune function.",
+    "url": "https://lifespan.io/news/fat-composition-affects-t-cell-mediated-immunity/"
+  },
+  {
+    "title": "More Confirming Data for Adult Human Neurogenesis",
+    "source": "Fight Aging!",
+    "date": "2026-03-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "New evidence confirms that new neurons are generated in the adult human brain and integrate into existing neural networks, resolving a long-standing debate in neuroscience with implications for aging and cognitive decline.",
+    "url": "https://www.fightaging.org/archives/2026/03/more-confirming-data-for-adult-human-neurogenesis/"
+  },
+  {
+    "title": "Rejuvenation Roundup February 2026: Senolytic Effectiveness and NK Cell Restoration",
+    "source": "Lifespan.io",
+    "date": "2026-03-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Monthly roundup highlights research on mitochondrial stress boosting senolytic effectiveness (Nature Aging) and restoring aged natural killer cells' ability to eliminate harmful cells (Aging Cell).",
+    "url": "https://lifespan.io/news/rejuvenation-roundup-february-2026/"
   },
   {
     "title": "Insilico Medicine and Liquid AI Launch Secure AI for Drug Research",
     "source": "Longevity Technology",
     "date": "2026-03-06",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Insilico Medicine partners with Liquid AI to launch a secure, lightweight AI system to streamline drug research and development pipelines.",
-    "url": "https://longevity.technology"
-  },
-  {
-    "title": "Immunis Secures US/EU Rights for Parkinson's Dyskinesia Drug TRK-820",
-    "source": "Longevity Technology",
-    "date": "2026-03-06",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Exclusive licensing deal gives Immunis rights to advance TRK-820 for L-dopa-induced dyskinesia in Parkinson's patients across US and Europe.",
-    "url": "https://longevity.technology"
-  },
-  {
-    "title": "Circadian Disruption Linked to Inflammatory Microglia; EV Therapy Funded",
-    "source": "Longevity Technology",
-    "date": "2026-03-06",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Animal research connects circadian disruption with inflammatory brain microglia, while new funding explores extracellular vesicle therapy for neurodegeneration.",
-    "url": "https://longevity.technology"
-  },
-  {
-    "title": "AI Platform Combines Blood Biomarkers and Lifestyle Data for Personalized Aging Insights",
-    "source": "Longevity Technology",
-    "date": "2026-03-06",
     "category": "Industry",
     "importance": "normal",
-    "description": "New platform uses blood biomarkers, lifestyle data, and AI to give individuals personalized insights on aging rate and chronic disease risk.",
+    "description": "Insilico Medicine partnered with Liquid AI to launch a secure, lightweight AI platform designed to streamline drug research and development in the longevity space.",
     "url": "https://longevity.technology"
   },
   {
-    "title": "WHOOP Joins $34.5M Initiative to Develop FDA-Grade Intrinsic Capacity Score",
-    "source": "Longevity Technology",
-    "date": "2026-03-04",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Wearable company WHOOP partners in $34.5M effort to develop the first FDA-grade Intrinsic Capacity score to predict healthspan using wearable data.",
-    "url": "https://longevity.technology"
-  },
-  {
-    "title": "Rejuvenation Roundup February 2026: Senolytics, NK Cells, and SIRT6",
-    "source": "Lifespan.io",
-    "date": "2026-03-02",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Monthly roundup covering mitochondrial stress boosting senolytic effectiveness, NK cell restoration, SIRT6 brain protection, and AI diagnostic breakthroughs.",
-    "url": "https://lifespan.io/news/rejuvenation-roundup-february-2026/"
-  },
-  {
-    "title": "Buntanetap Late-Stage Trial Advances Toward FDA Milestone for Alzheimer's",
-    "source": "Longevity Technology",
-    "date": "2026-03-04",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Late-stage buntanetap clinical trial progresses toward FDA regulatory milestone in effort to slow Alzheimer's and dementia progression.",
-    "url": "https://longevity.technology"
-  },
-  {
-    "title": "Buck Institute Launches Federated Healthspan Data Initiative",
+    "title": "GMP Production Begins for Scalable Anti-Aging 'Longevity Protein' Therapy",
     "source": "Longevity Technology",
     "date": "2026-03-05",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Buck Institute launches federated data initiative linking everyday health signals with aging biology to detect disease earlier across populations.",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Production has begun under GMP standards to support a scalable anti-aging therapy built around the so-called longevity protein, marking a key manufacturing milestone for translational longevity medicine.",
     "url": "https://longevity.technology"
   },
   {
-    "title": "Rhonda Patrick: Ultra-Processed Foods in Children Worsen Behavioral Outcomes",
-    "source": "FoundMyFitness (X/Twitter)",
+    "title": "Circadian Disruption Linked to Inflammatory Microglia in Aging Brain",
+    "source": "Longevity Technology",
     "date": "2026-03-06",
-    "category": "Protocols",
+    "category": "Research",
     "importance": "normal",
-    "description": "Research shared by Rhonda Patrick shows children eating more UPFs at age 3 had higher anxiety, depression, and aggression by age 5. Replacing 10% of UPFs improved scores.",
-    "url": "https://x.com/foundmyfitness/status/2030043260618670473"
+    "description": "Animal research connects circadian disruption with inflammatory microglia, while new funding explores extracellular vesicle therapy for age-related neurodegeneration.",
+    "url": "https://longevity.technology"
   },
   {
-    "title": "Rhonda Patrick: Diet Quality Directly Shapes Sleep Architecture",
-    "source": "FoundMyFitness (X/Twitter)",
+    "title": "New AI Platform Combines Blood Biomarkers and Lifestyle Data for Personalized Aging Insights",
+    "source": "Longevity Technology",
+    "date": "2026-03-06",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A new platform combines blood biomarkers, lifestyle data, and AI to give people personalized insights on biological aging and chronic disease risk.",
+    "url": "https://longevity.technology"
+  },
+  {
+    "title": "Longevity Innovation Forum Launching in San Diego, March 11-12",
+    "source": "Lifespan.io",
+    "date": "2026-02-13",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Longevity Global will host the inaugural Longevity Innovation Forum in San Diego, bringing together scientists, clinicians, biotech founders, and investors advancing healthy aging research.",
+    "url": "https://lifespan.io/news/longevity-innovation-forum-in-san-diego/"
+  },
+  {
+    "title": "Novel Mechanism for Parkinson's Linked to ATP Deficiency",
+    "source": "Lifespan.io",
+    "date": "2026-03-03",
+    "category": "Research",
+    "importance": "normal",
+    "description": "ATP deficiency disrupts dopamine processing in synapses, leading to accumulation of harmful protein species that characterize Parkinson's disease, revealing a new therapeutic target.",
+    "url": "https://lifespan.io/news/novel-mechanism-for-parkinsons-is-linked-to-atp-deficiency/"
+  },
+  {
+    "title": "Microbiome Depletion Rejuvenates the Aging Brain",
+    "source": "Fight Aging!",
+    "date": "2026-03-05",
+    "category": "Research",
+    "importance": "high",
+    "description": "New research published in the Fight Aging! archives shows that microbiome depletion can rejuvenate the aging brain, suggesting gut-brain axis interventions as a potential anti-aging strategy.",
+    "url": "https://www.fightaging.org/archives/2026/03/"
+  },
+  {
+    "title": "Longevity Biotech Stocks Surge as $27 Trillion Healthcare Shift Favors Cell Restoration",
+    "source": "PR Newswire",
+    "date": "2026-01-29",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Global capital is rotating into 'Longevity Infrastructure' valued at $27T by 2030, with cell therapy markets hitting $8.85B by 2026 and AI-driven drug discovery accelerating to $24.51B.",
+    "url": "https://www.prnewswire.com/news-releases/longevity-biotech-stocks-surge-as-27-trillion-healthcare-shift-favors-cell-restoration-302674367.html"
+  },
+  {
+    "title": "Longevity Market: 81 Funding Deals Tracked in Comprehensive Database",
+    "source": "New Market Pitch",
+    "date": "2026-02-18",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "A comprehensive database tracking 81 longevity funding deals highlights Retro Biosciences' $1B raise in Q1 2025 as the largest single round since Altos Labs' $3B launch.",
+    "url": "https://newmarketpitch.com/blogs/news/longevity-list-deals"
+  },
+  {
+    "title": "David Sinclair at World Government Summit: 'Ageing Could Soon Be Reversible'",
+    "source": "World Governments Summit",
+    "date": "2026-02-04",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Harvard scientist David Sinclair presented at WGS 2026, explaining that aging is driven by chemical changes in DNA rather than irreversible damage, with reversal now within scientific reach.",
+    "url": "https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026"
+  },
+  {
+    "title": "Longevity Investing in 2026: Strategic Guide for Family Offices",
+    "source": "LinkedIn",
+    "date": "2026-02-06",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "The longevity biotech market is valued at $30.7B in 2026, projected to reach $52.8B by 2035 at 6.5% CAGR, with epigenetic reprogramming, senolytics, and AI-driven drug discovery driving growth.",
+    "url": "https://www.linkedin.com/pulse/longevity-investing-2026-strategic-guide-family-offices-zanev-qf75f"
+  },
+  {
+    "title": "Rhonda Patrick: Diet Directly Shapes Sleep Quality Through Fiber and Plant Diversity",
+    "source": "X (@FoundMyFitness)",
     "date": "2026-03-04",
     "category": "Protocols",
     "importance": "normal",
-    "description": "Higher-fiber, plant-diverse days yield more deep and REM sleep. Processed foods and saturated fat increase nighttime wakefulness and reduce sleep quality.",
+    "description": "Dr. Rhonda Patrick shared research showing higher-fiber, plant-diverse days produce more deep and REM sleep with lower overnight heart rate, while processed foods worsen sleep quality.",
     "url": "https://x.com/foundmyfitness/status/2029273849397952567"
   },
   {
-    "title": "Rhonda Patrick: Visceral Fat Increases Cancer Risk by 44%",
-    "source": "FoundMyFitness (X/Twitter)",
-    "date": "2026-03-03",
+    "title": "ERG Phase Separation Attenuates Cellular Senescence",
+    "source": "Fight Aging!",
+    "date": "2026-03-04",
     "category": "Research",
     "importance": "normal",
-    "description": "Higher visceral fat linked to 44% increased risk of colon, pancreatic, and liver cancers. People with high abdominal fat ~2x more likely to die early.",
-    "url": "https://x.com/foundmyfitness/status/2028971550960136283"
+    "description": "New research explores how ERG phase separation mechanisms can attenuate cellular senescence, offering potential new therapeutic targets for age-related disease.",
+    "url": "https://www.fightaging.org/archives/2026/03/"
   },
   {
-    "title": "Stanford Hosting Valter Longo on Fasting-Mimicking Diets, March 11",
-    "source": "Stanford Dept. of Medicine (X/Twitter)",
-    "date": "2026-03-05",
+    "title": "AI-Driven Senolytic Predictor Discovers Novel Compounds Including Panaxatriol",
+    "source": "Molecules / PubMed",
+    "date": "2026-03-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Machine learning-based senolytic predictor identified panaxatriol and voclosporin as potential anti-aging compounds, with voclosporin extending C. elegans lifespan more effectively than metformin.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12196162/"
+  },
+  {
+    "title": "Stanford MGR Features Valter Longo on Fasting-Mimicking Diets and Longevity",
+    "source": "Stanford Dept. of Medicine",
+    "date": "2026-03-06",
     "category": "Protocols",
     "importance": "normal",
-    "description": "Stanford Medicine announces event with USC gerontology professor Valter Longo discussing fasting-mimicking diets and longevity research.",
+    "description": "Stanford Medicine hosts USC gerontology professor Valter Longo on March 11 to discuss fasting-mimicking diets and longevity research for transforming healthy aging and disease prevention.",
     "url": "https://x.com/StanfordDeptMed/status/2029704883285413996"
   },
   {
-    "title": "UConn Center on Aging Joins National ARPA-H Aging Research Consortium",
-    "source": "University of Connecticut",
-    "date": "2026-02-27",
-    "category": "Clinical Trials",
+    "title": "Rhonda Patrick: UPF Consumption in Early Life Linked to Worse Behavioral Outcomes",
+    "source": "X (@FoundMyFitness)",
+    "date": "2026-03-06",
+    "category": "Protocols",
     "importance": "normal",
-    "description": "UConn joins the Rochester-led national consortium testing whether reducing LINE-1 retrotransposon activity can preserve mobility, cognition, and vitality in aging.",
-    "url": "https://today.uconn.edu/2026/02/aging-research-in-u-s-accelerated-by-major-arpa-h-contract/"
+    "description": "Dr. Rhonda Patrick highlighted research showing children consuming more ultra-processed foods at age 3 had higher anxiety, depression, and aggression by age 5, with 10% UPF replacement showing improvements.",
+    "url": "https://x.com/foundmyfitness/status/2030043260618670473"
   },
   {
-    "title": "What's New in Life Science, FemTech & Longevity -- February 2026",
-    "source": "LinkedIn",
-    "date": "2026-03-03",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Monthly overview of biotech, healthtech, and longevity developments for February 2026, including FDA-cleared cellular reprogramming and AI diagnostics advances.",
-    "url": "https://www.linkedin.com/pulse/whats-new-life-science-femtech-longevity-february-2026-oksana-krykun-ialve"
-  },
-  {
-    "title": "AgeXtend: AI Platform Predicts Geroprotective Potential of Compounds",
-    "source": "Nature Aging",
-    "date": "2024-12-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "AI-based multimodal geroprotector prediction platform leverages bioactivity data to predict geroprotective potential, assess toxicity, and identify target proteins.",
-    "url": "https://www.semanticscholar.org/paper/Discovering-geroprotectors-through-the-explainable-Arora-Mittal/71212b68476b0a0f50a3f5541dca4685eb43fe0c"
+    "title": "NewLimit Raises $130M to Push Epigenetic Reprogramming Toward Humans",
+    "source": "X (Social)",
+    "date": "2026-03-08",
+    "category": "Funding",
+    "importance": "high",
+    "description": "NewLimit secured $130M in funding to advance epigenetic reprogramming technology toward human applications, as the convergence of mitochondria and epigenetics research accelerates.",
+    "url": "https://x.com/turaiantonson/status/2030571764749881348"
   }
 ]
