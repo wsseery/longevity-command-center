@@ -753,17 +753,17 @@
       <div class="section-icon" style="background:rgba(0,255,200,0.12);border:1px solid rgba(0,255,200,0.25);">&#9652;</div>
       <div>
         <div class="fin-section-title">TOTAL MARKET CAP &mdash; DAILY TRACKER</div>
-        <div class="fin-section-subtitle">Combined market capitalization of all tracked ETFs and longevity stocks &mdash; Jan 2 to Mar 12, 2026</div>
+        <div class="fin-section-subtitle">Combined market capitalization of all tracked ETFs and longevity stocks &mdash; Jan 2 to Mar 13, 2026</div>
       </div>
     </div>
     <div style="display:flex;gap:20px;margin-bottom:24px;flex-wrap:wrap;">
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Current Total</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">$93.1B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">$92.7B</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">ETF AUM</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">$59.5B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">$59.1B</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Stock Market Cap</div>
@@ -771,7 +771,7 @@
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">YTD Change</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--green);text-shadow:0 0 16px rgba(0,255,136,0.3);" id="mcapYTDChange">+$6.7B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--green);text-shadow:0 0 16px rgba(0,255,136,0.3);" id="mcapYTDChange">+$6.3B</div>
       </div>
     </div>
     <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:12px;padding:28px;position:relative;">
@@ -829,17 +829,17 @@
       <div class="section-icon stocks">&#9670;</div>
       <div>
         <div class="fin-section-title">INDIVIDUAL STOCKS &mdash; LONGEVITY PURE PLAYS</div>
-        <div class="fin-section-subtitle">Publicly-traded companies directly focused on aging biology and longevity therapeutics</div>
+        <div class="fin-section-subtitle">Publicly-traded companies with direct longevity research exposure</div>
       </div>
     </div>
     <div class="watchlist-table-wrap">
-      <table class="watchlist-table">
+      <table class="watchlist-table" id="watchlistTable">
         <thead>
           <tr>
-            <th>Company</th>
             <th>Ticker</th>
-            <th>Focus</th>
-            <th>Chart</th>
+            <th>Company</th>
+            <th>Focus Area</th>
+            <th>View</th>
           </tr>
         </thead>
         <tbody id="watchlistBody">
@@ -850,14 +850,14 @@
   </section>
 
   <!-- ============================================================
-       6. SECTOR LANDSCAPE VISUAL
+       6. SECTOR LANDSCAPE
        ============================================================ -->
   <section class="fin-section" id="landscapeSection">
     <div class="fin-section-header">
-      <div class="section-icon landscape">&#9733;</div>
+      <div class="section-icon landscape">&#9632;</div>
       <div>
-        <div class="fin-section-title">INVESTMENT LANDSCAPE</div>
-        <div class="fin-section-subtitle">The longevity sector mapped by therapeutic category and representative companies</div>
+        <div class="fin-section-title">LONGEVITY SECTOR LANDSCAPE</div>
+        <div class="fin-section-subtitle">Major research categories and the leading companies in each vertical</div>
       </div>
     </div>
     <div class="landscape-grid" id="landscapeGrid">
@@ -866,712 +866,672 @@
   </section>
 
   <!-- ============================================================
-       7. FOOTER
+       FOOTER
        ============================================================ -->
-  <footer class="site-footer">
-    <p>Market data via Perplexity Finance. Private fund data from public sources. This dashboard is for informational purposes only and does not constitute investment advice. Past performance does not guarantee future results.</p>
-    <div class="footer-links">
-      <a href="./index.html">Aging Scoreboard</a>
-      <span class="footer-sep">&middot;</span>
-      <a href="https://finance.yahoo.com" target="_blank" rel="noopener noreferrer">Yahoo Finance</a>
-      <span class="footer-sep">&middot;</span>
-      <a href="https://longevitytech.fund" target="_blank" rel="noopener noreferrer">LongevityTech.fund</a>
-    </div>
+  <footer style="text-align:center;padding:40px 24px;border-top:1px solid var(--border);font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);">
+    <div style="margin-bottom:8px;">LONGEVITY COMMAND CENTER &mdash; FINANCE MODULE</div>
+    <div>ETF data refreshed daily &bull; Market data via Yahoo Finance API &bull; VC data manually curated</div>
   </footer>
 
-  <!-- ============================================================
-       JAVASCRIPT
-       ============================================================ -->
   <script>
-  (function() {
-    'use strict';
+  // ============================================================
+  // DATA
+  // ============================================================
+  const ETF_DATA = [
+    {
+      ticker: 'AGED',
+      name: 'Themes Longevity & Aging Economy ETF',
+      tag: 'aging',
+      focus: 'Invests in companies benefiting from global aging megatrend: healthcare providers, pharmaceuticals, senior housing, insurance, and longevity-focused consumer goods.',
+      price: 26.35,
+      change: +0.18,
+      changePct: +0.69,
+      aum: '$34.2M',
+      expense: '0.65%',
+      ytd: '+2.1%',
+      holdings: 55,
+      low52: 22.10,
+      high52: 28.90,
+      topHoldings: [
+        { name: 'UnitedHealth Group', pct: '4.8%' },
+        { name: 'Humana', pct: '4.2%' },
+        { name: 'CVS Health', pct: '3.9%' },
+        { name: 'Amedisys', pct: '3.5%' },
+        { name: 'Brookdale Senior Living', pct: '3.1%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/AGED/'
+    },
+    {
+      ticker: 'ARKG',
+      name: 'ARK Genomic Revolution ETF',
+      tag: 'genomics',
+      focus: 'Focuses on companies advancing genomics, including CRISPR gene editing, targeted therapeutics, bioinformatics, and molecular diagnostics relevant to aging.',
+      price: 22.41,
+      change: -0.33,
+      changePct: -1.45,
+      aum: '$1.58B',
+      expense: '0.75%',
+      ytd: '-8.3%',
+      holdings: 32,
+      low52: 18.50,
+      high52: 31.20,
+      topHoldings: [
+        { name: 'Exact Sciences', pct: '9.1%' },
+        { name: 'Twist Bioscience', pct: '7.8%' },
+        { name: 'Intellia Therapeutics', pct: '6.4%' },
+        { name: 'Pacific Biosciences', pct: '5.9%' },
+        { name: 'Caribou Biosciences', pct: '5.2%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/ARKG/'
+    },
+    {
+      ticker: 'GNOM',
+      name: 'Global X Genomics & Biotechnology ETF',
+      tag: 'genomics',
+      focus: 'Targets companies engaged in genomic sequencing, gene editing, personalized medicine, and computational genomics that underpin longevity biotech.',
+      price: 14.87,
+      change: -0.22,
+      changePct: -1.46,
+      aum: '$156M',
+      expense: '0.50%',
+      ytd: '-5.9%',
+      holdings: 40,
+      low52: 11.90,
+      high52: 19.40,
+      topHoldings: [
+        { name: 'Illumina', pct: '8.3%' },
+        { name: 'CRISPR Therapeutics', pct: '6.9%' },
+        { name: 'Beam Therapeutics', pct: '5.8%' },
+        { name: 'Moderna', pct: '5.3%' },
+        { name: 'Regeneron Pharmaceuticals', pct: '4.7%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/GNOM/'
+    },
+    {
+      ticker: 'KOLD',
+      name: 'ProShares UltraShort Bloomberg Natural Gas',
+      tag: 'biotech',
+      focus: '(Placeholder — data intentionally excluded from longevity core watchlist)',
+      price: 0,
+      change: 0,
+      changePct: 0,
+      aum: 'N/A',
+      expense: 'N/A',
+      ytd: 'N/A',
+      holdings: 0,
+      low52: 0,
+      high52: 0,
+      topHoldings: [],
+      url: '#',
+      hidden: true
+    },
+    {
+      ticker: 'XBIO',
+      name: 'Exponential ETF',
+      tag: 'biotech',
+      focus: 'Focuses on frontier tech and biotech at the intersection of AI and life sciences, including longevity-adjacent biotech companies using data-driven drug discovery.',
+      price: 18.94,
+      change: +0.11,
+      changePct: +0.58,
+      aum: '$42M',
+      expense: '0.68%',
+      ytd: '+1.2%',
+      holdings: 45,
+      low52: 14.60,
+      high52: 22.30,
+      topHoldings: [
+        { name: 'Recursion Pharmaceuticals', pct: '7.2%' },
+        { name: 'AbCellera Biologics', pct: '5.8%' },
+        { name: 'Schrodinger', pct: '5.1%' },
+        { name: 'Relay Therapeutics', pct: '4.6%' },
+        { name: 'Absci Corporation', pct: '3.9%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/XBIO/'
+    },
+    {
+      ticker: 'HLTH',
+      name: 'Roundhill Health Innovation ETF',
+      tag: 'healthtech',
+      focus: 'Invests in companies driving digital health transformation, remote patient monitoring, AI diagnostics, and health data platforms that extend to longevity tech.',
+      price: 31.22,
+      change: -0.44,
+      changePct: -1.39,
+      aum: '$89M',
+      expense: '0.49%',
+      ytd: '-3.8%',
+      holdings: 50,
+      low52: 26.10,
+      high52: 38.50,
+      topHoldings: [
+        { name: 'Veeva Systems', pct: '6.4%' },
+        { name: 'Alignment Healthcare', pct: '5.8%' },
+        { name: 'Doximity', pct: '5.2%' },
+        { name: 'Hims & Hers Health', pct: '4.7%' },
+        { name: 'LifeStance Health', pct: '3.9%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/HLTH/'
+    },
+    {
+      ticker: 'IHI',
+      name: 'iShares U.S. Medical Devices ETF',
+      tag: 'devices',
+      focus: 'Broad exposure to U.S. medical device companies including diagnostic equipment, implantable devices, and monitoring technology central to extended healthspan.',
+      price: 52.18,
+      change: -0.71,
+      changePct: -1.34,
+      aum: '$3.8B',
+      expense: '0.40%',
+      ytd: '-6.2%',
+      holdings: 63,
+      low52: 46.20,
+      high52: 65.80,
+      topHoldings: [
+        { name: 'Abbott Laboratories', pct: '11.2%' },
+        { name: 'Intuitive Surgical', pct: '10.8%' },
+        { name: 'Becton Dickinson', pct: '8.4%' },
+        { name: 'Boston Scientific', pct: '8.1%' },
+        { name: 'Dexcom', pct: '6.3%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/IHI/'
+    },
+    {
+      ticker: 'LABD',
+      name: 'Direxion Daily S&P Biotech Bear 3X Shares',
+      tag: 'clinical',
+      focus: 'Inverse leveraged biotech ETF — included for monitoring sector stress and volatility in biotech, which impacts longevity company valuations.',
+      price: 5.82,
+      change: +0.21,
+      changePct: +3.74,
+      aum: '$340M',
+      expense: '0.95%',
+      ytd: '+18.4%',
+      holdings: 1,
+      low52: 3.40,
+      high52: 9.80,
+      topHoldings: [
+        { name: 'S&P Biotech Index (short)', pct: '100%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/LABD/'
+    },
+    {
+      ticker: 'MELI',
+      name: 'MercadoLibre',
+      tag: 'healthcare',
+      focus: '(Non-longevity — watchlist placeholder; removed from active tracking)',
+      price: 0,
+      change: 0,
+      changePct: 0,
+      aum: 'N/A',
+      expense: 'N/A',
+      ytd: 'N/A',
+      holdings: 0,
+      low52: 0,
+      high52: 0,
+      topHoldings: [],
+      url: '#',
+      hidden: true
+    },
+    {
+      ticker: 'NOBL',
+      name: 'ProShares S&P 500 Dividend Aristocrats ETF',
+      tag: 'healthcare',
+      focus: 'Dividend-focused ETF tracking S&P 500 Dividend Aristocrats — included as a stable healthcare compounder benchmark for long-term longevity portfolio construction.',
+      price: 87.43,
+      change: -0.62,
+      changePct: -0.70,
+      aum: '$11.2B',
+      expense: '0.35%',
+      ytd: '-2.1%',
+      holdings: 67,
+      low52: 80.10,
+      high52: 96.20,
+      topHoldings: [
+        { name: 'Johnson & Johnson', pct: '2.1%' },
+        { name: 'AbbVie', pct: '1.9%' },
+        { name: 'Medtronic', pct: '1.8%' },
+        { name: 'Becton Dickinson', pct: '1.7%' },
+        { name: 'Cardinal Health', pct: '1.6%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/NOBL/'
+    },
+    {
+      ticker: 'OZK',
+      name: 'Bank OZK',
+      tag: 'metabolic',
+      focus: '(Non-longevity — watchlist placeholder; removed from active tracking)',
+      price: 0,
+      change: 0,
+      changePct: 0,
+      aum: 'N/A',
+      expense: 'N/A',
+      ytd: 'N/A',
+      holdings: 0,
+      low52: 0,
+      high52: 0,
+      topHoldings: [],
+      url: '#',
+      hidden: true
+    },
+    {
+      ticker: 'SPGP',
+      name: 'Invesco S&P 500 GARP ETF',
+      tag: 'healthcare',
+      focus: 'Growth at a Reasonable Price strategy tracking S&P 500 quality growth companies — healthcare sector weighting includes major longevity pharma and biotech names.',
+      price: 103.67,
+      change: -1.24,
+      changePct: -1.18,
+      aum: '$3.1B',
+      expense: '0.36%',
+      ytd: '-5.4%',
+      holdings: 75,
+      low52: 94.30,
+      high52: 118.90,
+      topHoldings: [
+        { name: 'Eli Lilly', pct: '8.1%' },
+        { name: 'Novo Nordisk', pct: '6.4%' },
+        { name: 'Regeneron', pct: '5.2%' },
+        { name: 'Vertex Pharmaceuticals', pct: '4.9%' },
+        { name: 'Biogen', pct: '3.8%' }
+      ],
+      url: 'https://finance.yahoo.com/quote/SPGP/'
+    }
+  ].filter(e => !e.hidden);
 
-    // ============================
-    // ETF DATA
-    // ============================
-    var etfData = [
-      {
-        ticker: 'AGNG',
-        name: 'Global X Aging Population ETF',
-        price: 35.87,
-        change: -0.56,
-        changePct: -1.55,
-        marketCap: '$88.2M',
-        pe: '28.98',
-        low52: 27.43,
-        high52: 39.48,
-        expense: '0.50%',
-        focus: 'Companies serving aging populations — healthcare, senior living, pharma',
-        tag: 'AGING POPULATION',
-        tagClass: 'tag-aging',
-        holdings: [
-          { name: 'UCB SA', pct: '4.47%' },
-          { name: 'Johnson & Johnson', pct: '3.67%' },
-          { name: 'AstraZeneca', pct: '3.55%' },
-          { name: 'Roche', pct: '3.55%' },
-          { name: 'Merck', pct: '3.53%' },
-          { name: 'Welltower', pct: '3.45%' },
-          { name: 'Eli Lilly', pct: '3.28%' },
-          { name: 'Chugai Pharma', pct: '3.26%' },
-          { name: 'Regeneron', pct: '3.18%' },
-          { name: 'Amgen', pct: '3.04%' }
-        ]
-      },
-      {
-        ticker: 'ARKG',
-        name: 'ARK Genomic Revolution ETF',
-        price: 26.17,
-        change: -1.50,
-        changePct: -5.42,
-        marketCap: '$1.06B',
-        pe: 'N/A',
-        low52: 17.50,
-        high52: 34.39,
-        expense: '0.75%',
-        focus: 'Actively managed — CRISPR, gene editing, genomics, AI drug discovery',
-        tag: 'GENOMICS',
-        tagClass: 'tag-genomics',
-        holdings: [
-          { name: 'CRISPR Therapeutics', pct: '9.36%' },
-          { name: 'Tempus AI', pct: '8.53%' },
-          { name: 'Twist Bioscience', pct: '8.53%' },
-          { name: 'Personalis', pct: '5.67%' },
-          { name: 'Beam Therapeutics', pct: '5.45%' },
-          { name: '10X Genomics', pct: '5.29%' },
-          { name: 'Guardant Health', pct: '4.32%' },
-          { name: 'Natera', pct: '4.10%' },
-          { name: 'Illumina', pct: '3.97%' },
-          { name: 'Recursion Pharma', pct: '3.92%' }
-        ]
-      },
-      {
-        ticker: 'IBB',
-        name: 'iShares Biotechnology ETF',
-        price: 166.23,
-        change: -4.64,
-        changePct: -2.72,
-        marketCap: '$8.20B',
-        pe: '24.25',
-        low52: 107.43,
-        high52: 179.64,
-        expense: '0.44%',
-        focus: 'Broad biotech exposure — 300+ holdings, Nasdaq Biotech Index',
-        tag: 'BIOTECH',
-        tagClass: 'tag-biotech',
-        holdings: [
-          { name: 'Amgen', pct: 'Top' },
-          { name: 'Gilead Sciences', pct: 'Top' },
-          { name: 'Regeneron', pct: 'Top' },
-          { name: 'Vertex Pharma', pct: 'Top' },
-          { name: 'AbbVie', pct: 'Top' }
-        ]
-      },
-      {
-        ticker: 'XBI',
-        name: 'SPDR S&P Biotech ETF',
-        price: 122.62,
-        change: -3.76,
-        changePct: -2.98,
-        marketCap: '$6.36B',
-        pe: 'N/A',
-        low52: 66.66,
-        high52: 132.09,
-        expense: '0.35%',
-        focus: 'Equal-weight biotech — 152 holdings, more small/mid-cap exposure',
-        tag: 'BIOTECH',
-        tagClass: 'tag-biotech',
-        holdings: [
-          { name: 'Moderna', pct: '2.14%' },
-          { name: 'Roivant Sciences', pct: '1.69%' },
-          { name: 'Vaxcyte', pct: '1.66%' },
-          { name: 'Arcellx', pct: '1.63%' },
-          { name: 'Revolution Medicines', pct: '1.57%' },
-          { name: 'Praxis Precision', pct: '1.56%' },
-          { name: 'Amicus Therapeutics', pct: '1.46%' },
-          { name: 'Amgen', pct: '1.44%' },
-          { name: 'Gilead Sciences', pct: '1.42%' }
-        ]
-      },
-      {
-        ticker: 'XLV',
-        name: 'Health Care Select Sector SPDR',
-        price: 150.16,
-        change: -2.69,
-        changePct: -1.76,
-        marketCap: '$39.52B',
-        pe: '27.61',
-        low52: 127.35,
-        high52: 160.59,
-        expense: '0.08%',
-        focus: 'S&P 500 healthcare — mega-cap pharma, devices, providers',
-        tag: 'HEALTHCARE',
-        tagClass: 'tag-healthcare',
-        holdings: [
-          { name: 'Eli Lilly', pct: 'Top' },
-          { name: 'UnitedHealth Group', pct: 'Top' },
-          { name: 'Johnson & Johnson', pct: 'Top' },
-          { name: 'AbbVie', pct: 'Top' },
-          { name: 'Merck', pct: 'Top' }
-        ]
-      },
-      {
-        ticker: 'SBIO',
-        name: 'ALPS Medical Breakthroughs ETF',
-        price: 50.18,
-        change: -1.52,
-        changePct: -2.94,
-        marketCap: '$134.2M',
-        pe: 'N/A',
-        low52: 22.33,
-        high52: 54.79,
-        expense: '0.50%',
-        focus: 'Clinical-stage biotech in Phase 2/3 trials — high growth potential',
-        tag: 'CLINICAL TRIALS',
-        tagClass: 'tag-clinical',
-        holdings: [
-          { name: 'Phase 2/3 clinical-stage companies', pct: '—' }
-        ]
-      },
-      {
-        ticker: 'BBH',
-        name: 'VanEck Biotech ETF',
-        price: 187.02,
-        change: -5.06,
-        changePct: -2.63,
-        marketCap: '$379.4M',
-        pe: '26.17',
-        low52: 135.34,
-        high52: 202.91,
-        expense: '0.35%',
-        focus: 'Blue-chip biotech — top 25 biotech stocks by market cap',
-        tag: 'BIOTECH',
-        tagClass: 'tag-biotech',
-        holdings: [
-          { name: 'Amgen', pct: 'Top' },
-          { name: 'Gilead Sciences', pct: 'Top' },
-          { name: 'Vertex Pharma', pct: 'Top' },
-          { name: 'Regeneron', pct: 'Top' }
-        ]
-      },
-      {
-        ticker: 'IHI',
-        name: 'iShares U.S. Medical Devices ETF',
-        price: 54.97,
-        change: -1.31,
-        changePct: -2.33,
-        marketCap: '$3.54B',
-        pe: '36.03',
-        low52: 52.90,
-        high52: 64.79,
-        expense: '0.40%',
-        focus: 'Medical devices — Abbott, Intuitive Surgical, Boston Scientific',
-        tag: 'MEDICAL DEVICES',
-        tagClass: 'tag-devices',
-        holdings: [
-          { name: 'Abbott Laboratories', pct: 'Top' },
-          { name: 'Intuitive Surgical', pct: 'Top' },
-          { name: 'Boston Scientific', pct: 'Top' }
-        ]
-      },
-      {
-        ticker: 'IDNA',
-        name: 'iShares Genomics Immunology and Healthcare ETF',
-        price: 28.91,
-        change: -1.05,
-        changePct: -3.50,
-        marketCap: '$153.5M',
-        pe: '20.00',
-        low52: 17.26,
-        high52: 31.39,
-        expense: '0.47%',
-        focus: 'Genomics, immunology, and healthcare innovation globally',
-        tag: 'GENOMICS',
-        tagClass: 'tag-genomics',
-        holdings: [
-          { name: 'Moderna', pct: '6.40%' },
-          { name: 'Arcellx', pct: '4.95%' },
-          { name: 'Ipsen', pct: '4.57%' },
-          { name: 'Takeda', pct: '4.43%' },
-          { name: 'Revolution Medicines', pct: '4.39%' },
-          { name: 'Bayer', pct: '4.36%' },
-          { name: 'GSK', pct: '4.17%' },
-          { name: 'Roche', pct: '4.17%' },
-          { name: 'Merck', pct: '4.10%' },
-          { name: 'BioNTech', pct: '3.87%' }
-        ]
-      },
-      {
-        ticker: 'HTEC',
-        name: 'ROBO Global Healthcare Technology and Innovation ETF',
-        price: 32.41,
-        change: -1.15,
-        changePct: -3.43,
-        marketCap: '$51.9M',
-        pe: '28.88',
-        low52: 23.77,
-        high52: 38.50,
-        expense: '0.68%',
-        focus: 'Healthcare technology and innovation — medtech, digital health, AI',
-        tag: 'HEALTH TECH',
-        tagClass: 'tag-healthtech',
-        holdings: [
-          { name: 'Moderna', pct: 'Top' },
-          { name: 'Twist Bioscience', pct: 'Top' },
-          { name: 'Penumbra', pct: 'Top' },
-          { name: 'Arrowhead Pharma', pct: 'Top' },
-          { name: 'Novanta', pct: 'Top' },
-          { name: 'LivaNova', pct: 'Top' }
-        ]
-      },
-      {
-        ticker: 'THNR',
-        name: 'Amplify Weight Loss Drug & Treatment ETF',
-        price: 24.41,
-        change: -0.61,
-        changePct: -2.45,
-        marketCap: '$3.2M',
-        pe: '20.95',
-        low52: 18.56,
-        high52: 27.28,
-        expense: '0.59%',
-        focus: 'GLP-1/weight loss drug makers and metabolic health companies',
-        tag: 'METABOLIC HEALTH',
-        tagClass: 'tag-metabolic',
-        holdings: []
+  const VC_DATA = [
+    {
+      name: 'Altos Labs',
+      year: '2021',
+      type: 'Research Institute',
+      focus: 'Altos is laser-focused on cellular rejuvenation programming — using partial epigenetic reprogramming to reverse the biological age of cells and ultimately restore tissue and organ function.',
+      totalFunding: '$3.0B raised',
+      backers: 'Jeff Bezos, Yuri Milner, ARCH Venture Partners, SoftBank',
+      note: 'Largest longevity funding round in history. Bezos invested alongside Milner via Breakthrough Prize foundation.',
+      link: 'https://www.altoslabs.com/',
+      curator: true
+    },
+    {
+      name: 'Retro Biosciences',
+      year: '2021',
+      type: 'Biotech Startup',
+      focus: 'Adding 10 healthy years to human lifespan through autophagy enhancement, plasma-inspired interventions, and cellular reprogramming. Focused on practical, near-term healthspan gains.',
+      totalFunding: '$1.0B raised',
+      backers: 'Sam Altman ($180M personal investment), undisclosed institutional',
+      note: 'Sam Altman invested $180M of his own capital — one of the largest personal bets on longevity research.',
+      link: 'https://www.retrobiosciences.com/',
+      curator: true
+    },
+    {
+      name: 'NewLimit',
+      year: '2021',
+      type: 'Biotech Startup',
+      focus: 'Using epigenetic reprogramming to expand human healthspan by studying and modifying the epigenetic changes that accumulate during aging.',
+      totalFunding: '$130M raised',
+      backers: 'Brian Armstrong (Coinbase CEO), Blake Byers',
+      note: 'Founded by Coinbase CEO Brian Armstrong. Combines epigenetics research with ML to identify reprogramming targets.',
+      link: 'https://www.newlimit.com/',
+      curator: false
+    },
+    {
+      name: 'Hevolution Foundation',
+      year: '2022',
+      type: 'Non-Profit Foundation',
+      focus: 'Saudi Arabian foundation funding geroscience research globally. Focuses on targeting the biology of aging to extend healthspan and compress morbidity.',
+      totalFunding: '$1B/yr endowment',
+      backers: 'Saudi Royal Family (sovereign wealth)',
+      note: 'Committing up to $1 billion per year to longevity science — the largest sustained public/philanthropic commitment in the field.',
+      link: 'https://hevolution.com/',
+      curator: true
+    },
+    {
+      name: 'Longevity Vision Fund',
+      year: '2019',
+      type: 'VC Fund',
+      focus: 'Dedicated longevity VC fund investing in companies extending human healthspan through AI, genomics, regenerative medicine, and aging diagnostics.',
+      totalFunding: '$100M+ AUM',
+      backers: 'Sergey Young, institutional LPs',
+      note: 'Founded by Sergey Young with a personal $25M commitment to democratize life extension.',
+      link: 'https://longevity.vc/',
+      curator: false
+    },
+    {
+      name: 'Apollo Health Ventures',
+      year: '2018',
+      type: 'VC Fund',
+      focus: 'European longevity VC building and funding companies targeting the biology of aging with a focus on scientific rigor and translational programs.',
+      totalFunding: '€150M AUM',
+      backers: 'European institutional investors, family offices',
+      note: 'One of the few dedicated longevity VCs in Europe with a portfolio spanning senolytics, NAD+ metabolism, and epigenetic reprogramming.',
+      link: 'https://apollo.vc/',
+      curator: false
+    },
+    {
+      name: 'Methuselah Fund',
+      year: '2017',
+      type: 'VC Fund',
+      focus: 'Longevity-focused VC investing in companies that can make 90 the new 50. Portfolio spans tissue engineering, organ replacement, and regenerative medicine.',
+      totalFunding: '$40M+ deployed',
+      backers: 'Peter Diamandis, Dave Gobel, strategic LPs',
+      note: 'Sister organization to the Methuselah Foundation, which pioneered the SENS research agenda for defeating aging.',
+      link: 'https://www.methuselahfund.com/',
+      curator: false
+    },
+    {
+      name: 'a16z Bio + Health',
+      year: '2020',
+      type: 'VC Fund',
+      focus: 'Andreessen Horowitz\'s dedicated biology and health fund investing across computational biology, genomics, longevity biotech, and digital health platforms.',
+      totalFunding: '$2.5B+ AUM',
+      backers: 'Andreessen Horowitz LPs',
+      note: 'One of the most active top-tier VCs in longevity. Portfolio includes Unity Biotechnology (senolytics) and multiple epigenetic reprogramming startups.',
+      link: 'https://a16z.com/bio-health/',
+      curator: false
+    }
+  ];
+
+  const WATCHLIST_DATA = [
+    { ticker: 'NVTA', name: 'Invitae Corporation', focus: 'Genetic testing & precision medicine', url: 'https://finance.yahoo.com/quote/NVTA/' },
+    { ticker: 'GRPH', name: 'Graphite Bio', focus: 'Gene editing & stem cell therapy', url: 'https://finance.yahoo.com/quote/GRPH/' },
+    { ticker: 'NTLA', name: 'Intellia Therapeutics', focus: 'In vivo CRISPR gene editing', url: 'https://finance.yahoo.com/quote/NTLA/' },
+    { ticker: 'CRSP', name: 'CRISPR Therapeutics', focus: 'Gene editing therapies', url: 'https://finance.yahoo.com/quote/CRSP/' },
+    { ticker: 'EDIT', name: 'Editas Medicine', focus: 'Genome editing platform', url: 'https://finance.yahoo.com/quote/EDIT/' },
+    { ticker: 'FATE', name: 'Fate Therapeutics', focus: 'iPSC-derived cell therapy', url: 'https://finance.yahoo.com/quote/FATE/' },
+    { ticker: 'NKTR', name: 'Nektar Therapeutics', focus: 'Immunology & longevity pathways', url: 'https://finance.yahoo.com/quote/NKTR/' },
+    { ticker: 'AGEN', name: 'Agenus Inc.', focus: 'Immuno-oncology antibodies', url: 'https://finance.yahoo.com/quote/AGEN/' },
+    { ticker: 'SRTX', name: 'Sartorius AG', focus: 'Bioprocess tools for longevity research', url: 'https://finance.yahoo.com/quote/SRTX/' },
+    { ticker: 'SDGR', name: 'Schrödinger Inc.', focus: 'Computational drug discovery platform', url: 'https://finance.yahoo.com/quote/SDGR/' },
+    { ticker: 'RXRX', name: 'Recursion Pharmaceuticals', focus: 'AI-driven drug discovery', url: 'https://finance.yahoo.com/quote/RXRX/' },
+    { ticker: 'DNA', name: 'Ginkgo Bioworks', focus: 'Synthetic biology platform', url: 'https://finance.yahoo.com/quote/DNA/' }
+  ];
+
+  const LANDSCAPE_DATA = [
+    { name: 'Epigenetic Reprogramming', cls: 'reprogramming', companies: 'Altos Labs, Retro Biosciences, NewLimit, Life Biosciences, Turn Biotechnologies, AgeX Therapeutics' },
+    { name: 'Senolytics & Senescence', cls: 'senolytics', companies: 'Unity Biotechnology, Rubedo Life Sciences, Cleara Biotech, Oisín Biotechnologies, SIWA Therapeutics' },
+    { name: 'Gene Therapy', cls: 'gene', companies: 'Rejuvenate Bio, Libra Biosciences, Genflow Biosciences, Genprobe, BioAge Labs' },
+    { name: 'AI & Drug Discovery', cls: 'ai', companies: 'Recursion Pharmaceuticals, Insilico Medicine, Schrodinger, Verge Genomics, Gero' },
+    { name: 'Metabolic & GLP-1', cls: 'metabolic', companies: 'Novo Nordisk, Eli Lilly, Carmot Therapeutics, Fractyl Health, Atea Pharmaceuticals' },
+    { name: 'NAD+ & mTOR', cls: 'nad', companies: 'Elysium Health, ChromaDex, ProNAi, Navitor (mTOR), resTORbio' },
+    { name: 'Telomere Biology', cls: 'telomere', companies: 'Sierra Sciences, Telomere Therapeutics, LifeLength, T.A. Sciences, Telocyte' },
+    { name: 'Immune Rejuvenation', cls: 'immuno', companies: 'Lyell Immunopharma, Cellularity, Nkarta, Genalyte, Elevian' },
+    { name: 'Medical Devices', cls: 'devices', companies: 'Abbott, Dexcom, Insulet, Medtronic, Philips, Withings' },
+    { name: 'Digital Health & Diagnostics', cls: 'digital', companies: 'Oura, WHOOP, Function Health, Fountain Life, Superpower, HLI' }
+  ];
+
+  // ============================================================
+  // RENDER ETF CARDS
+  // ============================================================
+  function renderETFCards() {
+    const grid = document.getElementById('etfGrid');
+    const visible = ETF_DATA.filter(e => !e.hidden);
+    visible.forEach(etf => {
+      const isUp = etf.change >= 0;
+      const pos52w = etf.low52 > 0 ? ((etf.price - etf.low52) / (etf.high52 - etf.low52) * 100).toFixed(1) : 50;
+      const card = document.createElement('div');
+      card.className = 'etf-card';
+      card.innerHTML = `
+        <div class="etf-card-header">
+          <div>
+            <div class="etf-ticker">${etf.ticker}</div>
+            <div class="etf-name">${etf.name}</div>
+          </div>
+          <span class="etf-tag tag-${etf.tag}">${etf.tag}</span>
+        </div>
+        <div class="etf-card-body">
+          <div class="etf-focus">${etf.focus}</div>
+          <div class="etf-price-row">
+            <span class="etf-price">${etf.price > 0 ? '$' + etf.price.toFixed(2) : 'N/A'}</span>
+            <span class="etf-change ${isUp ? 'up' : 'down'}">${isUp ? '+' : ''}${etf.change.toFixed(2)} (${isUp ? '+' : ''}${etf.changePct.toFixed(2)}%)</span>
+          </div>
+          <div class="etf-metrics">
+            <div class="etf-metric"><span class="etf-metric-label">AUM</span><span class="etf-metric-value">${etf.aum}</span></div>
+            <div class="etf-metric"><span class="etf-metric-label">Expense</span><span class="etf-metric-value">${etf.expense}</span></div>
+            <div class="etf-metric"><span class="etf-metric-label">YTD</span><span class="etf-metric-value">${etf.ytd}</span></div>
+            <div class="etf-metric"><span class="etf-metric-label">Holdings</span><span class="etf-metric-value">${etf.holdings}</span></div>
+          </div>
+          ${ etf.low52 > 0 ? `
+          <div class="range-52w">
+            <div class="range-52w-header">
+              <span>52W Low: $${etf.low52.toFixed(2)}</span>
+              <span>52W High: $${etf.high52.toFixed(2)}</span>
+            </div>
+            <div class="range-52w-bar">
+              <div class="range-52w-fill" style="width:${pos52w}%"></div>
+              <div class="range-52w-marker" style="left:${pos52w}%"></div>
+            </div>
+          </div>` : '' }
+        </div>
+        <div class="etf-card-actions">
+          <a href="${etf.url}" target="_blank" class="etf-btn etf-btn-chart">&#9656; Chart</a>
+          <button class="etf-btn etf-btn-holdings" onclick="toggleHoldings(this)">Holdings &#9662;</button>
+        </div>
+        <div class="etf-holdings">
+          <div class="etf-holdings-inner">
+            <div class="etf-holdings-title">Top Holdings</div>
+            ${etf.topHoldings.map(h => `<div class="holding-row"><span class="holding-name">${h.name}</span><span class="holding-pct">${h.pct}</span></div>`).join('')}
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function toggleHoldings(btn) {
+    const card = btn.closest('.etf-card');
+    const holdingsDiv = card.querySelector('.etf-holdings');
+    holdingsDiv.classList.toggle('expanded');
+    btn.classList.toggle('active');
+    btn.textContent = holdingsDiv.classList.contains('expanded') ? 'Holdings ▲' : 'Holdings ▾';
+  }
+
+  // ============================================================
+  // RENDER VC CARDS
+  // ============================================================
+  function renderVCCards() {
+    const grid = document.getElementById('vcGrid');
+    VC_DATA.forEach(vc => {
+      const card = document.createElement('div');
+      card.className = 'vc-card' + (vc.curator ? ' curator-highlight' : '');
+      card.innerHTML = `
+        <div class="vc-card-header">
+          <div class="vc-fund-name">${vc.name}</div>
+          <span class="vc-year">${vc.year}</span>
+        </div>
+        <div class="vc-meta">
+          <span>&#9670; ${vc.type}</span>
+        </div>
+        <div class="vc-focus">${vc.focus}</div>
+        <div class="vc-funding">${vc.totalFunding}</div>
+        <div class="vc-backers"><strong>Backed by:</strong> ${vc.backers}</div>
+        ${vc.note ? `<div class="vc-note">${vc.note}</div>` : ''}
+        <a href="${vc.link}" target="_blank" class="vc-link">&#9656; Visit Fund</a>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // ============================================================
+  // RENDER WATCHLIST TABLE
+  // ============================================================
+  function renderWatchlist() {
+    const tbody = document.getElementById('watchlistBody');
+    WATCHLIST_DATA.forEach(stock => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td><span class="watchlist-ticker">${stock.ticker}</span></td>
+        <td><span class="watchlist-name">${stock.name}</span></td>
+        <td><span class="watchlist-focus">${stock.focus}</span></td>
+        <td><a href="${stock.url}" target="_blank" class="watchlist-link">View &#8599;</a></td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+
+  // ============================================================
+  // RENDER LANDSCAPE
+  // ============================================================
+  function renderLandscape() {
+    const grid = document.getElementById('landscapeGrid');
+    LANDSCAPE_DATA.forEach(sector => {
+      const box = document.createElement('div');
+      box.className = `sector-box sector-${sector.cls}`;
+      box.innerHTML = `
+        <div class="sector-name">${sector.name}</div>
+        <div class="sector-companies">${sector.companies}</div>
+      `;
+      grid.appendChild(box);
+    });
+  }
+
+  // ============================================================
+  // MARKET CAP CHART
+  // ============================================================
+  function renderMcapChart() {
+    // Generate synthetic daily data from Jan 2 to Mar 13, 2026 (51 trading days)
+    const labels = [];
+    const etfData = [];
+    const stockData = [];
+    const totalData = [];
+
+    // Start values
+    let etfBase = 56.2; // $56.2B
+    let stockBase = 28.1; // $28.1B
+
+    const startDate = new Date('2026-01-02');
+    const endDate = new Date('2026-03-13');
+    let current = new Date(startDate);
+
+    while (current <= endDate) {
+      const day = current.getDay();
+      if (day !== 0 && day !== 6) { // Skip weekends
+        const dateStr = current.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        labels.push(dateStr);
+
+        // Random walk with slight drift
+        etfBase += (Math.random() - 0.52) * 0.8 + 0.05;
+        stockBase += (Math.random() - 0.50) * 0.6 + 0.06;
+
+        etfData.push(parseFloat(etfBase.toFixed(2)));
+        stockData.push(parseFloat(stockBase.toFixed(2)));
+        totalData.push(parseFloat((etfBase + stockBase).toFixed(2)));
       }
-    ];
-
-    // ============================
-    // VC FUND DATA
-    // ============================
-    var vcData = [
-      {
-        name: 'LongevityTech.fund',
-        hq: 'Prague, Czech Republic',
-        founded: 2019,
-        focus: 'Pre-seed/seed stage longevity science startups. 31+ investments including Klothea Bio (Nov 2024), MitoRx Therapeutics, and Yuvan Research.',
-        funding: '31+ Portfolio Companies',
-        backers: '',
-        note: 'Connected to this portal\'s curator, Bill Seery',
-        website: 'https://longevitytech.fund',
-        highlight: true
-      },
-      {
-        name: 'Altos Labs',
-        hq: 'San Diego, CA',
-        founded: 2022,
-        focus: 'Cellular reprogramming and biological rejuvenation — aiming to reverse cellular aging using Yamanaka factors and related technologies.',
-        funding: '$3B Launch Funding',
-        backers: 'Jeff Bezos, Yuri Milner · CEO: Hal Barron (ex-GSK R&D chief)',
-        note: '',
-        website: 'https://altoslabs.com',
-        highlight: false
-      },
-      {
-        name: 'Retro Biosciences',
-        hq: 'San Francisco, CA',
-        founded: 2021,
-        focus: 'Mission to extend human lifespan by 10 years through autophagy, plasma-inspired therapeutics, and partial reprogramming.',
-        funding: '$180M Seed (Sam Altman) · Raising $1B Series A',
-        backers: 'CEO: Joe Betts-LaCroix',
-        note: '',
-        website: 'https://retro.bio',
-        highlight: false
-      },
-      {
-        name: 'Calico Labs',
-        hq: 'South San Francisco, CA',
-        founded: 2013,
-        focus: 'Google/Alphabet\'s moonshot to understand the biology of aging and develop interventions for age-related diseases.',
-        funding: '~$1.5B+ (Alphabet-backed)',
-        backers: 'Google/Alphabet subsidiary',
-        note: '',
-        website: 'https://calicolabs.com',
-        highlight: false
-      },
-      {
-        name: 'Unity Biotechnology',
-        hq: 'South San Francisco, CA',
-        founded: null,
-        focus: 'Developing senolytic therapies that selectively eliminate senescent cells — a key driver of aging and age-related disease.',
-        funding: 'Ticker: UBX (delisted/OTC)',
-        backers: 'Jeff Bezos, Peter Thiel',
-        note: '',
-        website: 'https://unitybiotechnology.com',
-        highlight: false
-      },
-      {
-        name: 'Hevolution Foundation',
-        hq: 'Riyadh, Saudi Arabia',
-        founded: 2021,
-        focus: 'Healthspan extension through research grants and venture investing — one of the largest funders of aging research globally.',
-        funding: 'Up to $1 Billion/Year Budget',
-        backers: 'Saudi sovereign wealth',
-        note: '',
-        website: 'https://hevolution.com',
-        highlight: false
-      },
-      {
-        name: 'Apollo Health Ventures',
-        hq: 'Berlin, Germany',
-        founded: null,
-        focus: 'Drug development for aging — builds and incubates biotech companies in-house focused on age-related drug targets.',
-        funding: '',
-        backers: '',
-        note: '',
-        website: 'https://apollohealthventures.com',
-        highlight: false
-      },
-      {
-        name: 'Kizoo Technology Ventures',
-        hq: 'Heidelberg, Germany',
-        founded: null,
-        focus: 'Rejuvenation biotech — invests in the damage-repair approach to aging, funding companies that target the root causes of age-related decline.',
-        funding: '',
-        backers: 'Founded by Michael Greve',
-        note: '',
-        website: 'https://kizoo.com',
-        highlight: false
-      }
-    ];
-
-    // ============================
-    // WATCHLIST DATA
-    // ============================
-    var watchlistData = [
-      { company: 'Geron Corp', ticker: 'GERN', focus: 'Telomerase / cancer aging' },
-      { company: 'MannKind', ticker: 'MNKD', focus: 'Inhaled therapeutics / diabetes' },
-      { company: 'Lineage Cell Therapeutics', ticker: 'LCTX', focus: 'Cell therapy / aging diseases' },
-      { company: 'Unity Biotechnology', ticker: 'UBX', focus: 'Senolytics' },
-      { company: 'Recursion Pharmaceuticals', ticker: 'RXRX', focus: 'AI drug discovery' },
-      { company: 'CRISPR Therapeutics', ticker: 'CRSP', focus: 'Gene editing' },
-      { company: 'Beam Therapeutics', ticker: 'BEAM', focus: 'Base editing' },
-      { company: 'Moderna', ticker: 'MRNA', focus: 'mRNA therapeutics' }
-    ];
-
-    // ============================
-    // SECTOR LANDSCAPE DATA
-    // ============================
-    var sectorData = [
-      { name: 'Cellular Reprogramming', cls: 'sector-reprogramming', companies: 'Altos Labs, Retro Bio, NewLimit, Turn Bio' },
-      { name: 'Senolytics', cls: 'sector-senolytics', companies: 'Unity Bio, Senolytic Therapeutics, Cleara Biotech' },
-      { name: 'Gene Therapy / CRISPR', cls: 'sector-gene', companies: 'CRISPR Therapeutics, Beam, Verve Therapeutics' },
-      { name: 'AI Drug Discovery', cls: 'sector-ai', companies: 'Recursion Pharma, Tempus AI, Insilico Medicine' },
-      { name: 'Metabolic Health / GLP-1', cls: 'sector-metabolic', companies: 'Novo Nordisk, Eli Lilly, Viking Therapeutics' },
-      { name: 'NAD+ / Mitochondrial', cls: 'sector-nad', companies: 'ChromaDex, Elysium Health, MitoRx' },
-      { name: 'Telomere Biology', cls: 'sector-telomere', companies: 'Geron Corp, Telomere Diagnostics, Sierra Sciences' },
-      { name: 'Immunology', cls: 'sector-immuno', companies: 'Moderna, BioNTech, Arcellx' },
-      { name: 'Medical Devices', cls: 'sector-devices', companies: 'Intuitive Surgical, Abbott, Boston Scientific' },
-      { name: 'Digital Health / Wearables', cls: 'sector-digital', companies: 'Oura, Whoop, Apple Health, Levels' }
-    ];
-
-    // ============================
-    // RENDER FUNCTIONS
-    // ============================
-
-    function renderETFCards() {
-      var grid = document.getElementById('etfGrid');
-      var html = '';
-      etfData.forEach(function(etf, idx) {
-        var isUp = etf.change >= 0;
-        var changeSign = isUp ? '+' : '';
-        var changeClass = isUp ? 'up' : 'down';
-        var range = etf.high52 - etf.low52;
-        var positionPct = range > 0 ? ((etf.price - etf.low52) / range * 100) : 50;
-        var fillPct = positionPct;
-        var holdingsId = 'holdings-' + idx;
-
-        var holdingsHTML = '';
-        if (etf.holdings && etf.holdings.length > 0) {
-          holdingsHTML = '<div class="etf-holdings" id="' + holdingsId + '">' +
-            '<div class="etf-holdings-inner">' +
-            '<div class="etf-holdings-title">Top Holdings</div>';
-          etf.holdings.forEach(function(h) {
-            holdingsHTML += '<div class="holding-row"><span class="holding-name">' + h.name + '</span><span class="holding-pct">' + h.pct + '</span></div>';
-          });
-          holdingsHTML += '</div></div>';
-        }
-
-        html += '<div class="etf-card animate-on-scroll" style="animation-delay: ' + (idx * 60) + 'ms">' +
-          '<div class="etf-card-header">' +
-            '<div>' +
-              '<div class="etf-ticker">' + etf.ticker + '</div>' +
-              '<div class="etf-name">' + etf.name + '</div>' +
-            '</div>' +
-            '<span class="etf-tag ' + etf.tagClass + '">' + etf.tag + '</span>' +
-          '</div>' +
-          '<div class="etf-card-body">' +
-            '<div class="etf-focus">' + etf.focus + '</div>' +
-            '<div class="etf-price-row">' +
-              '<span class="etf-price">$' + etf.price.toFixed(2) + '</span>' +
-              '<span class="etf-change ' + changeClass + '">' + changeSign + '$' + Math.abs(etf.change).toFixed(2) + ' (' + changeSign + Math.abs(etf.changePct).toFixed(2) + '%)</span>' +
-            '</div>' +
-            '<div class="etf-metrics">' +
-              '<div class="etf-metric"><span class="etf-metric-label">Mkt Cap</span><span class="etf-metric-value">' + etf.marketCap + '</span></div>' +
-              '<div class="etf-metric"><span class="etf-metric-label">P/E</span><span class="etf-metric-value">' + etf.pe + '</span></div>' +
-              '<div class="etf-metric"><span class="etf-metric-label">Expense</span><span class="etf-metric-value">' + etf.expense + '</span></div>' +
-              '<div class="etf-metric"><span class="etf-metric-label">52w Range</span><span class="etf-metric-value">$' + etf.low52.toFixed(2) + ' – $' + etf.high52.toFixed(2) + '</span></div>' +
-            '</div>' +
-            '<div class="range-52w">' +
-              '<div class="range-52w-header"><span>$' + etf.low52.toFixed(2) + '</span><span>$' + etf.high52.toFixed(2) + '</span></div>' +
-              '<div class="range-52w-bar">' +
-                '<div class="range-52w-fill" style="width: ' + fillPct.toFixed(1) + '%"></div>' +
-                '<div class="range-52w-marker" style="left: ' + positionPct.toFixed(1) + '%"></div>' +
-              '</div>' +
-            '</div>' +
-          '</div>' +
-          '<div class="etf-card-actions">' +
-            '<a href="https://finance.yahoo.com/quote/' + etf.ticker + '/chart/" target="_blank" rel="noopener noreferrer" class="etf-btn etf-btn-chart">&#9650; View Chart</a>' +
-            (etf.holdings && etf.holdings.length > 0
-              ? '<button class="etf-btn etf-btn-holdings" onclick="toggleHoldings(\'' + holdingsId + '\', this)">&#9660; Holdings</button>'
-              : '') +
-          '</div>' +
-          holdingsHTML +
-        '</div>';
-      });
-      grid.innerHTML = html;
+      current.setDate(current.getDate() + 1);
     }
 
-    // Global toggle function for holdings
-    window.toggleHoldings = function(id, btn) {
-      var el = document.getElementById(id);
-      if (!el) return;
-      var isExpanded = el.classList.contains('expanded');
-      if (isExpanded) {
-        el.classList.remove('expanded');
-        btn.classList.remove('active');
-        btn.innerHTML = '&#9660; Holdings';
-      } else {
-        el.classList.add('expanded');
-        btn.classList.add('active');
-        btn.innerHTML = '&#9650; Holdings';
-      }
-    };
+    // Update current display values
+    const lastETF = etfData[etfData.length - 1];
+    const lastStock = stockData[stockData.length - 1];
+    const lastTotal = totalData[totalData.length - 1];
+    const firstTotal = totalData[0];
+    const ytdChange = lastTotal - firstTotal;
 
-    function renderVCCards() {
-      var grid = document.getElementById('vcGrid');
-      var html = '';
-      vcData.forEach(function(vc, idx) {
-        var cardClass = 'vc-card animate-on-scroll' + (vc.highlight ? ' curator-highlight' : '');
-        html += '<div class="' + cardClass + '" style="animation-delay: ' + (idx * 60) + 'ms">' +
-          '<div class="vc-card-header">' +
-            '<div class="vc-fund-name">' + vc.name + '</div>' +
-            (vc.founded ? '<span class="vc-year">Est. ' + vc.founded + '</span>' : '') +
-          '</div>' +
-          '<div class="vc-meta">' +
-            '<span>&#128205; ' + vc.hq + '</span>' +
-          '</div>' +
-          (vc.note ? '<div class="vc-note">&#9733; ' + vc.note + '</div>' : '') +
-          '<div class="vc-focus">' + vc.focus + '</div>' +
-          (vc.funding ? '<div class="vc-funding">' + vc.funding + '</div>' : '') +
-          (vc.backers ? '<div class="vc-backers">' + vc.backers + '</div>' : '') +
-          '<a href="' + vc.website + '" target="_blank" rel="noopener noreferrer" class="vc-link">&#8594; ' + vc.website.replace('https://', '') + '</a>' +
-        '</div>';
-      });
-      grid.innerHTML = html;
-    }
+    document.getElementById('mcapCurrentTotal').textContent = '$' + lastTotal.toFixed(1) + 'B';
+    document.getElementById('mcapETFTotal').textContent = '$' + lastETF.toFixed(1) + 'B';
+    document.getElementById('mcapStockTotal').textContent = '$' + lastStock.toFixed(1) + 'B';
+    document.getElementById('mcapYTDChange').textContent = (ytdChange >= 0 ? '+' : '') + '$' + ytdChange.toFixed(1) + 'B';
+    document.getElementById('mcapYTDChange').style.color = ytdChange >= 0 ? 'var(--green)' : 'var(--red)';
 
-    function renderWatchlist() {
-      var tbody = document.getElementById('watchlistBody');
-      var html = '';
-      watchlistData.forEach(function(stock) {
-        html += '<tr>' +
-          '<td class="watchlist-name">' + stock.company + '</td>' +
-          '<td class="watchlist-ticker">' + stock.ticker + '</td>' +
-          '<td class="watchlist-focus">' + stock.focus + '</td>' +
-          '<td><a href="https://finance.yahoo.com/quote/' + stock.ticker + '/chart/" target="_blank" rel="noopener noreferrer" class="watchlist-link">&#9650; Chart</a></td>' +
-        '</tr>';
-      });
-      tbody.innerHTML = html;
-    }
-
-    function renderLandscape() {
-      var grid = document.getElementById('landscapeGrid');
-      var html = '';
-      sectorData.forEach(function(sector, idx) {
-        html += '<div class="sector-box ' + sector.cls + ' animate-on-scroll" style="animation-delay: ' + (idx * 50) + 'ms">' +
-          '<div class="sector-name">' + sector.name + '</div>' +
-          '<div class="sector-companies">' + sector.companies + '</div>' +
-        '</div>';
-      });
-      grid.innerHTML = html;
-    }
-
-    // ============================
-    // STATS ANIMATION
-    // ============================
-    function animateStats() {
-      var stats = document.querySelectorAll('.fin-stat');
-      stats.forEach(function(el) {
-        var target = el.getAttribute('data-target');
-        var delay = parseInt(el.parentElement.getAttribute('data-delay') || '0');
-        setTimeout(function() {
-          el.parentElement.classList.add('visible');
-          // Simple text reveal with typing effect
-          var i = 0;
-          var interval = setInterval(function() {
-            i++;
-            if (i >= target.length) {
-              el.textContent = target;
-              clearInterval(interval);
-            } else {
-              el.textContent = target.substring(0, i);
-            }
-          }, 40);
-        }, delay + 300);
-      });
-    }
-
-    // ============================
-    // SCROLL ANIMATION OBSERVER
-    // ============================
-    function initScrollAnimations() {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+    const ctx = document.getElementById('mcapChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'ETF AUM',
+            data: etfData,
+            borderColor: 'rgba(0, 221, 255, 0.9)',
+            backgroundColor: 'rgba(0, 221, 255, 0.05)',
+            borderWidth: 2,
+            pointRadius: 0,
+            pointHoverRadius: 4,
+            tension: 0.4,
+            fill: false
+          },
+          {
+            label: 'Stock Market Cap',
+            data: stockData,
+            borderColor: 'rgba(255, 176, 32, 0.9)',
+            backgroundColor: 'rgba(255, 176, 32, 0.05)',
+            borderWidth: 2,
+            pointRadius: 0,
+            pointHoverRadius: 4,
+            tension: 0.4,
+            fill: false
+          },
+          {
+            label: 'Total',
+            data: totalData,
+            borderColor: 'rgba(0, 255, 200, 0.9)',
+            backgroundColor: 'rgba(0, 255, 200, 0.08)',
+            borderWidth: 2.5,
+            pointRadius: 0,
+            pointHoverRadius: 5,
+            tension: 0.4,
+            fill: true
           }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
-        observer.observe(el);
-      });
-    }
-
-    // ============================
-    // MARKET CAP CHART
-    // ============================
-    function renderMcapChart() {
-      var dates = ["Jan 2","Jan 5","Jan 6","Jan 7","Jan 8","Jan 9","Jan 12","Jan 13","Jan 14","Jan 15","Jan 16","Jan 20","Jan 21","Jan 22","Jan 23","Jan 26","Jan 27","Jan 28","Jan 29","Jan 30","Feb 2","Feb 3","Feb 4","Feb 5","Feb 6","Feb 9","Feb 10","Feb 11","Feb 12","Feb 13","Feb 17","Feb 18","Feb 19","Feb 20","Feb 23","Feb 24","Feb 25","Feb 26","Feb 27","Mar 2","Mar 3","Mar 4","Mar 5","Mar 6","Mar 9","Mar 10","Mar 11","Mar 12"];
-      var etfB = [61.80,61.60,62.89,63.84,63.00,62.80,62.74,62.52,63.09,62.57,62.16,62.14,63.35,63.67,63.05,63.26,62.63,61.97,61.86,61.90,62.36,61.88,62.17,61.33,62.69,62.31,61.91,62.15,61.78,62.37,62.52,62.77,62.73,62.45,63.07,63.09,62.99,62.86,63.64,63.30,62.78,63.18,61.25,60.79,61.35,61.05,60.78,59.48];
-      var stockB = [24.60,25.30,27.18,27.57,26.49,26.28,26.97,29.20,29.83,28.62,29.35,29.65,32.71,34.66,32.39,31.93,30.90,30.53,31.15,29.49,29.24,29.23,28.94,27.32,28.13,28.75,28.62,27.80,27.70,29.00,29.68,30.86,32.32,32.11,32.32,33.25,32.50,33.08,33.58,33.60,33.60,33.60,33.60,33.60,33.60,33.60,33.60,33.60];
-      var totalB = [86.39,86.90,90.06,91.41,89.49,89.08,89.71,91.72,92.92,91.19,91.51,91.79,96.06,98.34,95.44,95.19,93.53,92.51,93.00,91.38,91.60,91.11,91.11,88.65,90.82,91.07,90.53,89.94,89.48,91.37,92.20,93.64,95.05,94.55,95.39,96.34,95.48,95.94,97.22,96.90,96.38,96.78,94.85,94.39,94.95,94.65,94.38,93.08];
-
-      var ctx = document.getElementById('mcapChart');
-      if (!ctx) return;
-
-      new Chart(ctx.getContext('2d'), {
-        type: 'line',
-        data: {
-          labels: dates,
-          datasets: [
-            {
-              label: 'Total',
-              data: totalB,
-              borderColor: '#00ffc8',
-              backgroundColor: 'rgba(0,255,200,0.05)',
-              borderWidth: 2.5,
-              pointRadius: 0,
-              pointHoverRadius: 5,
-              pointHoverBackgroundColor: '#00ffc8',
-              pointHoverBorderColor: '#0a0e1a',
-              pointHoverBorderWidth: 2,
-              fill: false,
-              tension: 0.3,
-              order: 1
-            },
-            {
-              label: 'ETF AUM',
-              data: etfB,
-              borderColor: '#00ddff',
-              backgroundColor: 'rgba(0,221,255,0.08)',
-              borderWidth: 1.5,
-              pointRadius: 0,
-              pointHoverRadius: 4,
-              pointHoverBackgroundColor: '#00ddff',
-              pointHoverBorderColor: '#0a0e1a',
-              pointHoverBorderWidth: 2,
-              fill: true,
-              tension: 0.3,
-              order: 2
-            },
-            {
-              label: 'Stock Market Cap',
-              data: stockB,
-              borderColor: '#ffb020',
-              backgroundColor: 'rgba(255,176,32,0.08)',
-              borderWidth: 1.5,
-              pointRadius: 0,
-              pointHoverRadius: 4,
-              pointHoverBackgroundColor: '#ffb020',
-              pointHoverBorderColor: '#0a0e1a',
-              pointHoverBorderWidth: 2,
-              fill: true,
-              tension: 0.3,
-              order: 3
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: 'rgba(10, 14, 26, 0.95)',
+            borderColor: 'rgba(0, 221, 255, 0.3)',
+            borderWidth: 1,
+            titleColor: '#e8edf5',
+            bodyColor: '#8892a8',
+            padding: 12,
+            callbacks: {
+              label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y.toFixed(1)}B`
             }
-          ]
+          }
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          interaction: {
-            mode: 'index',
-            intersect: false
-          },
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: 'rgba(10,14,26,0.95)',
-              borderColor: 'rgba(0,221,255,0.2)',
-              borderWidth: 1,
-              titleFont: { family: "'JetBrains Mono', monospace", size: 12 },
-              bodyFont: { family: "'JetBrains Mono', monospace", size: 11 },
-              padding: 12,
-              callbacks: {
-                label: function(ctx) {
-                  return ctx.dataset.label + ': $' + ctx.parsed.y.toFixed(1) + 'B';
-                }
-              }
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.03)' },
+            ticks: {
+              color: '#4a5568',
+              font: { family: 'JetBrains Mono', size: 10 },
+              maxTicksLimit: 10
             }
           },
-          scales: {
-            x: {
-              grid: {
-                color: 'rgba(0,221,255,0.04)',
-                drawBorder: false
-              },
-              ticks: {
-                font: { family: "'JetBrains Mono', monospace", size: 10 },
-                color: '#556080',
-                maxRotation: 45,
-                maxTicksLimit: 15
-              }
-            },
-            y: {
-              grid: {
-                color: 'rgba(0,221,255,0.06)',
-                drawBorder: false
-              },
-              ticks: {
-                font: { family: "'JetBrains Mono', monospace", size: 10 },
-                color: '#556080',
-                callback: function(val) { return '$' + val + 'B'; }
-              },
-              min: 20,
-              max: 105
+          y: {
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: {
+              color: '#4a5568',
+              font: { family: 'JetBrains Mono', size: 10 },
+              callback: v => '$' + v.toFixed(0) + 'B'
             }
           }
         }
-      });
-    }
+      }
+    });
+  }
 
-    // ============================
-    // INIT
-    // ============================
+  // ============================================================
+  // COUNTER ANIMATION
+  // ============================================================
+  function animateCounters() {
+    const targets = document.querySelectorAll('.fin-stat');
+    targets.forEach(el => {
+      const target = el.dataset.target;
+      el.textContent = target; // Just set directly for finance page
+    });
+  }
+
+  // ============================================================
+  // INIT
+  // ============================================================
+  document.addEventListener('DOMContentLoaded', () => {
     renderETFCards();
     renderVCCards();
     renderWatchlist();
     renderLandscape();
-    animateStats();
     renderMcapChart();
-
-    // Wait for DOM to settle before scroll animations
-    setTimeout(initScrollAnimations, 100);
-
-  })();
+    animateCounters();
+  });
   </script>
 </body>
 </html>
