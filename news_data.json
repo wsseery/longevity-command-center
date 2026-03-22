@@ -9,6 +9,15 @@
     "url": "https://health.uconn.edu/neuroscience/2026/03/19/new-study-from-crocker-lab-on-aging-treatment/"
   },
   {
+    "title": "Biotech Stocks Surge as Longevity Investment Doubles to $8.49B",
+    "source": "Community News / Motley Fool",
+    "date": "2026-03-20",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Private longevity investment more than doubled in 2025, hitting $8.49B across 325 deals, as the FDA approved 46 new drugs including the first class labeled potential longevity therapeutics.",
+    "url": "https://www.community-news.com/premium/stacker/stories/biotech-stocks-and-longevity-investing-trends-to-track,161246"
+  },
+  {
     "title": "mRNA Lipid Nanoparticle Fights Tau Aggregation in Alzheimer's Disease",
     "source": "Lifespan.io",
     "date": "2026-03-19",
@@ -18,6 +27,15 @@
     "url": "https://lifespan.io/news/using-mrna-to-fight-tau-aggregation-in-alzheimers/"
   },
   {
+    "title": "Unprocessed Meat and APOE4: New Cognitive Decline Link Found",
+    "source": "Lifespan.io",
+    "date": "2026-03-20",
+    "category": "Research",
+    "importance": "normal",
+    "description": "New study finds a negative association between unprocessed meat consumption and cognitive decline in carriers of the APOE e4 allele, adding nuance to the diet-and-dementia debate.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
     "title": "Phil Newman: When Longevity Data Grows Up",
     "source": "LinkedIn",
     "date": "2026-03-19",
@@ -25,6 +43,15 @@
     "importance": "normal",
     "description": "Longevity.Technology founder Phil Newman discusses how longevity biotech is moving from narrative to execution as data maturity improves across the sector.",
     "url": "https://www.linkedin.com/pulse/when-longevity-data-grows-up-phil-newman-hfwfe"
+  },
+  {
+    "title": "Avai Bio: $45B Cell Therapy Boom Hits Manufacturing Milestone",
+    "source": "Fidelity",
+    "date": "2026-03-18",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Avai Bio takes a critical manufacturing step for its alpha-Klotho longevity program, positioning the regenerative protein for production amid a $45B cell therapy market.",
+    "url": "https://www.fidelity.com/news/article/default/202603181130PRIMZONEFULLFEED9674166"
   },
   {
     "title": "UT Health $38M VITAL-H Trial: Rapamycin, Semaglutide, Dapagliflozin",
@@ -45,6 +72,15 @@
     "url": "https://www.linkedin.com/pulse/longevity-biotech-market-global-outlook-investment-9v7yc"
   },
   {
+    "title": "Longevity Law Finds Its Footing",
+    "source": "Longevity.Technology",
+    "date": "2026-03-19",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "As longevity biotech matures, a nascent legal specialty is emerging to address regulatory, IP, and ethical challenges unique to aging interventions and healthspan therapeutics.",
+    "url": "https://longevity.technology/news/"
+  },
+  {
     "title": "ARDD 2026 Conference Relocates to Boston at Harvard Medical School",
     "source": "LinkedIn / Alex Zhavoronkov",
     "date": "2026-03-18",
@@ -54,13 +90,31 @@
     "url": "https://www.linkedin.com/posts/zhavoronkov_big-news-in-the-longevity-field-and-longevity-activity-7440073440235171840-BezR"
   },
   {
-    "title": "Longevity Investing in 2026: A Strategic Guide for Family Offices",
-    "source": "LinkedIn",
+    "title": "Prof Horvath: Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
+    "source": "X / Prof. Steve Horvath",
+    "date": "2026-03-16",
+    "category": "Research",
+    "importance": "high",
+    "description": "Epigenetic clock pioneer Steve Horvath highlights a new study showing vitamin C inhibits ACSL4 to alleviate ferro-aging in primates, calling March 2026 a strong month for supplement research.",
+    "url": "https://x.com/prof_horvath/status/2033620317344555202"
+  },
+  {
+    "title": "Global Longevity Federation 2026: Rome Conference Mar 23-24",
+    "source": "GLF-2026",
+    "date": "2026-03-22",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Global experts convene in Rome this weekend to discuss the future of longevity, healthy aging, and regenerative medicine at the Global Longevity Federation hybrid event.",
+    "url": "https://x.com/Longevity25252"
+  },
+  {
+    "title": "Wearable Startup Temple Secures $54M for Brain Monitoring",
+    "source": "Longevity.Technology",
     "date": "2026-03-18",
     "category": "Funding",
     "importance": "normal",
-    "description": "Detailed analysis of the longevity investment landscape for family offices, highlighting epigenetic reprogramming, senolytics, and organ regeneration in a $30.7B market.",
-    "url": "https://www.linkedin.com/pulse/longevity-investing-2026-strategic-guide-family-fntmf"
+    "description": "Wearable neurotech startup Temple raises $54M to develop continuous brain monitoring technology, aiming to detect neurological decline early and support longevity interventions.",
+    "url": "https://longevity.technology/news/"
   },
   {
     "title": "Ternary Raises $4.4M to Fight Inflammaging with AI-Designed Molecular Glues",
@@ -72,15 +126,6 @@
     "url": "https://longevity.technology/news/ternary-raises-4-4m-to-fight-inflammaging-with-ai-drugs/"
   },
   {
-    "title": "New Research Suggests Daily Multivitamins May Slow Biological Aging",
-    "source": "SciTechDaily",
-    "date": "2026-03-16",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A large clinical trial suggests that a daily multivitamin may measurably influence the pace at which the body ages, based on biological aging markers.",
-    "url": "https://scitechdaily.com/new-research-reveals-a-simple-supplement-may-slow-biological-aging/"
-  },
-  {
     "title": "Rapamycin Enters Phase 3 Human Trials via Cambrian Bio's $30.8M ARPA-H Award",
     "source": "Maxmaxxing Newsletter",
     "date": "2026-03-16",
@@ -90,22 +135,13 @@
     "url": "https://buttondown.com/maxmaxxing/archive/rapamycin-phase-3-fasting-mimetics-2026/"
   },
   {
-    "title": "11 Anti-Aging Biotech Companies Leading Longevity in 2026",
-    "source": "Labiotech",
-    "date": "2026-03-16",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Comprehensive ranking of top longevity biotechs including Altos Labs ($3B), Cambrian Bio, Life Biosciences, and Genflow Biosciences with latest funding and pipeline updates.",
-    "url": "https://www.labiotech.eu/best-biotech/anti-aging-biotech-companies/"
-  },
-  {
-    "title": "How Zinc Protects Injured Arteries From Accelerated Aging",
-    "source": "Lifespan.io",
+    "title": "Rapamycin Protects Immune Cells Against DNA Damage in Humans",
+    "source": "Medical Xpress / Aging Cell",
     "date": "2026-03-16",
     "category": "Research",
-    "importance": "normal",
-    "description": "Researchers discover that nuclei of cells lining injured arteries become misshapen, leading to accelerated senescence, and that zinc delivery partially reverses this dysfunction.",
-    "url": "https://lifespan.io/news/how-zinc-protects-injured-arteries-from-accelerated-aging/"
+    "importance": "high",
+    "description": "Study in Aging Cell shows older adults given low-dose rapamycin for four months had significantly less DNA damage and cell aging in immune cells versus placebo.",
+    "url": "https://medicalxpress.com/news/2026-01-rapamycin-immune-cells-dna.html"
   },
   {
     "title": "Roche Gets CE Mark for First Blood-Based ApoE4 Alzheimer's Risk Test",
@@ -124,15 +160,6 @@
     "importance": "normal",
     "description": "Scientists find a positive correlation between the gut bacterium Roseburia inulinivorans and muscle strength in both mice and humans, opening avenues for age-related muscle loss treatment.",
     "url": "https://lifespan.io/news/study-links-a-gut-bacterium-to-increased-muscle-strength/"
-  },
-  {
-    "title": "Gut Bacteria Might Affect Cognition via the Vagus Nerve",
-    "source": "Lifespan.io",
-    "date": "2026-03-13",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Study suggests microbiome remodeling drives age-related cognitive decline through the vagus nerve, with antibiotics shown to reverse the effect in mice.",
-    "url": "https://lifespan.io/news/gut-bacteria-might-affect-cognition-via-the-vagus-nerve/"
   },
   {
     "title": "Top Longevity Startups by Fundraising in 2026",
@@ -162,31 +189,13 @@
     "url": "https://www.science.org/content/article/u-s-agency-will-devote-144-million-studies-slow-aging-extend-quality-life"
   },
   {
-    "title": "WHOOP Joins $34.5M ARPA-H Coalition to Quantify Aging",
+    "title": "Juvenescence Advances PAI-1 Inhibitor MDI-2517 to Phase 2 Trial",
     "source": "Longevity.Technology",
-    "date": "2026-03-04",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "WHOOP joins the Stanford-led THRIVE coalition to develop the first FDA-grade Intrinsic Capacity score, a predictive model to forecast health outcomes 20 years in advance.",
-    "url": "https://longevity.technology/news/whoop-enters-34-5m-arpa-h-backed-bid-to-quantify-aging/"
-  },
-  {
-    "title": "Longevity Biotech: Preventive Medicine as Central Thesis",
-    "source": "LinkedIn / Decoding Longevity",
-    "date": "2026-03-04",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Preventive medicine is rapidly becoming the central thesis of longevity biotech, with Dr. Raghav Sehgal discussing the shift on the Decoding Longevity podcast.",
-    "url": "https://www.linkedin.com/posts/decoding-longevity_preventive-medicine-is-rapidly-becoming-the-activity-7435006813907042304-53fj"
-  },
-  {
-    "title": "Mimio Health: Fasting Mimetic Delivers Benefits Without Dieting",
-    "source": "Nature Scientific Reports",
     "date": "2026-03-02",
     "category": "Clinical Trials",
     "importance": "normal",
-    "description": "Randomized controlled trial shows Mimio's fasting mimetic supplement (spermidine, nicotinamide, PEA, OEA) significantly improved cholesterol, LDL, glucose, and appetite regulation vs placebo over 8 weeks.",
-    "url": "https://www.nature.com/articles/s41598-026-38495-7"
+    "description": "Juvenescence completes Phase 1 for first-in-class PAI-1 inhibitor MDI-2517, targeting inflammation and fibrosis across multiple age-related diseases, with Phase 2 trials beginning in 2026.",
+    "url": "https://longevity.technology/news/juvenescence-advances-aging-drug-to-phase-2-trial/"
   },
   {
     "title": "Polyamine Longevity Compound May Also Fuel Cancer via eIF5A2",
@@ -196,15 +205,6 @@
     "importance": "high",
     "description": "Scientists reveal polyamines have a dual role -- boosting healthy cells via eIF5A1 while promoting cancer through eIF5A2, with implications for longevity supplement safety.",
     "url": "https://www.sciencedaily.com/releases/2026/03/260302030657.htm"
-  },
-  {
-    "title": "Linnaeus Wins $22M ARPA-H Award for LNS8801 Healthspan Preservation",
-    "source": "Longevity.Technology",
-    "date": "2026-02-26",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Linnaeus Therapeutics secures $22M from ARPA-H's PROSPR program to test whether oral drug LNS8801 can preserve intrinsic capacity and independence as we age.",
-    "url": "https://longevity.technology/news/linnaeus-wins-22m-to-address-aging-before-decline/"
   },
   {
     "title": "Senosensitizers Clear Up to 70% of Zombie Cells in Preclinical Study",
