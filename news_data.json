@@ -1,12 +1,21 @@
 [
   {
-    "title": "Popular Anti-Aging Senolytic Combo D+Q Causes Brain Myelin Damage in Mice",
-    "source": "UConn Health / PNAS",
-    "date": "2026-03-19",
-    "category": "Research",
+    "title": "LA Times: Longevity Industry Turns Aging into an Investable Market",
+    "source": "Los Angeles Times",
+    "date": "2026-03-22",
+    "category": "Industry",
     "importance": "high",
-    "description": "Landmark PNAS study from the Crocker Lab finds dasatinib+quercetin (D+Q), a widely used senolytic combo, triggers myelin loss in the brain of both young and aged mice, raising safety concerns for prophylactic use.",
-    "url": "https://health.uconn.edu/neuroscience/2026/03/19/new-study-from-crocker-lab-on-aging-treatment/"
+    "description": "Biotech, AI diagnostics, and venture capital are converging across Southern California to make longevity a scalable growth frontier, shifting from boutique wellness to investable healthtech.",
+    "url": "https://www.latimes.com/b2b/health-life-science/story/2026-03-22/los-angeles-longevity-industry-trends"
+  },
+  {
+    "title": "Global Longevity Federation 2026 Opens in Rome",
+    "source": "GLF-2026",
+    "date": "2026-03-23",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Global experts convene in Rome March 23-24 to discuss the future of longevity, healthy aging, and regenerative medicine at the Global Longevity Federation hybrid event.",
+    "url": "https://x.com/Longevity25252"
   },
   {
     "title": "Biotech Stocks Surge as Longevity Investment Doubles to $8.49B",
@@ -18,6 +27,15 @@
     "url": "https://www.community-news.com/premium/stacker/stories/biotech-stocks-and-longevity-investing-trends-to-track,161246"
   },
   {
+    "title": "Popular Anti-Aging Senolytic Combo D+Q Causes Brain Myelin Damage in Mice",
+    "source": "UConn Health / PNAS",
+    "date": "2026-03-19",
+    "category": "Research",
+    "importance": "high",
+    "description": "Landmark PNAS study from the Crocker Lab finds dasatinib+quercetin (D+Q), a widely used senolytic combo, triggers myelin loss in the brain of both young and aged mice, raising safety concerns.",
+    "url": "https://health.uconn.edu/neuroscience/2026/03/19/new-study-from-crocker-lab-on-aging-treatment/"
+  },
+  {
     "title": "mRNA Lipid Nanoparticle Fights Tau Aggregation in Alzheimer's Disease",
     "source": "Lifespan.io",
     "date": "2026-03-19",
@@ -25,15 +43,6 @@
     "importance": "high",
     "description": "A lipid nanoparticle delivers TRIM11 mRNA to neurons via a neurotransmitter pathway, dissolving tau aggregates and restoring cognition in Alzheimer's mouse models with effects lasting three months.",
     "url": "https://lifespan.io/news/using-mrna-to-fight-tau-aggregation-in-alzheimers/"
-  },
-  {
-    "title": "Unprocessed Meat and APOE4: New Cognitive Decline Link Found",
-    "source": "Lifespan.io",
-    "date": "2026-03-20",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New study finds a negative association between unprocessed meat consumption and cognitive decline in carriers of the APOE e4 allele, adding nuance to the diet-and-dementia debate.",
-    "url": "https://lifespan.io/news/"
   },
   {
     "title": "Phil Newman: When Longevity Data Grows Up",
@@ -45,7 +54,7 @@
     "url": "https://www.linkedin.com/pulse/when-longevity-data-grows-up-phil-newman-hfwfe"
   },
   {
-    "title": "Avai Bio: $45B Cell Therapy Boom Hits Manufacturing Milestone",
+    "title": "Avai Bio: $45B Cell Therapy Boom Hits Alpha-Klotho Manufacturing Milestone",
     "source": "Fidelity",
     "date": "2026-03-18",
     "category": "Biotech",
@@ -72,49 +81,22 @@
     "url": "https://www.linkedin.com/pulse/longevity-biotech-market-global-outlook-investment-9v7yc"
   },
   {
-    "title": "Longevity Law Finds Its Footing",
-    "source": "Longevity.Technology",
-    "date": "2026-03-19",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "As longevity biotech matures, a nascent legal specialty is emerging to address regulatory, IP, and ethical challenges unique to aging interventions and healthspan therapeutics.",
-    "url": "https://longevity.technology/news/"
-  },
-  {
-    "title": "ARDD 2026 Conference Relocates to Boston at Harvard Medical School",
-    "source": "LinkedIn / Alex Zhavoronkov",
-    "date": "2026-03-18",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "ARDD 2026 moves to Harvard Medical School in Boston (Oct 2-3) with Vadim Gladyshev as executive chair. Central theme: discovering the next GLP-1 for longevity.",
-    "url": "https://www.linkedin.com/posts/zhavoronkov_big-news-in-the-longevity-field-and-longevity-activity-7440073440235171840-BezR"
-  },
-  {
-    "title": "Prof Horvath: Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
-    "source": "X / Prof. Steve Horvath",
-    "date": "2026-03-16",
+    "title": "Longitudinal Epigenetic Clock Changes Predict Long-Term Mortality",
+    "source": "Nature Aging",
+    "date": "2026-03-17",
     "category": "Research",
     "importance": "high",
-    "description": "Epigenetic clock pioneer Steve Horvath highlights a new study showing vitamin C inhibits ACSL4 to alleviate ferro-aging in primates, calling March 2026 a strong month for supplement research.",
-    "url": "https://x.com/prof_horvath/status/2033620317344555202"
+    "description": "24-year Italian cohort study shows tracking how epigenetic clocks change over time substantially improves mortality prediction, with second-generation clocks outperforming first-generation measures.",
+    "url": "https://www.nature.com/articles/s43587-026-01095-1"
   },
   {
-    "title": "Global Longevity Federation 2026: Rome Conference Mar 23-24",
-    "source": "GLF-2026",
-    "date": "2026-03-22",
-    "category": "Industry",
+    "title": "Gut Bacterium Roseburia Linked to Increased Muscle Strength",
+    "source": "Lifespan.io",
+    "date": "2026-03-17",
+    "category": "Research",
     "importance": "normal",
-    "description": "Global experts convene in Rome this weekend to discuss the future of longevity, healthy aging, and regenerative medicine at the Global Longevity Federation hybrid event.",
-    "url": "https://x.com/Longevity25252"
-  },
-  {
-    "title": "Wearable Startup Temple Secures $54M for Brain Monitoring",
-    "source": "Longevity.Technology",
-    "date": "2026-03-18",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "Wearable neurotech startup Temple raises $54M to develop continuous brain monitoring technology, aiming to detect neurological decline early and support longevity interventions.",
-    "url": "https://longevity.technology/news/"
+    "description": "Scientists find a positive correlation between the gut bacterium Roseburia inulinivorans and muscle strength in both mice and humans, opening avenues for age-related muscle loss treatment.",
+    "url": "https://lifespan.io/news/study-links-a-gut-bacterium-to-increased-muscle-strength/"
   },
   {
     "title": "Ternary Raises $4.4M to Fight Inflammaging with AI-Designed Molecular Glues",
@@ -124,6 +106,15 @@
     "importance": "normal",
     "description": "London-based Ternary Therapeutics raises $4.4M seed round to develop AI-designed molecular glues that tame chronic inflammation, a key driver of age-related disease.",
     "url": "https://longevity.technology/news/ternary-raises-4-4m-to-fight-inflammaging-with-ai-drugs/"
+  },
+  {
+    "title": "Prof Horvath: Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
+    "source": "X / Prof. Steve Horvath",
+    "date": "2026-03-16",
+    "category": "Research",
+    "importance": "high",
+    "description": "Epigenetic clock pioneer Steve Horvath highlights March 2026 as a strong month for supplement research, citing vitamin C's role in inhibiting ACSL4 and alleviating ferro-aging in primates.",
+    "url": "https://x.com/prof_horvath/status/2033620317344555202"
   },
   {
     "title": "Rapamycin Enters Phase 3 Human Trials via Cambrian Bio's $30.8M ARPA-H Award",
@@ -153,13 +144,13 @@
     "url": "https://diagnostics.roche.com/global/en/news-listing/2026/roche-ce-mark-apoe4.html"
   },
   {
-    "title": "Gut Bacterium Roseburia Linked to Increased Muscle Strength",
-    "source": "Lifespan.io",
-    "date": "2026-03-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Scientists find a positive correlation between the gut bacterium Roseburia inulinivorans and muscle strength in both mice and humans, opening avenues for age-related muscle loss treatment.",
-    "url": "https://lifespan.io/news/study-links-a-gut-bacterium-to-increased-muscle-strength/"
+    "title": "Brown/Rochester Win $22M ARPA-H Award to Test HIV Drug Against Aging",
+    "source": "Brown University",
+    "date": "2026-03-12",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "ARPA-H funds a $22M trial of Censavudine (an HIV drug) to suppress retrotransposon-driven inflammation in 200 healthy adults aged 60-65, potentially the first drug shown to slow human aging.",
+    "url": "https://www.brown.edu/news/2026-02-24/aging-research-arpa"
   },
   {
     "title": "Top Longevity Startups by Fundraising in 2026",
@@ -189,22 +180,22 @@
     "url": "https://www.science.org/content/article/u-s-agency-will-devote-144-million-studies-slow-aging-extend-quality-life"
   },
   {
-    "title": "Juvenescence Advances PAI-1 Inhibitor MDI-2517 to Phase 2 Trial",
-    "source": "Longevity.Technology",
-    "date": "2026-03-02",
+    "title": "Daily Multivitamins Slow Biological Aging by 4 Months in 2-Year Trial",
+    "source": "Nature Medicine / Mass General Brigham",
+    "date": "2026-03-09",
     "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Juvenescence completes Phase 1 for first-in-class PAI-1 inhibitor MDI-2517, targeting inflammation and fibrosis across multiple age-related diseases, with Phase 2 trials beginning in 2026.",
-    "url": "https://longevity.technology/news/juvenescence-advances-aging-drug-to-phase-2-trial/"
+    "importance": "high",
+    "description": "COSMOS trial published in Nature Medicine shows daily multivitamin slowed all five epigenetic clocks over two years, with greater benefits for those who started biologically older.",
+    "url": "https://medicalxpress.com/news/2026-03-daily-multivitamins-biological-aging-year.html"
   },
   {
-    "title": "Polyamine Longevity Compound May Also Fuel Cancer via eIF5A2",
-    "source": "ScienceDaily / Tokyo Univ. of Science",
-    "date": "2026-03-02",
-    "category": "Research",
+    "title": "Longeveron Phase 2b: Stem Cell Therapy Improves Frailty in Cell Stem Cell",
+    "source": "Longeveron / Cell Stem Cell",
+    "date": "2026-02-25",
+    "category": "Clinical Trials",
     "importance": "high",
-    "description": "Scientists reveal polyamines have a dual role -- boosting healthy cells via eIF5A1 while promoting cancer through eIF5A2, with implications for longevity supplement safety.",
-    "url": "https://www.sciencedaily.com/releases/2026/03/260302030657.htm"
+    "description": "Phase 2b results show IV laromestrocel (mesenchymal stem cells) improved 6-minute walk distance by 63.4 meters at 9 months in frail older adults versus placebo, published in Cell Stem Cell.",
+    "url": "https://investors.longeveron.com/news/News/news-details/2026/Longeveron-Results-of-Phase-2b-Clinical-Trial-Demonstrating-Stem-Cell-Therapy-Improved-Condition-of-Patients-with-Age-Related-Frailty-Published-in-Cell-Stem-Cell/default.aspx"
   },
   {
     "title": "Senosensitizers Clear Up to 70% of Zombie Cells in Preclinical Study",
@@ -223,5 +214,14 @@
     "importance": "high",
     "description": "Life Biosciences receives IND clearance from the FDA to test ER-100, the first-ever human partial epigenetic reprogramming therapy, targeting optic neuropathies.",
     "url": "https://lifespan.io/news/first-human-cellular-reprogramming-trial-cleared-by-the-fda/"
+  },
+  {
+    "title": "Polyamine Longevity Compound May Also Fuel Cancer via eIF5A2",
+    "source": "ScienceDaily / Tokyo Univ. of Science",
+    "date": "2026-03-02",
+    "category": "Research",
+    "importance": "high",
+    "description": "Scientists reveal polyamines have a dual role -- boosting healthy cells via eIF5A1 while promoting cancer through eIF5A2, with implications for longevity supplement safety.",
+    "url": "https://www.sciencedaily.com/releases/2026/03/260302030657.htm"
   }
 ]
