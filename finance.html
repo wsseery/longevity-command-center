@@ -753,17 +753,17 @@
       <div class="section-icon" style="background:rgba(0,255,200,0.12);border:1px solid rgba(0,255,200,0.25);">&#9652;</div>
       <div>
         <div class="fin-section-title">TOTAL MARKET CAP &mdash; DAILY TRACKER</div>
-        <div class="fin-section-subtitle">Combined market capitalization of all tracked ETFs and longevity stocks &mdash; Jan 2 to Mar 20, 2026</div>
+        <div class="fin-section-subtitle">Combined market capitalization of all tracked ETFs and longevity stocks &mdash; Jan 2 to Mar 23, 2026</div>
       </div>
     </div>
     <div style="display:flex;gap:20px;margin-bottom:24px;flex-wrap:wrap;">
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Current Total</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">$91.1B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">$91.4B</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">ETF AUM</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">$57.5B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">$57.8B</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Stock Market Cap</div>
@@ -771,7 +771,7 @@
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
         <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">YTD Change</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--green);text-shadow:0 0 16px rgba(0,255,136,0.3);" id="mcapYTDChange">+$4.7B</div>
+        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--green);text-shadow:0 0 16px rgba(0,255,136,0.3);" id="mcapYTDChange">+$5.1B</div>
       </div>
     </div>
     <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:12px;padding:28px;position:relative;">
@@ -906,10 +906,10 @@
       name: 'ARK Genomic Revolution ETF',
       tag: 'genomics',
       focus: 'Focuses on companies advancing genomics, including CRISPR gene editing, targeted therapeutics, bioinformatics, and molecular diagnostics relevant to aging.',
-      price: 26.05,
-      change: -0.65,
-      changePct: -2.43,
-      aum: '$1.05B',
+      price: 26.63,
+      change: +0.58,
+      changePct: +2.23,
+      aum: '$1.07B',
       expense: '0.75%',
       ytd: '-8.3%',
       holdings: 32,
@@ -1016,10 +1016,10 @@
       name: 'iShares U.S. Medical Devices ETF',
       tag: 'devices',
       focus: 'Broad exposure to U.S. medical device companies including diagnostic equipment, implantable devices, and monitoring technology central to extended healthspan.',
-      price: 54.44,
-      change: -0.43,
-      changePct: -0.78,
-      aum: '$3.58B',
+      price: 54.50,
+      change: +0.06,
+      changePct: +0.11,
+      aum: '$3.64B',
       expense: '0.40%',
       ytd: '-6.2%',
       holdings: 63,
@@ -1385,7 +1385,7 @@
   // MARKET CAP CHART
   // ============================================================
   function renderMcapChart() {
-    // Generate synthetic daily data from Jan 2 to Mar 20, 2026 (56 trading days)
+    // Generate synthetic daily data from Jan 2 to Mar 23, 2026 (57 trading days)
     const labels = [];
     const etfData = [];
     const stockData = [];
@@ -1396,7 +1396,7 @@
     let stockBase = 28.1; // $28.1B
 
     const startDate = new Date('2026-01-02');
-    const endDate = new Date('2026-03-20');
+    const endDate = new Date('2026-03-23');
     let current = new Date(startDate);
 
     while (current <= endDate) {
