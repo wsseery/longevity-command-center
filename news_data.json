@@ -1,12 +1,21 @@
 [
   {
-    "title": "LA Times: Longevity Industry Turns Aging into an Investable Market",
-    "source": "Los Angeles Times",
-    "date": "2026-03-22",
+    "title": "Inside the Longevity Boom: Where Science Ends and Fantasy Begins",
+    "source": "Anadolu Agency",
+    "date": "2026-03-24",
     "category": "Industry",
     "importance": "high",
-    "description": "Biotech, AI diagnostics, and venture capital are converging across Southern California to make longevity a scalable growth frontier, shifting from boutique wellness to investable healthtech.",
-    "url": "https://www.latimes.com/b2b/health-life-science/story/2026-03-22/los-angeles-longevity-industry-trends"
+    "description": "The longevity sector attracted $8.49B in 2024 (a 220% jump) and is projected to reach $8T by 2030 per UBS, as USC researcher Valter Longo warns people are living longer but sicker.",
+    "url": "https://www.aa.com.tr/en/science-technology/inside-the-longevity-boom-where-science-ends-and-fantasy-begins/3876903"
+  },
+  {
+    "title": "NIA ITP March 2026 Results: Zero Compounds Extended Lifespan",
+    "source": "X (@agingroy)",
+    "date": "2026-03-23",
+    "category": "Research",
+    "importance": "high",
+    "description": "The NIH Interventions Testing Program released March 2026 results showing zero compounds extended lifespan; pioglitazone shortened female lifespan by 6.2% after 20 years of testing.",
+    "url": "https://x.com/agingroy/status/2036169347069026755"
   },
   {
     "title": "Global Longevity Federation 2026 Opens in Rome",
@@ -18,6 +27,15 @@
     "url": "https://x.com/Longevity25252"
   },
   {
+    "title": "LA Times: Longevity Industry Turns Aging into an Investable Market",
+    "source": "Los Angeles Times",
+    "date": "2026-03-22",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Biotech, AI diagnostics, and venture capital are converging across Southern California to make longevity a scalable growth frontier, shifting from boutique wellness to investable healthtech.",
+    "url": "https://www.latimes.com/b2b/health-life-science/story/2026-03-22/los-angeles-longevity-industry-trends"
+  },
+  {
     "title": "Biotech Stocks Surge as Longevity Investment Doubles to $8.49B",
     "source": "Community News / Motley Fool",
     "date": "2026-03-20",
@@ -25,6 +43,15 @@
     "importance": "high",
     "description": "Private longevity investment more than doubled in 2025, hitting $8.49B across 325 deals, as the FDA approved 46 new drugs including the first class labeled potential longevity therapeutics.",
     "url": "https://www.community-news.com/premium/stacker/stories/biotech-stocks-and-longevity-investing-trends-to-track,161246"
+  },
+  {
+    "title": "When Longevity Data Grows Up",
+    "source": "LinkedIn / Phil Newman",
+    "date": "2026-03-19",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Longevity.Technology is shifting from observing the field to structuring it, while UT Health San Antonio preps a $38M human trial testing three existing medicines for extending healthy lifespan.",
+    "url": "https://www.linkedin.com/pulse/when-longevity-data-grows-up-phil-newman-hfwfe"
   },
   {
     "title": "Popular Anti-Aging Senolytic Combo D+Q Causes Brain Myelin Damage in Mice",
@@ -41,187 +68,160 @@
     "date": "2026-03-19",
     "category": "Research",
     "importance": "high",
-    "description": "A lipid nanoparticle delivers TRIM11 mRNA to neurons via a neurotransmitter pathway, dissolving tau aggregates and restoring cognition in Alzheimer's mouse models with effects lasting three months.",
+    "description": "A lipid nanoparticle delivers TRIM11 mRNA to neurons, dissolving tau aggregates and restoring cognition in Alzheimer's mouse models with effects lasting three months.",
     "url": "https://lifespan.io/news/using-mrna-to-fight-tau-aggregation-in-alzheimers/"
   },
   {
-    "title": "Phil Newman: When Longevity Data Grows Up",
-    "source": "LinkedIn",
-    "date": "2026-03-19",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Longevity.Technology founder Phil Newman discusses how longevity biotech is moving from narrative to execution as data maturity improves across the sector.",
-    "url": "https://www.linkedin.com/pulse/when-longevity-data-grows-up-phil-newman-hfwfe"
-  },
-  {
-    "title": "Avai Bio: $45B Cell Therapy Boom Hits Alpha-Klotho Manufacturing Milestone",
-    "source": "Fidelity",
-    "date": "2026-03-18",
+    "title": "WHOOP Enters $34.5M ARPA-H-Backed Bid to Quantify Aging",
+    "source": "Longevity.Technology",
+    "date": "2026-03-20",
     "category": "Biotech",
     "importance": "high",
-    "description": "Avai Bio takes a critical manufacturing step for its alpha-Klotho longevity program, positioning the regenerative protein for production amid a $45B cell therapy market.",
-    "url": "https://www.fidelity.com/news/article/default/202603181130PRIMZONEFULLFEED9674166"
+    "description": "Wearable company WHOOP joins an ARPA-H-backed consortium in a $34.5M program to develop tools for quantifying biological aging through continuous health monitoring.",
+    "url": "https://longevity.technology/news/"
   },
   {
-    "title": "UT Health $38M VITAL-H Trial: Rapamycin, Semaglutide, Dapagliflozin",
-    "source": "Longevity.Technology",
+    "title": "Longevity Biotech Market Valued at $12.5B, Projected to Hit $45.8B by 2033",
+    "source": "LinkedIn / Market Research",
     "date": "2026-03-18",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Three FDA-approved drugs enter the VITAL-H study to prove their capacity to slow aging, enrolling 700+ healthy adults aged 60-65 in South Texas with $38M in federal funding.",
-    "url": "https://longevity.technology/news/three-drugs-in-major-study-to-prove-their-capacity-to-slow-aging/"
-  },
-  {
-    "title": "Longevity Biotech Market Valued at $12.5B, Projected to Reach $45.8B by 2033",
-    "source": "LinkedIn / Market Research Update",
-    "date": "2026-03-18",
-    "category": "Industry",
-    "importance": "high",
-    "description": "New report values the longevity biotech market at $12.5B in 2026, projecting 20.4% CAGR growth to $45.8B by 2033, driven by AI-powered aging clocks and personalized longevity medicine.",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "The global longevity biotech market is valued at $12.5B in 2026 and projected to reach $45.8B by 2033, growing at a CAGR of 20.4% driven by AI-optimized drug discovery pipelines.",
     "url": "https://www.linkedin.com/pulse/longevity-biotech-market-global-outlook-investment-9v7yc"
   },
   {
-    "title": "Longitudinal Epigenetic Clock Changes Predict Long-Term Mortality",
-    "source": "Nature Aging",
+    "title": "Longevity Innovation Forum: Aging Drug v1 Targets Disease, v2 Will Target Aging Itself",
+    "source": "LinkedIn / Manish Chamoli",
     "date": "2026-03-17",
-    "category": "Research",
-    "importance": "high",
-    "description": "24-year Italian cohort study shows tracking how epigenetic clocks change over time substantially improves mortality prediction, with second-generation clocks outperforming first-generation measures.",
-    "url": "https://www.nature.com/articles/s43587-026-01095-1"
-  },
-  {
-    "title": "Gut Bacterium Roseburia Linked to Increased Muscle Strength",
-    "source": "Lifespan.io",
-    "date": "2026-03-17",
-    "category": "Research",
+    "category": "Industry",
     "importance": "normal",
-    "description": "Scientists find a positive correlation between the gut bacterium Roseburia inulinivorans and muscle strength in both mice and humans, opening avenues for age-related muscle loss treatment.",
-    "url": "https://lifespan.io/news/study-links-a-gut-bacterium-to-increased-muscle-strength/"
+    "description": "At the Longevity Innovation Forum in San Diego, panelists discussed how first-gen aging drugs target age-related diseases while the next generation will target the aging process directly.",
+    "url": "https://www.linkedin.com/posts/manishchamoli_was-on-two-panels-last-week-longevity-innovation-activity-7439798701004582912-8mlO"
   },
   {
-    "title": "Ternary Raises $4.4M to Fight Inflammaging with AI-Designed Molecular Glues",
-    "source": "Longevity.Technology",
-    "date": "2026-03-17",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "London-based Ternary Therapeutics raises $4.4M seed round to develop AI-designed molecular glues that tame chronic inflammation, a key driver of age-related disease.",
-    "url": "https://longevity.technology/news/ternary-raises-4-4m-to-fight-inflammaging-with-ai-drugs/"
-  },
-  {
-    "title": "Prof Horvath: Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
-    "source": "X / Prof. Steve Horvath",
+    "title": "Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
+    "source": "X (@prof_horvath)",
     "date": "2026-03-16",
     "category": "Research",
-    "importance": "high",
-    "description": "Epigenetic clock pioneer Steve Horvath highlights March 2026 as a strong month for supplement research, citing vitamin C's role in inhibiting ACSL4 and alleviating ferro-aging in primates.",
+    "importance": "normal",
+    "description": "Steve Horvath highlights March 2026 as a strong month for everyday supplement research, noting new findings on Vitamin C's role in inhibiting ferroptosis-related aging pathways in primates.",
     "url": "https://x.com/prof_horvath/status/2033620317344555202"
   },
   {
-    "title": "Rapamycin Enters Phase 3 Human Trials via Cambrian Bio's $30.8M ARPA-H Award",
-    "source": "Maxmaxxing Newsletter",
-    "date": "2026-03-16",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Cambrian Bio receives $30.8M from ARPA-H to conduct the first Phase 3 trial of a next-generation rapamycin analog for healthspan extension, with PhenoAge modeling showing ~4 years biological age reduction.",
-    "url": "https://buttondown.com/maxmaxxing/archive/rapamycin-phase-3-fasting-mimetics-2026/"
-  },
-  {
-    "title": "Rapamycin Protects Immune Cells Against DNA Damage in Humans",
-    "source": "Medical Xpress / Aging Cell",
-    "date": "2026-03-16",
-    "category": "Research",
-    "importance": "high",
-    "description": "Study in Aging Cell shows older adults given low-dose rapamycin for four months had significantly less DNA damage and cell aging in immune cells versus placebo.",
-    "url": "https://medicalxpress.com/news/2026-01-rapamycin-immune-cells-dna.html"
-  },
-  {
-    "title": "Roche Gets CE Mark for First Blood-Based ApoE4 Alzheimer's Risk Test",
-    "source": "Roche Diagnostics",
+    "title": "11 Anti-Aging Biotech Companies Leading Longevity in 2026",
+    "source": "Labiotech",
     "date": "2026-03-16",
     "category": "Biotech",
-    "importance": "high",
-    "description": "Roche's Elecsys ApoE4 test is the first IVD immunoassay to identify ApoE4 carriers via a simple blood sample, with 100% concordance to genetic testing in a 607-participant study.",
-    "url": "https://diagnostics.roche.com/global/en/news-listing/2026/roche-ce-mark-apoe4.html"
+    "importance": "normal",
+    "description": "Labiotech profiles 11 leading anti-aging companies including Altos Labs ($3B), Retro Biosciences, Cambrian Bio ($30.8M ARPA-H award), and others advancing epigenetic reprogramming and gene therapy.",
+    "url": "https://www.labiotech.eu/best-biotech/anti-aging-biotech-companies/"
   },
   {
-    "title": "Brown/Rochester Win $22M ARPA-H Award to Test HIV Drug Against Aging",
-    "source": "Brown University",
-    "date": "2026-03-12",
+    "title": "Shingles Vaccine Drastically Cuts Risk of Serious Cardiac Events",
+    "source": "American College of Cardiology",
+    "date": "2026-03-16",
     "category": "Clinical Trials",
-    "importance": "high",
-    "description": "ARPA-H funds a $22M trial of Censavudine (an HIV drug) to suppress retrotransposon-driven inflammation in 200 healthy adults aged 60-65, potentially the first drug shown to slow human aging.",
-    "url": "https://www.brown.edu/news/2026-02-24/aging-research-arpa"
+    "importance": "normal",
+    "description": "New data presented at ACC shows the shingles vaccine significantly reduces the risk of serious cardiac events, adding to the evidence linking infection control to healthy aging.",
+    "url": "https://www.acc.org/About-ACC/Press-Releases/2026/03/16/19/33/Shingles-Vaccine-Drastically-Cuts-Risk-of-Serious-Cardiac-Events"
   },
   {
-    "title": "Top Longevity Startups by Fundraising in 2026",
+    "title": "Wilbe Longevity Build Week: Global Sprint for Longevity Ventures",
+    "source": "LinkedIn",
+    "date": "2026-03-12",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A fully online sprint for researchers and builders exploring how longevity science can become real ventures, covering cellular reprogramming, aging biomarkers, and AI-driven aging biology.",
+    "url": "https://www.linkedin.com/posts/portillo-lara_longevity-aging-activity-7437828681764376576-nOQt"
+  },
+  {
+    "title": "Top Longevity Startups by Fundraising: Altos Labs Leads at $3B",
     "source": "New Market Pitch",
     "date": "2026-03-11",
     "category": "Funding",
     "importance": "normal",
-    "description": "Analysis of 90+ longevity startups reveals the top five (Altos Labs, Oura, Retro Biosciences, BioSplice, Insilico Medicine) account for ~$6.9B in total capital raised.",
+    "description": "The five most funded longevity startups (Altos Labs, Oura, Retro Biosciences, BioSplice, Insilico Medicine) account for roughly $6.9B, with Retro's $1B Series A as the largest single round.",
     "url": "https://newmarketpitch.com/blogs/news/longevity-top-startups-fundraising"
   },
   {
-    "title": "Scientists Successfully Freeze and Rewarm Mouse Brain Slices",
-    "source": "Lifespan.io",
-    "date": "2026-03-10",
+    "title": "The Senolytics Pipeline in 2026: Where the Science Still Looks Strong",
+    "source": "LongevityNext",
+    "date": "2026-03-11",
     "category": "Research",
     "importance": "high",
-    "description": "German researchers vitrified and rewarmed mouse brain slices with much neuronal function preserved, advancing cryopreservation science in a PNAS-published study.",
-    "url": "https://lifespan.io/news/scientists-successfully-freeze-and-rewarm-mouse-brain-slices/"
+    "description": "A Nature Aging study compared 21 senolytic agents, finding ABT263 and ARV825 most effective. The field is narrowing toward more selective, biomarker-driven approaches.",
+    "url": "https://longevitynext.com/the-senolytics-pipeline-in-2026-where-the-science-still-looks-strong-and-where-it-doesnt/"
   },
   {
-    "title": "ARPA-H Devotes $144M to PROSPR Program for Aging Interventions",
-    "source": "Science.org",
+    "title": "Daily Multivitamins Slow Biological Aging by 4 Months in Clinical Trial",
+    "source": "Harvard Gazette / Nature Medicine",
+    "date": "2026-03-09",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "The COSMOS trial found daily multivitamins slowed all five epigenetic aging clocks by about 4 months over 2 years, with greatest benefits for those biologically older than their actual age.",
+    "url": "https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/"
+  },
+  {
+    "title": "US Government Funds $144M PROSPR Program for First Human Aging Trials",
+    "source": "LinkedIn / Nils Regge",
     "date": "2026-03-09",
     "category": "Funding",
     "importance": "high",
-    "description": "ARPA-H's PROSPR program awards $144M to seven teams to build infrastructure for Phase 3 aging trials, including rapamycin, GLP-1 agonists, and SGLT-2 inhibitors.",
-    "url": "https://www.science.org/content/article/u-s-agency-will-devote-144-million-studies-slow-aging-extend-quality-life"
+    "description": "ARPA-H launches PROSPR, a $144M program for the first human clinical trials targeting aging directly, featuring rapamycin-based approaches and marking a paradigm shift in longevity medicine.",
+    "url": "https://www.linkedin.com/posts/nils-regge-62ab7a28_longevity-biotech-aging-activity-7436715806639661056-QLFG"
   },
   {
-    "title": "Daily Multivitamins Slow Biological Aging by 4 Months in 2-Year Trial",
-    "source": "Nature Medicine / Mass General Brigham",
-    "date": "2026-03-09",
+    "title": "Juvenescence Advances Aging Drug to Phase 2 Trial",
+    "source": "Longevity.Technology",
+    "date": "2026-03-10",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "COSMOS trial published in Nature Medicine shows daily multivitamin slowed all five epigenetic clocks over two years, with greater benefits for those who started biologically older.",
-    "url": "https://medicalxpress.com/news/2026-03-daily-multivitamins-biological-aging-year.html"
+    "description": "Juvenescence moves its aging drug candidate into Phase 2 clinical trials, part of a growing wave of longevity therapeutics entering mid-stage human testing in 2026.",
+    "url": "https://longevity.technology/news/"
   },
   {
-    "title": "Longeveron Phase 2b: Stem Cell Therapy Improves Frailty in Cell Stem Cell",
-    "source": "Longeveron / Cell Stem Cell",
-    "date": "2026-02-25",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Phase 2b results show IV laromestrocel (mesenchymal stem cells) improved 6-minute walk distance by 63.4 meters at 9 months in frail older adults versus placebo, published in Cell Stem Cell.",
-    "url": "https://investors.longeveron.com/news/News/news-details/2026/Longeveron-Results-of-Phase-2b-Clinical-Trial-Demonstrating-Stem-Cell-Therapy-Improved-Condition-of-Patients-with-Age-Related-Frailty-Published-in-Cell-Stem-Cell/default.aspx"
+    "title": "Wearable Startup Temple Secures $54M for Brain Monitoring",
+    "source": "Longevity.Technology",
+    "date": "2026-03-18",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "Temple raises $54M to develop wearable brain monitoring technology, expanding the intersection of neuroscience and longevity diagnostics.",
+    "url": "https://longevity.technology/news/"
   },
   {
-    "title": "Senosensitizers Clear Up to 70% of Zombie Cells in Preclinical Study",
-    "source": "Medical Xpress / Cedars-Sinai",
-    "date": "2026-02-09",
-    "category": "Research",
-    "importance": "high",
-    "description": "Cedars-Sinai preclinical study in Aging Cell finds senosensitizers enable senolytics to eliminate resistant senescent cells that infections can reactivate into tissue-damaging forms.",
-    "url": "https://medicalxpress.com/news/2026-02-preclinical-senolytics-zombie-cells.html"
+    "title": "Annovis CEO Eyes Spring Breakthrough for Alzheimer's Drug",
+    "source": "Longevity.Technology",
+    "date": "2026-03-19",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Annovis Bio's CEO signals a potential spring breakthrough for their Alzheimer's drug candidate, as the company advances its pipeline targeting neurodegeneration.",
+    "url": "https://longevity.technology/news/"
   },
   {
-    "title": "First Human Cellular Reprogramming Trial Cleared by the FDA",
-    "source": "Lifespan.io",
-    "date": "2026-02-06",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Life Biosciences receives IND clearance from the FDA to test ER-100, the first-ever human partial epigenetic reprogramming therapy, targeting optic neuropathies.",
-    "url": "https://lifespan.io/news/first-human-cellular-reprogramming-trial-cleared-by-the-fda/"
-  },
-  {
-    "title": "Polyamine Longevity Compound May Also Fuel Cancer via eIF5A2",
-    "source": "ScienceDaily / Tokyo Univ. of Science",
+    "title": "Scientists Reveal Why a Popular Anti-Aging Compound May Also Fuel Cancer",
+    "source": "ScienceDaily / Tokyo University of Science",
     "date": "2026-03-02",
     "category": "Research",
-    "importance": "high",
-    "description": "Scientists reveal polyamines have a dual role -- boosting healthy cells via eIF5A1 while promoting cancer through eIF5A2, with implications for longevity supplement safety.",
+    "importance": "normal",
+    "description": "Polyamines, celebrated for boosting cellular cleanup and healthy aging, are found to also turbocharge cancer growth, revealing a hidden double life for these longevity molecules.",
     "url": "https://www.sciencedaily.com/releases/2026/03/260302030657.htm"
+  },
+  {
+    "title": "Rejuvenation Roundup February 2026: Senolytic Mitochondrial Stress Mechanism",
+    "source": "Lifespan.io",
+    "date": "2026-03-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Nature Aging researchers show mitochondrial stress is key to senolytic effectiveness, while Aging Cell reports on restoring natural killer cell function to combat immune aging.",
+    "url": "https://lifespan.io/news/rejuvenation-roundup-february-2026/"
+  },
+  {
+    "title": "Brown University Wins $22M Federal Award to Study Anti-Aging Treatment",
+    "source": "Brown University",
+    "date": "2026-02-24",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Brown and Rochester researchers will test whether an HIV drug can quiet chronic DNA-triggered inflammation to slow human aging, in the first major trial targeting the 'dark genome' mechanism.",
+    "url": "https://www.brown.edu/news/2026-02-24/aging-research-arpa"
   }
 ]
