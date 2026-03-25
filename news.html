@@ -88,7 +88,7 @@
       <h1 class="hero-title">THE <span class="highlight">NEWS</span> FEED</h1>
       <p class="hero-subtitle">Curated Longevity &amp; Anti-Aging Intelligence</p>
       <p class="hero-intro">Tracking clinical trials, research breakthroughs, biotech funding, and industry developments across the longevity and aging science landscape. Aggregated from 16+ specialized sources.</p>
-      <div class="hero-updated"><span class="pulse-dot"></span>LOOKBACK: JAN 1 &mdash; FEB 27, 2026</div>
+      <div class="hero-updated"><span class="pulse-dot"></span>UPDATED DAILY</div>
     </div>
   </header>
   <section class="news-section">
@@ -110,7 +110,7 @@
     </div>
     <div class="news-stats" id="newsStats">
       <span>Showing <span class="count-val" id="showCount">25</span> articles</span>
-      <span>Date range: <span class="count-val">Jan 2 &mdash; Feb 27, 2026</span></span>
+      <span>Date range: <span class="count-val" id="dateRange">Loading...</span></span>
       <span>Sources: <span class="count-val">16+</span></span>
     </div>
     <div class="news-feed" id="newsFeed"></div>
@@ -137,33 +137,34 @@
   <script>
   (function(){
     'use strict';
-    var newsData=[
-      {id:1,date:'2026-02-26',title:'ARPA-H Launches First Phase 3 Aging Trial: Rapamycin, GLP-1, SGLT-2i Combo',summary:"ARPA-H's PROSPR program announces the first-ever Phase 3 clinical trial targeting biological aging, combining rapamycin, a GLP-1 receptor agonist, and an SGLT-2 inhibitor.",source:'TIME / Columbia University',sourceUrl:'https://time.com',category:'Clinical Trials',importance:'high'},
-      {id:2,date:'2026-02-26',title:'Columbia Wins ARPA-H FAST Award for Aging Biomarker Development',summary:'Columbia University receives funding under ARPA-H FAST program to develop validated biomarkers of biological aging for use in clinical trials.',source:'Columbia University',sourceUrl:'https://www.cuimc.columbia.edu',category:'Research',importance:'medium'},
-      {id:3,date:'2026-02-25',title:"Rapamycin Lifespan Benefits Vary Widely 'Like a Lottery' in Mice",summary:'New research in Nature Aging shows rapamycin extends average mouse lifespan but with enormous individual variation, suggesting genetic or epigenetic factors play a critical role.',source:'New Scientist',sourceUrl:'https://www.newscientist.com',category:'Research',importance:'high'},
-      {id:4,date:'2026-02-25',title:'Blood piRNA Test Predicts Survival in Older Adults',summary:'A study in Aging Cell identifies Piwi-interacting RNA (piRNA) signatures in blood that can predict survival outcomes in older adults.',source:'Medical Xpress / Aging Cell',sourceUrl:'https://medicalxpress.com',category:'Research',importance:'medium'},
-      {id:5,date:'2026-02-25',title:'U. of Rochester Wins $22M ARPA-H Award for Anti-Retroviral Aging Therapy TPN-101',summary:'The University of Rochester receives a $22 million ARPA-H award to advance TPN-101, targeting retrotransposon activity linked to aging, into clinical trials.',source:'University of Rochester',sourceUrl:'https://www.rochester.edu',category:'Funding',importance:'medium'},
-      {id:6,date:'2026-02-24',title:'Linnaeus Therapeutics Receives $22M ARPA-H Award for Healthspan Drug LNS8801',summary:'Linnaeus secures $22 million from ARPA-H to advance LNS8801, a small molecule targeting GPER, as a healthspan-extending therapy.',source:'Longevity.Technology',sourceUrl:'https://longevity.technology',category:'Funding',importance:'high'},
-      {id:7,date:'2026-02-25',title:'NOVOS Core Clinical Trial Shows Vascular Aging Improvements',summary:'NOVOS Labs publishes results from a placebo-controlled clinical trial showing NOVOS Core significantly improved markers of vascular aging.',source:'NOVOS / Medical News Today',sourceUrl:'https://novoslabs.com',category:'Clinical Trials',importance:'high'},
-      {id:8,date:'2026-02-19',title:'Hyperglutaminolysis Drives Senescence via Arginine/mTORC1 Pathway',summary:'Research in Nature Signal Transduction reveals excess glutamine metabolism drives cellular senescence through arginine accumulation and mTORC1 activation.',source:'Nature Signal Transduction',sourceUrl:'https://www.nature.com/sigtrans',category:'Research',importance:'medium'},
-      {id:9,date:'2026-02-18',title:'Metformin Linked to 30% Lower Mortality Risk and Exceptional Longevity in Women',summary:'A large retrospective cohort study finds metformin use is associated with a 30% reduction in all-cause mortality, with particularly strong effects in women.',source:'ScienceAlert',sourceUrl:'https://www.sciencealert.com',category:'Research',importance:'high'},
-      {id:10,date:'2026-02-18',title:'Longevity Market Report: $740B Industry in 2026 with Projected Growth',summary:'Global longevity economy reaches $740 billion in 2026, forecast to exceed $1 trillion by 2030.',source:'Yahoo Finance / Global Market Insights',sourceUrl:'https://finance.yahoo.com',category:'Industry',importance:'medium'},
-      {id:11,date:'2026-02-14',title:'NAD+ and NMN Science Review: 2026 State of the Evidence',summary:'Comprehensive review of the latest NAD+ and NMN research covering recent clinical trial results, bioavailability studies, and emerging evidence for dosing and timing protocols.',source:'Synchronicity Health',sourceUrl:'https://www.synchronicityhealth.co.uk',category:'Research',importance:'medium'},
-      {id:12,date:'2026-02-10',title:'Targeting Longevity 2026 Berlin Congress Announced',summary:'The Targeting Longevity 2026 congress announced for Berlin, bringing together researchers, biotech companies, and investors.',source:'EurekAlert / AAAS',sourceUrl:'https://www.eurekalert.org',category:'Industry',importance:'low'},
-      {id:13,date:'2026-02-04',title:'Taurine Supplementation Extends Lifespan in New Mouse Study',summary:'Follow-up study confirms taurine supplementation significantly extends lifespan in mice, with researchers identifying the specific metabolic pathways involved.',source:'Science / Rapamycin News',sourceUrl:'https://rapamycin.news',category:'Research',importance:'high'},
-      {id:14,date:'2026-02-12',title:'Bryan Johnson Blueprint Protocol 2026 Update: New Stack Additions',summary:'Bryan Johnson publishes his 2026 Blueprint protocol update, adding rapamycin cycling, updated NMN dosing, and a novel mitochondrial support stack.',source:'Blueprint / Bryan Johnson',sourceUrl:'https://blueprint.bryanjohnson.com',category:'Protocols',importance:'medium'},
-      {id:15,date:'2026-02-08',title:'Retro Biosciences Advances Partial Reprogramming to IND-Enabling Studies',summary:'Retro Biosciences, backed by Sam Altman, announces its partial reprogramming platform has advanced to IND-enabling studies.',source:'Endpoints News',sourceUrl:'https://endpts.com',category:'Biotech',importance:'high'},
-      {id:16,date:'2026-02-01',title:'Life Extension Feb 2026 Digest: Vitamin D, Olive Oil, B Vitamins',summary:'Monthly digest highlighting vitamin D effects on telomere length, olive oil polyphenols reducing biological aging markers, and B vitamins lowering homocysteine.',source:'Life Extension Magazine',sourceUrl:'https://www.lifeextension.com',category:'Research',importance:'low'},
-      {id:17,date:'2026-01-30',title:'Life Biosciences Wins FDA Approval for Epigenetic Reprogramming Phase 1 Trial',summary:'Life Biosciences receives FDA clearance to begin a Phase 1 clinical trial for in-vivo epigenetic reprogramming therapy.',source:'Fortune / Clinical Trials Arena',sourceUrl:'https://fortune.com',category:'Clinical Trials',importance:'high'},
-      {id:18,date:'2026-01-29',title:'Longevity Biotech Stocks Surge as $27T Healthcare Shift Gains Momentum',summary:'Morningstar reports a surge in longevity biotech stocks as analysts project aging interventions could reshape the $27 trillion global healthcare market.',source:'PR Newswire / Morningstar',sourceUrl:'https://www.morningstar.com',category:'Industry',importance:'medium'},
-      {id:19,date:'2026-01-26',title:'Lifespan.io Rejuvenation Roundup January 2026',summary:'Monthly roundup: rapamycin may cause DNA damage at high doses, shingles vaccine appears to slow epigenetic aging, gut microbe imbalance linked to age-related weight gain.',source:'Lifespan.io',sourceUrl:'https://lifespan.io',category:'Research',importance:'medium'},
-      {id:20,date:'2026-01-22',title:'Unity Biotechnology Senolytics Show Positive Phase 2 Results for Knee Osteoarthritis',summary:'Unity Biotechnology reports positive Phase 2 data for UBX1325, demonstrating statistically significant improvements in pain and function for knee osteoarthritis patients.',source:'Unity Biotechnology / BioSpace',sourceUrl:'https://www.unitybiotechnology.com',category:'Clinical Trials',importance:'high'},
-      {id:21,date:'2026-01-19',title:'Exercise Combined with Anti-Inflammatories in Aging Trial',summary:'New clinical trial investigates combined effects of structured exercise programs and anti-inflammatory agents on biological aging markers.',source:'NPR',sourceUrl:'https://www.npr.org',category:'Clinical Trials',importance:'medium'},
-      {id:22,date:'2026-01-15',title:'Altos Labs Reports Breakthrough in Tissue-Specific Rejuvenation in Primates',summary:'Altos Labs publishes preclinical data showing tissue-specific rejuvenation in non-human primates using their proprietary reprogramming approach.',source:'STAT News / Cell',sourceUrl:'https://www.statnews.com',category:'Biotech',importance:'high'},
-      {id:23,date:'2026-01-12',title:'Peter Attia: Updated Longevity Framework — Medicine 3.0 in Practice',summary:'Peter Attia MD publishes an updated longevity framework integrating the latest evidence on exercise, nutrition, sleep, and pharmacological interventions.',source:'Peter Attia MD',sourceUrl:'https://peterattiamd.com',category:'Protocols',importance:'medium'},
-      {id:24,date:'2026-01-08',title:'Survey: 74% of US Adults Ready to Slow Aging in 2026',summary:'A national survey finds 74% of American adults express interest in science-backed interventions to slow biological aging.',source:'Longevity.Technology',sourceUrl:'https://longevity.technology',category:'Industry',importance:'medium'},
-      {id:25,date:'2026-02-22',title:'Calico Labs Publishes New Insights on Naked Mole-Rat Aging Resistance',summary:'Google-backed Calico Labs publishes research elucidating molecular mechanisms behind the naked mole-rat exceptional resistance to aging.',source:'Calico Labs / Nature Aging',sourceUrl:'https://www.calicolabs.com',category:'Research',importance:'medium'}
-    ];
+    var newsData=[];
+    fetch('./news_data.json')
+      .then(function(r){return r.json();})
+      .then(function(data){
+        newsData=data.map(function(item,i){
+          return {
+            id:i+1,
+            date:item.date,
+            title:item.title,
+            summary:item.description,
+            source:item.source,
+            sourceUrl:item.url,
+            category:item.category,
+            importance:item.importance
+          };
+        });
+        renderNewsFeed();
+        if(newsData.length>0){
+          var dates=newsData.map(function(n){return n.date;}).sort();
+          var oldest=dates[0],newest=dates[dates.length-1];
+          var dr=document.getElementById('dateRange');
+          if(dr) dr.textContent=formatDate(oldest)+' — '+formatDate(newest);
+        }
+      })
+      .catch(function(err){
+        console.error('Failed to load news_data.json:',err);
+        document.getElementById('newsFeed').innerHTML='<div class="news-empty"><p>Failed to load news feed. Please try refreshing.</p></div>';
+      });
     var sources=[
       {name:'Longevity.Technology',url:'https://longevity.technology',freq:'Daily (weekdays)',icon:'&#9672;'},
       {name:'Bryan Johnson / Blueprint',url:'https://blueprint.bryanjohnson.com',freq:'Several times/week',icon:'&#9733;'},
