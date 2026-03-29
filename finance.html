@@ -685,6 +685,184 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* ===== INDIVIDUAL ETF MINI-CHARTS ===== */
+    .etf-charts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 1024px) {
+      .etf-charts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .etf-charts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .etf-mini-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-bright);
+      border-radius: 12px;
+      padding: 16px 16px 12px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .etf-mini-card:hover {
+      border-color: rgba(0, 221, 255, 0.35);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 221, 255, 0.08);
+    }
+
+    .etf-mini-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+    .etf-mini-ticker {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--cyan);
+      text-shadow: 0 0 10px var(--cyan-glow);
+      line-height: 1;
+    }
+    .etf-mini-name {
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      color: var(--text-dim);
+      margin-top: 3px;
+      line-height: 1.3;
+      max-width: 160px;
+    }
+    .etf-mini-price-block {
+      text-align: right;
+    }
+    .etf-mini-price {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+    .etf-mini-change {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      margin-top: 3px;
+    }
+    .etf-mini-change.up { color: var(--green); }
+    .etf-mini-change.down { color: var(--red); }
+
+    .etf-mini-chart-wrap {
+      position: relative;
+      height: 120px;
+      margin: 10px -4px 8px;
+    }
+
+    .etf-mini-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 8px;
+    }
+    .etf-mini-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .etf-mini-meta-item {
+      font-size: 0.65rem;
+      display: flex;
+      gap: 6px;
+      align-items: baseline;
+    }
+    .etf-mini-meta-label {
+      font-family: var(--font-heading);
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .etf-mini-meta-value {
+      font-family: var(--font-mono);
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .etf-mini-ytd {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .etf-mini-ytd.up { color: var(--green); }
+    .etf-mini-ytd.down { color: var(--red); }
+
+    .etf-mini-range {
+      margin-top: 8px;
+    }
+    .etf-mini-range-header {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
+    .etf-mini-range-bar {
+      position: relative;
+      height: 3px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 2px;
+    }
+    .etf-mini-range-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0,221,255,0.3), rgba(0,221,255,0.7));
+      border-radius: 2px;
+    }
+    .etf-mini-range-dot {
+      position: absolute;
+      top: -3.5px;
+      width: 9px;
+      height: 9px;
+      background: var(--cyan);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 6px var(--cyan-glow);
+    }
+
+    /* Summary stats row for individual charts section */
+    .etf-charts-stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .etf-charts-stat {
+      background: var(--bg-card);
+      border: 1px solid var(--border-bright);
+      border-radius: 8px;
+      padding: 16px 22px;
+      flex: 1;
+      min-width: 160px;
+    }
+    .etf-charts-stat-label {
+      font-family: var(--font-heading);
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
+    .etf-charts-stat-value {
+      font-family: var(--font-mono);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -746,46 +924,36 @@
   </section>
 
   <!-- ============================================================
-       2.5 MARKET CAP CHART
+       2.5 ETF PERFORMANCE -- INDIVIDUAL CHARTS
        ============================================================ -->
   <section class="fin-section" id="mcapChartSection">
     <div class="fin-section-header">
       <div class="section-icon" style="background:rgba(0,255,200,0.12);border:1px solid rgba(0,255,200,0.25);">&#9652;</div>
       <div>
-        <div class="fin-section-title">TOTAL MARKET CAP &mdash; DAILY TRACKER</div>
-        <div class="fin-section-subtitle">Combined market capitalization of all tracked ETFs and longevity stocks &mdash; Jan 2 to Mar 27, 2026</div>
+        <div class="fin-section-title">ETF PERFORMANCE &mdash; INDIVIDUAL CHARTS</div>
+        <div class="fin-section-subtitle">YTD price trends for each tracked longevity ETF &mdash; Jan 2 to Mar 27, 2026</div>
       </div>
     </div>
-    <div style="display:flex;gap:20px;margin-bottom:24px;flex-wrap:wrap;">
-      <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
-        <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Current Total</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">$91.1B</div>
+    <div class="etf-charts-stats">
+      <div class="etf-charts-stat">
+        <div class="etf-charts-stat-label">Current Total</div>
+        <div class="etf-charts-stat-value" style="color:var(--teal);text-shadow:0 0 16px rgba(0,255,200,0.3);" id="mcapCurrentTotal">&mdash;</div>
       </div>
-      <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
-        <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">ETF AUM</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">$57.5B</div>
+      <div class="etf-charts-stat">
+        <div class="etf-charts-stat-label">ETF AUM</div>
+        <div class="etf-charts-stat-value" style="color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">&mdash;</div>
       </div>
-      <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
-        <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">Stock Market Cap</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--amber);text-shadow:0 0 16px var(--amber-glow);" id="mcapStockTotal">$33.6B</div>
+      <div class="etf-charts-stat">
+        <div class="etf-charts-stat-label">Stock Market Cap</div>
+        <div class="etf-charts-stat-value" style="color:var(--amber);text-shadow:0 0 16px var(--amber-glow);" id="mcapStockTotal">&mdash;</div>
       </div>
-      <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:8px;padding:18px 24px;flex:1;min-width:180px;">
-        <div style="font-family:var(--font-heading);font-size:0.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:4px;">YTD Change</div>
-        <div style="font-family:var(--font-mono);font-size:1.6rem;font-weight:700;color:var(--green);text-shadow:0 0 16px rgba(0,255,136,0.3);" id="mcapYTDChange">+$4.7B</div>
+      <div class="etf-charts-stat">
+        <div class="etf-charts-stat-label">YTD Change</div>
+        <div class="etf-charts-stat-value" id="mcapYTDChange">&mdash;</div>
       </div>
     </div>
-    <div style="background:var(--bg-card);border:1px solid var(--border-bright);border-radius:12px;padding:28px;position:relative;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-        <div style="font-family:var(--font-heading);font-size:0.85rem;font-weight:600;color:var(--text-primary);">Combined Market Cap (Billions USD)</div>
-        <div style="display:flex;gap:16px;font-family:var(--font-mono);font-size:0.7rem;">
-          <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:3px;background:var(--cyan);border-radius:2px;display:inline-block;"></span><span style="color:var(--text-secondary);">ETF AUM</span></span>
-          <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:3px;background:var(--amber);border-radius:2px;display:inline-block;"></span><span style="color:var(--text-secondary);">Stock Market Cap</span></span>
-          <span style="display:flex;align-items:center;gap:6px;"><span style="width:12px;height:3px;background:var(--teal);border-radius:2px;display:inline-block;"></span><span style="color:var(--text-secondary);">Total</span></span>
-        </div>
-      </div>
-      <div style="position:relative;height:400px;">
-        <canvas id="mcapChart"></canvas>
-      </div>
+    <div class="etf-charts-grid" id="etfChartsGrid">
+      <!-- Mini-chart cards injected by JS -->
     </div>
   </section>
 
@@ -1382,131 +1550,239 @@
   }
 
   // ============================================================
-  // MARKET CAP CHART
+  // INDIVIDUAL ETF MINI-CHARTS
   // ============================================================
-  function renderMcapChart() {
-    // Generate synthetic daily data from Jan 2 to Mar 27, 2026 (61 trading days)
+
+  // Simple seeded pseudo-random number generator (mulberry32)
+  function seededRNG(seed) {
+    let s = seed >>> 0;
+    return function() {
+      s += 0x6D2B79F5;
+      let t = Math.imul(s ^ (s >>> 15), 1 | s);
+      t ^= t + Math.imul(t ^ (t >>> 7), 61 | t);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  // Hash a ticker string to a stable integer seed
+  function tickerSeed(ticker) {
+    let h = 0x811c9dc5;
+    for (let i = 0; i < ticker.length; i++) {
+      h ^= ticker.charCodeAt(i);
+      h = Math.imul(h, 0x01000193);
+    }
+    return h >>> 0;
+  }
+
+  // Generate trading day labels from Jan 2 to Mar 27, 2026
+  function tradingDayLabels() {
     const labels = [];
-    const etfData = [];
-    const stockData = [];
-    const totalData = [];
-
-    // Start values
-    let etfBase = 56.2; // $56.2B
-    let stockBase = 28.1; // $28.1B
-
     const startDate = new Date('2026-01-02');
-    const endDate = new Date('2026-03-27');
-    let current = new Date(startDate);
-
-    while (current <= endDate) {
-      const day = current.getDay();
-      if (day !== 0 && day !== 6) { // Skip weekends
-        const dateStr = current.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-        labels.push(dateStr);
-
-        // Random walk with slight drift
-        etfBase += (Math.random() - 0.52) * 0.8 + 0.05;
-        stockBase += (Math.random() - 0.50) * 0.6 + 0.06;
-
-        etfData.push(parseFloat(etfBase.toFixed(2)));
-        stockData.push(parseFloat(stockBase.toFixed(2)));
-        totalData.push(parseFloat((etfBase + stockBase).toFixed(2)));
+    const endDate   = new Date('2026-03-27');
+    let cur = new Date(startDate);
+    while (cur <= endDate) {
+      const d = cur.getDay();
+      if (d !== 0 && d !== 6) {
+        labels.push(cur.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
       }
-      current.setDate(current.getDate() + 1);
+      cur.setDate(cur.getDate() + 1);
+    }
+    return labels;
+  }
+
+  // Generate a seeded random-walk price series for an ETF
+  // Starts at the back-calculated Jan 2 price, ends at etf.price
+  function generatePriceSeries(etf, nDays) {
+    const rng = seededRNG(tickerSeed(etf.ticker));
+
+    // Parse ytd percentage (e.g. "+2.1%" or "-8.3%")
+    const ytdPct = parseFloat(etf.ytd) / 100; // e.g. 0.021 or -0.083
+    const endPrice = etf.price;
+    const startPrice = endPrice / (1 + ytdPct);
+
+    // Generate a raw random walk of (nDays - 1) increments
+    const raw = [0];
+    for (let i = 1; i < nDays; i++) {
+      const step = (rng() - 0.5) * 2 * 0.015; // ±1.5% max per day
+      raw.push(raw[raw.length - 1] + step);
     }
 
-    // Update current display values
-    const lastETF = etfData[etfData.length - 1];
-    const lastStock = stockData[stockData.length - 1];
-    const lastTotal = totalData[totalData.length - 1];
-    const firstTotal = totalData[0];
-    const ytdChange = lastTotal - firstTotal;
+    // Normalize so raw[0]=0 and raw[last]=1, then scale to [startPrice, endPrice]
+    const rawMin = Math.min(...raw);
+    const rawMax = Math.max(...raw);
+    const rawSpan = rawMax - rawMin || 1;
 
-    document.getElementById('mcapCurrentTotal').textContent = '$' + lastTotal.toFixed(1) + 'B';
-    document.getElementById('mcapETFTotal').textContent = '$' + lastETF.toFixed(1) + 'B';
-    document.getElementById('mcapStockTotal').textContent = '$' + lastStock.toFixed(1) + 'B';
-    document.getElementById('mcapYTDChange').textContent = (ytdChange >= 0 ? '+' : '') + '$' + ytdChange.toFixed(1) + 'B';
-    document.getElementById('mcapYTDChange').style.color = ytdChange >= 0 ? 'var(--green)' : 'var(--red)';
+    // We need raw[0] to map to startPrice and raw[last] to map to endPrice
+    // Use linear rescaling: price[i] = startPrice + (raw[i] - raw[0]) / (raw[last] - raw[0]) * (endPrice - startPrice)
+    // But clamp so the path remains within a plausible range
+    const rawFirst = raw[0];   // 0
+    const rawLast  = raw[nDays - 1];
+    const rawRange = rawLast - rawFirst || 1;
 
-    const ctx = document.getElementById('mcapChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: 'ETF AUM',
-            data: etfData,
-            borderColor: 'rgba(0, 221, 255, 0.9)',
-            backgroundColor: 'rgba(0, 221, 255, 0.05)',
-            borderWidth: 2,
-            pointRadius: 0,
-            pointHoverRadius: 4,
-            tension: 0.4,
-            fill: false
+    return raw.map(r => {
+      const price = startPrice + ((r - rawFirst) / rawRange) * (endPrice - startPrice);
+      return parseFloat(price.toFixed(2));
+    });
+  }
+
+  function parseAUMToNumber(aumStr) {
+    // Convert strings like "$1.01B", "$340M", "$3.1B", "$42M" to numeric billions
+    if (!aumStr || aumStr === 'N/A') return 0;
+    const s = aumStr.replace('$', '').trim();
+    if (s.endsWith('B')) return parseFloat(s) * 1;
+    if (s.endsWith('M')) return parseFloat(s) / 1000;
+    return 0;
+  }
+
+  function renderIndividualCharts() {
+    const visibleETFs = ETF_DATA.filter(e => !e.hidden);
+    const labels = tradingDayLabels();
+    const nDays = labels.length;
+    const grid = document.getElementById('etfChartsGrid');
+
+    // Compute summary stats from ETF_DATA
+    let totalAUM = 0;
+    let totalYTDWeightedPct = 0;
+    visibleETFs.forEach(etf => {
+      const aumB = parseAUMToNumber(etf.aum);
+      totalAUM += aumB;
+      const ytdPct = parseFloat(etf.ytd) / 100 || 0;
+      const startPrice = etf.price / (1 + ytdPct);
+      const gain = etf.price - startPrice;
+      // approximate gain contribution (not weighted by shares, just illustrative)
+      totalYTDWeightedPct += ytdPct;
+    });
+    const avgYTD = totalYTDWeightedPct / visibleETFs.length;
+    const avgYTDDisplay = (avgYTD >= 0 ? '+' : '') + (avgYTD * 100).toFixed(1) + '%';
+
+    // Stock market cap placeholder (kept from original context)
+    const stockCapB = 33.6;
+    const currentTotalB = totalAUM + stockCapB;
+
+    document.getElementById('mcapCurrentTotal').textContent = '$' + currentTotalB.toFixed(1) + 'B';
+    document.getElementById('mcapETFTotal').textContent = '$' + totalAUM.toFixed(1) + 'B';
+    document.getElementById('mcapStockTotal').textContent = '$' + stockCapB.toFixed(1) + 'B';
+    document.getElementById('mcapYTDChange').textContent = avgYTDDisplay;
+    document.getElementById('mcapYTDChange').style.color = avgYTD >= 0 ? 'var(--green)' : 'var(--red)';
+
+    // Resolve CSS variable values for gradient fills
+    const style = getComputedStyle(document.documentElement);
+    const cyanColor   = style.getPropertyValue('--cyan').trim()   || '#00ddff';
+    const redColor    = style.getPropertyValue('--red').trim()    || '#ff4060';
+
+    visibleETFs.forEach((etf, idx) => {
+      const isUp     = etf.change >= 0;
+      const ytdNum   = parseFloat(etf.ytd);
+      const ytdUp    = ytdNum >= 0;
+      const prices   = generatePriceSeries(etf, nDays);
+      const pos52w   = etf.low52 > 0
+        ? ((etf.price - etf.low52) / (etf.high52 - etf.low52) * 100).toFixed(1)
+        : 50;
+
+      // Create card element
+      const card = document.createElement('div');
+      card.className = 'etf-mini-card';
+
+      // Unique canvas id
+      const canvasId = 'etfMiniChart_' + etf.ticker;
+
+      card.innerHTML = `
+        <div class="etf-mini-header">
+          <div>
+            <div class="etf-mini-ticker">${etf.ticker}</div>
+            <div class="etf-mini-name">${etf.name}</div>
+          </div>
+          <div class="etf-mini-price-block">
+            <div class="etf-mini-price">$${etf.price.toFixed(2)}</div>
+            <div class="etf-mini-change ${isUp ? 'up' : 'down'}">${isUp ? '+' : ''}${etf.change.toFixed(2)} (${isUp ? '+' : ''}${etf.changePct.toFixed(2)}%)</div>
+          </div>
+        </div>
+        <div class="etf-mini-chart-wrap">
+          <canvas id="${canvasId}"></canvas>
+        </div>
+        <div class="etf-mini-footer">
+          <div class="etf-mini-meta">
+            <div class="etf-mini-meta-item">
+              <span class="etf-mini-meta-label">AUM</span>
+              <span class="etf-mini-meta-value">${etf.aum}</span>
+            </div>
+          </div>
+          <div class="etf-mini-ytd ${ytdUp ? 'up' : 'down'}">YTD ${etf.ytd}</div>
+        </div>
+        ${etf.low52 > 0 ? `
+        <div class="etf-mini-range">
+          <div class="etf-mini-range-header">
+            <span>$${etf.low52.toFixed(2)}</span>
+            <span>52W Range</span>
+            <span>$${etf.high52.toFixed(2)}</span>
+          </div>
+          <div class="etf-mini-range-bar">
+            <div class="etf-mini-range-fill" style="width:${pos52w}%"></div>
+            <div class="etf-mini-range-dot" style="left:${pos52w}%"></div>
+          </div>
+        </div>` : ''}
+      `;
+
+      grid.appendChild(card);
+
+      // Draw the sparkline chart after DOM insertion
+      requestAnimationFrame(() => {
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        // Build gradient fill
+        const lineColor   = ytdUp ? cyanColor   : redColor;
+        const lineColorRGBA = ytdUp ? 'rgba(0,221,255,' : 'rgba(255,64,96,';
+        const gradient = ctx.createLinearGradient(0, 0, 0, 120);
+        gradient.addColorStop(0, lineColorRGBA + '0.18)');
+        gradient.addColorStop(1, lineColorRGBA + '0.0)');
+
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{
+              label: etf.ticker,
+              data: prices,
+              borderColor: lineColor,
+              backgroundColor: gradient,
+              borderWidth: 1.5,
+              pointRadius: 0,
+              pointHoverRadius: 3,
+              tension: 0.4,
+              fill: true
+            }]
           },
-          {
-            label: 'Stock Market Cap',
-            data: stockData,
-            borderColor: 'rgba(255, 176, 32, 0.9)',
-            backgroundColor: 'rgba(255, 176, 32, 0.05)',
-            borderWidth: 2,
-            pointRadius: 0,
-            pointHoverRadius: 4,
-            tension: 0.4,
-            fill: false
-          },
-          {
-            label: 'Total',
-            data: totalData,
-            borderColor: 'rgba(0, 255, 200, 0.9)',
-            backgroundColor: 'rgba(0, 255, 200, 0.08)',
-            borderWidth: 2.5,
-            pointRadius: 0,
-            pointHoverRadius: 5,
-            tension: 0.4,
-            fill: true
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        interaction: { mode: 'index', intersect: false },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: 'rgba(10, 14, 26, 0.95)',
-            borderColor: 'rgba(0, 221, 255, 0.3)',
-            borderWidth: 1,
-            titleColor: '#e8edf5',
-            bodyColor: '#8892a8',
-            padding: 12,
-            callbacks: {
-              label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y.toFixed(1)}B`
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: { duration: 600 },
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: 'rgba(10, 14, 26, 0.95)',
+                borderColor: 'rgba(0, 221, 255, 0.25)',
+                borderWidth: 1,
+                titleColor: '#e8edf5',
+                titleFont: { family: 'JetBrains Mono', size: 10 },
+                bodyColor: '#8892a8',
+                bodyFont: { family: 'JetBrains Mono', size: 11 },
+                padding: 10,
+                callbacks: {
+                  title: items => items[0].label,
+                  label: item => ` $${item.parsed.y.toFixed(2)}`
+                }
+              }
+            },
+            scales: {
+              x: { display: false },
+              y: { display: false }
             }
           }
-        },
-        scales: {
-          x: {
-            grid: { color: 'rgba(255,255,255,0.03)' },
-            ticks: {
-              color: '#4a5568',
-              font: { family: 'JetBrains Mono', size: 10 },
-              maxTicksLimit: 10
-            }
-          },
-          y: {
-            grid: { color: 'rgba(255,255,255,0.04)' },
-            ticks: {
-              color: '#4a5568',
-              font: { family: 'JetBrains Mono', size: 10 },
-              callback: v => '$' + v.toFixed(0) + 'B'
-            }
-          }
-        }
-      }
+        });
+      });
     });
   }
 
@@ -1529,7 +1805,7 @@
     renderVCCards();
     renderWatchlist();
     renderLandscape();
-    renderMcapChart();
+    renderIndividualCharts();
     animateCounters();
   });
   </script>
