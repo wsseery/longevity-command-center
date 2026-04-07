@@ -235,7 +235,8 @@
       color: var(--purple);
       border: 1px solid rgba(168, 124, 255, 0.2);
     }
-    .section-icon.stock {
+    .section-icon.stock,
+    .section-icon.stocks {
       background: rgba(0, 255, 136, 0.1);
       color: var(--green);
       border: 1px solid rgba(0, 255, 136, 0.2);
@@ -491,6 +492,245 @@
       color: var(--cyan);
       font-weight: 600;
     }
+
+    /* ===== VC CARDS ===== */
+    .vc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .vc-grid { grid-template-columns: 1fr; }
+    }
+
+    .vc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .vc-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    .vc-card.curator-highlight {
+      border-color: rgba(168, 124, 255, 0.3);
+      box-shadow: 0 0 20px rgba(168, 124, 255, 0.06);
+    }
+
+    .vc-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .vc-fund-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--purple, #a87cff);
+      letter-spacing: 0.5px;
+    }
+    .vc-year {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3px 10px;
+      white-space: nowrap;
+    }
+    .vc-meta {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--purple, #a87cff);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .vc-focus {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .vc-funding {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .vc-backers {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .vc-backers strong {
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      letter-spacing: 0.5px;
+    }
+    .vc-note {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+      font-style: italic;
+      padding-top: 6px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .vc-link {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      background: rgba(168, 124, 255, 0.08);
+      border: 1px solid rgba(168, 124, 255, 0.2);
+      color: var(--purple, #a87cff);
+      transition: all 0.25s ease;
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    .vc-link:hover {
+      background: rgba(168, 124, 255, 0.15);
+      border-color: rgba(168, 124, 255, 0.4);
+    }
+
+    /* ===== WATCHLIST TABLE ===== */
+    .watchlist-table-wrap {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+    .watchlist-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-mono);
+    }
+    .watchlist-table thead th {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-align: left;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-bright);
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .watchlist-table tbody tr {
+      transition: background 0.2s ease;
+    }
+    .watchlist-table tbody tr:hover {
+      background: rgba(0, 221, 255, 0.03);
+    }
+    .watchlist-table tbody td {
+      padding: 12px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      vertical-align: middle;
+    }
+    .watchlist-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .watchlist-ticker {
+      font-weight: 700;
+      color: var(--green, #00ff88);
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+    .watchlist-name {
+      font-size: 0.8rem;
+      color: var(--text-primary);
+    }
+    .watchlist-focus {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+    .watchlist-link {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--cyan);
+      text-decoration: none;
+      padding: 5px 12px;
+      border: 1px solid rgba(0, 221, 255, 0.15);
+      border-radius: 4px;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .watchlist-link:hover {
+      background: rgba(0, 221, 255, 0.1);
+      border-color: rgba(0, 221, 255, 0.3);
+    }
+
+    /* ===== LANDSCAPE GRID ===== */
+    .landscape-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .landscape-grid { grid-template-columns: 1fr; }
+    }
+
+    .sector-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      border-left: 3px solid var(--cyan);
+    }
+    .sector-box:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    .sector-name {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .sector-companies {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* Sector color accents */
+    .sector-reprogramming { border-left-color: #a87cff; }
+    .sector-reprogramming .sector-name { color: #a87cff; }
+    .sector-senolytics { border-left-color: #00ddff; }
+    .sector-senolytics .sector-name { color: #00ddff; }
+    .sector-gene { border-left-color: #00ffc8; }
+    .sector-gene .sector-name { color: #00ffc8; }
+    .sector-ai { border-left-color: #ff8c42; }
+    .sector-ai .sector-name { color: #ff8c42; }
+    .sector-metabolic { border-left-color: #00ff88; }
+    .sector-metabolic .sector-name { color: #00ff88; }
+    .sector-nad { border-left-color: #ffb020; }
+    .sector-nad .sector-name { color: #ffb020; }
+    .sector-telomere { border-left-color: #ff6ec7; }
+    .sector-telomere .sector-name { color: #ff6ec7; }
+    .sector-immuno { border-left-color: #5e9eff; }
+    .sector-immuno .sector-name { color: #5e9eff; }
+    .sector-devices { border-left-color: #e8edf5; }
+    .sector-devices .sector-name { color: #e8edf5; }
+    .sector-digital { border-left-color: #c4f042; }
+    .sector-digital .sector-name { color: #c4f042; }
 
     /* Fix stats strip for finance page */
     .fin-stats-strip {
