@@ -202,6 +202,296 @@
       font-weight: 700;
     }
 
+    /* ===== FINANCE SECTION HEADERS ===== */
+    .fin-section {
+      margin-bottom: 48px;
+    }
+    .fin-section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      font-size: 1.2rem;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .section-icon.public {
+      background: rgba(0, 221, 255, 0.1);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 221, 255, 0.2);
+    }
+    .section-icon.private {
+      background: rgba(168, 124, 255, 0.1);
+      color: var(--purple);
+      border: 1px solid rgba(168, 124, 255, 0.2);
+    }
+    .section-icon.stock {
+      background: rgba(0, 255, 136, 0.1);
+      color: var(--green);
+      border: 1px solid rgba(0, 255, 136, 0.2);
+    }
+    .section-icon.landscape {
+      background: rgba(255, 176, 32, 0.1);
+      color: var(--amber);
+      border: 1px solid rgba(255, 176, 32, 0.2);
+    }
+    .section-icon.chart {
+      background: rgba(0, 221, 255, 0.1);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 221, 255, 0.2);
+    }
+    .fin-section-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--text-primary);
+    }
+    .fin-section-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    /* ===== ETF PORTFOLIO CARDS ===== */
+    .etf-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .etf-grid { grid-template-columns: 1fr; }
+    }
+
+    .etf-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .etf-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .etf-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 18px 20px 0;
+    }
+    .etf-ticker {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--cyan);
+      letter-spacing: 1px;
+    }
+    .etf-name {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+    .etf-tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(0, 221, 255, 0.08);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 221, 255, 0.15);
+      white-space: nowrap;
+    }
+    .tag-aging { background: rgba(0, 221, 255, 0.08); color: var(--cyan); border-color: rgba(0, 221, 255, 0.15); }
+    .tag-genomics { background: rgba(168, 124, 255, 0.08); color: var(--purple); border-color: rgba(168, 124, 255, 0.15); }
+    .tag-biotech { background: rgba(0, 255, 200, 0.08); color: var(--teal); border-color: rgba(0, 255, 200, 0.15); }
+    .tag-healthcare { background: rgba(0, 255, 136, 0.08); color: var(--green); border-color: rgba(0, 255, 136, 0.15); }
+    .tag-devices { background: rgba(255, 176, 32, 0.08); color: var(--amber); border-color: rgba(255, 176, 32, 0.15); }
+    .tag-immunology { background: rgba(255, 110, 199, 0.08); color: var(--pink); border-color: rgba(255, 110, 199, 0.15); }
+    .tag-innovation { background: rgba(255, 140, 66, 0.08); color: var(--orange); border-color: rgba(255, 140, 66, 0.15); }
+    .tag-longevity { background: rgba(0, 221, 255, 0.08); color: var(--cyan); border-color: rgba(0, 221, 255, 0.15); }
+
+    .etf-card-body {
+      padding: 14px 20px 16px;
+    }
+    .etf-focus {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .etf-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .etf-price {
+      font-family: var(--font-mono);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .etf-change {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .etf-change.up { color: var(--green); }
+    .etf-change.down { color: var(--red); }
+
+    .etf-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .etf-metric {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .etf-metric-label {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dim);
+    }
+    .etf-metric-value {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .range-52w {
+      margin-bottom: 4px;
+    }
+    .range-52w-header {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+    .range-52w-bar {
+      position: relative;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 2px;
+    }
+    .range-52w-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0, 221, 255, 0.3), rgba(0, 221, 255, 0.7));
+      border-radius: 2px;
+    }
+    .range-52w-marker {
+      position: absolute;
+      top: -4px;
+      width: 10px;
+      height: 10px;
+      background: var(--cyan);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px var(--cyan-glow);
+    }
+
+    .etf-card-actions {
+      display: flex;
+      gap: 8px;
+      padding: 0 20px 16px;
+    }
+    .etf-btn {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+    .etf-btn-chart {
+      background: rgba(0, 221, 255, 0.08);
+      border: 1px solid rgba(0, 221, 255, 0.2);
+      color: var(--cyan);
+    }
+    .etf-btn-chart:hover {
+      background: rgba(0, 221, 255, 0.15);
+      border-color: rgba(0, 221, 255, 0.4);
+    }
+    .etf-btn-holdings {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+    }
+    .etf-btn-holdings:hover, .etf-btn-holdings.active {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--border-bright);
+      color: var(--text-secondary);
+    }
+
+    .etf-holdings {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .etf-holdings.expanded {
+      max-height: 300px;
+    }
+    .etf-holdings-inner {
+      padding: 0 20px 16px;
+      border-top: 1px solid var(--border);
+    }
+    .etf-holdings-title {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin: 12px 0 8px;
+    }
+    .holding-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+    .holding-row:last-child { border-bottom: none; }
+    .holding-name {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+    .holding-pct {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
     /* Fix stats strip for finance page */
     .fin-stats-strip {
       display: grid;
