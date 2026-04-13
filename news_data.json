@@ -1,72 +1,112 @@
 [
   {
-    "title": "CNN's 'Kara Swisher Wants to Live Forever' Premieres: Longevity Science Goes Primetime",
+    "title": "D+Q Senolytic Combo Triggers Brain Myelin Damage in PNAS Study -- Raises Caution for Prophylactic Use",
     "source": "AI Analysis",
-    "date": "2026-04-11",
+    "date": "2026-04-12",
+    "category": "Research",
+    "importance": "high",
+    "description": "A landmark PNAS study from UConn's Crocker lab reveals that dasatinib plus quercetin (D+Q), the most widely used senolytic combination, causes profound myelin loss in the brain of treated mice, with worse damage in younger animals. The corpus callosum disappeared in treated mice, and oligodendrocytes reverted to an immature, non-functional state. This warrants significant caution for prophylactic off-label D+Q use, while opening new insights into MS-like demyelination.",
+    "url": "https://today.uconn.edu/2026/03/popular-anti-aging-compound-causes-collosal-brain-damage/",
+    "top_development": true
+  },
+  {
+    "title": "APOE4 Accelerates Brain Aging Decades Before Alzheimer's Symptoms -- Nell2 Gene Identified as Rescue Target",
+    "source": "AI Analysis",
+    "date": "2026-04-12",
+    "category": "Research",
+    "importance": "high",
+    "description": "Published in Nature Aging, Gladstone Institute researchers show that APOE4 triggers neuronal hyperexcitability in the hippocampus of young mice through increased Nell2 protein production, mimicking a process that normally occurs only with aging. CRISPR knockdown of Nell2 fully rescued the dysfunction. Since APOE4 is carried by roughly 1 in 4 people, this identifies a druggable early intervention target for Alzheimer's prevention.",
+    "url": "https://gladstone.org/news/how-alzheimers-risk-gene-disrupts-brain-circuits-long-memory-loss",
+    "top_development": true
+  },
+  {
+    "title": "CNN's 'Kara Swisher Wants to Live Forever' Draws Millions in Premiere Weekend -- Longevity Goes Mainstream",
+    "source": "AI Analysis",
+    "date": "2026-04-12",
     "category": "Industry",
     "importance": "high",
-    "description": "CNN's six-part longevity docuseries premiered April 11 at 9pm ET, following journalist Kara Swisher through biotech labs, hyperbaric chambers, ketamine therapy, South Korea's healthcare system, and interviews with Sam Altman, Bryan Johnson, and Jennifer Doudna. The show brings mainstream attention to the longevity industry while distinguishing real science from hype -- a watershed cultural moment for the field.",
+    "description": "CNN's six-part longevity docuseries premiered Saturday April 11, featuring interviews with Sam Altman, Bryan Johnson, Jennifer Doudna, and Scott Galloway. The show examines biotech labs, South Korea's healthcare system, and the difference between evidence-based longevity science and tech-bro hype, bringing mainstream attention to the field at a critical moment.",
     "url": "https://www.cnn.com/2026/04/11/health/kara-swisher-longevity-wellness",
     "top_development": true
   },
   {
-    "title": "Meal Timing Emerges as Powerful Modulator of Organ-Specific Biological Aging",
+    "title": "AI-Powered Senolytic Discovery: USPTO Patent Covers 800,000+ Screened Molecules Targeting Bcl-2",
     "source": "AI Analysis",
-    "date": "2026-04-11",
-    "category": "Research",
-    "importance": "high",
-    "description": "A Lifespan.io-featured study published in npj Science of Food shows that later first and last meals and extended feeding windows are associated with accelerated biological aging across body, heart, and liver clocks. The optimal last-meal window appears to be 3-7pm, with effects varying by organ, sex, diet quality, and caloric intake -- practical chrono-nutrition guidance for longevity enthusiasts.",
-    "url": "https://lifespan.io/news/the-timing-of-meals-matters-for-biological-aging/",
-    "top_development": true
-  },
-  {
-    "title": "King Penguin Study in Nature Communications: Sedentary, Well-Fed Lifestyle Accelerates Epigenetic Aging",
-    "source": "AI Analysis",
-    "date": "2026-04-11",
-    "category": "Research",
-    "importance": "high",
-    "description": "Published in Nature Communications, a study comparing wild and zoo-housed king penguins finds that a sedentary, well-fed lifestyle -- analogous to the Western human lifestyle -- accelerates epigenetic aging by 2.5 to 6.5 years (comparable to smoking effects in humans). Crucially, zoo penguins still lived longer overall, suggesting Western lifestyles extend lifespan but not healthspan.",
-    "url": "https://www.nature.com/articles/s41467-026-70527-8",
-    "top_development": true
-  },
-  {
-    "title": "BioAge Labs Highlights 50-Year Longitudinal Human Aging Cohort Platform for Drug Discovery",
-    "source": "AI Analysis",
-    "date": "2026-04-11",
+    "date": "2026-04-12",
     "category": "Biotech",
     "importance": "high",
-    "description": "BioAge Labs posted on X (April 9) detailing how their discovery platform draws on longitudinal human aging cohorts spanning 50+ years to identify the most impactful biology of aging. The approach represents a data-first paradigm shift in longevity drug development -- starting from human aging data rather than working backward from animal models.",
-    "url": "https://x.com/bioagelabs/status/2042300343997120694",
+    "description": "The USPTO published patent application US20260097022A1 on April 9, covering AI-trained neural networks that screened 2,352 compounds for senolytic activity and predicted activity across 800,000+ molecules. The disclosed compounds selectively target senescent cells via Bcl-2 binding with favorable medicinal chemistry properties. This represents a major scale-up in computational senolytic drug discovery.",
+    "url": "https://changeflow.com/govping/pharma-drug-safety/senolytic-compound-patent-for-aging-treatment-filed-apr-9th-2026-04-11",
     "top_development": true
   },
   {
-    "title": "A4M Longevity SpringFest 2026 Wraps: Exosomes, GLP-1 Mastery, and Regenerative Medicine Dominate",
+    "title": "Plant-Based Diets Slow Epigenetic Aging Across Multiple Clocks in 4,866-Person Study",
     "source": "AI Analysis",
-    "date": "2026-04-11",
-    "category": "Industry",
+    "date": "2026-04-12",
+    "category": "Protocols",
     "importance": "high",
-    "description": "The A4M Longevity SpringFest 2026 wrapped its four-day run in West Palm Beach (April 9-12), featuring a full-day Exosomes Masterclass, GLP-1/mTOR mastery sessions, and Dr. Michael Roizen's keynote on reversing biological age. The event signals clinical translation of longevity science is accelerating, with exosomes and regenerative medicine emerging as the dominant themes for 2026 practice.",
-    "url": "https://blog.a4m.com/living-longer-living-stronger-living-better-longevity-springfest-reexamines-the-concept-of-aging/",
+    "description": "Published in Aging-US and selected as Editors' Choice, a study analyzing ARIC and NHANES data (n=4,866) found that higher adherence to plant-based diets consistently decelerated GrimAge2, PhenoAge, and HannumAge clocks. Healthy plant-based patterns showed the strongest effects; unhealthy plant-based patterns showed no benefit. Practical evidence for longevity enthusiasts optimizing diet.",
+    "url": "https://aging-us.org/2026/04/editors-choice-plant-based-dietary-patterns-are-associated-with-slower-epigenetic-aging/",
     "top_development": true
   },
   {
-    "title": "CNN: What Tech Bros Are Getting Wrong About Longevity -- and What You Can Get Right",
+    "title": "D+Q Senolytic Combo Causes Brain Myelin Damage in Mice (PNAS)",
+    "source": "UConn / PNAS",
+    "date": "2026-03-18",
+    "category": "Research",
+    "importance": "high",
+    "description": "UConn researchers found dasatinib+quercetin causes profound myelin loss in mouse brains, worse in younger animals. The corpus callosum disappeared in treated mice, and oligodendrocytes reverted to a dysfunctional immature state.",
+    "url": "https://today.uconn.edu/2026/03/popular-anti-aging-compound-causes-collosal-brain-damage/",
+    "top_development": false
+  },
+  {
+    "title": "APOE4 Triggers Early Hippocampal Hyperexcitability via Nell2 Protein (Nature Aging)",
+    "source": "Gladstone Institutes / Nature Aging",
+    "date": "2026-04-03",
+    "category": "Research",
+    "importance": "high",
+    "description": "APOE4 increases Nell2 production in hippocampal neurons, causing shrinkage and hyperexcitability years before cognitive decline. CRISPR knockdown of Nell2 rescues the dysfunction, identifying a druggable target for Alzheimer's prevention.",
+    "url": "https://gladstone.org/news/how-alzheimers-risk-gene-disrupts-brain-circuits-long-memory-loss",
+    "top_development": false
+  },
+  {
+    "title": "CNN Premieres 'Kara Swisher Wants to Live Forever' Six-Part Longevity Docuseries",
     "source": "CNN",
     "date": "2026-04-11",
     "category": "Industry",
     "importance": "high",
-    "description": "Companion piece to the docuseries premiere, CNN examines how wealth-driven longevity pursuits differ from evidence-based health extension. Swisher emphasizes we live in a 'sick care' not health care society, and that sleep, diet, exercise, and community remain the most impactful interventions.",
+    "description": "Six-part series follows Kara Swisher investigating longevity science, featuring Sam Altman, Bryan Johnson, Jennifer Doudna, and visits to biotech labs and South Korea's healthcare system.",
     "url": "https://www.cnn.com/2026/04/11/health/kara-swisher-longevity-wellness",
     "top_development": false
   },
   {
-    "title": "Kara Swisher Rates Longevity Trends in CNN Digital Special",
-    "source": "CNN",
-    "date": "2026-04-11",
-    "category": "Industry",
+    "title": "USPTO Publishes AI Senolytic Compound Patent: Neural Networks Screen 800,000+ Molecules",
+    "source": "GovPing / USPTO",
+    "date": "2026-04-09",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Patent US20260097022A1 covers screening 2,352 compounds for senolytic activity and AI neural networks predicting activity across 800,000+ molecules, targeting Bcl-2 proteins in senescent cells.",
+    "url": "https://changeflow.com/govping/pharma-drug-safety/senolytic-compound-patent-for-aging-treatment-filed-apr-9th-2026-04-11",
+    "top_development": false
+  },
+  {
+    "title": "Plant-Based Dietary Patterns Linked to Slower Epigenetic Aging (Editors' Choice)",
+    "source": "Aging-US / University of Washington",
+    "date": "2026-04-10",
+    "category": "Protocols",
     "importance": "normal",
-    "description": "In a digital-exclusive segment, Swisher evaluates which longevity trends deserve attention and which are hype, providing her 'kill, marry' ranking of popular interventions ahead of the series premiere.",
-    "url": "https://edition.cnn.com/2026/04/11/tv/video/kara-swisher-wants-to-live-forever-longevity-trends",
+    "description": "Analysis of ARIC and NHANES data (n=4,866) found plant-rich diets decelerate GrimAge2, PhenoAge, and HannumAge clocks. Healthy plant-based patterns showed strongest effects; unhealthy plant-based diets showed no benefit.",
+    "url": "https://aging-us.org/2026/04/editors-choice-plant-based-dietary-patterns-are-associated-with-slower-epigenetic-aging/",
+    "top_development": false
+  },
+  {
+    "title": "Psilocybin and Human Longevity: npj Aging Study Tempers Media Hype",
+    "source": "Fight Aging! / npj Aging",
+    "date": "2026-04-13",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Despite mouse data showing psilocybin extends lifespan, an analysis of prominent psychedelic advocates' mortality found they did not outlive cancer and aging researchers. Highlights the need for rigorous human studies before inferring anti-aging effects.",
+    "url": "https://www.nature.com/articles/s41514-026-00380-y",
     "top_development": false
   },
   {
@@ -75,7 +115,7 @@
     "date": "2026-04-08",
     "category": "Research",
     "importance": "high",
-    "description": "Study finds eating the last meal between 3-5pm slows whole-body and heart aging versus after 9pm. Extended feeding windows over 16 hours are associated with faster aging, with effects varying by organ, sex, diet quality, and caloric intake.",
+    "description": "Study finds eating the last meal between 3-5pm slows whole-body and heart aging versus after 9pm. Extended feeding windows over 16 hours are associated with faster aging, with effects varying by organ, sex, and diet quality.",
     "url": "https://lifespan.io/news/the-timing-of-meals-matters-for-biological-aging/",
     "top_development": false
   },
@@ -85,32 +125,22 @@
     "date": "2026-04-09",
     "category": "Research",
     "importance": "high",
-    "description": "Combining NMN (NAD+ precursor) with apigenin (CD38 inhibitor) restores NAD+ levels, reduces senescence markers, and improves muscle strength, bone density, and gut microbiome diversity in aged mice. Benefits were partially SIRT3-dependent.",
+    "description": "Combining NMN (NAD+ precursor) with apigenin (CD38 inhibitor) restores NAD+ levels, reduces senescence markers, and improves muscle strength, bone density, and gut microbiome diversity in aged mice.",
     "url": "https://lifespan.io/news/a-combination-nad-treatment-has-benefits-for-mice/",
     "top_development": false
   },
   {
     "title": "Somatostatin Converts Brain Microglia to Protective Mode, Clears Amyloid in Alzheimer's Mice",
-    "source": "Medical Xpress / Brain, Behavior, and Immunity",
-    "date": "2026-04-09",
+    "source": "Lifespan.io / Brain, Behavior, and Immunity",
+    "date": "2026-04-10",
     "category": "Research",
     "importance": "high",
-    "description": "DGIST researchers showed somatostatin directly regulates microglia to suppress neuroinflammation, reduce amyloid beta accumulation, and improve spatial memory in Alzheimer's model mice, opening drug repurposing pathways.",
-    "url": "https://medicalxpress.com/news/2026-04-somatostatin-brain-immune-cells-mitigate.html",
+    "description": "DGIST researchers showed somatostatin directly regulates microglia to suppress neuroinflammation, reduce amyloid beta, and improve spatial memory in Alzheimer's mice. Approved drugs targeting SST receptors already exist.",
+    "url": "https://lifespan.io/news/affecting-a-signaling-pathway-alleviates-alzheimers-in-mice/",
     "top_development": false
   },
   {
-    "title": "King Penguin Zoo Study: Sedentary Lifestyle Accelerates Epigenetic Aging by 2.5-6.5 Years",
-    "source": "Nature Communications / Lifespan.io",
-    "date": "2026-04-01",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Zoo-housed king penguins show accelerated epigenetic aging comparable to smoking effects in humans, yet still live longer. Findings suggest Western lifestyles extend lifespan but compress healthspan.",
-    "url": "https://lifespan.io/news/becoming-well-fed-and-sedentary-accelerates-penguin-aging/",
-    "top_development": false
-  },
-  {
-    "title": "Nature Feature: Partial Cellular Reprogramming About to Be Tested in Humans",
+    "title": "Nature Feature: Partial Cellular Reprogramming Enters First Human Trial",
     "source": "Nature",
     "date": "2026-04-07",
     "category": "Clinical Trials",
@@ -125,7 +155,7 @@
     "date": "2026-04-08",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Lifespan.io analyzes how Life Biosciences' ER-100 IND clearance signals the FDA is establishing a measured playbook for longevity developers, focused on specific diseases with accepted clinical outcomes rather than treating aging itself.",
+    "description": "Analysis of how Life Biosciences' ER-100 IND clearance signals the FDA is establishing a measured playbook for longevity developers, focused on specific diseases with accepted clinical outcomes.",
     "url": "https://lifespan.io/news/life-bios-trial-is-the-fda-warming-to-rejuvenation/",
     "top_development": false
   },
@@ -134,49 +164,9 @@
     "source": "EurekAlert",
     "date": "2026-04-08",
     "category": "Research",
-    "importance": "high",
-    "description": "The 2nd World Congress on Targeting Longevity in Berlin (April 8-9) brought together researchers in mitochondria, microbiota, and senescence to reframe aging as progressive loss of coordination between biological systems.",
+    "importance": "normal",
+    "description": "The 2nd World Congress on Targeting Longevity in Berlin (April 8-9) reframed aging as progressive loss of coordination between biological systems rather than a single defect to fix.",
     "url": "https://www.eurekalert.org/news-releases/1116021",
-    "top_development": false
-  },
-  {
-    "title": "Novel RNA Therapy Encourages Heart Self-Repair via Atrial Natriuretic Peptide",
-    "source": "Fight Aging! / Columbia Engineering",
-    "date": "2026-04-10",
-    "category": "Research",
-    "importance": "normal",
-    "description": "RNA-lipid nanoparticles encoding Nppa in skeletal muscle produce pro-ANP converted to ANP by Corin in the heart, reducing scarring and improving cardiac function in animal models with a single injection.",
-    "url": "https://www.engineering.columbia.edu/about/news/new-rna-therapy-could-help-heart-repair-itself",
-    "top_development": false
-  },
-  {
-    "title": "High-Dose Influenza Vaccine Linked to Lower Alzheimer's Risk in Adults Over 65",
-    "source": "Fight Aging! / Neurology",
-    "date": "2026-04-10",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Retrospective cohort study of 120,775 adults aged 65+ found high-dose influenza vaccination associated with lower Alzheimer's dementia risk in the first 25 months compared to standard-dose.",
-    "url": "https://doi.org/10.1212/WNL.0000000000214782",
-    "top_development": false
-  },
-  {
-    "title": "AhR Inhibition Promotes Axon Regeneration After Spinal Cord Injury (Published in Nature)",
-    "source": "Fight Aging! / Nature",
-    "date": "2026-04-10",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Published in Nature, aryl hydrocarbon receptor inhibition promotes axon regrowth in peripheral and spinal cord injury models via HIF1a, shifting cells from stress signaling to growth signaling.",
-    "url": "https://doi.org/10.1038/s41586-026-10295-z",
-    "top_development": false
-  },
-  {
-    "title": "BioAge Labs Highlights 50-Year Human Aging Cohort Discovery Platform",
-    "source": "X / @bioagelabs",
-    "date": "2026-04-09",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "BioAge Labs describes how their platform draws on longitudinal human aging cohorts spanning 50+ years to identify the most impactful biology of aging for drug development.",
-    "url": "https://x.com/bioagelabs/status/2042300343997120694",
     "top_development": false
   },
   {
@@ -200,13 +190,13 @@
     "top_development": false
   },
   {
-    "title": "Enlivex Wins FDA IND Clearance for Allocetra Phase 2b in Age-Related Knee Osteoarthritis",
-    "source": "GlobeNewswire / Enlivex",
-    "date": "2026-03-23",
-    "category": "Clinical Trials",
+    "title": "Senosensitizers: New Drug Class Could Unlock Senolytic-Resistant Zombie Cells",
+    "source": "Medical Xpress / Aging Cell",
+    "date": "2026-02-09",
+    "category": "Research",
     "importance": "normal",
-    "description": "Enlivex received FDA clearance for a Phase 2b trial of Allocetra immunotherapy in age-related knee osteoarthritis, following positive Phase 1/2a data in 134 patients showing durable treatment effects in older populations.",
-    "url": "https://investors.enlivex.com/press-releases/quality-longevity-company-enlivex-receives-investigational-new-drug-ind-clearance-from-the-fda-for-phase-2b-trial-of-allocetra-in-age-related-primary-moderate-to-severe-knee-osteoarthritis/",
+    "description": "Cedars-Sinai preclinical study finds senolytics clear 30-70% of senescent cells, but resistant cells remain. A new drug class called senosensitizers could enable elimination of these remaining ticking time bombs.",
+    "url": "https://medicalxpress.com/news/2026-02-preclinical-senolytics-zombie-cells.html",
     "top_development": false
   },
   {
@@ -221,7 +211,7 @@
   },
   {
     "title": "Eli Lilly Signs $2.75B Deal with Insilico Medicine for AI-Developed Oral Therapeutics",
-    "source": "Lifespan.io / CNBC",
+    "source": "CNBC / Reuters",
     "date": "2026-03-29",
     "category": "Funding",
     "importance": "high",
@@ -230,33 +220,33 @@
     "top_development": false
   },
   {
-    "title": "Longevity Funding Tracker: 12 Pure-Play Deals Raise $530M+ Since Late 2025",
-    "source": "New Market Pitch",
-    "date": "2026-04-02",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "Twelve longevity pure-players disclosed new funding led by Function Health's $298M Series B at $2.5B valuation, with deals spanning reprogramming, mTOR inhibitors, and diagnostics.",
-    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-news",
-    "top_development": false
-  },
-  {
-    "title": "The Senolytics Pipeline in 2026: Three Lanes of Development",
-    "source": "Longevity Next",
-    "date": "2026-03-11",
+    "title": "Fight Aging: Remaining Challenges in Partial Reprogramming Therapies",
+    "source": "Fight Aging!",
+    "date": "2026-04-01",
     "category": "Research",
     "importance": "normal",
-    "description": "Comprehensive pipeline analysis: senolytics splitting into academic D+Q combinations, localized precision therapies (DME, dermatology), and next-gen discovery including GPX4 modulation and immune-mediated clearance.",
-    "url": "https://longevitynext.com/the-senolytics-pipeline-in-2026-where-the-science-still-looks-strong-and-where-it-doesnt/",
+    "description": "Fight Aging reviews the key hurdles facing partial epigenetic reprogramming as Life Biosciences' first trial commences, including controlled delivery, dosing precision, and scaling beyond the eye.",
+    "url": "https://www.fightaging.org/archives/2026/04/remaining-challenges-in-the-development-of-partial-reprogramming-therapies/",
     "top_development": false
   },
   {
-    "title": "David Sinclair: Longevity Research Being 'Starved of Funds' -- Assembling Team for April Launch",
-    "source": "X / @davidasinclair",
-    "date": "2026-03-13",
-    "category": "Industry",
+    "title": "Influenza Vaccination Attenuates Heart Attack and Stroke Risk After Flu Infection",
+    "source": "Fight Aging! / Denmark Registry Study",
+    "date": "2026-04-13",
+    "category": "Research",
     "importance": "normal",
-    "description": "David Sinclair posted that longevity research is being starved of funds when the US needs to be more competitive, announcing he has assembled a team with a launch date of April 2026.",
-    "url": "https://x.com/davidasinclair/status/2032516695424635384",
+    "description": "Danish registry study covering 2014-2025 found PCR-confirmed influenza sharply increased AMI/stroke risk, but prior vaccination cut the excess risk roughly in half (IRR 4.7 unvaccinated vs 2.4 vaccinated).",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "King Penguin Study: Sedentary Lifestyle Accelerates Epigenetic Aging by 2.5-6.5 Years",
+    "source": "Nature Communications / Lifespan.io",
+    "date": "2026-04-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Zoo-housed king penguins show accelerated epigenetic aging comparable to smoking effects in humans, yet still live longer. Suggests Western lifestyles extend lifespan but compress healthspan.",
+    "url": "https://lifespan.io/news/becoming-well-fed-and-sedentary-accelerates-penguin-aging/",
     "top_development": false
   },
   {
@@ -270,33 +260,33 @@
     "top_development": false
   },
   {
-    "title": "Alex Zhavoronkov: Longevity Biotech Crossing from 'Interesting Thesis' to Mainstream",
+    "title": "Longevity Investing in 2026: A Strategic Guide for Family Offices",
     "source": "LinkedIn",
-    "date": "2026-04-01",
-    "category": "Industry",
+    "date": "2026-02-08",
+    "category": "Funding",
     "importance": "normal",
-    "description": "Insilico Medicine's Alex Zhavoronkov declares 2026 the breakout year for longevity biotech, with real translational science, clearer clinical pathways, and investors treating aging biology as serious risk-return.",
-    "url": "https://www.linkedin.com/posts/zhavoronkov_longevity-biotech-is-crossing-the-line-from-activity-7445061859843682304-BcJI",
+    "description": "Comprehensive LinkedIn analysis of longevity biotech investment strategy for family offices. The market is valued at $30.7B in 2026, projected to reach $52.8B by 2035, with key areas including epigenetic reprogramming and senolytics.",
+    "url": "https://www.linkedin.com/pulse/longevity-investing-2026-strategic-guide-family-vmp6f",
     "top_development": false
   },
   {
-    "title": "London Longevity Event April 16: Addressing the Translation Gap in Aging Drug Development",
-    "source": "LinkedIn / London Longevity",
-    "date": "2026-04-02",
+    "title": "11th Global Congress on Aging and Gerontology: Dubai April 20-21",
+    "source": "X / @AgingCongress26",
+    "date": "2026-04-06",
     "category": "Industry",
     "importance": "normal",
-    "description": "London Longevity convenes founders, researchers, and pharma BD leaders on April 16 to confront the bottlenecks between aging biology discovery and clinical-stage therapeutics, co-organized with age1.",
-    "url": "https://www.linkedin.com/posts/london-longevity_most-promising-biology-never-becomes-a-drug-activity-7445421027326595072-PDUL",
+    "description": "The 11th Global Congress on Aging and Gerontology takes place April 20-21 in Dubai, UAE, with sessions on geriatric medicine, healthy aging, and longevity interventions.",
+    "url": "https://x.com/AgingCongress26",
     "top_development": false
   },
   {
-    "title": "New BMJ Open Study: All US States Show Universal Longevity Gains from 1941-2000",
-    "source": "News Medical / BMJ Open",
-    "date": "2026-04-10",
+    "title": "Rapamycin Review: Comprehensive Analysis of Pros, Cons, and Evidence Gaps",
+    "source": "Center for Food as Medicine & Longevity",
+    "date": "2026-02-26",
     "category": "Research",
     "importance": "normal",
-    "description": "University of Wisconsin-Madison researchers challenge earlier estimates, finding universal cohort life expectancy gains of 7-16 years across all US states, with less geographic disparity than previously believed.",
-    "url": "https://www.news-medical.net/news/20260410/New-research-leads-to-increased-understanding-of-longevity-gains-in-the-United-States.aspx",
+    "description": "In-depth analysis covering the PEARL trial, PhenoAge modeling, and comprehensive literature review concludes: rapamycin is safe at low doses for ~1 year, but zero qualifying sources directly demonstrate slowed biological aging in healthy humans.",
+    "url": "https://foodmedcenter.org/rapamycin-slow-aging/",
     "top_development": false
   }
 ]
