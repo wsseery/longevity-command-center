@@ -1,92 +1,102 @@
 [
   {
-    "title": "Seragon Publishes Peer-Reviewed Data: SRN-901 Extends Mouse Lifespan 33%, Outperforms Rapamycin",
+    "title": "University of Arizona Launches Largest-Ever Phase 3 Rapamycin Trial: 720 Older Adults Over 6 Years",
     "source": "AI Analysis",
-    "date": "2026-04-15",
-    "category": "Research",
+    "date": "2026-04-16",
+    "category": "Clinical Trials",
     "importance": "high",
-    "description": "Seragon Biosciences published peer-reviewed data in Drug Design, Development and Therapy showing its multi-target oral drug SRN-901 extended median remaining lifespan by 33% in adult mice on a Western diet -- outperforming rapamycin (+21%), NMN, and NR in head-to-head comparison. The drug also attenuated frailty progression by 70% and reduced tumor incidence by 30.5%. Multi-omics analysis showed coordinated modulation of mTOR, autophagy, NAD+, and senolytic pathways, with metabolic profiles of treated mice resembling those of younger animals.",
-    "url": "https://www.morningstar.com/news/pr-newswire/20260415la34485/seragon-publishes-data-for-longevity-drug-srn-901-showing-significant-lifespan-and-healthspan-extension",
+    "description": "The University of Arizona announced a Phase 3 clinical trial enrolling 720+ adults aged 65+ to determine whether low-dose rapamycin (likely 8mg/week) can prevent the transition to frailty and reduce IL-6 inflammatory markers. Funded by $12M from philanthropist R. Ken Coit, this is the largest rapamycin aging trial ever attempted. Dr. Bonnie LaFleur leads the study, which will run for 6 years (2 years of treatment + 1 year follow-up). Combined with UT Health San Antonio's ARPA-H-funded trial of rapamycin, semaglutide, and dapagliflozin in 700+ participants, 2026 marks a watershed moment for clinical validation of geroprotective drugs in humans.",
+    "url": "https://news.arizona.edu/news/u-launches-rapamycin-clinical-trial-philanthropic-support-alumnus-ken-coit",
     "top_development": true
   },
   {
-    "title": "Vitamin C Identified as Direct ACSL4 Inhibitor, Reverses Biological Age in Primate Study",
+    "title": "Peter Attia's April Research Roundup: Paternal Exercise Confers Offspring Fitness, ANS Aging Theory",
     "source": "AI Analysis",
-    "date": "2026-04-15",
+    "date": "2026-04-16",
     "category": "Research",
     "importance": "high",
-    "description": "Published in Cell Metabolism, a landmark study identified 'ferro-aging' -- a conserved iron-lipid axis driving primate aging through ACSL4 enzyme activity. Through screening 100 ferroptosis-related molecules, researchers found Vitamin C directly binds and inhibits ACSL4. A 40-month intervention in aged cynomolgus monkeys reversed biological age by 3-7 years across epigenetic, transcriptomic, and metabolomic clocks, improved brain volume, reduced visceral fat, and lowered LDL cholesterol. This repositions Vitamin C from a generic antioxidant to a specific, druggable geroprotective agent.",
-    "url": "https://lifespan.io/news/vitamin-c-alleviates-aging-in-cynomolgus-monkeys/",
+    "description": "Peter Attia's April 2026 'Research Worth Sharing' highlights two significant findings. First, a study showing paternal endurance exercise confers VO2max and metabolic fitness benefits to male offspring via sperm microRNAs and PGC-1alpha -- even when offspring never exercise. Second, a new 'sympathetic-parasympathetic deregulation theory of aging' published in Nature proposing that progressive autonomic nervous system drift toward sympathetic dominance drives mitochondrial dysfunction, epigenetic alterations, and physical/cognitive decline. Both open new avenues for longevity intervention beyond diet and direct exercise.",
+    "url": "https://peterattiamd.com/research-worth-sharing-april-2026/",
     "top_development": true
   },
   {
-    "title": "Longevity Biotech Rally Continues: ARKG +7.7%, XBI +4.4%, IDNA +4.9% on Second Consecutive Up Day",
+    "title": "ARKG Surges 10.2% as Genomics and Longevity Biotech Rally Enters Fourth Day",
     "source": "AI Analysis",
-    "date": "2026-04-15",
+    "date": "2026-04-16",
     "category": "Industry",
     "importance": "high",
-    "description": "Longevity and genomics ETFs continued their powerful rally on Wednesday, extending Tuesday's gains. ARKG led again at +7.66%, followed by IDNA +4.91%, XBI +4.44%, SBIO +4.27%, IBB +2.40%, HTEC +2.34%, and BBH +2.16%. The only decliners were defensive healthcare plays XLV (-1.27%) and IHI (-0.20%). The two-day rally has added billions in market cap to the tracked longevity sector, signaling strong risk-on sentiment in biotech and genomics.",
+    "description": "ARK Genomic Revolution ETF (ARKG) surged 10.23% on Thursday, leading a fourth consecutive day of gains for longevity and biotech ETFs. IDNA rose 3.48%, HTEC +2.99%, XBI +2.76%, SBIO +2.38%, and IBB +1.14%. The rally continues to rotate away from defensive healthcare (XLV -1.82%, IHI -1.06%) into high-beta genomics and biotech. Over the four-day rally from Monday to Thursday, ARKG has gained roughly 30% while XBI has risen approximately 15%.",
     "url": "https://www.google.com/finance/quote/ARKG:BATS",
     "top_development": true
   },
   {
-    "title": "Bryan Johnson Promotes Simple Balance Test as Biological Age Proxy at Business Insider Event",
+    "title": "David Sinclair Teases April 2026 Launch: Lifespan Magazine and Funding Initiative",
     "source": "AI Analysis",
-    "date": "2026-04-15",
-    "category": "Protocols",
+    "date": "2026-04-16",
+    "category": "Industry",
     "importance": "high",
-    "description": "At Business Insider's 'The Long Play' event in San Francisco, Bryan Johnson demonstrated a one-leg balance test with eyes closed as a simple proxy for biological age. The approach is supported by a Mayo Clinic study finding one-legged balance time is a valid measure of frailty, independence, and fall risk. Johnson's public visibility continues to mainstream longevity concepts for general audiences.",
-    "url": "https://www.businessinsider.com/longevity-enthusiast-bryan-johnson-shares-test-biological-age-long-play-2026-4",
+    "description": "David Sinclair made two April announcements via X: he is launching Lifespan Magazine (@JoinLifespan), billed as 'the #1 podcast' with new episodes in April 2026 focused on evidence-based longevity insights, and he continues to tease a longevity research funding initiative, stating the field is 'starved of funds.' With Life Biosciences' ER-100 Phase 1 trial underway and the sector at $3.74B in Q1 funding, Sinclair is positioning himself at the center of both public education and capital mobilization for aging research.",
+    "url": "https://x.com/davidasinclair/status/2036265068925448650",
     "top_development": true
   },
   {
-    "title": "IGF-1 Signaling Cannot Rescue Mitochondrial Mutator Mice: New Hierarchy in Longevity Pathways",
+    "title": "40Hz Light-Sound Therapy Slows Alzheimer's Decline 84% in Phase 2 Trial",
     "source": "AI Analysis",
-    "date": "2026-04-15",
+    "date": "2026-04-16",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Peter Attia highlighted a Phase 2 randomized, double-blind, sham-controlled trial (N=53) of 40Hz gamma-frequency light and sound stimulation for mild-to-moderate Alzheimer's. The non-invasive at-home treatment (1 hour/day for 6 months) showed an 84% slower decline in activities of daily living compared to sham, with excellent safety and >80% daily adherence. While amyloid beta was unchanged and cognitive tests mixed, the ADL improvement was striking. A Phase 3 trial is needed, but this could become a zero-risk adjunct therapy for the 7 million Americans with Alzheimer's.",
+    "url": "https://peterattiamd.com/research-worth-sharing-april-2026/",
+    "top_development": true
+  },
+  {
+    "title": "University of Arizona Launches Largest Rapamycin Aging Trial: 720 Participants, $12M Philanthropy",
+    "source": "University of Arizona News",
+    "date": "2026-03-30",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "The U of A R. Ken Coit College of Pharmacy will begin a Phase 3 clinical trial enrolling 720+ adults 65+ to evaluate whether low-dose rapamycin can prevent frailty transition and reduce IL-6 inflammation. The 6-year study is funded by a $12M gift from alumnus R. Ken Coit.",
+    "url": "https://news.arizona.edu/news/u-launches-rapamycin-clinical-trial-philanthropic-support-alumnus-ken-coit",
+    "top_development": false
+  },
+  {
+    "title": "Dr. Kaeberlein and Dr. LaFleur Discuss the Largest-Ever Rapamycin Aging Trial",
+    "source": "YouTube / Optispan",
+    "date": "2026-04-16",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Dr. Kaeberlein interviews Dr. Bonnie LaFleur about the 720-person rapamycin Phase 3 trial. The dosing will likely be 8mg/week based on a 50-person pilot showing no immunosuppressive effects. Co-primary endpoints are frailty transition and IL-6 levels.",
+    "url": "https://www.youtube.com/watch?v=yAV7BRZec-s",
+    "top_development": false
+  },
+  {
+    "title": "Peter Attia: Research Worth Sharing, April 2026 Edition",
+    "source": "Peter Attia",
+    "date": "2026-04-11",
     "category": "Research",
     "importance": "high",
-    "description": "A new study published in Science Advances found that reduced IGF-1 signaling -- one of the most robust longevity pathways in animal models -- fails to extend lifespan in mitochondrial mutator mice. This reveals a hierarchy where mitochondrial genome integrity is a prerequisite for IGF-1-mediated longevity benefits, potentially explaining why some longevity interventions work in some contexts but not others.",
-    "url": "https://doi.org/10.1126/sciadv.aea4279",
-    "top_development": true
+    "description": "Peter Attia covers paternal exercise conferring offspring fitness via sperm microRNAs, 40Hz light-sound therapy slowing Alzheimer's ADL decline by 84%, and a new sympathetic-parasympathetic deregulation theory of aging proposing ANS drift as a root cause of aging.",
+    "url": "https://peterattiamd.com/research-worth-sharing-april-2026/",
+    "top_development": false
   },
   {
-    "title": "Seragon SRN-901 Peer-Reviewed Publication: 33% Lifespan Extension, 70% Frailty Reduction in Mice",
+    "title": "Seragon SRN-901 Peer-Reviewed Publication: 33% Lifespan Extension, Outperforms Rapamycin",
     "source": "BioSpace / Morningstar",
     "date": "2026-04-15",
     "category": "Research",
     "importance": "high",
-    "description": "Seragon Biosciences published full preclinical data in Drug Design, Development and Therapy showing SRN-901 extended median remaining lifespan by 33% in 18-month-old mice, outperforming rapamycin (+21%), NMN, and NR. Multi-omics data show coordinated modulation of mTOR, autophagy, NAD+, and senolytic pathways.",
+    "description": "Seragon published data in Drug Design, Development and Therapy showing SRN-901 extended median remaining lifespan by 33% in 18-month-old mice on Western diet, outperforming rapamycin (+21%), NMN, and NR. Frailty attenuated 70%, tumor incidence reduced 30.5%.",
     "url": "https://www.biospace.com/press-releases/seragon-publishes-data-for-longevity-drug-srn-901-showing-significant-lifespan-and-healthspan-extension",
     "top_development": false
   },
   {
-    "title": "Vitamin C Inhibits ACSL4 to Alleviate Ferro-Aging in Primates",
+    "title": "Vitamin C Identified as Direct ACSL4 Inhibitor, Reverses Biological Age 3-7 Years in Primates",
     "source": "Cell Metabolism / Lifespan.io",
     "date": "2026-04-15",
     "category": "Research",
     "importance": "high",
-    "description": "Published in Cell Metabolism, researchers identified 'ferro-aging' -- iron-driven lipid peroxidation via ACSL4 -- as a conserved primate aging mechanism. 40-month Vitamin C treatment in aged monkeys reversed biological age by 3-7 years on multi-omic clocks, improved brain volume, and enhanced metabolic health.",
+    "description": "Published in Cell Metabolism, researchers identified 'ferro-aging' via ACSL4 as a conserved primate aging mechanism. 40-month Vitamin C treatment in aged monkeys reversed biological age by 3-7 years on multi-omic clocks, improved brain volume, and enhanced metabolic health.",
     "url": "https://lifespan.io/news/vitamin-c-alleviates-aging-in-cynomolgus-monkeys/",
-    "top_development": false
-  },
-  {
-    "title": "Bryan Johnson Presents One-Leg Balance Test as Biological Age Proxy at BI's 'The Long Play'",
-    "source": "Business Insider",
-    "date": "2026-04-15",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Bryan Johnson demonstrated a simple eyes-closed one-leg balance test as a biological age proxy at Business Insider's event in San Francisco. A Mayo Clinic study supports one-leg balance as a valid measure of frailty and fall risk in adults 50+.",
-    "url": "https://www.businessinsider.com/longevity-enthusiast-bryan-johnson-shares-test-biological-age-long-play-2026-4",
-    "top_development": false
-  },
-  {
-    "title": "Reduced IGF-1 Signaling Fails to Extend Lifespan in Mitochondrial Mutator Mice",
-    "source": "Fight Aging! / Science Advances",
-    "date": "2026-04-16",
-    "category": "Research",
-    "importance": "high",
-    "description": "New study reveals that reduced IGF-1 signaling cannot rescue mitochondrial mutator mice, establishing a hierarchy where mitochondrial genome integrity is required for IGF-1-mediated longevity benefits.",
-    "url": "https://doi.org/10.1126/sciadv.aea4279",
     "top_development": false
   },
   {
@@ -105,7 +115,7 @@
     "date": "2026-03-31",
     "category": "Research",
     "importance": "high",
-    "description": "Researchers screened 2,150 compounds and identified HHT as a potent senolytic that clears senescent cells via HSPA5-mediated apoptosis, reverses metabolic dysfunction, and extends lifespan in progeroid and aged mice.",
+    "description": "Researchers screened 2,150 compounds and identified HHT as a potent senolytic that clears senescent cells via HSPA5-mediated apoptosis and extends lifespan in progeroid and aged mice.",
     "url": "https://doi.org/10.1038/s41467-026-70475-3",
     "top_development": false
   },
@@ -120,77 +130,87 @@
     "top_development": false
   },
   {
-    "title": "Longevity Biotech Investment Hits $3.74B in Q1 2026, Projected $8-9B Full Year",
-    "source": "Longevity.Technology",
-    "date": "2026-03-31",
+    "title": "David Sinclair Announces Lifespan Magazine and Podcast Launch for April 2026",
+    "source": "X (Twitter)",
+    "date": "2026-03-24",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Harvard professor David Sinclair teased the launch of Lifespan Magazine, a new publication and podcast focused on evidence-based longevity insights and actionable advice, coming April 2026.",
+    "url": "https://x.com/davidasinclair/status/2036265068925448650",
+    "top_development": false
+  },
+  {
+    "title": "Longevity Biotech Investment Hits $3.74B in Q1 2026, 2026 Tracking to Beat 2021 Record",
+    "source": "LinkedIn / Matt Hamilton",
+    "date": "2026-04-15",
     "category": "Funding",
     "importance": "high",
-    "description": "Q1 2026 saw 49 financing events totaling $3.74B, a 56% increase over Q1 2025. DLT analysis projects $8-9B for full-year 2026, confirming the sector's transition from thesis to mainstream investment opportunity.",
-    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/",
+    "description": "Q1 2026 saw $3.74B raised across 49 financing events (56% increase over Q1 2025). Analyst Matt Hamilton notes 2026 is tracking to beat 2021's record year, with capital flowing into cellular reprogramming, consumer platforms, cardiometabolic longevity, and manufacturing infrastructure.",
+    "url": "https://www.linkedin.com/posts/bio_longevity-biotech-has-raised-374-billion-activity-7450215114181451778-hTns",
+    "top_development": false
+  },
+  {
+    "title": "UT Health San Antonio Multi-Drug Aging Trial: Rapamycin, Semaglutide, and Dapagliflozin",
+    "source": "San Antonio Report / EurekAlert",
+    "date": "2026-03-25",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Over 700 participants will join a major aging trial testing three FDA-approved drugs to determine if they slow biological aging. NIH-funded Phase 2 rapamycin dosing study (84 adults) runs in parallel.",
+    "url": "https://www.eurekalert.org/news-releases/1121440",
+    "top_development": false
+  },
+  {
+    "title": "ARPA-H Commits $144M to PROSPR Program for Seven Longevity Research Teams",
+    "source": "Science",
+    "date": "2026-03-09",
+    "category": "Funding",
+    "importance": "high",
+    "description": "ARPA-H awarded $144M to seven teams (4 academic, 3 biotech) to lay groundwork for Phase 3 aging trials. The program aims to validate surrogate biomarkers and build a pathway to regulatory approval for aging interventions.",
+    "url": "https://www.science.org/content/article/u-s-agency-will-devote-144-million-studies-slow-aging-extend-quality-life",
+    "top_development": false
+  },
+  {
+    "title": "Bryan Johnson Promotes One-Leg Balance Test as Biological Age Proxy at BI Event",
+    "source": "Business Insider",
+    "date": "2026-04-15",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Bryan Johnson demonstrated a simple eyes-closed one-leg balance test as a biological age proxy at Business Insider's 'The Long Play' event. Supported by a Mayo Clinic study showing one-leg balance as a valid frailty measure in adults 50+.",
+    "url": "https://www.businessinsider.com/longevity-enthusiast-bryan-johnson-shares-test-biological-age-long-play-2026-4",
+    "top_development": false
+  },
+  {
+    "title": "Bryan Johnson 2026 Blueprint Protocol: Data-Driven Refinements, NMN 6x/Week, Lithium and NDGA",
+    "source": "Mito Health / NAD.com",
+    "date": "2026-04-16",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Mito Health's comprehensive breakdown of Bryan Johnson's 2026 Blueprint emphasizes data-driven refinements over fixed rules, with every adjustment based on measurable lab results. Key changes: NMN/NR 6 days per week, rapamycin dropped, lithium and NDGA added.",
+    "url": "https://mitohealth.com/blog/bryan-johnson-protocol-2026-blueprint-update-guide-mito-health-blog",
+    "top_development": false
+  },
+  {
+    "title": "IGF-1 Signaling Cannot Rescue Mitochondrial Mutator Mice: New Hierarchy in Longevity Pathways",
+    "source": "Science Advances / Fight Aging!",
+    "date": "2026-04-16",
+    "category": "Research",
+    "importance": "high",
+    "description": "Study reveals reduced IGF-1 signaling fails to extend lifespan in mitochondrial mutator mice, establishing that mitochondrial genome integrity is a prerequisite for IGF-1-mediated longevity benefits.",
+    "url": "https://doi.org/10.1126/sciadv.aea4279",
     "top_development": false
   },
   {
     "title": "Life Biosciences Secures $80M Series D for First Human Epigenetic Reprogramming Trial",
-    "source": "BizJournals / Fortune",
-    "date": "2026-04-08",
+    "source": "Fortune",
+    "date": "2026-01-30",
     "category": "Funding",
     "importance": "high",
-    "description": "Life Biosciences, co-founded by David Sinclair, raised $80M to advance ER-100, an AAV-delivered OSK gene therapy for optic neuropathies, through the first-ever human trial of partial epigenetic reprogramming.",
-    "url": "https://www.bizjournals.com/boston/news/2026/04/08/boston-anti-aging-biotech-raises-80m.html",
+    "description": "Life Biosciences, co-founded by David Sinclair, secured FDA approval for Phase 1 of ER-100, an AAV-delivered OSK gene therapy targeting optic neuropathies through partial epigenetic reprogramming.",
+    "url": "https://fortune.com/2026/01/30/billionaires-longevity-aging-fda-human-clinical-trial-life-biosciences-jerry-mclaughlin-david-sinclair-harvard-science/",
     "top_development": false
   },
   {
-    "title": "David Sinclair Teases April 2026 Launch for Longevity Research Funding Initiative",
-    "source": "X (Twitter)",
-    "date": "2026-03-13",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Harvard professor David Sinclair posted that 'longevity research is being starved of funds' and revealed he has assembled a team with a launch date in April 2026 to address the funding gap.",
-    "url": "https://x.com/davidasinclair/status/2032516695424635384",
-    "top_development": false
-  },
-  {
-    "title": "Vascular Endothelium Aging Review: Mitochondrial Metabolism as Therapeutic Target",
-    "source": "Ageing Research Reviews",
-    "date": "2026-04-15",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New review examines how aging reshapes endothelial cell metabolism and mitochondrial function, proposing mitochondria-driven metabolic deterioration as a key therapeutic target for vascular aging.",
-    "url": "https://doi.org/10.1016/j.arr.2026.103119",
-    "top_development": false
-  },
-  {
-    "title": "Sex Differences in Aging Interventions: New Review Highlights Understudied Female Biology",
-    "source": "Ageing Research Reviews",
-    "date": "2026-04-15",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New review examines sexually dimorphic lifespan and healthspan effects of interventions in rodents, highlighting the need to study X chromosome, gonadal hormones, and ovarian health in aging.",
-    "url": "https://doi.org/10.1016/j.arr.2026.103123",
-    "top_development": false
-  },
-  {
-    "title": "UT Health San Antonio Launches Multi-Phase Rapamycin, Semaglutide, and Dapagliflozin Trial",
-    "source": "San Antonio Report",
-    "date": "2026-03-16",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Over 700 South Texans will participate in one of the largest human aging trials, testing rapamycin, semaglutide, and dapagliflozin to determine if they slow biological aging. ARPA-H committed $144M to support the work.",
-    "url": "https://sanantonioreport.org/study-drugs-slow-aging-ut-health-san-antonio/",
-    "top_development": false
-  },
-  {
-    "title": "Arg-1 Identified as Key Regulator of Age-Dependent Cartilage Repair via Macrophage Polarization",
-    "source": "PLOS ONE / Fight Aging!",
-    "date": "2026-04-09",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Single-cell omics revealed that Arg-1 overexpression rescues impaired cartilage repair in aged animals by restoring anti-inflammatory macrophage subsets, establishing a novel therapeutic target for age-related joint degeneration.",
-    "url": "https://doi.org/10.1371/journal.pone.0344693",
-    "top_development": false
-  },
-  {
-    "title": "Rapamycin Review: Promising for Longevity but Standardized Human Biomarkers Still Lacking",
+    "title": "Rapamycin Review in Frontiers in Aging: Promising but Standardized Human Biomarkers Still Needed",
     "source": "Frontiers in Aging",
     "date": "2026-04-10",
     "category": "Research",
@@ -200,43 +220,43 @@
     "top_development": false
   },
   {
-    "title": "Bryan Johnson 2026 Blueprint Stack: Drops Rapamycin, Adds Lithium and NDGA",
-    "source": "NAD.com / Mito Health",
-    "date": "2026-04-15",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Bryan Johnson's 2026 supplement update includes NMN/NR six days per week, removal of rapamycin (stopped 2024), and addition of low-dose lithium and NDGA for brain function and cellular support.",
-    "url": "https://www.nad.com/news/aging-guru-bryan-johnsons-supplement-list-for-2026",
-    "top_development": false
-  },
-  {
-    "title": "SASP Score From Blood Proteomics Predicts Mortality Using Deep Learning",
+    "title": "Tau Seeds Spread via Brain Connectivity, Supporting Prion-Like Propagation in Alzheimer's",
     "source": "Fight Aging!",
-    "date": "2026-04-14",
+    "date": "2026-04-17",
     "category": "Research",
     "importance": "normal",
-    "description": "New composite SASP Score from UK Biobank blood proteomics data via deep learning validates as a predictor of mortality and chronic conditions; multimodal exercise alters its trajectory.",
-    "url": "https://doi.org/10.64898/2026.03.20.26348913",
+    "description": "Multimodal integration of tau seed bioactivity data from postmortem brain tissues, genotype, and fMRI reveals tau seeds spread via synaptic connections in individual-specific connectivity patterns, supporting prion-like propagation in Alzheimer's disease.",
+    "url": "https://www.fightaging.org",
     "top_development": false
   },
   {
-    "title": "RNA-Lipid Nanoparticle Therapy Enables Heart Self-Repair via ANP Production",
-    "source": "Columbia Engineering",
-    "date": "2026-04-14",
-    "category": "Research",
+    "title": "Longevity.Technology Week 14: Can Aging Be Treated Like a Disease?",
+    "source": "Longevity.Technology",
+    "date": "2026-04-07",
+    "category": "Industry",
     "importance": "normal",
-    "description": "Columbia researchers developed RNA-lipid nanoparticles encoding Nppa that produce pro-ANP in skeletal muscle, converted to ANP by Corin in the heart, reducing scarring and improving cardiac function in animal models.",
-    "url": "https://www.engineering.columbia.edu/about/news/new-rna-therapy-could-help-heart-repair-itself",
+    "description": "Week 14 news roundup explores the framing of aging as a treatable condition, alongside coverage of Noom acquiring a compounding pharmacy, Annovis Bio's buntanetap advancing to Phase 3, and Q1 2026 funding milestones.",
+    "url": "https://longevity.technology",
     "top_development": false
   },
   {
-    "title": "High-Dose Influenza Vaccine Associated With Lower Alzheimer's Risk in 65+ Population",
-    "source": "Neurology / Fight Aging!",
-    "date": "2026-04-15",
+    "title": "America's Longevity Crisis: Fortune Analyzes the 12.4-Year Healthspan Gap",
+    "source": "Fortune",
+    "date": "2026-04-12",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "With the oldest boomers turning 80 in 2026, the US faces a 12.4-year gap between lifespan and healthspan. Only 5% of homes have basic accessibility features and 80% of older households lack resources for long-term care.",
+    "url": "https://fortune.com/2026/04/12/longevity-ready-america-aging-boomers-retirement-planning/",
+    "top_development": false
+  },
+  {
+    "title": "USPTO Publishes AI-Driven Senolytic Compound Patent Screening 800K+ Molecules",
+    "source": "GovPing",
+    "date": "2026-04-11",
     "category": "Research",
     "importance": "normal",
-    "description": "Study of 120,775 patients found high-dose inactivated influenza vaccine was associated with lower Alzheimer's risk in months 1-25 post-vaccination compared to standard-dose in adults 65+.",
-    "url": "https://doi.org/10.1212/WNL.0000000000214782",
+    "description": "Patent application US20260097022A1 discloses AI neural networks trained on 2,352 compounds to predict senolytic activity across 800K+ molecules, with compounds binding Bcl-2 proteins to reduce senescent cell burden.",
+    "url": "https://changeflow.com/govping/pharma-drug-safety/senolytic-compound-patent-for-aging-treatment-filed-apr-9th-2026-04-11",
     "top_development": false
   },
   {
@@ -250,26 +270,6 @@
     "top_development": false
   },
   {
-    "title": "UC Berkeley Organ-on-a-Chip Platform Replicates 40 Years of Human Aging in Four Days",
-    "source": "LinkedIn / Mombo News",
-    "date": "2026-04-01",
-    "category": "Research",
-    "importance": "normal",
-    "description": "UC Berkeley researchers unveiled a miniaturized organ-on-a-chip platform that replicates 40 years of human aging in four days using aged human serum on stem-cell-derived tissues, enabling rapid screening of longevity interventions.",
-    "url": "https://www.linkedin.com/posts/mombo-news_mombo-news-trade-the-daily-outrage-for-activity-7445152294943506432-PPzg",
-    "top_development": false
-  },
-  {
-    "title": "America's Longevity Crisis: Fortune Analyzes the 12.4-Year Healthspan Gap",
-    "source": "Fortune",
-    "date": "2026-04-12",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Fortune reports that with the oldest boomers turning 80 in 2026, the US faces a 12.4-year gap between lifespan and healthspan. Only 5% of homes have basic accessibility features and 80% of older households lack resources for long-term care.",
-    "url": "https://fortune.com/2026/04/12/longevity-ready-america-aging-boomers-retirement-planning/",
-    "top_development": false
-  },
-  {
     "title": "Longevity Sector Valued at $23.2B in 2026, Projected $34.8B by 2030",
     "source": "TAMradar / ResearchAndMarkets",
     "date": "2026-04-08",
@@ -280,22 +280,12 @@
     "top_development": false
   },
   {
-    "title": "Longevity Center Europe: Clients Aging 22% Slower Than Average on DunedinPACE",
-    "source": "LinkedIn / Joanna Bensz",
-    "date": "2026-03-26",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Over 80 individuals at Longevity Center Europe tested with DunedinPACE scored an average 0.78, meaning they are aging 22% slower than the general population, with at least 10 clients aging slower than Bryan Johnson's reported 0.65.",
-    "url": "https://www.linkedin.com/posts/joanna-bensz-205b315_longevity-healthspan-biohacking-activity-7442862470614110208-fkPh",
-    "top_development": false
-  },
-  {
     "title": "On Aging 2026 Conference Opens April 20 in Atlanta: Largest US Aging Event",
     "source": "American Society on Aging",
     "date": "2026-04-13",
     "category": "Industry",
     "importance": "normal",
-    "description": "The ASA's On Aging 2026 conference takes place April 20-23 at the Hyatt Regency Atlanta, themed 'The Power of Belonging' and focusing on amplifying voices and advancing justice in aging.",
+    "description": "The ASA's On Aging 2026 conference takes place April 20-23 in Atlanta, themed 'The Power of Belonging' and focusing on amplifying voices and advancing justice in aging. Largest US multidisciplinary aging event.",
     "url": "https://asaging.org/on-aging/",
     "top_development": false
   }
