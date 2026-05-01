@@ -1,302 +1,277 @@
 [
   {
-    "title": "FDA Launches Real-Time Clinical Trial Data Pilot with AstraZeneca and Amgen",
+    "title": "GPX4-Ferroptosis Senolytic Strategy: A New Class of Chloroacetamides Selectively Kills Senescent Cells",
     "source": "AI Analysis",
-    "date": "2026-04-29",
+    "date": "2026-04-30",
+    "category": "Research",
+    "importance": "high",
+    "description": "Imperial College London researchers published in Nature Cell Biology on April 29 that senescent cells are uniquely dependent on GPX4 to survive ferroptosis, a finding exploited to develop a new class of senolytic chloroacetamides from a >10,000-compound screen. The compounds selectively eliminated senescent cells across multiple disease models while sparing healthy cells, and when combined with existing anticancer agents produced a potent one-two punch against persistent senescent tumor cells in melanoma, prostate, and ovarian cancer models. This mechanistically grounded approach differs from first-generation senolytics by targeting an intrinsic vulnerability rather than anti-apoptotic pathways, broadening the senolytic toolkit considerably.",
+    "url": "https://www.imperial.ac.uk/news/articles/research-groups/tate-group/2026/new-senolytic-strategy-targets-a-key-vulnerability-in-ageing-cells/",
+    "top_development": true
+  },
+  {
+    "title": "RENEWAL-NAD+ Phase 0/1b RCT: Oral LNAD+ Achieves 53% Intracellular NAD Increase Without Raising Plasma NAD",
+    "source": "AI Analysis",
+    "date": "2026-04-30",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "On April 28, the FDA announced two proof-of-concept real-time clinical trials (RTCTs), allowing its reviewers to access safety and efficacy signals as they are generated rather than waiting for full data submissions. AstraZeneca's Phase 2 TRAVERSE trial in mantle cell lymphoma and Amgen's STREAM-SCLC Phase 1b trial in small-cell lung carcinoma are already sharing live data through the Paradigm Health platform. This structural shift in trial oversight could compress approval timelines by months and represents the most significant regulatory modernization in drug development in years, with a broader summer 2026 pilot program to follow.",
-    "url": "https://www.fda.gov/news-events/press-announcements/fda-announces-major-steps-implement-real-time-clinical-trials",
+    "description": "The updated preprint (v3, posted April 27) of the RENEWAL-NAD+ randomized controlled trial demonstrates that five days of oral LNAD+, a physicochemically modified NAD+ formulation, elevated intracellular NAD by 53% versus placebo in healthy adults aged 45-75 (p=5.48e-14, Hedges g=3.66) while leaving circulating plasma NAD unchanged. This compartment-selective delivery mechanism is significant because plasma CD38 enzymes normally degrade NAD before cellular uptake, and the trial provides the first human RCT evidence that this bottleneck can be pharmacologically bypassed orally. The finding has direct implications for NAD-based longevity interventions and could reshape formulation strategies across the NR/NMN therapeutic space.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.25.714130v3",
     "top_development": true
   },
   {
-    "title": "D+Q Senolytic Combo Causes Brain Myelin Damage in Mice, Raising Human Safety Flags",
+    "title": "Stage-Specific Senescence Transcriptomics Identifies Early Inflammatory Trigger and Mid-Stage Intervention Window",
     "source": "AI Analysis",
-    "date": "2026-04-29",
+    "date": "2026-04-30",
     "category": "Research",
     "importance": "high",
-    "description": "A study published in PNAS and covered by Lifespan.io on April 28 found that dasatinib and quercetin, the most widely used senolytic combination currently in multiple clinical trials, causes demyelination of the corpus callosum in both young and old mice, mimicking multiple sclerosis-like white matter injury. Oligodendrocytes were not killed but lost their ability to properly deliver and organize myelin via endoplasmic reticulum stress within 20 minutes of exposure. This finding is a major safety signal for the millions following D+Q longevity protocols and may prompt regulatory scrutiny of ongoing human trials testing this combination.",
-    "url": "https://www.lifespan.io/news/a-popular-senolytic-treatment-causes-brain-damage-in-mice/",
+    "description": "A University of Tokyo study published April 29 in Aging-US mapped stage-dependent transcriptomic changes across young, middle, and old human dermal fibroblasts undergoing replicative senescence, revealing that immune and inflammatory gene programs activate during the transitional 'middle' stage well before full senescence is reached. Cell adhesion and maintenance pathways show a concurrent progressive decline, suggesting aging is not a binary switch but a graduated molecular shift with a therapeutically accessible intermediate state. Identifying this mid-stage window as plastic and potentially reversible reshapes thinking about optimal timing for senolytic or senomorphic interventions.",
+    "url": "https://www.aging-us.com/news-room/stage-specific-gene-expression-changes-reveal-early-triggers-of-cellular-aging",
     "top_development": true
   },
   {
-    "title": "UT Southwestern Identifies Refeeding Phase, Not Fasting, as Key to Longevity Extension",
+    "title": "FMT from Young Donors Prevents Liver Cancer and Reverses Molecular Aging via MDM2 Suppression in Mice",
     "source": "AI Analysis",
-    "date": "2026-04-29",
+    "date": "2026-04-30",
     "category": "Research",
     "importance": "high",
-    "description": "Research from UT Southwestern published in Nature Communications on April 26 found that the lifespan-extending effect of intermittent fasting derives from the metabolic recalibration during refeeding rather than from caloric deprivation itself. The protein NHR-49 must be efficiently deactivated by the enzyme KIN-19 when food is reintroduced; keeping NHR-49 continuously active eliminated the 60% lifespan extension in C. elegans models. This mechanistic insight reframes intermittent fasting protocol design and identifies a druggable switch (NHR-49/KIN-19) that could deliver fasting benefits without dietary restriction.",
-    "url": "https://www.utsouthwestern.edu/newsroom/articles/year-2026/april-fasting-and-refeeding-longer-lifespan.html",
+    "description": "Presented at Digestive Disease Week 2026, University of Texas Medical Branch researchers showed that autologous fecal microbiota transplantation from youthful donor timepoints completely prevented liver cancer in aged mice (0/8 vs 2/8 controls) and suppressed MDM2, an oncogenic liver protein, to youthful levels. The study also documented reversal of inflammation, fibrosis, mitochondrial decline, telomere attrition, and DNA damage, positioning the aging microbiome as an active causal driver of liver pathology rather than a passive marker. The autologous design circumvents immune rejection concerns and strengthens translational potential for human trials, representing a convergence of microbiome science, oncology, and geroscience.",
+    "url": "https://www.news-medical.net/news/20260423/Restoring-gut-microbiome-may-prevent-liver-cancer-in-mice.aspx",
     "top_development": true
   },
   {
-    "title": "Fragmented Circadian Rhythms Linked to Accelerated Brain Shrinkage in Aging Adults",
+    "title": "XellSmart Phase II Cell Therapy Trial for Parkinson's and Hydra-Rotifer Aging Hypothesis Published in Aging-US",
     "source": "AI Analysis",
-    "date": "2026-04-29",
-    "category": "Research",
-    "importance": "high",
-    "description": "A longitudinal Johns Hopkins Bloomberg School of Public Health study published in Alzheimer's & Dementia followed 344 cognitively healthy adults aged 50 and older and found that those with more fragmented daily rest-activity rhythms experienced significantly faster shrinkage of the hippocampus, parahippocampus, and amygdala \u2014 regions first targeted by Alzheimer's disease \u2014 than those with stronger circadian patterns. The association was strongest among the oldest participants, suggesting circadian fragmentation may both cause and be caused by neurodegeneration in a compounding cycle. This positions wearable-measured circadian regularity as an early modifiable biomarker for Alzheimer's risk stratification.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13077660/",
-    "top_development": true
-  },
-  {
-    "title": "Dual Senolytic-Epigenetic Strategy Defined as Next-Generation Healthspan Framework",
-    "source": "AI Analysis",
-    "date": "2026-04-29",
-    "category": "Research",
-    "importance": "high",
-    "description": "A comprehensive review in MDPI Biomolecules, highlighted in the April 28 Healthcare Discovery AI brief, argues that combining epigenetic modulation with senolytic therapy produces a more powerful anti-aging framework than either approach alone, targeting both the DNA methylation and histone modification signatures of senescent cells and the cells themselves. The review catalogs major senolytic classes including BCL-2 inhibitors, tyrosine kinase inhibitors, and natural polyphenols alongside senomorphic agents that modulate SASP signaling, and projects that AI-driven molecular profiling paired with epigenetic aging clocks will define the next generation of precision senotherapy. This synthesis arrives as the D+Q safety signal (above) further motivates the field to develop more tissue-specific and combinatorial approaches.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-28-2026/",
-    "top_development": true
-  },
-  {
-    "title": "FDA Real-Time Clinical Trial Pilot Announced with AstraZeneca and Amgen",
-    "source": "Fierce Biotech",
-    "date": "2026-04-28",
+    "date": "2026-04-30",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "The FDA unveiled its real-time clinical trial initiative, with AstraZeneca's TRAVERSE Phase 2 lymphoma trial and Amgen's STREAM-SCLC Phase 1b already transmitting live data via Paradigm Health. The agency also released a Request for Information for a broader summer 2026 AI-optimization pilot.",
-    "url": "https://www.fiercebiotech.com/biotech/fda-unveils-plan-real-time-review-clinical-trial-data-astrazeneca-and-amgen-already-board",
-    "top_development": false
+    "description": "Two converging developments in regenerative aging science landed this week: Shanghai-based XellSmart launched a multicenter Phase II trial of its dopaminergic stem cell therapy XS411 in 30 Parkinson's patients aged 50-75, building on Phase I data showing improved motor function, extended on-time, and brain imaging evidence of dopamine recovery without cell-related adverse events. Simultaneously, Aging-US published a hypothesis paper from Geisinger College proposing that introducing Hydra-like FoxO-driven gene expression patterns into rotifers and eventually mammals could delay organismal senescence by enhancing cellular maintenance and proteostasis without full stem cell renewal, offering a fresh theoretical framework for somatic anti-aging strategies.",
+    "url": "https://longevity.technology/news/cells-that-heal-new-parkinsons-trial-sparks-hope/",
+    "top_development": true
   },
   {
-    "title": "A Popular Senolytic Treatment Causes Brain Damage in Mice",
-    "source": "Lifespan.io",
-    "date": "2026-04-28",
-    "category": "Research",
-    "importance": "high",
-    "description": "Lifespan.io reported on a new PNAS study showing that the D+Q senolytic combo reduces myelination in the corpus callosum of mice, stressing oligodendrocytes via endoplasmic reticulum stress. The damage resembled multiple sclerosis and appeared in both young and old mice.",
-    "url": "https://www.lifespan.io/news/a-popular-senolytic-treatment-causes-brain-damage-in-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Fasting Extends Life by 60% But the Secret Is in the Refeeding",
-    "source": "UT Southwestern Medical Center",
-    "date": "2026-04-26",
-    "category": "Research",
-    "importance": "high",
-    "description": "Nature Communications published UT Southwestern research showing that the NHR-49/KIN-19 metabolic switch during refeeding is the critical determinant of fasting-induced lifespan extension in C. elegans, with over 60% lifespan gains eliminated when NHR-49 remained active through the refeeding window.",
-    "url": "https://www.utsouthwestern.edu/newsroom/articles/year-2026/april-fasting-and-refeeding-longer-lifespan.html",
-    "top_development": false
-  },
-  {
-    "title": "Chronic Insomnia Raises Dementia Risk by 40%, Six-Year Longitudinal Study Finds",
-    "source": "Healthcare Discovery AI",
+    "title": "New Senolytic Strategy Targets GPX4 to Exploit Ferroptosis Vulnerability in Senescent Cells",
+    "source": "Imperial College London",
     "date": "2026-04-29",
     "category": "Research",
     "importance": "high",
-    "description": "A six-year study of more than 2,700 cognitively healthy adults found that chronic insomniacs were 40% more likely to develop mild cognitive impairment or dementia, with greater amyloid burden and white matter hyperintensities on brain imaging, reinforcing sleep disruption as a primary modifiable driver of neurodegeneration.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-29-2026/",
-    "top_development": false
+    "description": "Researchers at Imperial College London's Gil and Tate groups screened over 10,000 electrophilic compounds and identified a new class of senolytic chloroacetamides that kill senescent cells by inhibiting GPX4, an enzyme senescent cells rely on to survive ferroptosis. The approach was validated across multiple disease models and in combination with anticancer therapy in melanoma, prostate, and ovarian cancer models.",
+    "url": "https://www.imperial.ac.uk/news/articles/research-groups/tate-group/2026/new-senolytic-strategy-targets-a-key-vulnerability-in-ageing-cells/"
   },
   {
-    "title": "Nasal Spray Using Neural Stem Cell Vesicles Reverses Brain Aging in Preclinical Study",
-    "source": "Texas A&M Stories",
-    "date": "2026-04-14",
-    "category": "Research",
-    "importance": "high",
-    "description": "Texas A&M researchers published in the Journal of Extracellular Vesicles that just two doses of an intranasal spray delivering extracellular vesicles from human neural stem cells dramatically reduced hippocampal neuroinflammation, restored mitochondrial function, and improved memory in aged mice by suppressing NLRP3 inflammasome and cGAS-STING pathways. The non-invasive delivery bypasses the blood-brain barrier.",
-    "url": "https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/",
-    "top_development": false
-  },
-  {
-    "title": "Harvard Identifies Gut Bacteria-Pollution Pathway Triggering Inflammation Linked to Depression",
-    "source": "ScienceDaily",
-    "date": "2026-04-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Harvard and Broad Institute researchers publishing in JACS found that Morganella morganii interacts with the common pollutant diethanolamine to produce a modified phospholipid that activates TLR1/TLR2 receptors and drives IL-6-mediated inflammation, providing a mechanistic gut-to-brain pathway for certain cases of major depressive disorder.",
-    "url": "https://www.sciencedaily.com/releases/2026/04/260425091216.htm",
-    "top_development": false
-  },
-  {
-    "title": "SuperAgers Grow 2.5x More New Neurons Than Age-Matched Peers",
-    "source": "Northwestern / UIC",
-    "date": "2026-02-26",
-    "category": "Research",
-    "importance": "high",
-    "description": "A Nature study from UIC and Northwestern found that adults over 80 classified as SuperAgers generate two to two-and-a-half times more new hippocampal neurons than healthy age-matched peers, establishing neurogenesis as the central 'resilience signature' of exceptional cognitive aging and a potential target for brain longevity therapies.",
-    "url": "https://news.feinberg.northwestern.edu/2026/02/26/as-superagers-age-they-make-at-least-twice-as-many-new-neurons-as-their-peers/",
-    "top_development": false
-  },
-  {
-    "title": "60 Minutes of Weekly Resistance Training Identified as Optimal Longevity Dose in 111,000-Person Harvard Study",
-    "source": "Healthcare Discovery AI",
+    "title": "Stage-Dependent Transcriptomic Changes in Human Dermal Fibroblast Senescence Model",
+    "source": "Aging-US",
     "date": "2026-04-29",
     "category": "Research",
-    "importance": "normal",
-    "description": "A Harvard study tracking 111,000 adults for 30 years found approximately 60 minutes per week of resistance exercise associated with a 19% lower risk of premature death, with exercise variety consistently outperforming single exercise modalities, supporting a revision of clinical exercise guidelines for older adults.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-29-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Muscle Power Beats Muscle Strength as the Top All-Cause Mortality Predictor",
-    "source": "Mayo Clinic Proceedings",
-    "date": "2026-04-16",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A Mayo Clinic Proceedings prospective study found that relative muscle power \u2014 the ability to generate force quickly \u2014 is a significantly stronger predictor of all-cause mortality than relative muscle strength alone in middle-aged and older adults, arguing for the inclusion of power training in longevity exercise prescriptions.",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0025619625001004",
-    "top_development": false
-  },
-  {
-    "title": "Women with Highest Grip Strength Show 33% Lower Mortality Risk in 5,000-Person Study",
-    "source": "Healthcare Discovery AI",
-    "date": "2026-04-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A study following more than 5,000 women aged 63-99 found that those in the highest grip strength category had a 33% lower risk of death, with fastest chair-stand times associated with a 37% reduction, even after controlling for aerobic fitness and general activity levels, supporting grip strength as a standard mortality risk stratification tool.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-29-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Centenarian Offspring Eat More Fish, Fruit, and Dramatically Less Sodium, Tufts 20-Year Study Finds",
-    "source": "Tufts Now",
-    "date": "2026-04-06",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A Tufts University study using 20 years of data from the New England Centenarian Study found that offspring of parents who lived past 100 consistently ate more fish, fruits, and vegetables alongside substantially lower sodium and added sugar versus age-matched peers, identifying diet as a controllable non-genetic longevity pathway.",
-    "url": "https://now.tufts.edu/2026/04/06/their-parents-lived-100-do-their-diets-have-clues-longevity",
-    "top_development": false
-  },
-  {
-    "title": "Fragmented Circadian Rhythms Linked to Faster Brain Shrinkage in Older Adults",
-    "source": "Alzheimer's & Dementia",
-    "date": "2026-04-14",
-    "category": "Research",
     "importance": "high",
-    "description": "Johns Hopkins Bloomberg School of Public Health researchers following 344 cognitively healthy adults aged 50+ found that weaker, more fragmented daily rest-activity rhythms predicted faster hippocampal, parahippocampal, and amygdala atrophy, establishing circadian fragmentation as an early modifiable Alzheimer's neurodegeneration biomarker.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13077660/",
-    "top_development": false
+    "description": "University of Tokyo scientists mapped gene expression across three stages of replicative senescence in dermal fibroblasts, finding that immune-inflammatory programs activate early in a 'middle' transitional stage before full senescence, while cell maintenance and adhesion pathways decline progressively. The middle stage emerged as a potentially plastic intervention window for anti-senescence therapy.",
+    "url": "https://www.aging-us.com/news-room/stage-specific-gene-expression-changes-reveal-early-triggers-of-cellular-aging"
   },
   {
-    "title": "eBooks Delay Melatonin Onset by 90 Minutes Compared to Paper Books",
-    "source": "Clocks & Sleep",
+    "title": "RENEWAL-NAD+ Phase 0/1b RCT: Oral LNAD+ Elevates Intracellular NAD 53% Without Raising Plasma Levels",
+    "source": "bioRxiv",
+    "date": "2026-04-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "The latest version (v3) of the RENEWAL-NAD+ preprint reports that five days of oral LathMized NAD+ (LNAD+) elevated intracellular NAD 53% above placebo in healthy adults aged 45-75 (p=5.48e-14) while leaving circulating plasma NAD unchanged, demonstrating compartment-selective delivery. The favorable safety profile and strong pharmacodynamic signal support further development of oral NAD+ repletion for aging applications.",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.25.714130v3"
+  },
+  {
+    "title": "From Hydra to Rotifer: New Hypothesis Proposes FoxO-Driven Gene Expression Transfer to Delay Organismal Senescence",
+    "source": "Aging-US",
     "date": "2026-04-27",
     "category": "Research",
     "importance": "normal",
-    "description": "A study published April 27 in Clocks & Sleep found that reading e-books delayed melatonin onset by approximately 90 minutes and sleep timing by 10 minutes versus paper books under matched lighting conditions, strengthening clinical recommendations for screen-free pre-bed intervals in longevity sleep protocols.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-29-2026/",
-    "top_development": false
+    "description": "Geisinger College researcher Michael Bordonaro published a hypothesis in Aging-US proposing that introducing Hydra-like FoxO-driven gene expression patterns into aging-prone rotifers could extend healthspan by improving cellular maintenance and proteostasis without requiring stem cell renewal. The paper outlines an iterative experimental framework from rotifers through Daphnia to mouse validation as a pathway toward somatic anti-aging strategies in humans.",
+    "url": "https://www.aging-us.com/news-room/from-hydra-to-rotifers-a-new-hypothesis-explores-pathways-to-delay-aging-in-humans"
   },
   {
-    "title": "Tirzepatide Delivers Significant Benefit for Hard-to-Treat HFpEF Heart Failure",
-    "source": "New England Journal of Medicine",
-    "date": "2026-04-28",
+    "title": "NYT Magazine: Cellular Rejuvenation Has the Potential to Reverse Aging",
+    "source": "The New York Times",
+    "date": "2026-04-27",
+    "category": "Industry",
+    "importance": "high",
+    "description": "The New York Times Magazine published a landmark feature on cellular rejuvenation science, detailing how researchers have reversed aging in laboratory settings including rejuvenating nonagenarian skin cells, restoring color to graying mice, and reimplanting rejuvenated rat kidneys. The piece contextualizes the first human epigenetic reprogramming trial by Life Biosciences and the broader commercial longevity ecosystem now attracting billions in Silicon Valley investment.",
+    "url": "https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html"
+  },
+  {
+    "title": "Mesoblast Completes Phase 3 Recruitment for Rexlemestrocel-L in Chronic Low Back Pain",
+    "source": "Simply Wall St / Mesoblast",
+    "date": "2026-04-29",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Mesoblast announced completion of patient recruitment for its pivotal Phase 3 clinical trial of rexlemestrocel-L, its mesenchymal stromal cell therapy, in chronic low back pain, a condition strongly associated with aging. This milestone sets the stage for top-line readout that could support a regulatory filing for the company's cell therapy platform.",
+    "url": "https://simplywall.st/stocks/au/pharmaceuticals-biotech/asx-msb/mesoblast-shares/news/mesoblast-advances-car-cell-therapy-platform-and-late-stage"
+  },
+  {
+    "title": "XellSmart Launches Multicenter Phase II Trial of Dopaminergic Stem Cell Therapy XS411 for Parkinson's Disease",
+    "source": "Longevity.Technology",
+    "date": "2026-04-22",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "An international NEJM study found that tirzepatide, the dual GLP-1/GIP receptor agonist, significantly reduced symptoms and improved exercise capacity in patients with heart failure with preserved ejection fraction, potentially establishing GLP-1 agents as a cornerstone of a form of heart failure that affects roughly half of all heart failure patients and has historically lacked effective therapies.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-28-2026/",
-    "top_development": false
+    "description": "Shanghai biotech XellSmart initiated a multicenter Phase II trial enrolling 30 Parkinson's patients aged 50-75 to receive its dopaminergic stem cell therapy XS411 versus standard care over one year, following Phase I data from Beijing Tiantan Hospital demonstrating improved motor function, longer symptom-free periods, and dopamine activity on brain imaging. No cell-related adverse events were observed in Phase I.",
+    "url": "https://longevity.technology/news/cells-that-heal-new-parkinsons-trial-sparks-hope/"
   },
   {
-    "title": "Metabolic Acidosis Identified as Potential Contributing Cause of Age-Related Frailty",
-    "source": "Fight Aging!",
-    "date": "2026-04-27",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The Fight Aging! newsletter April 27 edition reviewed new research linking low serum bicarbonate (below 25 mEq/L) even with preserved renal function to impaired gait, muscle strength, functional limitation, and mortality, implicating acidosis-driven sarcopenia via catabolic signaling, insulin resistance, and mitochondrial dysfunction as an underappreciated frailty driver.",
-    "url": "https://www.fightaging.org/archives/2026/04/fight-aging-newsletter-april-27th-2026/",
-    "top_development": false
-  },
-  {
-    "title": "FGF8 Gene Therapy Enhances Digit Tip Regrowth in Mice, Pointing Toward Limb Regeneration",
-    "source": "Fight Aging!",
-    "date": "2026-04-27",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers using an AAV vector to deliver spatiotemporally guided FGF8 expression via a zebrafish enhancer rescued and accelerated digit tip regrowth in mice by targeting the SP6/SP8 transcription factor program, identified as conserved across vertebrates, offering a pathway toward mammalian limb regeneration strategies.",
-    "url": "https://www.fightaging.org/archives/2026/04/carefully-guided-fgf8-expression-via-gene-therapy-enhances-digit-tip-regrowth-in-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Mitrix Bio Reports Phase 1 Safety Data for Autologous Mitochondrial Infusions in Older Adults",
-    "source": "Longevity.Technology / Fight Aging!",
-    "date": "2026-04-27",
+    "title": "BlueRock Therapeutics' Bemdaneprocel Shows Sustained Parkinson's Motor Benefits at Three Years in Phase 1",
+    "source": "Parkinson's News Today",
+    "date": "2026-04-22",
     "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Mitrix Bio reported that large-volume autologous mitochondrial infusions in two older participants at Right to Try clinics in Dallas and Newport Beach showed no adverse effects on blood chemistry or physical monitoring at escalating doses, with bioreactor-produced autologous mitochondria and efficacy data expected by year-end 2026.",
-    "url": "https://longevity.technology/news/mitrix-moves-mitochondria-into-the-clinic/",
-    "top_development": false
+    "importance": "high",
+    "description": "Three-year data from BlueRock Therapeutics' exPDite Phase 1 trial, presented at the AAN 2026 Annual Meeting, showed that a single dose of the ESC-derived cell therapy bemdaneprocel maintained stable or improved motor outcomes at three years, with higher-dose patients showing reduced daily off-time and increased on-time without troublesome dyskinesia. The strong safety profile and sustained dopamine function support advancement into the Phase 2 exPDite-2 randomized sham-controlled trial.",
+    "url": "https://parkinsonsnewstoday.com/news/aan-2026-parkinsons-cell-therapy-trial-shows-sustained-benefits/"
   },
   {
-    "title": "Nature Aging Review Clarifies Dietary Restriction Mechanisms Across Species",
-    "source": "Nature Aging",
-    "date": "2026-03-06",
+    "title": "FMT from Young Donors Eliminates Liver Cancer Risk and Reverses Molecular Aging Markers in Aged Mice",
+    "source": "News-Medical / DDW 2026",
+    "date": "2026-04-23",
+    "category": "Research",
+    "importance": "high",
+    "description": "University of Texas Medical Branch researchers presented at DDW 2026 that autologous FMT from youthful timepoints prevented liver cancer in all treated aged mice compared to 25% tumor incidence in controls, while suppressing the oncogenic MDM2 protein to youthful levels and reversing inflammation, fibrosis, mitochondrial decline, telomere attrition, and DNA damage. The study repositions the aging microbiome as a causal driver of liver carcinogenesis and aging rather than a passive correlate.",
+    "url": "https://www.news-medical.net/news/20260423/Restoring-gut-microbiome-may-prevent-liver-cancer-in-mice.aspx"
+  },
+  {
+    "title": "Epigenetic Age Acceleration (AgeAccelGrim2) Predicts Alzheimer's Neurodegeneration Pattern on MRI But Not General Brain Aging",
+    "source": "Aging-US",
+    "date": "2026-04-23",
     "category": "Research",
     "importance": "normal",
-    "description": "A comprehensive Nature Aging review by 16 leading aging researchers synthesized how dietary restriction extends lifespan via reduced insulin/IGF-1 signaling, enhanced autophagy, improved mitochondrial function, and gut microbiome remodeling, noting that human translation requires accounting for caloric source, timing, protein composition, and metabolic variation beyond what animal studies have addressed.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/41792328/",
-    "top_development": false
+    "description": "A study of 1,196 older women published in Aging-US found that the AgeAccelGrim2 epigenetic clock predicts MRI-based Alzheimer's Disease Pattern Similarity Scores but not general brain aging (SPARE-BA), with the association driven primarily by a DNA methylation marker of smoking pack-years linked to frontal and temporal lobe volumes. The findings indicate that different epigenetic clocks capture distinct biological aging pathways and that Grim Age's AD-predictive power is partially mediated by accumulated smoking exposure.",
+    "url": "https://www.aging-us.com/news-room/epigenetic-aging-linked-to-mri-signatures-of-neurodegeneration-but-not-general-brain-aging"
   },
   {
-    "title": "Gut Microbiome Signature Can Predict Parkinson's Disease Risk, UCL Study Finds",
-    "source": "UCL News",
-    "date": "2026-04-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A UCL analysis found that gut microbial composition analysis can identify elevated Parkinson's disease risk, with people carrying Parkinson's-associated genetic variants displaying the same distinctive microbiome profile as those with confirmed diagnoses, opening gut-based screening and intervention avenues for a neurodegenerative disease with aging as its primary risk factor.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-28-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Google Research: Wearables Plus Routine Blood Tests Can Predict Insulin Resistance Without Invasive Testing",
-    "source": "Google Research",
-    "date": "2026-04-29",
+    "title": "Life Time Rolls Out SpiroFit VO2 Max and Metabolic Testing Nationwide Across North America",
+    "source": "Longevity.Technology",
+    "date": "2026-04-22",
     "category": "Protocols",
     "importance": "normal",
-    "description": "A Google Research study developed and validated machine learning models combining wearable data (resting heart rate, steps, sleep) with standard blood tests to predict insulin resistance in 1,165 participants, particularly in obesity and sedentary individuals, presenting a scalable non-invasive metabolic aging monitoring approach for longevity medicine practice.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-29-2026/",
-    "top_development": false
+    "description": "Life Time fitness clubs completed a nationwide rollout of SpiroFit, a cordless wearable metabolic testing system delivering lab-grade VO2 max and five-zone training profiles validated to within 1-3% accuracy. The move democratizes a key longevity biomarker previously accessible only in clinical settings, enabling large-scale data collection on cardiorespiratory fitness trajectories in a non-research population.",
+    "url": "https://longevity.technology/news/life-time-brings-vo2-max-and-metabolic-testing-to-the-masses/"
   },
   {
-    "title": "Fasting Mimicking Diet Triggers Measurable Autophagy in First Human Clinical Trial",
-    "source": "GeroScience / L-Nutra",
-    "date": "2025-12-16",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "A Cedars-Sinai and UT Health San Antonio randomized pilot trial found that the five-day ProLon Fasting Mimicking Diet produced a measurable increase in autophagic flux alongside improvements in body weight, fasting glucose, insulin sensitivity, and ketone levels in 30 healthy participants, representing the first human confirmation of autophagy activation through nutritional intervention.",
-    "url": "https://finance.yahoo.com/news/first-ever-human-trial-finds-120200660.html",
-    "top_development": false
-  },
-  {
-    "title": "Longevity Aging Reframed as Loss of Biological Coordination at Berlin World Congress",
-    "source": "EurekAlert",
-    "date": "2026-04-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers presenting at the 2nd World Congress on Targeting Longevity in Berlin outlined a conceptual shift from viewing aging as accumulated cellular defects toward understanding it as a progressive loss of coordination among biological systems including mitochondrial signaling, microbiota-brain interactions, and metabolic tissue regulation, pointing toward systems biology and comparative genomics as the most productive future research directions.",
-    "url": "https://www.eurekalert.org/news-releases/1116021",
-    "top_development": false
-  },
-  {
-    "title": "Tau Protein Spreads Through the Brain via Synaptic Connections, Not Diffusion",
-    "source": "Neuron / UAB",
-    "date": "2026-04-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "University of Alabama at Birmingham researchers publishing in Neuron found that Alzheimer's-associated tau tangles spread between brain regions by traveling along synaptic connections rather than diffusing freely through tissue, a mechanistic finding that reframes therapeutic targeting strategies for tau-based neurodegeneration interventions.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-28-2026/",
-    "top_development": false
-  },
-  {
-    "title": "NIH All of Us Comprehensive Wearables Dataset Released in Nature Medicine",
-    "source": "Nature Medicine",
-    "date": "2026-04-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The NIH All of Us Research Program released a comprehensive wearables dataset in Nature Medicine providing physiological and behavioral data from commercial devices across a large diverse national cohort, creating a foundational resource for aging biomarker discovery and longitudinal healthspan research.",
-    "url": "https://healthcarediscovery.ai/the-daily-rounds-longevity-health-care-brief-april-28-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Insilico Medicine Forms Industry-First Longevity Board for AI-Driven Aging Research",
-    "source": "EurekAlert",
-    "date": "2026-04-21",
+    "title": "Mesoblast Acquires Exclusive Global License to Mayo Clinic CAR Technology for Precision-Enhanced MSC Products",
+    "source": "GlobeNewswire",
+    "date": "2026-04-14",
     "category": "Biotech",
     "importance": "normal",
-    "description": "Insilico Medicine announced the formation of the industry's first dedicated Longevity Board to provide scientific oversight for AI-enabled aging research and drug discovery, overseeing life models, biomarkers of aging, dual-purpose longevity targets, and clinical validation of therapeutics targeting hallmarks of aging in combination with its $2.75B Eli Lilly R&D partnership.",
-    "url": "https://www.eurekalert.org/news-releases/1125084",
-    "top_development": false
+    "description": "Mesoblast acquired exclusive worldwide rights to a chimeric antigen receptor (CAR) technology platform developed at Mayo Clinic, with plans to engineer CAR constructs into its FDA-approved MSC products to improve targeted tissue homing and immunomodulatory potency in inflammatory and autoimmune conditions. The platform's initial focus includes CD19-targeting for lupus nephritis and B-cell autoimmune diseases, with Mayo Clinic providing ongoing GMP manufacturing support.",
+    "url": "https://www.globenewswire.com/news-release/2026/04/15/3274064/0/en/mesoblast-acquires-chimeric-antigen-receptor-car-platform-technology-for-precision-enhanced-cell-products.html"
+  },
+  {
+    "title": "Longevity Biotech Investment 2026: Q1 Reaches $3.74B, Projecting $8-9B Full Year",
+    "source": "Longevity.Technology",
+    "date": "2026-03-31",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Longevity.Technology's Deep Longevity Tracker recorded 49 financing events in Q1 2026 totaling approximately $3.74 billion, a 56% increase over Q1 2025's $2.40 billion, with median deal size of $21.8 million indicating a maturing mid-stage pipeline. Full-year projections based on Q1 momentum and seasonal patterns converge on an $8-9 billion range, implying 55-60% annual growth over 2025's $5.72 billion base.",
+    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/"
+  },
+  {
+    "title": "Colchicine Alleviates Non-Atherosclerotic Vascular Aging by Preserving Endothelial Function and Elastin Architecture",
+    "source": "Journal of Inflammation Research / PMC",
+    "date": "2026-02-07",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Erasmus MC researchers showed that chronic low-dose colchicine (0.1 mg/kg/day) significantly reduced arterial stiffness, preserved endothelium-dependent vasorelaxation via NO signaling restoration, and maintained elastin architecture in a smooth muscle-specific ERCC1 knockout mouse model of DNA-damage-driven vascular aging. The findings support colchicine repurposing for primary prevention of vascular aging beyond its established anti-inflammatory role.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13012638/"
+  },
+  {
+    "title": "Longeveron Phase 2b: Laromestrocel Stem Cell Therapy Improves Frailty in Older Adults, Published in Cell Stem Cell",
+    "source": "Longeveron / Cell Stem Cell",
+    "date": "2026-02-25",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Longeveron published Phase 2b results in Cell Stem Cell showing that intravenous laromestrocel (LOMECEL-B), a mesenchymal stem cell therapy, improved the six-minute walk test by 63.4 meters versus placebo at nine months (p=0.0077) in patients with age-related clinical frailty. Nearly one-third of treated patients transitioned from frail to non-frail status, representing the strongest Phase 2b human evidence to date for a cell therapy addressing aging frailty as a primary indication.",
+    "url": "https://investors.longeveron.com/news/News/news-details/2026/Longeveron-Results-of-Phase-2b-Clinical-Trial-Demonstrating-Stem-Cell-Therapy-Improved-Condition-of-Patients-with-Age-Related-Frailty-Published-in-Cell-Stem-Cell/default.aspx"
+  },
+  {
+    "title": "Klothea Bio Launches Phase 1b Trial of Alpha-Klotho mRNA Therapeutic AKL003 for Lifespan Extension",
+    "source": "GlobeNewswire",
+    "date": "2026-02-19",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Klothea Bio initiated a randomized, double-blind, placebo-controlled Phase 1b trial of AKL003, an mRNA formulation in lipid nanoparticles designed to upregulate circulating alpha-Klotho protein, enrolling 21 healthy adults aged 25-75 at GARM Clinic in Honduras. In addition to safety and tolerability, the trial measures exploratory longevity biomarkers including inflammatory markers, metabolic and cardiovascular measures, sleep quality from wearables, and quality of life, making it one of the first clinical trials with explicit longevity endpoints for a Klotho-targeting therapeutic.",
+    "url": "https://www.globenewswire.com/news-release/2026/02/19/3241223/0/en/klothea-bio-announces-the-launch-of-a-phase-1b-clinical-trial-of-akl003-an-alpha-klotho-mrna-therapeutic-for-the-extension-of-human-lifespan.html"
+  },
+  {
+    "title": "Lifespan Heritability Revised Upward to ~50% in Science Study Using Twin Databases",
+    "source": "Weizmann Institute of Science / Science",
+    "date": "2026-01-31",
+    "category": "Research",
+    "importance": "high",
+    "description": "A Weizmann Institute study published in Science used three twin databases including twins raised apart to show that genetic factors account for approximately 50% of human lifespan variation when deaths from extrinsic causes such as accidents and infections are statistically removed, roughly doubling prior estimates of 20-25%. The revised heritability figure significantly strengthens the rationale for genetic and genomic approaches to longevity intervention.",
+    "url": "https://medicalxpress.com/news/2026-01-rethinking-longevity-genes-account-human.html"
+  },
+  {
+    "title": "Swiss SWISS100 Centenarian Study Identifies 37 Proteins With Youthful Profiles and Low Oxidative Stress in 100-Year-Olds",
+    "source": "University of Geneva / Aging Cell",
+    "date": "2026-02-24",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers from UNIGE and UNIL measured 724 serum proteins in 39 centenarians, 59 octogenarians, and 40 adults aged 30-60, finding 37 proteins in centenarians with profiles resembling those of the youngest group rather than octogenarians, particularly antioxidant and inflammatory markers. DPP-4 preservation in centenarians, which maintains low insulin levels by degrading GLP-1, emerged as a novel metabolic protection mechanism linking centenarian biology to the GLP-1 pharmacology space.",
+    "url": "https://medicalxpress.com/news/2026-02-centenarians-blood-mechanisms-longevity.html"
+  },
+  {
+    "title": "GLP-1 Microdosing for Longevity Gains Scientific and Commercial Momentum as AgelessRx Launches RCT",
+    "source": "Science News",
+    "date": "2026-03-20",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "AgelessRx initiated a clinical trial examining how sub-therapeutic microdoses of GLP-1 receptor agonists affect healthspan metrics and quality of life, as longevity clinicians increasingly use off-label microdosing for anti-inflammatory and metabolic aging benefits. While rigorous efficacy data remain limited, the trial represents the first controlled effort to evaluate GLP-1 as a formal longevity protocol rather than a metabolic disease treatment.",
+    "url": "https://www.sciencenews.org/article/glp1-medications-microdose-longevity"
+  },
+  {
+    "title": "Avaí Bio and Austrianova to Present Alpha-Klotho Cell Therapy Data at Second Annual Klotho Conference",
+    "source": "BriefGlance / Avaí Bio",
+    "date": "2026-04-07",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Avaí Bio (OTCQB: AVAI) and Austrianova announced plans to present new data from their Klothonova joint venture's alpha-Klotho cell encapsulation therapy at the Second Annual Klotho Conference in September 2026, following production of a GMP Master Cell Bank in March. The encapsulated living cell approach aims to create a sustained internal source of the longevity-associated Klotho protein, addressing a key challenge of its otherwise short circulating half-life.",
+    "url": "https://briefglance.com/articles/biotech-duo-to-unveil-new-data-on-klotho-anti-aging-therapy"
+  },
+  {
+    "title": "Targeting Longevity 2026 Congress: Researchers Reframe Aging as Loss of Biological Coordination Rather Than Damage Accumulation",
+    "source": "EurekAlert",
+    "date": "2026-04-08",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The 2nd World Congress on Targeting Longevity held in Berlin brought together researchers on mitochondria, microbiota, redox biology, and systems medicine to argue that aging is better understood as progressive loss of coordination between biological systems rather than isolated damage accumulation. The framing shift has implications for intervention design, pointing toward multi-system resilience platforms over single-pathway targeting.",
+    "url": "https://www.eurekalert.org/news-releases/1116021"
+  },
+  {
+    "title": "UT Health San Antonio Prepares Landmark Rapamycin-Semaglutide-Dapagliflozin Three-Drug Longevity Trial with 700 Participants",
+    "source": "San Antonio Report",
+    "date": "2026-03-16",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "UT Health San Antonio's Barshop Institute announced preparation of one of the largest human trials testing whether rapamycin, semaglutide, and dapagliflozin in combination can slow biological aging processes in over 700 older South Texas adults. The trial reflects a combinatorial strategy to address multiple aging hallmarks simultaneously and is described by its lead investigator as the culmination of 50 years of aging research at the institution.",
+    "url": "https://sanantonioreport.org/study-drugs-slow-aging-ut-health-san-antonio/"
+  },
+  {
+    "title": "Longevity Startup Funding 2025-2026: Loyal Raises $100M Series C, Blueprint $60M Growth Round Among Late-Stage Deals",
+    "source": "New Market Pitch",
+    "date": "2026-04-22",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "Updated longevity funding tracker data shows a maturing funding landscape with Series B and late-stage rounds dominating 2025-2026 activity: Loyal raised $100M Series C for canine longevity drugs, Blueprint secured $60M growth equity, and Function Health raised $298M Series B, alongside continued growth in biological age diagnostics and epigenetic reprogramming platforms. The shift toward later-stage rounds reflects a graduating pipeline of companies beyond early seed and Series A.",
+    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-analysis"
+  },
+  {
+    "title": "Rubedo Life Sciences RLS-1496 GPX4-Targeting Topical Senolytic Advances Phase 1 in Psoriasis with Skin Epigenetic Clock Endpoint",
+    "source": "Drug Discovery Trends",
+    "date": "2026-02-06",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Rubedo Life Sciences is running a Phase 1 trial of RLS-1496, a topical GPX4 modulator designed to push senescent skin cells toward ferroptosis, in psoriasis with an FDA-cleared IND also covering actinic keratosis. Unusually, the trial measures skin biological age using an epigenetic clock approach alongside disease endpoints, generating proof-of-concept data for whether a senolytic mechanism can modify underlying tissue aging state.",
+    "url": "https://www.drugdiscoverytrends.com/rubedo-bets-senescent-cell-clearance-can-make-skin-act-younger/"
+  },
+  {
+    "title": "Longevity Biotech Investment Outlook 2026: Deal Volume Up 80% Year-on-Year in Early 2026, Median Round $7M",
+    "source": "New Market Pitch",
+    "date": "2026-04-22",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "A secondary funding tracker reports 2026 longevity deal volume is running 80% ahead of the same period in 2025 by deal count, though median round size has fallen from $76M to $7M after stripping out the Retro Biosciences outlier, indicating broad-based early-stage activity rather than a few mega-rounds. The data suggests longevity is attracting a wider field of entrants even as late-stage capital concentrates in a handful of established platforms.",
+    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-trends"
   }
 ]
