@@ -1,277 +1,277 @@
 [
   {
-    "title": "Oxidative Stress Reversibly Impairs Deubiquitylase Activity in Aging Brain — Antioxidant NACET Restores Proteostasis",
+    "title": "University of Arizona Launches Largest-Ever Human Rapamycin Trial for Healthy Aging",
     "source": "AI Analysis",
-    "date": "2026-05-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "A Nature Communications study (published April 21, confirmed on Fight Aging! May 1) used activity-based proteomics in mouse and killifish brains to show that DUB enzyme activity declines ~40% with age due to thiol oxidation, preceding proteasome failure. Critically, the antioxidant N-acetylcysteine ethyl ester (NACET) fully restored DUB activity and proteasome function in aged animals, identifying a potentially reversible early driver of proteostasis collapse in the aging brain and flagging USP7 as a specific therapeutic target.",
-    "url": "https://www.fightaging.org/archives/2026/05/oxidative-stress-impairs-deubiquitylase-activity-in-the-aging-brain/",
-    "top_development": true
-  },
-  {
-    "title": "Infinite Epigenetics Acquires Tally Health: Largest Epigenetic Age Testing Consolidation Creates Integrated Longevity Platform",
-    "source": "AI Analysis",
-    "date": "2026-05-01",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Announced April 29, Infinite Epigenetics (parent of TruDiagnostic) acquired David Sinclair co-founded Tally Health in the largest consolidation in epigenetic age testing to date, uniting clinical-grade methylation diagnostics with a consumer-facing supplement and testing platform. The deal creates the world's largest private adult DNA methylation dataset, positioning the company to move epigenetics from research and lifestyle applications into mainstream preventive healthcare with an integrated test-analyze-intervene loop.",
-    "url": "https://longevity.technology/news/infinite-epigenetics-acquires-tally-health/",
-    "top_development": true
-  },
-  {
-    "title": "RAPA-EX-01 Trial: Weekly Rapamycin May Attenuate Exercise Gains in Older Adults — Challenges Cycling Hypothesis",
-    "source": "AI Analysis",
-    "date": "2026-05-01",
+    "date": "2026-05-02",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Results from the RAPA-EX-01 randomized trial (40 sedentary adults aged 65-85, Auckland) showed that once-weekly rapamycin 6 mg did not enhance — and in sensitivity analyses modestly attenuated — functional improvements from a 13-week home exercise program, with placebo outperforming rapamycin on chair-stand, 6-minute walk, grip strength, and quality-of-life endpoints. The finding challenges the popular 'cycling hypothesis' and suggests rapamycin's 62-hour half-life prevents a clean separation between drug and exercise anabolic windows, with the longevity community debating whether longer trials at different dosing schedules would yield different results.",
-    "url": "https://www.neuroagetx.com/blog/do-rapamycin-and-exercise-combine",
+    "description": "The University of Arizona R. Ken Coit College of Pharmacy launched a Phase 3 randomized, double-blind, placebo-controlled trial enrolling 720 adults aged 65 and older to evaluate whether weekly low-dose rapamycin (8 mg) slows aging over two years. Primary endpoints are frailty transition and IL-6 (systemic inflammation), with an extensive biomarker panel spanning epigenetic clocks, immune phenotyping, AGE accumulation, lung and joint function, and direct mTOR pathway engagement. This is the most ambitious human rapamycin study ever conducted, designed to definitively establish whether mTOR inhibition can slow clinically meaningful aging trajectories.",
+    "url": "https://www.pharmacy.arizona.edu/news/2026/u-launches-rapamycin-clinical-trial-philanthropic-support-alumnus-ken-coit",
     "top_development": true
   },
   {
-    "title": "High-Altitude Chronic Hypoxia Drives Accelerated Immune Aging — Multi-Organ Atlas Confirms Systemic Aging Trajectory",
+    "title": "Lifespan.io Rejuvenation Roundup April 2026: A Wave of Longevity Research Across Senolytics, Reprogramming, NAD+, and Metabolic Aging",
     "source": "AI Analysis",
-    "date": "2026-05-01",
+    "date": "2026-05-02",
     "category": "Research",
     "importance": "high",
-    "description": "A Science Advances study published April 22 and highlighted by Fight Aging! on April 30 characterized immune landscapes in Tibetan populations at 3,656 m and 5,070 m elevation, finding marked enrichment of aging-associated immune cells (exhausted T cells, age-associated B cells) and elevated neutrophils compared to low-altitude cohorts — a pattern conserved in mouse hypoxia models and further showing accelerated gut aging trajectories via Stereo-seq. The findings reinforce environmental epigenetic aging theories and point to cytokine-driven systemic coordination as a shared aging mechanism, complementing the Rockefeller 7-million-cell atlas published in February.",
-    "url": "https://www.fightaging.org/archives/2026/04/high-altitude-populations-exhibit-features-of-accelerated-immune-aging/",
+    "description": "The April 2026 Rejuvenation Roundup from Lifespan.io aggregated dozens of significant studies: tomatidine emerged as a senotherapeutic improving cognition and reducing senescence in aged mice; a new study found rapamycin may blunt the exercise response in older humans under certain protocols; partial reprogramming mitigated myocardial infarction damage in mice; and a combination NAD+ treatment using NMN plus apigenin restored muscle function and bone structure in aged mice. The EU iHelp epigenetic age feedback study showed 72% of participants reported feeling healthier after one year of personalized biological age feedback plus lifestyle coaching.",
+    "url": "https://lifespan.io/rejuvenation-roundup-april-2026/",
     "top_development": true
   },
   {
-    "title": "Annovis Phase 2/3 Buntanetap Alzheimer's Data Published in Nature NPJ Dementia — Phase 3 Now 80% Enrolled",
+    "title": "Endlyz Raises Seed 2 Financing for Root-Cause Parkinson's Neurodegeneration Platform",
     "source": "AI Analysis",
-    "date": "2026-05-01",
+    "date": "2026-05-02",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Endlyz Therapeutics closed its Seed 2 financing backed by AbbVie Ventures, the Dementia Discovery Fund, Oxford Science Enterprises, and Parkinson's UK, advancing small-molecule modulators of ATP13A2 and ATP10B to restore lysosomal function and potentially halt Parkinson's disease progression. New collaborations with SandboxAQ for AI-driven drug discovery and University of Oxford researchers further de-risk the platform. Endlyz's lysosomal restoration approach is relevant across neurodegeneration broadly, framing cellular waste clearance as a longevity target.",
+    "url": "https://longevity.technology/news/endlyz-raises-seed-2-financing-leans-into-root-cause-neuroscience/",
+    "top_development": true
+  },
+  {
+    "title": "Perplexity Health Launches for 69M+ Medicare Users; AI Health Platforms Scale Longevity Diagnostics",
+    "source": "AI Analysis",
+    "date": "2026-05-02",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Perplexity Health completed its US rollout to Pro and Max subscribers in April 2026, enabling users to connect electronic health records, wearable data, and lab results from 1.7 million providers for personalized AI-driven health insights grounded in clinical guidelines. Concurrently, January AI entered the CMS Medicare App Library, extending predictive glucose and metabolic health tools to 69 million+ Medicare beneficiaries. These launches signal a broad acceleration of AI-native health intelligence into mainstream aging and preventive care.",
+    "url": "https://longevity.technology/news/perplexity-enters-the-consumer-health-ai-arena/",
+    "top_development": true
+  },
+  {
+    "title": "SuperAge Games Debut as World's First Longevity Fitness Competition; Insilico-Lilly $2.75B AI Deal Anchors AI-Driven Aging Drug Discovery",
+    "source": "AI Analysis",
+    "date": "2026-05-02",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Super Age launched the SuperAge Games, a November 2026 New York City competition measuring cardiovascular capacity, grip strength, balance, agility, working memory, and biomarkers as proxies for aging rate, reframing athleticism around healthspan durability. In parallel, Insilico Medicine's $2.75 billion collaboration with Eli Lilly (announced March 29) continued attracting attention as one of the largest AI-to-pharma asset licensing deals in longevity-adjacent drug discovery. Both developments reflect the field's accelerating shift from lab research to consumer and commercial deployment.",
+    "url": "https://longevity.technology/news/super-age-debuts-worlds-first-longevity-fitness-games/",
+    "top_development": true
+  },
+  {
+    "title": "University of Arizona Launches Phase 3 Rapamycin Trial for Aging (720 Participants)",
+    "source": "University of Arizona R. Ken Coit College of Pharmacy",
+    "date": "2026-04-01",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Annovis Bio published its 351-patient Phase 2/3 results for oral buntanetap in Nature NPJ Dementia on April 28, showing statistically significant, dose-dependent cognitive improvement (ADAS-Cog11) in pTau217-positive mild Alzheimer's patients alongside reductions in neurotoxic proteins and neuroinflammation biomarkers. The pivotal Phase 3 trial is now approximately 80% enrolled across 84 U.S. sites, keeping the company on track for a 6-month symptomatic data readout in the second half of 2026 — a significant near-term clinical milestone for an oral anti-neurodegeneration therapy.",
-    "url": "https://www.biospace.com/press-releases/annovis-publishes-phase-2-3-alzheimers-trial-results-in-nature-portfolio",
-    "top_development": true
+    "description": "A double-blind, randomized Phase 3 trial will enroll 720 adults aged 65 and older to evaluate weekly low-dose rapamycin (8 mg) over two years, measuring frailty transition and IL-6 as co-primary endpoints alongside epigenetic clocks, immune profiling, AGE accumulation, and lung and joint health assessments. This is the largest and most comprehensively phenotyped human rapamycin study ever conducted and is funded by philanthropist Ken Coit.",
+    "url": "https://www.pharmacy.arizona.edu/news/2026/u-launches-rapamycin-clinical-trial-philanthropic-support-alumnus-ken-coit"
   },
   {
-    "title": "Oxidative Stress Causes Reversible Decrease of Deubiquitylase Activity in Aging Vertebrate Brains",
-    "source": "Nature Communications / Fight Aging!",
-    "date": "2026-05-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "Activity-based proteomics in mouse and killifish brains identified a ~40% age-dependent decline in DUB enzyme activity due to thiol oxidation, preceding proteasome failure. In vivo antioxidant treatment with NACET restored DUB activity and improved proteasome function in aged animals.",
-    "url": "https://www.nature.com/articles/s41467-026-71921-y"
-  },
-  {
-    "title": "Fight Aging!: FMT From Young Mice Suppresses MDM2 Expression and Prevents Liver Cancer in Aging Controls",
-    "source": "Fight Aging! / EurekAlert",
-    "date": "2026-05-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "A mouse study found that fecal microbiota transplantation (FMT) from young donors prevented liver cancer development in aging recipients (0/8 vs 2/8 controls), suppressed MDM2 protein levels, and reversed molecular aging hallmarks including inflammation, fibrosis, and telomere attrition in liver tissue.",
-    "url": "https://www.eurekalert.org/news-releases/1124997"
-  },
-  {
-    "title": "NPR: Eric Topol on 'Super Aging' — Science vs. Grift in the Longevity Industry",
-    "source": "NPR",
-    "date": "2026-05-01",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Cardiologist Eric Topol published his book Super Agers and appeared on NPR May 1 arguing that healthspan — not lifespan — is the correct optimization target, and that lifestyle factors (exercise, sleep, social connection, reduced inflammation) and AI-enabled prevention outperform most commercial longevity products. He expressed concern about unregulated peptides and supplement marketing outpacing evidence.",
-    "url": "https://www.npr.org/2026/05/01/nx-s1-5770418/expert-super-aging-science-anti-aging"
-  },
-  {
-    "title": "High Altitude Populations Exhibit Features of Accelerated Immune Aging",
-    "source": "Fight Aging! / Science Advances",
-    "date": "2026-04-30",
-    "category": "Research",
-    "importance": "high",
-    "description": "Human immune profiling at 3,656 m and 5,070 m Tibetan elevation found significant enrichment of exhausted T cells, age-associated B cells, and elevated neutrophils versus low-altitude populations. Mouse models under simulated 5,000 m hypoxia confirmed coordinated niche interactions between aging-associated immune cells and intestinal epithelial cells, suggesting accelerated systemic aging trajectories from chronic hypoxic stress.",
-    "url": "https://www.fightaging.org/archives/2026/04/high-altitude-populations-exhibit-features-of-accelerated-immune-aging/"
-  },
-  {
-    "title": "Infinite Epigenetics Acquires Tally Health to Create World's Largest Epigenetic Data Platform",
-    "source": "Longevity.Technology / PR Newswire",
-    "date": "2026-04-29",
-    "category": "Industry",
-    "importance": "high",
-    "description": "TruDiagnostic parent Infinite Epigenetics acquired Sinclair co-founded Tally Health in the largest epigenetic age testing consolidation to date, combining clinical-grade DNA methylation diagnostics with a consumer platform and the world's largest private adult methylation dataset. Tally will remain a standalone consumer brand under CEO Melanie Goldey.",
-    "url": "https://longevity.technology/news/infinite-epigenetics-acquires-tally-health/"
-  },
-  {
-    "title": "Longevity Technology Week 18 Roundup: Epigenetic Consolidation, Genflow SIRT6 Deal, SuperAge Games, Endlyz Seed 2",
+    "title": "Endlyz Raises Seed 2 Financing, Leans Into Root-Cause Neuroscience",
     "source": "Longevity.Technology",
-    "date": "2026-04-30",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Week 18 coverage highlighted: Infinite Epigenetics/Tally Health acquisition; Genflow Biosciences partnering with Acuitas Therapeutics on SIRT6 mRNA LNP delivery (fully-funded, non-dilutive); Endlyz Therapeutics closing Seed 2 for lysosome-targeting Parkinson's therapies; SuperAge Games debut in NYC Nov 7; and Smith+Nephew AGILI-C knee implant showing 5-year superiority over standard care.",
-    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-18-2026/"
-  },
-  {
-    "title": "Annovis Bio Publishes Buntanetap Phase 2/3 Alzheimer's Results in Nature NPJ Dementia",
-    "source": "BioSpace / Annovis Bio",
-    "date": "2026-04-28",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Annovis published 351-patient Phase 2/3 data for oral buntanetap showing dose-dependent cognitive improvement (ADAS-Cog11) in pTau217-positive early Alzheimer's patients and reductions in neurotoxic proteins and neuroinflammation biomarkers. The pivotal Phase 3 trial is now ~80% enrolled with 6-month symptomatic data expected in H2 2026.",
-    "url": "https://www.biospace.com/press-releases/annovis-publishes-phase-2-3-alzheimers-trial-results-in-nature-portfolio"
-  },
-  {
-    "title": "SuperAge Launches World's First Longevity Fitness Competition — SuperAge Games, NYC November 7",
-    "source": "PR Newswire / Longevity.Technology",
-    "date": "2026-04-28",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Super Age announced the inaugural SuperAge Games in New York City on November 7, 2026, an eight-trial circuit competition designed by longevity researchers to test cardiovascular fitness, endurance, strength, neurological function, balance, and social capacity through biomarker assessment. The event reframes athletic competition around healthspan durability rather than peak performance, targeting competitors aged 50-70.",
-    "url": "https://www.prnewswire.com/news-releases/super-age-launches-the-worlds-first-longevity-fitness-event-train-for-your-life-302751991.html"
-  },
-  {
-    "title": "Endlyz Therapeutics Closes Seed 2 Round to Advance Lysosome-Targeting Parkinson's Therapies",
-    "source": "Longevity.Technology / Parkinson's UK",
     "date": "2026-04-28",
     "category": "Funding",
-    "importance": "normal",
-    "description": "London-based Endlyz Therapeutics, backed by AbbVie, Dementia Discovery Fund, Oxford Science Enterprises, and Parkinson's UK, closed its Seed 2 financing to develop two lysosome-targeting drug candidates aimed at clearing cellular debris contributing to Parkinson's pathology. An additional $2.2 million from the Michael J. Fox Foundation supports biomarker development for early target engagement measurement.",
+    "importance": "high",
+    "description": "Endlyz Therapeutics secured Seed 2 financing from AbbVie Ventures, Dementia Discovery Fund, Oxford Science Enterprises, and Parkinson's UK to advance ATP13A2/ATP10B small-molecule modulators restoring lysosomal function as a root-cause intervention in Parkinson's and neurodegeneration. New collaborations with SandboxAQ for AI-driven drug discovery and University of Oxford's Professor Richard Wade-Martins further strengthen the pipeline.",
     "url": "https://longevity.technology/news/endlyz-raises-seed-2-financing-leans-into-root-cause-neuroscience/"
   },
   {
-    "title": "RAPA-EX-01 Trial: Rapamycin May Attenuate Functional Exercise Gains in Older Adults",
-    "source": "Journal of Cachexia, Sarcopenia and Muscle / NeuroAge Therapeutics",
-    "date": "2026-04-28",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "The RAPA-EX-01 randomized trial (n=40, age 65-85) found once-weekly rapamycin 6 mg did not enhance and in sensitivity analyses modestly attenuated functional gains from a 13-week home exercise program versus placebo, with placebo trending better on chair-stand, 6-minute walk, grip strength, and quality-of-life measures. Four epigenetic aging clocks showed no significant differences, though PCGrimAge trended slightly younger in the rapamycin arm.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13082878/"
-  },
-  {
-    "title": "Genflow Biosciences Partners with Acuitas Therapeutics for SIRT6 mRNA LNP Delivery — Fully-Funded Collaboration",
-    "source": "Longevity.Technology / BioSpace",
-    "date": "2026-04-28",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Genflow Biosciences entered a fully-funded, non-dilutive collaboration with Acuitas Therapeutics (whose LNP technology underpinned COVID-19 mRNA vaccines) to package Genflow's centenarian-variant SIRT6 mRNA into lipid nanoparticles for preclinical evaluation. The deal provides Genflow access to a clinically validated delivery platform for a gene therapy targeting DNA repair and metabolic aging without diluting shareholders.",
-    "url": "https://longevity.technology/news/genflow-teams-with-acuitas-on-gene-delivery-in-fully-funded-deal/"
-  },
-  {
-    "title": "FDA Grants Faster Pathway for 4P004 Knee Osteoarthritis Drug — Inflammation MOTION Phase 2a Trial Underway",
+    "title": "Super Age Debuts World's First Longevity Fitness Games",
     "source": "Longevity.Technology",
-    "date": "2026-04-27",
-    "category": "Clinical Trials",
+    "date": "2026-04-29",
+    "category": "Industry",
     "importance": "normal",
-    "description": "The FDA granted an accelerated development pathway to 4P004, a multi-mechanism anti-inflammatory drug candidate targeting inflammation, pain, tissue breakdown, and joint repair simultaneously in knee osteoarthritis. The INFLAM MOTION Phase 2a trial is running across Europe and North America with topline results expected in early 2027.",
-    "url": "https://longevity.technology/news/fda-greenlights-faster-path-for-knee-osteoarthritis-drug/"
+    "description": "Super Age announced the SuperAge Games, a healthspan-focused fitness competition scheduled for November 7, 2026 in New York City, testing cardiovascular capacity, grip strength, balance, agility, working memory, and biomarkers. The initiative reframes athletic competition around aging durability rather than peak performance, with a multi-month training journey and immersive programming.",
+    "url": "https://longevity.technology/news/super-age-debuts-worlds-first-longevity-fitness-games/"
   },
   {
-    "title": "Aspen Neuroscience Sasineprocel Phase 1/2a ASPIRO Trial: 12-Month Data Show Clinically Meaningful Parkinson's Benefit",
-    "source": "SynBioBeta / AD/PD 2026",
-    "date": "2026-04-27",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Aspen Neuroscience presented 12-month Phase 1/2a ASPIRO trial data for sasineprocel (ANPD001) at the AD/PD 2026 conference showing an average of ~2 additional hours of Good ON time per day, MDS-UPDRS Part III OFF improvements of 13.5-15.5 points, and PDQ-39 quality-of-life gains of 28.5-51.6% across dose cohorts with no serious adverse events. FDOPA PET imaging confirmed cell engraftment and survival; a Phase 3 trial is planned for late 2026.",
-    "url": "https://www.synbiobeta.com/read/aspens-parkinsons-therapy-shows-compelling-clinical-potential"
-  },
-  {
-    "title": "BioAge Labs BGE-102 Phase 1 Results: Best-in-Class NLRP3 Inhibitor Achieves ~86% hsCRP Reduction in Aging-Inflammation Target",
-    "source": "BioSpace / BioAge Labs",
-    "date": "2026-04-21",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "BioAge reported full Phase 1 data for BGE-102, an orally available brain-penetrant NLRP3 inhibitor, showing 85-86% median hsCRP reductions at both 60 mg and 120 mg once-daily doses in participants with obesity and elevated inflammation, with 87-93% achieving normalized hsCRP below the 2 mg/L cardiovascular risk threshold. Phase 2 cardiovascular risk and diabetic macular edema trials are planned for mid-2026, with BioAge positioning BGE-102 as a therapeutic targeting inflammaging — a core hallmark of biological aging.",
-    "url": "https://longevity.technology/news/inflammations-statin-moment-edges-closer/"
-  },
-  {
-    "title": "Bemdaneprocel (BlueRock) Phase 1 Three-Year Data at AAN 2026: Cell Therapy Benefits Sustained in Parkinson's",
-    "source": "Parkinson's News Today / AAN 2026",
-    "date": "2026-04-22",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "BlueRock Therapeutics presented three-year follow-up from the Phase 1 exPDite study showing bemdaneprocel continued to control Parkinson's motor symptoms at the higher dose, with transplanted dopaminergic neuron precursors confirmed engrafted on PET imaging and quality of life remaining stable. The ongoing Phase 3 exPDite-2 trial is enrolling ~102 participants across the U.S., Canada, and Australia.",
-    "url": "https://parkinsonsnewstoday.com/news/aan-2026-parkinsons-cell-therapy-trial-shows-sustained-benefits/"
-  },
-  {
-    "title": "Mesoblast Acquires CAR Platform from Mayo Clinic Spinout to Engineer Precision-Enhanced Cell Therapies",
-    "source": "Longevity.Technology / GlobeNewswire",
-    "date": "2026-04-22",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Mesoblast acquired chimeric antigen receptor (CAR) platform technology from a Mayo Clinic spinout to enhance targeting precision of its mesenchymal stem cell (MSC) therapies for inflammatory and autoimmune diseases. The deal positions Mesoblast's rexlemestrocel platform to move from systemic inflammation suppression toward tissue-specific biological correction, extending potential applications into aging-related chronic inflammation.",
-    "url": "https://longevity.technology/news/mesoblast-invests-in-smarter-cell-therapies-with-new-car-tech-deal/"
-  },
-  {
-    "title": "Osteoboost Raises $8M to Scale FDA-Cleared Prescription Wearable for Bone Density in Women",
-    "source": "Longevity.Technology / Osteoboost",
-    "date": "2026-04-20",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "Osteoboost Health closed an $8 million round led by Ambit Health Ventures to scale manufacturing and expand clinical research for its FDA-cleared vibration therapy wearable, which slowed bone density loss by 85% in the spine and 55% in the hips in a 12-month clinical trial. With over 2,500 prescribing physicians and prescriptions already active at 30+ academic medical centers, the device targets the osteopenia-to-osteoporosis progression gap.",
-    "url": "https://longevity.technology/news/osteoboost-raises-8m-to-scale-bone-wearable/"
-  },
-  {
-    "title": "Global Aging Research and Drug Discovery Meeting 2025 Report: Field Reaches 'Actionable Interventions' Turning Point",
-    "source": "EurekAlert / Aging-US",
-    "date": "2026-04-21",
+    "title": "Lifespan.io Rejuvenation Roundup April 2026",
+    "source": "Lifespan Research Institute",
+    "date": "2026-05-01",
     "category": "Research",
-    "importance": "normal",
-    "description": "The 12th ARDD meeting report published in Aging-US highlighted key themes: epigenome as central aging regulator; partial cellular reprogramming as a path to organ-wide rejuvenation; new generations of multi-modal biological aging clocks; AI-driven drug discovery; and a consensus 'disease-first' regulatory strategy for validating aging interventions. The report concluded aging science has shifted from description to actionable therapeutic intervention.",
-    "url": "https://www.eurekalert.org/news-releases/1125036"
+    "importance": "high",
+    "description": "The April 2026 monthly roundup covered tomatidine as a cognitive-improving senotherapeutic, the rapamycin-exercise blunting interaction in older humans, partial reprogramming reducing myocardial infarction damage, NAD+ combination therapy restoring muscle and bone in aged mice, the EU iHelp one-year epigenetic feedback results, and Insilico Medicine's $2.75B Eli Lilly collaboration for AI-driven drug discovery.",
+    "url": "https://lifespan.io/rejuvenation-roundup-april-2026/"
   },
   {
-    "title": "Rapamycin Attenuates Physical Performance Improvements With Exercise in Older Adults — Journal of Cachexia Study",
-    "source": "NAD.com / Journal of Cachexia, Sarcopenia and Muscle",
-    "date": "2026-04-22",
-    "category": "Research",
+    "title": "Perplexity Health Launches for US Users, Integrating EHR and Wearable Data for Personalized Health AI",
+    "source": "Longevity.Technology / Perplexity AI",
+    "date": "2026-03-24",
+    "category": "Industry",
     "importance": "normal",
-    "description": "A study published in the Journal of Cachexia, Sarcopenia and Muscle found rapamycin reduced 30-second chair-stand performance, grip strength by ~2.6 lbs, and worsened self-reported quality-of-life scores compared to placebo in older adults combining the drug with exercise, raising questions about the popular off-label longevity practice of combining mTOR inhibition with resistance training.",
-    "url": "https://www.nad.com/news/rapamycin-and-exercise-new-study-finds-potential-performance-decline"
+    "description": "Perplexity Health launched for US Pro and Max subscribers, connecting electronic health records from 1.7 million providers, wearable data, and lab results through b.well Connected Health's network, with responses grounded in clinical guidelines and peer-reviewed journals. From a longevity perspective, the platform enables individuals to track aging biomarkers, identify risks earlier, and make more informed decisions about healthspan interventions.",
+    "url": "https://longevity.technology/news/perplexity-enters-the-consumer-health-ai-arena/"
   },
   {
-    "title": "Senolytics 2026: Over 30 Active Trials — AFFIRM-LITE Fisetin Phase 2 Results Expected This Year",
-    "source": "Healthcare Discovery AI",
-    "date": "2026-04-23",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "A comprehensive review documented more than 30 active clinical trials for senolytic and senomorphic interventions as of early 2026, spanning indications from diabetic macular edema and pulmonary fibrosis to Alzheimer's and general frailty. The Mayo Clinic's AFFIRM-LITE Phase 2 fisetin trial in adults over 70 with frailty is expected to report results in 2026, providing the first rigorous placebo-controlled senolytic readout in a general aging population.",
-    "url": "https://healthcarediscovery.ai/senolytics-2026-zombie-cells-clinical-trials-healthy-lifespan/"
-  },
-  {
-    "title": "Epicutis TCP Serum Shows 77% Skin Appearance Improvement in 8-Week Double-Blind Trial — Cellular Longevity Application",
-    "source": "PR Newswire / Longevity.Technology",
+    "title": "APOE4 Alzheimer's Risk Gene Reveals Hidden Bone Quality Decline Specifically in Women",
+    "source": "Longevity.Technology / Buck Institute for Research on Aging",
     "date": "2026-04-14",
     "category": "Research",
     "importance": "normal",
-    "description": "Epicutis published an 8-week double-blind placebo-controlled clinical study (n=48) showing 77% improvement in overall skin appearance with its TCP-powered Hydrobiome Serum versus 56% for a comparator and no measurable change for vehicle control, with zero reported irritation. TCP is a patented isoprenyl cysteine compound targeting membrane lipid signaling relevant to cellular aging and senescence biology.",
-    "url": "https://longevity.technology/news/epicutis-clinical-study-shows-77-improvement-in-skin-appearance/"
+    "description": "Buck Institute researchers found that female mice carrying APOE4 show markedly fragile bones despite appearing structurally normal on imaging, due to APOE4 suppression of perilacunar/canalicular remodeling. The study, published in Advanced Science, suggests osteocyte dysfunction could serve as an early biological sentinel for neurodegenerative risk in women, proposing bone quality as a novel aging biomarker preceding Alzheimer's symptoms.",
+    "url": "https://longevity.technology/news/alzheimers-risk-gene-reveals-hidden-bone-decline-in-women/"
   },
   {
-    "title": "Rockefeller University Organism-Wide Aging Atlas: 7 Million Cells Across 21 Organs Reveal Synchronized Early-Onset Decline",
-    "source": "ScienceDaily / Science",
-    "date": "2026-02-28",
+    "title": "Insilico Medicine and Eli Lilly Announce $2.75B AI Drug Discovery Collaboration",
+    "source": "Insilico Medicine / PR Newswire",
+    "date": "2026-03-29",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Insilico Medicine announced a global R&D collaboration with Eli Lilly valued at up to $2.75 billion, including a $115 million upfront payment, granting Lilly exclusive worldwide licenses to preclinical oral therapeutics discovered by Insilico's Pharma.AI platform. The deal marks an escalation from software licensing to actual asset transfer, validating AI-driven longevity drug discovery at major pharma scale.",
+    "url": "https://www.prnewswire.com/news-releases/insilico-medicine-announces-global-rd-collaboration-with-lilly-302727884.html"
+  },
+  {
+    "title": "Smith+Nephew AGILI-C Knee Implant Outperforms Standard Care at 5 Years in Osteoarthritis",
+    "source": "Longevity.Technology",
+    "date": "2026-04-29",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Five-year data from Smith+Nephew's FDA-approved AGILI-C scaffold knee implant showed superior pain reduction and mobility outcomes compared to standard care in patients with mild-to-moderate osteoarthritis, addressing a major treatment gap for patients not qualifying for total knee replacement. CPT reimbursement is expected in 2027, potentially broadening access significantly.",
+    "url": "https://longevity.technology/news/knee-implant-outperforms-standard-care-at-5-years/"
+  },
+  {
+    "title": "EU iHelp Study: Epigenetic Age Feedback Drives Sustained Lifestyle Change at One Year",
+    "source": "Epigenomes / PMC",
+    "date": "2026-04-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "One-year results from the EU iHelp project, involving 178 adults receiving personalized reports combining epigenetic clock estimates, polygenic cancer risk scores, and Fitbit data, showed 72.5% reported feeling healthier, 60.4% increased physical activity, and 47.3% improved diet. The study recommends Zhang2019-BLUP as a stable, interpretable clock for public-facing engagement interventions.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13108038/"
+  },
+  {
+    "title": "January AI Enters Medicare App Library, Reaching 69 Million+ Patients",
+    "source": "Longevity.Technology",
+    "date": "2026-04-20",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "January AI, a precision health app providing personalized glucose predictions and metabolic insights, became one of the first third-party applications in the newly launched CMS Medicare App Library, extending AI-driven metabolic health monitoring to over 69 million Medicare beneficiaries. The integration represents a significant step in scaling preventive and longevity-relevant health tools into the senior population at national scale.",
+    "url": "https://longevity.technology/news/january-ai-enters-medicare-app-library-reaches-69m-patients/"
+  },
+  {
+    "title": "Tomatidine Identified as Senotherapeutic Improving Cognition and Reducing Senescence in Aged Mice",
+    "source": "Aging Cell",
+    "date": "2026-04-04",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A study published in Aging Cell showed that tomatidine, a steroidal alkaloid from green tomatoes, acts as a senotherapeutic compound that reduces cellular senescence, enhances tight junction protein expression preserving blood-brain barrier integrity, and improves cognitive function in aged mice. Tomatidine also diminished brain endothelial cell senescence, adding it to a growing class of natural senolytic/senomorphic candidates.",
+    "url": "https://x.com/AgingBiology/status/2040582875158855727"
+  },
+  {
+    "title": "Young Microbiome Transplantation Prevents Liver Cancer and Reverses Multiple Aging Hallmarks in Mice",
+    "source": "EurekAlert / National Institute on Aging",
+    "date": "2026-04-23",
     "category": "Research",
     "importance": "high",
-    "description": "Published in Science (DOI: 10.1126/science.adw6273), Rockefeller University researchers mapped nearly 7 million individual cells across 21 mammalian organs at three ages, finding aging begins before five months and unfolds in a coordinated body-wide pattern. About 25% of cell types change in abundance over time, ~40% of changes are sex-specific, and 1,000 cross-tissue genomic hotspots linked to immune function and inflammation were identified as potential multi-organ anti-aging therapy targets. Full atlas available at epiage.net.",
-    "url": "https://www.sciencedaily.com/releases/2026/02/260228082717.htm"
+    "description": "Researchers found that fecal microbiota transplantation restoring a youthful gut microbiome in aged mice prevented liver cancer formation in all treated animals (0/8 versus 2/8 in controls), while reversing inflammation, fibrosis, mitochondrial decline, telomere attrition, and DNA damage at both molecular and functional levels. The study identifies gut microbiome rejuvenation as a multi-hallmark aging intervention with broad translational potential.",
+    "url": "https://www.eurekalert.org/news-releases/1124997"
   },
   {
-    "title": "Immature Hippocampal Neurons Linked to Alzheimer's Cognitive Resilience — 30% of AD Brains Never Develop Dementia",
-    "source": "Neuroscience News / Nature (preprint/publication)",
-    "date": "2026-04-24",
+    "title": "Ocugen OCU410 Gene Therapy Shows 46% Lesion Reduction in Geographic Atrophy Phase 2 Trial",
+    "source": "Clinical Trials Arena",
+    "date": "2026-04-21",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Ocugen's OCU410 gene-agnostic modifier gene therapy for dry age-related macular degeneration showed a 46% reduction in macular lesion growth at 12 months across medium and high dose groups in the Phase 2 ArMaDa trial, with no serious treatment-related adverse events. Ocugen is targeting Phase 3 initiation in Q3 2026, positioning OCU410 as a potential treatment for geographic atrophy regardless of specific genetic mutation.",
+    "url": "https://www.clinicaltrialsarena.com/news/ocugen-ocu410-gene-therapy-ga-phase-ii-results/"
+  },
+  {
+    "title": "SIRIO Europe Launches Aeion Habit-First Longevity Supplement Platform at Vitafoods Europe 2026",
+    "source": "Longevity.Technology",
+    "date": "2026-04-16",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Contract development and manufacturing organization SIRIO Europe launched Aeion, a longevity supplement platform with eight ready-to-market concepts targeting energy, mobility, heart health, metabolism, and inflammaging in novel delivery formats including Snowmelt powders, Fizzybit tablets, and LifeChews jelly tablets. The platform debuts at Vitafoods Europe 2026 (May 5-7, Barcelona) and is designed to translate aging science into repeatable daily consumer rituals.",
+    "url": "https://longevity.technology/news/sirio-europe-rolls-out-new-habit-first-longevity-platform/"
+  },
+  {
+    "title": "Longevity Biotech Investment Projected to Reach $8-9 Billion in Full-Year 2026",
+    "source": "Longevity.Technology",
+    "date": "2026-03-31",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "Q1 2026 longevity biotech financing reached $3.74 billion across 49 events, a 56% increase over Q1 2025's $2.40 billion, driven by epigenetic reprogramming and cell therapy platforms. Full-year projections estimate $8-9 billion total, representing 55-60% growth over 2025's $5.72 billion base, signaling a structural shift in longevity capital flows toward later-stage and scaled platforms.",
+    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/"
+  },
+  {
+    "title": "Function Health Acquires Getlabs to Scale At-Home Longevity Testing",
+    "source": "Longevity.Technology / PR Newswire",
+    "date": "2026-04-13",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Function Health acquired Getlabs, a mobile healthcare platform dispatching licensed phlebotomists for at-home lab testing, to extend its comprehensive biomarker testing to patients who cannot attend clinic visits. The acquisition positions Function to make health data collection accessible in everyday settings, scaling longevity diagnostics including metabolic, hormonal, and aging biomarker panels to a broader population.",
+    "url": "https://longevity.technology/news/function-acquires-getlabs-to-scale-at-home-testing/"
+  },
+  {
+    "title": "Viking Therapeutics Completes Enrollment in Phase 3 VANQUISH-2 Trial of Dual GLP-1/GIP Agonist VK2735",
+    "source": "Viking Therapeutics / PR Newswire",
+    "date": "2026-03-26",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Viking Therapeutics completed enrollment of approximately 1,000 adults with type 2 diabetes and obesity in the Phase 3 VANQUISH-2 trial of subcutaneous VK2735, a dual GLP-1/GIP receptor agonist, with a primary endpoint of percent body weight reduction at 78 weeks. Phase 2 VENTURE showed up to 14.7% body weight reduction in 13 weeks, and researchers increasingly frame GLP-1 class drugs as the first metabolic longevity therapeutics.",
+    "url": "https://www.prnewswire.com/news-releases/viking-therapeutics-announces-completion-of-enrollment-in-phase-3-vanquish-2-trial-of-vk2735-302725563.html"
+  },
+  {
+    "title": "piRNA Blood Test Predicts Two-Year Survival with 86% Accuracy in Older Adults",
+    "source": "Duke Health / Aging Cell",
+    "date": "2026-02-25",
     "category": "Research",
     "importance": "normal",
-    "description": "A Netherlands Brain Bank study confirmed that immature neuronal populations persist in the adult human hippocampus regardless of Alzheimer's pathology, but that in cognitively resilient individuals these cells activate survival programs, show lower inflammation and apoptosis signals, and maintain transcriptional 'juvenile' functions. The findings support adult neurogenesis as a contributor to cognitive reserve and identify these cells as potential regenerative therapy targets for Alzheimer's.",
-    "url": "https://neurosciencenews.com/cognitive-resilience-immature-neurons-alzheimers-30601/"
+    "description": "Duke University researchers identified six PIWI-interacting RNAs (piRNAs) in blood that predict two-year survival in adults aged 71 and older with up to 86% accuracy, outperforming age, cholesterol, physical activity, and 180+ other clinical measures. A virtual clinical trial simulation showed that therapeutic manipulation of piRNA levels could meaningfully improve survival across two-, five-, and ten-year timeframes, opening a new avenue for longevity biomarker development.",
+    "url": "https://ortho.duke.edu/news/new-duke-research-finds-blood-test-may-predict-who-lives-longer"
   },
   {
-    "title": "Genflow SIRT6 Centenarian Gene Therapy Collaboration Officially Announced — LNP Delivery Fully Funded by Acuitas",
-    "source": "BioSpace / Genflow Biosciences",
-    "date": "2026-04-20",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Genflow Biosciences announced a strategic collaboration with Acuitas Therapeutics to formulate Genflow's SIRT6 centenarian-variant mRNA using Acuitas's clinically validated lipid nanoparticle system, in a fully-funded arrangement with no equity dilution. Genflow's GF-1002 program includes an ongoing proof-of-concept dog aging trial started March 2025 and a planned MASH clinical study.",
-    "url": "https://www.biospace.com/press-releases/genflow-biosciences-plc-announces-strategic-technology-collaboration"
-  },
-  {
-    "title": "UT Health San Antonio Launches Three-Drug Aging Trial: Rapamycin, Semaglutide, and Dapagliflozin in 700+ Adults",
-    "source": "San Antonio Report / EurekAlert",
-    "date": "2026-03-25",
+    "title": "Nature Briefing: Partial Cellular Reprogramming Enters Human Clinical Trials in 2026",
+    "source": "Nature",
+    "date": "2026-04-09",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "UT Health San Antonio is launching one of the largest aging intervention trials to date, testing three approved drugs — rapamycin (mTOR), semaglutide (GLP-1), and dapagliflozin (SGLT2) — in approximately 700+ older South Texans in a multi-phase NIA-funded study designed to establish evidence-based dosing and multi-pathway biological effects on aging. The multi-drug approach reflects a shift in longevity science from single-molecule to combination pathway intervention.",
-    "url": "https://sanantonioreport.org/study-drugs-slow-aging-ut-health-san-antonio/"
+    "description": "Nature reported that partial reprogramming therapy using targeted protein expression to reverse cellular aging is entering human clinical trials in 2026 for the first time, with Life Biosciences testing OSK-based ER-100 in optic neuropathy patients. Researchers cite potential to eventually rejuvenate entire organs or the whole body, while acknowledging significant risks including potential cellular identity loss or oncogenic transformation.",
+    "url": "https://www.nature.com/articles/d41586-026-01207-2"
+  },
+  {
+    "title": "NADMED Awards $30,000 Grant to Cleveland Clinic Organ Preservation and NAD+ Metabolism Research",
+    "source": "PharmiWeb / NADMED",
+    "date": "2026-04-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Finnish biotech NADMED selected Cleveland Clinic's Schlegel Lab as the first recipient of its $30,000 inaugural award, supporting research on metabolic injury during organ preservation and NAD+ redox dynamics in transplanted organs. The work has implications for improving organ viability in transplantation and understanding mitochondrial and metabolic aging at the cellular level.",
+    "url": "https://www.pharmiweb.com/press-release/2026-04-01/world-leading-nad-experts-select-cleveland-clinic-research-on-organ-preservation-as-inaugural-30-000-nadmed-award-winner"
+  },
+  {
+    "title": "Loyal LOY-002 Anti-Aging Dog Drug Nears FDA Conditional Approval for 2026 Launch",
+    "source": "Newsweek / Loyal Animal Health",
+    "date": "2026-04-09",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Loyal's LOY-002, a daily oral prescription pill targeting IGF-1 to slow biological aging in dogs aged 10 and older weighing at least 14 pounds, has completed two of three FDA conditional approval requirements (safety and efficacy) and is targeting market launch in 2026. If approved, LOY-002 would become the first FDA-authorized drug to slow aging in any species, establishing a regulatory template for longevity therapeutics.",
+    "url": "https://www.newsweek.com/your-dogs-life-could-be-extended-by-new-daily-pill-what-to-know-11807106"
+  },
+  {
+    "title": "Peter Attia Research Worth Sharing April 2026: Paternal Exercise Epigenetics and Autonomic Aging Theory",
+    "source": "Peter Attia MD",
+    "date": "2026-04-11",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Attia's April 2026 research digest highlighted an animal study showing paternal endurance exercise confers fitness advantages to male offspring via sperm microRNAs and PGC-1 alpha, and a position paper proposing sympathetic-parasympathetic nervous system dysregulation as a unifying framework for aging hallmarks including mitochondrial dysfunction and epigenetic alterations. The autonomic aging theory offers a new multi-system lens for intervention design.",
+    "url": "https://peterattiamd.com/research-worth-sharing-april-2026/"
+  },
+  {
+    "title": "Healthy Aging 2026 Conference at Stanford University on May 4",
+    "source": "LinkedIn / The Longevity Project",
+    "date": "2026-04-28",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "The Longevity Project's annual Healthy Aging 2026 conference is scheduled for May 4, 2026 at Stanford University, bringing together leading researchers and practitioners in nutrition, fitness, sleep science, and mindfulness to present the latest evidence-based longevity research. The conference is available for in-person and online attendance, reflecting growing mainstream institutional interest in aging science.",
+    "url": "https://www.linkedin.com/posts/dr-kerry-burnight-5b958434_healthy-aging-2026-the-longevity-project-activity-7454980262565912576-efn-"
+  },
+  {
+    "title": "Extracellular Matrix Aging Clock Using Circulating Matrisome Proteins Predicts Disease and Aging",
+    "source": "Lifespan Research Institute / Aging Cell",
+    "date": "2026-04-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A new biological clock based on circulating extracellular matrix (ECM) proteins was validated as a sensitive biomarker of biological aging and disease risk, outperforming standard clinical measures in predicting aging trajectories. The findings suggest that targeting ECM remodeling may offer new therapeutic strategies for promoting healthy aging, given the ECM's role in tissue repair, inflammation, and cellular signaling.",
+    "url": "https://lifespan.io/rejuvenation-roundup-april-2026/"
+  },
+  {
+    "title": "Longevity Market to Hit $67 Billion by 2035 as Employer and Healthcare Business Models Evolve",
+    "source": "Longevity.Technology",
+    "date": "2026-04-28",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Analysis from Longevity.Technology projects the global longevity market will grow to $67 billion by 2035, driven by employer adoption of healthspan screening programs and emerging business models that convert longevity science into workplace productivity tools. Panel discussions at Longevity Show 2026 previews highlighted absenteeism and productivity data as the key metrics converting skeptical corporate buyers.",
+    "url": "https://longevity.technology/news/inside-the-race-to-build-longevity-ready-business-models/"
   }
 ]
