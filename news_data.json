@@ -1,53 +1,98 @@
 [
   {
-    "title": "Vitalist Bay 2026 Opens This Week — World's Largest Longevity Festival",
+    "title": "Human Longevity Launches $599 Clinical-Grade Whole Genome Test",
     "source": "AI Analysis",
-    "date": "2026-05-10",
+    "date": "2026-05-11",
     "category": "Industry",
     "importance": "high",
-    "description": "Vitalist Bay 2026 begins Thursday May 14 at Berkeley's Lighthaven campus, drawing 60+ speakers across six themes including AI x Bio, Replacement, and Investment. The four-day pop-up festival is widely viewed as the field's biggest catalyst week of the year, with several preclinical and clinical readouts queued for the venue.",
+    "description": "Human Longevity, Inc. unveiled a $599 clinical-grade whole genome sequencing report on the anniversary of founder J. Craig Venter's legacy, paired with AI-driven disease prevention insights. Price compression of this magnitude pushes clinical genomics into mainstream consumer longevity protocols and validates Venter's bet that genome-first prevention would scale.",
+    "url": "https://www.prnewswire.com/news-releases/honoring-dr-j-craig-venters-legacy-human-longevity-launches-clinical-grade-599-whole-genome-sequencing-report-with-ai-enhanced-insights-for-proactive-disease-prevention-302768424.html",
+    "top_development": true
+  },
+  {
+    "title": "Vitalist Bay 2026 Pre-Festival Buildout Confirms 150+ Sessions",
+    "source": "AI Analysis",
+    "date": "2026-05-11",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Final program for Vitalist Bay opens Thursday May 14 at Berkeley's Lighthaven, now confirmed at 100+ speakers and 150+ workshops across four days. Daily startup pitch sessions for early-stage longevity companies and 18 onsite health tests turn the venue into a working clinical-experience venue, not just a conference.",
     "url": "https://vitalistbay.com",
     "top_development": true
   },
   {
-    "title": "BGE-102 Phase 1 Data Reframes NLRP3 Inflammation as a Longevity Target",
+    "title": "Cash-Pay Longevity Cohort Invisible to Major Health Data Platforms",
     "source": "AI Analysis",
-    "date": "2026-05-10",
-    "category": "Clinical Trials",
+    "date": "2026-05-11",
+    "category": "Industry",
     "importance": "high",
-    "description": "BioAge's R&D Day Phase 1 readout for BGE-102 showed profound hsCRP reductions and 24-hour target coverage at 60 mg once daily. Phase 2 cardiovascular proof-of-concept data is now expected in H2 2026, positioning NLRP3 inhibition as the most advanced inflammaging therapeutic in clinical development.",
-    "url": "https://www.marketbeat.com/instant-alerts/bioage-labs-rd-day-bge-102-phase-i-shows-big-hs-crp-drops-sets-up-cardio-dme-poc-trials-2026-05-08/",
+    "description": "Inexion analysis shows that despite $554M in Q4 2025 longevity biotech funding (a 900% jump over Q3), no major real-world-evidence platform — IQVIA, Komodo, Symphony — captures cash-pay longevity practices. The structural data gap is now blocking pharma HEOR modeling for senolytic, GLP-1, and biomarker-driven longevity indications.",
+    "url": "https://www.linkedin.com/posts/inexion_longevitymedicine-realworldevidence-heor-activity-7456009752804904960-KpV_",
     "top_development": true
   },
   {
-    "title": "GPX4 Senolytic Strategy Validated in Both Mice and First Human Trial",
+    "title": "AFAR Aging-US Meeting Report Formalizes Geroscience Pivot to Reversal",
     "source": "AI Analysis",
-    "date": "2026-05-10",
+    "date": "2026-05-11",
     "category": "Research",
     "importance": "high",
-    "description": "Imperial College's Nature Cell Biology paper on chloroacetamide GPX4 inhibitors converges with Rubedo's Phase 1 topical RLS-1496 data showing senescent-cell and epidermal thickness reductions. GPX4 is rapidly emerging as the most clinically tractable senolytic mechanism, with both academic and commercial pathways now active.",
-    "url": "https://www.imperial.ac.uk/news/articles/research-groups/tate-group/2026/new-senolytic-strategy-targets-a-key-vulnerability-in-ageing-cells/",
+    "description": "Aging-US Volume 18 published the 12th ARDD meeting report, with key presentations explicitly testing whether biological age can be reversed via partial cellular reprogramming. The synthesis points toward organ-wide or whole-body rejuvenation as a credible near-term horizon, marking field-level consensus that intervention has moved beyond observation.",
+    "url": "https://www.eurekalert.org/news-releases/1125036",
     "top_development": true
   },
   {
-    "title": "Creatine + Power Training Synergy Confirmed in Older Adults",
+    "title": "Longevity News Roundup Week 19 Highlights Multi-Target Alzheimer's, Glycation",
     "source": "AI Analysis",
-    "date": "2026-05-10",
-    "category": "Protocols",
+    "date": "2026-05-11",
+    "category": "Research",
     "importance": "high",
-    "description": "A new Experimental Gerontology trial in 103 adults aged ~68 found creatine paired with high-load velocity-intentional resistance training amplified BDNF, antioxidant defense, and inflammation reductions over training alone. The result strengthens the practical case for adding 3-5g creatine daily to power-based strength protocols for healthy aging.",
-    "url": "https://lifespan.io/creatine-shows-synergy-with-exercise-in-older-adults/",
+    "description": "Longevity.Technology's weekly roundup spotlights Estée Lauder's mechanistic data linking sugar-induced glycation to skin cell senescence and systemic inflammation, plus Scribe Therapeutics' STX-1150 CRISPR program for Parkinson's. The convergence reinforces that aging-relevant interventions are spreading across consumer, cosmetic, and CNS verticals simultaneously.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/",
     "top_development": true
   },
   {
-    "title": "Q1 2026 Longevity Capital Tracks Toward $8-9B Breakout Year",
-    "source": "AI Analysis",
-    "date": "2026-05-10",
-    "category": "Funding",
+    "title": "Human Longevity Launches $599 Clinical-Grade Whole Genome Sequencing",
+    "source": "PR Newswire",
+    "date": "2026-05-11",
+    "category": "Industry",
     "importance": "high",
-    "description": "Longevity.Technology's DLT dataset shows $3.74B raised across 49 deals in Q1 2026 — a 56% jump versus Q1 2025 — putting the full year on pace for $8-9B. Insilico-Lilly's $2.75B AI drug discovery deal and WHOOP's $575M raise are anchoring a maturing pipeline where median deal size has climbed to $21.8M.",
-    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/",
-    "top_development": true
+    "description": "Human Longevity, Inc. announced a $599 clinical-grade whole genome sequencing report with AI-enhanced insights for proactive disease prevention, honoring founder J. Craig Venter's legacy.",
+    "url": "https://www.prnewswire.com/news-releases/honoring-dr-j-craig-venters-legacy-human-longevity-launches-clinical-grade-599-whole-genome-sequencing-report-with-ai-enhanced-insights-for-proactive-disease-prevention-302768424.html"
+  },
+  {
+    "title": "Longevity News Roundup — Week 19, 2026",
+    "source": "Longevity.Technology",
+    "date": "2026-05-07",
+    "category": "Research",
+    "importance": "high",
+    "description": "Phil Newman and Nina Patrick examine multi-target Alzheimer's therapy, sugar glycation in aging, personalized CRISPR for Parkinson's, FDA real-time trials, and peptide platforms.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/"
+  },
+  {
+    "title": "ARDD 12th Meeting Report — Toward Actionable Interventions in Human Aging",
+    "source": "EurekAlert",
+    "date": "2026-04-21",
+    "category": "Research",
+    "importance": "high",
+    "description": "Aging-US Volume 18 publishes the ARDD synthesis: epigenome as central regulator, partial cellular reprogramming, and systemic effects pointing to organ-wide rejuvenation.",
+    "url": "https://www.eurekalert.org/news-releases/1125036"
+  },
+  {
+    "title": "Inexion: $554M Q4 Longevity Funding Yet RWE Data Gap Persists",
+    "source": "LinkedIn / Inexion",
+    "date": "2026-05-01",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Q4 2025 longevity biotech funding hit $554M (900% above Q3), but no major claims-first data platform reaches the cash-pay longevity cohort, blocking pharma HEOR modeling.",
+    "url": "https://www.linkedin.com/posts/inexion_longevitymedicine-realworldevidence-heor-activity-7456009752804904960-KpV_"
+  },
+  {
+    "title": "Vitalist Bay 2026 Set to Spotlight Longevity's Next Phase",
+    "source": "Longevity.Technology",
+    "date": "2026-05-05",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Four-day Vitalist Bay festival at Lighthaven, Berkeley brings together researchers, founders, clinicians and investors across biotechnology, AI x Bio, biostasis, and health optimization.",
+    "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/"
   },
   {
     "title": "BioAge Labs R&D Day: BGE-102 Phase 1 Shows Big hsCRP Drops",
@@ -55,7 +100,7 @@
     "date": "2026-05-08",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "BioAge presented Phase 1 results for BGE-102 with 24-hour coverage at 60 mg once-daily dosing and profound hsCRP reductions in obese subjects, setting up cardiovascular and DME proof-of-concept studies.",
+    "description": "BioAge presented Phase 1 results for BGE-102 with 24-hour coverage at 60 mg once-daily dosing and profound hsCRP reductions in obese subjects, setting up cardiovascular and DME POC studies.",
     "url": "https://www.marketbeat.com/instant-alerts/bioage-labs-rd-day-bge-102-phase-i-shows-big-hs-crp-drops-sets-up-cardio-dme-poc-trials-2026-05-08/"
   },
   {
@@ -64,7 +109,7 @@
     "date": "2026-05-05",
     "category": "Protocols",
     "importance": "high",
-    "description": "Spanish researchers in Experimental Gerontology showed that creatine combined with power training improved BDNF, antioxidant defense, inflammation, and lower-limb function in 103 older adults over 16 weeks.",
+    "description": "Spanish researchers in Experimental Gerontology showed creatine combined with power training improved BDNF, antioxidant defense, inflammation, and lower-limb function in 103 older adults over 16 weeks.",
     "url": "https://lifespan.io/creatine-shows-synergy-with-exercise-in-older-adults/"
   },
   {
@@ -73,7 +118,7 @@
     "date": "2026-05-06",
     "category": "Clinical Trials",
     "importance": "normal",
-    "description": "Active interventional studies surveyed include everolimus mTORC1 inhibition in metabolic-risk older adults (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
+    "description": "Active studies include everolimus mTORC1 inhibition (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
     "url": "https://www.rapamycin.news/t/may-2026-clinical-studies-in-aging/24662"
   },
   {
@@ -82,7 +127,7 @@
     "date": "2026-03-12",
     "category": "Industry",
     "importance": "high",
-    "description": "The Vitalism Foundation's pop-up longevity festival returns to Berkeley's Lighthaven campus May 14-17 with a four-day program spanning AI x Bio, Replacement, Investment, and Therapeutics tracks.",
+    "description": "The Vitalism Foundation's pop-up longevity festival returns to Lighthaven Berkeley May 14-17 with 60+ speakers across Biotech, Investors, Replacement, Longevity Science, AI x Bio, and Biostasis.",
     "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/"
   },
   {
@@ -91,7 +136,7 @@
     "date": "2026-04-29",
     "category": "Research",
     "importance": "high",
-    "description": "Gil and Tate groups identify a new class of chloroacetamide senolytics that selectively kill senescent cells by inhibiting GPX4 and triggering ferroptosis, with promising data in melanoma, prostate, and ovarian cancer models.",
+    "description": "Gil and Tate groups identify chloroacetamide senolytics that selectively kill senescent cells by inhibiting GPX4 and triggering ferroptosis, with data across melanoma, prostate, and ovarian models.",
     "url": "https://www.imperial.ac.uk/news/articles/research-groups/tate-group/2026/new-senolytic-strategy-targets-a-key-vulnerability-in-ageing-cells/"
   },
   {
@@ -100,7 +145,7 @@
     "date": "2026-03-27",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "First-in-class topical GPX4 modulator was well tolerated with dose-related target engagement, reduction in senescent cells, lower inflammatory cytokines, and an average 20% reduction in epidermal thickness over 4 weeks.",
+    "description": "First-in-class topical GPX4 modulator was well tolerated with dose-related target engagement, senescent-cell reduction, lower inflammatory cytokines, and ~20% reduction in epidermal thickness.",
     "url": "https://lifespan.io/rubedo-announces-positive-preliminary-results-for-rls-1496/"
   },
   {
@@ -109,7 +154,7 @@
     "date": "2026-04-06",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Multi-phase academic rapamycin trial in older adults will run RCT cohort of ~84 participants comparing daily, intermittent, and placebo regimens to establish evidence-based dosing for healthy aging use.",
+    "description": "Multi-phase academic rapamycin trial will run an RCT of ~84 older adults comparing daily, intermittent, and placebo regimens to establish evidence-based dosing for healthy aging use.",
     "url": "https://www.fightaging.org/archives/2026/04/academic-clinical-trials-for-rapamycin-to-answer-questions-on-dosing-for-anti-aging-use/"
   },
   {
@@ -118,7 +163,7 @@
     "date": "2026-03-29",
     "category": "Biotech",
     "importance": "high",
-    "description": "Lilly grants Insilico $115M upfront with up to $2.75B in milestones plus tiered royalties for exclusive worldwide license to a pipeline of oral preclinical assets, building on prior 2023 and 2025 collaborations.",
+    "description": "Lilly grants Insilico $115M upfront with up to $2.75B in milestones plus tiered royalties for exclusive worldwide license to a pipeline of oral preclinical assets.",
     "url": "https://www.fiercebiotech.com/biotech/lilly-signs-275b-partnership-insilicos-ai-engine-pursuit-oral-therapeutics"
   },
   {
@@ -127,26 +172,35 @@
     "date": "2026-05-01",
     "category": "Research",
     "importance": "normal",
-    "description": "Monthly digest covers replacement-over-repair strategy, inflammaging-epigenetic clock links, engineered stem-cell antibody factories, SRN-901 lifespan extension, and BCLXL-PROTAC senolytics for COPD.",
+    "description": "Monthly digest: replacement-over-repair strategy, inflammaging-epigenetic clock links, engineered stem-cell antibody factories, SRN-901 lifespan extension, BCLXL-PROTAC senolytics in COPD.",
     "url": "https://lifespan.io/rejuvenation-roundup-april-2026/"
   },
   {
-    "title": "Cellular Rejuvenation Has the Potential to Reverse Aging (NYT Magazine)",
+    "title": "NYT Magazine: Cellular Rejuvenation Has the Potential to Reverse Aging",
     "source": "The New York Times",
     "date": "2026-05-01",
     "category": "Research",
     "importance": "high",
-    "description": "Long-form feature on partial reprogramming, Altos Labs, and the first safety trial of rejuvenation therapy in humans targeting glaucoma, situating cellular rejuvenation as the most promising frontier in longevity science.",
+    "description": "Long-form feature on partial reprogramming, Altos Labs, and the first safety trial of rejuvenation therapy in humans targeting glaucoma.",
     "url": "https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html"
   },
   {
-    "title": "Tozorakimab Meets Primary Endpoints in Two Phase 3 COPD Trials",
-    "source": "PharmaTimes",
-    "date": "2026-03-30",
+    "title": "The Longevity Trade Is No Longer a Buzzword — $120B Market",
+    "source": "Markets Insider",
+    "date": "2026-04-23",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Markets Insider frames longevity as a $120B market following FDA clearance of the first cellular rejuvenation trial, with GLP-1 receptor agonists labeled the first formal class of longevity therapeutics.",
+    "url": "https://markets.businessinsider.com/news/stocks/the-longevity-trade-is-no-longer-a-buzzword-it-s-a-120-billion-market-and-the-fda-just-cleared-the-first-cellular-rejuvenation-trial-1036053545"
+  },
+  {
+    "title": "Nature Daily Briefing: First Human Trial of Cellular Age Reversal",
+    "source": "Nature",
+    "date": "2026-04-09",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "AstraZeneca's IL-33 antibody tozorakimab achieved statistically significant reductions in moderate-to-severe COPD exacerbations in OBERON and TITANIA, with MIRANDA and PROSPERO ongoing.",
-    "url": "https://pharmatimes.com/news/tozorakimab-shows-significant-benefit-in-two-major-copd-trials/"
+    "description": "Partial reprogramming clinical trial set for 2026 will use targeted protein expression to reverse cellular ageing in glaucoma patients — the first such test in humans.",
+    "url": "https://www.nature.com/articles/d41586-026-01207-2"
   },
   {
     "title": "Junyue Cao on How the Body Ages, Cell by Cell",
@@ -154,7 +208,7 @@
     "date": "2026-05-07",
     "category": "Research",
     "importance": "normal",
-    "description": "Rockefeller University researcher discusses ultra-high-throughput single-cell technologies applied to mapping the cellular hallmarks of aging across tissues.",
+    "description": "Rockefeller researcher discusses ultra-high-throughput single-cell technologies applied to mapping the cellular hallmarks of aging across tissues.",
     "url": "https://lifespan.io/news/"
   },
   {
@@ -163,7 +217,7 @@
     "date": "2026-05-06",
     "category": "Research",
     "importance": "normal",
-    "description": "An Aging Cell study elucidates the bidirectional relationship between intestinal epithelial aging and age-related shifts in the gut microbiome that favor pathogenic species.",
+    "description": "An Aging Cell study elucidates the bidirectional relationship between intestinal epithelial aging and age-related microbiome shifts that favor pathogenic species.",
     "url": "https://lifespan.io/news/"
   },
   {
@@ -172,7 +226,7 @@
     "date": "2026-05-04",
     "category": "Industry",
     "importance": "normal",
-    "description": "New benchmark study shows reasoning-capable LLMs outperform human physicians on real clinical decision tasks, with implications for AI-assisted longevity medicine and diagnostics.",
+    "description": "New benchmark shows reasoning-capable LLMs outperform human physicians on real clinical decision tasks, with implications for AI-assisted longevity medicine and diagnostics.",
     "url": "https://lifespan.io/news/"
   },
   {
@@ -181,17 +235,17 @@
     "date": "2026-03-31",
     "category": "Funding",
     "importance": "high",
-    "description": "DLT chatbot projects 2026 full-year capital flows of $8-9B (55-60% YoY growth), with median deal size of $21.8M showing a maturing pipeline graduating from seed and early Series A.",
+    "description": "DLT dataset projects 2026 capital flows of $8-9B (55-60% YoY growth), with median deal size of $21.8M signaling a maturing pipeline.",
     "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/"
   },
   {
-    "title": "The Longevity Gap: Americans Anticipate Longer Lives, Falling Behind on Readiness",
-    "source": "PR Newswire",
-    "date": "2026-05-05",
-    "category": "Industry",
+    "title": "Longevity Startup Funding 2025-2026 — Outlier-Driven Signal",
+    "source": "New Market Pitch",
+    "date": "2026-05-04",
+    "category": "Funding",
     "importance": "normal",
-    "description": "Guardian's 2026 Mind, Body & Wallet report documents the lowest overall well-being and financial health levels in 15 years of tracking, despite rising lifespan expectations.",
-    "url": "https://www.prnewswire.com/news-releases/the-longevity-gap-americans-anticipate-living-longer-but-are-falling-behind-on-preparedness-302761805.html"
+    "description": "Analysis shows a large share of 2026 longevity funding signal is driven by outlier rounds like Insilico-Lilly and WHOOP, masking softer median-stage trends.",
+    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-analysis"
   },
   {
     "title": "Insilico Forms Longevity Board to Oversee AI Aging Research",
@@ -217,61 +271,7 @@
     "date": "2026-04-15",
     "category": "Research",
     "importance": "normal",
-    "description": "SRN-901 multipathway longevity drug treatment of 18-month-old mice produced a 33% increase in median remaining lifespan plus reductions in frailty and tumor incidence compared to placebo.",
+    "description": "SRN-901 multipathway longevity drug treatment of 18-month-old mice produced a 33% increase in median remaining lifespan plus reductions in frailty and tumor incidence.",
     "url": "https://longevity.technology/news/"
-  },
-  {
-    "title": "Sleep Apnea, Intermittent Hypoxia, and p16-Mediated Cellular Senescence",
-    "source": "Fight Aging!",
-    "date": "2026-05-07",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Preprint links sleep apnea-induced intermittent hypoxia to p16Ink4a senescence accumulation in vascular endothelium, suggesting CPAP-resistant cardiovascular risk has a senescence component.",
-    "url": "https://doi.org/10.21203/rs.3.rs-9371471/v1"
-  },
-  {
-    "title": "Spaceflight and Microgravity as a Model of Biological Aging",
-    "source": "Fight Aging!",
-    "date": "2026-05-05",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Review proposes spaceflight as a translational model for accelerated aging, leveraging muscle wasting, immune dysregulation, and bone loss signatures.",
-    "url": "https://doi.org/10.64898/2026.03.03.709404"
-  },
-  {
-    "title": "Small-Molecule IGF1R Inhibitors Extend Healthspan in Mice",
-    "source": "Fight Aging!",
-    "date": "2026-05-04",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Targeted small-molecule IGF1R inhibitors demonstrated healthspan extension in a mouse model, reinforcing IGF-1 signaling as a tractable geroprotector pathway.",
-    "url": "https://www.fightaging.org"
-  },
-  {
-    "title": "BioAge Phase 2 BGE-102 Cardiovascular POC Data Expected H2 2026",
-    "source": "Stock Titan",
-    "date": "2026-05-04",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "BioAge confirms Phase 2 cardiovascular risk proof-of-concept data for BGE-102 anticipated H2 2026, with Phase 1b/2a diabetic macular edema readout in mid-2027.",
-    "url": "https://www.stocktitan.net/news/BIOA/bio-age-to-host-r-d-day-focused-on-nlrp3-inhibition-on-may-8-i31h1z07gboh.html"
-  },
-  {
-    "title": "Bryan Johnson Drops Rapamycin, Adds Lithium and NDGA to 2026 Stack",
-    "source": "Nad.com",
-    "date": "2026-03-24",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Project Blueprint's 2026 update drops rapamycin (stopped 2024), reduces NMN/NR to six days a week, and adds low-dose lithium and NDGA for cognitive and cellular support.",
-    "url": "https://www.nad.com/news/aging-guru-bryan-johnsons-supplement-list-for-2026"
-  },
-  {
-    "title": "Peter Attia's April 2026 Research Worth Sharing — Endurance and Metabolic Inheritance",
-    "source": "Peter Attia MD",
-    "date": "2026-04-11",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Attia spotlights new research on cardiorespiratory fitness, with cross-generational metabolic fitness implications for offspring beyond individual longevity benefits.",
-    "url": "https://peterattiamd.com/research-worth-sharing-april-2026/"
   }
 ]
