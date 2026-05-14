@@ -1,53 +1,71 @@
 [
   {
-    "title": "Biotech ETFs Rally as XLV +1.96% and BBH +1.76% Front-Run Vitalist Bay Week",
+    "title": "Vitalist Bay 2026 Opens Today as Field's Premier Convening",
     "source": "AI Analysis",
-    "date": "2026-05-12",
+    "date": "2026-05-13",
     "category": "Industry",
     "importance": "high",
-    "description": "Tuesday's session saw broad biotech strength with XLV, BBH, IBB and IHI all up over 1.3%, signaling renewed institutional appetite for the longevity-adjacent healthcare complex ahead of Vitalist Bay 2026. AGNG (+1.25%) led the pure-play aging-population ETFs, while only ARKG and SBIO finished modestly red, suggesting the rally favored quality biotech over speculative small-cap discovery names.",
-    "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/",
-    "top_development": true
-  },
-  {
-    "title": "Insilico Longevity Board Names Lilly's Andrew Adams as Chairman",
-    "source": "AI Analysis",
-    "date": "2026-05-12",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "Industry's first formal Longevity Board adds critical big-pharma credibility with Eli Lilly's Andrew Adams as Chairman alongside 2013 Nobel laureate Michael Levitt. The Board's explicit mandate to develop dual-purpose therapeutics targeting both aging and disease — built on Adams' GLP-1-as-first-longevity-drug ARDD keynote — formalizes a Lilly-Insilico longevity nexus that could absorb a significant share of the field's investment dollars.",
-    "url": "https://insilico.com/news/vxuidy8ph1-insilico-medicine-announces-industrys-fi",
-    "top_development": true
-  },
-  {
-    "title": "Vitalist Bay 2026 Opens Tomorrow with Investor-Heavy Programming",
-    "source": "AI Analysis",
-    "date": "2026-05-12",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Vitalist Bay 2026 launches Thursday May 14 at Berkeley's Lighthaven Campus, featuring 100+ speakers including Aubrey de Grey, Morgan Levine, Michael Snyder, and Joe Betts-LaCroix across six themes. Daily startup pitch sessions, 50+ workshops, and on-site DEXA/CGM/blood panels make this the field's premier investor-founder matchmaking event of the year — capital formation is an explicit operating goal.",
+    "description": "Vitalist Bay 2026 kicks off Thursday May 14 at Berkeley's Lighthaven, running through Sunday May 17 with 100+ speakers including Aubrey de Grey, Joe Betts-LaCroix, Michael Snyder, and Morgan Levine. Six tracks (Biotech, Investors, Replacement, Longevity Science, AI x Bio, Biostasis), 50+ workshops, on-site DEXA/CGM/blood panels, and dedicated daily startup pitch sessions make this the field's most consequential capital-formation and clinical-experience event of the year.",
     "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/",
     "top_development": true
   },
   {
-    "title": "Cash-Pay Longevity Market Exposes $554M Q4 Funding Without RWE Visibility",
+    "title": "University of Sydney: 4-Week Dietary Change Reduces Biological Age in 65-75 Year Olds",
     "source": "AI Analysis",
-    "date": "2026-05-12",
-    "category": "Industry",
+    "date": "2026-05-13",
+    "category": "Protocols",
     "importance": "high",
-    "description": "Inexion's analysis showed Q4 2025 longevity biotech funding hit $554M (900% above Q3), yet major real-world-evidence platforms IQVIA, Komodo, and Symphony do not capture cash-pay longevity practices. This structural data gap blocks HEOR modeling and could constrain pharma commercial validation of senolytic, GLP-1, and biomarker-driven longevity indications heading into Phase 2/3 readouts.",
-    "url": "https://www.linkedin.com/posts/inexion_longevitymedicine-realworldevidence-heor-activity-7456009752804904960-KpV_",
+    "description": "An Aging Cell paper from Dr Caitlin Andrews shows older Australians who cut dietary fat or animal protein for just four weeks register reductions in biological age via biomarker profile, with the strongest signal in the omnivorous high-carb (lower-fat) arm. The result strengthens the case that simple, scalable nutritional shifts can move age biomarkers in a clinically meaningful direction on a four-week timescale — without supplements or pharmacotherapy.",
+    "url": "https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html",
     "top_development": true
   },
   {
-    "title": "ARDD Meeting Report Crystallizes GLP-1 as First Longevity Drug Class",
+    "title": "Biotech Sector Holds Tuesday Gains as XBI +0.70% and SBIO +1.06% Track Discovery Risk-On",
     "source": "AI Analysis",
+    "date": "2026-05-13",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Wednesday's tape showed selective consolidation after Tuesday's broad rally: XBI +0.70% and SBIO +1.06% led, indicating risk-on rotation into smid-cap discovery names ahead of Vitalist Bay catalysts. BBH (-0.54%) gave back part of Tuesday's surge, while large-cap healthcare (XLV +0.59%) and IBB (+0.21%) extended gains modestly — a healthier breadth pattern than Tuesday's tier-one-only rally.",
+    "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/",
+    "top_development": true
+  },
+  {
+    "title": "UT San Antonio Rapamycin Trial Confirmed: 84-Participant RCT, NIA Funded",
+    "source": "AI Analysis",
+    "date": "2026-05-13",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "The much-discussed academic rapamycin trial is officially housed at UT Health San Antonio with NIA funding, comparing daily, intermittent, and placebo regimens in approximately 84 healthy older adults across a six-month treatment plus six-month follow-up window. Enrollment is now open for non-diabetic, non-smoking adults aged 65-90, marking the first rigorous, well-powered academic RCT to address rapamycin dosing for geroprotection.",
+    "url": "https://news.uthscsa.edu/large-rapamycin-clinical-trial-launches-at-ut-health-san-antonio/",
+    "top_development": true
+  },
+  {
+    "title": "Insilico Longevity Board With Lilly's Adams as Chair Anchors Field's Big-Pharma Pivot",
+    "source": "AI Analysis",
+    "date": "2026-05-13",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Andrew Adams' move from Eli Lilly to chair Insilico's industry-first Longevity Board, alongside Nobel laureate Michael Levitt, signals that big pharma now views aging biology as a strategic R&D vector rather than a fringe academic pursuit. With Lilly already paying $115M upfront plus up to $2.75B in milestones to Insilico for AI-discovered orals, this governance move is the operational complement to the field's largest commercial deal.",
+    "url": "https://insilico.com/news/vxuidy8ph1-insilico-medicine-announces-industrys-fi",
+    "top_development": true
+  },
+  {
+    "title": "Dietary Changes in Older People Can Improve Biological Age",
+    "source": "University of Sydney",
     "date": "2026-05-12",
     "category": "Research",
     "importance": "high",
-    "description": "Aging-US Volume 18 ARDD synthesis combined with Andrew Adams' widely-shared ARDD keynote 'GLP-1s: The World's First Longevity Drug?' is fast becoming the field's consensus framing. The reclassification implies semaglutide, tirzepatide, and next-gen GLP-1/GIP/glucagon agonists should be evaluated for healthspan effects beyond glycemic and weight outcomes — a thesis institutional investors now appear to be acting on.",
-    "url": "https://insilico.com/news/vxuidy8ph1-insilico-medicine-announces-industrys-fi",
-    "top_development": true
+    "description": "Aging Cell publication from Dr Caitlin Andrews shows 65-75 year olds who reduced fat or animal-based protein for four weeks registered measurable reductions in biological age via biomarker profile.",
+    "url": "https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html"
+  },
+  {
+    "title": "Scientists Reversed Biological Age in Older Adults With 4-Week Diet Change",
+    "source": "ScienceDaily",
+    "date": "2026-05-12",
+    "category": "Protocols",
+    "importance": "high",
+    "description": "Coverage of the Sydney Aging Cell study highlights the strongest reductions in the omnivorous higher-carb / lower-fat arm, with the closest-to-baseline group showing no change.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260511213144.htm"
   },
   {
     "title": "Insilico Announces Industry's First Longevity Board",
@@ -86,6 +104,24 @@
     "url": "https://www.eurekalert.org/news-releases/1125036"
   },
   {
+    "title": "Large Rapamycin Clinical Trial Launches at UT Health San Antonio",
+    "source": "UT Health San Antonio",
+    "date": "2026-03-16",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Multi-phase clinical study with ~84 older adults will determine optimal rapamycin dosage for healthy aging via a six-month treatment, six-month follow-up RCT against placebo and intermittent dosing.",
+    "url": "https://news.uthscsa.edu/large-rapamycin-clinical-trial-launches-at-ut-health-san-antonio/"
+  },
+  {
+    "title": "Want to Reverse Your Biological Age? Change What You Eat",
+    "source": "Inc. Magazine",
+    "date": "2026-05-13",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Inc. covers the Sydney study, noting older adults reducing animal-derived proteins and fats saw notable improvements in cholesterol, insulin, and blood pressure within four weeks.",
+    "url": "https://www.inc.com/lucia-auerbach/want-to-reverse-your-biological-age-new-study-says-to-change-what-you-eat/91343898"
+  },
+  {
     "title": "Vitalist Bay 2026 Set to Spotlight Longevity's Next Phase",
     "source": "Longevity.Technology",
     "date": "2026-05-05",
@@ -93,6 +129,15 @@
     "importance": "high",
     "description": "Four-day Vitalist Bay festival at Lighthaven, Berkeley brings together researchers, founders, clinicians and investors across biotechnology, AI x Bio, biostasis, and health optimization.",
     "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/"
+  },
+  {
+    "title": "Vitalist Bay Returns: Four-Day Longevity Festival May 14-17",
+    "source": "Rapamycin Longevity News",
+    "date": "2026-02-25",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Adam Gries and Nathan Chang's bootstrapped Berkeley event packs depth across six tracks: AI x Bio, scientific findings, biopreservation, replacement, longevity science, and investors.",
+    "url": "https://www.rapamycin.news/t/vitalist-bay-returns-four-day-longevity-festival-in-the-bay-area-may-14-to-17/23754"
   },
   {
     "title": "BioAge Labs R&D Day: BGE-102 Phase 1 Shows Big hsCRP Drops",
@@ -118,17 +163,8 @@
     "date": "2026-05-06",
     "category": "Clinical Trials",
     "importance": "normal",
-    "description": "Active interventional studies include everolimus mTORC1 inhibition (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
+    "description": "Active studies include everolimus mTORC1 inhibition (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
     "url": "https://www.rapamycin.news/t/may-2026-clinical-studies-in-aging/24662"
-  },
-  {
-    "title": "Vitalist Bay 2026 Returns to Berkeley May 14-17",
-    "source": "Lifespan.io",
-    "date": "2026-03-12",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Vitalism Foundation's pop-up longevity festival returns to Lighthaven Berkeley May 14-17 with 60+ speakers across Biotech, Investors, Replacement, Longevity Science, AI x Bio, and Biostasis.",
-    "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/"
   },
   {
     "title": "New Senolytic Strategy Targets GPX4 in Ageing Cells",
@@ -147,24 +183,6 @@
     "importance": "high",
     "description": "First-in-class topical GPX4 modulator was well tolerated with dose-related target engagement, senescent-cell reduction, lower inflammatory cytokines, and ~20% reduction in epidermal thickness.",
     "url": "https://lifespan.io/rubedo-announces-positive-preliminary-results-for-rls-1496/"
-  },
-  {
-    "title": "Academic Clinical Trials for Rapamycin Aim to Answer Dosing Questions",
-    "source": "Fight Aging!",
-    "date": "2026-04-06",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Multi-phase academic rapamycin trial will run an RCT of ~84 older adults comparing daily, intermittent, and placebo regimens to establish evidence-based dosing for healthy aging use.",
-    "url": "https://www.fightaging.org/archives/2026/04/academic-clinical-trials-for-rapamycin-to-answer-questions-on-dosing-for-anti-aging-use/"
-  },
-  {
-    "title": "Insilico Medicine Named to Fast Company Most Innovative Companies 2026",
-    "source": "Insilico Medicine",
-    "date": "2026-03-26",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Insilico recognized for real-world clinical impact from its generative AI platform; 2025 Phase IIa rentosertib results showed stabilization or improvement in IPF lung function — the first wholly AI-discovered and AI-designed small molecule.",
-    "url": "https://insilico.com/news/yayygle7n1-insilico-medicine-named-to-fast-companys"
   },
   {
     "title": "Insilico Medicine and Eli Lilly Sign $2.75B AI Drug Discovery Pact",
@@ -212,15 +230,6 @@
     "url": "https://lifespan.io/news/"
   },
   {
-    "title": "Thinking AI Outperforms Human Doctors on Real-Life Clinical Data",
-    "source": "Lifespan.io",
-    "date": "2026-05-04",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Benchmark shows reasoning-capable LLMs outperform human physicians on real clinical decision tasks, with implications for AI-assisted longevity medicine.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
     "title": "Q1 2026 Longevity Biotech Investment Hits $3.74B Across 49 Deals",
     "source": "Longevity.Technology",
     "date": "2026-03-31",
@@ -239,15 +248,6 @@
     "url": "https://www.linkedin.com/posts/inexion_longevitymedicine-realworldevidence-heor-activity-7456009752804904960-KpV_"
   },
   {
-    "title": "Longevity Startup Funding 2025-2026 — Outlier-Driven Signal",
-    "source": "New Market Pitch",
-    "date": "2026-05-04",
-    "category": "Funding",
-    "importance": "normal",
-    "description": "Analysis shows a large share of 2026 longevity funding signal is driven by outlier rounds like Insilico-Lilly and WHOOP, masking softer median-stage trends.",
-    "url": "https://newmarketpitch.com/blogs/news/longevity-funding-analysis"
-  },
-  {
     "title": "Seragon SRN-901 Extends Median Lifespan 33% in Aged Mice",
     "source": "Longevity.Technology",
     "date": "2026-04-15",
@@ -257,15 +257,6 @@
     "url": "https://longevity.technology/news/"
   },
   {
-    "title": "Sleep Apnea, Intermittent Hypoxia, and p16-Mediated Senescence",
-    "source": "Fight Aging!",
-    "date": "2026-05-07",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Preprint links sleep apnea-induced intermittent hypoxia to p16Ink4a senescence in vascular endothelium, suggesting senescence component to CPAP-resistant cardiovascular risk.",
-    "url": "https://doi.org/10.21203/rs.3.rs-9371471/v1"
-  },
-  {
     "title": "Inbrain Completes Enrollment in First Human Graphene Brain Interface Study",
     "source": "Longevity.Technology",
     "date": "2026-05-05",
@@ -273,5 +264,14 @@
     "importance": "normal",
     "description": "First-in-human study of graphene-based neural interfaces fully enrolled, supporting future applications in age-related neurodegeneration.",
     "url": "https://longevity.technology/news/"
+  },
+  {
+    "title": "Sleep Apnea, Intermittent Hypoxia, and p16-Mediated Senescence",
+    "source": "Fight Aging!",
+    "date": "2026-05-07",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Preprint links sleep apnea-induced intermittent hypoxia to p16Ink4a senescence in vascular endothelium, suggesting a senescence component to CPAP-resistant cardiovascular risk.",
+    "url": "https://doi.org/10.21203/rs.3.rs-9371471/v1"
   }
 ]
