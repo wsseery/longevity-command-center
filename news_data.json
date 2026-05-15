@@ -1,53 +1,62 @@
 [
   {
-    "title": "Vitalist Bay 2026 Opens Today as Field's Premier Convening",
+    "title": "Vitalist Bay 2026 Underway in Berkeley — Field's Premier Annual Convergence",
     "source": "AI Analysis",
-    "date": "2026-05-13",
+    "date": "2026-05-14",
     "category": "Industry",
     "importance": "high",
-    "description": "Vitalist Bay 2026 kicks off Thursday May 14 at Berkeley's Lighthaven, running through Sunday May 17 with 100+ speakers including Aubrey de Grey, Joe Betts-LaCroix, Michael Snyder, and Morgan Levine. Six tracks (Biotech, Investors, Replacement, Longevity Science, AI x Bio, Biostasis), 50+ workshops, on-site DEXA/CGM/blood panels, and dedicated daily startup pitch sessions make this the field's most consequential capital-formation and clinical-experience event of the year.",
+    "description": "Vitalist Bay 2026 opened Thursday at Berkeley's Lighthaven, with day-one programming spanning Biotech, Investors, Replacement, Longevity Science, AI x Bio, and Biostasis tracks. The 30,000 sq ft campus hosts 100+ speakers and daily startup pitch sessions through Sunday May 17, making this the year's most concentrated capital-formation window for longevity startups.",
     "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/",
     "top_development": true
   },
   {
-    "title": "University of Sydney: 4-Week Dietary Change Reduces Biological Age in 65-75 Year Olds",
+    "title": "Avai Bio Unveils Cell-Based Klotho Anti-Aging Therapy Platform",
     "source": "AI Analysis",
-    "date": "2026-05-13",
-    "category": "Protocols",
+    "date": "2026-05-14",
+    "category": "Biotech",
     "importance": "high",
-    "description": "An Aging Cell paper from Dr Caitlin Andrews shows older Australians who cut dietary fat or animal protein for just four weeks register reductions in biological age via biomarker profile, with the strongest signal in the omnivorous high-carb (lower-fat) arm. The result strengthens the case that simple, scalable nutritional shifts can move age biomarkers in a clinically meaningful direction on a four-week timescale — without supplements or pharmacotherapy.",
-    "url": "https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html",
+    "description": "OTCQB-listed Avai Bio (formerly Avant Technologies) detailed its alpha-Klotho longevity program through Klothonova joint venture with Austrianova, using encapsulated cells engineered to continuously produce the Klotho protein. The strategy targets one of the few aging proteins with a documented 30% lifespan extension signal in animal models — and pushes encapsulated cell therapy into the longevity arena alongside small molecules and gene therapies.",
+    "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html",
     "top_development": true
   },
   {
-    "title": "Biotech Sector Holds Tuesday Gains as XBI +0.70% and SBIO +1.06% Track Discovery Risk-On",
+    "title": "Biotech Complex Gives Back Tuesday Rally as Risk-Off Sweeps Sector",
     "source": "AI Analysis",
-    "date": "2026-05-13",
+    "date": "2026-05-14",
     "category": "Industry",
     "importance": "high",
-    "description": "Wednesday's tape showed selective consolidation after Tuesday's broad rally: XBI +0.70% and SBIO +1.06% led, indicating risk-on rotation into smid-cap discovery names ahead of Vitalist Bay catalysts. BBH (-0.54%) gave back part of Tuesday's surge, while large-cap healthcare (XLV +0.59%) and IBB (+0.21%) extended gains modestly — a healthier breadth pattern than Tuesday's tier-one-only rally.",
+    "description": "Thursday saw a broad biotech selloff with ARKG -1.52%, SBIO -1.09%, IDNA -0.87%, IBB -0.76%, BBH -0.75%, and XBI -0.74% all falling, fully unwinding the rally posted earlier in the week. IHI (+0.52%) bucked the trend on med-devices strength while XLV held essentially flat (-0.05%), suggesting institutional rotation out of speculative discovery names rather than the broader healthcare complex.",
     "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/",
     "top_development": true
   },
   {
-    "title": "UT San Antonio Rapamycin Trial Confirmed: 84-Participant RCT, NIA Funded",
+    "title": "Longevity Therapeutics Market on Track for $29.2B by 2035 at 12.84% CAGR",
     "source": "AI Analysis",
-    "date": "2026-05-13",
-    "category": "Clinical Trials",
+    "date": "2026-05-14",
+    "category": "Funding",
     "importance": "high",
-    "description": "The much-discussed academic rapamycin trial is officially housed at UT Health San Antonio with NIA funding, comparing daily, intermittent, and placebo regimens in approximately 84 healthy older adults across a six-month treatment plus six-month follow-up window. Enrollment is now open for non-diabetic, non-smoking adults aged 65-90, marking the first rigorous, well-powered academic RCT to address rapamycin dosing for geroprotection.",
-    "url": "https://news.uthscsa.edu/large-rapamycin-clinical-trial-launches-at-ut-health-san-antonio/",
+    "description": "Industry projections published in conjunction with Avai Bio's platform reveal forecasts that put the longevity biotech market at approximately $29.2B by 2035, growing 12.84% CAGR from a 2026 baseline of $9.86B. Combined with disclosed Q1 2026 longevity financing of $3.74B across 49 deals (a 56% YoY increase), the data crystallizes that aging-targeted biotech has moved from frontier science to organized commercial development.",
+    "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html",
     "top_development": true
   },
   {
-    "title": "Insilico Longevity Board With Lilly's Adams as Chair Anchors Field's Big-Pharma Pivot",
+    "title": "Klotho Protein Therapy Emerges as Distinct Longevity Modality",
     "source": "AI Analysis",
-    "date": "2026-05-13",
+    "date": "2026-05-14",
+    "category": "Research",
+    "importance": "high",
+    "description": "Avai Bio's Klothonova platform joins a growing class of alpha-Klotho-directed therapeutics alongside academic gene therapy programs. With Klotho deficiency tied to vascular calcification, osteoporosis, CKD, and cognitive decline, and with higher levels associated with a 30% increased lifespan in animal models, the convergence of cell encapsulation, gene therapy, and protein supplementation strategies makes Klotho the most-cross-platform longevity target of 2026.",
+    "url": "https://avaibio.com/klotho",
+    "top_development": true
+  },
+  {
+    "title": "Avai Bio Introduces Klotho-Based Anti-Aging Therapy at Premier Forum",
+    "source": "PR Newswire",
+    "date": "2026-05-14",
     "category": "Biotech",
     "importance": "high",
-    "description": "Andrew Adams' move from Eli Lilly to chair Insilico's industry-first Longevity Board, alongside Nobel laureate Michael Levitt, signals that big pharma now views aging biology as a strategic R&D vector rather than a fringe academic pursuit. With Lilly already paying $115M upfront plus up to $2.75B in milestones to Insilico for AI-discovered orals, this governance move is the operational complement to the field's largest commercial deal.",
-    "url": "https://insilico.com/news/vxuidy8ph1-insilico-medicine-announces-industrys-fi",
-    "top_development": true
+    "description": "Avai Bio (OTCQB: AVAI) details its cell-based alpha-Klotho longevity therapy via Klothonova JV with Austrianova; data to be presented at Second Annual Klotho Conference in September.",
+    "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html"
   },
   {
     "title": "Dietary Changes in Older People Can Improve Biological Age",
@@ -55,7 +64,7 @@
     "date": "2026-05-12",
     "category": "Research",
     "importance": "high",
-    "description": "Aging Cell publication from Dr Caitlin Andrews shows 65-75 year olds who reduced fat or animal-based protein for four weeks registered measurable reductions in biological age via biomarker profile.",
+    "description": "Aging Cell paper from Dr Caitlin Andrews shows 65-75 year olds who reduced fat or animal-based protein for four weeks registered measurable reductions in biological age via biomarker profile.",
     "url": "https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html"
   },
   {
@@ -64,7 +73,7 @@
     "date": "2026-05-12",
     "category": "Protocols",
     "importance": "high",
-    "description": "Coverage of the Sydney Aging Cell study highlights the strongest reductions in the omnivorous higher-carb / lower-fat arm, with the closest-to-baseline group showing no change.",
+    "description": "Coverage of the Sydney Aging Cell study highlights strongest reductions in the omnivorous higher-carb / lower-fat arm, with closest-to-baseline group showing no change.",
     "url": "https://www.sciencedaily.com/releases/2026/05/260511213144.htm"
   },
   {
@@ -84,24 +93,6 @@
     "importance": "high",
     "description": "Human Longevity, Inc. unveiled a $599 clinical-grade whole genome report with AI-driven prevention insights, honoring founder J. Craig Venter's legacy.",
     "url": "https://www.prnewswire.com/news-releases/honoring-dr-j-craig-venters-legacy-human-longevity-launches-clinical-grade-599-whole-genome-sequencing-report-with-ai-enhanced-insights-for-proactive-disease-prevention-302768424.html"
-  },
-  {
-    "title": "Longevity News Roundup — Week 19, 2026",
-    "source": "Longevity.Technology",
-    "date": "2026-05-07",
-    "category": "Research",
-    "importance": "high",
-    "description": "Roundup examines multi-target Alzheimer's therapy, sugar glycation in aging, personalized CRISPR for Parkinson's, FDA real-time trials, and peptide platforms.",
-    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/"
-  },
-  {
-    "title": "ARDD 12th Meeting Report — Toward Actionable Interventions in Human Aging",
-    "source": "EurekAlert",
-    "date": "2026-04-21",
-    "category": "Research",
-    "importance": "high",
-    "description": "Aging-US Volume 18 publishes the ARDD synthesis: epigenome as central regulator, partial cellular reprogramming, and systemic effects pointing to organ-wide rejuvenation.",
-    "url": "https://www.eurekalert.org/news-releases/1125036"
   },
   {
     "title": "Large Rapamycin Clinical Trial Launches at UT Health San Antonio",
@@ -131,15 +122,6 @@
     "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/"
   },
   {
-    "title": "Vitalist Bay Returns: Four-Day Longevity Festival May 14-17",
-    "source": "Rapamycin Longevity News",
-    "date": "2026-02-25",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Adam Gries and Nathan Chang's bootstrapped Berkeley event packs depth across six tracks: AI x Bio, scientific findings, biopreservation, replacement, longevity science, and investors.",
-    "url": "https://www.rapamycin.news/t/vitalist-bay-returns-four-day-longevity-festival-in-the-bay-area-may-14-to-17/23754"
-  },
-  {
     "title": "BioAge Labs R&D Day: BGE-102 Phase 1 Shows Big hsCRP Drops",
     "source": "MarketBeat",
     "date": "2026-05-08",
@@ -158,6 +140,15 @@
     "url": "https://lifespan.io/creatine-shows-synergy-with-exercise-in-older-adults/"
   },
   {
+    "title": "Longevity News Roundup — Week 19, 2026",
+    "source": "Longevity.Technology",
+    "date": "2026-05-07",
+    "category": "Research",
+    "importance": "high",
+    "description": "Roundup examines multi-target Alzheimer's therapy, sugar glycation in aging, personalized CRISPR for Parkinson's, FDA real-time trials, and peptide platforms.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/"
+  },
+  {
     "title": "May 2026 Clinical Studies in Aging Roundup",
     "source": "Rapamycin Longevity News",
     "date": "2026-05-06",
@@ -165,6 +156,15 @@
     "importance": "normal",
     "description": "Active studies include everolimus mTORC1 inhibition (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
     "url": "https://www.rapamycin.news/t/may-2026-clinical-studies-in-aging/24662"
+  },
+  {
+    "title": "ARDD 12th Meeting Report — Toward Actionable Interventions in Human Aging",
+    "source": "EurekAlert",
+    "date": "2026-04-21",
+    "category": "Research",
+    "importance": "high",
+    "description": "Aging-US Volume 18 publishes the ARDD synthesis: epigenome as central regulator, partial cellular reprogramming, and systemic effects pointing to organ-wide rejuvenation.",
+    "url": "https://www.eurekalert.org/news-releases/1125036"
   },
   {
     "title": "New Senolytic Strategy Targets GPX4 in Ageing Cells",
@@ -271,7 +271,7 @@
     "date": "2026-05-07",
     "category": "Research",
     "importance": "normal",
-    "description": "Preprint links sleep apnea-induced intermittent hypoxia to p16Ink4a senescence in vascular endothelium, suggesting a senescence component to CPAP-resistant cardiovascular risk.",
+    "description": "Preprint links sleep apnea-induced intermittent hypoxia to p16Ink4a senescence in vascular endothelium, suggesting senescence component to CPAP-resistant cardiovascular risk.",
     "url": "https://doi.org/10.21203/rs.3.rs-9371471/v1"
   }
 ]
