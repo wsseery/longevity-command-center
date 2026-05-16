@@ -1,53 +1,71 @@
 [
   {
-    "title": "Vitalist Bay 2026 Underway in Berkeley — Field's Premier Annual Convergence",
+    "title": "Life Biosciences Lands $80M Series D for ER-100 Partial Reprogramming Trial",
     "source": "AI Analysis",
-    "date": "2026-05-14",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Vitalist Bay 2026 opened Thursday at Berkeley's Lighthaven, with day-one programming spanning Biotech, Investors, Replacement, Longevity Science, AI x Bio, and Biostasis tracks. The 30,000 sq ft campus hosts 100+ speakers and daily startup pitch sessions through Sunday May 17, making this the year's most concentrated capital-formation window for longevity startups.",
-    "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/",
-    "top_development": true
-  },
-  {
-    "title": "Avai Bio Unveils Cell-Based Klotho Anti-Aging Therapy Platform",
-    "source": "AI Analysis",
-    "date": "2026-05-14",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "OTCQB-listed Avai Bio (formerly Avant Technologies) detailed its alpha-Klotho longevity program through Klothonova joint venture with Austrianova, using encapsulated cells engineered to continuously produce the Klotho protein. The strategy targets one of the few aging proteins with a documented 30% lifespan extension signal in animal models — and pushes encapsulated cell therapy into the longevity arena alongside small molecules and gene therapies.",
-    "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html",
-    "top_development": true
-  },
-  {
-    "title": "Biotech Complex Gives Back Tuesday Rally as Risk-Off Sweeps Sector",
-    "source": "AI Analysis",
-    "date": "2026-05-14",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Thursday saw a broad biotech selloff with ARKG -1.52%, SBIO -1.09%, IDNA -0.87%, IBB -0.76%, BBH -0.75%, and XBI -0.74% all falling, fully unwinding the rally posted earlier in the week. IHI (+0.52%) bucked the trend on med-devices strength while XLV held essentially flat (-0.05%), suggesting institutional rotation out of speculative discovery names rather than the broader healthcare complex.",
-    "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/",
-    "top_development": true
-  },
-  {
-    "title": "Longevity Therapeutics Market on Track for $29.2B by 2035 at 12.84% CAGR",
-    "source": "AI Analysis",
-    "date": "2026-05-14",
+    "date": "2026-05-15",
     "category": "Funding",
     "importance": "high",
-    "description": "Industry projections published in conjunction with Avai Bio's platform reveal forecasts that put the longevity biotech market at approximately $29.2B by 2035, growing 12.84% CAGR from a 2026 baseline of $9.86B. Combined with disclosed Q1 2026 longevity financing of $3.74B across 49 deals (a 56% YoY increase), the data crystallizes that aging-targeted biotech has moved from frontier science to organized commercial development.",
-    "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html",
+    "description": "Life Biosciences closed $80M Series D to fund Phase 1 of ER-100, its partial epigenetic 'cell reset' therapy targeting glaucoma and optic neuropathies. The raise crystallizes ER-100 as the first clinical-stage partial-reprogramming asset in humans, using retinal ganglion cell rejuvenation as a measurable beachhead before systemic aging-reversal applications.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
     "top_development": true
   },
   {
-    "title": "Klotho Protein Therapy Emerges as Distinct Longevity Modality",
+    "title": "Friday Biotech Rout: XBI -3.08%, SBIO -3.12%, ARKG -3.53%",
     "source": "AI Analysis",
-    "date": "2026-05-14",
-    "category": "Research",
+    "date": "2026-05-15",
+    "category": "Industry",
     "importance": "high",
-    "description": "Avai Bio's Klothonova platform joins a growing class of alpha-Klotho-directed therapeutics alongside academic gene therapy programs. With Klotho deficiency tied to vascular calcification, osteoporosis, CKD, and cognitive decline, and with higher levels associated with a 30% increased lifespan in animal models, the convergence of cell encapsulation, gene therapy, and protein supplementation strategies makes Klotho the most-cross-platform longevity target of 2026.",
-    "url": "https://avaibio.com/klotho",
+    "description": "Friday delivered a sector-wide biotech selloff with XBI -3.08%, SBIO -3.12%, ARKG -3.53%, IBB -2.63%, BBH -2.27%, and IDNA -2.47% all crushed alongside XLV -1.04%. Even med-devices (IHI -0.62%) and aging-population (AGNG -1.29%) participated — pure risk-off into the weekend, undoing Tuesday's rally and then some, with no longevity-specific catalyst beyond macro repositioning.",
+    "url": "http://www.newser.com/aticles-market/Longevity-Biotech-Stocks-Rally-as-27-Trillion-Healthcare-Transformation-Accelerates-Cell-Restoration-Focus-15-552",
     "top_development": true
+  },
+  {
+    "title": "GeneRare Raises EUR 20M Series A for Microbial Genome Drug Discovery",
+    "source": "AI Analysis",
+    "date": "2026-05-15",
+    "category": "Funding",
+    "importance": "high",
+    "description": "GeneRare closed a EUR 20M ($21.6M) Series A to scale microbial genome scanning for novel natural-product molecules, having already identified 200+ hits in 2025. The fund expands libraries from plants, fungi, and marine sources with explicit ambitions toward geroprotectors including next-generation rapamycin analogs — adding AI-discovered natural products as a fourth pillar alongside small molecules, gene therapy, and cell therapy.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
+    "top_development": true
+  },
+  {
+    "title": "Vitalist Bay 2026 Day 2 Programming Anchored by AI x Bio and Replacement",
+    "source": "AI Analysis",
+    "date": "2026-05-15",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Vitalist Bay's second day at Berkeley's Lighthaven leaned heavily into AI x Bio and Replacement tracks, with startup pitch sessions accelerating capital formation in the morning slot. With 100+ speakers including Aubrey de Grey, Joe Betts-LaCroix, Michael Snyder and Morgan Levine across four days, the festival is now widely viewed as the field's annual private-market price discovery event.",
+    "url": "https://vitalistbay.com",
+    "top_development": true
+  },
+  {
+    "title": "Noom Acquires 503A Compounding Pharmacy to Bundle GLP-1s with Longevity Coaching",
+    "source": "AI Analysis",
+    "date": "2026-05-15",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Noom's vertical-integration play through acquisition of a 503A compounding pharmacy lets it dispense GLP-1s, peptides like sermorelin, and NAD+ alongside behavioral coaching for healthy aging. The move pairs app data with pharmacy access at scale — and validates the field's emerging GLP-1-as-first-longevity-drug thesis at the consumer go-to-market layer rather than purely in pharma R&D.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
+    "top_development": true
+  },
+  {
+    "title": "Longevity Biotech Stocks Rally as $27T Healthcare Transformation Accelerates",
+    "source": "Newser / PR Newswire",
+    "date": "2026-05-14",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Sector-wide rally narrative builds around cell-restoration therapies as catalysts for a $27 trillion global healthcare transformation, though specific stock percentages were not disclosed.",
+    "url": "http://www.newser.com/aticles-market/Longevity-Biotech-Stocks-Rally-as-27-Trillion-Healthcare-Transformation-Accelerates-Cell-Restoration-Focus-15-552"
+  },
+  {
+    "title": "Longevity News Roundup: Life Biosciences $80M, GeneRare $21.6M, Noom Pharmacy",
+    "source": "Longevity.Technology (YouTube)",
+    "date": "2026-04-10",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Phil Newman and Nina Patrick cover Life Biosciences $80M Series D for ER-100 partial reprogramming Phase 1, GeneRare EUR 20M Series A, Noom 503A pharmacy buy, Annovis buntanetap Phase 3, Agentis-Ultrahuman wearables, and Peloton-Longevity Show partnership.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
   },
   {
     "title": "Avai Bio Introduces Klotho-Based Anti-Aging Therapy at Premier Forum",
@@ -104,13 +122,13 @@
     "url": "https://news.uthscsa.edu/large-rapamycin-clinical-trial-launches-at-ut-health-san-antonio/"
   },
   {
-    "title": "Want to Reverse Your Biological Age? Change What You Eat",
-    "source": "Inc. Magazine",
-    "date": "2026-05-13",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Inc. covers the Sydney study, noting older adults reducing animal-derived proteins and fats saw notable improvements in cholesterol, insulin, and blood pressure within four weeks.",
-    "url": "https://www.inc.com/lucia-auerbach/want-to-reverse-your-biological-age-new-study-says-to-change-what-you-eat/91343898"
+    "title": "Annovis Advances Buntanetap in Phase 3 Alzheimer's and Parkinson's Trials",
+    "source": "Longevity.Technology (YouTube)",
+    "date": "2026-04-10",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Annovis's buntanetap, derived from the Calabar bean, reduces amyloid beta, tau, and alpha-synuclein translation in Phase 3 Alzheimer's and Parkinson's; sildenafil combos boost cerebral blood flow via NO-cGMP pathway.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
   },
   {
     "title": "Vitalist Bay 2026 Set to Spotlight Longevity's Next Phase",
@@ -149,15 +167,6 @@
     "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/"
   },
   {
-    "title": "May 2026 Clinical Studies in Aging Roundup",
-    "source": "Rapamycin Longevity News",
-    "date": "2026-05-06",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Active studies include everolimus mTORC1 inhibition (NCT05835999), RAP PAC rapalog pharmacology (NCT05949658), and a GLP-1 trial in postmenopausal women evaluating aging biomarkers.",
-    "url": "https://www.rapamycin.news/t/may-2026-clinical-studies-in-aging/24662"
-  },
-  {
     "title": "ARDD 12th Meeting Report — Toward Actionable Interventions in Human Aging",
     "source": "EurekAlert",
     "date": "2026-04-21",
@@ -194,40 +203,22 @@
     "url": "https://www.fiercebiotech.com/biotech/lilly-signs-275b-partnership-insilicos-ai-engine-pursuit-oral-therapeutics"
   },
   {
-    "title": "Rejuvenation Roundup April 2026",
-    "source": "Lifespan.io",
-    "date": "2026-05-01",
-    "category": "Research",
+    "title": "Agentis Partners Ultrahuman to Integrate CGM/HRV into Longevity Quotient",
+    "source": "Longevity.Technology (YouTube)",
+    "date": "2026-04-10",
+    "category": "Industry",
     "importance": "normal",
-    "description": "Monthly digest: replacement-over-repair strategy, inflammaging-epigenetic clock links, engineered stem-cell antibody factories, SRN-901 lifespan extension, BCLXL-PROTAC senolytics in COPD.",
-    "url": "https://lifespan.io/rejuvenation-roundup-april-2026/"
+    "description": "Wearable partnership embeds continuous glucose and HRV data into Agentis' Longevity Quotient platform; separately Well Health-AliveCor AI-ECG AFib detection rolls out in Canada.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
   },
   {
-    "title": "NYT Magazine: Cellular Rejuvenation Has the Potential to Reverse Aging",
-    "source": "The New York Times",
-    "date": "2026-05-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "Long-form feature on partial reprogramming, Altos Labs, and the first safety trial of rejuvenation therapy in humans targeting glaucoma.",
-    "url": "https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html"
-  },
-  {
-    "title": "Junyue Cao on How the Body Ages, Cell by Cell",
-    "source": "Lifespan.io",
-    "date": "2026-05-07",
-    "category": "Research",
+    "title": "Want to Reverse Your Biological Age? Change What You Eat",
+    "source": "Inc. Magazine",
+    "date": "2026-05-13",
+    "category": "Protocols",
     "importance": "normal",
-    "description": "Rockefeller researcher discusses ultra-high-throughput single-cell technologies applied to mapping cellular hallmarks of aging across tissues.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "How Intestinal Aging Encourages Harmful Bacteria",
-    "source": "Lifespan.io",
-    "date": "2026-05-06",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Aging Cell study elucidates bidirectional relationship between intestinal epithelial aging and microbiome shifts that favor pathogenic species.",
-    "url": "https://lifespan.io/news/"
+    "description": "Inc. covers the Sydney study, noting older adults reducing animal-derived proteins and fats saw notable improvements in cholesterol, insulin, and blood pressure within four weeks.",
+    "url": "https://www.inc.com/lucia-auerbach/want-to-reverse-your-biological-age-new-study-says-to-change-what-you-eat/91343898"
   },
   {
     "title": "Q1 2026 Longevity Biotech Investment Hits $3.74B Across 49 Deals",
@@ -257,13 +248,22 @@
     "url": "https://longevity.technology/news/"
   },
   {
-    "title": "Inbrain Completes Enrollment in First Human Graphene Brain Interface Study",
-    "source": "Longevity.Technology",
-    "date": "2026-05-05",
-    "category": "Biotech",
+    "title": "NYT Magazine: Cellular Rejuvenation Has the Potential to Reverse Aging",
+    "source": "The New York Times",
+    "date": "2026-05-01",
+    "category": "Research",
+    "importance": "high",
+    "description": "Long-form feature on partial reprogramming, Altos Labs, and the first safety trial of rejuvenation therapy in humans targeting glaucoma.",
+    "url": "https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html"
+  },
+  {
+    "title": "Junyue Cao on How the Body Ages, Cell by Cell",
+    "source": "Lifespan.io",
+    "date": "2026-05-07",
+    "category": "Research",
     "importance": "normal",
-    "description": "First-in-human study of graphene-based neural interfaces fully enrolled, supporting future applications in age-related neurodegeneration.",
-    "url": "https://longevity.technology/news/"
+    "description": "Rockefeller researcher discusses ultra-high-throughput single-cell technologies applied to mapping cellular hallmarks of aging across tissues.",
+    "url": "https://lifespan.io/news/"
   },
   {
     "title": "Sleep Apnea, Intermittent Hypoxia, and p16-Mediated Senescence",
