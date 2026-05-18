@@ -1,70 +1,88 @@
 [
   {
-    "title": "Life Biosciences Lands $80M Series D for ER-100 Partial Reprogramming Trial",
+    "title": "Mayo Clinic Identifies First Aptamers That Selectively Tag Senescent Cells",
     "source": "AI Analysis",
-    "date": "2026-05-15",
-    "category": "Funding",
+    "date": "2026-05-17",
+    "category": "Research",
     "importance": "high",
-    "description": "Life Biosciences closed $80M Series D to fund Phase 1 of ER-100, its partial epigenetic 'cell reset' therapy targeting glaucoma and optic neuropathies. The raise crystallizes ER-100 as the first clinical-stage partial-reprogramming asset in humans, using retinal ganglion cell rejuvenation as a measurable beachhead before systemic aging-reversal applications.",
-    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
+    "description": "Mayo Clinic researchers in Aging Cell screened 100+ trillion synthetic DNA sequences and identified rare aptamers that bind selectively to surface proteins (notably a fibronectin variant) on senescent cells. The technology promises a cheaper, more adaptable alternative to antibodies and — critically — could eventually carry senolytic payloads directly to zombie cells, opening a precision-targeting frontier the field has lacked.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260515001733.htm",
     "top_development": true
   },
   {
-    "title": "Friday Biotech Rout: XBI -3.08%, SBIO -3.12%, ARKG -3.53%",
+    "title": "Mount Sinai Reverses Aging in Blood Stem Cells via Lysosome Reset",
     "source": "AI Analysis",
-    "date": "2026-05-15",
+    "date": "2026-05-17",
+    "category": "Research",
+    "importance": "high",
+    "description": "Mount Sinai team in Cell Stem Cell used a vacuolar ATPase inhibitor to calm hyperactive lysosomes in aged hematopoietic stem cells, restoring youthful regenerative function with an 8x increase in blood-forming ability ex vivo. The result identifies lysosomal hyperactivity as a central driver of stem cell aging and points toward immediate translational applications for age-related blood disorders, stem cell transplantation, and gene therapy conditioning.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm",
+    "top_development": true
+  },
+  {
+    "title": "Vitalist Bay 2026 Wraps After Four Days as Field's Premier Capital-Formation Event",
+    "source": "AI Analysis",
+    "date": "2026-05-17",
     "category": "Industry",
     "importance": "high",
-    "description": "Friday delivered a sector-wide biotech selloff with XBI -3.08%, SBIO -3.12%, ARKG -3.53%, IBB -2.63%, BBH -2.27%, and IDNA -2.47% all crushed alongside XLV -1.04%. Even med-devices (IHI -0.62%) and aging-population (AGNG -1.29%) participated — pure risk-off into the weekend, undoing Tuesday's rally and then some, with no longevity-specific catalyst beyond macro repositioning.",
-    "url": "http://www.newser.com/aticles-market/Longevity-Biotech-Stocks-Rally-as-27-Trillion-Healthcare-Transformation-Accelerates-Cell-Restoration-Focus-15-552",
-    "top_development": true
-  },
-  {
-    "title": "GeneRare Raises EUR 20M Series A for Microbial Genome Drug Discovery",
-    "source": "AI Analysis",
-    "date": "2026-05-15",
-    "category": "Funding",
-    "importance": "high",
-    "description": "GeneRare closed a EUR 20M ($21.6M) Series A to scale microbial genome scanning for novel natural-product molecules, having already identified 200+ hits in 2025. The fund expands libraries from plants, fungi, and marine sources with explicit ambitions toward geroprotectors including next-generation rapamycin analogs — adding AI-discovered natural products as a fourth pillar alongside small molecules, gene therapy, and cell therapy.",
-    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
-    "top_development": true
-  },
-  {
-    "title": "Vitalist Bay 2026 Day 2 Programming Anchored by AI x Bio and Replacement",
-    "source": "AI Analysis",
-    "date": "2026-05-15",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Vitalist Bay's second day at Berkeley's Lighthaven leaned heavily into AI x Bio and Replacement tracks, with startup pitch sessions accelerating capital formation in the morning slot. With 100+ speakers including Aubrey de Grey, Joe Betts-LaCroix, Michael Snyder and Morgan Levine across four days, the festival is now widely viewed as the field's annual private-market price discovery event.",
+    "description": "Vitalist Bay 2026 closed Sunday at Berkeley's Lighthaven after four days, 100+ speakers, 150+ workshops and 18 onsite health tests across Biotech, Investors, Replacement, Longevity Science, AI x Bio, and Biostasis tracks. The festival is now widely viewed as the field's annual private-market price discovery event, with capital formation an explicit operating goal alongside its scientific programming.",
     "url": "https://vitalistbay.com",
     "top_development": true
   },
   {
-    "title": "Noom Acquires 503A Compounding Pharmacy to Bundle GLP-1s with Longevity Coaching",
+    "title": "Life Biosciences ER-100 Partial Reprogramming Phase 1 Approaches Dosing",
     "source": "AI Analysis",
-    "date": "2026-05-15",
-    "category": "Industry",
+    "date": "2026-05-17",
+    "category": "Clinical Trials",
     "importance": "high",
-    "description": "Noom's vertical-integration play through acquisition of a 503A compounding pharmacy lets it dispense GLP-1s, peptides like sermorelin, and NAD+ alongside behavioral coaching for healthy aging. The move pairs app data with pharmacy access at scale — and validates the field's emerging GLP-1-as-first-longevity-drug thesis at the consumer go-to-market layer rather than purely in pharma R&D.",
-    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM",
+    "description": "Life Biosciences' AAV-delivered three-factor (OCT4/SOX2/KLF4) gene therapy moves toward dosing in up to 12 glaucoma patients followed by 6 NAION patients, with an antibiotic-controlled genetic switch and a 5+ year safety window. Monkey safety data showed no tumors or adverse signals — the c-Myc omission appears to have held, validating the cautious clinical path into the first human partial reprogramming trial.",
+    "url": "https://www.yahoo.com/news/articles/method-reverse-cellular-aging-tested-103000181.html",
     "top_development": true
   },
   {
-    "title": "Longevity Biotech Stocks Rally as $27T Healthcare Transformation Accelerates",
-    "source": "Newser / PR Newswire",
-    "date": "2026-05-14",
-    "category": "Industry",
+    "title": "Senescent Cell Targeting Pipeline Bifurcates: Detection vs Elimination",
+    "source": "AI Analysis",
+    "date": "2026-05-17",
+    "category": "Research",
     "importance": "high",
-    "description": "Sector-wide rally narrative builds around cell-restoration therapies as catalysts for a $27 trillion global healthcare transformation, though specific stock percentages were not disclosed.",
-    "url": "http://www.newser.com/aticles-market/Longevity-Biotech-Stocks-Rally-as-27-Trillion-Healthcare-Transformation-Accelerates-Cell-Restoration-Focus-15-552"
+    "description": "The Mayo Clinic aptamer breakthrough complements Imperial College's GPX4 chloroacetamides and Rubedo's RLS-1496 by giving the field its first precision targeting modality — a way to identify senescent cells before deciding whether to flag, image, or kill them. Combined with Mount Sinai's lysosome-reset rejuvenation work, the senescence playbook is now diversifying into clear detection, rejuvenation, and elimination lanes.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260515001733.htm",
+    "top_development": true
   },
   {
-    "title": "Longevity News Roundup: Life Biosciences $80M, GeneRare $21.6M, Noom Pharmacy",
+    "title": "Grad Student's Idea Sparks Mayo Clinic Aptamer-Based Senescence Detection",
+    "source": "ScienceDaily",
+    "date": "2026-05-15",
+    "category": "Research",
+    "importance": "high",
+    "description": "Aging Cell paper describes Mayo Clinic team's identification of rare aptamers that selectively bind senescent cell surface proteins — including a fibronectin variant — using a 100+ trillion sequence screen.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260515001733.htm"
+  },
+  {
+    "title": "Mount Sinai Reverses HSC Aging by Targeting Lysosomal Hyperactivity",
+    "source": "ScienceDaily",
+    "date": "2026-05-12",
+    "category": "Research",
+    "importance": "high",
+    "description": "Cell Stem Cell publication shows vacuolar ATPase inhibitor restored lysosomal function in aged HSCs, increasing blood-forming ability 8-fold ex vivo with improvements in mitochondria, epigenetics, and inflammation.",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm"
+  },
+  {
+    "title": "This Method to Reverse Cellular Aging Is About to Be Tested in Humans",
+    "source": "Yahoo / Original April 7 Feature",
+    "date": "2026-04-13",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Life Biosciences' partial reprogramming gene therapy will be tested in glaucoma and NAION patients with antibiotic-controlled three-factor delivery, 5+ year safety window, and David Sinclair as co-founder.",
+    "url": "https://www.yahoo.com/news/articles/method-reverse-cellular-aging-tested-103000181.html"
+  },
+  {
+    "title": "Life Biosciences Lands $80M Series D for ER-100 Phase 1",
     "source": "Longevity.Technology (YouTube)",
-    "date": "2026-04-10",
+    "date": "2026-05-15",
     "category": "Funding",
     "importance": "high",
-    "description": "Phil Newman and Nina Patrick cover Life Biosciences $80M Series D for ER-100 partial reprogramming Phase 1, GeneRare EUR 20M Series A, Noom 503A pharmacy buy, Annovis buntanetap Phase 3, Agentis-Ultrahuman wearables, and Peloton-Longevity Show partnership.",
+    "description": "$80M Series D funds Phase 1 of partial reprogramming cell reset therapy targeting glaucoma and optic neuropathies; alongside GeneRare EUR 20M Series A and Noom 503A pharmacy acquisition.",
     "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
   },
   {
@@ -73,8 +91,17 @@
     "date": "2026-05-14",
     "category": "Biotech",
     "importance": "high",
-    "description": "Avai Bio (OTCQB: AVAI) details its cell-based alpha-Klotho longevity therapy via Klothonova JV with Austrianova; data to be presented at Second Annual Klotho Conference in September.",
+    "description": "Avai Bio (OTCQB: AVAI) details cell-based alpha-Klotho longevity therapy via Klothonova JV with Austrianova; data to be presented at Second Annual Klotho Conference in September.",
     "url": "https://www.prnewswire.com/news-releases/a-unique-klotho-based-anti-aging-therapy-to-be-introduced-at-a-premier-longevity-forum-inside-avai-bios-cell-based-platform-approach-302771620.html"
+  },
+  {
+    "title": "Vitalist Bay 2026 Returns to Berkeley May 14-17",
+    "source": "Lifespan.io",
+    "date": "2026-03-12",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Vitalism Foundation's pop-up longevity festival at Lighthaven Berkeley with 100+ speakers, 150+ workshops, 18 onsite activities and health tests across six themes.",
+    "url": "https://lifespan.io/vitalist-bay-2026-returns-to-berkeley-may-14-17/"
   },
   {
     "title": "Dietary Changes in Older People Can Improve Biological Age",
@@ -82,17 +109,8 @@
     "date": "2026-05-12",
     "category": "Research",
     "importance": "high",
-    "description": "Aging Cell paper from Dr Caitlin Andrews shows 65-75 year olds who reduced fat or animal-based protein for four weeks registered measurable reductions in biological age via biomarker profile.",
+    "description": "Aging Cell paper shows 65-75 year olds who reduced fat or animal-based protein for four weeks registered measurable reductions in biological age via biomarker profile.",
     "url": "https://www.sydney.edu.au/news-opinion/news/2026/05/12/dietary-changes-in-older-people-can-improve--biological-age-.html"
-  },
-  {
-    "title": "Scientists Reversed Biological Age in Older Adults With 4-Week Diet Change",
-    "source": "ScienceDaily",
-    "date": "2026-05-12",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Coverage of the Sydney Aging Cell study highlights strongest reductions in the omnivorous higher-carb / lower-fat arm, with closest-to-baseline group showing no change.",
-    "url": "https://www.sciencedaily.com/releases/2026/05/260511213144.htm"
   },
   {
     "title": "Insilico Announces Industry's First Longevity Board",
@@ -127,17 +145,8 @@
     "date": "2026-04-10",
     "category": "Clinical Trials",
     "importance": "high",
-    "description": "Annovis's buntanetap, derived from the Calabar bean, reduces amyloid beta, tau, and alpha-synuclein translation in Phase 3 Alzheimer's and Parkinson's; sildenafil combos boost cerebral blood flow via NO-cGMP pathway.",
+    "description": "Annovis's buntanetap reduces amyloid beta, tau, and alpha-synuclein translation in Phase 3 Alzheimer's and Parkinson's; sildenafil combos boost cerebral blood flow via NO-cGMP pathway.",
     "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
-  },
-  {
-    "title": "Vitalist Bay 2026 Set to Spotlight Longevity's Next Phase",
-    "source": "Longevity.Technology",
-    "date": "2026-05-05",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Four-day Vitalist Bay festival at Lighthaven, Berkeley brings together researchers, founders, clinicians and investors across biotechnology, AI x Bio, biostasis, and health optimization.",
-    "url": "https://longevity.technology/news/vitalist-bay-2026-set-to-spotlight-longevitys-next-phase/"
   },
   {
     "title": "BioAge Labs R&D Day: BGE-102 Phase 1 Shows Big hsCRP Drops",
@@ -156,24 +165,6 @@
     "importance": "high",
     "description": "Spanish researchers in Experimental Gerontology showed creatine combined with power training improved BDNF, antioxidant defense, inflammation, and lower-limb function in 103 older adults over 16 weeks.",
     "url": "https://lifespan.io/creatine-shows-synergy-with-exercise-in-older-adults/"
-  },
-  {
-    "title": "Longevity News Roundup — Week 19, 2026",
-    "source": "Longevity.Technology",
-    "date": "2026-05-07",
-    "category": "Research",
-    "importance": "high",
-    "description": "Roundup examines multi-target Alzheimer's therapy, sugar glycation in aging, personalized CRISPR for Parkinson's, FDA real-time trials, and peptide platforms.",
-    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-19-2026/"
-  },
-  {
-    "title": "ARDD 12th Meeting Report — Toward Actionable Interventions in Human Aging",
-    "source": "EurekAlert",
-    "date": "2026-04-21",
-    "category": "Research",
-    "importance": "high",
-    "description": "Aging-US Volume 18 publishes the ARDD synthesis: epigenome as central regulator, partial cellular reprogramming, and systemic effects pointing to organ-wide rejuvenation.",
-    "url": "https://www.eurekalert.org/news-releases/1125036"
   },
   {
     "title": "New Senolytic Strategy Targets GPX4 in Ageing Cells",
@@ -203,22 +194,31 @@
     "url": "https://www.fiercebiotech.com/biotech/lilly-signs-275b-partnership-insilicos-ai-engine-pursuit-oral-therapeutics"
   },
   {
-    "title": "Agentis Partners Ultrahuman to Integrate CGM/HRV into Longevity Quotient",
+    "title": "Noom Acquires 503A Compounding Pharmacy for GLP-1/Peptide Distribution",
     "source": "Longevity.Technology (YouTube)",
-    "date": "2026-04-10",
+    "date": "2026-05-15",
     "category": "Industry",
-    "importance": "normal",
-    "description": "Wearable partnership embeds continuous glucose and HRV data into Agentis' Longevity Quotient platform; separately Well Health-AliveCor AI-ECG AFib detection rolls out in Canada.",
+    "importance": "high",
+    "description": "Noom buys 503A pharmacy to dispense GLP-1s, sermorelin, and NAD+ alongside behavioral coaching — vertical integration validates GLP-1 as first consumer-tier longevity drug.",
     "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
   },
   {
-    "title": "Want to Reverse Your Biological Age? Change What You Eat",
-    "source": "Inc. Magazine",
-    "date": "2026-05-13",
-    "category": "Protocols",
+    "title": "GeneRare Raises EUR 20M Series A for Microbial Genome Geroprotector Discovery",
+    "source": "Longevity.Technology (YouTube)",
+    "date": "2026-05-15",
+    "category": "Funding",
+    "importance": "high",
+    "description": "EUR 20M Series A scales microbial genome scanning for natural products; libraries from plants, fungi and marine sources targeting rapamycin analogs and other geroprotectors.",
+    "url": "https://www.youtube.com/watch?v=slPd4fn8aCM"
+  },
+  {
+    "title": "Longevity Biotech Stocks Rally Narrative Forms Around $27T Healthcare Transformation",
+    "source": "Newser / PR Newswire",
+    "date": "2026-05-14",
+    "category": "Industry",
     "importance": "normal",
-    "description": "Inc. covers the Sydney study, noting older adults reducing animal-derived proteins and fats saw notable improvements in cholesterol, insulin, and blood pressure within four weeks.",
-    "url": "https://www.inc.com/lucia-auerbach/want-to-reverse-your-biological-age-new-study-says-to-change-what-you-eat/91343898"
+    "description": "Industry narrative builds around cell-restoration therapies as catalysts for $27 trillion global healthcare transformation; specific stock percentages not disclosed.",
+    "url": "http://www.newser.com/aticles-market/Longevity-Biotech-Stocks-Rally-as-27-Trillion-Healthcare-Transformation-Accelerates-Cell-Restoration-Focus-15-552"
   },
   {
     "title": "Q1 2026 Longevity Biotech Investment Hits $3.74B Across 49 Deals",
@@ -239,15 +239,6 @@
     "url": "https://www.linkedin.com/posts/inexion_longevitymedicine-realworldevidence-heor-activity-7456009752804904960-KpV_"
   },
   {
-    "title": "Seragon SRN-901 Extends Median Lifespan 33% in Aged Mice",
-    "source": "Longevity.Technology",
-    "date": "2026-04-15",
-    "category": "Research",
-    "importance": "normal",
-    "description": "SRN-901 multipathway treatment of 18-month-old mice produced a 33% increase in median remaining lifespan plus reductions in frailty and tumor incidence.",
-    "url": "https://longevity.technology/news/"
-  },
-  {
     "title": "NYT Magazine: Cellular Rejuvenation Has the Potential to Reverse Aging",
     "source": "The New York Times",
     "date": "2026-05-01",
@@ -264,6 +255,15 @@
     "importance": "normal",
     "description": "Rockefeller researcher discusses ultra-high-throughput single-cell technologies applied to mapping cellular hallmarks of aging across tissues.",
     "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Seragon SRN-901 Extends Median Lifespan 33% in Aged Mice",
+    "source": "Longevity.Technology",
+    "date": "2026-04-15",
+    "category": "Research",
+    "importance": "normal",
+    "description": "SRN-901 multipathway treatment of 18-month-old mice produced a 33% increase in median remaining lifespan plus reductions in frailty and tumor incidence.",
+    "url": "https://longevity.technology/news/"
   },
   {
     "title": "Sleep Apnea, Intermittent Hypoxia, and p16-Mediated Senescence",
