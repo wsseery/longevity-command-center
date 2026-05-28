@@ -1,302 +1,303 @@
 [
   {
-    "title": "Insilico + Human Longevity sign multi-million-dollar deal to co-develop industry-first AI longevity foundation model",
+    "title": "Daewoong acquires Turn Bio age-reversal assets — Korea's first major OSK reprogramming deal",
     "source": "AI Analysis",
-    "date": "2026-05-26",
+    "date": "2026-05-27",
     "category": "Biotech",
     "importance": "high",
-    "description": "Insilico Medicine (3696.HK) and Human Life Foundation Models, a new subsidiary of J. Craig Venter's Human Longevity, formally announced a multi-million-dollar collaboration to build large-scale AI foundation models for human longevity — combining Insilico's Pharma.AI generative platform with HLI's multi-omic and clinical dataset. This is the strongest signal yet that AI drug discovery and clinical longevity data are converging into a single commercial platform.",
-    "url": "https://www.prnewswire.com/news-releases/insilico-medicine-and-human-longevity-announce-collaboration-to-co-develop-industry-first-ai-foundation-model-for-longevity-science-302781904.html",
-    "top_development": true
-  },
-  {
-    "title": "STAT longevity-as-industry survey: $8.5B 2024 capital, XPRIZE Healthspan + FDA Reagan-Udall talks signal regulatory turn",
-    "source": "AI Analysis",
-    "date": "2026-05-26",
-    "category": "Industry",
-    "importance": "high",
-    "description": "STAT's dispatch from Vitalist Bay confirms the longevity field has shifted from movement to industry, citing 2024 global investments doubling to $8.5B, XPRIZE Healthspan operating at scale, and FDA's Reagan-Udall Foundation now engaged with anti-aging regulators. Researcher Jamie Justice told the audience optimism is warranted because 'we have their attention.'",
-    "url": "https://www.statnews.com/2026/05/27/longevity-movement-shift-fringe-idea-to-big-business/",
-    "top_development": true
-  },
-  {
-    "title": "BGE-102 and UDP-003 cement two distinct druggable inflammaging axes",
-    "source": "AI Analysis",
-    "date": "2026-05-26",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Within 72 hours, BioAge's BGE-102 (NLRP3 inhibitor, 83-86% hsCRP reduction) and Cyclarity's UDP-003 (7-ketocholesterol clearance) both reported clean Phase 1 safety with biomarker engagement — establishing NLRP3 and cholesterol-oxidation damage as the two most clinically advanced inflammaging targets entering 2H 2026.",
-    "url": "https://www.gowinglife.com/early-evidence-suggests-an-experimental-drug-may-shrink-fatty-plaques/",
-    "top_development": true
-  },
-  {
-    "title": "Bezos vs Thiel longevity portfolios reframed as bull case for Altos, Unity, Sana — $314B therapeutic market projection",
-    "source": "AI Analysis",
-    "date": "2026-05-26",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Social Life Magazine catalog of Bezos and Thiel longevity bets — Altos ($3B), Unity, Nautilus, Sana, Denali plus Methuselah Foundation — anchors a $314B-by-2030 therapeutic-segment forecast and a 28% share of 2024 capital flowing to discovery platforms. The piece crystallizes how concentrated billionaire backing has become a structural feature of the field.",
-    "url": "https://sociallifemagazine.com/celebrities/bezos-thiel-longevity-investments/",
-    "top_development": true
-  },
-  {
-    "title": "Tozorakimab COPD Phase III win extends inflammaging franchise into respiratory aging",
-    "source": "AI Analysis",
-    "date": "2026-05-26",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "AstraZeneca's anti-IL-33 antibody tozorakimab met its primary endpoint in the Phase III MIRANDA COPD trial, the first major Phase III readout positioning an inflammaging mechanism for a primary geriatric pulmonary disease and reinforcing IL-33/ST2 as a durable druggable node across aging tissues.",
+    "description": "Korean pharma Daewoong acquired Turn Biotechnologies' partial-epigenetic-reprogramming platform, marking Asia's first major M&A move into OSK reprogramming as a longevity modality. Combined with Life Biosciences' ER-100 first dosing in March, partial reprogramming is now actively backed by both venture and large pharma capital.",
     "url": "https://longevity.technology/news/",
     "top_development": true
   },
   {
-    "title": "Insilico Medicine and Human Longevity announce collaboration to co-develop industry-first AI foundation model for longevity science",
+    "title": "Tau-targeting drug slows early Alzheimer's progression — neurodegeneration aging axis advances",
+    "source": "AI Analysis",
+    "date": "2026-05-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "New tau-targeting therapy reported clinically meaningful slowing of early Alzheimer's progression, extending the field's pivot beyond amyloid to direct tau pathology — a key node in brain aging. Combined with AlzeCure's ACD856 Phase Ib completion and AB Science's masitinib ALS survival signal, the neurodegenerative aging pipeline is accelerating.",
+    "url": "https://longevity.technology/news/",
+    "top_development": true
+  },
+  {
+    "title": "Repair Biotechnologies REP-0004 emerges as mRNA-LNP atherosclerosis-reversal candidate alongside Cyclarity",
+    "source": "AI Analysis",
+    "date": "2026-05-27",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Fight Aging interview with Repair Biotechnologies positions REP-0004, an mRNA lipid-nanoparticle therapy aimed at reducing intracellular free cholesterol, alongside Cyclarity's UDP-003 7-ketocholesterol clearance — converging the atherosclerosis-as-aging-damage thesis on two distinct druggable mechanisms heading into 2H 2026.",
+    "url": "https://www.fightaging.org",
+    "top_development": true
+  },
+  {
+    "title": "Universal mammalian aging clocks published — opens screen for cross-species geroprotectors",
+    "source": "AI Analysis",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "high",
+    "description": "Tyshkovskiy and Gladyshev (Harvard Medical) published universal biological aging markers shared across mammalian species — providing a framework to screen interventions in mice and rapidly translate findings to humans. The team explicitly framed the tool as a candidate-identification engine for lifespan-extending interventions.",
+    "url": "https://www.yahoo.com/news/science/articles/universal-aging-clocks-offer-clues-043000072.html",
+    "top_development": true
+  },
+  {
+    "title": "Kirkland Foresight talk: 15 active senolytic trials including ALSENLITE, SToMP-AD, SENSURV",
+    "source": "AI Analysis",
+    "date": "2026-05-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "James Kirkland (Mayo) detailed 15 active senolytic clinical trials in the senolytic network alone — including ALSENLITE pilot, SToMP-AD multicenter Alzheimer's trial, NIH-funded SENSURV (D+Q vs F vs placebo) starting June, plus ONR osteoarthritis trial and multiple COVID complications studies. The pipeline is now broad enough to support indication-level safety/efficacy verdicts.",
+    "url": "https://foresight.org/resource/clinical-trials-senolytics-dr-james-kirkland-mayo-clinic/",
+    "top_development": true
+  },
+  {
+    "title": "Daewoong acquires Turn Bio age-reversal assets",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Korean pharma Daewoong acquired Turn Biotechnologies' partial-reprogramming platform and assets, expanding Asian pharma footprint in epigenetic age-reversal modalities for the first time at major M&A scale.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Tau-targeting drug slows early Alzheimer's progression",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "New clinical readout shows tau-targeting therapy meaningfully slowing early Alzheimer's progression, extending the neurodegeneration aging pipeline beyond amyloid-centric approaches.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Retro Biosciences $1.8B moment: hopes up as Alzheimer's protein-clearance trial advances",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Coverage of Retro Biosciences' $1.8B valuation positions the company's autophagy-focused oral Alzheimer's trial, with no DLTs to date and August data expected, as the field's clearest pre-IPO catalyst.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "'The field has crossed a threshold of legitimacy' — longevity ecosystem maturation",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Longevity.Technology editorial framing argues the field has crossed a threshold of mainstream legitimacy in 2026, citing convergence of FDA Reagan-Udall engagement, XPRIZE Healthspan progress, $8.5B 2024 capital, and structural pharma M&A interest.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Top 30 finalists named for longevity pitch competition",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Longevity Investor Network announced top 30 finalists for its 2026 pitch competition, signaling deeper venture deal flow concentration around aging-focused startups across diagnostics, therapeutics, and digital health.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Longevity clinics face accountability era as consumer adoption scales",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Longevity.Technology reports rising regulatory and consumer scrutiny of longevity clinics — paralleling Florida emerging as a US hotbed for bio-age reversal — and pressure on operators to substantiate biological-age and healthspan claims.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "TreeFrog's 3D neural therapy targets Parkinson's decline",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "TreeFrog Therapeutics is advancing a 3D neural cell-therapy platform for Parkinson's, expanding cell-replacement approaches to neurodegeneration that intersect with brain-aging interventions.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Emagene.life, Adam Health launch men's AI longevity care",
+    "source": "Longevity.Technology",
+    "date": "2026-05-27",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Emagene.life and Adam Health launched an AI-driven longevity-care platform targeting men's-health protocols, joining the wave of clinic-tech hybrids commercializing personalized geroscience interventions.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "'Universal' aging clocks offer new clues to longevity therapies",
+    "source": "Yahoo / Harvard Medical School",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "high",
+    "description": "Tyshkovskiy and Gladyshev published universal biological aging markers shared across mammalian species — opening a framework for screening interventions in mice and rapidly translating to humans for candidate lifespan-extending therapies.",
+    "url": "https://www.yahoo.com/news/science/articles/universal-aging-clocks-offer-clues-043000072.html",
+    "top_development": false
+  },
+  {
+    "title": "James Kirkland Foresight talk: 15 active senolytic trials underway",
+    "source": "Foresight Institute",
+    "date": "2026-05-22",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Kirkland (Mayo Clinic) details the active senolytic clinical network — 15 trials including ALSENLITE, SToMP-AD, SENSURV (D+Q vs F vs placebo starting June), ONR-funded osteoarthritis study, plus COVID-FIS / FISETIN / COVFIS-HOME complications trials. Cautions senolytics should currently only be used in controlled trials.",
+    "url": "https://foresight.org/resource/clinical-trials-senolytics-dr-james-kirkland-mayo-clinic/",
+    "top_development": false
+  },
+  {
+    "title": "Repair Biotechnologies REP-0004: mRNA-LNP therapy to clear intracellular free cholesterol",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "Fight Aging interview details REP-0004 — Repair Biotechnologies' mRNA lipid-nanoparticle therapy designed to reduce excess intracellular free cholesterol, regress atherosclerotic plaque, and reverse fatty liver disease — adding a second damage-clearance modality alongside Cyclarity's UDP-003.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "SIRT6 overexpression reverses age-related chromatin accessibility changes in mouse liver",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "New murine study finds SIRT6 overexpression reverses age-related chromatin accessibility changes in male liver, reinforcing the sirtuin pathway as a tractable epigenetic-aging target.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "Retinal RetiAGE bio-age correlates with osteoporosis risk and fractures",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Study finds retinal biological age measured by RetiAGE clock correlates with osteoporosis risk, bone mineral density, and fracture incidence — reinforcing the multi-system coherence of aging-damage clocks for clinical screening.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "Aged CD8+ T cells and secreted factors drive hippocampal cognitive decline",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Research shows aged circulating CD8+ T cells and their secreted factors directly contribute to hippocampal cognitive decline, extending the immune-aging-brain axis and reinforcing the case for adaptive-immune rejuvenation in dementia prevention.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "Microglial senescence consolidated as Alzheimer's-driving aging mechanism",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Fight Aging review consolidates evidence that microglial senescence drives Alzheimer's pathology and discusses senolytics plus microglial depletion-repopulation as the most promising near-term interventions.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "PM2.5-attributable dementia deaths in China rose substantially 2000-2024",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Study reports PM2.5-attributable dementia deaths in China increased substantially from 2000 to 2024, with population aging the dominant driver post-2013, strengthening the air-pollution-as-aging-amplifier evidence base.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "WHO physical activity guidelines may underestimate optimal level",
+    "source": "Fight Aging",
+    "date": "2026-05-27",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Epidemiological review finds the standard 150 min/week moderate-to-vigorous activity recommendation likely understates the optimum for cardiovascular protection, supporting upward revision of geroprotective exercise targets.",
+    "url": "https://www.fightaging.org",
+    "top_development": false
+  },
+  {
+    "title": "BioAge BGE-102 Phase 1 hsCRP 83-86% knockdown — Phase 2 H1 2026",
+    "source": "Longevity.Technology",
+    "date": "2026-05-25",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "BioAge Labs reported clean Phase 1 for oral NLRP3 inhibitor BGE-102 with 87-93% of participants reaching hsCRP <2 mg/L; Phase 2 cardiovascular risk trial planned for H1 2026, data H2 2026.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "Insilico + Human Longevity AI longevity foundation model collaboration",
     "source": "PR Newswire",
     "date": "2026-05-26",
     "category": "Biotech",
     "importance": "high",
-    "description": "Insilico Medicine and newly-launched Human Life Foundation Models (a Human Longevity subsidiary) signed a multi-million-dollar deal to build large-scale foundation models combining Insilico's Pharma.AI with HLI's multi-omic clinical data, aiming for commercial deployment in predictive health and aging drug discovery.",
+    "description": "Insilico Medicine and Human Life Foundation Models (a Human Longevity subsidiary) signed a multi-million-dollar collaboration to build industry-first AI foundation models for longevity science, combining Insilico's Pharma.AI with HLI's multi-omic clinical data.",
     "url": "https://www.prnewswire.com/news-releases/insilico-medicine-and-human-longevity-announce-collaboration-to-co-develop-industry-first-ai-foundation-model-for-longevity-science-302781904.html",
     "top_development": false
   },
   {
-    "title": "STAT: Longevity movement shifts from fringe idea to big business",
-    "source": "STAT News",
+    "title": "AstraZeneca tozorakimab Phase III MIRANDA COPD primary endpoint hit",
+    "source": "Longevity.Technology",
+    "date": "2026-05-26",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "AstraZeneca's anti-IL-33 antibody tozorakimab met its primary endpoint in Phase III MIRANDA COPD trial, validating IL-33/ST2 as a druggable inflammaging axis in a major geriatric respiratory disease.",
+    "url": "https://longevity.technology/news/",
+    "top_development": false
+  },
+  {
+    "title": "ADM consumer report: healthy aging supplements pivot to functional versatility + scientific credibility",
+    "source": "Nutraceutical Business Review",
+    "date": "2026-05-28",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "ADM released a consumer report on healthy aging and longevity supplements arguing the winning path forward combines scientific credibility with functional versatility and consumer-centric design — signaling supplement-industry consolidation around evidence-based positioning.",
+    "url": "https://nutraceuticalbusinessreview.com/adm-releases-consumer-report-healthy-ageing-longevity",
+    "top_department": false,
+    "top_development": false
+  },
+  {
+    "title": "American Aging Association AGE 2026 session: aging science meets real-world application",
+    "source": "American Aging Association",
     "date": "2026-05-27",
     "category": "Industry",
-    "importance": "high",
-    "description": "Field dispatch from Vitalist Bay documents the transition of longevity from movement to industry, with $8.5B in 2024 funding, mainstream investor presence, and FDA's Reagan-Udall Foundation engaging on anti-aging drug regulation alongside XPRIZE Healthspan and ARPA-H.",
-    "url": "https://www.statnews.com/2026/05/27/longevity-movement-shift-fringe-idea-to-big-business/",
-    "top_development": false
-  },
-  {
-    "title": "AstraZeneca tozorakimab meets primary endpoint in Phase III MIRANDA COPD trial",
-    "source": "Longevity.Technology",
-    "date": "2026-05-26",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Anti-IL-33 antibody tozorakimab hit primary endpoint in Phase III COPD trial, validating the IL-33/ST2 inflammaging axis in a major geriatric respiratory disease and accelerating AZ's late-stage immunology longevity-adjacent pipeline.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "Bezos & Thiel longevity bets: how Silicon Valley structures the $314B aging market",
-    "source": "Social Life Magazine",
-    "date": "2026-05-27",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Detailed catalog of Bezos (Altos Labs $3B, Unity, Nautilus, Sana, Denali) and Thiel (Methuselah Foundation $3.5M, Unity co-investor) longevity portfolios, with projection that longevity therapeutics will reach $314B by 2030 and discovery platforms alone took 28% of 2024 longevity capital.",
-    "url": "https://sociallifemagazine.com/celebrities/bezos-thiel-longevity-investments/",
-    "top_development": false
-  },
-  {
-    "title": "Insilico forms longevity board chaired by Eli Lilly's Andrew Adams to oversee AI aging research",
-    "source": "Longevity.Technology",
-    "date": "2026-05-25",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "Insilico's newly-announced longevity advisory board, chaired by Eli Lilly Group VP of Molecular Discovery Andrew Adams, brings pharma-grade governance to the company's aging-focused drug discovery pipeline ahead of the Human Longevity collaboration.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "BioAge BGE-102 Phase 1 cuts hsCRP 83-86%, Phase 2 in H1 2026",
-    "source": "Longevity.Technology",
-    "date": "2026-05-25",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "BioAge Labs reported clean Phase 1 safety and biomarker engagement for oral NLRP3 inhibitor BGE-102 with 87-93% of participants reaching hsCRP <2 mg/L; Phase 2 cardiovascular risk trial planned for H1 2026 with readout H2 2026.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "Cyclarity UDP-003 Phase 1: first human evidence 7-ketocholesterol can be safely cleared",
-    "source": "Gowing Life",
-    "date": "2026-05-20",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Randomized double-blind Phase 1 in 84 participants showed UDP-003 dose-dependently increased urinary 7KC excretion with a 3-hour half-life and no serious adverse events, providing first clinical proof that the 7KC atherosclerosis-damage molecule is druggable.",
-    "url": "https://www.gowinglife.com/early-evidence-suggests-an-experimental-drug-may-shrink-fatty-plaques/",
-    "top_development": false
-  },
-  {
-    "title": "Retro Biosciences trial 'going super good', Phase 1 data expected August",
-    "source": "STAT News",
-    "date": "2026-05-22",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Retro CEO Joe Betts-LaCroix told STAT's Breakthrough Summit West that the company's autophagy-focused Alzheimer's Phase 1 has shown no dose-limiting toxicities and initial data is expected around August, anchoring the protein-clearance modality after the $1.8B valuation raise.",
-    "url": "https://www.statnews.com/2026/05/22/retro-biosciences-longevity-valuation/",
-    "top_development": false
-  },
-  {
-    "title": "Inbrain completes enrollment in first human graphene brain study",
-    "source": "Longevity.Technology",
-    "date": "2026-05-26",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Inbrain Neuroelectronics completed patient enrollment in the first-in-human study of its graphene brain-computer interface, a platform with direct relevance to neurodegenerative disease and brain-aging interventions.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "AlzeCure completes Phase Ib study of ACD856",
-    "source": "Longevity.Technology",
-    "date": "2026-05-25",
-    "category": "Clinical Trials",
     "importance": "normal",
-    "description": "AlzeCure Pharma completed Phase Ib of NeuroRestore candidate ACD856, advancing a TrkA/B-positive allosteric modulator approach for Alzheimer's and brain-aging targets toward Phase 2.",
-    "url": "https://longevity.technology/news/",
+    "description": "AGE 2026 Session 4 focuses on bridging aging science and real-world clinical/consumer application, reflecting the field's accelerating translation push alongside Vitalist Bay-style conference programming.",
+    "url": "https://www.facebook.com/AmericanAgingAssociation/posts/where-does-aging-science-meet-real-world-application-session-4-at-age-2026-takes/1394276036069974/",
     "top_development": false
   },
   {
-    "title": "AB Science links masitinib to survival benefit in ALS trial",
-    "source": "Longevity.Technology",
-    "date": "2026-05-25",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "AB Science reported survival benefit signal for masitinib in ALS, extending the tyrosine kinase inhibitor's case as a multi-indication geroprotective agent in neurodegenerative disease.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "Seragon SRN-901 extends median lifespan in mice — published study",
-    "source": "Longevity.Technology",
-    "date": "2026-05-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Seragon Biosciences disclosed lifespan-extension data for SRN-901 in murine studies, expanding the post-ITP geroprotector candidate roster with a new published mouse-lifespan dataset.",
-    "url": "https://longevity.technology/news/",
-    "top_development": false
-  },
-  {
-    "title": "Sheba Medical study: bio-age gap predicts mortality and hospitalization",
-    "source": "JNS",
-    "date": "2026-05-26",
-    "category": "Research",
-    "importance": "high",
-    "description": "Sheba Medical Center study finds each year by which biological age exceeds chronological age is associated with 15% higher mortality and 6% more hospitalizations, after adjusting for BMI, smoking, and hypertension — strengthening the clinical case for bio-age clocks as screening biomarkers.",
-    "url": "https://www.jns.org/news/israel-news/your-bodys-true-age-may-help-predict-future-illness-scientists-say",
-    "top_development": false
-  },
-  {
-    "title": "Buffalo team: TTP restoration reverses frailty in old mice",
-    "source": "ScienceDaily",
-    "date": "2026-05-19",
-    "category": "Research",
-    "importance": "high",
-    "description": "Engineering elderly mice to maintain TTP (tristetraprolin) — an RNA-binding protein that degrades pro-inflammatory transcripts — restored grip strength, gait, bone health, and immune profile; Blackshear lab is now screening small molecules that boost TTP expression.",
-    "url": "https://www.sciencedaily.com/releases/2026/05/260518041436.htm",
-    "top_development": false
-  },
-  {
-    "title": "Common diabetes drug linked to exceptional longevity in women",
-    "source": "ScienceAlert",
-    "date": "2026-05-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Observational analysis links a commonly prescribed diabetes drug with substantially elevated odds of reaching exceptional old age in women, reinforcing the case for metformin-class agents as candidate geroprotectors.",
-    "url": "https://www.sciencealert.com/a-common-diabetes-drug-is-linked-with-exceptional-longevity-in-women",
-    "top_development": false
-  },
-  {
-    "title": "Florida emerges as US hotbed for biological age reversal clinics",
+    "title": "Sun Sentinel: Florida emerges as US hub for bio-age-reversal clinics",
     "source": "Sun Sentinel",
     "date": "2026-05-26",
     "category": "Industry",
     "importance": "normal",
-    "description": "Sun Sentinel report finds Florida has become a major US center for clinics offering interventions to slow or reverse biological age, paralleling rapid expansion of consumer longevity infrastructure documented at Vitalist Bay.",
+    "description": "Sun Sentinel reports Florida has become a major US center for clinics offering biological age slow-down and reversal interventions, paralleling rapid consumer longevity infrastructure scale.",
     "url": "https://www.facebook.com/sunsentinel/posts/wide-ranging-studies-and-treatments-to-slow-down-or-reverse-biological-age-also-/1446977767473996/",
     "top_development": false
   },
   {
-    "title": "Public health editorial: 'from prevention to system-wide resilience' in age of longevity interventions",
-    "source": "University of Groningen",
-    "date": "2026-05-18",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New editorial in a public health journal argues longevity interventions require system-wide resilience frameworks rather than disease-by-disease prevention, signaling academic public health is engaging with the geroscience agenda.",
-    "url": "https://www.instagram.com/reel/DYka2b_v1KE/",
-    "top_development": false
-  },
-  {
-    "title": "Fight Aging: microglial senescence emerging as central Alzheimer's driver",
-    "source": "Fight Aging",
+    "title": "Common diabetes drug linked to 'exceptional longevity' in women",
+    "source": "ScienceAlert",
     "date": "2026-05-26",
     "category": "Research",
     "importance": "normal",
-    "description": "Fight Aging review consolidates evidence that microglial senescence is a tractable driver of Alzheimer's pathology, supporting brain-resident senolytic strategies as a near-term therapeutic axis.",
-    "url": "https://www.fightaging.org",
+    "description": "Observational analysis links a commonly prescribed diabetes drug with substantially elevated odds of reaching exceptional old age in women, reinforcing metformin-class agents as candidate geroprotectors.",
+    "url": "https://www.sciencealert.com/a-common-diabetes-drug-is-linked-with-exceptional-longevity-in-women",
     "top_development": false
   },
   {
-    "title": "Fight Aging: WHO physical activity guidelines reaffirmed as baseline geroprotector",
+    "title": "KHL Foundation pushes rejuvenation gene therapy packages for over-60s",
     "source": "Fight Aging",
-    "date": "2026-05-26",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Fight Aging summarizes new epidemiological work reinforcing WHO physical activity guidelines (150 min/week moderate or 75 min vigorous + resistance) as the most evidence-backed baseline geroprotective protocol for older adults.",
-    "url": "https://www.fightaging.org",
-    "top_development": false
-  },
-  {
-    "title": "Fight Aging: atherosclerosis therapies pivot toward damage-clearance vs LDL alone",
-    "source": "Fight Aging",
-    "date": "2026-05-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Fight Aging argues atherosclerosis intervention is shifting from pure LDL lowering toward direct clearance of aging-damage molecules like 7-ketocholesterol — citing Cyclarity's UDP-003 Phase 1 as the inflection point.",
-    "url": "https://www.fightaging.org",
-    "top_development": false
-  },
-  {
-    "title": "Vitalist Bay debates: NeuroAge dementia screening, organ-replacement timelines, NeoRhythm/Somnee biohacking",
-    "source": "STAT News",
     "date": "2026-05-27",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Vitalist Bay sessions surfaced NeuroAge brain MRI + blood biomarker dementia screening, KindBio xenotransplantation ethics, and consumer devices including NeoRhythm ($299) and Somnee ($489) headsets as protocol-layer interventions now reaching enthusiast adoption.",
-    "url": "https://www.statnews.com/2026/05/27/longevity-movement-shift-fringe-idea-to-big-business/",
-    "top_development": false
-  },
-  {
-    "title": "Wikipedia timeline of aging research consolidates 2025-26 milestones",
-    "source": "Wikipedia",
-    "date": "2026-05-24",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Wikipedia's Timeline of Aging Research entry consolidated 2025-26 milestones including Yamanaka-factor reprogramming results, GlyNAC lifespan extension, MPTR reprogramming, and Procyanidin C1 healthspan data — useful longitudinal index for field readers.",
-    "url": "https://en.wikipedia.org/wiki/Timeline_of_aging_research",
-    "top_development": false
-  },
-  {
-    "title": "Alex Zhavoronkov named to Business Insider's most innovative leaders list",
-    "source": "LinkedIn",
-    "date": "2026-05-20",
     "category": "Industry",
     "importance": "normal",
-    "description": "Insilico CEO Alex Zhavoronkov recognized as one of the most innovative leaders in healthcare by Business Insider, with Insilico now responsible for an estimated 70-80% of AI-generated drugs entering clinical trials.",
-    "url": "https://www.linkedin.com/pulse/ai-longevity-pioneer-alex-zhavoronkov-named-business-xr4ve",
-    "top_development": false
-  },
-  {
-    "title": "Cell Press: Hallmarks of Aging abstract submissions close June 5 for 2026 conference",
-    "source": "Cell Press",
-    "date": "2026-05-26",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Cell Press reminded researchers that abstract submissions for the 2026 Hallmarks of Aging conference close Friday June 5, marking the next field-wide consolidation moment for the framework now considered the field's dominant organizing paradigm.",
-    "url": "https://www.facebook.com/cellpress/posts/time-is-running-out-abstract-submission-for-hallmarks-of-aging-closes-friday-jun/1388499396632947/",
-    "top_development": false
-  },
-  {
-    "title": "Pharma services M&A themes: longevity emerging as discrete deal category",
-    "source": "Skytale Group",
-    "date": "2026-05-26",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Skytale Group analysis flags longevity as one of three themes reshaping pharma services M&A in 2026, alongside AI-powered CRO services and specialty pharmacy, signaling investor classification of longevity as a standalone industry segment.",
-    "url": "https://skytalegroup.com/blog/three-themes-reshaping-pharma-services-ma/",
+    "description": "Ken Scott / Helga Sands KHL Foundation is offering an open-access combination gene-therapy package for adults over 60 — a controversial first push to bring rejuvenation gene therapies directly to consumers ahead of clinical validation.",
+    "url": "https://www.fightaging.org",
     "top_development": false
   }
 ]
