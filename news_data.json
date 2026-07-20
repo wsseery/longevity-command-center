@@ -1,34 +1,277 @@
 [
-  {"title":"Rapamycin + Trametinib Combo Extends Mouse Lifespan 35% (Female) and 27% (Male)","source":"AI Analysis","date":"2026-06-29","category":"Research","importance":"high","description":"The biggest single longevity result of the week: combining two FDA-approved drugs (rapamycin + trametinib) extended median mouse lifespan by 34.9% in females and 27.4% in males, with max lifespan up 32% and 26% respectively. The combo also delayed tumor growth, preserved heart function, and reduced inflammation—though testicular degeneration and fatty liver were observed, calling for human dose-finding work.","url":"https://www.nmn.com/news/combining-two-fda-approved-drugs-prolongs-life-by-over-33","top_development":true},
-  {"title":"Oxford Aging Cell: Rapamycin Cuts T-Cell DNA Damage in Humans, Doubles Survival in Vitro","source":"AI Analysis","date":"2026-06-29","category":"Clinical Trials","importance":"high","description":"An Oxford study published in Aging Cell shows 1 mg/day oral rapamycin for 4 months in older men reduced T-cell DNA damage, mTOR hyperactivation, and cellular senescence markers, while doubling T-cell survival under stress in vitro. This is one of the clearest human-tissue mechanism readouts yet for rapamycin as an immune rejuvenator and supports the growing low-dose human protocol movement.","url":"https://www.nmn.com/news/life-extending-drug-rapamycin-protects-against-dna-damage-new-oxford-study","top_development":true},
-  {"title":"Stanford: 15-PGDH Inhibition Regrows Cartilage in Old Mice and Human Tissue","source":"AI Analysis","date":"2026-06-29","category":"Research","importance":"high","description":"Stanford Medicine reports that blocking the gerozyme 15-PGDH regrew lost knee cartilage in aged mice and triggered new cartilage formation in human samples collected during knee replacements. An oral version is already in clinical trials for muscle weakness, opening the door to a drug that could one day replace many knee and hip replacement surgeries.","url":"https://www.sciencedaily.com/releases/2026/06/260612021604.htm","top_development":true},
-  {"title":"Palvella Submits First Rolling NDA Module for QTORIN Topical Rapamycin","source":"AI Analysis","date":"2026-06-29","category":"Industry","importance":"high","description":"Palvella Therapeutics (Nasdaq: PVLA) submitted the first module of its rolling NDA to the FDA for QTORIN 3.9% rapamycin anhydrous gel for microcystic lymphatic malformations, on track to complete the filing in H2 2026. If approved, QTORIN would be the first FDA-approved topical rapamycin and a regulatory template for the broader topical mTOR-modulator longevity dermatology category.","url":"https://markets.businessinsider.com/news/stocks/palvella-therapeutics-submits-first-module-of-rolling-new-drug-application-to-fda-for-qtorin-rapamycin-for-the-treatment-of-microcystic-lymphatic-malformations-1036282381","top_development":true},
-  {"title":"Seragon SRN-901 Extends Remaining Lifespan of Middle-Aged Mice by 34%","source":"AI Analysis","date":"2026-06-29","category":"Biotech","importance":"high","description":"Seragon Biosciences announced that its lead longevity candidate SRN-901—shares technology lineage with RESTORIN—extended the remaining lifespan of middle-aged mice by ≈34% in one of the most comprehensive multi-year preclinical studies to date. The result reportedly outperforms rapamycin on lifespan extension and accelerates Seragon's path toward human translation.","url":"https://www.nmn.com/news/seragons-breakthrough-longevity-candidate-srn-901-dramatically-increases-lifespan-and-healthspan-in-preclinical-study","top_development":true},
-
-  {"title":"FDA-Approved Rapamycin + Trametinib Combo Extends Mouse Lifespan >30%","source":"NMN.com","date":"2026-06-25","category":"Research","importance":"high","description":"Combo outperforms either drug alone with 35% female / 27% male median lifespan gain and tumor + cardiac benefits; some testicular and liver side effects noted.","url":"https://www.nmn.com/news/combining-two-fda-approved-drugs-prolongs-life-by-over-33"},
-  {"title":"Oxford: Rapamycin Reduces T-Cell DNA Damage and Doubles Survival","source":"NMN.com","date":"2026-06-25","category":"Clinical Trials","importance":"high","description":"Aging Cell study shows 1 mg/day rapamycin in older men cuts T-cell DNA damage and senescence — direct human-tissue evidence for immune rejuvenation.","url":"https://www.nmn.com/news/life-extending-drug-rapamycin-protects-against-dna-damage-new-oxford-study"},
-  {"title":"Stanford 15-PGDH Inhibitor Regrows Knee Cartilage in Aged Mice","source":"ScienceDaily","date":"2026-06-29","category":"Research","importance":"high","description":"Blocking the gerozyme 15-PGDH restored lost cartilage in old mice and produced new cartilage in human knee-replacement tissue; oral version already in muscle-weakness trials.","url":"https://www.sciencedaily.com/releases/2026/06/260612021604.htm"},
-  {"title":"Palvella Submits First QTORIN Rapamycin NDA Module to FDA","source":"Business Insider","date":"2026-06-29","category":"Industry","importance":"high","description":"Rolling NDA for topical 3.9% rapamycin anhydrous gel for microcystic lymphatic malformations targets H2 2026 completion — first FDA-approved topical rapamycin would set the regulatory pathway.","url":"https://markets.businessinsider.com/news/stocks/palvella-therapeutics-submits-first-module-of-rolling-new-drug-application-to-fda-for-qtorin-rapamycin-for-the-treatment-of-microcystic-lymphatic-malformations-1036282381"},
-  {"title":"Seragon SRN-901 Boosts Remaining Lifespan of Middle-Aged Mice 34%","source":"NMN.com","date":"2026-06-24","category":"Biotech","importance":"high","description":"Multi-year preclinical study reports SRN-901 outperforms rapamycin on lifespan extension; full results to publish in coming months.","url":"https://www.nmn.com/news/seragons-breakthrough-longevity-candidate-srn-901-dramatically-increases-lifespan-and-healthspan-in-preclinical-study"},
-  {"title":"Rhodiola rosea Confirmed as Natural Senolytic in Multiple Mouse Models","source":"NMN.com","date":"2026-06-24","category":"Research","importance":"high","description":"Juntendo iScience study: Rosea extract counters hair loss, graying, skin decline, and improves metabolic health by clearing senescent cells.","url":"https://www.nmn.com/news/scientists-identify-a-new-natural-senolytic-that-counters-physical-aging"},
-  {"title":"Senolytic D+Q Phase 1 Confirms Safety in Alzheimer's Patients","source":"NMN.com","date":"2026-06-24","category":"Clinical Trials","importance":"high","description":"Dasatinib + quercetin trial shows safety but no cognition or MRI effects at small N; biomarker pattern suggests senescent cells were killed.","url":"https://www.nmn.com/news/preliminary-findings-from-clinical-trial-confirm-senolytic-therapys-safety-for-alzheimers"},
-  {"title":"Topical ABT-263 Rejuvenates Aged Skin and Speeds Wound Healing","source":"NMN.com","date":"2026-06-24","category":"Research","importance":"normal","description":"5-day topical senolytic ABT-263 cleared p16/p21 senescence markers and pushed 80% of aged mice to full wound closure by day 24 versus controls.","url":"https://www.nmn.com/news/scientists-discover-senolytic-treatment-that-rejuvenates-aging-skin-and-enhances-wound-healing"},
-  {"title":"Sentcell + UCL Launch First-In-Human T-Cell Rejuvenation Trial","source":"Refractor","date":"2026-06-24","category":"Clinical Trials","importance":"high","description":"Phase 1 trial led by Dr. Alessio Lanna at UCL will test an injectable therapy from Sentcell designed to reverse T-cell senescence in adults with immune dysfunction.","url":"https://refractor.io/aging/lifespan-extending-trial-immune-cells/"},
-  {"title":"Stanfield + Kaeberlein Rapamycin Strength Trial: 40 Older Adults, 13 Weeks","source":"NMN.com","date":"2026-06-24","category":"Clinical Trials","importance":"high","description":"Double-blind 6 mg/week rapamycin RCT tests muscle strength, endurance, biological age, and inflammation markers in adults 65-80 — readout expected late 2026.","url":"https://www.nmn.com/news/brad-stanfield-and-matt-kaeberleins-new-rapamycin-aging-clinical-trial-measuring-strength-and-endurance"},
-  {"title":"Retro Biosciences RTR242 Autophagy Drug Enters Phase 1 in Australia","source":"Rapamycin Longevity News","date":"2026-06-24","category":"Clinical Trials","importance":"normal","description":"Orally bioavailable, blood-brain-barrier-penetrant autophagy enhancer is mapping safety and MTD; Retro's three concurrent pipelines include reprogramming and plasma-inspired therapeutics.","url":"https://www.rapamycin.news/t/longevity-scientist-aging-is-a-disease-we-just-don-t-know-how-to-treat-yet-beyond-tomorrow-podcast/25409"},
-  {"title":"Nature Aging Paper Profiles D+Q Tissue-Specific Mechanisms","source":"Nature Aging / PubMed","date":"2026-06-17","category":"Research","importance":"normal","description":"Integrative transcriptomics + single-cell + histopathology show D+Q remodels immune function and tissue inflammation; early + prolonged dosing amplifies efficacy.","url":"https://pubmed.ncbi.nlm.nih.gov/42310394/"},
-  {"title":"Nature Aging: Hierarchical Endpoints and Win Statistics for Geromedicine Trials","source":"Micromolar / Nature Aging","date":"2026-06-24","category":"Clinical Trials","importance":"normal","description":"Statistical framework paper outlines how composite hierarchical endpoints could make multi-system geroprotector trials feasible at smaller N.","url":"https://micromolar.com/longevityandaging/nature-aging-hierarchical-endpoints-and-win-statistics-for-geromedicine-trials"},
-  {"title":"Senolytics Reduce Age-Related Bone Loss in Mice","source":"NMN.com","date":"2026-06-24","category":"Research","importance":"normal","description":"D+Q senolytic combination cut alveolar bone loss and root exposure in aged mice — bone-targeted senolytic mechanism confirmed.","url":"https://www.nmn.com/news/anti-aging-senolytics-slow-bone-loss-but-not-gum-disease"},
-  {"title":"Modern Aesthetics: mTORC1-Selective Topicals (RLX-201) Move Forward","source":"Modern Aesthetics","date":"2026-06-24","category":"Industry","importance":"normal","description":"Article surveys next-gen topical mTOR-modulators that selectively inhibit mTORC1 while preserving mTORC2 to protect skin barrier — Rapalogix RLX-201 highlighted.","url":"https://modernaesthetics.com/topics/regenerative-medicine/rethinking-anti-aging/48724/"},
-  {"title":"Bryan Johnson's Top 3 Anti-Aging Compounds: Rapamycin, Taurine, Acarbose","source":"NMN.com","date":"2026-06-24","category":"Protocols","importance":"normal","description":"Johnson pairs rapamycin + metformin + olive-oil bioavailability vehicle; monitors blood sirolimus level, body temp, metabolic panel.","url":"https://www.nmn.com/news/bryan-johnsons-top-three-anti-aging-compounds"},
-  {"title":"Kaeberlein Supplement Stack: Rapamycin, Vit D, Omega-3, Prebiotics, Magnesium","source":"NMN.com","date":"2026-06-24","category":"Protocols","importance":"normal","description":"Cyclic 12-week-on / 6-12-month-off rapamycin pattern; explicitly skeptical of NAD+ precursors absent better evidence.","url":"https://www.nmn.com/news/aging-expert-matt-kaeberleins-conservatively-assessed-supplement-stack"},
-  {"title":"David Sinclair Confirms On-and-Off Rapamycin Use; Diamandis at 6 mg/wk","source":"NMN.com","date":"2026-06-24","category":"Protocols","importance":"normal","description":"Abundance360 interview disclosure positions cyclic 6 mg-class rapamycin dosing as a mainstream physician-investor protocol.","url":"https://www.nmn.com/news/the-anti-aging-supplements-dr-david-sinclair-takes-daily-nmn-included"},
-  {"title":"Time-Restricted Eating Mitigates Muscle Aging — Oxford Nutrition Reviews","source":"OUP Nutrition Reviews","date":"2026-06-24","category":"Protocols","importance":"normal","description":"Meta-analysis links TRF/TRE to better mitochondrial function, autophagy, AMPK/mTOR signaling — a low-cost protocol with growing evidence.","url":"https://academic.oup.com/nutritionreviews/advance-article/doi/10.1093/nutrit/nuag095/8715607"},
-  {"title":"Fight Aging Newsletter June 29 — Epigenetic Reprogramming, Senescence, Trial Updates","source":"Fight Aging!","date":"2026-06-29","category":"Research","importance":"high","description":"Weekly digest synthesizes Sentcell T-cell trial launch, diverse interventions reducing epigenetic age, and the broadening senolytic + reprogramming pipeline.","url":"https://www.fightaging.org/"},
-  {"title":"\"Zombie Cells\" Aren't Always Bad — Senescence Has Beneficial Roles","source":"ScienceDaily","date":"2026-05-21","category":"Research","importance":"normal","description":"Recent research nuances senescence biology by identifying contexts where senescent cells aid wound healing and embryogenesis — calls for selective rather than blanket senolytics.","url":"https://www.sciencedaily.com/releases/2026/05/260521072402.htm"},
-  {"title":"New Drugs Target Senescent Cells to Improve Cancer Outcomes","source":"ScienceDaily","date":"2026-05-09","category":"Research","importance":"normal","description":"Three mouse cancer models show new senolytic agents reduce tumor size and extend survival — confirms cross-domain senescence drug strategy.","url":"https://www.sciencedaily.com/releases/2026/05/260509210646.htm"},
-  {"title":"Nasdaq: PVLA Among 6 Biotech Stocks With Massive 2026 Gains","source":"Nasdaq","date":"2026-06-24","category":"Industry","importance":"normal","description":"Palvella (+500%) makes the year's biggest biotech-mover list ahead of QTORIN rapamycin NDA completion — institutional investor flow into longevity-adjacent biotech accelerates.","url":"https://www.nasdaq.com/articles/6-biotech-stocks-delivered-stunning-gains-inbx-700-pvla-500-mbx-300-absi-200-more"},
-  {"title":"1440: Trametinib + Rapamycin Drug Combination Extends Mouse Lifespan","source":"1440","date":"2026-06-24","category":"Research","importance":"normal","description":"Mainstream newsletter coverage highlights the rapamycin + trametinib combo, broadening public awareness of additive longevity pharmacology.","url":"https://join1440.com/r/15689"},
-  {"title":"Bioworld In the Clinic Roundup — June 24, 2026","source":"BioWorld","date":"2026-06-24","category":"Clinical Trials","importance":"normal","description":"Industry digest enumerates this week's longevity-adjacent INDs, Phase 1 starts, and readouts across multiple geroscience platforms.","url":"https://www.bioworld.com/articles/732084-in-the-clinic-for-june-24-2026?v=preview"},
-  {"title":"Brain-Aging Protein Identified With Path to Inhibition","source":"ScienceDaily","date":"2026-04-05","category":"Research","importance":"normal","description":"Re-surfaced study identifies a specific protein driving brain aging and outlines an inhibition strategy now being explored by multiple labs.","url":"https://www.sciencedaily.com/releases/2026/04/260405065236.htm"}
-]
+  {
+    "title": "Engineered enzyme strips advanced glycation end-products to reverse age-related protein damage",
+    "source": "AI Analysis",
+    "date": "2026-07-19",
+    "category": "Research",
+    "importance": "high",
+    "description": "Researchers unveiled an engineered enzyme that removes advanced glycation end-products (AGEs) from proteins, directly targeting a long-standing driver of tissue stiffening and age-related dysfunction. If it translates, AGE-clearing enzymes could address damage that current interventions leave untouched.",
+    "url": "https://lifespan.io/news/",
+    "top_development": true
+  },
+  {
+    "title": "Restoring calcium-ion homeostasis with a repurposed antidepressant extends lifespan in aging mice",
+    "source": "AI Analysis",
+    "date": "2026-07-19",
+    "category": "Research",
+    "importance": "high",
+    "description": "Correcting disrupted calcium-ion homeostasis with an existing antidepressant significantly extended median lifespan in aged mice. The result strengthens the case for drug-repurposing approaches that target cellular ion balance as a hallmark of aging.",
+    "url": "https://lifespan.io/news/",
+    "top_development": true
+  },
+  {
+    "title": "Senolytic vaccine combined with mesenchymal stem cells shows synergistic rejuvenation in mice",
+    "source": "AI Analysis",
+    "date": "2026-07-19",
+    "category": "Research",
+    "importance": "high",
+    "description": "Pairing a senolytic vaccine that clears senescent cells with mesenchymal stem-cell therapy produced synergistic anti-aging effects in mice beyond either intervention alone. The combination points toward multi-modal rejuvenation protocols rather than single-agent bets.",
+    "url": "https://lifespan.io/news/",
+    "top_development": true
+  },
+  {
+    "title": "Tau-targeting antisense drug diranersen posts Phase 2 cognitive gains in early Alzheimer's",
+    "source": "AI Analysis",
+    "date": "2026-07-19",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Biogen and Ionis reported Phase 2 CELIA data showing the tau-targeting antisense therapy diranersen (BIIB080) meaningfully reduced tau and slowed cognitive decline in early Alzheimer's. Brain aging remains one of the highest-value fronts in the longevity field.",
+    "url": "https://www.alz.org/news/2026/phase-2-results-celia-clinical-trial-tau-targeting-therapy-diranersen",
+    "top_development": true
+  },
+  {
+    "title": "8-hour time-restricted eating raises male-mouse median lifespan by 12%",
+    "source": "AI Analysis",
+    "date": "2026-07-19",
+    "category": "Protocols",
+    "importance": "high",
+    "description": "A controlled study found that restricting feeding to an 8-hour daily window increased median lifespan in male mice by roughly 12%. The finding reinforces time-restricted eating as one of the most accessible, evidence-backed longevity protocols.",
+    "url": "https://lifespan.io/news/",
+    "top_development": true
+  },
+  {
+    "title": "Engineered enzyme reverses age-related protein damage",
+    "source": "Lifespan.io",
+    "date": "2026-07-17",
+    "category": "Research",
+    "importance": "high",
+    "description": "Scientists developed an enzyme that removes advanced glycation end-products from proteins to combat age-related molecular damage.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Activating GPR40 receptor fights thymic involution in mice",
+    "source": "Lifespan.io",
+    "date": "2026-07-16",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Targeting the GPR40 receptor delayed thymus aging and helped preserve immune function in aging mice.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Forever Healthy launches Evipedia AI integration",
+    "source": "Lifespan.io",
+    "date": "2026-07-15",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Forever Healthy introduced tools to open its longevity evidence database to AI research pipelines and agents.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Peripheral inflammation may drive Parkinson's disease",
+    "source": "Lifespan.io",
+    "date": "2026-07-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A study indicates peripheral tissue inflammation can spread to the brain via extracellular vesicles, implicating it in Parkinson's.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Gabriel Cian on building the 2060 longevity ecosystem",
+    "source": "Lifespan.io",
+    "date": "2026-07-13",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "An interview on how the longevity ecosystem is evolving, with lessons from the past year of investment and policy.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Combining senolytics and stem cells shows promise in mice",
+    "source": "Lifespan.io",
+    "date": "2026-07-10",
+    "category": "Research",
+    "importance": "high",
+    "description": "A senolytic vaccine combined with mesenchymal stem cells produced synergistic anti-aging effects in mouse studies.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "An experimental proposal for blocking ambient radiation",
+    "source": "Lifespan.io",
+    "date": "2026-07-09",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A perspective proposes underground laboratory facilities to test whether removing surface radiation slows aging.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Optimizing health guidelines toward optimal outcomes",
+    "source": "Lifespan.io",
+    "date": "2026-07-08",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "An analysis argues UK exercise and protein-intake guidelines should be optimized for better long-term health outcomes.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Rescuing calcium ion homeostasis extends mouse lifespan",
+    "source": "Lifespan.io",
+    "date": "2026-07-07",
+    "category": "Research",
+    "importance": "high",
+    "description": "Correcting disrupted calcium homeostasis with an antidepressant significantly extended lifespan in aging mice.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "How muscle loss and bone loss are related in aging",
+    "source": "Lifespan.io",
+    "date": "2026-07-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "New work clarifies the shared mechanisms linking sarcopenia and osteoporosis as the body ages.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Intermittent fasting increases lifespan in male mice",
+    "source": "Lifespan.io",
+    "date": "2026-07-03",
+    "category": "Protocols",
+    "importance": "high",
+    "description": "Time-restricted feeding to an 8-hour window increased median lifespan in male mice by about 12 percent.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Rejuvenation Roundup: June 2026",
+    "source": "Lifespan.io",
+    "date": "2026-07-01",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A monthly summary of advances across genomic approaches and other areas of aging research.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Study maps existing drugs to the hallmarks of aging",
+    "source": "Lifespan.io",
+    "date": "2026-06-30",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A network-analysis method predicts whether existing medications could extend human lifespan by acting on aging hallmarks.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "How a primate-specific RNA strand worsens senescence",
+    "source": "Lifespan.io",
+    "date": "2026-06-29",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers identified a primate-specific non-coding RNA linked to cellular senescence and aging.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Cell type-specific aging predicts disease onset",
+    "source": "Lifespan.io",
+    "date": "2026-06-26",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Cell-type-specific aging trajectories were shown to predict diseases including Alzheimer's and lung cancer.",
+    "url": "https://lifespan.io/news/"
+  },
+  {
+    "title": "Diranersen Phase 2 CELIA data show tau reduction and cognitive benefit",
+    "source": "Alzheimer's Association",
+    "date": "2026-07-14",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Biogen presented Phase 2 CELIA results showing the tau-targeting antisense therapy diranersen (BIIB080) reduced tau and delivered cognitive improvements in early Alzheimer's.",
+    "url": "https://www.alz.org/news/2026/phase-2-results-celia-clinical-trial-tau-targeting-therapy-diranersen"
+  },
+  {
+    "title": "FDA approves gedatolisib, first pan-PI3K/mTOR inhibitor for breast cancer",
+    "source": "Life Science Daily",
+    "date": "2026-07-14",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "The FDA approved Celcuity's gedatolisib (Revtorpyk); the pan-PI3K and mTOR inhibitor showed a 76% reduction in disease-progression risk in the VIKTORIA-1 trial, notable given mTOR's central role in aging.",
+    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
+  },
+  {
+    "title": "Bempikibart meets primary endpoint for hair regrowth in alopecia areata",
+    "source": "Life Science Daily",
+    "date": "2026-07-13",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Q32 Bio's SIGNAL-AA Phase 2a trial of the anti-IL-7 receptor antibody bempikibart achieved meaningful hair regrowth in severe alopecia areata.",
+    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
+  },
+  {
+    "title": "Denecimig long-term safety confirmed in hemophilia A extension study",
+    "source": "Life Science Daily",
+    "date": "2026-07-11",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "Novo Nordisk's Phase 3 FRONTIER4 extension confirmed sustained efficacy and favorable safety for the bispecific antibody denecimig.",
+    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
+  },
+  {
+    "title": "Vitamin B12 deficiency can mimic normal aging",
+    "source": "ScienceDaily",
+    "date": "2026-06-29",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A shortage of B12, though needed in tiny amounts, can produce significant energy and health impacts that resemble aging.",
+    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
+  },
+  {
+    "title": "Osteopenia is silently weakening bones in millions",
+    "source": "ScienceDaily",
+    "date": "2026-06-25",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The overlooked condition of reduced bone density is often discovered only after fractures occur.",
+    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
+  },
+  {
+    "title": "Butterfly that barely ages could help unlock longevity secrets",
+    "source": "ScienceDaily",
+    "date": "2026-06-22",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Heliconius butterflies show extended lifespans with minimal decline, offering clues to the biology of slow aging.",
+    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
+  },
+  {
+    "title": "Long-lived families reveal a rare genetic clue to healthy aging",
+    "source": "ScienceDaily",
+    "date": "2026-06-21",
+    "category": "Research",
+    "importance": "high",
+    "description": "Rare genetic variants in long-lived families may suppress inflammation and extend healthy lifespan.",
+    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
+  },
+  {
+    "title": "Yale study finds nearly half of older adults improved with age",
+    "source": "ScienceDaily",
+    "date": "2026-06-21",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Research contradicts aging stereotypes, finding physical and mental improvements in many adults over 65.",
+    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
+  },
+  {
+    "title": "Biotech VC funding tracker surpasses $18.0B raised year-to-date in 2026",
+    "source": "BioBucks",
+    "date": "2026-07-15",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "A continuously updated tracker of 2026 biotech venture rounds passed $18.0B raised year-to-date, reflecting sustained capital inflows into the sector including longevity-adjacent startups.",
+    "url": "https://www.biobucks.co/biotech-vc-funding-tracker-2026"
+  }
+    ]
