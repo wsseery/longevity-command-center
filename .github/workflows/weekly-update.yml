@@ -1,0 +1,36 @@
+name: Weekly Longevity Update
+on:
+  schedule:
+    - cron: "0 13 * * 2"      # Tue 09:00 ET (UTC; ~1h DST drift, acceptable per spec §2)
+  workflow_dispatch: {}         # allow manual run from the Actions tab
+permissions:
+  contents: write
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install anthropic yfinance
+      - name: Refresh dashboard data
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/update_dashboard.py
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "wsseery"
+          git config user.email "wsseery@gmail.com"
+          git add news_data.json finance.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "Weekly update — $(date -u +%Y-%m-%d) — $(python -c 'import json;print(len(json.load(open("news_data.json"))))') news items, 11 ETF prices"
+            git push
+            echo "Committed & pushed." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
