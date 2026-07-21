@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://longevity-command-center.netlify.app/sitemap.xml
+
