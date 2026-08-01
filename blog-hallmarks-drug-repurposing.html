@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A search engine for longevity drugs: network medicine maps the hallmarks of aging</title>
+  <meta name="description" content="A review of a 2026 Nature Aging study (Gross, Ehlert & Barabasi) that maps the hallmarks of aging across the human protein network and uses it to flag already-approved drugs worth repurposing for longevity, validated against mouse and human trial data.">
+  <link rel="canonical" href="https://longevity-command-center.netlify.app/blog-hallmarks-drug-repurposing.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:site_name" content="Longevity Command Center">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A search engine for longevity drugs: network medicine maps the hallmarks of aging">
+  <meta property="og:description" content="A review of a 2026 Nature Aging study (Gross, Ehlert & Barabasi) that maps the hallmarks of aging across the human protein network and uses it to flag already-approved drugs worth repurposing for longevity, validated against mouse and human trial data.">
+  <meta property="og:url" content="https://longevity-command-center.netlify.app/blog-hallmarks-drug-repurposing.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A search engine for longevity drugs: network medicine maps the hallmarks of aging">
+  <meta name="twitter:description" content="A review of a 2026 Nature Aging study (Gross, Ehlert & Barabasi) that maps the hallmarks of aging across the human protein network and uses it to flag already-approved drugs worth repurposing for longevity, validated against mouse and human trial data.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"A search engine for longevity drugs: network medicine maps the hallmarks of aging","description":"A review of a 2026 Nature Aging study (Gross, Ehlert & Barabasi) that maps the hallmarks of aging across the human protein network and uses it to flag already-approved drugs worth repurposing for longevity, validated against mouse and human trial data.","datePublished":"2026-07-27","dateModified":"2026-07-27","author":{"@type":"Person","name":"Bill Seery"},"publisher":{"@type":"Organization","name":"Longevity Command Center"},"mainEntityOfPage":"https://longevity-command-center.netlify.app/blog-hallmarks-drug-repurposing.html"}
+  </script>
+  <meta name="author" content="Bill Seery">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .hero-eyebrow,.hero-title,.hero-subtitle,.hero-intro,.hero-updated{opacity:1!important;transform:translateY(0)!important;animation:fadeUp 0.8s ease forwards!important}
+    .article-wrap{max-width:760px;margin:0 auto;padding:40px 24px 20px}
+    .article-meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+    .article-tag{display:inline-block;font-family:var(--font-heading);font-size:0.6rem;font-weight:600;padding:2px 10px;border-radius:100px;letter-spacing:0.3px;text-transform:uppercase;background:rgba(0,221,255,0.12);color:#66eeff;border:1px solid rgba(0,221,255,0.25)}
+    .article-tag.reset{background:rgba(168,124,255,0.12);color:#c4a6ff;border:1px solid rgba(168,124,255,0.25)}
+    .article-tag.data{background:rgba(0,255,136,0.12);color:#66ffaa;border:1px solid rgba(0,255,136,0.25)}
+    .article-title{font-family:var(--font-heading);font-size:2rem;font-weight:800;line-height:1.2;color:var(--text-primary);margin-bottom:14px;letter-spacing:-0.5px}
+    .article-standfirst{font-family:var(--font-heading);font-size:1.05rem;line-height:1.6;color:var(--text-secondary);margin-bottom:28px;font-weight:400}
+    .article-body{font-family:var(--font-mono);font-size:0.9rem;line-height:1.85;color:var(--text-primary)}
+    .article-body h2{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--cyan);margin:36px 0 12px;letter-spacing:0.2px}
+    .article-body p{margin-bottom:18px;color:#c4ccdc}
+    .article-body strong{color:var(--text-primary);font-weight:600}
+    .article-body a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,221,255,0.3)}
+    .article-body a:hover{color:var(--teal)}
+    .article-body ul{margin:0 0 18px 0;padding-left:20px;color:#c4ccdc}
+    .article-body li{margin-bottom:8px}
+    .callout{background:var(--bg-card);border:1px solid var(--border-bright);border-left:3px solid var(--cyan);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-family:var(--font-mono);font-size:0.82rem;line-height:1.7;color:var(--text-secondary)}
+    .callout strong{color:var(--cyan)}
+    .disclaimer{background:rgba(255,176,32,0.06);border:1px solid rgba(255,176,32,0.25);border-radius:var(--radius);padding:14px 18px;margin:32px 0 0;font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:#ffcc66}
+    .sources{margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
+    .sources h3{font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:12px}
+    .sources ol{font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:var(--text-secondary);padding-left:18px}
+    .sources a{color:var(--cyan-dim);text-decoration:none}
+    .sources a:hover{color:var(--cyan)}
+    .share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:28px 0 0;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}
+    .share-btn{font-family:var(--font-mono);font-size:0.68rem;color:var(--cyan);text-decoration:none;padding:6px 14px;border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s}
+    .share-btn:hover{background:rgba(0,221,255,0.1);border-color:var(--cyan)}
+    .backlink{display:inline-block;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);text-decoration:none;margin-bottom:24px;letter-spacing:0.5px}
+    .backlink:hover{color:var(--cyan)}
+    @media(max-width:600px){.article-title{font-size:1.5rem}}
+  </style>
+</head>
+<body>
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">News</a>
+        <a href="./blog.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Blog</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Protocols</a>
+      </div>
+    </div>
+  </nav>
+  <div style="height:52px;"></div>
+  <article class="article-wrap">
+    <a class="backlink" href="./blog.html">&larr; All posts</a>
+    <div class="article-meta">
+      <span class="article-tag data">Research &middot; Drug Repurposing</span>
+      <span>July 27, 2026</span>
+      <span>By Bill Seery</span>
+    </div>
+    <h1 class="article-title">A search engine for longevity drugs: <span class="highlight">network medicine maps the hallmarks of aging</span></h1>
+    <p class="article-standfirst">Instead of inventing new longevity drugs, a new <em>Nature Aging</em> study maps aging&rsquo;s hallmarks across the human protein network &mdash; and uses that map to flag existing, already-approved drugs worth repurposing.</p>
+    <div class="article-body">
+      <p>The last two posts here were about <em>doing</em> things to aging cells &mdash; <a href="./blog-cellular-repair.html">clearing molecular damage</a> and <a href="./blog-epigenetic-reprogramming.html">resetting the epigenome</a>. This one is about a prior question: <strong>out of every drug that already exists, which ones are even worth pointing at aging &mdash; and at which part of it?</strong> A new <em>Nature Aging</em> study takes a network-science swing at exactly that.</p>
+      <p>The paper is <a href="https://www.nature.com/articles/s43587-026-01161-8" target="_blank" rel="noopener noreferrer">&ldquo;Network-driven discovery of repurposable drugs targeting hallmarks of aging&rdquo;</a> (Gross, Ehlert &amp; Barab&aacute;si, with Gladyshev and Loscalzo; <em>Nature Aging</em>, June 2026). Barab&aacute;si is the network-science pioneer, and the approach here is pure network medicine: treat the cell as a giant map of interacting proteins, and ask where aging&rsquo;s machinery actually lives on that map.</p>
+      <h2>The problem it&rsquo;s attacking</h2>
+      <p>We know <em>thousands</em> of aging-related genes and we have a tidy list of the <strong>hallmarks of aging</strong> (inflammation, senescence, mitochondrial dysfunction, and so on). What we don&rsquo;t have is an efficient way to go from &ldquo;here are the mechanisms&rdquo; to &ldquo;here is a drug that safely nudges this specific mechanism.&rdquo; Testing every approved drug against every hallmark in the lab is hopeless. So the authors let the network do the triage.</p>
+      <h2>What they built</h2>
+      <p>They mapped <strong>2,358 longevity-associated genes</strong> (from the OpenGenes database) &mdash; and specifically the <strong>1,250 genes tied to 11 hallmarks</strong> &mdash; onto the human <strong>interactome</strong>: 524,156 known interactions among 18,223 proteins. The key finding is structural: <strong>9 of the 11 hallmarks form statistically distinct &ldquo;modules&rdquo;</strong> &mdash; tight neighborhoods on the network &mdash; and those modules all sit close together in one broader &ldquo;longevity module.&rdquo; Aging, in other words, isn&rsquo;t scattered randomly across the genome; it clusters.</p>
+      <p>Then they screened <strong>6,442 approved and experimental compounds</strong> from DrugBank by <strong>network proximity</strong> &mdash; does a drug&rsquo;s targets sit near a hallmark module? That flagged <strong>370 compounds</strong> near at least one hallmark. To separate the promising from the dangerous, they added a second filter, a metric called <strong>pAGE</strong>, using drug-induced gene-expression data (the Connectivity Map): does the drug&rsquo;s expression signature <em>counter</em> the shifts we see with age, or <em>reinforce</em> them?</p>
+      <div class="callout"><strong>The elegant part.</strong> Proximity says &ldquo;this drug acts near an aging mechanism.&rdquo; pAGE says &ldquo;&hellip;and it pushes that mechanism in a youthful direction.&rdquo; Of 60 candidates with expression data, <strong>21 scored as pro-longevity</strong> (positive pAGE) and, tellingly, <strong>23 scored as potentially age-<em>accelerating</em></strong> (negative pAGE) &mdash; a built-in warning list.</div>
+      <h2>Does the map actually predict reality?</h2>
+      <p>This is where it earns attention. Checked against drugs that <strong>actually extended lifespan in mice</strong> (the NIA Interventions Testing Program), the method flagged <strong>8 of 8 (100%)</strong> of those with expression data. Against drugs already in <strong>human longevity trials</strong>, it caught <strong>8 of 9 (88.9%)</strong>. The honest counterweight: a <strong>42.8% false-positive rate</strong> among drugs that <em>failed</em> to extend lifespan in mice &mdash; so it&rsquo;s a strong net, but a leaky one. One named candidate is <strong>oxymetazoline</strong> (an &alpha;-adrenergic agonist &mdash; yes, the nasal decongestant), flagged for anti-inflammatory network effects with a pAGE of 0.46.</p>
+      <h2>Why it matters for the &ldquo;next phase&rdquo;</h2>
+      <p>Repurposing a drug that has <em>already</em> cleared safety testing is dramatically faster and cheaper than inventing a new one. If the repair-and-reset therapies are the destination, this kind of work is the <strong>routing layer</strong> &mdash; a way to generate ranked, falsifiable hypotheses about which existing molecules to test against which hallmark, instead of guessing. It turns &ldquo;longevity drug discovery&rdquo; from a lottery into a search problem.</p>
+      <h2>The caveats worth keeping</h2>
+      <ul>
+        <li>These are <strong>computational predictions, not results</strong>. Every candidate still needs wet-lab and clinical validation &mdash; and roughly 4 in 10 flagged drugs won&rsquo;t pan out.</li>
+        <li>Most of the expression analysis leans on a single cell line (<strong>MCF7</strong>); aging is deeply <strong>tissue-specific</strong>, which the current pAGE doesn&rsquo;t capture.</li>
+        <li>pAGE ignores <strong>dose and nonlinear effects</strong>, and the Connectivity Map only covered 1,347 of the 6,442 compounds.</li>
+        <li>Some age-related expression changes may be <strong>protective</strong> (hormesis), so &ldquo;countering&rdquo; them isn&rsquo;t always good.</li>
+      </ul>
+      <p>And the obvious one: a drug appearing on a pro-longevity list is <strong>not</strong> a longevity treatment, and nothing here is a reason to self-prescribe. Oxymetazoline is a decongestant with real risks if misused &mdash; the study&rsquo;s value is a <em>research map</em>, not a medicine cabinet. What&rsquo;s genuinely new is the method: a reusable, testable framework for finding the next generation of longevity candidates hiding in plain sight.</p>
+    </div>
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Gross B., Ehlert J., Gladyshev V. N., Loscalzo J., Barab&aacute;si A.-L. <a href="https://www.nature.com/articles/s43587-026-01161-8" target="_blank" rel="noopener noreferrer">&ldquo;Network-driven discovery of repurposable drugs targeting hallmarks of aging.&rdquo;</a> <em>Nature Aging</em> 6, 1516&ndash;1531 (2026).</li>
+        <li>Related coverage: &ldquo;Study maps existing drugs to the hallmarks of aging&rdquo; &mdash; see the <a href="./news.html">Longevity Command Center news feed</a>.</li>
+      </ol>
+    </div>
+    <div class="share-row">
+      <span>Share:</span>
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://longevity-command-center.netlify.app/blog-hallmarks-drug-repurposing.html%3Futm_source%3Dlinkedin%26utm_medium%3Dsocial%26utm_campaign%3Dblog_launch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://longevity-command-center.netlify.app/blog-hallmarks-drug-repurposing.html%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3Dblog_launch&text=A%20search%20engine%20for%20longevity%20drugs%3A%20network%20medicine%20maps%20the%20hallmarks%20of%20aging" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+    </div>
+    <div class="disclaimer"><strong>Educational only.</strong> This article reviews a published study for informational purposes. It is not medical, health, or investment advice. Drugs named are computational research hypotheses, not recommended treatments &mdash; do not self-prescribe. Consult a qualified professional before making health or financial decisions.</div>
+  </article>
+  <footer class="site-footer">
+    <p>Editorial and educational content on longevity and aging science. For informational purposes only &mdash; not medical, health, or investment advice. Always consult a qualified professional before acting on health information.</p>
+    <div class="footer-links">
+      <a href="./index.html">Home</a><span class="footer-sep">&middot;</span>
+      <a href="./news.html">News Feed</a><span class="footer-sep">&middot;</span>
+      <a href="./blog.html">Blog</a><span class="footer-sep">&middot;</span>
+      <a href="https://longevity.technology" target="_blank" rel="noopener noreferrer">Longevity.Technology</a><span class="footer-sep">&middot;</span>
+      <a href="https://lifespan.io" target="_blank" rel="noopener noreferrer">Lifespan.io</a>
+    </div>
+  </footer>
+</body>
+</html>
