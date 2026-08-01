@@ -824,3 +824,37 @@ tr.peer-reviewed { border-left: 2px solid rgba(182, 120, 255, 0.4); }
 ::-webkit-scrollbar-track { background: var(--bg-deep); }
 ::-webkit-scrollbar-thumb { background: rgba(0, 221, 255, 0.2); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(0, 221, 255, 0.4); }
+
+/* ===== MOBILE TOP NAV (shared across all pages) ===== */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 8px 10px !important;
+    gap: 6px !important;
+  }
+  nav > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  nav > div > span {
+    text-align: center !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.5px !important;
+  }
+  nav > div > div {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+  nav a {
+    font-size: 0.62rem !important;
+    padding: 5px 10px !important;
+  }
+  .hero { padding-top: 118px !important; }
+  .article-wrap { padding-top: 70px !important; }
+}
