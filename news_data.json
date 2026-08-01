@@ -2,276 +2,271 @@
   {
     "title": "Engineered enzyme strips advanced glycation end-products to reverse age-related protein damage",
     "source": "AI Analysis",
-    "date": "2026-07-19",
+    "date": "2026-07-31",
     "category": "Research",
     "importance": "high",
-    "description": "Researchers unveiled an engineered enzyme that removes advanced glycation end-products (AGEs) from proteins, directly targeting a long-standing driver of tissue stiffening and age-related dysfunction. If it translates, AGE-clearing enzymes could address damage that current interventions leave untouched.",
+    "description": "An engineered enzyme that removes advanced glycation end-products (AGEs) from proteins is reversing a long-standing driver of tissue stiffening and age-related dysfunction. AGE-clearing enzymes could address cross-linking damage that current interventions leave untouched.",
     "url": "https://lifespan.io/news/",
     "top_development": true
   },
   {
-    "title": "Restoring calcium-ion homeostasis with a repurposed antidepressant extends lifespan in aging mice",
+    "title": "GPR40 agonism regenerates the aged thymus, restoring T-cell production in mice",
     "source": "AI Analysis",
-    "date": "2026-07-19",
+    "date": "2026-07-31",
     "category": "Research",
     "importance": "high",
-    "description": "Correcting disrupted calcium-ion homeostasis with an existing antidepressant significantly extended median lifespan in aged mice. The result strengthens the case for drug-repurposing approaches that target cellular ion balance as a hallmark of aging.",
+    "description": "A small-molecule GPR40 (fatty-acid receptor) agonist reversed thymic involution in aged mice, regenerating thymic tissue and restoring T-cell output. Rejuvenating the thymus is a direct lever on immune aging and inflammaging.",
     "url": "https://lifespan.io/news/",
     "top_development": true
   },
   {
-    "title": "Senolytic vaccine combined with mesenchymal stem cells shows synergistic rejuvenation in mice",
+    "title": "Boosting aquaporin-4 improves the brain's glymphatic waste clearance and cuts tau pathology",
     "source": "AI Analysis",
-    "date": "2026-07-19",
+    "date": "2026-07-31",
     "category": "Research",
     "importance": "high",
-    "description": "Pairing a senolytic vaccine that clears senescent cells with mesenchymal stem-cell therapy produced synergistic anti-aging effects in mice beyond either intervention alone. The combination points toward multi-modal rejuvenation protocols rather than single-agent bets.",
+    "description": "Enhancing aquaporin-4 water channels improved glymphatic drainage of cerebrospinal fluid and reduced tau pathology in mice, while loss of glymphatic drainage tracked Alzheimer's progression in patients. Brain waste-clearance is emerging as a tractable neurodegeneration target.",
+    "url": "https://www.fightaging.org/",
+    "top_development": true
+  },
+  {
+    "title": "Aging clocks face a reliability reckoning as short-term stress skews methylation results",
+    "source": "AI Analysis",
+    "date": "2026-07-31",
+    "category": "Research",
+    "importance": "high",
+    "description": "New work shows short-term biological stresses can significantly distort methylation-based epigenetic age, and a major review maps the capabilities and limits of aging clocks. Measurement noise has direct implications for trials that use clocks as endpoints.",
     "url": "https://lifespan.io/news/",
     "top_development": true
   },
   {
-    "title": "Tau-targeting antisense drug diranersen posts Phase 2 cognitive gains in early Alzheimer's",
+    "title": "Longevity's safety reckoning: an IV-infusion death, an unvetted peptide craze, and Montana's right-to-try expansion",
     "source": "AI Analysis",
-    "date": "2026-07-19",
-    "category": "Clinical Trials",
+    "date": "2026-07-31",
+    "category": "Industry",
     "importance": "high",
-    "description": "Biogen and Ionis reported Phase 2 CELIA data showing the tau-targeting antisense therapy diranersen (BIIB080) meaningfully reduced tau and slowed cognitive decline in early Alzheimer's. Brain aging remains one of the highest-value fronts in the longevity field.",
-    "url": "https://www.alz.org/news/2026/phase-2-results-celia-clinical-trial-tau-targeting-therapy-diranersen",
-    "top_development": true
-  },
-  {
-    "title": "8-hour time-restricted eating raises male-mouse median lifespan by 12%",
-    "source": "AI Analysis",
-    "date": "2026-07-19",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "A controlled study found that restricting feeding to an 8-hour daily window increased median lifespan in male mice by roughly 12%. The finding reinforces time-restricted eating as one of the most accessible, evidence-backed longevity protocols.",
+    "description": "A death after a NAD+ 'longevity infusion,' a surge of unvetted injectable peptides, and Montana recruiting longevity leaders to expand right-to-try access underline a widening gap between consumer longevity marketing and clinical evidence.",
     "url": "https://lifespan.io/news/",
     "top_development": true
   },
   {
-    "title": "Engineered enzyme reverses age-related protein damage",
+    "title": "Jose Pedro Castro on inflammation as a driver of aging",
     "source": "Lifespan.io",
-    "date": "2026-07-17",
+    "date": "2026-07-31",
     "category": "Research",
-    "importance": "high",
-    "description": "Scientists developed an enzyme that removes advanced glycation end-products from proteins to combat age-related molecular damage.",
-    "url": "https://lifespan.io/news/"
+    "importance": "normal",
+    "description": "An interview with Dr. Jose Pedro Castro on how chronic inflammatory processes contribute to core aging mechanisms.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
   },
   {
-    "title": "Activating GPR40 receptor fights thymic involution in mice",
+    "title": "Short-term stresses may undermine epigenetic clock results",
+    "source": "Lifespan.io",
+    "date": "2026-07-30",
+    "category": "Research",
+    "importance": "high",
+    "description": "Biological fluctuations from short-term stress can significantly affect the reliability of methylation-based epigenetic aging measurements.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "Montana's right-to-try law enters a new phase with longevity industry advisors",
+    "source": "Lifespan.io",
+    "date": "2026-07-28",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "Montana's experimental-treatment review board recruited three longevity industry leaders to help expand access to experimental therapies.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "How the immune system makes sun damage worse",
+    "source": "Lifespan.io",
+    "date": "2026-07-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Neutrophil extracellular traps worsen ultraviolet skin damage; inhibiting them was protective in studies.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "NYC woman dies after receiving a NAD+ 'longevity infusion'",
+    "source": "Lifespan.io",
+    "date": "2026-07-24",
+    "category": "Industry",
+    "importance": "high",
+    "description": "A death following an intravenous NAD+ infusion highlights the dangers of unproven longevity treatments given outside proper medical settings.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "More autophagy reduces toxin-induced kidney failure in aged mice",
+    "source": "Lifespan.io",
+    "date": "2026-07-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Enhancing autophagy protected against acute kidney injury in older mice, countering an age-related decline in cellular cleanup.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "The progress and future of biological aging clocks",
+    "source": "Lifespan.io",
+    "date": "2026-07-22",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A comprehensive review examines the development, capabilities, and limitations of biological aging measurement technologies.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "Structured training erases parts of the muscle aging signature",
+    "source": "Lifespan.io",
+    "date": "2026-07-21",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Planned exercise regimens protected against specific aspects of muscle aging better than general physical activity alone.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "Gabriel Cian on building the 2060 longevity investment ecosystem",
+    "source": "Lifespan.io",
+    "date": "2026-07-21",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "A follow-up interview on how the longevity investment ecosystem is evolving and lessons from the prior year's Forum.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "Stem-cell-derived exosomes fight liver disease in mice",
+    "source": "Lifespan.io",
+    "date": "2026-07-20",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers used stem-cell-derived exosomes to combat harmful metabolic changes in liver tissue.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
+  },
+  {
+    "title": "Activating GPR40 fights thymic involution in mice",
     "source": "Lifespan.io",
     "date": "2026-07-16",
     "category": "Research",
     "importance": "normal",
-    "description": "Targeting the GPR40 receptor delayed thymus aging and helped preserve immune function in aging mice.",
-    "url": "https://lifespan.io/news/"
+    "description": "Targeting the GPR40 receptor delayed thymic aging, potentially supporting immune-system maintenance in older organisms.",
+    "url": "https://lifespan.io/news/",
+    "top_development": false
   },
   {
-    "title": "Forever Healthy launches Evipedia AI integration",
-    "source": "Lifespan.io",
-    "date": "2026-07-15",
+    "title": "A conservative view on the current peptide craze",
+    "source": "Fight Aging!",
+    "date": "2026-07-29",
     "category": "Industry",
     "importance": "normal",
-    "description": "Forever Healthy introduced tools to open its longevity evidence database to AI research pipelines and agents.",
-    "url": "https://lifespan.io/news/"
+    "description": "Commentary on the regulatory gaps allowing unvetted injectable peptides to be marketed with minimal evidence.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "Peripheral inflammation may drive Parkinson's disease",
-    "source": "Lifespan.io",
-    "date": "2026-07-14",
+    "title": "Poor sleep quality correlates with pace of aging, but causation is mixed",
+    "source": "Fight Aging!",
+    "date": "2026-07-29",
     "category": "Research",
     "importance": "normal",
-    "description": "A study indicates peripheral tissue inflammation can spread to the brain via extracellular vesicles, implicating it in Parkinson's.",
-    "url": "https://lifespan.io/news/"
+    "description": "Sleep decline correlates with faster aging, though shared genetic factors may partly explain the relationship.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "Gabriel Cian on building the 2060 longevity ecosystem",
-    "source": "Lifespan.io",
-    "date": "2026-07-13",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "An interview on how the longevity ecosystem is evolving, with lessons from the past year of investment and policy.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "Combining senolytics and stem cells shows promise in mice",
-    "source": "Lifespan.io",
-    "date": "2026-07-10",
-    "category": "Research",
-    "importance": "high",
-    "description": "A senolytic vaccine combined with mesenchymal stem cells produced synergistic anti-aging effects in mouse studies.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "An experimental proposal for blocking ambient radiation",
-    "source": "Lifespan.io",
-    "date": "2026-07-09",
+    "title": "Age-related mitochondrial dysfunction reframed as a failure of adaptability",
+    "source": "Fight Aging!",
+    "date": "2026-07-28",
     "category": "Research",
     "importance": "normal",
-    "description": "A perspective proposes underground laboratory facilities to test whether removing surface radiation slows aging.",
-    "url": "https://lifespan.io/news/"
+    "description": "A model proposing mitochondrial aging stems from an inability to adjust ATP production to reduced cellular demand.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "Optimizing health guidelines toward optimal outcomes",
-    "source": "Lifespan.io",
-    "date": "2026-07-08",
-    "category": "Protocols",
+    "title": "Thymulin restrains inflammation but declines with age",
+    "source": "Fight Aging!",
+    "date": "2026-07-28",
+    "category": "Research",
     "importance": "normal",
-    "description": "An analysis argues UK exercise and protein-intake guidelines should be optimized for better long-term health outcomes.",
-    "url": "https://lifespan.io/news/"
+    "description": "The thymus-derived peptide thymulin suppresses inflammatory signaling and supports immune response, but falls with age.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "Rescuing calcium ion homeostasis extends mouse lifespan",
-    "source": "Lifespan.io",
-    "date": "2026-07-07",
+    "title": "Loss of glymphatic CSF drainage correlates with Alzheimer's progression",
+    "source": "Fight Aging!",
+    "date": "2026-07-28",
     "category": "Research",
     "importance": "high",
-    "description": "Correcting disrupted calcium homeostasis with an antidepressant significantly extended lifespan in aging mice.",
-    "url": "https://lifespan.io/news/"
+    "description": "Impaired brain-fluid drainage measured via MRI correlated with cognitive decline in Alzheimer's patients.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "How muscle loss and bone loss are related in aging",
-    "source": "Lifespan.io",
-    "date": "2026-07-06",
+    "title": "Reviewing what is known of immune system aging",
+    "source": "Fight Aging!",
+    "date": "2026-07-27",
     "category": "Research",
     "importance": "normal",
-    "description": "New work clarifies the shared mechanisms linking sarcopenia and osteoporosis as the body ages.",
-    "url": "https://lifespan.io/news/"
+    "description": "An overview of immune-organ decline, reduced lymphocyte production, and inflammaging mechanisms.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
   },
   {
-    "title": "Intermittent fasting increases lifespan in male mice",
-    "source": "Lifespan.io",
-    "date": "2026-07-03",
-    "category": "Protocols",
+    "title": "Clonal hematopoiesis (CHIP) linked to accelerated epigenetic age",
+    "source": "Fight Aging!",
+    "date": "2026-07-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Blood-cell mutations correlated with accelerated epigenetic aging measures in older adults.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
+  },
+  {
+    "title": "SORLA upregulation as a possible route to treat tauopathies",
+    "source": "Fight Aging!",
+    "date": "2026-07-24",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Increasing SORLA protein reduced tau accumulation and neurodegeneration in Alzheimer's disease models.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
+  },
+  {
+    "title": "Gut microbiome composition correlates with epigenetic clock results",
+    "source": "Fight Aging!",
+    "date": "2026-07-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Specific bacterial species predicted biological aging pace independent of chronological age.",
+    "url": "https://www.fightaging.org/",
+    "top_development": false
+  },
+  {
+    "title": "NewLimit raises $435M ahead of its first clinical trial",
+    "source": "STAT News",
+    "date": "2026-06-02",
+    "category": "Funding",
     "importance": "high",
-    "description": "Time-restricted feeding to an 8-hour window increased median lifespan in male mice by about 12 percent.",
-    "url": "https://lifespan.io/news/"
+    "description": "Epigenetic-reprogramming startup NewLimit raised $435M to advance toward its first human trial, one of the year's largest longevity rounds.",
+    "url": "https://www.statnews.com/2026/06/02/longevity-startup-newlimit-announces-435-million-clinical-trial-financing/",
+    "top_development": false
   },
   {
-    "title": "Rejuvenation Roundup: June 2026",
-    "source": "Lifespan.io",
-    "date": "2026-07-01",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "A monthly summary of advances across genomic approaches and other areas of aging research.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "Study maps existing drugs to the hallmarks of aging",
-    "source": "Lifespan.io",
-    "date": "2026-06-30",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A network-analysis method predicts whether existing medications could extend human lifespan by acting on aging hallmarks.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "How a primate-specific RNA strand worsens senescence",
-    "source": "Lifespan.io",
-    "date": "2026-06-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers identified a primate-specific non-coding RNA linked to cellular senescence and aging.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "Cell type-specific aging predicts disease onset",
-    "source": "Lifespan.io",
-    "date": "2026-06-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Cell-type-specific aging trajectories were shown to predict diseases including Alzheimer's and lung cancer.",
-    "url": "https://lifespan.io/news/"
-  },
-  {
-    "title": "Diranersen Phase 2 CELIA data show tau reduction and cognitive benefit",
-    "source": "Alzheimer's Association",
-    "date": "2026-07-14",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Biogen presented Phase 2 CELIA results showing the tau-targeting antisense therapy diranersen (BIIB080) reduced tau and delivered cognitive improvements in early Alzheimer's.",
-    "url": "https://www.alz.org/news/2026/phase-2-results-celia-clinical-trial-tau-targeting-therapy-diranersen"
-  },
-  {
-    "title": "FDA approves gedatolisib, first pan-PI3K/mTOR inhibitor for breast cancer",
-    "source": "Life Science Daily",
-    "date": "2026-07-14",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "The FDA approved Celcuity's gedatolisib (Revtorpyk); the pan-PI3K and mTOR inhibitor showed a 76% reduction in disease-progression risk in the VIKTORIA-1 trial, notable given mTOR's central role in aging.",
-    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
-  },
-  {
-    "title": "Bempikibart meets primary endpoint for hair regrowth in alopecia areata",
-    "source": "Life Science Daily",
-    "date": "2026-07-13",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Q32 Bio's SIGNAL-AA Phase 2a trial of the anti-IL-7 receptor antibody bempikibart achieved meaningful hair regrowth in severe alopecia areata.",
-    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
-  },
-  {
-    "title": "Denecimig long-term safety confirmed in hemophilia A extension study",
-    "source": "Life Science Daily",
-    "date": "2026-07-11",
-    "category": "Clinical Trials",
-    "importance": "normal",
-    "description": "Novo Nordisk's Phase 3 FRONTIER4 extension confirmed sustained efficacy and favorable safety for the bispecific antibody denecimig.",
-    "url": "https://lifesciencedaily.news/clinical-trials-roundup-17-july-2026/"
-  },
-  {
-    "title": "Vitamin B12 deficiency can mimic normal aging",
-    "source": "ScienceDaily",
-    "date": "2026-06-29",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A shortage of B12, though needed in tiny amounts, can produce significant energy and health impacts that resemble aging.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Osteopenia is silently weakening bones in millions",
-    "source": "ScienceDaily",
-    "date": "2026-06-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The overlooked condition of reduced bone density is often discovered only after fractures occur.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Butterfly that barely ages could help unlock longevity secrets",
-    "source": "ScienceDaily",
-    "date": "2026-06-22",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Heliconius butterflies show extended lifespans with minimal decline, offering clues to the biology of slow aging.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Long-lived families reveal a rare genetic clue to healthy aging",
-    "source": "ScienceDaily",
-    "date": "2026-06-21",
-    "category": "Research",
-    "importance": "high",
-    "description": "Rare genetic variants in long-lived families may suppress inflammation and extend healthy lifespan.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Yale study finds nearly half of older adults improved with age",
-    "source": "ScienceDaily",
-    "date": "2026-06-21",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Research contradicts aging stereotypes, finding physical and mental improvements in many adults over 65.",
-    "url": "https://www.sciencedaily.com/news/health_medicine/healthy_aging/"
-  },
-  {
-    "title": "Biotech VC funding tracker surpasses $18.0B raised year-to-date in 2026",
-    "source": "BioBucks",
-    "date": "2026-07-15",
+    "title": "Retro Biosciences valued at $1.8B in latest raise",
+    "source": "STAT News",
+    "date": "2026-05-22",
     "category": "Funding",
     "importance": "normal",
-    "description": "A continuously updated tracker of 2026 biotech venture rounds passed $18.0B raised year-to-date, reflecting sustained capital inflows into the sector including longevity-adjacent startups.",
-    "url": "https://www.biobucks.co/biotech-vc-funding-tracker-2026"
+    "description": "Cellular-reprogramming company Retro Biosciences reported a fundraising round valuing it at $1.8 billion.",
+    "url": "https://www.statnews.com/2026/05/22/retro-biosciences-longevity-valuation/",
+    "top_development": false
   }
-    ]
+]
