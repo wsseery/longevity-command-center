@@ -1,5 +1,45 @@
 [
   {
+    "title": "Rejuvenation Roundup July 2026",
+    "source": "Lifespan.io",
+    "date": "2026-08-03",
+    "category": "Industry",
+    "importance": "medium",
+    "description": "Lifespan.io's monthly digest recaps July 2026 across longevity research, treatments, and policy, a month of promising advances alongside at least one serious setback, plus interviews and community updates from across the field.",
+    "url": "https://lifespan.io/rejuvenation-roundup-july-2026/",
+    "top_development": false
+  },
+  {
+    "title": "A glymphatic drainage path found through the cribriform plate behind the nose",
+    "source": "Fight Aging!",
+    "date": "2026-08-03",
+    "category": "Research",
+    "importance": "high",
+    "description": "Cerebrospinal fluid drainage clears metabolic waste from the brain and slows with age, contributing to the protein aggregates behind neurodegeneration. Beyond the well-studied glymphatic vessels at the base of the brain, researchers describe a drainage path through the cribriform plate behind the nose, near where Alzheimer's begins in the olfactory bulb, pointing to a new target for restoring waste clearance.",
+    "url": "https://www.fightaging.org/archives/2026/08/the-cribriform-plate-path-for-cerebrospinal-fluid-drainage-also-has-a-glymphatic-system/",
+    "top_development": false
+  },
+  {
+    "title": "Reviewing the present state of development of senomorphic therapies",
+    "source": "Fight Aging!",
+    "date": "2026-08-03",
+    "category": "Research",
+    "importance": "medium",
+    "description": "A review of senomorphics, drugs that suppress the pro-inflammatory signaling of senescent cells rather than destroying them the way senolytics do. Even when under 1% of cells in a tissue are senescent, their signaling degrades surrounding cells and tissue structure, making suppression of that signaling a distinct therapeutic strategy that remains early in development.",
+    "url": "https://www.fightaging.org/archives/2026/08/reviewing-the-present-state-of-development-of-senomorphic-therapies/",
+    "top_development": false
+  },
+  {
+    "title": "Sex differences seen in a BCL-2/BCL-xL senolytic for intervertebral disc degeneration",
+    "source": "Fight Aging!",
+    "date": "2026-08-03",
+    "category": "Research",
+    "importance": "medium",
+    "description": "Researchers treated intervertebral disc degeneration in mice with a senolytic targeting BCL-2 and BCL-xL, proteins senescent cells rely on to evade programmed cell death. Outcomes were more modest than hoped and differed between the sexes, adding to evidence that age-related conditions, and their response to senolytic treatment, can vary between males and females.",
+    "url": "https://www.fightaging.org/archives/2026/08/differences-by-sex-observed-in-bcl-2-bcl-xl-senolytic-treatment-for-intervertebral-disc-degeneration/",
+    "top_development": false
+  },
+  {
     "title": "Engineered enzyme strips advanced glycation end-products to reverse age-related protein damage",
     "source": "AI Analysis",
     "date": "2026-07-31",
