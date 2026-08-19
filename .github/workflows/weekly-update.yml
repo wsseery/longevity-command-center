@@ -1,8 +1,8 @@
 name: Weekly Longevity Update
 on:
   schedule:
-    - cron: "0 13 * * 2"      # Tue 09:00 ET (UTC; ~1h DST drift, acceptable per spec §2)
-  workflow_dispatch: {}         # allow manual run from the Actions tab
+    - cron: "0 13 * * 2"   # Tue 09:00 ET (UTC; ~1h DST drift, acceptable per spec §2)
+  workflow_dispatch: {}     # allow manual run from the Actions tab
 permissions:
   contents: write
 concurrency:
@@ -16,14 +16,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install anthropic yfinance
+      # No ANTHROPIC_API_KEY needed — news is scraped from public RSS feeds.
+      - run: pip install feedparser yfinance
       - name: Refresh dashboard data
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/update_dashboard.py
+        # Pipe output to the run summary so news/price status (and any WARNING)
+        # is visible at a glance instead of failing silently.
+        run: python scripts/update_dashboard.py 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Commit & push if changed
         run: |
-          git config user.name  "wsseery"
+          git config user.name "wsseery"
           git config user.email "wsseery@gmail.com"
           git add news_data.json finance.html
           if git diff --staged --quiet; then
@@ -33,4 +34,3 @@ jobs:
             git push
             echo "Committed & pushed." >> "$GITHUB_STEP_SUMMARY"
           fi
-
