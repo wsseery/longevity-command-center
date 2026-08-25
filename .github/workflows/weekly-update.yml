@@ -19,6 +19,67 @@ jobs:
       # No ANTHROPIC_API_KEY needed — news is scraped from public RSS feeds.
       - run: pip install feedparser yfinance
       - name: Refresh dashboard data
+        shell: bash
+        run: |
+          set -o pipefail
+          python scripts/update_dashboard.py 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit & push if changed
+        shell: bash
+        run: |
+          git config user.name "wsseery"
+          git config user.email "wsseery@gmail.com"
+          git add news_data.json finance.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          CHANGED=$(git diff --staged --name-only | paste -sd', ')
+          COUNT=$(python -c 'import json;print(len(json.load(open("news_data.json"))))')
+          if git diff --staged --name-only | grep -qx 'news_data.json'; then
+            NEWS="news refreshed ($COUNT items)"
+          else
+            NEWS="news UNCHANGED"
+            echo "::warning::news_data.json did not change - the feed is going stale."
+          fi
+          git commit -m "Weekly update — $(date -u +%Y-%m-%d) — $NEWS — changed: $CHANGED"
+          # Resilient push: main can advance after checkout (a manual edit, or another
+          # run), which previously made a bare 'git push' fail non-fast-forward and lose
+          # the whole update (run #6, 2026-08-19). Rebase our freshly regenerated data
+          # files onto the latest main (ours wins any conflict) and retry.
+          pushed=false
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then pushed=true; break; fi
+            echo "push attempt $i rejected — rebasing onto latest main" >&2
+            git fetch origin main
+            git rebase -X theirs origin/main || git rebase --abort
+          done
+          if [ "$pushed" = true ]; then
+            echo "Committed & pushed: $CHANGED" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::push failed after 5 rebase attempts"
+            exit 1
+          fi
+name: Weekly Longevity Update
+on:
+  schedule:
+    - cron: "0 13 * * 2"   # Tue 09:00 ET (UTC; ~1h DST drift, acceptable per spec §2)
+  workflow_dispatch: {}     # allow manual run from the Actions tab
+permissions:
+  contents: write
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      # No ANTHROPIC_API_KEY needed — news is scraped from public RSS feeds.
+      - run: pip install feedparser yfinance
+      - name: Refresh dashboard data
         # Pipe output to the run summary so news/price status (and any WARNING)
         # is visible at a glance instead of failing silently.
         shell: bash
