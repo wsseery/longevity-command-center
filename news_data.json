@@ -1,142 +1,92 @@
 [
   {
-    "title": "Reviewing the Aging of the Gut Microbiome and Interventions Known to Improve Its Composition",
-    "source": "Fight Aging!",
-    "date": "2026-08-18",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The composition of the gut microbiome is influential on long term health and the progression of aging. Unfortunately, this composition changes with age for a range of reasons yet to be fully explored, but which include the decline of the immune system and growing leakage of the…",
-    "url": "https://www.fightaging.org/archives/2026/08/reviewing-the-aging-of-the-gut-microbiome-and-interventions-known-to-improve-its-composition/",
-    "top_development": false
-  },
-  {
-    "title": "In Search of Robust Biomarkers to Connect Cellular Senescence to Age-Related Chronic Inflammation",
-    "source": "Fight Aging!",
-    "date": "2026-08-18",
-    "category": "Research",
+    "title": "First human epigenetic reprogramming trial advances as FDA opens the door to rejuvenation medicine",
+    "source": "AI Analysis",
+    "date": "2026-08-23",
+    "category": "Clinical Trials",
     "importance": "high",
-    "description": "Senescent cells accumulate with age, and actively secrete pro-inflammatory signals. The present understanding of senescent cell biochemistry and animal studies of senescent cell clearance strongly suggest that senescent cells in aged tissues provide a major contribution to the…",
-    "url": "https://www.fightaging.org/archives/2026/08/in-search-of-robust-biomarkers-to-connect-cellular-senescence-to-age-related-chronic-inflammation/",
+    "description": "Life Biosciences has dosed its first Phase 1 patients with ER-100, an OSK partial-reprogramming gene therapy for optic neuropathies, the first time epigenetic reprogramming has been given to humans. Paired with the FDA's new Plausible Mechanism Pathway, it signals regulators warming to aging-reversal science.",
+    "url": "https://lifespan.io/life-bios-trial-is-the-fda-warming-to-rejuvenation/",
     "top_development": true
   },
   {
-    "title": "Quantifying the Reduction in Mortality Risk that Accompanies Physical Fitness",
-    "source": "Fight Aging!",
-    "date": "2026-08-18",
-    "category": "Protocols",
+    "title": "Senescence mapping goes granular: how aged cells spread dysfunction across brain and fat tissue",
+    "source": "AI Analysis",
+    "date": "2026-08-23",
+    "category": "Research",
+    "importance": "high",
+    "description": "New work details how five senescent brain-cell types signal neighbors into senescence, and how senescent fat cells release ANGPTL8 to drive inflammation and cardiometabolic risk. Together they sharpen senescence as a systemic, targetable driver of aging.",
+    "url": "https://lifespan.io/how-senescence-spreads-between-brain-cells/",
+    "top_development": true
+  },
+  {
+    "title": "AI 'virtual cell' models arrive as computation reshapes longevity R&D",
+    "source": "AI Analysis",
+    "date": "2026-08-23",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "GenBio, co-founded by Nobel laureate David Baker, launched a 'world model' of a cell that simulates cellular behavior, while a new transcriptomic clock ('Pasta') predicts the age-related effects of compounds and gene expression. Simulation-first discovery is becoming a core longevity toolset.",
+    "url": "https://lifespan.io/genbio-launches-a-virtual-cell-ai-model/",
+    "top_development": true
+  },
+  {
+    "title": "Longevity biotech funding surges, with epigenetic reprogramming leading the capital race",
+    "source": "AI Analysis",
+    "date": "2026-08-23",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Longevity biotech raised roughly $3.74B across 49 financings in Q1 2026, up 56% year over year, with reprogramming players like NewLimit and Life Biosciences capturing the largest rounds. Capital is concentrating in a handful of platform bets.",
+    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/",
+    "top_development": true
+  },
+  {
+    "title": "Longevity's safety and standards reckoning intensifies after infusion death and clinic self-regulation push",
+    "source": "AI Analysis",
+    "date": "2026-08-23",
+    "category": "Industry",
+    "importance": "high",
+    "description": "In the wake of a death after a NAD+ 'longevity infusion,' the field is moving to self-regulate: Longevity Clinics World and the Healthy Longevity Medicine Society signed an MOU on shared terminology, evidence standards, and accreditation, underscoring the gap between consumer marketing and clinical evidence.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-33-2026/",
+    "top_development": true
+  },
+  {
+    "title": "A Tougher Extracellular Matrix Strengthens Tendons in Rats",
+    "source": "Lifespan.io",
+    "date": "2026-08-24",
+    "category": "Research",
     "importance": "normal",
-    "description": "It is well established that physical fitness (and the level of activity and other lifestyle choices required to sustain it) correlate with a lower risk of mortality and longer life expectancy. Human data largely cannot provide evidence for causation, but that greater activity…",
-    "url": "https://www.fightaging.org/archives/2026/08/quantifying-the-reduction-in-mortality-risk-that-accompanies-physical-fitness/",
+    "description": "Researchers found that an upstream promoter of two extracellular matrix proteins improved healing and strength in rat tendons, pointing to a route for addressing age-related decline in connective tissue repair.",
+    "url": "https://lifespan.io/a-tougher-extracellular-matrix-strengthens-tendons-in-rats/",
     "top_development": false
   },
   {
-    "title": "GenBio Launches a “Virtual Cell” AI Model",
+    "title": "In ALS, Microglia Eat Living Neurons, Mistaking Them for Dead",
+    "source": "Lifespan.io",
+    "date": "2026-08-21",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A new study suggests that in ALS, and possibly other neurodegenerative diseases, the brain's immune cells devour stressed but still-living neurons, offering a potential intervention point for age-related neurodegeneration.",
+    "url": "https://lifespan.io/in-als-microglia-eat-living-neurons-mistaking-them-for-dead/",
+    "top_development": false
+  },
+  {
+    "title": "How Old Fat Cells Trigger Inflammation and Raise Risks",
+    "source": "Lifespan.io",
+    "date": "2026-08-20",
+    "category": "Research",
+    "importance": "high",
+    "description": "Using cohort studies and a mouse model, researchers found that ANGPTL8, a circulating factor produced by senescent fat cells, is linked to inflammation and elevated metabolic disease risk with age.",
+    "url": "https://lifespan.io/how-old-fat-cells-trigger-inflammation-and-raise-risks/",
+    "top_development": false
+  },
+  {
+    "title": "GenBio Launches a 'Virtual Cell' AI Model",
     "source": "Lifespan.io",
     "date": "2026-08-18",
-    "category": "Industry",
+    "category": "Biotech",
     "importance": "normal",
-    "description": "This AI startup, which lists Nobel laureate David Baker among its co-founders, has announced a “world model” of a cell that can simulate […]",
+    "description": "AI startup GenBio, which lists Nobel laureate David Baker among its co-founders, announced a 'world model' of a cell capable of simulating cellular behavior, a tool aimed at accelerating aging and disease research.",
     "url": "https://lifespan.io/genbio-launches-a-virtual-cell-ai-model/",
-    "top_development": false
-  },
-  {
-    "title": "Can AI put the cell back together?",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "GenBio AI’s AIDO Cell links DNA, RNA, protein and cellular behavior – and remembers what’s already happened to the cell. GenBio AI has launched AIDO Cell, a virtual cell system designed to simulate human cellular behavior across multiple biological layers within a single…",
-    "url": "https://longevity.technology/news/can-ai-put-the-cell-back-together/",
-    "top_development": false
-  },
-  {
-    "title": "Longeveron advances in $101m longevity prize",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Stem cell data showing durable frailty gains earn Longeveron a $1 million XPRIZE Healthspan milestone award. Part of a ten-part series profiling each of the $101 million XPRIZE Healthspan competition’s Milestone 2 Awardees. Across the series, Longevity.Technology examines the…",
-    "url": "https://longevity.technology/news/longeveron-advances-in-101m-longevity-prize/",
-    "top_development": true
-  },
-  {
-    "title": "AlzeCure’s $12m payday fuels new brain-aging therapy",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Funding",
-    "importance": "high",
-    "description": "A Danish biotech’s $12 million payment for AlzeCure’s drug platform could reshape the treatment of Alzheimer’s and Parkinson’s. Small biotechs live and die by a brutal math problem: great science, not enough cash to prove it. AlzeCure Pharma, a Stockholm-listed company working…",
-    "url": "https://longevity.technology/news/alzecures-12m-payday-fuels-new-brain-aging-therapy/",
-    "top_development": true
-  },
-  {
-    "title": "Halia bets on genetic resilience against Alzheimer’s",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New data links Halia’s Alzheimer’s program to a prevention trial targeting people at high genetic risk before symptoms appear. Alzheimer’s drug development has long focused on treating the disease once memory problems have already appeared. Halia Therapeutics believes that may…",
-    "url": "https://longevity.technology/news/halia-bets-on-genetic-resilience-against-alzheimers/",
-    "top_development": false
-  },
-  {
-    "title": "Mesoblast completes patient dosing in Phase 3 trial for chronic low back pain treatment",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Mesoblast has completed patient treatment in the MSB-DR004 pivotal randomized, placebo-controlled Phase 3 trial of rexlemestrocel-L for chronic low back pain associated with degenerative disc disease, with 350 patients randomized and treated. The treated population increased…",
-    "url": "https://longevity.technology/news/mesoblast-completes-patient-dosing-in-phase-3-trial-for-chronic-low-back-pain-treatment/",
-    "top_development": true
-  },
-  {
-    "title": "Amylyx to share Phase 3 results for low blood sugar treatment after weight loss surgery",
-    "source": "Longevity.Technology",
-    "date": "2026-08-18",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Amylyx Pharmaceuticals will announce topline results from its Phase 3 Lucidity clinical trial of Avexitide in post-bariatric hypoglycemia on 18 August 2026, and will host a conference call and audio webcast at 8:00 a.m. ET. The live webcast will be available through the…",
-    "url": "https://longevity.technology/news/amylyx-to-share-phase-3-results-for-low-blood-sugar-treatment-after-weight-loss-surgery/",
-    "top_development": true
-  },
-  {
-    "title": "STAT+: Pharmalittle: We’re reading about a setback for Eyepoint, a win for Amylyx, and more",
-    "source": "STAT News",
-    "date": "2026-08-18",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Eyepoint disclosed that a Phase 3 trial of its experimental treatment for a common cause of age-related blindness fell short of its primary goal",
-    "url": "https://www.statnews.com/pharmalot/2026/08/18/eyepoint-blindness-treatment-setback-amylyx-avexitide-win/?utm_campaign=rss",
-    "top_development": false
-  },
-  {
-    "title": "Reprogramming of Corticospinal Neurons Improves Recovery of Function in Mice Following Stroke",
-    "source": "Fight Aging!",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "high",
-    "description": "Rehabilitation following a stroke that causes significant loss of function is a slow, painful, and uncertain process. The concept underlying these efforts is that the brain will attempt to rebuild neural connections given sufficient efforts to use lost and diminished function…",
-    "url": "https://www.fightaging.org/archives/2026/08/reprogramming-of-corticospinal-neurons-improves-recovery-of-function-in-mice-following-stroke/",
-    "top_development": false
-  },
-  {
-    "title": "The Aged Immune System Fails to Clear Senescent Cells",
-    "source": "Fight Aging!",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Cells become senescent constantly throughout life, in response to damage, stress, or reaching the Hayflick limit on replication. A senescent cell ceases to replicate, grows in size, and begins to secrete a potent mix of pro-inflammatory signals. In youth, the immune system…",
-    "url": "https://www.fightaging.org/archives/2026/08/the-aged-immune-system-fails-to-clear-senescent-cells/",
-    "top_development": false
-  },
-  {
-    "title": "The State of Stem Cell Therapies",
-    "source": "Fight Aging!",
-    "date": "2026-08-17",
-    "category": "Industry",
-    "importance": "high",
-    "description": "First generation stem cell therapies that use a variety of cell sources and protocols are widely used in the medical tourism industry. A more limited set of such therapies are used in more regulated medical systems. The aspirational goal in the field of stem cell medicine is to…",
-    "url": "https://www.fightaging.org/archives/2026/08/the-state-of-stem-cell-therapies/",
     "top_development": false
   },
   {
@@ -144,139 +94,29 @@
     "source": "Lifespan.io",
     "date": "2026-08-17",
     "category": "Research",
-    "importance": "normal",
-    "description": "Researchers have gone into deep detail regarding how each of five senescent brain cell types expresses and receives factors that encourage other cells […]",
+    "importance": "high",
+    "description": "Researchers detailed how each of five senescent brain-cell types expresses and receives factors that push neighboring cells toward senescence, mapping a mechanism behind spreading brain aging.",
     "url": "https://lifespan.io/how-senescence-spreads-between-brain-cells/",
     "top_development": false
   },
   {
-    "title": "What the body’s early warning system is really telling us",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "New biomarkers promise early disease detection, but doctors using them daily struggle to weigh the value of these warnings. There’s a kind of frustration that drives people out of conventional medicine and into prevention. For Dr Alexandru Ardelean, a specialist in internal…",
-    "url": "https://longevity.technology/news/what-the-bodys-early-warning-system-is-really-telling-us/",
-    "top_development": false
-  },
-  {
-    "title": "AI needs a tougher drug discovery test",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Insilico Medicine launches a real-world benchmark designed to reveal whether AI can truly discover new medicines – not just ace exams. Artificial intelligence has become one of the pharmaceutical industry’s favorite trends, promising to speed up everything from identifying…",
-    "url": "https://longevity.technology/news/ai-needs-a-tougher-drug-discovery-test/",
-    "top_development": false
-  },
-  {
-    "title": "Biological age clocks face a regulatory reckoning",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Designerly’s Cooper Adwin explains why the ‘Biological Age’ metric Is threatening to derail longevity venture capital. Longevity venture capital is experiencing a breakout moment, with billions flowing into companies developing proprietary biological age clocks. Companies…",
-    "url": "https://longevity.technology/news/biological-age-clocks-face-a-regulatory-reckoning/",
-    "top_development": false
-  },
-  {
-    "title": "Venus Healthcare Homes joins Global Coalition on Aging for SEF26",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The Global Coalition on Aging announced Venus Healthcare Homes as a Forum Partner for Silver Economy Forum 2026, which will be held in Kuala Lumpur, Malaysia, on 11-12 November 2026. SEF26 is jointly convened by the Global Coalition on Aging and the Malaysian Healthy Ageing…",
-    "url": "https://longevity.technology/news/venus-healthcare-homes-joins-global-coalition-on-aging-for-sef26/",
-    "top_development": false
-  },
-  {
-    "title": "Insilico introduces biological age to virtual cell research",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Insilico launched a Virtual Aging Cell webpage and previewed a multi-agent-driven VAC generation platform. The company claims the platform treats biological age as a core conditional variable and employs a multi-agent AI architecture to reason across six biological scales, from…",
-    "url": "https://longevity.technology/news/insilico-introduces-biological-age-to-virtual-cell-research/",
-    "top_development": false
-  },
-  {
-    "title": "Amprion partners with MLM Medical Labs to expand α-synuclein testing",
-    "source": "Longevity.Technology",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Amprion has entered a strategic licensing collaboration with MLM Medical Labs to expand α-synuclein seed amplification assay testing across Europe. Under the agreement, Amprion will license the SAA methodology that powers its SAAmplify-αSYN test, enabling MLM to validate and…",
-    "url": "https://longevity.technology/news/amprion-partners-with-mlm-medical-labs-to-expand-%ce%b1-synuclein-testing/",
-    "top_development": false
-  },
-  {
-    "title": "A little-known protein may be fueling Alzheimer’s — and scientists found a way to block it",
-    "source": "ScienceDaily",
-    "date": "2026-08-17",
-    "category": "Funding",
-    "importance": "high",
-    "description": "An experimental Alzheimer’s compound prevented damaging protein clumps from forming in the brains of mice, helping nerve cells survive longer and reducing amyloid buildup. The treatment also appeared to improve heart health and slow some signs of aging, raising hopes for an…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
-    "top_development": false
-  },
-  {
-    "title": "Fight Aging! Newsletter, August 17th 2026",
+    "title": "Fight Aging! Newsletter: Weekly Longevity Research Digest, August 17th 2026",
     "source": "Fight Aging!",
-    "date": "2026-08-16",
+    "date": "2026-08-17",
     "category": "Research",
     "importance": "normal",
-    "description": "Fight Aging! publishes news and commentary relevant to the goal of ending all age-related disease, to be achieved by bringing the mechanisms of aging under the control of modern medicine. This weekly newsletter is sent to thousands of interested subscribers. To subscribe to the…",
-    "url": "https://www.fightaging.org/archives/2026/08/fight-aging-newsletter-august-17th-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Why Do Myesthenia Gravis Patients Live Five Years Longer than the General Population?",
-    "source": "Fight Aging!",
-    "date": "2026-08-14",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Myesthenia gravis is a rare autoimmune condition in which a specific receptor needed for nerve impulses to pass through the neuromuscular junction to active muscle fibers is blocked or destroyed by immune activity. This leads to muscle weakness that varies over time, and can…",
-    "url": "https://www.fightaging.org/archives/2026/08/why-do-myesthenia-gravis-patients-live-five-years-longer-than-the-general-population/",
-    "top_development": false
-  },
-  {
-    "title": "How Tauopathy Promotes Mitochondrial Dysfunction, and Prospects for Sabotaging that Mechanism",
-    "source": "Fight Aging!",
-    "date": "2026-08-14",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Tauopathies emerge in the aging brain, a pathological level of phosphorylation of the tau protein that is disruptive to cell function. Evidence suggests a feedback loop between tau phosphorylation and consequent aggregation into neurofibrillary tangles on the one hand and…",
-    "url": "https://www.fightaging.org/archives/2026/08/how-tauopathy-promotes-mitochondrial-dysfunction-and-prospects-for-sabotaging-that-mechanism/",
-    "top_development": false
-  },
-  {
-    "title": "Mechanisms of Neuroprotection Arising from Exercise",
-    "source": "Fight Aging!",
-    "date": "2026-08-14",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Muscle tissue is metabolically active. In response to use during physical activity, muscle cells secrete a range of signals, as a class now called myokines or exerkines. These signals produce overall beneficial effects on cell behavior and tissue function throughout the body…",
-    "url": "https://www.fightaging.org/archives/2026/08/mechanisms-of-neuroprotection-arising-from-exercise/",
+    "description": "Fight Aging!'s weekly roundup of longevity research and commentary, covering mechanisms of aging, senescence, and emerging rejuvenation strategies aimed at bringing aging under medical control.",
+    "url": "https://www.fightaging.org/archives/2026/08/fight-aging-newsletter-august-17th-2026",
     "top_development": false
   },
   {
     "title": "A Million-Person Study Finds a Protective Metabolic Gene",
     "source": "Lifespan.io",
     "date": "2026-08-14",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "A massive human genetics study identified rare folliculin-interacting protein 1 (FNIP1) mutations associated with favorable metabolism and much lower cardiometabolic disease risk. Experiments in human liver cells and mice suggest a therapeutic route [1]. Longevity hidden […]",
-    "url": "https://lifespan.io/a-million-person-study-finds-a-protective-metabolic-gene/",
-    "top_development": false
-  },
-  {
-    "title": "Women taking estrogen had fewer signs of Alzheimer’s in their brains",
-    "source": "ScienceDaily",
-    "date": "2026-08-14",
     "category": "Research",
     "importance": "normal",
-    "description": "Women who used estrogen-only hormone therapy later in life were less likely to develop dementia and showed fewer signs of Alzheimer’s disease in their brains, according to a large study of more than 21,000 participants. Hormone therapy use was linked to 39% lower odds of a…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011028.htm",
+    "description": "A large human genetics study identified rare FNIP1 mutations associated with favorable metabolism and much lower cardiometabolic disease risk, validated in follow-up experiments on human cells.",
+    "url": "https://lifespan.io/a-million-person-study-finds-a-protective-metabolic-gene/",
     "top_development": false
   },
   {
@@ -284,8 +124,8 @@
     "source": "Lifespan.io",
     "date": "2026-08-13",
     "category": "Research",
-    "importance": "normal",
-    "description": "In Aging, the Conboys and their team have described how a combination treatment kills both senescent and cancer cells and lengthens the lives of old mice. Of senescence and cancer Just as it does in mice, the incidence […]",
+    "importance": "high",
+    "description": "Writing in Aging, the Conboy lab described a combination treatment that kills both senescent and cancer cells and extended lifespan in old mice, linking senotherapy with anti-cancer effects.",
     "url": "https://lifespan.io/a-drug-combination-fights-both-senescence-and-cancer/",
     "top_development": false
   },
@@ -293,9 +133,9 @@
     "title": "Forever Healthy Launches the Evipedia Browser Extension",
     "source": "Lifespan.io",
     "date": "2026-08-13",
-    "category": "Protocols",
+    "category": "Biotech",
     "importance": "normal",
-    "description": "Staying informed about health and longevity interventions can be tedious and time-consuming. Often it involves manually decoding a supplement label with […]",
+    "description": "The Forever Healthy Foundation released Evipedia, a browser extension that surfaces evidence summaries for longevity interventions and supplements to help consumers assess claims more quickly.",
     "url": "https://lifespan.io/forever-healthy-launches-the-evipedia-browser-extension/",
     "top_development": false
   },
@@ -305,7 +145,7 @@
     "date": "2026-08-12",
     "category": "Research",
     "importance": "normal",
-    "description": "A recent study identified the thymus hormone thymulin as a molecule with the potential to reduce inflammation in an age-dependent manner. Treating cancer-bearing mice with this molecule made other cancer treatments more effective [1]. The aging […]",
+    "description": "A study identified the thymus hormone thymulin as an age-dependent suppressor of inflammation; treating cancer-bearing mice with it reduced inflammatory signaling, pointing to a lever on immune aging.",
     "url": "https://lifespan.io/the-thymus-hormone-thymulin-reduces-inflammaging-in-mice/",
     "top_development": false
   },
@@ -315,7 +155,7 @@
     "date": "2026-08-11",
     "category": "Research",
     "importance": "normal",
-    "description": "A new study proposes a theoretical framework that explains why the more complex an animal is, the harder it is to move the […]",
+    "description": "A new theoretical framework proposes why more complex animals are harder to move with aging interventions, with implications for translating simple-organism results to mammals and humans.",
     "url": "https://lifespan.io/why-affecting-aging-in-complex-organisms-is-so-hard/",
     "top_development": false
   },
@@ -324,9 +164,159 @@
     "source": "Lifespan.io",
     "date": "2026-08-10",
     "category": "Research",
-    "importance": "high",
-    "description": "Researchers have discovered why the protein AGGF1 has significant effects on blood pressure and published their findings in Aging Cell. Blood pressure is a condition of its own The authors begin their paper […]",
+    "importance": "normal",
+    "description": "Researchers uncovered why the protein AGGF1 significantly affects blood pressure, reporting in Aging Cell a potential target for age-related hypertension and vascular dysfunction.",
     "url": "https://lifespan.io/a-new-target-against-high-blood-pressure/",
+    "top_development": false
+  },
+  {
+    "title": "A New Transcriptomic Clock for Intervention Analysis",
+    "source": "Lifespan.io",
+    "date": "2026-08-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A team developed 'Pasta,' a transcriptomic aging clock that predicts the age-related effects of various compounds and gene-expression changes, offering a tool for screening interventions.",
+    "url": "https://lifespan.io/a-new-transcriptomic-clock-for-intervention-analysis/",
+    "top_development": false
+  },
+  {
+    "title": "Life Biosciences Doses First Patient in Phase 1 Trial of ER-100 for Optic Neuropathies",
+    "source": "Life Biosciences",
+    "date": "2026-06-09",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Life Biosciences dosed the first participant in its Phase 1 trial of ER-100, an OSK partial epigenetic reprogramming therapy for open-angle glaucoma and NAION, the first administration of cellular reprogramming to a human. Up to 18 participants are planned.",
+    "url": "https://www.lifebiosciences.com/life-biosciences-announces-first-patient-dosed-in-phase-1-trial-of-er-100-for-optic-neuropathies/",
+    "top_development": false
+  },
+  {
+    "title": "FDA Greenlights Life Biosciences' Gene Therapy Study to Rewind the Age of Cells",
+    "source": "Endpoints News",
+    "date": "2026-01-14",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "The FDA cleared Life Biosciences' IND for ER-100, an epigenetic partial-reprogramming therapy for the human eye, an early regulatory milestone for aging-reversal approaches now progressing into human testing.",
+    "url": "https://endpoints.news/exclusive-fda-greenlights-gene-therapy-study-to-rewind-the-age-of-cells/",
+    "top_development": false
+  },
+  {
+    "title": "Two-Year Randomized Trial Tests Metformin to Reduce Frailty in Older Adults",
+    "source": "PMC / NCBI",
+    "date": "2026-07-15",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "A double-blind, placebo-controlled trial randomized older adults with glucose intolerance to 24 months of metformin or placebo to assess effects on frailty, part of ongoing efforts to test repurposed drugs as geroprotectors.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12762609/",
+    "top_development": false
+  },
+  {
+    "title": "Rapamycin in Alzheimer's and Aging: the ERAP Phase IIa Imaging Study",
+    "source": "PMC / NCBI",
+    "date": "2026-06-20",
+    "category": "Clinical Trials",
+    "importance": "normal",
+    "description": "The ERAP Phase IIa protocol evaluates whether six months of rapamycin changes cerebral glucose uptake in early-stage Alzheimer's, testing the mTOR inhibitor as a geroprotector in humans after supportive preclinical data.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10993488/",
+    "top_development": false
+  },
+  {
+    "title": "Advanced Anti-Aging Therapies: What Human Data Show for Senolytics, NAD+ and Rapamycin in 2026",
+    "source": "Taylor & Francis",
+    "date": "2026-05-30",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A 2026 review assesses the current clinical evidence for leading geroprotector candidates, noting senolytics (D+Q, fisetin) are generally well tolerated and NAD+ precursors show modest physical-performance gains, while no molecule yet meets the bar for an approved anti-aging drug.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/14656566.2025.2605205",
+    "top_development": false
+  },
+  {
+    "title": "NewLimit Raises $435M Ahead of Its First Clinical Trial",
+    "source": "STAT News",
+    "date": "2026-06-02",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Epigenetic-reprogramming startup NewLimit raised $435M to advance toward its first human trial, one of the year's largest longevity rounds and a sign of investor appetite for reprogramming platforms.",
+    "url": "https://www.statnews.com/2026/06/02/longevity-startup-newlimit-announces-435-million-clinical-trial-financing/",
+    "top_development": false
+  },
+  {
+    "title": "Longevity Biotech Investment 2026: Set for a Breakout Year",
+    "source": "Longevity.Technology",
+    "date": "2026-08-19",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "An analysis of 2026 longevity financing finds capital accelerating and increasingly concentrated in a few platform companies, with epigenetic reprogramming the clearest momentum category heading into the second half.",
+    "url": "https://longevity.technology/news/longevity-biotech-investment-2026-were-set-for-a-breakout-year/",
+    "top_development": false
+  },
+  {
+    "title": "Viome Acquires Circulate Health to Fuse Diagnostics With Plasma Exchange",
+    "source": "Longevity.Technology",
+    "date": "2026-08-14",
+    "category": "Funding",
+    "importance": "normal",
+    "description": "Viome's acquisition of Circulate Health folds therapeutic plasma exchange into a diagnostics, nutrition and coaching platform spanning 200+ partner clinics, building a 'measure, act, remeasure' longevity model.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-33-2026/",
+    "top_development": false
+  },
+  {
+    "title": "The Longevity Industry Is Building Its Own Rules",
+    "source": "Longevity.Technology",
+    "date": "2026-08-14",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A roundup on how the longevity field is assembling clinical standards, biological models and infrastructure, including a Longevity Clinics World and Healthy Longevity Medicine Society MOU on evidence-based standards and accreditation governance.",
+    "url": "https://longevity.technology/unlocked/longevity-technology-unlocked-news-roundup-week-33-2026/",
+    "top_development": false
+  },
+  {
+    "title": "Wei-Wu He: People Should Become the CEOs of Their Own Health",
+    "source": "Lifespan.io",
+    "date": "2026-08-07",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "An interview with Human Longevity Inc.'s Wei-Wu He on data-driven, genomics-based personal health management and the evolving business of preventive longevity medicine.",
+    "url": "https://lifespan.io/wei-wu-he-people-should-become-the-ceos-of-their-own-health/",
+    "top_development": false
+  },
+  {
+    "title": "Why Democratizing Rejuvenation Is an Economic Imperative",
+    "source": "Lifespan.io",
+    "date": "2026-08-05",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A Lifespan Research Institute whitepaper argues that treating the biology of aging, rather than only its late-stage diseases, is essential to contain unsustainable healthcare costs at population scale.",
+    "url": "https://lifespan.io/why-democratizing-rejuvenation-is-an-economic-imperative/",
+    "top_development": false
+  },
+  {
+    "title": "Small Concurrent Gains in Sleep, Activity and Nutrition Extend Lifespan and Healthspan",
+    "source": "The Lancet eClinicalMedicine",
+    "date": "2026-01-20",
+    "category": "Protocols",
+    "importance": "high",
+    "description": "A UK Biobank cohort study of tens of thousands of participants found that modest simultaneous improvements across sleep, physical activity and diet were associated with meaningful gains in both lifespan and healthspan.",
+    "url": "https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(25)00676-5/fulltext",
+    "top_development": false
+  },
+  {
+    "title": "Exercise Interventions Improve Subjective Sleep Quality in Older Adults",
+    "source": "PMC / NCBI",
+    "date": "2026-07-10",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A systematic review and meta-analysis using the Pittsburgh Sleep Quality Index found that structured exercise interventions improved sleep quality in older adults, reinforcing exercise as a high-ROI healthspan protocol.",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12528139/",
+    "top_development": false
+  },
+  {
+    "title": "Valine Restriction Increases Male Mouse Lifespan by 23%",
+    "source": "Lifespan.io",
+    "date": "2026-08-04",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Restricting the amino acid valine extended both median and maximum lifespan in male mice and improved healthspan in both sexes, adding to evidence for targeted dietary restriction as an aging intervention.",
+    "url": "https://lifespan.io/valine-restriction-increases-male-mouse-lifespan-by-23/",
     "top_development": false
   }
 ]
