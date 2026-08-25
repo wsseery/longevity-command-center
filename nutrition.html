@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Intolerance Toolkit — Histamine &amp; Lectin Scoring</title>
+  <meta name="description" content="A dual-scale food reference: 440 foods each carrying an independent histamine (SIGHI) and lectin score, 0–3. Where the two protocols disagree, and how good the evidence is on each side. Educational, not medical advice.">
+  <link rel="canonical" href="https://longevity-command-center.netlify.app/nutrition.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:site_name" content="Longevity Command Center">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Food Intolerance Toolkit — Histamine &amp; Lectin Scoring">
+  <meta property="og:description" content="A dual-scale food reference: 440 foods each carrying an independent histamine (SIGHI) and lectin score, 0–3. Where the two protocols disagree, and how good the evidence is on each side.">
+  <meta property="og:url" content="https://longevity-command-center.netlify.app/nutrition.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Food Intolerance Toolkit — Histamine &amp; Lectin Scoring">
+  <meta name="twitter:description" content="A dual-scale food reference: 440 foods each carrying an independent histamine (SIGHI) and lectin score, 0–3. Where the two protocols disagree, and how good the evidence is on each side.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* ===== NUTRITION PAGE SPECIFIC ===== */
+    .hero-eyebrow, .hero-title, .hero-subtitle, .hero-intro, .hero-updated {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      animation: fadeUp 0.8s ease forwards !important;
+    }
+    .nutri-wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .nutri-section { padding: 54px 0 6px; }
+    .nutri-section h2 {
+      font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700;
+      letter-spacing: -0.01em; margin: 0 0 6px;
+    }
+    .nutri-kicker {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 2px;
+      text-transform: uppercase; color: #00ddff; margin: 0 0 14px;
+    }
+    .nutri-section p { line-height: 1.72; margin: 0 0 16px; max-width: 74ch; }
+
+    /* Two-scale explainer */
+    .scale-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin: 22px 0 8px; }
+    .scale-card {
+      background: rgba(15, 22, 41, 0.6); border: 1px solid rgba(0, 221, 255, 0.14);
+      border-radius: 8px; padding: 20px 22px 18px;
+    }
+    .scale-card h3 {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; letter-spacing: 1px;
+      text-transform: uppercase; margin: 0 0 4px; color: #e8edf5;
+    }
+    .scale-card .src { font-family: 'JetBrains Mono', monospace; font-size: 0.66rem; color: #8892a8; letter-spacing: 0.5px; margin: 0 0 14px; }
+    .scale-card p { font-size: 0.92rem; margin: 0 0 12px; }
+    .scale-badge {
+      display: inline-block; font-family: 'JetBrains Mono', monospace; font-weight: 700;
+      font-size: 0.72rem; padding: 3px 9px; border-radius: 4px; margin-right: 7px;
+    }
+    .b-h { background: rgba(0, 221, 255, 0.14); color: #00ddff; border: 1px solid rgba(0, 221, 255, 0.3); }
+    .b-l { background: rgba(255, 176, 80, 0.12); color: #ffb050; border: 1px solid rgba(255, 176, 80, 0.28); }
+
+    .ladder { list-style: none; padding: 0; margin: 10px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; }
+    .ladder li { display: flex; gap: 10px; padding: 4px 0; color: #a8b3c7; align-items: baseline; }
+    .ladder .n { font-weight: 700; min-width: 1.1em; }
+    .n0 { color: #3ddc97; } .n1 { color: #ffd76e; } .n2 { color: #ff9d5c; } .n3 { color: #ff6b6b; }
+
+    /* Evidence-asymmetry callout */
+    .asym {
+      border-left: 3px solid #ffb050; background: rgba(255, 176, 80, 0.06);
+      padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 26px 0 6px;
+    }
+    .asym h3 { font-family: 'Outfit', sans-serif; font-size: 1.05rem; margin: 0 0 10px; color: #ffb050; }
+    .asym p { font-size: 0.94rem; margin: 0 0 12px; }
+    .asym p:last-child { margin-bottom: 0; }
+
+    /* Conflict table */
+    .tbl-scroll { overflow-x: auto; margin: 20px 0 10px; -webkit-overflow-scrolling: touch; }
+    table.conflict {
+      width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 560px;
+    }
+    table.conflict th {
+      text-align: left; font-family: 'JetBrains Mono', monospace; font-size: 0.66rem;
+      letter-spacing: 1.2px; text-transform: uppercase; color: #8892a8;
+      border-bottom: 1px solid rgba(0, 221, 255, 0.2); padding: 9px 12px 9px 0; font-weight: 500;
+    }
+    table.conflict td { padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(255,255,255,0.05); vertical-align: top; }
+    table.conflict tr:last-child td { border-bottom: 0; }
+    .sc { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 0.8rem; white-space: nowrap; }
+    .fixchip {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.5px;
+      background: rgba(61, 220, 151, 0.12); color: #3ddc97; border: 1px solid rgba(61,220,151,0.3);
+      padding: 2px 6px; border-radius: 3px; white-space: nowrap;
+    }
+    .nofix {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; letter-spacing: 0.5px;
+      background: rgba(255,107,107,0.1); color: #ff6b6b; border: 1px solid rgba(255,107,107,0.26);
+      padding: 2px 6px; border-radius: 3px; white-space: nowrap;
+    }
+
+    /* Stat row */
+    .nutri-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: rgba(0,221,255,0.1); border: 1px solid rgba(0,221,255,0.14); border-radius: 8px; overflow: hidden; margin: 4px 0 8px; }
+    .nutri-stats div { background: #0a0e1a; padding: 18px 16px; }
+    .nutri-stats .v { font-family: 'JetBrains Mono', monospace; font-size: 1.6rem; font-weight: 700; color: #00ddff; line-height: 1; }
+    .nutri-stats .k { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; letter-spacing: 1px; text-transform: uppercase; color: #8892a8; margin-top: 7px; }
+
+    /* CTA */
+    .cta-block { text-align: center; padding: 46px 0 10px; }
+    .cta-btn {
+      display: inline-block; font-family: 'JetBrains Mono', monospace; font-weight: 600;
+      font-size: 0.82rem; letter-spacing: 1.4px; text-transform: uppercase;
+      color: #0a0e1a; background: #00ddff; padding: 15px 34px; border-radius: 6px;
+      text-decoration: none; transition: all 0.25s;
+      box-shadow: 0 0 26px rgba(0, 221, 255, 0.22);
+    }
+    .cta-btn:hover { background: #6ceaff; box-shadow: 0 0 34px rgba(0, 221, 255, 0.4); }
+    .cta-note { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #8892a8; margin-top: 14px; letter-spacing: 0.5px; }
+
+    /* Disclaimer */
+    .disclaimer-block {
+      border: 1px solid rgba(255, 107, 107, 0.28); background: rgba(255, 107, 107, 0.05);
+      border-radius: 8px; padding: 22px 24px; margin: 46px 0 10px;
+    }
+    .disclaimer-block h3 {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 2px;
+      text-transform: uppercase; color: #ff6b6b; margin: 0 0 10px;
+    }
+    .disclaimer-block p { font-size: 0.88rem; line-height: 1.7; margin: 0 0 10px; color: #a8b3c7; }
+    .disclaimer-block p:last-child { margin-bottom: 0; }
+
+    .src-list { list-style: none; padding: 0; margin: 8px 0 0; }
+    .src-list li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; line-height: 1.6; }
+    .src-list li:last-child { border-bottom: 0; }
+    .src-list b { color: #e8edf5; }
+
+    @media (max-width: 640px) {
+      .nutri-section { padding: 40px 0 4px; }
+      .nutri-section h2 { font-size: 1.28rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanline-overlay"></div>
+
+  <!-- SITE NAVIGATION -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">News</a>
+        <a href="./blog.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Blog</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s;" onmouseover="this.style.color='#00ddff';this.style.borderColor='rgba(0,221,255,0.25)'" onmouseout="this.style.color='#8892a8';this.style.borderColor='rgba(0,221,255,0.08)'">Protocols</a>
+        <a href="./nutrition.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Nutrition</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">SIGHI FOOD COMPATIBILITY LIST × PUBLISHED LECTIN LITERATURE</div>
+      <h1 class="hero-title">FOOD INTOLERANCE <span class="highlight">TOOLKIT</span></h1>
+      <p class="hero-subtitle">Two Scales, Scored Separately — Because They Disagree</p>
+      <p class="hero-intro">Most elimination diets hand you one list and one verdict. This one carries two independent 0–3 scores for every food — histamine and lectin — and refuses to average them, because 143 of the 440 foods score well on one scale and badly on the other. The two scales also do not rest on equally good evidence, and the tool says so on every screen that shows them.</p>
+      <div class="hero-updated">
+        <span class="pulse-dot"></span>
+        440 FOODS · 46 RECIPES · UPDATED AUGUST 2026
+      </div>
+    </div>
+  </header>
+
+  <!-- STAT STRIP -->
+  <section class="nutri-wrap" style="padding-top:34px;">
+    <div class="nutri-stats">
+      <div><div class="v">440</div><div class="k">Foods Scored</div></div>
+      <div><div class="v">143</div><div class="k">Where They Disagree</div></div>
+      <div><div class="v">125</div><div class="k">Flagged Uncertain</div></div>
+      <div><div class="v">43</div><div class="k">Fixable by Prep</div></div>
+      <div><div class="v">46</div><div class="k">Recipes</div></div>
+      <div><div class="v">17</div><div class="k">Categories</div></div>
+    </div>
+  </section>
+
+  <main class="nutri-wrap">
+
+    <!-- THE TWO SCALES -->
+    <section class="nutri-section">
+      <p class="nutri-kicker">01 — The Two Scales</p>
+      <h2>What each score actually measures</h2>
+      <p>They are different mechanisms. Histamine intolerance is a problem of degradation — too much dietary histamine, or too little of the enzyme (diamine oxidase) that clears it. Lectins are plant defence proteins that bind carbohydrate structures in the gut wall. A food can be terrible on one axis and blameless on the other, which is exactly why a single combined number would be worse than useless.</p>
+
+      <div class="scale-grid">
+        <div class="scale-card">
+          <h3><span class="scale-badge b-h">H</span> Histamine</h3>
+          <p class="src">Source: SIGHI Food Compatibility List</p>
+          <p>Histamine content, plus histamine liberators, DAO blockers and other biogenic amines. Preparation matters enormously and mostly in one direction: freshness is the whole game.</p>
+          <ul class="ladder">
+            <li><span class="n n0">0</span><span>Well tolerated</span></li>
+            <li><span class="n n1">1</span><span>Small amounts usually tolerated</span></li>
+            <li><span class="n n2">2</span><span>Poorly tolerated</span></li>
+            <li><span class="n n3">3</span><span>Very poorly tolerated</span></li>
+          </ul>
+        </div>
+        <div class="scale-card">
+          <h3><span class="scale-badge b-l">L</span> Lectin</h3>
+          <p class="src">Source: Plant Paradox lists, cross-checked against measured lectin-content literature</p>
+          <p>Lectin load — phytohaemagglutinin in legumes, wheat germ agglutinin in grains, nightshade and cucurbit lectins, A1 casein in cow dairy. 43 foods carry a preparation that genuinely lowers the score; the rest do not.</p>
+          <ul class="ladder">
+            <li><span class="n n0">0</span><span>Negligible</span></li>
+            <li><span class="n n1">1</span><span>Low</span></li>
+            <li><span class="n n2">2</span><span>Moderate</span></li>
+            <li><span class="n n3">3</span><span>High</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE ASYMMETRY -->
+    <section class="nutri-section">
+      <p class="nutri-kicker">02 — Evidence Quality</p>
+      <h2>The two scales are not equally well evidenced</h2>
+
+      <div class="asym">
+        <h3>Read this before you treat the L score like the H score</h3>
+        <p><b>The histamine layer rests on a long-standing clinical reference.</b> The SIGHI Food Compatibility List has been maintained and revised for years by a patient-and-clinician interest group, is widely used in dietetic practice, and prints its own uncertainty — 125 of the 440 entries here are flagged <b>uncertain</b> because SIGHI itself marks them ambiguous or the sources disagree. Salmon, halibut, mahi mahi, scallops, squid, bone broth and fish oil are all live disputes.</p>
+        <p><b>The lectin layer does not have anything comparable behind it.</b> There is real measured literature on lectin content in specific foods — phytohaemagglutinin in raw kidney beans is genuinely well characterised, and genuinely dangerous. But the leap from "this food contains lectins" to "this food harms people" is contested, the popular food lists are not systematically derived, and no equivalent of SIGHI exists to arbitrate them. Lectin ratings here should be read as a hypothesis to test on yourself, not a finding.</p>
+        <p>The tool never flattens the two into a single number, and neither should you. Where they conflict, the conflict is the information.</p>
+      </div>
+    </section>
+
+    <!-- THE CONFLICTS -->
+    <section class="nutri-section">
+      <p class="nutri-kicker">03 — The 143 Conflicts</p>
+      <h2>Where the two protocols contradict each other</h2>
+      <p>143 of 440 foods score well on one scale and badly on the other — 45 are histamine-clear but lectin-heavy, and 98 are histamine-flagged but lectin-clean. The tool has a filter that shows only these. The sharpest cluster is the grains: SIGHI rates wheat, bread, pasta, rye, barley and spelt as h0–1, while they sit in the top lectin tier <em>with no preparation escape</em> — wheat germ agglutinin is heat-stable, so cooking does not rescue them.</p>
+
+      <div class="tbl-scroll">
+        <table class="conflict">
+          <thead>
+            <tr><th>Food</th><th>H</th><th>L</th><th>Preparation escape</th><th>Why they disagree</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wheat · bread · pasta</td><td class="sc n1">1</td><td class="sc n3">3</td><td><span class="nofix">NO FIX</span></td><td>Low histamine; top lectin tier. WGA is heat-stable.</td></tr>
+            <tr><td>Rye · barley</td><td class="sc n1">1</td><td class="sc n3">3</td><td><span class="nofix">NO FIX</span></td><td>Same grain mechanism as wheat.</td></tr>
+            <tr><td>Spelt</td><td class="sc n0">0</td><td class="sc n3">3</td><td><span class="nofix">NO FIX</span></td><td>SIGHI's cleanest grain; still a top-tier lectin.</td></tr>
+            <tr><td>Quinoa</td><td class="sc n0">0</td><td class="sc n3">3</td><td><span class="fixchip">RINSE / PRESSURE-COOK</span></td><td>Histamine-clear pseudo-grain, saponin and lectin load.</td></tr>
+            <tr><td>Potato</td><td class="sc n0">0</td><td class="sc n3">3</td><td><span class="fixchip">PEEL / PRESSURE-COOK</span></td><td>Histamine-clear; nightshade lectin concentrated in skin.</td></tr>
+            <tr><td>Split peas · legumes</td><td class="sc n1">1</td><td class="sc n3">3</td><td><span class="fixchip">PRESSURE-COOK</span></td><td>Pressure cooking denatures phytohaemagglutinin.</td></tr>
+            <tr><td>Cashew nut</td><td class="sc n1">1</td><td class="sc n3">3</td><td><span class="fixchip">PREP</span></td><td>Technically a legume-adjacent seed.</td></tr>
+            <tr><td>Cucumber · bell pepper</td><td class="sc n0">0</td><td class="sc n2">2</td><td><span class="fixchip">PEEL + DESEED</span></td><td>Cucurbit and nightshade lectins sit in skin and seeds.</td></tr>
+            <tr><td>Whole milk</td><td class="sc n0">0</td><td class="sc n2">2</td><td><span class="nofix">NO FIX</span></td><td>Fresh milk is histamine-clear; A1 casein is the lectin-side objection.</td></tr>
+            <tr><td colspan="5" style="border-top:1px solid rgba(0,221,255,0.14);padding-top:14px;color:#8892a8;font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:1px;text-transform:uppercase;">— and in the other direction —</td></tr>
+            <tr><td>Salami · bacon · dry-cured ham</td><td class="sc n3">3</td><td class="sc n0">0</td><td>—</td><td>Curing and ageing build histamine. No lectin objection at all.</td></tr>
+            <tr><td>Dry-aged beef · smoked meat</td><td class="sc n3">3</td><td class="sc n0">0</td><td>—</td><td>Same mechanism: time and smoke.</td></tr>
+            <tr><td>Sauerkraut · fermented vegetables</td><td class="sc n3">3</td><td class="sc n0">0</td><td>—</td><td>Fermentation is a histamine factory; lectin-irrelevant.</td></tr>
+            <tr><td>Orange · lime · citrus zest</td><td class="sc n3">3</td><td class="sc n0">0</td><td>—</td><td>Classic histamine liberators; no lectin load.</td></tr>
+            <tr><td>Red wine</td><td class="sc n3">3</td><td class="sc n0">0</td><td>—</td><td>Histamine, liberator and DAO blocker at once.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.82rem;color:#8892a8;">Representative rows. The full 143 are filterable inside the tool.</p>
+    </section>
+
+    <!-- HOW THE TOOL WORKS -->
+    <section class="nutri-section">
+      <p class="nutri-kicker">04 — The Tool</p>
+      <h2>What it does</h2>
+      <p><b>Check a food.</b> Search all 440 entries, or paste a whole ingredient list and have it scanned line by line. Preparation words move the scores in <em>both</em> directions: canned, smoked, cured, aged, deli, leftover, broth and pre-ground raise the histamine score; peeled, deseeded and pressure-cooked lower the lectin score, but only for the 43 foods where that preparation genuinely works. Filters cover a separate ceiling for each scale, category, keto-only, fixable-by-prep, and a toggle that shows only the 143 conflicts.</p>
+      <p><b>Build a menu.</b> One, three or seven days from 46 recipes, with independent histamine and lectin ceilings, a keto filter and free-text exclusions. Every dish is re-scored at generation time. Recipes that depend on a lectin-reducing preparation are marked <span class="fixchip">LECTIN PREP REQUIRED</span> — in those, the peeling or pressure-cooking is doing the work and is not optional. Output includes a consolidated shopping list and a print stylesheet.</p>
+
+      <div class="cta-block">
+        <a class="cta-btn" href="./tools/histamine-kitchen/">Open the Histamine Kitchen →</a>
+        <p class="cta-note">Runs entirely in your browser. Nothing you type is sent anywhere.</p>
+      </div>
+    </section>
+
+    <!-- PROVENANCE -->
+    <section class="nutri-section">
+      <p class="nutri-kicker">05 — Provenance</p>
+      <h2>Where the numbers come from</h2>
+      <ul class="src-list">
+        <li><b>Histamine (H).</b> SIGHI (Swiss Interest Group Histamine Intolerance) Food Compatibility List, cross-checked against the SIGHI elimination-diet leaflet, and against mastcell360 for the fish species SIGHI does not enumerate individually. Where sources conflict, the entry is flagged <b>uncertain</b> rather than silently resolved — 125 entries carry that flag.</li>
+        <li><b>Lectin (L).</b> Plant Paradox food lists, cross-checked against published measured lectin-content literature: phytohaemagglutinin in legumes, wheat germ agglutinin in grains, nightshade and cucurbit lectins, A1 casein in cow dairy. 43 entries carry a documented preparation mitigation. Lectin-side uncertainty is recorded in each entry's own note.</li>
+        <li><b>Flags.</b> Histamine liberators (118 entries), DAO blockers (27), other biogenic amines (93), and keto compatibility are tracked separately from the score itself, because a food can be low in histamine and still provoke a release. Cocoa and chocolate carry the DAO flag on the theobromine mechanism, not on a SIGHI marker.</li>
+        <li><b>Method.</b> Scores are integers 0–3 on both axes and are never combined. A recipe's histamine score is the maximum across its ingredients; its lectin score is the maximum <em>effective</em> lectin value after any preparation the recipe actually specifies.</li>
+      </ul>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="nutri-section">
+      <div class="disclaimer-block">
+        <h3>Important — please read</h3>
+        <p>Longevity Command Center is educational content only. It is not medical advice, diagnosis, or treatment. Always consult your physician before starting any supplement, exercise, or health intervention. Nothing here has been evaluated by the FDA.</p>
+        <p>Histamine tolerance and lectin sensitivity are both highly individual. Neither list is a verdict on any food. Both are starting points for a structured elimination-and-reintroduction protocol run with a clinician, and your own food and symptom log is the authority that overrides either of them. No food on this site is described as "safe" — every entry gives a score and the mechanism behind it, so you can judge it yourself.</p>
+        <p>If you are managing a diagnosed condition, are pregnant, or take medication that affects histamine metabolism, talk to your physician before changing your diet.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <p>Longevity Command Center is an independent research and intelligence platform. Content is for informational purposes only and does not constitute medical or investment advice. Built by Bill Seery. Data sourced from NIA ITP, ClinicalTrials.gov, peer-reviewed journals, and public market feeds.</p>
+    <div class="footer-links">
+      <a href="./compounds.html">Compounds</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./finance.html">Finance</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./news.html">News</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./protocols.html">Protocols</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="./nutrition.html">Nutrition</a>
+      <span style="color:var(--text-dim);">&middot;</span>
+      <a href="https://www.linkedin.com/in/billseery/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>

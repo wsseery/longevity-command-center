@@ -1,0 +1,771 @@
+<title>Histamine Kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+:root{
+  --paper:#F4F6F4; --surface:#FFFFFF; --surface-2:#EAEFEC; --line:#D5DEDA;
+  --ink:#0F1E1B; --muted:#5A6D68;
+  --accent:#0E5D57; --accent-soft:#DCEAE7; --on-accent:#FFFFFF;
+  --copper:#B4552D;
+  --s0:#2F7D4F; --s1:#9C7514; --s2:#B4521C; --s3:#9C2A2A;
+  --s0-bg:#E4F0E8; --s1-bg:#F5EBD4; --s2-bg:#F7E4D8; --s3-bg:#F6DEDE;
+  --flag:#5A4785; --flag-bg:#EAE5F4;
+  --shadow:0 1px 2px rgba(15,30,27,.05), 0 8px 24px -12px rgba(15,30,27,.16);
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1513; --surface:#131E1B; --surface-2:#1A2724; --line:#28352F;
+    --ink:#E6EDE9; --muted:#92A69F;
+    --accent:#48A79A; --accent-soft:#173330; --on-accent:#06201C;
+    --copper:#E4733F;
+    --s0:#63B584; --s1:#D5AC4E; --s2:#E08D57; --s3:#DE7373;
+    --s0-bg:#152A1F; --s1-bg:#2C2617; --s2-bg:#2E211A; --s3-bg:#2E1A1A;
+    --flag:#AD97DD; --flag-bg:#231E33;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1513; --surface:#131E1B; --surface-2:#1A2724; --line:#28352F;
+  --ink:#E6EDE9; --muted:#92A69F;
+  --accent:#48A79A; --accent-soft:#173330; --on-accent:#06201C;
+  --copper:#E4733F;
+  --s0:#63B584; --s1:#D5AC4E; --s2:#E08D57; --s3:#DE7373;
+  --s0-bg:#152A1F; --s1-bg:#2C2617; --s2-bg:#2E211A; --s3-bg:#2E1A1A;
+  --flag:#AD97DD; --flag-bg:#231E33;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif; font-weight:600; text-wrap:balance; margin:0; line-height:1.2}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums}
+button,input,select,textarea{font:inherit; color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+.wrap{max-width:1160px; margin:0 auto; padding:0 20px}
+header.top{
+  position:sticky; top:0; z-index:40; background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);
+}
+.topbar{display:flex; align-items:center; gap:20px; padding:12px 0; flex-wrap:wrap}
+.mark{display:flex; align-items:center; gap:11px; margin-right:auto}
+.mark svg{display:block; flex:none}
+.mark .name{font-family:"Newsreader",Georgia,serif; font-size:23px; font-weight:600; letter-spacing:-.01em; line-height:1.1}
+.mark .sub{font-size:10px; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); margin-top:2px}
+.tabs{display:flex; gap:4px; background:var(--surface-2); padding:4px; border-radius:var(--r)}
+.tab{
+  border:0; background:transparent; color:var(--muted); cursor:pointer;
+  padding:7px 15px; border-radius:7px; font-weight:600; font-size:14px;
+}
+.tab[aria-selected="true"]{background:var(--accent); color:var(--on-accent)}
+.tab:hover:not([aria-selected="true"]){color:var(--ink)}
+
+main{padding:26px 0 70px}
+.panel{display:none}
+.panel.on{display:block}
+
+.card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow)}
+.eyebrow{font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.lede{color:var(--muted); max-width:66ch; margin:6px 0 0}
+.seg{display:inline-flex; background:var(--surface-2); border-radius:8px; padding:3px; gap:2px; flex-wrap:wrap}
+.seg button{
+  border:0; background:transparent; cursor:pointer; padding:5px 11px; border-radius:6px;
+  font-size:13px; font-weight:500; color:var(--muted);
+}
+.seg button[aria-pressed="true"]{background:var(--surface); color:var(--ink); box-shadow:var(--shadow)}
+.chk{display:inline-flex; align-items:center; gap:7px; font-size:13.5px; cursor:pointer; user-select:none}
+.chk input{accent-color:var(--accent); width:15px; height:15px}
+select, input[type=text], textarea{
+  background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:14px;
+}
+.btn{
+  border:1px solid var(--accent); background:var(--accent); color:var(--on-accent);
+  padding:9px 18px; border-radius:8px; font-weight:600; cursor:pointer; font-size:14px;
+}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent; color:var(--accent)}
+.field-label{display:block; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:6px}
+
+/* score system */
+.badge{
+  display:inline-flex; align-items:center; gap:5px; padding:2px 8px; border-radius:999px;
+  font-size:11.5px; font-weight:600; white-space:nowrap;
+}
+.badge .k{font-size:9.5px; letter-spacing:.08em; opacity:.72}
+.badge .n{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600}
+.badge.full{padding-right:10px}
+.s0{color:var(--s0); background:var(--s0-bg)}
+.s1{color:var(--s1); background:var(--s1-bg)}
+.s2{color:var(--s2); background:var(--s2-bg)}
+.s3{color:var(--s3); background:var(--s3-bg)}
+.scores{display:flex; flex-direction:column; gap:4px; align-items:flex-end; flex:none}
+.chip{
+  display:inline-block; padding:1px 8px; border-radius:999px; font-size:11px; font-weight:600;
+  letter-spacing:.03em; color:var(--flag); background:var(--flag-bg); white-space:nowrap;
+}
+.chip.keto{color:var(--accent); background:var(--accent-soft)}
+.chip.prep{color:var(--copper); background:color-mix(in srgb, var(--copper) 14%, transparent)}
+.chip.q{color:var(--muted); background:var(--surface-2)}
+
+/* checker */
+.searchrow{display:flex; gap:10px; align-items:center; margin:18px 0 14px}
+.searchrow input[type=text]{flex:1; padding:13px 15px; font-size:16px; border-radius:var(--r)}
+.filters{display:flex; gap:16px; align-items:flex-start; flex-wrap:wrap; padding:13px 15px; margin-bottom:14px}
+.legend{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:6px 20px;
+  font-size:12px; color:var(--muted); margin-bottom:16px; padding:12px 15px;
+  background:var(--surface-2); border-radius:var(--r);
+}
+.legend b{color:var(--ink); font-weight:600}
+.legend .row{display:flex; gap:7px; align-items:baseline}
+.results{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:10px}
+.food{
+  position:relative; padding:12px 14px 12px 19px; border-radius:var(--r);
+  background:var(--surface); border:1px solid var(--line); overflow:hidden;
+}
+.food .stripe{position:absolute; left:0; top:0; bottom:0; width:5px; display:flex; flex-direction:column}
+.food .stripe i{flex:1}
+.food .hd{display:flex; align-items:flex-start; justify-content:space-between; gap:12px}
+.food .nm{font-weight:600; font-size:14.5px; line-height:1.3}
+.food .cat{font-size:11px; color:var(--muted); margin-top:1px}
+.food .flags{display:flex; gap:5px; flex-wrap:wrap; margin-top:9px}
+.food .note{font-size:12.5px; color:var(--muted); margin-top:8px; line-height:1.5}
+.food .note b{color:var(--ink); font-weight:600}
+.food .prep{
+  font-size:12px; color:var(--copper); margin-top:7px; line-height:1.45;
+  padding-left:9px; border-left:2px solid color-mix(in srgb, var(--copper) 45%, transparent);
+}
+.empty{text-align:center; padding:56px 20px; color:var(--muted)}
+
+/* scan */
+.scangrid{display:grid; grid-template-columns:minmax(280px,1fr) 1.35fr; gap:18px; align-items:start}
+@media (max-width:860px){.scangrid{grid-template-columns:1fr}}
+textarea#paste{width:100%; min-height:240px; resize:vertical; line-height:1.7; font-family:"IBM Plex Mono",monospace; font-size:13px}
+.verdicts{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px}
+@media (max-width:560px){.verdicts{grid-template-columns:1fr}}
+.verdict{padding:13px 15px; border-radius:var(--r); border:1px solid var(--line)}
+.verdict h3{font-size:17px; margin-top:3px}
+.verdict p{margin:7px 0 0; font-size:12.5px; color:var(--ink); opacity:.85}
+.scanline{
+  display:flex; align-items:center; gap:9px; padding:8px 12px; border-bottom:1px solid var(--line);
+  font-size:13.5px;
+}
+.scanline:last-child{border-bottom:0}
+.scanline .raw{flex:1; min-width:0; overflow-wrap:anywhere}
+.scanline .hit{font-size:11.5px; color:var(--muted)}
+.scanline .sc{display:flex; gap:4px; flex:none}
+
+/* builder */
+.buildgrid{display:grid; grid-template-columns:300px 1fr; gap:20px; align-items:start}
+@media (max-width:900px){.buildgrid{grid-template-columns:1fr}}
+.controls{padding:16px; position:sticky; top:76px}
+.controls .grp{margin-bottom:16px}
+.controls .grp:last-child{margin-bottom:0}
+.dayhead{
+  display:flex; align-items:center; gap:9px; margin:22px 0 10px; padding-bottom:7px;
+  border-bottom:1px solid var(--line); flex-wrap:wrap;
+}
+.dayhead h3{font-size:19px}
+.dayhead .tot{margin-left:auto; font-size:12px; color:var(--muted)}
+.recipes{display:grid; gap:10px}
+.rec{padding:14px 16px; border-radius:var(--r); background:var(--surface); border:1px solid var(--line)}
+.rec .rh{display:flex; align-items:flex-start; gap:12px; justify-content:space-between}
+.rec .slot{font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.rec h4{margin:2px 0 0; font-family:"Newsreader",Georgia,serif; font-size:18px; font-weight:600}
+.rec .blurb{font-size:13px; color:var(--muted); margin:6px 0 0}
+.rec details{margin-top:10px}
+.rec summary{cursor:pointer; font-size:12.5px; color:var(--accent); font-weight:600}
+.rec .body{margin-top:10px; display:grid; grid-template-columns:1fr 1.15fr; gap:18px; font-size:13.5px}
+@media (max-width:640px){.rec .body{grid-template-columns:1fr}}
+.rec ul, .rec ol{margin:6px 0 0; padding-left:18px}
+.rec li{margin-bottom:5px}
+.rec .meta{display:flex; gap:12px; font-size:12px; color:var(--muted); margin-top:8px; flex-wrap:wrap}
+.shop{margin-top:30px; padding:18px 20px}
+.shopcols{columns:3 200px; column-gap:26px; margin-top:12px}
+.shopcat{break-inside:avoid; margin-bottom:16px}
+.shopcat h4{font-size:11px; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); margin:0 0 6px; font-weight:700}
+.shopcat label{display:flex; gap:8px; align-items:baseline; font-size:13.5px; padding:2px 0; cursor:pointer}
+.shopcat input{accent-color:var(--accent); margin-top:3px}
+.rules{padding:16px 18px; margin-top:26px; background:var(--surface-2); border:1px solid var(--line); border-radius:var(--r)}
+.rules ul{margin:10px 0 0; padding-left:18px; font-size:13.5px; color:var(--muted)}
+.rules li{margin-bottom:6px}
+.rules li b{color:var(--ink)}
+.rules + .rules{margin-top:14px}
+
+footer{border-top:1px solid var(--line); margin-top:44px; padding:20px 0 40px; font-size:12px; color:var(--muted)}
+footer p{max-width:78ch; margin:0 0 8px}
+
+@media print{
+  header.top,.controls,.tabs,.rules,.btn,footer,#scanpanel{display:none!important}
+  body{background:#fff; color:#000; font-size:11pt}
+  .buildgrid{grid-template-columns:1fr}
+  .rec,.card{box-shadow:none; border-color:#bbb; break-inside:avoid}
+  .shopcols{columns:3}
+}
+</style>
+
+<header class="top">
+  <div class="wrap topbar">
+    <div class="mark">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+        <defs><linearGradient id="hkleaf" x1="0.12" y1="1" x2="0.88" y2="0.05">
+          <stop offset="0" stop-color="#0A4A44"/><stop offset="1" stop-color="#1B8A7D"/>
+        </linearGradient></defs>
+        <g transform="translate(50 51) rotate(-8) scale(0.94) translate(-50 -48.5)">
+          <path d="M50 78 C 19 62, 17 30, 50 9 C 83 30, 81 62, 50 78 Z" fill="url(#hkleaf)"/>
+          <g stroke="#F4F6F4" stroke-linecap="round" fill="none" stroke-width="3.6">
+            <path d="M50 64 C 60 61, 67 55, 71 46" opacity="0.26"/>
+            <path d="M50 52 C 59 49, 65 43, 68 34" opacity="0.42"/>
+            <path d="M50 40 C 57 37, 62 32, 64 24" opacity="0.60"/>
+            <path d="M50 28 C 55 26, 58 22, 59 16" opacity="0.80"/>
+          </g>
+          <path d="M50 80 L50 19" stroke="#C25A2E" stroke-width="5.2" stroke-linecap="round"/>
+          <circle cx="50" cy="81" r="7.4" fill="#C25A2E"/><circle cx="50" cy="81" r="2.7" fill="#F4F6F4"/>
+        </g>
+      </svg>
+      <div>
+        <div class="name">Histamine Kitchen</div>
+        <div class="sub">SIGHI 0&ndash;3 &middot; Lectin 0&ndash;3 &middot; Keto</div>
+      </div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-panel="check">Check a food</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="build">Build a menu</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ================= CHECK ================= -->
+<section class="panel on" id="check">
+  <div class="eyebrow">Reference lookup</div>
+  <h1 style="font-size:31px; margin-top:4px">What's in this, and can I eat it?</h1>
+  <p class="lede">Search <span class="mono" id="count">0</span> foods, ingredients and additives scored on two independent scales &mdash; <b>H</b> for histamine, <b>L</b> for lectin &mdash; or paste a whole ingredient list and scan it at once.</p>
+
+  <div class="seg" style="margin-top:18px">
+    <button data-mode="search" aria-pressed="true">Search</button>
+    <button data-mode="scan" aria-pressed="false">Scan a list</button>
+  </div>
+
+  <div id="searchpanel">
+    <div class="searchrow">
+      <input type="text" id="q" placeholder="Try: cheddar, potato, quinoa, cucumber, vinegar&hellip;" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="filters card">
+      <div>
+        <span class="field-label" style="margin-bottom:4px">Max histamine</span>
+        <div class="seg" id="hseg">
+          <button data-max="0" aria-pressed="false">0</button>
+          <button data-max="1" aria-pressed="false">0&ndash;1</button>
+          <button data-max="2" aria-pressed="false">0&ndash;2</button>
+          <button data-max="3" aria-pressed="true">All</button>
+        </div>
+      </div>
+      <div>
+        <span class="field-label" style="margin-bottom:4px">Max lectin</span>
+        <div class="seg" id="lseg">
+          <button data-lmax="0" aria-pressed="false">0</button>
+          <button data-lmax="1" aria-pressed="false">0&ndash;1</button>
+          <button data-lmax="2" aria-pressed="false">0&ndash;2</button>
+          <button data-lmax="3" aria-pressed="true">All</button>
+        </div>
+      </div>
+      <div>
+        <span class="field-label" style="margin-bottom:4px">Category</span>
+        <select id="cat"><option value="">All categories</option></select>
+      </div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; align-self:flex-end; padding-bottom:5px">
+        <label class="chk"><input type="checkbox" id="fketo"> Keto only</label>
+        <label class="chk"><input type="checkbox" id="fmit"> Fixable by prep</label>
+        <label class="chk"><input type="checkbox" id="fconf"> Only where the two disagree</label>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="row"><span class="badge s0"><span class="k">H</span><span class="n">0</span></span> <span><b>Histamine</b> &mdash; the SIGHI compatibility scale</span></div>
+      <div class="row"><span class="badge s0"><span class="k">L</span><span class="n">0</span></span> <span><b>Lectin</b> &mdash; Plant Paradox + measured lectin content</span></div>
+      <div class="row"><span>Both: <b class="s0" style="background:none;padding:0">0</b> clear &middot; <b class="s1" style="background:none;padding:0">1</b> small amounts &middot; <b class="s2" style="background:none;padding:0">2</b> avoid &middot; <b class="s3" style="background:none;padding:0">3</b> worst</span></div>
+      <div class="row"><span class="chip prep">FIXABLE BY PREP</span> <span>peeling, deseeding or pressure-cooking drops the lectin load</span></div>
+      <div class="row"><span class="chip">LIBERATOR</span> <span>releases your own histamine</span></div>
+      <div class="row"><span class="chip">DAO BLOCKER</span> <span>slows the enzyme that clears it</span></div>
+      <div class="row"><span class="chip">OTHER AMINES</span> <span>tyramine / putrescine</span></div>
+      <div class="row"><span class="chip q">UNCERTAIN</span> <span>SIGHI prints "?" or sources disagree</span></div>
+    </div>
+
+    <div class="results" id="results"></div>
+    <div class="empty" id="noresults" style="display:none">Nothing matched. Try a shorter word &mdash; "cheese" rather than "sharp cheddar".</div>
+  </div>
+
+  <div id="scanpanel" style="display:none; margin-top:18px">
+    <div class="scangrid">
+      <div>
+        <span class="field-label">Paste an ingredient list</span>
+        <textarea id="paste" spellcheck="false" placeholder="2 tbsp olive oil&#10;1 lb ground beef&#10;1 can diced tomatoes&#10;1 cup cooked chickpeas&#10;1 cucumber, peeled and deseeded&#10;splash of red wine"></textarea>
+        <button class="btn" id="scanbtn" style="margin-top:10px; width:100%">Scan this list</button>
+        <p style="font-size:12px; color:var(--muted); margin-top:10px">One ingredient per line. Quantities are ignored. Preparation words count in both directions &mdash; "canned" and "aged" raise the histamine score, "peeled", "deseeded" and "pressure-cooked" lower the lectin score.</p>
+      </div>
+      <div id="scanout"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUILD ================= -->
+<section class="panel" id="build">
+  <div class="eyebrow">Menu generator</div>
+  <h1 style="font-size:31px; margin-top:4px">Build a menu that clears both scales</h1>
+  <p class="lede">Every dish is assembled only from ingredients that pass both ceilings, then re-scored at generation time. Where a recipe already specifies the peeling, deseeding or pressure-cooking, its lectin score reflects that.</p>
+
+  <div class="buildgrid" style="margin-top:20px">
+    <aside class="controls card">
+      <div class="grp">
+        <span class="field-label">Plan length</span>
+        <div class="seg" id="daysseg">
+          <button data-days="1" aria-pressed="false">1 day</button>
+          <button data-days="3" aria-pressed="true">3 days</button>
+          <button data-days="7" aria-pressed="false">7 days</button>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="field-label">Meals per day</span>
+        <div style="display:flex; flex-direction:column; gap:7px">
+          <label class="chk"><input type="checkbox" class="slot" value="breakfast" checked> Breakfast</label>
+          <label class="chk"><input type="checkbox" class="slot" value="lunch" checked> Lunch</label>
+          <label class="chk"><input type="checkbox" class="slot" value="dinner" checked> Dinner</label>
+          <label class="chk"><input type="checkbox" class="slot" value="snack"> Snack / side</label>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="field-label">Histamine ceiling</span>
+        <div class="seg" id="ceilseg">
+          <button data-ceil="0" aria-pressed="true">Strict &mdash; 0</button>
+          <button data-ceil="1" aria-pressed="false">Allow 1</button>
+        </div>
+      </div>
+      <div class="grp">
+        <span class="field-label">Lectin ceiling</span>
+        <div class="seg" id="lceilseg">
+          <button data-lceil="0" aria-pressed="false">Strict &mdash; 0</button>
+          <button data-lceil="1" aria-pressed="true">Allow 1</button>
+          <button data-lceil="2" aria-pressed="false">Allow 2</button>
+        </div>
+      </div>
+      <div class="grp">
+        <label class="chk"><input type="checkbox" id="bketo" checked> Keto only</label>
+      </div>
+      <div class="grp">
+        <span class="field-label">Also avoid</span>
+        <input type="text" id="excl" placeholder="e.g. pork, dairy, onion" style="width:100%">
+        <p style="font-size:11.5px; color:var(--muted); margin:6px 0 0">Comma-separated. Matches ingredient names.</p>
+      </div>
+      <button class="btn" id="gen" style="width:100%">Generate menu</button>
+      <button class="btn ghost" id="printbtn" style="width:100%; margin-top:8px">Print menu &amp; list</button>
+    </aside>
+
+    <div>
+      <div id="menuout"></div>
+
+      <div class="rules">
+        <div class="eyebrow">Histamine rules that matter more than the recipe</div>
+        <ul>
+          <li><b>Freshness is the whole game.</b> Histamine accumulates in food over time &mdash; a compliant ingredient handled badly becomes a non-compliant meal.</li>
+          <li><b>Cook it, eat it.</b> Serve immediately. SIGHI rates refrigerated cooked food as poorly tolerated.</li>
+          <li><b>Freeze, don't fridge.</b> Portion surplus into the freezer while it is still hot-off-the-stove fresh.</li>
+          <li><b>Buy fish frozen-at-sea, never from the counter.</b> Counter fish on ice is one of the highest-histamine foods there is.</li>
+          <li><b>Grind your own meat.</b> Pre-packed ground meat scores 2; freshly ground and cooked the same hour scores 0.</li>
+          <li><b>Nothing aged, cured, smoked, fermented, canned or pickled.</b> That rules out most condiments.</li>
+          <li><b>Watch DAO blockers separately.</b> Alcohol, black and green tea, energy drinks and cocoa impair clearance regardless of the meal.</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <div class="eyebrow">Lectin rules &mdash; and where they collide with the histamine ones</div>
+        <ul>
+          <li><b>Peel and deseed the nightshades and cucurbits.</b> The lectin sits in skin and seeds; the flesh is close to clean. Tomato, pepper, eggplant, cucumber, zucchini, squash, melon.</li>
+          <li><b>Pressure-cook the legumes.</b> Pressure-cooking destroys nearly all bean lectin. Soaking and boiling is not enough for kidney beans.</li>
+          <li><b>Pressure-cooking does not rescue wheat.</b> Wheat germ agglutinin is heat-stable &mdash; wheat, rye, barley, spelt and oats have no preparation escape.</li>
+          <li><b>The grain cluster is the sharpest disagreement between the two protocols.</b> SIGHI rates wheat, bread, pasta and barley as fine for histamine; they are the top lectin tier with no fix.</li>
+          <li><b>Watch the seeds.</b> Chia and pumpkin seeds are histamine-clean but score 2 for lectin. Hemp seed clears both at 0.</li>
+          <li><b>Dairy: A1 casein is the lectin-adjacent issue.</b> Goat, sheep and A2 cow dairy sidestep it. Ghee removes the milk protein entirely.</li>
+          <li><b>Not the same evidence base.</b> SIGHI is a long-standing clinical reference list; the lectin ratings rest on a much thinner and more contested literature. Treat L as a hypothesis to test on yourself, not a verdict.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <p><b>Educational content only.</b> This tool is not medical advice, diagnosis, or treatment. Both intolerances are highly individual &mdash; the lists here are a starting point for an elimination-and-reintroduction protocol, not a verdict on any one person. Consult your physician before changing your diet, and keep your own food-and-symptom log as the final authority.</p>
+  <p><b>Histamine (H)</b> ratings come from the SIGHI (Swiss Interest Group Histamine Intolerance) Food Compatibility List, cross-checked against the SIGHI elimination-diet leaflet. Entries marked <span class="chip q">UNCERTAIN</span> are printed with a "?" by SIGHI, derived from the nearest listed category, or disputed between sources.</p>
+  <p><b>Lectin (L)</b> ratings are built from Dr. Steven Gundry's Plant Paradox food lists cross-checked against published lectin-content literature &mdash; phytohaemagglutinin in legumes, wheat germ agglutinin in grains, nightshade and cucurbit lectins, and A1 casein in cow dairy. This is a materially weaker and more contested evidence base than the histamine list, and the clinical significance of dietary lectins for most people remains disputed. Where a rating is unmeasured or disputed for a given food, the note says so.</p>
+  <p style="margin-top:14px">Bill Seery &middot; <span class="mono">/BillSeery/09_Wellness/</span> &middot; v02</p>
+</footer>
+
+<script>
+const FOODS = __FOODS__;
+const RECIPES = __RECIPES__;
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const SLABEL = ["Clear","Small amounts","Avoid","Worst"];
+const byName = {}; FOODS.forEach(f => byName[f.name] = f);
+
+function store(k, v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem("hk_"+k)); localStorage.setItem("hk_"+k, JSON.stringify(v)); }catch(e){ return null; } }
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function badge(kind, n, full){
+  return `<span class="badge s${n}${full?" full":""}"><span class="k">${kind}</span><span class="n">${n}</span>${full?`<span style="font-weight:500">${SLABEL[n]}</span>`:""}</span>`;
+}
+function flags(f){
+  let o = "";
+  if(f.l_mitigable) o += `<span class="chip prep">FIXABLE BY PREP</span>`;
+  if(f.liberator) o += `<span class="chip">LIBERATOR</span>`;
+  if(f.dao) o += `<span class="chip">DAO BLOCKER</span>`;
+  if(f.other) o += `<span class="chip">OTHER AMINES</span>`;
+  if(f.keto) o += `<span class="chip keto">KETO</span>`;
+  if(f.uncertain) o += `<span class="chip q">UNCERTAIN</span>`;
+  return o;
+}
+const conflicts = f => (f.h <= 1 && f.l >= 2) || (f.h >= 2 && f.l === 0);
+
+/* tabs */
+$$(".tab").forEach(t => t.onclick = () => {
+  $$(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  $$(".panel").forEach(p => p.classList.toggle("on", p.id === t.dataset.panel));
+  window.scrollTo({top:0, behavior:"instant"});
+});
+
+/* search */
+const state = { max:3, lmax:3, cat:"", keto:false, mit:false, conf:false, q:"" };
+const CAT_ORDER = ["Vegetables","Fruit","Meat & Poultry","Fish & Seafood","Eggs","Dairy","Fats & Oils","Nuts & Seeds","Legumes","Grains & Starches","Herbs & Spices","Condiments & Sauces","Sweeteners","Beverages","Alcohol","Supplements & Other","Additives"];
+const catRank = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? 99 : i; };
+[...new Set(FOODS.map(f => f.category))].sort((a,b) => catRank(a)-catRank(b))
+  .forEach(c => { const o = document.createElement("option"); o.value = o.textContent = c; $("#cat").appendChild(o); });
+$("#count").textContent = FOODS.length;
+
+function score(f, q){
+  const n = f.name.toLowerCase(), al = f.aliases.map(a => a.toLowerCase());
+  if(n === q) return 100;
+  if(al.includes(q)) return 95;
+  if(n.startsWith(q)) return 80;
+  if(al.some(a => a.startsWith(q))) return 70;
+  if(n.includes(q)) return 55;
+  if(al.some(a => a.includes(q))) return 45;
+  return 0;
+}
+
+function render(){
+  const q = state.q.trim().toLowerCase();
+  let list = FOODS.filter(f =>
+    f.h <= state.max && f.l <= state.lmax &&
+    (!state.cat || f.category === state.cat) &&
+    (!state.keto || f.keto) &&
+    (!state.mit || f.l_mitigable) &&
+    (!state.conf || conflicts(f))
+  );
+  if(q){
+    list = list.map(f => [score(f,q), f]).filter(p => p[0] > 0)
+               .sort((a,b) => b[0]-a[0] || (a[1].h+a[1].l)-(b[1].h+b[1].l)).map(p => p[1]);
+  } else {
+    list = list.sort((a,b) => catRank(a.category)-catRank(b.category) || (a.h+a.l)-(b.h+b.l) || a.name.localeCompare(b.name));
+  }
+  const shown = list.slice(0, q ? 200 : 120);
+  $("#results").innerHTML = shown.map(f => `
+    <article class="food">
+      <div class="stripe"><i style="background:var(--s${f.h})"></i><i style="background:var(--s${f.l})"></i></div>
+      <div class="hd">
+        <div><div class="nm">${esc(f.name)}</div><div class="cat">${esc(f.category)}</div></div>
+        <div class="scores">${badge("H", f.h, true)}${badge("L", f.l, true)}</div>
+      </div>
+      <div class="flags">${flags(f)}</div>
+      ${f.note ? `<p class="note"><b>H.</b> ${esc(f.note)}</p>` : ""}
+      ${f.l_note ? `<p class="note"><b>L.</b> ${esc(f.l_note)}</p>` : ""}
+      ${f.l_prep ? `<p class="prep">${esc(f.l_prep)}</p>` : ""}
+    </article>`).join("");
+  $("#noresults").style.display = list.length ? "none" : "block";
+}
+
+$("#q").oninput = e => { state.q = e.target.value; render(); };
+$("#cat").onchange = e => { state.cat = e.target.value; render(); };
+$("#fketo").onchange = e => { state.keto = e.target.checked; render(); };
+$("#fmit").onchange = e => { state.mit = e.target.checked; render(); };
+$("#fconf").onchange = e => { state.conf = e.target.checked; render(); };
+$$("#hseg button").forEach(b => b.onclick = () => {
+  $$("#hseg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  state.max = +b.dataset.max; render();
+});
+$$("#lseg button").forEach(b => b.onclick = () => {
+  $$("#lseg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  state.lmax = +b.dataset.lmax; render();
+});
+
+/* mode switch */
+$$("[data-mode]").forEach(b => b.onclick = () => {
+  $$("[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b));
+  $("#searchpanel").style.display = b.dataset.mode === "search" ? "" : "none";
+  $("#scanpanel").style.display   = b.dataset.mode === "scan" ? "" : "none";
+});
+
+/* ---- scan ---- */
+const STOP = new Set(["cup","cups","tbsp","tsp","tablespoon","tablespoons","teaspoon","teaspoons","oz","ounce","ounces","lb","lbs","pound","pounds","g","gram","grams","kg","ml","liter","litre","clove","cloves","package","pkg","large","small","medium","chopped","diced","sliced","minced","grated","of","a","an","the","to","taste","optional","plus","more","for","and","or","into","cut","seeded","drained","rinsed","room","temperature","splash","pinch","handful","sprig","sprigs","bunch","stick","sticks","thinly","roughly","finely","warm","cold","extra","virgin","organic","boneless","skinless","halved","quartered","serving","servings","about","approx"]);
+
+const PREP_H = [
+  {re:/\b(canned|tinned|cans?)\b/,          label:"CANNED", h:3, why:"Canning and long storage push histamine high whatever the base food is."},
+  {re:/\b(smoked|smoke-cured)\b/,           label:"SMOKED", h:3, why:"Smoking is a score-3 process on its own."},
+  {re:/\b(cured|salami|prosciutto|pastrami|charcuterie)\b/, label:"CURED", h:3, why:"Curing concentrates histamine and tyramine."},
+  {re:/\b(fermented|pickled|brined|kraut|kimchi|miso|koji)\b/, label:"FERMENTED", h:3, why:"Fermentation is the single biggest histamine generator in food."},
+  {re:/\b(aged|matured|dry-aged|ripened)\b/, label:"AGED", h:3, why:"Age is the variable that turns a clean food into a high one."},
+  {re:/\b(deli|lunch meat|luncheon meat|cold cuts)\b/, label:"DELI", h:3, why:"Sliced deli meat sits, oxidises, and scores 3."},
+  {re:/\b(leftover|leftovers|day-old|reheated)\b/, label:"LEFTOVER", h:3, why:"Refrigerated cooked food climbs fast — freeze it hot instead."},
+  {re:/\b(broth|stock|bouillon|consomm)\b/,  label:"BROTH", h:2, why:"Long-simmered broth, stock and bouillon draw amines out of the bones and meat."},
+  {re:/\b(ground|minced)\s+(beef|pork|lamb|turkey|chicken|veal|meat)\b/, label:"PRE-GROUND", h:2, why:"Pre-packed or open-sale ground meat scores 2. Ground to order and cooked the same hour, it scores 0."},
+  {re:/\b(dried|sun-dried|dehydrated)\b/,    label:"DRIED", h:2, why:"Drying concentrates amines by removing water."}
+];
+const PREP_L = [
+  {re:/\b(pressure[- ]?cook(ed|ing)?|instant pot)\b/, label:"PRESSURE-COOKED", why:"Pressure-cooking destroys nearly all legume lectin — but not wheat germ agglutinin, which is heat-stable."},
+  {re:/\b(peeled|skinless|skin removed)\b/,           label:"PEELED", why:"The lectin concentrates in the skin, so peeling removes most of it."},
+  {re:/\b(deseeded|de-seeded|seeds removed|seedless)\b/, label:"DESEEDED", why:"Seeds carry the rest of the lectin load in nightshades and cucurbits."}
+];
+
+function normalize(line){
+  return line.toLowerCase()
+    .replace(/\([^)]*\)/g," ")
+    .replace(/[0-9]+\s*\/\s*[0-9]+/g," ")
+    .replace(/[0-9¼½¾⅓⅔⅛.,;:]+/g," ")
+    .replace(/[^a-z\s-]/g," ")
+    .split(/\s+/).filter(w => w && !STOP.has(w)).join(" ").trim();
+}
+function singularize(t){ return t.split(" ").map(w => w.length > 3 && w.endsWith("s") && !w.endsWith("ss") ? w.slice(0,-1) : w).join(" "); }
+function keysFor(f){
+  return [f.name.toLowerCase().replace(/\([^)]*\)/g," "), ...f.aliases.map(a => a.toLowerCase())]
+    .map(c => c.replace(/[^a-z\s-]/g," ").replace(/\s+/g," ").trim()).filter(k => k.length >= 3);
+}
+function lookup(t){
+  if(!t) return null;
+  let exact = null, contained = null, containedLen = 0, partial = null, partialLen = 1e9;
+  for(const f of FOODS){
+    for(const key of keysFor(f)){
+      if(key === t){ if(!exact || f.h > exact.h) exact = f; }
+      else if(t.includes(key)){
+        if(key.length > containedLen || (key.length === containedLen && contained && f.h > contained.h)){ contained = f; containedLen = key.length; }
+      } else if(key.includes(t)){
+        if(key.length < partialLen || (key.length === partialLen && partial && f.h > partial.h)){ partial = f; partialLen = key.length; }
+      }
+    }
+  }
+  return exact || contained || partial;
+}
+function matchFood(line){ const t = normalize(line); return lookup(t) || lookup(singularize(t)); }
+
+$("#scanbtn").onclick = () => {
+  const lines = $("#paste").value.split("\n").map(l => l.trim()).filter(Boolean);
+  if(!lines.length){ $("#scanout").innerHTML = `<div class="empty">Paste a list first.</div>`; return; }
+
+  const rows = lines.map(raw => {
+    const l = raw.toLowerCase();
+    const f = matchFood(raw);
+    const ph = PREP_H.filter(p => p.re.test(l));
+    const pl = PREP_L.filter(p => p.re.test(l));
+    const prepH = ph.length ? Math.max(...ph.map(p => p.h)) : 0;
+    let H = f ? Math.max(f.h, prepH) : (ph.length ? prepH : null);
+    let L = f ? f.l : null;
+    let lowered = false;
+    if(f && pl.length && f.l_mitigable && f.l > 0){ L = Math.max(0, f.l - 2); lowered = true; }
+    return { raw, f, ph, pl, H, L, lowered };
+  });
+
+  const hits = rows.filter(r => r.H !== null || r.L !== null);
+  const wH = hits.length ? Math.max(...hits.map(r => r.H ?? 0)) : 0;
+  const wL = hits.length ? Math.max(...hits.map(r => r.L ?? 0)) : 0;
+  const unknown = rows.filter(r => r.H === null && r.L === null).length;
+  const lib = rows.filter(r => r.f && r.f.liberator).length;
+  const dao = rows.filter(r => r.f && r.f.dao).length;
+  const fixable = rows.filter(r => r.f && r.f.l_mitigable && r.L >= 2).length;
+
+  const verdict = (n, kind) => !hits.length ? "Nothing matched."
+    : n === 0 ? (kind === "H" ? "Clean. Every matched ingredient scores 0 for histamine." : "Clean. Nothing here carries a meaningful lectin load.")
+    : n === 1 ? "Mostly clear, with items to keep small."
+    : n === 2 ? "Not compliant as written — swap or re-prepare the flagged items."
+    : (kind === "H" ? "High load. Several of the worst offenders are in this list." : "High lectin load. Several top-tier items here.");
+
+  const why = [...new Set(rows.flatMap(r => [...r.ph, ...r.pl]).map(p => p.why))];
+
+  $("#scanout").innerHTML = `
+    <div class="verdicts">
+      <div class="verdict s${wH}" style="background:var(--s${wH}-bg)">
+        <div class="eyebrow" style="color:inherit; opacity:.75">Histamine &mdash; worst in list</div>
+        <h3>${esc(verdict(wH,"H"))}</h3>
+        <p>${lib} liberator${lib===1?"":"s"} &middot; ${dao} DAO blocker${dao===1?"":"s"}</p>
+      </div>
+      <div class="verdict s${wL}" style="background:var(--s${wL}-bg)">
+        <div class="eyebrow" style="color:inherit; opacity:.75">Lectin &mdash; worst in list</div>
+        <h3>${esc(verdict(wL,"L"))}</h3>
+        <p>${fixable} still fixable by peeling, deseeding or pressure-cooking</p>
+      </div>
+    </div>
+    <p style="font-size:12.5px; color:var(--muted); margin:0 0 10px">${rows.length - unknown} of ${rows.length} lines matched.</p>
+    <div class="card">
+      ${rows.map(r => (r.H === null && r.L === null) ? `
+        <div class="scanline">
+          <span class="badge" style="background:var(--surface-2); color:var(--muted)">?</span>
+          <div class="raw">${esc(r.raw)} <span class="hit">&rarr; not in the list</span></div>
+        </div>` : `
+        <div class="scanline">
+          <div class="sc">${r.H !== null ? badge("H", r.H) : ""}${r.L !== null ? badge("L", r.L) : ""}</div>
+          <div class="raw"><span>${esc(r.raw)}</span> <span class="hit">&rarr; ${esc(r.f ? r.f.name : "preparation method")}${r.f && r.H > r.f.h ? ` (base H ${r.f.h})` : ""}${r.lowered ? ` (base L ${r.f.l}, lowered by prep)` : ""}</span></div>
+          <div style="display:flex; gap:4px; flex-wrap:wrap; justify-content:flex-end">
+            ${r.ph.map(p => `<span class="chip">${p.label}</span>`).join("")}
+            ${r.pl.map(p => `<span class="chip prep">${p.label}</span>`).join("")}
+            ${!r.lowered && r.f && r.f.l_mitigable && r.L >= 2 ? '<span class="chip prep">FIXABLE</span>' : ""}
+          </div>
+        </div>`).join("")}
+    </div>
+    ${why.length ? `<div class="rules" style="margin-top:14px"><div class="eyebrow">Why some lines scored differently from their base food</div><ul>${why.map(w => `<li>${esc(w)}</li>`).join("")}</ul></div>` : ""}`;
+};
+
+/* ---- builder ---- */
+const bstate = { days:3, ceil:0, lceil:1, keto:true, slots:["breakfast","lunch","dinner"], excl:[] };
+const saved = store("build");
+if(saved){ Object.assign(bstate, saved); }
+
+function syncControls(){
+  $$("#daysseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.days === bstate.days));
+  $$("#ceilseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.ceil === bstate.ceil));
+  $$("#lceilseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.lceil === bstate.lceil));
+  $("#bketo").checked = bstate.keto;
+  $$(".slot").forEach(c => c.checked = bstate.slots.includes(c.value));
+  $("#excl").value = bstate.excl.join(", ");
+}
+syncControls();
+$$("#daysseg button").forEach(b => b.onclick = () => { bstate.days = +b.dataset.days; syncControls(); });
+$$("#ceilseg button").forEach(b => b.onclick = () => { bstate.ceil = +b.dataset.ceil; syncControls(); });
+$$("#lceilseg button").forEach(b => b.onclick = () => { bstate.lceil = +b.dataset.lceil; syncControls(); });
+$("#bketo").onchange = e => bstate.keto = e.target.checked;
+$$(".slot").forEach(c => c.onchange = () => bstate.slots = $$(".slot").filter(x => x.checked).map(x => x.value));
+$("#excl").oninput = e => bstate.excl = e.target.value.split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+
+function ingL(ing){
+  const f = byName[ing.item]; if(!f) return 0;
+  return (ing.lprep && f.l_mitigable) ? Math.max(0, f.l - 2) : f.l;
+}
+const recH = r => Math.max(0, ...r.ingredients.map(i => byName[i.item] ? byName[i.item].h : 0));
+const recL = r => Math.max(0, ...r.ingredients.map(ingL));
+function recFlags(r){
+  const fs = r.ingredients.map(i => byName[i.item]).filter(Boolean);
+  return { lib: fs.some(f => f.liberator), dao: fs.some(f => f.dao), prep: r.ingredients.some(i => i.lprep) };
+}
+function recOk(r){
+  if(recH(r) > bstate.ceil) return false;
+  if(recL(r) > bstate.lceil) return false;
+  if(bstate.keto && !r.keto) return false;
+  if(bstate.excl.length){
+    const hay = (r.name + " " + r.ingredients.map(i => i.display + " " + i.item).join(" ")).toLowerCase();
+    if(bstate.excl.some(x => hay.includes(x))) return false;
+  }
+  return true;
+}
+
+function generate(){
+  const seed = Math.floor(Math.random()*997);
+  const days = [], usedIds = [];
+  for(let d = 0; d < bstate.days; d++){
+    const meals = [];
+    for(const slot of ["breakfast","lunch","dinner","snack"]){
+      if(!bstate.slots.includes(slot)) continue;
+      const pool = RECIPES.filter(r => r.meal.includes(slot) && recOk(r));
+      if(!pool.length) continue;
+      const fresh = pool.filter(r => !usedIds.includes(r.id));
+      const src = fresh.length ? fresh : pool;
+      const chosen = src[(seed + d*7 + slot.length*3) % src.length];
+      usedIds.push(chosen.id);
+      meals.push({ slot, r:chosen });
+    }
+    days.push(meals);
+  }
+
+  const total = days.flat().length;
+  if(!total){
+    $("#menuout").innerHTML = `<div class="empty card" style="padding:44px">No dishes fit those constraints. Raise the lectin ceiling to <b>Allow 1</b>, the histamine ceiling to <b>Allow 1</b>, turn off keto-only, or clear the avoid list.</div>`;
+    return;
+  }
+
+  let html = `<div class="card" style="padding:14px 18px; display:flex; gap:22px; align-items:center; flex-wrap:wrap">
+    <div><span class="eyebrow">Plan</span><div style="font-weight:600">${bstate.days} day${bstate.days>1?"s":""} &middot; ${total} dishes</div></div>
+    <div><span class="eyebrow">Ceilings</span><div style="font-weight:600">H&nbsp;${bstate.ceil} &middot; L&nbsp;${bstate.lceil}</div></div>
+    <div><span class="eyebrow">Pattern</span><div style="font-weight:600">${bstate.keto ? "Low-histamine + low-lectin + keto" : "Low-histamine + low-lectin"}</div></div>
+  </div>`;
+
+  days.forEach((meals, i) => {
+    const wH = Math.max(0, ...meals.map(m => recH(m.r)));
+    const wL = Math.max(0, ...meals.map(m => recL(m.r)));
+    html += `<div class="dayhead"><h3>Day ${i+1}</h3>${badge("H",wH,true)}${badge("L",wL,true)}<span class="tot">${meals.length} dishes</span></div><div class="recipes">`;
+    meals.forEach(m => {
+      const fl = recFlags(m.r);
+      html += `<article class="rec">
+        <div class="rh">
+          <div><div class="slot">${m.slot}</div><h4>${esc(m.r.name)}</h4></div>
+          <div class="scores">${badge("H", recH(m.r), true)}${badge("L", recL(m.r), true)}</div>
+        </div>
+        <p class="blurb">${esc(m.r.blurb)}</p>
+        <div class="meta"><span>${m.r.time} min</span><span>Serves ${m.r.servings}</span>${m.r.keto?'<span>Keto</span>':'<span>Higher carb</span>'}
+          ${fl.lib?'<span class="chip">LIBERATOR</span>':""}${fl.dao?'<span class="chip">DAO</span>':""}${fl.prep?'<span class="chip prep">LECTIN PREP REQUIRED</span>':""}</div>
+        <details><summary>Ingredients &amp; method</summary>
+          <div class="body">
+            <div><span class="field-label">Ingredients</span><ul>${
+              m.r.ingredients.map(ing => {
+                const f = byName[ing.item], le = ingL(ing);
+                const marks = [];
+                if(f && f.h > 0) marks.push(`<span class="badge s${f.h}" style="padding:0 6px"><span class="k">H</span><span class="n">${f.h}</span></span>`);
+                if(le > 0) marks.push(`<span class="badge s${le}" style="padding:0 6px"><span class="k">L</span><span class="n">${le}</span></span>`);
+                if(ing.lprep) marks.push(`<span class="chip prep">PREP</span>`);
+                return `<li>${esc(ing.qty)} ${esc(ing.display)} ${marks.join(" ")}</li>`;
+              }).join("")}</ul></div>
+            <div><span class="field-label">Method</span><ol>${m.r.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+              ${m.r.tip ? `<p class="blurb" style="margin-top:10px"><b>Note.</b> ${esc(m.r.tip)}</p>` : ""}</div>
+          </div>
+        </details>
+      </article>`;
+    });
+    html += `</div>`;
+  });
+
+  const agg = {};
+  days.flat().forEach(m => m.r.ingredients.forEach(ing => {
+    const f = byName[ing.item];
+    const cat = f ? f.category : "Other";
+    const key = ing.display.toLowerCase();
+    agg[cat] = agg[cat] || {};
+    agg[cat][key] = agg[cat][key] || { name:ing.display, n:0 };
+    agg[cat][key].n++;
+  }));
+  html += `<div class="shop card">
+    <div class="eyebrow">Shopping list</div>
+    <h3 style="font-size:22px; margin-top:3px">Everything this plan needs</h3>
+    <p class="lede" style="font-size:13px">Buy fish frozen-at-sea and have meat ground to order. Where an item says peeled or deseeded, that step is doing the lectin work &mdash; it is not optional.</p>
+    <div class="shopcols">${Object.keys(agg).sort((a,b)=>catRank(a)-catRank(b)).map(c => `
+      <div class="shopcat"><h4>${esc(c)}</h4>
+        ${Object.values(agg[c]).sort((a,b)=>a.name.localeCompare(b.name)).map(x =>
+          `<label><input type="checkbox"><span>${esc(x.name)}${x.n>1?` <span class="mono" style="color:var(--muted)">×${x.n}</span>`:""}</span></label>`).join("")}
+      </div>`).join("")}</div>
+  </div>`;
+
+  $("#menuout").innerHTML = html;
+  store("build", bstate);
+}
+
+$("#gen").onclick = generate;
+$("#printbtn").onclick = () => window.print();
+
+render();
+generate();
+</script>
