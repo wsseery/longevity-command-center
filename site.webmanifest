@@ -1,0 +1,14 @@
+{
+  "name": "Longevity Command Center",
+  "short_name": "Longevity CC",
+  "description": "Anti-aging science, investment and intelligence — an NIA ITP compound scoreboard, longevity investment tracker, curated news, protocols and tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

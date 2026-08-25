@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Longevity Command Center"><defs>
+    <linearGradient id="lccArea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ddff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#00ddff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lccBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a2e"/><stop offset="1" stop-color="#080c16"/>
+    </linearGradient><filter id="lccGlow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs><rect width="100" height="100" rx="22" fill="url(#lccBg)"/><g stroke="#00ddff" stroke-opacity="0.10" stroke-width="1.6"><line x1="16" y1="84" x2="86" y2="84"/><line x1="16" y1="30" x2="16" y2="84"/></g><path d="M16,30 H44 C58,30 62,37 66,49 C70,61 74,71 86,73 L86,84 L16,84 Z" fill="url(#lccArea)"/><path d="M16,30 H44 C58,30 62,37 66,49 C70,61 74,71 86,73" fill="none" stroke="#00ddff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#lccGlow)"/><circle cx="86" cy="73" r="6" fill="#00ffc8"/></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Histamine Kitchen"><defs><linearGradient id="hkbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F2E2A"/><stop offset="1" stop-color="#071C1A"/></linearGradient></defs><rect width="128" height="128" rx="28" fill="url(#hkbg)"/><g transform="translate(24 22) scale(0.80)"><defs><linearGradient id="hkleaf" x1="0.12" y1="1" x2="0.88" y2="0.05">
+          <stop offset="0" stop-color="#0A4A44"/><stop offset="1" stop-color="#1B8A7D"/>
+        </linearGradient></defs>
+        <g transform="translate(50 51) rotate(-8) scale(0.94) translate(-50 -48.5)">
+          <path d="M50 78 C 19 62, 17 30, 50 9 C 83 30, 81 62, 50 78 Z" fill="url(#hkleaf)"/>
+          <g stroke="#F4F6F4" stroke-linecap="round" fill="none" stroke-width="3.6">
+            <path d="M50 64 C 60 61, 67 55, 71 46" opacity="0.26"/>
+            <path d="M50 52 C 59 49, 65 43, 68 34" opacity="0.42"/>
+            <path d="M50 40 C 57 37, 62 32, 64 24" opacity="0.60"/>
+            <path d="M50 28 C 55 26, 58 22, 59 16" opacity="0.80"/>
+          </g>
+          <path d="M50 80 L50 19" stroke="#E4733F" stroke-width="5.2" stroke-linecap="round"/>
+          <circle cx="50" cy="81" r="7.4" fill="#E4733F"/><circle cx="50" cy="81" r="2.7" fill="#F4F6F4"/>
+        </g></g></svg>
