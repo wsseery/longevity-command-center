@@ -1,0 +1,2333 @@
+[
+ {
+  "id": "yolk-scramble",
+  "name": "Yolk-Forward Herb Scramble",
+  "meal": [
+   "breakfast"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 1,
+  "blurb": "Egg white is the problem, not the egg. Six yolks and a knob of butter give you a scramble that scores clean.",
+  "ingredients": [
+   {
+    "item": "Egg yolk",
+    "qty": "5–6",
+    "display": "egg yolks"
+   },
+   {
+    "item": "Butter (sweet cream)",
+    "qty": "1 tbsp",
+    "display": "sweet cream butter"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1 tbsp",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Chives",
+    "qty": "1 tbsp",
+    "display": "chives, snipped"
+   },
+   {
+    "item": "Salt",
+    "qty": "pinch",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Whisk the yolks with the cream and a pinch of salt.",
+   "Melt the butter in a cold pan over low heat.",
+   "Add the yolks and stir constantly with a spatula — low and slow, 3–4 minutes, until barely set.",
+   "Off the heat, fold in the chives and eat immediately."
+  ],
+  "tip": "Save the whites for something else, or discard them. SIGHI scores egg white 2 and flags it as a mast-cell liberator even cooked."
+ },
+ {
+  "id": "ricotta-berry",
+  "name": "Ricotta and Blueberry Bowl",
+  "meal": [
+   "breakfast",
+   "snack"
+  ],
+  "keto": true,
+  "time": 5,
+  "servings": 1,
+  "blurb": "Fresh unripened cheese is the one dairy category that stays at zero. Five minutes, no cooking.",
+  "ingredients": [
+   {
+    "item": "Ricotta",
+    "qty": "3/4 cup",
+    "display": "whole-milk ricotta"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "1/3 cup",
+    "display": "blueberries"
+   },
+   {
+    "item": "Chia seeds",
+    "qty": "1 tbsp",
+    "display": "chia seeds"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1 tbsp",
+    "display": "unsweetened shredded coconut"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "pinch",
+    "display": "cinnamon"
+   }
+  ],
+  "steps": [
+   "Spoon the ricotta into a bowl and loosen it with a fork.",
+   "Top with blueberries, chia, coconut and cinnamon.",
+   "Eat within the hour — opened ricotta climbs quickly."
+  ],
+  "tip": "Check the tub date. Fresh cheeses score 0 while sealed and fresh; the same ricotta at day six is a different food."
+ },
+ {
+  "id": "chia-pudding",
+  "name": "Overnight Coconut-Chia Pudding",
+  "meal": [
+   "breakfast",
+   "snack"
+  ],
+  "keto": true,
+  "time": 5,
+  "servings": 2,
+  "blurb": "The one make-ahead that is safe: nothing is cooked, so nothing is accumulating histamine as a leftover.",
+  "ingredients": [
+   {
+    "item": "Chia seeds",
+    "qty": "1/3 cup",
+    "display": "chia seeds"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1 1/4 cup",
+    "display": "coconut milk (unsweetened)"
+   },
+   {
+    "item": "Vanilla",
+    "qty": "1/2 tsp",
+    "display": "vanilla"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "1/4 cup",
+    "display": "blueberries"
+   },
+   {
+    "item": "Pumpkin seeds",
+    "qty": "2 tbsp",
+    "display": "pumpkin seeds"
+   }
+  ],
+  "steps": [
+   "Stir chia into the coconut milk with the vanilla.",
+   "Rest 10 minutes, stir again to break up clumps, then refrigerate overnight.",
+   "Top with blueberries and pumpkin seeds to serve."
+  ],
+  "tip": "Uncooked, sealed and cold, this holds two days. Cooked leftovers would not."
+ },
+ {
+  "id": "turkey-patties",
+  "name": "Turkey and Zucchini Breakfast Patties",
+  "meal": [
+   "breakfast",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 20,
+  "servings": 2,
+  "blurb": "Grind the turkey yourself or buy it ground to order. Pre-packed ground meat is the hidden score-2 in most breakfasts.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "1 lb",
+    "display": "freshly ground turkey"
+   },
+   {
+    "item": "Zucchini",
+    "qty": "1 small",
+    "display": "zucchini, peeled, deseeded, grated and squeezed dry",
+    "lprep": true
+   },
+   {
+    "item": "Sage",
+    "qty": "1 tsp",
+    "display": "chopped sage"
+   },
+   {
+    "item": "Thyme",
+    "qty": "1 tsp",
+    "display": "thyme leaves"
+   },
+   {
+    "item": "Salt",
+    "qty": "3/4 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1 tbsp",
+    "display": "olive oil"
+   }
+  ],
+  "steps": [
+   "Mix the turkey, squeezed zucchini, herbs and salt. Do not overwork it.",
+   "Form six flat patties.",
+   "Sear in olive oil over medium heat, 3–4 minutes a side, until cooked through.",
+   "Serve straight from the pan."
+  ],
+  "tip": "Any patties you will not eat now go into the freezer hot-cooled, not the fridge."
+ },
+ {
+  "id": "cream-cheese-pancakes",
+  "name": "Cream Cheese Pancakes",
+  "meal": [
+   "breakfast"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 2,
+  "blurb": "Yolks, cream cheese and a little almond flour. No banana, no aged dairy, no wheat.",
+  "ingredients": [
+   {
+    "item": "Cream cheese (plain)",
+    "qty": "4 oz",
+    "display": "plain cream cheese"
+   },
+   {
+    "item": "Egg yolk",
+    "qty": "4",
+    "display": "egg yolks"
+   },
+   {
+    "item": "Almond flour",
+    "qty": "3 tbsp",
+    "display": "almond flour"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1/2 tsp",
+    "display": "cinnamon"
+   },
+   {
+    "item": "Butter (sweet cream)",
+    "qty": "1 tbsp",
+    "display": "butter for the pan"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "1/4 cup",
+    "display": "blueberries"
+   }
+  ],
+  "steps": [
+   "Blend the cream cheese, yolks, almond flour and cinnamon until smooth.",
+   "Rest the batter 3 minutes.",
+   "Cook silver-dollar rounds in butter over medium-low, 2 minutes a side.",
+   "Serve with blueberries."
+  ],
+  "tip": "Almond scores 1 — this is an 'allow 1' dish. At a strict-0 ceiling, drop the almond flour and add a tablespoon of coconut flour instead."
+ },
+ {
+  "id": "beef-hash",
+  "name": "Fresh Beef and Sweet Potato Hash",
+  "meal": [
+   "breakfast",
+   "lunch"
+  ],
+  "keto": false,
+  "time": 25,
+  "servings": 2,
+  "blurb": "The higher-carb breakfast, for a training day. Sweet potato scores 0 and behaves.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "3/4 lb",
+    "display": "freshly ground beef"
+   },
+   {
+    "item": "Sweet potato",
+    "qty": "1 medium",
+    "display": "sweet potato, peeled, small dice",
+    "lprep": true
+   },
+   {
+    "item": "White onion",
+    "qty": "1/2",
+    "display": "white onion, diced"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Sweet paprika",
+    "qty": "1 tsp",
+    "display": "sweet paprika"
+   },
+   {
+    "item": "Parsley",
+    "qty": "2 tbsp",
+    "display": "parsley"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Fry the sweet potato in olive oil over medium heat, covered, 10 minutes until tender.",
+   "Add the onion, cook 3 minutes.",
+   "Push aside, brown the beef hard in the same pan, then combine.",
+   "Finish with paprika, salt and parsley."
+  ],
+  "tip": "White onion scores 0 where yellow and red onion score 1 — worth keeping the white on hand."
+ },
+ {
+  "id": "smash-burgers",
+  "name": "Lettuce-Wrapped Smash Burgers",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 2,
+  "blurb": "No bun, no ketchup, no aged cheese, no pickle. Everything that normally makes a burger a problem, removed.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "1 lb",
+    "display": "beef, ground to order"
+   },
+   {
+    "item": "Salt",
+    "qty": "1 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "1 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Lettuce (head and leaf)",
+    "qty": "8 leaves",
+    "display": "butter lettuce leaves"
+   },
+   {
+    "item": "Cucumber",
+    "qty": "1/2",
+    "display": "cucumber, peeled, deseeded, sliced",
+    "lprep": true
+   },
+   {
+    "item": "White onion",
+    "qty": "1/4",
+    "display": "white onion, shaved"
+   },
+   {
+    "item": "Mozzarella",
+    "qty": "2 oz",
+    "display": "fresh mozzarella"
+   }
+  ],
+  "steps": [
+   "Divide the beef into four loose balls. Do not salt yet.",
+   "Get a heavy pan smoking hot with the butter.",
+   "Smash each ball flat, salt the top, sear 90 seconds, flip, 60 seconds more.",
+   "Lay mozzarella on to soften, then build in the lettuce leaves with cucumber and onion."
+  ],
+  "tip": "Fresh mozzarella scores 0 where every aged cheese scores 2 or 3. It is the burger cheese for this diet."
+ },
+ {
+  "id": "chicken-fennel",
+  "name": "Sheet-Pan Chicken with Fennel and Carrot",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 40,
+  "servings": 3,
+  "blurb": "One tray, four ingredients that all score zero, and enough for the next day if you freeze it hot.",
+  "ingredients": [
+   {
+    "item": "Chicken (fresh, cooked promptly)",
+    "qty": "6",
+    "display": "chicken thighs, bone-in"
+   },
+   {
+    "item": "Fennel bulb",
+    "qty": "2",
+    "display": "fennel bulbs, wedged"
+   },
+   {
+    "item": "Carrot",
+    "qty": "4",
+    "display": "carrots, batons"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Rosemary",
+    "qty": "2 sprigs",
+    "display": "rosemary"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 425°F.",
+   "Toss fennel and carrot with 2 tbsp oil and salt on a sheet pan.",
+   "Rub the chicken with the remaining oil and salt, set it skin-up on the vegetables, tuck rosemary underneath.",
+   "Roast 35–40 minutes until the skin is crisp and the thigh reads 175°F."
+  ],
+  "tip": "Portion any surplus into the freezer while the pan is still warm. Refrigerated overnight, this becomes a score-2 meal."
+ },
+ {
+  "id": "cod-brown-butter",
+  "name": "Cod in Brown Butter with Parsley",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 2,
+  "blurb": "Frozen-at-sea white fish is the safest protein on the list. Counter fish is one of the worst.",
+  "ingredients": [
+   {
+    "item": "Cod (fresh or frozen)",
+    "qty": "2 fillets",
+    "display": "cod, frozen-at-sea"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "3 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "flat-leaf parsley"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Zucchini",
+    "qty": "1",
+    "display": "zucchini, peeled, deseeded, ribboned",
+    "lprep": true
+   }
+  ],
+  "steps": [
+   "Thaw the cod in the fridge and pat it very dry. Salt it.",
+   "Sear in 1 tbsp butter over medium-high, 3 minutes a side. Lift out.",
+   "Add the remaining butter, swirl until it smells nutty and turns amber.",
+   "Wilt the zucchini ribbons in the butter for a minute, spoon over the fish with the parsley."
+  ],
+  "tip": "No lemon. Citrus scores 2 and is a liberator — the brown butter is doing the acid's job here."
+ },
+ {
+  "id": "cauli-rice-bowl",
+  "name": "Cauliflower Rice Bowl with Ricotta and Basil",
+  "meal": [
+   "lunch"
+  ],
+  "keto": true,
+  "time": 20,
+  "servings": 2,
+  "blurb": "A no-protein lunch that still holds together, built on two score-zero ingredients.",
+  "ingredients": [
+   {
+    "item": "Cauliflower",
+    "qty": "1 head",
+    "display": "cauliflower, riced"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Ricotta",
+    "qty": "1/2 cup",
+    "display": "ricotta"
+   },
+   {
+    "item": "Basil",
+    "qty": "1/4 cup",
+    "display": "basil leaves"
+   },
+   {
+    "item": "Pumpkin seeds",
+    "qty": "3 tbsp",
+    "display": "toasted pumpkin seeds"
+   },
+   {
+    "item": "Broccoli",
+    "qty": "1 cup",
+    "display": "broccoli florets"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Pulse the cauliflower to rice in a food processor.",
+   "Fry it in olive oil over high heat, 6–7 minutes, undisturbed at first so it browns.",
+   "Steam or blanch the broccoli 3 minutes and fold it in.",
+   "Top with ricotta, torn basil, pumpkin seeds and salt."
+  ],
+  "tip": "Pumpkin seeds score 0 where most nuts score 1 to 3 — they are the crunch to keep in the pantry."
+ },
+ {
+  "id": "turkey-cups",
+  "name": "Turkey Lettuce Cups with Cucumber and Dill",
+  "meal": [
+   "lunch",
+   "snack"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 2,
+  "blurb": "The lunch to make when you refuse to cook. No deli meat — deli turkey scores 3.",
+  "ingredients": [
+   {
+    "item": "Turkey (fresh)",
+    "qty": "3/4 lb",
+    "display": "roast turkey, cooked today"
+   },
+   {
+    "item": "Lettuce (head and leaf)",
+    "qty": "8 leaves",
+    "display": "gem lettuce cups"
+   },
+   {
+    "item": "Cucumber",
+    "qty": "1",
+    "display": "cucumber, peeled, deseeded, diced",
+    "lprep": true
+   },
+   {
+    "item": "Dill",
+    "qty": "2 tbsp",
+    "display": "dill"
+   },
+   {
+    "item": "Cream cheese (plain)",
+    "qty": "3 tbsp",
+    "display": "cream cheese"
+   },
+   {
+    "item": "Chives",
+    "qty": "1 tbsp",
+    "display": "chives"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Loosen the cream cheese with a splash of water into a spoonable dressing. Fold in dill and chives.",
+   "Dice the turkey and toss with the cucumber and dressing.",
+   "Spoon into lettuce cups and salt."
+  ],
+  "tip": "This is the honest reason to roast a whole turkey breast on Sunday and freeze it in portions — sliced deli turkey is a score-3 food."
+ },
+ {
+  "id": "zoodle-pesto",
+  "name": "Zucchini Noodles, Basil and Pumpkin Seed Pesto",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 20,
+  "servings": 2,
+  "blurb": "Pesto without pine nuts, parmesan or lemon — three ingredients this diet cannot have.",
+  "ingredients": [
+   {
+    "item": "Zucchini",
+    "qty": "3",
+    "display": "zucchini, peeled, deseeded, spiralized",
+    "lprep": true
+   },
+   {
+    "item": "Basil",
+    "qty": "2 cups",
+    "display": "basil leaves"
+   },
+   {
+    "item": "Pumpkin seeds",
+    "qty": "1/3 cup",
+    "display": "pumpkin seeds"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1/3 cup",
+    "display": "olive oil"
+   },
+   {
+    "item": "Ricotta",
+    "qty": "1/4 cup",
+    "display": "ricotta"
+   },
+   {
+    "item": "Salt",
+    "qty": "3/4 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Chicken (fresh, cooked promptly)",
+    "qty": "2",
+    "display": "chicken breasts (optional)"
+   }
+  ],
+  "steps": [
+   "Blitz basil, pumpkin seeds, olive oil and salt to a coarse pesto. Blend in the ricotta last.",
+   "Salt the zucchini noodles, rest 10 minutes, squeeze dry.",
+   "Warm the noodles 90 seconds in a dry hot pan — no longer, or they weep.",
+   "Toss with the pesto off the heat. Add sliced seared chicken if you want the protein."
+  ],
+  "tip": "Parmesan is a matured hard cheese: score 3. Ricotta carries the creaminess at score 0."
+ },
+ {
+  "id": "trout-cucumber",
+  "name": "Trout with Cucumber and Mint",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 20,
+  "servings": 2,
+  "blurb": "Freshwater trout is one of the few fish SIGHI rates at zero outright.",
+  "ingredients": [
+   {
+    "item": "Trout (freshwater)",
+    "qty": "2 fillets",
+    "display": "trout fillets"
+   },
+   {
+    "item": "Cucumber",
+    "qty": "1",
+    "display": "cucumber, peeled, deseeded, ribboned",
+    "lprep": true
+   },
+   {
+    "item": "Mint",
+    "qty": "2 tbsp",
+    "display": "mint leaves"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "3 tbsp",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Radish (red)",
+    "qty": "4",
+    "display": "radishes, sliced"
+   }
+  ],
+  "steps": [
+   "Salt the trout and sear skin-down in olive oil, 4 minutes, then 1 minute on the flesh side.",
+   "Toss cucumber ribbons, radish and mint with the cream and a pinch of salt.",
+   "Plate the salad cold under the hot fish."
+  ],
+  "tip": "No vinegar in the salad — every vinegar except distilled white scores 2 or higher, and even that one is disputed."
+ },
+ {
+  "id": "herb-roast-chicken",
+  "name": "Herb-Roasted Chicken with Asparagus",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 55,
+  "servings": 4,
+  "blurb": "The Sunday anchor. Roast it, eat it, freeze the rest in portions the same evening.",
+  "ingredients": [
+   {
+    "item": "Chicken (fresh, cooked promptly)",
+    "qty": "1 (4 lb)",
+    "display": "whole chicken"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "3 tbsp",
+    "display": "softened butter"
+   },
+   {
+    "item": "Thyme",
+    "qty": "1 tbsp",
+    "display": "thyme"
+   },
+   {
+    "item": "Sage",
+    "qty": "6 leaves",
+    "display": "sage leaves"
+   },
+   {
+    "item": "Asparagus",
+    "qty": "1 lb",
+    "display": "asparagus"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 400°F.",
+   "Work the butter, thyme and chopped sage under the skin. Salt the bird generously.",
+   "Roast 50 minutes, or until the thigh reads 175°F.",
+   "Toss asparagus in olive oil and salt, add to the pan for the last 12 minutes.",
+   "Rest 10 minutes and carve."
+  ],
+  "tip": "Freeze leftover meat within an hour of carving. Chicken kept in the fridge overnight is no longer a score-0 food."
+ },
+ {
+  "id": "cod-fennel-leek",
+  "name": "Pan-Seared Cod with Fennel and Leek",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 2,
+  "blurb": "Braised fennel and leek give you the sweetness that would normally come from onion or tomato.",
+  "ingredients": [
+   {
+    "item": "Cod (fresh or frozen)",
+    "qty": "2 fillets",
+    "display": "cod, frozen-at-sea"
+   },
+   {
+    "item": "Fennel bulb",
+    "qty": "1",
+    "display": "fennel, thinly sliced"
+   },
+   {
+    "item": "Leek",
+    "qty": "1",
+    "display": "leek, sliced"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1/4 cup",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Thyme",
+    "qty": "1 tsp",
+    "display": "thyme"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Sweat the fennel and leek in butter over low heat, covered, 12 minutes until soft and sweet.",
+   "Add the cream and thyme, simmer 3 minutes.",
+   "Salt the cod, sear it separately in a hot dry pan 3 minutes a side.",
+   "Spoon the fennel cream onto the plate and set the cod on top."
+  ],
+  "tip": "Leek scores 1 — swap in a second fennel bulb for a strict-0 version."
+ },
+ {
+  "id": "lamb-rosemary",
+  "name": "Lamb Chops with Rosemary and Zucchini",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 25,
+  "servings": 2,
+  "blurb": "Fresh unaged lamb scores 0. Dry-aged anything scores 3 — ask what you are buying.",
+  "ingredients": [
+   {
+    "item": "Lamb (fresh)",
+    "qty": "4",
+    "display": "lamb loin chops"
+   },
+   {
+    "item": "Rosemary",
+    "qty": "2 sprigs",
+    "display": "rosemary"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Zucchini",
+    "qty": "2",
+    "display": "zucchini, peeled, deseeded, thick coins",
+    "lprep": true
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "1 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Salt the chops 20 minutes ahead and bring them to room temperature.",
+   "Sear in olive oil over high heat, 3 minutes a side for medium-rare. Add rosemary and butter for the last minute and baste.",
+   "Rest 5 minutes.",
+   "Char the zucchini in the same pan while the meat rests."
+  ],
+  "tip": "Dry-aged beef and lamb are score 3. The word on the label to avoid is 'aged', not 'grass-fed'."
+ },
+ {
+  "id": "beef-cabbage",
+  "name": "Beef and Cabbage Skillet",
+  "meal": [
+   "dinner",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 25,
+  "servings": 3,
+  "blurb": "Cabbage raw and cooked is a zero. Cabbage fermented is a three. Same vegetable, opposite ends of the scale.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "1 lb",
+    "display": "beef, ground to order"
+   },
+   {
+    "item": "Cabbage (green/white)",
+    "qty": "1/2 head",
+    "display": "green cabbage, shredded"
+   },
+   {
+    "item": "White onion",
+    "qty": "1",
+    "display": "white onion, sliced"
+   },
+   {
+    "item": "Caraway",
+    "qty": "1 tsp",
+    "display": "caraway seed"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   }
+  ],
+  "steps": [
+   "Brown the beef hard in butter, breaking it up. Remove.",
+   "Cook the onion and cabbage in the fat, 10 minutes, until the edges catch.",
+   "Add the caraway, return the beef, salt well.",
+   "Finish with parsley off the heat."
+  ],
+  "tip": "Caraway carries the sauerkraut flavour without the fermentation — a useful substitution to remember."
+ },
+ {
+  "id": "seabass-papillote",
+  "name": "Sea Bass en Papillote with Carrot and Thyme",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 2,
+  "blurb": "Steaming in paper keeps everything moist without a sauce built on wine, stock or citrus.",
+  "ingredients": [
+   {
+    "item": "Sea bass",
+    "qty": "2 fillets",
+    "display": "sea bass fillets"
+   },
+   {
+    "item": "Carrot",
+    "qty": "2",
+    "display": "carrots, julienned"
+   },
+   {
+    "item": "Fennel bulb",
+    "qty": "1/2",
+    "display": "fennel, shaved"
+   },
+   {
+    "item": "Thyme",
+    "qty": "4 sprigs",
+    "display": "thyme"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 400°F.",
+   "Build two parchment parcels: carrot and fennel first, fish on top, salt, thyme, a knob of butter.",
+   "Fold the paper tightly closed and bake 14 minutes.",
+   "Open at the table — the steam is the point."
+  ],
+  "tip": "Long-simmered bone broth and stock cubes both score 2. Papillote is how you get moisture without either."
+ },
+ {
+  "id": "veal-sage",
+  "name": "Veal with Sage and Brown Butter",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 2,
+  "blurb": "Saltimbocca minus the prosciutto — the ham is what would have made it a score-3 plate.",
+  "ingredients": [
+   {
+    "item": "Veal (fresh)",
+    "qty": "4",
+    "display": "veal cutlets, pounded thin"
+   },
+   {
+    "item": "Sage",
+    "qty": "8 leaves",
+    "display": "sage leaves"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "3 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Green beans",
+    "qty": "1/2 lb",
+    "display": "green beans, pressure-cooked 5 min",
+    "lprep": true
+   }
+  ],
+  "steps": [
+   "Press a sage leaf onto each side of the cutlets and salt them.",
+   "Sear in olive oil, 90 seconds a side. Remove.",
+   "Brown the butter in the pan, crisp the remaining sage leaves in it, pour over the veal.",
+   "Blanch the green beans 4 minutes and dress with a little of the same butter."
+  ],
+  "tip": "Green beans score 1 — swap to asparagus or broccoli for a strict-0 plate."
+ },
+ {
+  "id": "turkey-meatballs",
+  "name": "Turkey Meatballs in Basil Cream",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 35,
+  "servings": 3,
+  "blurb": "The tomato-sauce shape without the tomato — tomato is both high-histamine and a liberator.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "1 1/4 lb",
+    "display": "turkey, ground to order"
+   },
+   {
+    "item": "Ricotta",
+    "qty": "1/3 cup",
+    "display": "ricotta"
+   },
+   {
+    "item": "Egg yolk",
+    "qty": "1",
+    "display": "egg yolk"
+   },
+   {
+    "item": "Basil",
+    "qty": "1/2 cup",
+    "display": "basil"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1 cup",
+    "display": "heavy cream"
+   },
+   {
+    "item": "White onion",
+    "qty": "1/2",
+    "display": "white onion, minced"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Zucchini",
+    "qty": "2",
+    "display": "zucchini, peeled, deseeded, spiralized",
+    "lprep": true
+   }
+  ],
+  "steps": [
+   "Mix turkey, ricotta, yolk, half the basil and salt. Roll into 18 balls.",
+   "Brown them in olive oil, turning, about 6 minutes. Remove.",
+   "Soften the onion in the pan, add the cream, simmer 5 minutes to thicken.",
+   "Return the meatballs, cover, 8 minutes. Blitz or tear in the remaining basil.",
+   "Serve over warmed zucchini noodles."
+  ],
+  "tip": "Breadcrumbs would push this off keto and add a score-1 grain; ricotta binds just as well."
+ },
+ {
+  "id": "duck-cabbage",
+  "name": "Duck Breast with Braised Red Cabbage",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 45,
+  "servings": 2,
+  "blurb": "The 'special occasion' plate that stays inside the rules. Red cabbage braised in apple, not vinegar.",
+  "ingredients": [
+   {
+    "item": "Duck (fresh)",
+    "qty": "2",
+    "display": "duck breasts"
+   },
+   {
+    "item": "Red cabbage",
+    "qty": "1/2 head",
+    "display": "red cabbage, shredded"
+   },
+   {
+    "item": "Apple",
+    "qty": "1",
+    "display": "apple, grated"
+   },
+   {
+    "item": "Cloves",
+    "qty": "3",
+    "display": "whole cloves"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Score the duck fat in a crosshatch and salt it. Start it fat-down in a cold pan over medium-low; render 10–12 minutes until the skin is glassy.",
+   "Flip, 4 minutes. Rest 8 minutes.",
+   "Meanwhile braise the cabbage with the apple, cloves, butter, salt and a splash of water, covered, 25 minutes.",
+   "Slice the duck and serve over the cabbage."
+  ],
+  "tip": "Braised red cabbage is normally finished with vinegar. Grated apple does the same job at score 0."
+ },
+ {
+  "id": "whitefish-chowder",
+  "name": "Pollock and Potato Chowder",
+  "meal": [
+   "dinner",
+   "lunch"
+  ],
+  "keto": false,
+  "time": 35,
+  "servings": 3,
+  "blurb": "A creamy bowl built without stock cubes, bacon or canned corn — all of which score 2 or 3.",
+  "ingredients": [
+   {
+    "item": "Pollock (fresh or frozen)",
+    "qty": "1 lb",
+    "display": "pollock, frozen-at-sea"
+   },
+   {
+    "item": "Potato",
+    "qty": "3",
+    "display": "potatoes, peeled and diced, pressure-cooked",
+    "lprep": true
+   },
+   {
+    "item": "Carrot",
+    "qty": "2",
+    "display": "carrots, diced"
+   },
+   {
+    "item": "Leek",
+    "qty": "1",
+    "display": "leek, sliced"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1 cup",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Milk (pasteurised)",
+    "qty": "1 cup",
+    "display": "whole milk"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Dill",
+    "qty": "3 tbsp",
+    "display": "dill"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Sweat the leek and carrot in butter, 6 minutes.",
+   "Add the potato, milk and enough water to cover. Simmer 15 minutes until tender.",
+   "Add the cream, then the fish in large pieces. Poach 5 minutes off a hard boil.",
+   "Salt, finish with dill, serve immediately."
+  ],
+  "tip": "Do not refrigerate this. Freeze any surplus straight away in single portions."
+ },
+ {
+  "id": "roast-broccoli",
+  "name": "Roasted Broccoli with Garlic Butter",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 25,
+  "servings": 3,
+  "blurb": "The side that goes with everything on this list.",
+  "ingredients": [
+   {
+    "item": "Broccoli",
+    "qty": "2 heads",
+    "display": "broccoli, florets"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "2 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Garlic",
+    "qty": "2",
+    "display": "garlic cloves"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "2 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 425°F.",
+   "Toss the florets with olive oil and salt, spread on a hot tray, roast 18 minutes until the edges char.",
+   "Melt the butter with crushed garlic off the heat, pour over."
+  ],
+  "tip": "Garlic scores 1. Leave it out and finish with parsley for a strict-0 side."
+ },
+ {
+  "id": "cauli-mash",
+  "name": "Cauliflower Mash with Ghee",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 20,
+  "servings": 3,
+  "blurb": "Ghee and quark do the work that sour cream or aged parmesan usually would.",
+  "ingredients": [
+   {
+    "item": "Cauliflower",
+    "qty": "1 large head",
+    "display": "cauliflower"
+   },
+   {
+    "item": "Ghee",
+    "qty": "3 tbsp",
+    "display": "ghee"
+   },
+   {
+    "item": "Quark",
+    "qty": "1/4 cup",
+    "display": "quark"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Chives",
+    "qty": "2 tbsp",
+    "display": "chives"
+   }
+  ],
+  "steps": [
+   "Steam the cauliflower 12 minutes until completely soft.",
+   "Drain very well — wet cauliflower makes a loose mash.",
+   "Blend with ghee, quark and salt until silky.",
+   "Fold in chives."
+  ],
+  "tip": "Sour cream scores 1 because it is cultured; quark stays at 0."
+ },
+ {
+  "id": "cucumber-radish",
+  "name": "Cucumber and Radish Salad with Dill Cream",
+  "meal": [
+   "snack",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 2,
+  "blurb": "A cold side with no vinegar and no lemon in it — harder to find than it sounds.",
+  "ingredients": [
+   {
+    "item": "Cucumber",
+    "qty": "2",
+    "display": "cucumbers, peeled, deseeded, sliced",
+    "lprep": true
+   },
+   {
+    "item": "Radish (red)",
+    "qty": "8",
+    "display": "radishes"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1/4 cup",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Dill",
+    "qty": "3 tbsp",
+    "display": "dill"
+   },
+   {
+    "item": "Salt",
+    "qty": "1/2 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Chives",
+    "qty": "1 tbsp",
+    "display": "chives"
+   }
+  ],
+  "steps": [
+   "Salt the cucumber slices and rest 10 minutes, then pat dry.",
+   "Whisk the cream with dill, chives and a pinch of salt until slightly thickened.",
+   "Fold everything together and serve cold."
+  ],
+  "tip": "The salt-and-rest step gives you the snap that vinegar normally provides."
+ },
+ {
+  "id": "fat-bombs",
+  "name": "Macadamia and Coconut Fat Bombs",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 6,
+  "blurb": "Macadamia is one of only three nuts that score 0. Walnut and mixed nuts score 3.",
+  "ingredients": [
+   {
+    "item": "Macadamia",
+    "qty": "1 cup",
+    "display": "macadamia nuts"
+   },
+   {
+    "item": "Coconut oil",
+    "qty": "1/4 cup",
+    "display": "coconut oil"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1/3 cup",
+    "display": "shredded coconut"
+   },
+   {
+    "item": "Vanilla",
+    "qty": "1 tsp",
+    "display": "vanilla"
+   },
+   {
+    "item": "Salt",
+    "qty": "pinch",
+    "display": "flaky salt"
+   }
+  ],
+  "steps": [
+   "Blitz the macadamias to a coarse butter.",
+   "Melt the coconut oil and blend it in with the vanilla and salt.",
+   "Fold in the shredded coconut, spoon into a mini muffin tray, freeze 30 minutes.",
+   "Keep them in the freezer, not the fridge."
+  ],
+  "tip": "Macadamia, Brazil nut and pistachio are the score-0 nuts. Everything labelled 'mixed nuts' is a 3."
+ },
+ {
+  "id": "berry-mascarpone",
+  "name": "Blueberry Mascarpone Cups",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 8,
+  "servings": 2,
+  "blurb": "Dessert that scores zero. Strawberries and raspberries would not — both are liberators at score 2.",
+  "ingredients": [
+   {
+    "item": "Mascarpone",
+    "qty": "1/2 cup",
+    "display": "mascarpone"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "1/4 cup",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "3/4 cup",
+    "display": "blueberries"
+   },
+   {
+    "item": "Vanilla",
+    "qty": "1/2 tsp",
+    "display": "vanilla"
+   },
+   {
+    "item": "Blackberry",
+    "qty": "1/4 cup",
+    "display": "blackberries"
+   }
+  ],
+  "steps": [
+   "Whip the cream to soft peaks and fold it into the mascarpone with the vanilla.",
+   "Layer with blueberries and blackberries in two glasses.",
+   "Chill 20 minutes, no longer."
+  ],
+  "tip": "Blueberry, blackberry, redcurrant and cranberry all score 0. Strawberry and raspberry score 2."
+ },
+ {
+  "id": "trail-mix",
+  "name": "Pumpkin Seed and Coconut Trail Mix",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 12,
+  "servings": 6,
+  "blurb": "The bag to keep in the car so a gas-station snack never becomes the decision.",
+  "ingredients": [
+   {
+    "item": "Pumpkin seeds",
+    "qty": "1 cup",
+    "display": "pumpkin seeds"
+   },
+   {
+    "item": "Macadamia",
+    "qty": "1/2 cup",
+    "display": "macadamia nuts"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1/2 cup",
+    "display": "coconut flakes"
+   },
+   {
+    "item": "Hemp seeds",
+    "qty": "1/4 cup",
+    "display": "hemp seeds"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1 tsp",
+    "display": "cinnamon"
+   },
+   {
+    "item": "Salt",
+    "qty": "1/2 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Coconut oil",
+    "qty": "1 tbsp",
+    "display": "coconut oil"
+   }
+  ],
+  "steps": [
+   "Toss everything with the melted coconut oil.",
+   "Spread on a tray and toast at 325°F for 8–10 minutes, stirring once.",
+   "Cool completely before bagging, or it will steam and go soft."
+  ],
+  "tip": "Dried fruit is sulphured and scores 2, so this mix stays savoury."
+ },
+ {
+  "id": "quinoa-bowl",
+  "name": "Quinoa Bowl with Chicken and Roast Carrot",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": false,
+  "time": 35,
+  "servings": 2,
+  "blurb": "The refeed-day bowl. Quinoa, rice and millet are the score-0 grains.",
+  "ingredients": [
+   {
+    "item": "Quinoa",
+    "qty": "1 cup",
+    "display": "quinoa, rinsed until the water runs clear",
+    "lprep": true
+   },
+   {
+    "item": "Chicken (fresh, cooked promptly)",
+    "qty": "2",
+    "display": "chicken breasts"
+   },
+   {
+    "item": "Carrot",
+    "qty": "3",
+    "display": "carrots, roasted"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Parsley",
+    "qty": "1/4 cup",
+    "display": "parsley"
+   },
+   {
+    "item": "Pumpkin seeds",
+    "qty": "3 tbsp",
+    "display": "pumpkin seeds"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Rinse the quinoa well, simmer in salted water 15 minutes, drain and steam-dry.",
+   "Roast the carrots in oil and salt at 425°F for 22 minutes.",
+   "Sear the chicken, rest, slice.",
+   "Build the bowl and finish with parsley, pumpkin seeds and the remaining olive oil."
+  ],
+  "tip": "Buckwheat looks like a safe pseudo-grain but scores 2. Quinoa, millet, amaranth and rice are the safe ones."
+ },
+ {
+  "id": "oat-porridge",
+  "name": "Oat Porridge with Blueberry and Coconut",
+  "meal": [
+   "breakfast"
+  ],
+  "keto": false,
+  "time": 12,
+  "servings": 1,
+  "blurb": "When you want carbs at breakfast: oats score 0, and so does everything on top of them here.",
+  "ingredients": [
+   {
+    "item": "Oats",
+    "qty": "1/2 cup",
+    "display": "rolled oats"
+   },
+   {
+    "item": "Milk (pasteurised)",
+    "qty": "1 cup",
+    "display": "whole milk"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "1/3 cup",
+    "display": "blueberries"
+   },
+   {
+    "item": "Coconut",
+    "qty": "2 tbsp",
+    "display": "shredded coconut"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1/2 tsp",
+    "display": "cinnamon"
+   },
+   {
+    "item": "Salt",
+    "qty": "pinch",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Simmer the oats in the milk with a pinch of salt, 6–8 minutes, stirring.",
+   "Off the heat, stir in the cinnamon.",
+   "Top with blueberries and coconut."
+  ],
+  "tip": "Banana would be the obvious topping and scores 2. Blueberries and cooked apple are the swaps."
+ },
+ {
+  "id": "quail-skillet",
+  "name": "Quail Egg and Mozzarella Skillet",
+  "meal": [
+   "breakfast"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 1,
+  "blurb": "Quail eggs score 0 whole, where a whole chicken egg scores 2. The simplest way to eat a real egg breakfast.",
+  "ingredients": [
+   {
+    "item": "Quail eggs",
+    "qty": "8",
+    "display": "quail eggs"
+   },
+   {
+    "item": "Mozzarella",
+    "qty": "2 oz",
+    "display": "fresh mozzarella, torn"
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "1 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Basil",
+    "qty": "6 leaves",
+    "display": "basil"
+   },
+   {
+    "item": "Salt",
+    "qty": "pinch",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Melt the butter in a small skillet over medium-low heat.",
+   "Crack the quail eggs in around the pan and scatter the mozzarella between them.",
+   "Cover for 3 minutes until the whites set and the cheese slumps.",
+   "Salt, tear over the basil, eat from the pan."
+  ],
+  "tip": "Whole chicken egg scores 2 because of the white; quail eggs are rated 0 whole."
+ },
+ {
+  "id": "cream-cheese-blackberry",
+  "name": "Whipped Cream Cheese with Blackberry",
+  "meal": [
+   "breakfast",
+   "snack"
+  ],
+  "keto": true,
+  "time": 6,
+  "servings": 1,
+  "blurb": "Two minutes of whisking turns cream cheese into something that feels like a dessert at breakfast.",
+  "ingredients": [
+   {
+    "item": "Cream cheese (plain)",
+    "qty": "1/2 cup",
+    "display": "plain cream cheese"
+   },
+   {
+    "item": "Cream (sweet, unfermented)",
+    "qty": "2 tbsp",
+    "display": "heavy cream"
+   },
+   {
+    "item": "Blackberry",
+    "qty": "1/3 cup",
+    "display": "blackberries"
+   },
+   {
+    "item": "Coconut",
+    "qty": "2 tbsp",
+    "display": "shredded coconut"
+   },
+   {
+    "item": "Chia seeds",
+    "qty": "1 tbsp",
+    "display": "chia seeds"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "pinch",
+    "display": "cinnamon"
+   }
+  ],
+  "steps": [
+   "Whisk the cream into the cream cheese until light and spoonable.",
+   "Crush half the blackberries through it, leave the rest whole on top.",
+   "Finish with coconut, chia and cinnamon."
+  ],
+  "tip": "Blackberry, blueberry, redcurrant and cranberry are the score-0 berries."
+ },
+ {
+  "id": "breakfast-steak",
+  "name": "Seared Steak with Charred Zucchini",
+  "meal": [
+   "breakfast",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 15,
+  "servings": 1,
+  "blurb": "Fresh unaged beef, cooked and eaten inside ten minutes. The most reliably clean plate there is, at any hour.",
+  "ingredients": [
+   {
+    "item": "Beef (fresh, unaged)",
+    "qty": "6 oz",
+    "display": "sirloin steak, unaged"
+   },
+   {
+    "item": "Zucchini",
+    "qty": "1",
+    "display": "zucchini, peeled, deseeded, thick coins",
+    "lprep": true
+   },
+   {
+    "item": "Butter (as fat)",
+    "qty": "1 tbsp",
+    "display": "butter"
+   },
+   {
+    "item": "Thyme",
+    "qty": "3 sprigs",
+    "display": "thyme"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Salt the steak and get a heavy pan very hot with the olive oil.",
+   "Sear 2½ minutes a side, adding butter and thyme for the last minute to baste.",
+   "Rest the steak 5 minutes; char the zucchini in the same pan while it rests.",
+   "Slice against the grain and eat straight away."
+  ],
+  "tip": "Ask the butcher whether the beef is dry-aged. Aged beef scores 3 no matter how fresh it looks."
+ },
+ {
+  "id": "curd-cucumber",
+  "name": "Curd Cheese with Cucumber and Radish",
+  "meal": [
+   "snack",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 8,
+  "servings": 2,
+  "blurb": "The four-o'clock snack that needs no cooking and nothing from a jar.",
+  "ingredients": [
+   {
+    "item": "Curd cheese",
+    "qty": "1 cup",
+    "display": "curd cheese"
+   },
+   {
+    "item": "Cucumber",
+    "qty": "1",
+    "display": "cucumber, peeled, deseeded, diced",
+    "lprep": true
+   },
+   {
+    "item": "Radish (red)",
+    "qty": "6",
+    "display": "radishes, sliced"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "1 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Fold the cucumber and radish through the curd cheese.",
+   "Salt, add the parsley, and drizzle the olive oil over the top."
+  ],
+  "tip": "Quark, curd cheese and cottage cheese all score 0 — the unripened fresh cheeses are your safe dairy."
+ },
+ {
+  "id": "paprika-cauliflower",
+  "name": "Roasted Cauliflower with Sweet Paprika",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 3,
+  "blurb": "Sweet paprika scores 0 where hot paprika, cayenne, black pepper and curry powder all score 2.",
+  "ingredients": [
+   {
+    "item": "Cauliflower",
+    "qty": "1 head",
+    "display": "cauliflower, florets"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Sweet paprika",
+    "qty": "2 tsp",
+    "display": "sweet paprika"
+   },
+   {
+    "item": "Salt",
+    "qty": "1 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 425°F.",
+   "Toss the florets with oil, paprika and salt.",
+   "Roast 25 minutes on a hot tray, turning once, until deeply browned at the edges.",
+   "Scatter parsley over before serving."
+  ],
+  "tip": "If a recipe calls for black pepper, sweet paprika is usually the substitution that works."
+ },
+ {
+  "id": "coconut-bark",
+  "name": "Coconut and Pumpkin Seed Bark",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 8,
+  "blurb": "Chocolate is out — cocoa contains theobromine, a DAO blocker. This is what replaces it.",
+  "ingredients": [
+   {
+    "item": "Coconut oil",
+    "qty": "1/2 cup",
+    "display": "coconut oil"
+   },
+   {
+    "item": "Coconut",
+    "qty": "3/4 cup",
+    "display": "coconut flakes"
+   },
+   {
+    "item": "Pumpkin seeds",
+    "qty": "1/2 cup",
+    "display": "pumpkin seeds"
+   },
+   {
+    "item": "Macadamia",
+    "qty": "1/3 cup",
+    "display": "macadamia nuts, chopped"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1 tsp",
+    "display": "cinnamon"
+   },
+   {
+    "item": "Salt",
+    "qty": "1/2 tsp",
+    "display": "flaky salt"
+   }
+  ],
+  "steps": [
+   "Melt the coconut oil gently and stir in the cinnamon.",
+   "Mix in the coconut flakes, pumpkin seeds and macadamia.",
+   "Spread thin on a lined tray and freeze 25 minutes until solid.",
+   "Break into shards and keep in the freezer."
+  ],
+  "tip": "Cocoa and chocolate carry theobromine, which blocks DAO. This is the swap that keeps the ritual."
+ },
+ {
+  "id": "yolk-asparagus",
+  "name": "Ghee-Fried Yolks with Asparagus",
+  "meal": [
+   "breakfast"
+  ],
+  "keto": true,
+  "time": 12,
+  "servings": 1,
+  "blurb": "Zero on both scales. Egg yolk, ghee and asparagus have neither histamine nor lectin to speak of.",
+  "ingredients": [
+   {
+    "item": "Egg yolk",
+    "qty": "4",
+    "display": "egg yolks"
+   },
+   {
+    "item": "Ghee",
+    "qty": "1 tbsp",
+    "display": "ghee"
+   },
+   {
+    "item": "Asparagus",
+    "qty": "8 spears",
+    "display": "asparagus"
+   },
+   {
+    "item": "Thyme",
+    "qty": "1 tsp",
+    "display": "thyme"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Melt the ghee in a small pan over low heat.",
+   "Slide the yolks in whole and cook 2 minutes, basting, until just warmed through and still liquid.",
+   "Sear the asparagus in the same pan, 4 minutes, until blistered.",
+   "Salt, scatter thyme, serve."
+  ],
+  "tip": "Ghee rather than butter: clarifying removes the milk protein, which is what carries the A1 casein concern."
+ },
+ {
+  "id": "mascarpone-blackberry",
+  "name": "Mascarpone and Blackberry Cup",
+  "meal": [
+   "breakfast",
+   "snack"
+  ],
+  "keto": true,
+  "time": 5,
+  "servings": 1,
+  "blurb": "The cleanest sweet thing on the list — blackberries score 0 on both scales, mascarpone 1 on lectin.",
+  "ingredients": [
+   {
+    "item": "Mascarpone",
+    "qty": "1/2 cup",
+    "display": "mascarpone"
+   },
+   {
+    "item": "Blackberry",
+    "qty": "1/2 cup",
+    "display": "blackberries"
+   },
+   {
+    "item": "Coconut",
+    "qty": "2 tbsp",
+    "display": "shredded coconut"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "pinch",
+    "display": "cinnamon"
+   }
+  ],
+  "steps": [
+   "Loosen the mascarpone with a fork.",
+   "Fold half the blackberries through it, leaving the rest whole on top.",
+   "Finish with coconut and cinnamon."
+  ],
+  "tip": "Chia would normally go here but scores 2 for lectin. Shredded coconut does the same job at 0."
+ },
+ {
+  "id": "coconut-hemp-bowl",
+  "name": "Coconut and Hemp Breakfast Bowl",
+  "meal": [
+   "breakfast",
+   "snack"
+  ],
+  "keto": true,
+  "time": 5,
+  "servings": 1,
+  "blurb": "Hemp seed is the one seed that clears both scales at zero. No chia, no pumpkin seed, no oats.",
+  "ingredients": [
+   {
+    "item": "Hemp seeds",
+    "qty": "3 tbsp",
+    "display": "hemp seeds"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1/2 cup",
+    "display": "coconut milk (unsweetened)"
+   },
+   {
+    "item": "Blueberry",
+    "qty": "1/3 cup",
+    "display": "blueberries"
+   },
+   {
+    "item": "Macadamia",
+    "qty": "2 tbsp",
+    "display": "macadamia nuts, chopped"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1/2 tsp",
+    "display": "cinnamon"
+   }
+  ],
+  "steps": [
+   "Stir the hemp seeds into the coconut milk and let them sit 5 minutes to soften.",
+   "Top with blueberries, macadamia and cinnamon."
+  ],
+  "tip": "Pumpkin and chia seeds both score 2 for lectin despite being histamine-clean. Hemp is the swap."
+ },
+ {
+  "id": "chicken-kale",
+  "name": "Chicken and Kale Skillet",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 22,
+  "servings": 2,
+  "blurb": "Kale, white onion and fresh chicken are all zero on both scales — no prep workaround needed.",
+  "ingredients": [
+   {
+    "item": "Chicken (fresh, cooked promptly)",
+    "qty": "4",
+    "display": "chicken thighs, boneless"
+   },
+   {
+    "item": "Kale",
+    "qty": "1 bunch",
+    "display": "kale, stems removed"
+   },
+   {
+    "item": "White onion",
+    "qty": "1",
+    "display": "white onion, sliced"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Rosemary",
+    "qty": "1 tbsp",
+    "display": "rosemary"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Salt the chicken and sear skin-side down in olive oil, 7 minutes, until deeply browned. Flip, 5 minutes more. Remove.",
+   "Soften the onion in the fat, 5 minutes.",
+   "Add the kale in handfuls, wilting each before the next, 4 minutes.",
+   "Return the chicken, scatter rosemary, salt, serve from the pan."
+  ],
+  "tip": "White onion is 0 for histamine where yellow and red are 1, and 0 for lectin either way."
+ },
+ {
+  "id": "cod-cabbage",
+  "name": "Cod with Braised Cabbage and Fennel",
+  "meal": [
+   "lunch",
+   "dinner"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 2,
+  "blurb": "A whole plate at zero on both scales. Nothing here needs peeling, deseeding or pressure-cooking.",
+  "ingredients": [
+   {
+    "item": "Cod (fresh or frozen)",
+    "qty": "2 fillets",
+    "display": "cod, frozen-at-sea"
+   },
+   {
+    "item": "Cabbage (green/white)",
+    "qty": "1/2 head",
+    "display": "green cabbage, shredded"
+   },
+   {
+    "item": "Fennel bulb",
+    "qty": "1",
+    "display": "fennel, sliced"
+   },
+   {
+    "item": "Ghee",
+    "qty": "2 tbsp",
+    "display": "ghee"
+   },
+   {
+    "item": "Caraway",
+    "qty": "1 tsp",
+    "display": "caraway seed"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Braise the cabbage and fennel in ghee with the caraway, covered, over low heat, 15 minutes.",
+   "Salt the cod and sear it separately in a hot dry pan, 3 minutes a side.",
+   "Bed the fish on the cabbage and finish with parsley."
+  ],
+  "tip": "Fennel and cabbage are the two most reliable vegetables when you are running both protocols at once."
+ },
+ {
+  "id": "lamb-artichoke",
+  "name": "Lamb Chops with Artichoke and Mint",
+  "meal": [
+   "dinner"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 2,
+  "blurb": "Artichoke is one of the few substantial vegetables that clears both scales without preparation tricks.",
+  "ingredients": [
+   {
+    "item": "Lamb (fresh)",
+    "qty": "4",
+    "display": "lamb loin chops"
+   },
+   {
+    "item": "Artichoke",
+    "qty": "4",
+    "display": "artichoke hearts, fresh"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Mint",
+    "qty": "3 tbsp",
+    "display": "mint leaves"
+   },
+   {
+    "item": "Rosemary",
+    "qty": "1 sprig",
+    "display": "rosemary"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   }
+  ],
+  "steps": [
+   "Salt the chops and bring them to room temperature.",
+   "Steam or braise the artichoke hearts until tender, 15 minutes, then halve and brown them in olive oil.",
+   "Sear the chops over high heat, 3 minutes a side, with the rosemary in the pan.",
+   "Rest 5 minutes, plate with the artichoke, and tear over the mint."
+  ],
+  "tip": "Jarred artichoke hearts are packed in vinegar and score 3 for histamine. Fresh or frozen only."
+ },
+ {
+  "id": "fennel-roast",
+  "name": "Roasted Fennel with Olive Oil",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 30,
+  "servings": 3,
+  "blurb": "The default side when both scores have to be zero. Sweet paprika is out — it is a nightshade.",
+  "ingredients": [
+   {
+    "item": "Fennel bulb",
+    "qty": "2",
+    "display": "fennel bulbs, wedged"
+   },
+   {
+    "item": "Olive oil",
+    "qty": "3 tbsp",
+    "display": "olive oil"
+   },
+   {
+    "item": "Salt",
+    "qty": "1 tsp",
+    "display": "salt"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   },
+   {
+    "item": "Oregano",
+    "qty": "1 tsp",
+    "display": "oregano"
+   }
+  ],
+  "steps": [
+   "Heat the oven to 425°F.",
+   "Toss the fennel wedges in oil, salt and oregano.",
+   "Roast 25 minutes, turning once, until the edges caramelise.",
+   "Finish with parsley."
+  ],
+  "tip": "Sweet paprika is histamine-clean at 0 but scores 2 for lectin — it is dried nightshade. Oregano replaces it here."
+ },
+ {
+  "id": "macadamia-clusters",
+  "name": "Macadamia and Coconut Clusters",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 10,
+  "servings": 6,
+  "blurb": "Zero on both scales. Macadamia is one of only a handful of nuts that clears histamine and lectin at once.",
+  "ingredients": [
+   {
+    "item": "Macadamia",
+    "qty": "1 cup",
+    "display": "macadamia nuts"
+   },
+   {
+    "item": "Coconut oil",
+    "qty": "1/4 cup",
+    "display": "coconut oil"
+   },
+   {
+    "item": "Coconut",
+    "qty": "1/2 cup",
+    "display": "coconut flakes"
+   },
+   {
+    "item": "Cinnamon",
+    "qty": "1 tsp",
+    "display": "cinnamon"
+   },
+   {
+    "item": "Salt",
+    "qty": "1/2 tsp",
+    "display": "flaky salt"
+   }
+  ],
+  "steps": [
+   "Roughly chop half the macadamias and leave the rest whole.",
+   "Melt the coconut oil with the cinnamon and salt.",
+   "Stir everything together, spoon into a lined tray in small mounds, freeze 25 minutes.",
+   "Keep them in the freezer."
+  ],
+  "tip": "Pumpkin seeds appear in the older version of this and score 2 for lectin. Straight macadamia keeps it at 0."
+ },
+ {
+  "id": "celery-radish-ghee",
+  "name": "Celery and Radish with Ghee Salt",
+  "meal": [
+   "snack"
+  ],
+  "keto": true,
+  "time": 6,
+  "servings": 2,
+  "blurb": "Two minutes, nothing cooked, both scores at zero. The snack for when nothing else qualifies.",
+  "ingredients": [
+   {
+    "item": "Celery",
+    "qty": "4 stalks",
+    "display": "celery, cut into batons"
+   },
+   {
+    "item": "Radish (red)",
+    "qty": "8",
+    "display": "radishes, halved"
+   },
+   {
+    "item": "Ghee",
+    "qty": "2 tbsp",
+    "display": "ghee, softened"
+   },
+   {
+    "item": "Salt",
+    "qty": "1/2 tsp",
+    "display": "flaky salt"
+   },
+   {
+    "item": "Parsley",
+    "qty": "2 tbsp",
+    "display": "parsley"
+   }
+  ],
+  "steps": [
+   "Whip the softened ghee with the salt and chopped parsley.",
+   "Serve the celery and radish alongside for dipping."
+  ],
+  "tip": "Hummus would be the obvious dip and scores 2 for histamine and 3 for lectin. Whipped ghee is the replacement."
+ },
+ {
+  "id": "beef-brussels",
+  "name": "Beef and Brussels Sprout Hash",
+  "meal": [
+   "breakfast",
+   "lunch"
+  ],
+  "keto": true,
+  "time": 22,
+  "servings": 2,
+  "blurb": "The savoury breakfast when the lectin ceiling is tight — no zucchini, no sweet potato, no nightshade.",
+  "ingredients": [
+   {
+    "item": "Ground meat (freshly ground, eaten immediately)",
+    "qty": "3/4 lb",
+    "display": "beef, ground to order"
+   },
+   {
+    "item": "Brussels sprouts",
+    "qty": "1/2 lb",
+    "display": "Brussels sprouts, shredded"
+   },
+   {
+    "item": "White onion",
+    "qty": "1/2",
+    "display": "white onion, diced"
+   },
+   {
+    "item": "Ghee",
+    "qty": "2 tbsp",
+    "display": "ghee"
+   },
+   {
+    "item": "Caraway",
+    "qty": "1 tsp",
+    "display": "caraway seed"
+   },
+   {
+    "item": "Salt",
+    "qty": "to taste",
+    "display": "salt"
+   },
+   {
+    "item": "Parsley",
+    "qty": "3 tbsp",
+    "display": "parsley"
+   }
+  ],
+  "steps": [
+   "Brown the beef hard in ghee, breaking it up. Remove.",
+   "Cook the onion and shredded sprouts in the fat, 8 minutes, until the cut edges catch.",
+   "Return the beef with the caraway, salt well.",
+   "Finish with parsley off the heat."
+  ],
+  "tip": "Brussels sprouts score 1 for histamine and 0 for lectin — the trade that makes this an 'allow 1' dish."
+ }
+]
