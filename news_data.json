@@ -1,5 +1,75 @@
 [
   {
+    "title": "A Discussion of Resilience in Aging",
+    "source": "Fight Aging!",
+    "date": "2026-08-25",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "One way of looking at human longevity is that it results from a greater resilience to the damage and dysfunction of aging, whether that resilience emerges from lifestyle choice or genetic differences. The research community spends a great deal of effort in attempting to…",
+    "url": "https://www.fightaging.org/archives/2026/08/a-discussion-of-resilience-in-aging/",
+    "top_development": false
+  },
+  {
+    "title": "CRF Signaling in Brain Aging",
+    "source": "Fight Aging!",
+    "date": "2026-08-25",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Aging is so very complex that almost every research project, limited in time and resources, is by necessity restricted to just examining one tiny part of the whole process. That leads to papers like this one, in which the effects of changing expression of a single gene in a…",
+    "url": "https://www.fightaging.org/archives/2026/08/crf-signaling-in-brain-aging/",
+    "top_development": false
+  },
+  {
+    "title": "AlzeCure banks $10m as Lilly deal closes",
+    "source": "Longevity.Technology",
+    "date": "2026-08-25",
+    "category": "Funding",
+    "importance": "high",
+    "description": "AlzeCure collects its upfront payment from Eli Lilly for Alzheimer’s candidate ACD680, with a deal that could top $1 billion still in play. Ten million dollars landed in AlzeCure Pharma’s account this week. It’s not a huge number by pharma standards, but it’s the opening move in…",
+    "url": "https://longevity.technology/news/alzecure-banks-10m-as-lilly-deal-closes/",
+    "top_development": true
+  },
+  {
+    "title": "FDA accepts United Therapeutics’ application for hypertension drug",
+    "source": "Longevity.Technology",
+    "date": "2026-08-25",
+    "category": "Biotech",
+    "importance": "high",
+    "description": "United Therapeutics announced that the U.S. Food and Drug Administration has accepted its New Drug Application for Ralinepag to treat pulmonary arterial hypertension and has set a Prescription Drug User Fee Act target action date of 24 June 2027, according to the company. The…",
+    "url": "https://longevity.technology/news/fda-accepts-united-therapeutics-application-for-hypertension-drug/",
+    "top_development": true
+  },
+  {
+    "title": "NRG Therapeutics shows promising lab results for new ALS drug candidate",
+    "source": "Longevity.Technology",
+    "date": "2026-08-25",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "NRG Therapeutics presented a poster at the ALS Association’s ALS Nexus conference (23–26 August 2026) detailing preclinical and mechanistic data for NRG5051, its orally bioavailable, CNS-penetrant inhibitor of the mitochondrial permeability transition pore. According to the…",
+    "url": "https://longevity.technology/news/nrg-therapeutics-shows-promising-lab-results-for-new-als-drug-candidate/",
+    "top_development": false
+  },
+  {
+    "title": "Eisai launches weekly injections for early Alzheimer’s in the US",
+    "source": "Longevity.Technology",
+    "date": "2026-08-25",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Eisai has begun U.S. availability of lecanemab-irmb subcutaneous injection, branded in the U.S. as Leqembi Iqlik, for initiation therapy in early Alzheimer’s disease after FDA approval on 13 July, according to the company. Leqembi Iqlik is the first-of-its-kind anti-amyloid…",
+    "url": "https://longevity.technology/news/eisai-launches-weekly-injections-for-early-alzheimers-in-the-u-s/",
+    "top_development": true
+  },
+  {
+    "title": "Shingles vaccine linked to 24% lower dementia risk",
+    "source": "ScienceDaily",
+    "date": "2026-08-25",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Older adults who received the Shingrix shingles vaccine were 24% less likely to be diagnosed with dementia over four years in a study of more than 500,000 people. Researchers estimate the difference could amount to roughly one dementia case prevented for every 17 people…",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260823015013.htm",
+    "top_development": false
+  },
+  {
     "title": "Exploring How Cellular Senescence Spreads in the Aging Brain",
     "source": "Fight Aging!",
     "date": "2026-08-24",
@@ -13,7 +83,7 @@
     "title": "Reviewing the Contribution of Mitochondrial Supercomplexes to Aging and Longevity",
     "source": "Fight Aging!",
     "date": "2026-08-24",
-    "category": "Research",
+    "category": "Biotech",
     "importance": "normal",
     "description": "The various mitochondrial protein complexes are the building blocks of the electron transport chain, the complicated mechanism inside mitochondria that generates adenosine triphosphate (ATP), the chemical energy store molecule used to power cell activities. Nothing in a cell is…",
     "url": "https://www.fightaging.org/archives/2026/08/reviewing-the-contribution-of-mitochondrial-supercomplexes-to-aging-and-longevity/",
@@ -35,9 +105,59 @@
     "date": "2026-08-24",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have found that an upstream promoter of two extracellular matrix proteins increases healing and strength capabilities in the tendons of rats. Tendon injuries in older people Previous research has found that, like with many other injuries, […]",
+    "description": "Researchers have found that an upstream promoter of two extracellular matrix proteins increases healing and strength capabilities in the tendons of rats. […]",
     "url": "https://lifespan.io/a-tougher-extracellular-matrix-strengthens-tendons-in-rats/",
     "top_development": false
+  },
+  {
+    "title": "Quest, Humanity bring biological age test to 2,000 US locations",
+    "source": "Longevity.Technology",
+    "date": "2026-08-24",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A $29 add-on through Quest’s US labs turns routine bloodwork into a single number that tracks how fast or slow you’re aging. There’s a kind of frustration in getting a clean bill of health from a blood panel and still feeling like nobody actually answered the question you were…",
+    "url": "https://longevity.technology/news/quest-humanity-bring-biological-age-test-to-2000-us-locations/",
+    "top_development": false
+  },
+  {
+    "title": "New Alzheimer’s contender Vandria clears key hurdle",
+    "source": "Longevity.Technology",
+    "date": "2026-08-24",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Early human data suggest Vandria’s drug candidate VNA-318 may validate a new way of tackling age-related brain disease. In Alzheimer’s research, are scientists fighting the wrong battle? The field has spent decades trying to remove the sticky amyloid plaques that accumulate in…",
+    "url": "https://longevity.technology/news/new-alzheimers-contender-vandria-clears-key-hurdle/",
+    "top_development": false
+  },
+  {
+    "title": "FDA approves PrecivityAD2 blood test for adults with cognitive decline",
+    "source": "Longevity.Technology",
+    "date": "2026-08-24",
+    "category": "Funding",
+    "importance": "high",
+    "description": "The U.S. Food and Drug Administration cleared C2N Diagnostics’ PrecivityAD2 blood test for use in adults as young as 40 who are experiencing signs of cognitive impairment. The Alzheimer’s Drug Discovery Foundation says it began funding C2N in 2008 and that its support, including…",
+    "url": "https://longevity.technology/news/fda-approves-precivityad2-blood-test-for-adults-with-cognitive-decline/",
+    "top_development": true
+  },
+  {
+    "title": "Rznomics joins Lilly Gateway Labs in San Diego to advance RNA therapeutics",
+    "source": "Longevity.Technology",
+    "date": "2026-08-24",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Rznomics is joining Lilly Gateway Labs in San Diego to accelerate discovery and development of RNA-based therapeutics. The Gateway Labs provide wet lab facilities and opportunities to engage with Lilly scientists and executives as part of Lilly Catalyze360, according to the…",
+    "url": "https://longevity.technology/news/rznomics-joins-lilly-gateway-labs-in-san-diego-to-advance-rna-therapeutics/",
+    "top_development": false
+  },
+  {
+    "title": "KardiaMobile 6L outperforms traditional ECG monitors in new study",
+    "source": "Longevity.Technology",
+    "date": "2026-08-24",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "AliveCor announced a prospective cohort study (M-KEEPS) conducted by the University of Rochester and published in JACC Advances; according to the company, 30-day use of the handheld KardiaMobile 6L outperformed traditional short-duration ambulatory ECG monitoring in detecting…",
+    "url": "https://longevity.technology/news/kardiamobile-6l-outperforms-traditional-ecg-monitors-in-new-study/",
+    "top_development": true
   },
   {
     "title": "Too much or too little sleep may make your body age faster",
@@ -57,7 +177,7 @@
     "importance": "high",
     "description": "Researchers have uncovered a possible reason why the Alzheimer’s risk gene APOE4 can disrupt the brain long before memory problems begin. In mice, APOE4 increased a protein called Nell2, shrinking neurons and making memory circuits unusually active. That early hyperactivity…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260821012234.htm",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "This shark can live 400 years. Its eyes barely seem to age",
@@ -105,8 +225,38 @@
     "date": "2026-08-21",
     "category": "Research",
     "importance": "normal",
-    "description": "A new study suggests that in amyotrophic lateral sclerosis – and possibly other neurodegenerative diseases – the brain’s immune cells devour stressed […]",
+    "description": "A new study suggests that in amyotrophic lateral sclerosis – and possibly other neurodegenerative diseases – the brain’s immune cells devour stressed but still living neurons due to altered signaling [1]. […]",
     "url": "https://lifespan.io/in-als-microglia-eat-living-neurons-mistaking-them-for-dead/",
+    "top_development": false
+  },
+  {
+    "title": "Can we prime skin to regenerate better?",
+    "source": "Longevity.Technology",
+    "date": "2026-08-21",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Collagevita’s Medical Director explains why regenerative treatments may need to start before the actual procedure does. Regenerative aesthetics increasingly works by persuading the skin to do more of the work itself – stimulating collagen production rather than simply replacing…",
+    "url": "https://longevity.technology/news/can-we-prime-skin-to-regenerate-better/",
+    "top_development": false
+  },
+  {
+    "title": "Whole-body MRI is leaving the biohacker bubble",
+    "source": "Longevity.Technology",
+    "date": "2026-08-21",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "EHE Health’s partnership with Prenuvo brings boutique preventive scanning and reopens an old debate about who gets access to early detection. For years, whole-body MRI screening has lived in a specific cultural lane: a Silicon Valley biohacker’s routine, a wellness-influencer…",
+    "url": "https://longevity.technology/news/whole-body-mri-is-leaving-the-biohacker-bubble/",
+    "top_development": false
+  },
+  {
+    "title": "Altimmune’s dual-hormone bet enters Phase 3 trial",
+    "source": "Longevity.Technology",
+    "date": "2026-08-21",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Pemvidutide’s balanced glucagon/GLP-1 action heads into pivotal MASH trial, testing if hitting two receptors evenly beats mono-agonist crowd. Altimmune has dosed its first patients in PERFORMA, the Phase 3 trial for pemvidutide in metabolic dysfunction-associated steatohepatitis…",
+    "url": "https://longevity.technology/news/altimmunes-dual-hormone-bet-enters-phase-3-trial/",
     "top_development": false
   },
   {
@@ -120,34 +270,14 @@
     "top_development": false
   },
   {
-    "title": "Age-Related Changes in Metabolism that Contribute to Inflammatory Microglia in the Brain",
-    "source": "Fight Aging!",
-    "date": "2026-08-20",
-    "category": "Research",
-    "importance": "normal",
-    "description": "In recent years, an increasing level of attention has been given to microglia as an important contribution to neurodegeneration in the aging brain. Microglia are innate immune cells resident in the central nervous system, analogous to the macrophages found elsewhere in the body…",
-    "url": "https://www.fightaging.org/archives/2026/08/age-related-changes-in-metabolism-that-contribute-to-inflammatory-microglia-in-the-brain/",
-    "top_development": false
-  },
-  {
-    "title": "A Review of the Present State of Data for Metformin as a Geroprotective Drug",
-    "source": "Fight Aging!",
-    "date": "2026-08-20",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers here review the present state of research and use of metformin as a geroprotective drug, intended to modestly slow aging. They are largely on point, if somewhat too accepting of the quality of the existing human data. While effective as a treatment for metabolic…",
-    "url": "https://www.fightaging.org/archives/2026/08/a-review-of-the-present-state-of-data-for-metformin-as-a-geroprotective-drug/",
-    "top_development": false
-  },
-  {
     "title": "How Old Fat Cells Trigger Inflammation and Raise Risks",
     "source": "Lifespan.io",
     "date": "2026-08-20",
     "category": "Funding",
     "importance": "high",
-    "description": "Using cohort studies and a mouse model, researchers have found that the circulating factor ANGPTL8, which is produced by senescent fat cells, is related to age-related diseases and mortality in mice and people. Too much of a […]",
+    "description": "Using cohort studies and a mouse model, researchers have found that the circulating factor ANGPTL8, which is produced by senescent fat cells, is related […]",
     "url": "https://lifespan.io/how-old-fat-cells-trigger-inflammation-and-raise-risks/",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "GenBio Launches a “Virtual Cell” AI Model",
@@ -155,7 +285,7 @@
     "date": "2026-08-18",
     "category": "Industry",
     "importance": "normal",
-    "description": "This AI startup, which lists Nobel laureate David Baker among its co-founders, has announced a “world model” of a cell that can simulate both its natural state and responses to […]",
+    "description": "This AI startup, which lists Nobel laureate David Baker among its co-founders, has announced a “world model” of a cell that can simulate both its natural state […]",
     "url": "https://lifespan.io/genbio-launches-a-virtual-cell-ai-model/",
     "top_development": false
   },
@@ -165,7 +295,7 @@
     "date": "2026-08-17",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have gone into deep detail regarding how each of five senescent brain cell types expresses and receives factors that encourage other cells to become senescent. The contagion of age […]",
+    "description": "Researchers have gone into deep detail regarding how each of five senescent brain cell types expresses and receives factors that encourage other cells to become senescent. The contagion of age This […]",
     "url": "https://lifespan.io/how-senescence-spreads-between-brain-cells/",
     "top_development": false
   },
@@ -177,106 +307,6 @@
     "importance": "high",
     "description": "An experimental Alzheimer’s compound prevented damaging protein clumps from forming in the brains of mice, helping nerve cells survive longer and reducing amyloid buildup. The treatment also appeared to improve heart health and slow some signs of aging, raising hopes for an…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
-    "top_development": true
-  },
-  {
-    "title": "A Million-Person Study Finds a Protective Metabolic Gene",
-    "source": "Lifespan.io",
-    "date": "2026-08-14",
-    "category": "Research",
-    "importance": "high",
-    "description": "A massive human genetics study identified rare folliculin-interacting protein 1 (FNIP1) mutations associated with favorable metabolism and much lower cardiometabolic disease risk. Experiments in human […]",
-    "url": "https://lifespan.io/a-million-person-study-finds-a-protective-metabolic-gene/",
-    "top_development": true
-  },
-  {
-    "title": "Women taking estrogen had fewer signs of Alzheimer’s in their brains",
-    "source": "ScienceDaily",
-    "date": "2026-08-14",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Women who used estrogen-only hormone therapy later in life were less likely to develop dementia and showed fewer signs of Alzheimer’s disease in their brains, according to a large study of more than 21,000 participants. Hormone therapy use was linked to 39% lower odds of a…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011028.htm",
-    "top_development": false
-  },
-  {
-    "title": "A Drug Combination Fights Both Senescence and Cancer",
-    "source": "Lifespan.io",
-    "date": "2026-08-13",
-    "category": "Research",
-    "importance": "normal",
-    "description": "In Aging, the Conboys and their team have described how a combination treatment kills both senescent and cancer cells and lengthens the lives of old mice. Of senescence and cancer Just […]",
-    "url": "https://lifespan.io/a-drug-combination-fights-both-senescence-and-cancer/",
-    "top_development": false
-  },
-  {
-    "title": "Forever Healthy Launches the Evipedia Browser Extension",
-    "source": "Lifespan.io",
-    "date": "2026-08-13",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Staying informed about health and longevity interventions can be tedious and time-consuming. Often it involves manually decoding a supplement label with numerous compounds, reading a blog post about some therapy, or an X-post that […]",
-    "url": "https://lifespan.io/forever-healthy-launches-the-evipedia-browser-extension/",
-    "top_development": false
-  },
-  {
-    "title": "The Thymus Hormone Thymulin Reduces Inflammaging in Mice",
-    "source": "Lifespan.io",
-    "date": "2026-08-12",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A recent study identified the thymus hormone thymulin as a molecule with the potential to reduce inflammation in an age-dependent manner. Treating cancer-bearing […]",
-    "url": "https://lifespan.io/the-thymus-hormone-thymulin-reduces-inflammaging-in-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Why Affecting Aging in Complex Organisms Is So Hard",
-    "source": "Lifespan.io",
-    "date": "2026-08-11",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A new study proposes a theoretical framework that explains why the more complex an animal is, the harder it is to move the needle on its rate of aging […]",
-    "url": "https://lifespan.io/why-affecting-aging-in-complex-organisms-is-so-hard/",
-    "top_development": false
-  },
-  {
-    "title": "Nearly half of dementia cases may be linked to risks you can change",
-    "source": "ScienceDaily",
-    "date": "2026-08-06",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A long-term brain study found that common risks such as smoking, high blood pressure, heart disease, and high blood lipids were strongly linked to damage associated with vascular dementia. The findings suggest that healthier lifestyle choices could help delay dementia by…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260803080923.htm",
-    "top_development": false
-  },
-  {
-    "title": "AI can tell if your brain is aging faster than you are",
-    "source": "ScienceDaily",
-    "date": "2026-07-31",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A person’s sleeping brain may reveal warning signs of dementia long before memory problems begin. Researchers used machine learning to analyze EEG recordings from about 7,000 adults and found that an older-than-expected “brain age” was tied to a sharply higher dementia risk…",
-    "url": "https://www.sciencedaily.com/releases/2026/07/260729051540.htm",
-    "top_development": false
-  },
-  {
-    "title": "Scientists discover why poor sleep may harm some brains more",
-    "source": "ScienceDaily",
-    "date": "2026-07-31",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A gene involved in the brain’s overnight cleaning system may change how strongly poor sleep affects Alzheimer’s-related brain changes. The findings point toward more personalized prevention strategies based on both genetics and sleep habits.",
-    "url": "https://www.sciencedaily.com/releases/2026/07/260729051529.htm",
-    "top_development": false
-  },
-  {
-    "title": "A hidden Alzheimer’s tipping point may decide who gets dementia",
-    "source": "ScienceDaily",
-    "date": "2026-07-26",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Scientists have identified a possible tipping point that helps determine whether Alzheimer’s-related brain changes lead to dementia. The key may lie in how the brain’s immune cells respond to plaques and tau, offering a promising new target for treatments designed to extend…",
-    "url": "https://www.sciencedaily.com/releases/2026/07/260726015257.htm",
     "top_development": false
   }
 ]
