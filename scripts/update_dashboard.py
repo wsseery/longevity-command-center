@@ -61,6 +61,15 @@ HIGH_KEYWORDS = ("breakthrough", "first ", "landmark", "major", "significant", "
 MAX_PER_SOURCE = 12
 TARGET_MIN, TARGET_MAX = 29, 35
 
+# Below this, keep the existing file rather than publish a thin feed. The earlier
+# guard only caught an empty result, so a partial feed outage returning a handful
+# of items would have replaced a full 33-item feed with those few.
+MIN_KEEP = 12
+
+# Weekly digest posts restate items already carried individually — e.g. the
+# "Fight Aging! Newsletter", which is sitting in the live feed as of 2026-08-24.
+ROUNDUP_RE = re.compile(r"\b(newsletter|weekly roundup|week in review|digest)\b", re.I)
+
 
 def _clean(text, limit):
     text = re.sub(r"<[^>]+>", "", text or "")          # strip HTML tags
@@ -101,7 +110,7 @@ def _entry_date(e):
 
 def _collect(feedparser, window_days):
     cutoff = TODAY - datetime.timedelta(days=window_days)
-    items, seen, per_source = [], set(), {}
+    items, seen, seen_urls, per_source = [], set(), set(), {}
     for source, url, needs_filter in FEEDS:
         try:
             parsed = feedparser.parse(url)
@@ -113,7 +122,7 @@ def _collect(feedparser, window_days):
             if not d or d < cutoff or d > TODAY:
                 continue
             title = _clean(e.get("title", ""), 130)
-            if not title:
+            if not title or ROUNDUP_RE.search(title):
                 continue
             summary = _clean(e.get("summary", e.get("description", "")), 280) or title
             blob = f"{title} {summary}"
@@ -127,6 +136,11 @@ def _collect(feedparser, window_days):
             link = e.get("link", "") or ""
             if not link.startswith("http"):
                 continue
+            # Dedup on the URL as well as the title: the same story syndicated under
+            # two headlines was slipping through the title-only check.
+            url_key = link.split("?")[0].rstrip("/")
+            if url_key in seen_urls:
+                continue
             cat = _categorize(title, blob)
             items.append({
                 "title": title,
@@ -138,6 +152,7 @@ def _collect(feedparser, window_days):
                 "url": link,
             })
             seen.add(key)
+            seen_urls.add(url_key)
             per_source[source] = per_source.get(source, 0) + 1
     items.sort(key=lambda x: x["date"], reverse=True)
     return items
@@ -154,8 +169,15 @@ def refresh_news():
         items = _collect(feedparser, window)
         if len(items) >= TARGET_MIN:
             break
-    if not items:
-        print("WARNING: scraped 0 news items; keeping existing news_data.json", file=sys.stderr)
+    if len(items) < MIN_KEEP:
+        print("=" * 62, file=sys.stderr)
+        print(f"NEWS NOT REFRESHED - only {len(items)} item(s) scraped (minimum {MIN_KEEP}).",
+              file=sys.stderr)
+        print("news_data.json left unchanged rather than replaced with a thin feed.",
+              file=sys.stderr)
+        print("The price refresh below still runs. Check the feed WARNINGs above.",
+              file=sys.stderr)
+        print("=" * 62, file=sys.stderr)
         return
     items = items[:TARGET_MAX]
     # cosmetic: flag the freshest few high-importance items (news.html ignores this key,
