@@ -3,12 +3,12 @@
 Longevity Command Center — weekly dashboard refresh (NO API KEY REQUIRED).
 
 Step 1: rebuild news_data.json by scraping public RSS feeds (feedparser).
-        No Anthropic API key needed. NON-FATAL: never blocks the Step 2 price refresh.
+No Anthropic API key needed. NON-FATAL: never blocks the Step 2 price refresh.
 Step 2: refresh 11 ETF prices in finance.html and bump the "Jan 2 to <date>" refs (yfinance).
 
 Runs inside a GitHub Action; the workflow commits/pushes any changes.
 Output schema per item (consumed by news.html):
-    title, source, date (YYYY-MM-DD), category, importance, description, url
+title, source, date (YYYY-MM-DD), category, importance, description, url
 category in: Clinical Trials | Research | Biotech | Funding | Industry | Protocols
 importance in: high | normal
 Full reference: /05_Longevity/longevity_command_center_spec.md
@@ -18,17 +18,17 @@ import json, os, re, sys, html, datetime
 TODAY = datetime.date.today()
 
 # ----------------------------------------------------------------------------
-# STEP 1: NEWS -> news_data.json  (NON-FATAL — prices still update if this fails)
+# STEP 1: NEWS -> news_data.json (NON-FATAL — prices still update if this fails)
 # ----------------------------------------------------------------------------
 # RSS sources. relevance_filter=True means keep only longevity-relevant entries
-# (used for broad outlets like ScienceDaily / STAT).
+# (used for broad outlets like ScienceDaily / STAT / GEN).
 FEEDS = [
-    ("Fight Aging!",          "https://www.fightaging.org/feed/",                                   False),
-    ("Lifespan.io",           "https://www.lifespan.io/feed/",                                      False),
-    ("Longevity.Technology",  "https://longevity.technology/feed/",                                 False),
-    ("ScienceDaily",          "https://www.sciencedaily.com/rss/health_medicine/healthy_aging.xml", True),
-    ("STAT News",             "https://www.statnews.com/feed/",                                     True),
-    ("Endpoints News",        "https://endpts.com/feed/",                                           True),
+    ("Fight Aging!", "https://www.fightaging.org/feed/", False),
+    ("Lifespan.io", "https://www.lifespan.io/feed/", False),
+    ("Longevity.Technology", "https://longevity.technology/feed/", False),
+    ("ScienceDaily", "https://www.sciencedaily.com/rss/health_medicine/healthy_aging.xml", True),
+    ("STAT News", "https://www.statnews.com/feed/", True),
+    ("GEN", "https://www.genengnews.com/feed/", True),  # biotech/clinical; endpts.com feed 403s from CI, dropped
 ]
 
 RELEVANCE = ("aging", "ageing", "longevity", "senescent", "senescence", "senolytic",
@@ -37,22 +37,21 @@ RELEVANCE = ("aging", "ageing", "longevity", "senescent", "senescence", "senolyt
              " nad", "autophagy", "age-related", "anti-aging", "anti-ageing", "dementia",
              "parkinson", "biological age", "aging clock", "geroscience")
 
-# Money pattern is checked first and separately: a leading \b would block the "$"
-# alternative (since space->"$" is not a word boundary), so keep it standalone.
 MONEY_RE = re.compile(r"\$\s?[\d.]+\s*(k|m|b|million|billion)\b", re.I)
 
 # Category detection — ordered; first match wins. (pattern, category)
 CATEGORY_RULES = [
     (r"\b(raise[sd]?|raising|funding|financing|series\s+[a-e]\b|venture|valuation|"
-     r"closes?\s+\$|seed round|grant awarded|invest(s|ment)?)\b", "Funding"),
+     r"closes?\s+\$|seed round|grant awarded|invest(s|ment)?|ipo|debut\s+fund)\b", "Funding"),
     (r"\b(phase\s*(1|2|3|i{1,3})|clinical trial|trial results?|placebo|enroll|"
-     r"cohort|first-in-human|fda (approv|clear)|topline|randomi[sz]ed)\b", "Clinical Trials"),
+     r"cohort|first-in-human|fda (approv|clear|grant)|topline|readout|"
+     r"interim (data|results)|open-label|randomi[sz]ed|patients?\b|dosed|dosing|efficacy)\b", "Clinical Trials"),
     (r"\b(protocol|supplement|regimen|stack|diet|dietary|fasting|caloric|calorie|"
      r"exercise|lifestyle|sleep|nutrition|time-restricted|restriction)\b", "Protocols"),
     (r"\b(acqui(re|res|red|sition)|launch(es|ed)?|partnership|merger|market|"
      r"regulat|policy|standards|conference|summit|clinic\b|industry|ceo|spin(s|-)?out)\b", "Industry"),
     (r"\b(biotech|startup|start-up|company|platform|therapeutic|pipeline|drug (candidate|develop)|"
-     r"gene therapy|preclinical program|spinout)\b", "Biotech"),
+     r"gene therapy|cell therapy|antibod|molecule|preclinical|spinout)\b", "Biotech"),
 ]
 HIGH_KEYWORDS = ("breakthrough", "first ", "landmark", "major", "significant", "reverses",
                  "reversal", "extends lifespan", "life extension", "restore", "billion",
@@ -60,19 +59,12 @@ HIGH_KEYWORDS = ("breakthrough", "first ", "landmark", "major", "significant", "
 
 MAX_PER_SOURCE = 12
 TARGET_MIN, TARGET_MAX = 29, 35
-
-# Below this, keep the existing file rather than publish a thin feed. The earlier
-# guard only caught an empty result, so a partial feed outage returning a handful
-# of items would have replaced a full 33-item feed with those few.
 MIN_KEEP = 12
 
-# Weekly digest posts restate items already carried individually — e.g. the
-# "Fight Aging! Newsletter", which is sitting in the live feed as of 2026-08-24.
 ROUNDUP_RE = re.compile(r"\b(newsletter|weekly roundup|week in review|digest)\b", re.I)
 
-
 def _clean(text, limit):
-    text = re.sub(r"<[^>]+>", "", text or "")          # strip HTML tags
+    text = re.sub(r"<[^>]+>", "", text or "")
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
     if len(text) > limit:
@@ -80,10 +72,7 @@ def _clean(text, limit):
         text = cut + "…"
     return text
 
-
 def _categorize(title, blob):
-    # A dollar figure in the TITLE is a strong funding signal; scanning the
-    # description too often mis-tags research stories that cite a grant size.
     if MONEY_RE.search(title):
         return "Funding"
     low = blob.lower()
@@ -92,13 +81,11 @@ def _categorize(title, blob):
             return cat
     return "Research"
 
-
 def _importance(text, category):
     low = text.lower()
     if category in ("Funding", "Clinical Trials"):
         return "high"
     return "high" if any(k in low for k in HIGH_KEYWORDS) else "normal"
-
 
 def _entry_date(e):
     for key in ("published_parsed", "updated_parsed"):
@@ -106,7 +93,6 @@ def _entry_date(e):
         if t:
             return datetime.date(t.tm_year, t.tm_mon, t.tm_mday)
     return None
-
 
 def _collect(feedparser, window_days):
     cutoff = TODAY - datetime.timedelta(days=window_days)
@@ -136,8 +122,6 @@ def _collect(feedparser, window_days):
             link = e.get("link", "") or ""
             if not link.startswith("http"):
                 continue
-            # Dedup on the URL as well as the title: the same story syndicated under
-            # two headlines was slipping through the title-only check.
             url_key = link.split("?")[0].rstrip("/")
             if url_key in seen_urls:
                 continue
@@ -157,7 +141,6 @@ def _collect(feedparser, window_days):
     items.sort(key=lambda x: x["date"], reverse=True)
     return items
 
-
 def refresh_news():
     try:
         import feedparser
@@ -165,23 +148,18 @@ def refresh_news():
         print(f"WARNING: feedparser not available ({e}); keeping existing news_data.json", file=sys.stderr)
         return
     items = []
-    for window in (10, 14, 21, 30):          # widen until we have enough
+    for window in (10, 14, 21, 30):
         items = _collect(feedparser, window)
         if len(items) >= TARGET_MIN:
             break
     if len(items) < MIN_KEEP:
         print("=" * 62, file=sys.stderr)
-        print(f"NEWS NOT REFRESHED - only {len(items)} item(s) scraped (minimum {MIN_KEEP}).",
-              file=sys.stderr)
-        print("news_data.json left unchanged rather than replaced with a thin feed.",
-              file=sys.stderr)
-        print("The price refresh below still runs. Check the feed WARNINGs above.",
-              file=sys.stderr)
+        print(f"NEWS NOT REFRESHED - only {len(items)} item(s) scraped (minimum {MIN_KEEP}).", file=sys.stderr)
+        print("news_data.json left unchanged rather than replaced with a thin feed.", file=sys.stderr)
+        print("The price refresh below still runs. Check the feed WARNINGs above.", file=sys.stderr)
         print("=" * 62, file=sys.stderr)
         return
     items = items[:TARGET_MAX]
-    # cosmetic: flag the freshest few high-importance items (news.html ignores this key,
-    # but it preserves the historical schema / spec shape).
     flagged = 0
     for it in items:
         it["top_development"] = bool(flagged < 5 and it["importance"] == "high")
@@ -194,16 +172,13 @@ def refresh_news():
     json.dump(items, open("news_data.json", "w"), indent=2, ensure_ascii=False)
     print(f"news: {len(items)} items, {n_high} high; categories: {', '.join(cats)}")
 
-
-# STEP 1 is non-fatal: any error is logged but never aborts the ETF refresh below.
 try:
     refresh_news()
 except Exception as e:  # noqa
     print(f"WARNING: news refresh failed ({e}); keeping existing news_data.json", file=sys.stderr)
 
-
 # ----------------------------------------------------------------------------
-# STEP 2: ETF PRICES -> finance.html  (unchanged; yfinance, no API key)
+# STEP 2: ETF PRICES -> finance.html (unchanged; yfinance, no API key)
 # ----------------------------------------------------------------------------
 def refresh_prices():
     import yfinance as yf
@@ -247,10 +222,7 @@ def refresh_prices():
     open("finance.html", "w").write(src)
     print(f"finance: {updated}/{len(TICKERS)} ETF prices updated; date refs -> Jan 2 to {TODAY:%b %-d, %Y}")
 
-
-# Non-fatal: a price/yfinance error must not abort the run (or the commit of fresh news).
 try:
     refresh_prices()
 except Exception as e:  # noqa
     print(f"WARNING: price refresh failed ({e}); keeping existing finance.html", file=sys.stderr)
-
