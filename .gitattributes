@@ -1,0 +1,9 @@
+# Normalise line endings in the repo: LF in git, LF in the working tree
+# (core.autocrlf is unset on this machine). Added 2026-08-29 after a
+# 19,106-line CRLF churn buried a real 68-line change.
+* text=auto
+
+*.png binary
+*.ico binary
+*.jpg binary
+*.pdf binary
