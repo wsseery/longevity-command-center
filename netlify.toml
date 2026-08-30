@@ -1,0 +1,15 @@
+# PURPOSE: Send the old *.netlify.app host to the custom domain so the two do not
+#          compete for the same content in search.
+# TRIGGER: Every Netlify deploy of this repo.
+# OUTPUT:  301 from longevity-command-center.netlify.app/* -> longevitycommandcenter.com/*
+#
+# Added 2026-08-30. Setting longevitycommandcenter.com as Netlify's primary domain did
+# NOT produce this redirect on its own — the netlify.app host kept returning 200, so both
+# hosts served identical pages. force = true is required because the netlify.app URLs
+# resolve to real files; without it Netlify serves the file and ignores the rule.
+
+[[redirects]]
+  from = "https://longevity-command-center.netlify.app/*"
+  to = "https://longevitycommandcenter.com/:splat"
+  status = 301
+  force = true
