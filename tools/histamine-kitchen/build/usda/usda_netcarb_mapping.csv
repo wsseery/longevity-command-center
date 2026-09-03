@@ -1,0 +1,441 @@
+name,category,band,score,net,usda,fdc,carb,fiber,sugalc,via
+Artichoke,Vegetables,high,4.95,5.11,"Artichokes, (globe or french), raw",169205,10.51,5.4,,Artichoke
+Asparagus,Vegetables,high,4.95,1.78,"Asparagus, raw",168389,3.88,2.1,,Asparagus
+Eggplant,Vegetables,high,4.95,2.88,"Eggplant, raw",169228,5.88,3.0,,Eggplant
+Avocado,Vegetables,medium,3.4,1.83,"Avocados, raw, all commercial varieties",171705,8.53,6.7,,Avocado
+Beetroot,Vegetables,high,4.95,6.76,"Beets, raw",169145,9.56,2.8,,beets
+Bell pepper (sweet),Vegetables,medium,3.9,3.93,"Peppers, sweet, red, raw",170108,6.03,2.1,,sweet pepper
+Bell pepper (hot),Vegetables,low,3.35,7.31,"Peppers, hot chili, red, raw",170106,8.81,1.5,,hot pepper
+Bok choy,Vegetables,low,1.05,3.78,Hormel Pillow Pak Sliced Turkey Pepperoni,174593,3.78,0.0,,pak choi
+Broccoli,Vegetables,high,4.95,4.04,"Broccoli, raw",170379,6.64,2.6,,Broccoli
+Brussels sprouts,Vegetables,high,4.95,5.15,"Brussels sprouts, raw",170383,8.95,3.8,,Brussels sprouts
+Cabbage (green/white),Vegetables,high,4.95,3.3,"Cabbage, raw",169975,5.8,2.5,,Cabbage (green/white)
+Red cabbage,Vegetables,high,4.95,5.27,"Cabbage, red, raw",169977,7.37,2.1,,Red cabbage
+Savoy cabbage,Vegetables,high,4.95,3.0,"Cabbage, savoy, raw",170388,6.1,3.1,,Savoy cabbage
+Napa cabbage,Vegetables,high,4.95,2.03,"Cabbage, chinese (pe-tsai), raw",169979,3.23,1.2,,chinese cabbage
+Carrot,Vegetables,high,4.95,6.78,"Carrots, raw",170393,9.58,2.8,,Carrot
+Cauliflower,Vegetables,high,4.95,2.97,"Cauliflower, raw",169986,4.97,2.0,,Cauliflower
+Celery,Vegetables,high,4.95,1.37,"Celery, raw",169988,2.97,1.6,,Celery
+Swiss chard stalks,Vegetables,high,4.45,2.14,"Chard, swiss, raw",169991,3.74,1.6,,Swiss chard stalks
+Chili pepper (fresh red),Vegetables,low,3.35,7.31,"Peppers, hot chili, red, raw",170106,8.81,1.5,,Chili pepper (fresh red)
+Endive,Vegetables,high,4.95,0.25,"Endive, raw",168412,3.35,3.1,,Endive
+Corn salad,Vegetables,low,2.45,0.0,"Lamb, ground, raw",174370,0.0,0.0,,lamb's lettuce
+Cucumber,Vegetables,medium,3.4,3.13,"Cucumber, with peel, raw",168409,3.63,0.5,,Cucumber
+Pickled cucumber,Vegetables,low,2.9,1.41,"Pickles, cucumber, dill or kosher dill",168558,2.41,1.0,,dill pickle
+Fennel bulb,Vegetables,high,4.95,4.2,"Fennel, bulb, raw",169385,7.3,3.1,,Fennel bulb
+Garlic,Vegetables,high,4.95,30.96,"Garlic, raw",169230,33.06,2.1,,Garlic
+Green beans,Vegetables,medium,3.9,4.27,"Beans, snap, green, raw",169961,6.97,2.7,,Green beans
+Horseradish,Vegetables,low,1.35,7.99,"Horseradish, prepared",173472,11.29,3.3,,Horseradish
+Kale,Vegetables,high,4.95,0.32,"Kale, raw",168421,4.42,4.1,,Kale
+Kohlrabi,Vegetables,high,4.95,2.6,"Kohlrabi, raw",168424,6.2,3.6,,Kohlrabi
+Leek,Vegetables,high,4.95,12.35,"Leeks, (bulb and lower leaf-portion), raw",169246,14.15,1.8,,Leek
+Lettuce (head and leaf),Vegetables,high,4.95,1.57,"Lettuce, green leaf, raw",169249,2.87,1.3,,green leaf lettuce
+Arugula,Vegetables,high,4.95,2.05,"Arugula, raw",169387,3.65,1.6,,Arugula
+Mushrooms (common types),Vegetables,medium,3.4,3.06,"Mushrooms, Chanterelle, raw",168422,6.86,3.8,,Mushrooms (common types)
+White button mushroom,Vegetables,high,4.45,2.26,"Mushrooms, white, raw",169251,3.26,1.0,,White button mushroom
+Olives,Vegetables,low,2.7,11.66,"Kiwifruit, green, raw",168153,14.66,3.0,,green olives
+Onion,Vegetables,high,4.95,7.64,"Onions, raw",170000,9.34,1.7,,Onion
+White onion,Vegetables,high,4.45,6.65,"Onions, sweet, raw",170008,7.55,0.9,,sweet white onion
+Scallion,Vegetables,medium,4.2,7.64,"Onions, raw",170000,9.34,1.7,,green onion
+Shallot,Vegetables,high,4.95,13.6,"Shallots, raw",170499,16.8,3.2,,Shallot
+Parsnip,Vegetables,high,4.95,13.09,"Parsnips, raw",170417,17.99,4.9,,Parsnip
+Pumpkin,Vegetables,high,4.95,6.0,"Pumpkin, raw",168448,6.5,0.5,,Pumpkin
+Squash (winter),Vegetables,medium,3.9,9.69,"Squash, winter, butternut, raw",169295,11.69,2.0,,butternut squash
+Zucchini,Vegetables,medium,3.9,2.25,"Squash, summer, all varieties, raw",170487,3.35,1.1,,summer squash
+Radish (red),Vegetables,high,4.95,1.8,"Radishes, raw",169276,3.4,1.6,,radishes
+Sauerkraut,Vegetables,medium,4.2,3.3,"Cabbage, raw",169975,5.8,2.5,,fermented cabbage
+Kimchi,Vegetables,medium,3.95,3.3,"Cabbage, raw",169975,5.8,2.5,,fermented napa cabbage
+Spinach,Vegetables,high,4.95,1.43,"Spinach, raw",168462,3.63,2.2,,Spinach
+Sweet potato,Vegetables,high,4.95,23.78,"Yam, raw",170071,27.88,4.1,,yam (US)
+Potato,Vegetables,medium,3.4,9.94,"Potatoes, raw, skin",170032,12.44,2.5,,potatoes
+Tomato,Vegetables,medium,3.4,4.0,"Tomatoes, green, raw",170456,5.1,1.1,,tomatoes
+Tomato paste,Vegetables,low,2.25,61.8,Prune puree,167780,65.1,3.3,,tomato puree
+Sun-dried tomato,Vegetables,low,3.0,43.46,"Tomatoes, sun-dried",168567,55.76,12.3,,Sun-dried tomato
+Kelp / seaweed,Vegetables,high,4.95,8.27,"Seaweed, kelp, raw",168457,9.57,1.3,,Kelp / seaweed
+"Peas (green, fresh)",Vegetables,high,4.95,8.75,"Peas, green, raw",170419,14.45,5.7,,green peas
+Apple,Fruit,medium,3.9,11.38,"Apples, raw, gala, with skin (Includes foods for USDA's Food Distribution Program)",168204,13.68,2.3,,gala apple
+Pear,Fruit,high,4.95,12.13,"Pears, raw",169118,15.23,3.1,,Pear
+Apricot,Fruit,high,4.95,9.12,"Apricots, raw",171697,11.12,2.0,,Apricot
+Peach,Fruit,medium,3.4,8.04,"Peaches, yellow, raw",169928,9.54,1.5,,peaches
+Nectarine,Fruit,high,4.95,8.85,"Nectarines, raw",169914,10.55,1.7,,Nectarine
+Plum,Fruit,high,4.95,10.02,"Plums, raw",169949,11.42,1.4,,Plum
+Prune,Fruit,medium,4.2,10.02,"Plums, raw",169949,11.42,1.4,,dried plum
+Cherry (sweet),Fruit,medium,3.4,13.91,"Cherries, sweet, raw",171719,16.01,2.1,,Cherry (sweet)
+Sour cherry,Fruit,medium,3.9,10.58,"Cherries, sour, red, raw",173954,12.18,1.6,,Sour cherry
+Blueberry,Fruit,high,4.95,12.09,"Blueberries, raw",171711,14.49,2.4,,Blueberry
+Blackberry,Fruit,high,4.95,4.31,"Blackberries, raw",173946,9.61,5.3,,Blackberry
+Raspberry,Fruit,high,4.95,5.44,"Raspberries, raw",167755,11.94,6.5,,Raspberry
+Strawberry,Fruit,high,4.5,5.68,"Strawberries, raw",167762,7.68,2.0,,Strawberry
+Blackcurrant,Fruit,medium,3.9,15.38,"Currants, european black, raw",173963,15.38,,,black currant
+Redcurrant,Fruit,medium,3.9,9.5,"Currants, red and white, raw",173964,13.8,4.3,,red currant
+Gooseberry,Fruit,high,4.95,5.88,"Gooseberries, raw",173030,10.18,4.3,,Gooseberry
+Cranberry,Fruit,high,4.95,8.37,"Cranberries, raw",171722,11.97,3.6,,Cranberry
+Grape,Fruit,medium,3.4,10.03,"Grapes, muscadine, raw",173040,13.93,3.9,,Grape
+Raisin,Fruit,low,2.95,71.67,"Raisins, seeded",168166,78.47,6.8,,Raisin
+Banana,Fruit,high,4.95,20.24,"Bananas, raw",173944,22.84,2.6,,Banana
+Citrus fruits (general),Fruit,low,2.7,2.81,"Chayote, fruit, raw",170402,4.51,1.7,,Citrus fruits (general)
+Orange,Fruit,high,4.95,10.34,"Oranges, raw, navels (Includes foods for USDA's Food Distribution Program)",169917,12.54,2.2,,navel orange
+Orange juice,Fruit,high,4.95,10.2,"Orange juice, raw (Includes foods for USDA's Food Distribution Program)",169098,10.4,0.2,,Orange juice
+Lemon,Fruit,high,4.95,6.6,"Lemon juice, raw",167747,6.9,0.3,,lemon juice
+Lime,Fruit,high,4.95,7.74,"Limes, raw",168155,10.54,2.8,,Lime
+Grapefruit,Fruit,low,2.85,8.19,"Grapefruit, raw, white, Florida",173034,8.19,,,Grapefruit
+Mandarin orange,Fruit,high,4.95,11.54,"Tangerines, (mandarin oranges), raw",169105,13.34,1.8,,tangerine
+Orange or lemon zest,Fruit,high,4.95,6.52,"Lemons, raw, without peel",167746,9.32,2.8,,lemon peel
+Pineapple,Fruit,medium,3.4,11.72,"Pineapple, raw, all varieties",169124,13.12,1.4,,Pineapple
+Papaya,Fruit,high,4.95,9.12,"Papayas, raw",169926,10.82,1.7,,Papaya
+Kiwi fruit,Fruit,medium,3.4,11.66,"Kiwifruit, green, raw",168153,14.66,3.0,,kiwifruit
+Mango,Fruit,high,4.95,13.38,"Mangos, raw",169910,14.98,1.6,,Mango
+"Melon (cantaloupe, honeydew)",Fruit,medium,3.4,7.26,"Melons, cantaloupe, raw",169092,8.16,0.9,,"Melon (cantaloupe, honeydew)"
+Watermelon,Fruit,high,4.95,7.15,"Watermelon, raw",167765,7.55,0.4,,Watermelon
+Fig,Fruit,high,4.95,16.28,"Figs, raw",173021,19.18,2.9,,Fig
+Date,Fruit,low,2.95,68.27,"Dates, medjool",168191,74.97,6.7,,Date
+Coconut,Fruit,medium,3.9,3.34,"Nuts, coconut milk, raw (liquid expressed from grated meat and water)",170172,5.54,2.2,,coconut milk
+Pomegranate,Fruit,high,4.95,14.7,"Pomegranates, raw",169134,18.7,4.0,,Pomegranate
+Star fruit,Fruit,high,4.95,3.93,"Carambola, (starfruit), raw",171715,6.73,2.8,,carambola
+Quince,Fruit,high,4.95,13.4,"Quinces, raw",168163,15.3,1.9,,Quince
+Rhubarb,Fruit,high,4.95,2.74,"Rhubarb, raw",167758,4.54,1.8,,Rhubarb
+Rose hip,Fruit,medium,3.45,14.12,"Rose Hips, wild (Northern Plains Indians)",168998,38.22,24.1,,Rose hip
+Guava,Fruit,medium,3.4,8.92,"Guavas, common, raw",173044,14.32,5.4,,Guava
+Passion fruit,Fruit,medium,3.9,12.98,"Passion-fruit, (granadilla), purple, raw",169108,23.38,10.4,,Passion fruit
+"Dried fruit (general, sulphured)",Fruit,low,2.7,2.81,"Chayote, fruit, raw",170402,4.51,1.7,,"Dried fruit (general, sulphured)"
+"Chicken (fresh, cooked promptly)",Meat & Poultry,medium,3.4,0.79,"Chicken, skin (drumsticks and thighs), raw",172855,0.79,0.0,,"Chicken (fresh, cooked promptly)"
+Turkey (fresh),Meat & Poultry,medium,3.45,0.14,"Turkey, whole, breast, meat only, raw",171098,0.14,0.0,,turkey breast
+Duck (fresh),Meat & Poultry,low,3.3,1.45,"Egg, duck, whole, fresh, raw",172189,1.45,0.0,,Duck (fresh)
+"Poultry (general, fresh)",Meat & Poultry,low,2.4,54.29,"Spices, poultry seasoning",171331,65.59,11.3,,"Poultry (general, fresh)"
+"Beef (fresh, unaged)",Meat & Poultry,low,3.35,0.0,"Beef, grass-fed, ground, raw",168608,0.0,0.0,,ground beef fresh
+Veal (fresh),Meat & Poultry,medium,3.4,0.0,"Veal, ground, raw",175290,0.0,0.0,,Veal (fresh)
+Lamb (fresh),Meat & Poultry,medium,3.4,0.0,"Lamb, ground, raw",174370,0.0,0.0,,Lamb (fresh)
+Goat (fresh),Meat & Poultry,medium,3.9,0.0,"Game meat, goat, raw",175303,0.0,0.0,,goat meat
+"Pork (fresh, untreated)",Meat & Poultry,medium,3.4,0.0,"Pork, fresh, backfat, raw",167811,0.0,0.0,,"Pork (fresh, untreated)"
+Wild boar (fresh),Meat & Poultry,low,3.35,0.0,"Game meat, boar, wild, raw",175297,0.0,0.0,,Wild boar (fresh)
+Game meat,Meat & Poultry,medium,3.9,0.0,"Game meat, bear, raw",173845,0.0,0.0,,Game meat
+Dry-aged beef,Meat & Poultry,low,2.7,0.0,"Moose, meat, raw (Alaska Native)",167607,0.0,0.0,,hung meat
+Ground meat (pre-packed or open sale),Meat & Poultry,medium,3.45,0.0,"Squirrel, ground, meat (Alaska Native)",167619,0.0,,,Ground meat (pre-packed or open sale)
+"Ground meat (freshly ground, eaten immediately)",Meat & Poultry,medium,3.45,0.0,"Squirrel, ground, meat (Alaska Native)",167619,0.0,,,"Ground meat (freshly ground, eaten immediately)"
+Bacon,Meat & Poultry,low,2.95,2.71,"Bacon, meatless",172439,5.31,2.6,,Bacon
+Ham (dry-cured),Meat & Poultry,low,2.95,1.84,"Ham, minced",173865,1.84,0.0,,Ham (dry-cured)
+Ham (cooked deli),Meat & Poultry,low,2.95,1.84,"Ham, minced",173865,1.84,0.0,,Ham (cooked deli)
+Salami,Meat & Poultry,low,2.9,1.6,"Salami, dry or hard, pork",172938,1.6,0.0,,hard salami
+Sausage (all kinds),Meat & Poultry,medium,3.4,0.47,"Sausage, turkey, fresh, raw",174617,0.47,0.0,,Sausage (all kinds)
+Smoked meat,Meat & Poultry,low,2.95,3.24,"Pastrami, turkey",172927,3.34,0.1,,pastrami
+Dried meat,Meat & Poultry,medium,3.45,0.0,"Walrus, meat, dried (Alaska Native)",167621,0.0,,,Dried meat
+Organ meats,Meat & Poultry,medium,3.4,3.5,"Walrus, liver, raw (Alaska Native)",168031,3.5,,,liver
+Tongue (veal or beef),Meat & Poultry,medium,3.4,0.0,"Caribou, tongue, raw (Alaska Native)",168985,0.0,,,Tongue (veal or beef)
+Lard,Meat & Poultry,high,6.5,0.0,Lard,171401,0.0,0.0,,Lard
+Gelatin,Meat & Poultry,low,-1.1,0.0,"Gelatins, dry powder, unsweetened",169599,0.0,0.0,,Gelatin
+Bone broth (long-simmered),Meat & Poultry,low,2.25,0.4,Fish broth,171606,0.4,0.0,,Bone broth (long-simmered)
+Meat extract,Meat & Poultry,low,2.7,0.0,"Moose, meat, raw (Alaska Native)",167607,0.0,0.0,,Meat extract
+Fish (freshly caught or immediately frozen),Fish & Seafood,medium,3.4,0.0,"Fish, ling, raw",173670,0.0,0.0,,Fish (freshly caught or immediately frozen)
+Fish from the shop counter / on ice,Fish & Seafood,low,2.7,0.0,"Fish, ling, raw",173670,0.0,0.0,,fresh fish counter
+Cod (fresh or frozen),Fish & Seafood,medium,3.9,0.0,"Fish, cod, Atlantic, raw",171955,0.0,0.0,,atlantic cod
+Haddock (fresh or frozen),Fish & Seafood,medium,3.4,0.0,"Fish, haddock, raw",171964,0.0,0.0,,Haddock (fresh or frozen)
+Pollock (fresh or frozen),Fish & Seafood,medium,3.9,0.0,"Fish, pollock, Alaska, raw (may contain additives to retain moisture)",175130,0.0,0.0,,alaska pollock
+Trout (freshwater),Fish & Seafood,low,3.35,0.0,"Fish, trout, rainbow, wild, raw",175154,0.0,0.0,,rainbow trout
+Perch,Fish & Seafood,low,2.7,2.28,"Tomatoes, yellow, raw",170096,2.98,0.7,,yellow perch
+Tilapia,Fish & Seafood,medium,3.4,0.0,"Fish, tilapia, raw",175176,0.0,0.0,,Tilapia
+Halibut,Fish & Seafood,low,3.35,0.0,"Fish, halibut, Atlantic and Pacific, raw",174200,0.0,0.0,,pacific halibut
+Sea bass,Fish & Seafood,low,2.15,0.0,"Fish, bass, striped, raw",171948,0.0,0.0,,Sea bass
+Mahi mahi,Fish & Seafood,NO-MATCH,,,,,,,,
+Snapper,Fish & Seafood,low,2.7,5.27,"Cabbage, red, raw",169977,7.37,2.1,,red snapper
+Salmon (fresh or immediately frozen),Fish & Seafood,medium,3.9,0.0,"Fish, salmon, king (chinook), raw (Alaska Native)",168047,0.0,0.0,,king salmon
+Smoked salmon,Fish & Seafood,medium,3.45,0.0,"Fish, sablefish, smoked",173685,0.0,0.0,,smoked fish
+Tuna (fresh or canned),Fish & Seafood,low,2.85,0.0,"Fish, tuna, fresh, skipjack, raw",175156,0.0,0.0,,Tuna (fresh or canned)
+Mackerel,Fish & Seafood,medium,3.9,0.0,"Fish, mackerel, Atlantic, raw",175119,0.0,0.0,,atlantic mackerel
+Sardines,Fish & Seafood,low,0.8,0.0,"Fish oil, sardine",173578,0.0,0.0,,Sardines
+Herring,Fish & Seafood,low,2.9,9.64,"Fish, herring, Atlantic, pickled",175118,9.64,0.0,,pickled herring
+Anchovies,Fish & Seafood,low,2.85,0.0,"Fish, anchovy, european, raw",174182,0.0,0.0,,Anchovies
+Canned fish (any),Fish & Seafood,low,2.7,0.0,"Fish, ling, raw",173670,0.0,0.0,,Canned fish (any)
+Salted or dried fish,Fish & Seafood,medium,3.45,0.0,"Fish, whitefish, dried (Alaska Native)",168052,0.0,0.0,,dried fish
+Fish sauce,Fish & Seafood,low,2.7,0.0,"Fish, ling, raw",173670,0.0,0.0,,Fish sauce
+Shrimp,Fish & Seafood,medium,3.4,0.0,"Crustaceans, shrimp, raw",175179,0.0,,,Shrimp
+Crab,Fish & Seafood,low,2.85,0.04,"Crustaceans, crab, blue, raw",174204,0.04,0.0,,Crab
+Lobster,Fish & Seafood,low,2.85,0.0,"Crustaceans, lobster, northern, raw",174208,0.0,0.0,,Lobster
+Mussels,Fish & Seafood,medium,3.9,3.69,"Mollusks, mussel, blue, raw",174216,3.69,0.0,,blue mussels
+Oysters,Fish & Seafood,medium,3.4,3.79,"Mushrooms, oyster, raw",168580,6.09,2.3,,Oysters
+Clams,Fish & Seafood,low,1.63,7.81,"CAMPBELL'S CHUNKY, New England Clam Chowder",174556,9.01,1.2,,Clams
+Scallops,Fish & Seafood,low,2.85,2.64,"Squash, summer, scallop, raw",169289,3.84,1.2,,Scallops
+Squid and octopus,Fish & Seafood,high,6.5,0.0,Octopus (Alaska Native),168019,0.0,,,octopus
+Surimi,Fish & Seafood,low,2.95,6.85,"Fish, surimi",173702,6.85,0.0,,Surimi
+Milk (pasteurised),Dairy,low,3.35,4.66,"Yogurt, plain, whole milk",171284,4.66,0.0,,whole milk
+Milk (UHT),Dairy,low,3.0,4.66,"Yogurt, plain, whole milk",171284,4.66,0.0,,Milk (UHT)
+Lactose-free milk,Dairy,low,2.1,4.66,"Yogurt, plain, whole milk",171284,4.66,0.0,,Lactose-free milk
+Raw milk,Dairy,low,3.0,4.66,"Yogurt, plain, whole milk",171284,4.66,0.0,,Raw milk
+Goat's milk,Dairy,low,2.55,4.45,"Milk, goat, fluid, with added vitamin D",171278,4.45,0.0,,goat milk
+"Cream (sweet, unfermented)",Dairy,low,2.95,5.52,"Cheese, cream",173418,5.52,0.0,,"Cream (sweet, unfermented)"
+Sour cream,Dairy,medium,3.45,4.63,"Cream, sour, cultured",171257,4.63,0.0,,Sour cream
+Butter (sweet cream),Dairy,low,2.95,0.0,"Butter, Clarified butter (ghee)",171314,0.0,0.0,,Butter (sweet cream)
+Cultured butter,Dairy,low,2.25,0.0,"Butter, Clarified butter (ghee)",171314,0.0,0.0,,Cultured butter
+Ghee,Dairy,high,4.5,0.0,"Butter, Clarified butter (ghee)",171314,0.0,0.0,,clarified butter
+Buttermilk,Dairy,low,2.55,4.88,"Milk, buttermilk, fluid, whole",172225,4.88,0.0,,Buttermilk
+Yogurt (plain),Dairy,medium,3.45,3.98,"Yogurt, Greek, plain, whole milk",171304,3.98,0.0,,greek yogurt
+Kefir,Dairy,low,2.55,4.77,"Kefir, lowfat, plain, LIFEWAY",170904,4.77,0.0,,Kefir
+Quark,Dairy,NO-MATCH,,,,,,,,
+Curd cheese,Dairy,medium,3.45,6.9,"Soybean, curd cheese",169083,6.9,0.0,,Curd cheese
+Cream cheese (plain),Dairy,high,4.5,5.52,"Cheese, cream",173418,5.52,0.0,,Cream cheese (plain)
+Mascarpone,Dairy,low,2.7,3.06,"Cheese, caraway",173413,3.06,0.0,,mascarpone cheese
+Ricotta,Dairy,low,3.35,7.27,"Cheese, ricotta, whole milk",170851,7.27,0.0,,ricotta cheese
+Mozzarella,Dairy,low,2.55,2.4,"Cheese, mozzarella, whole milk",170845,2.4,0.0,,Mozzarella
+Cottage cheese,Dairy,medium,3.45,2.9,"Cheese, cottage, with vegetables",169078,3.0,0.1,,Cottage cheese
+Gouda (young),Dairy,low,2.95,2.22,"Cheese, gouda",171241,2.22,0.0,,Gouda (young)
+Aged Gouda,Dairy,low,2.25,2.22,"Cheese, gouda",171241,2.22,0.0,,Aged Gouda
+Cheddar cheese (aged),Dairy,high,4.5,3.37,"Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",173414,3.37,0.0,,Cheddar cheese (aged)
+Hard cheese (all well-matured cheeses),Dairy,medium,3.45,3.22,"Cheese, parmesan, hard",170848,3.22,0.0,,Hard cheese (all well-matured cheeses)
+Blue cheese,Dairy,high,4.5,2.34,"Cheese, blue",172175,2.34,0.0,,Blue cheese
+Roquefort,Dairy,high,4.5,2.0,"Cheese, roquefort",171250,2.0,0.0,,roquefort cheese
+Brie and Camembert,Dairy,low,2.95,0.45,"Cheese, brie",172177,0.45,0.0,,brie
+Feta cheese,Dairy,high,4.5,3.88,"Cheese, feta",173420,3.88,0.0,,Feta cheese
+Fontina cheese,Dairy,high,4.5,1.55,"Cheese, fontina",170843,1.55,0.0,,Fontina cheese
+Processed cheese,Dairy,medium,3.45,2.28,Ham and cheese spread,171629,2.28,0.0,,cheese spread
+Cheese from raw milk,Dairy,low,3.35,2.4,"Cheese, mozzarella, whole milk",170845,2.4,0.0,,raw milk cheese
+Egg yolk,Eggs,high,4.95,3.59,"Egg, yolk, raw, fresh",172184,3.59,0.0,,Egg yolk
+Egg white,Eggs,high,4.95,0.73,"Egg, white, raw, fresh",172183,0.73,0.0,,Egg white
+Whole chicken egg,Eggs,high,4.95,0.72,"Egg, whole, raw, fresh",171287,0.72,0.0,,whole egg
+Quail eggs,Eggs,medium,4.35,0.41,"Egg, quail, whole, fresh, raw",172191,0.41,0.0,,Quail eggs
+Duck eggs,Eggs,medium,4.35,1.45,"Egg, duck, whole, fresh, raw",172189,1.45,0.0,,Duck eggs
+Rice,Grains & Starches,medium,3.4,68.7,"Wild rice, raw",169726,74.9,6.2,,Rice
+Wild rice,Grains & Starches,high,4.95,68.7,"Wild rice, raw",169726,74.9,6.2,,Wild rice
+Rice noodles,Grains & Starches,medium,3.45,78.58,"Rice noodles, dry",169742,80.18,1.6,,Rice noodles
+Oats,Grains & Starches,high,6.5,55.67,Oats (Includes foods for USDA's Food Distribution Program),169705,66.27,10.6,,Oats
+Quinoa,Grains & Starches,low,2.95,57.16,"Quinoa, uncooked",168874,64.16,7.0,,Quinoa
+Millet,Grains & Starches,high,4.95,64.35,"Millet, raw",169702,72.85,8.5,,Millet
+Amaranth,Grains & Starches,medium,3.45,58.55,"Amaranth grain, uncooked",170682,65.25,6.7,,amaranth grain
+Buckwheat,Grains & Starches,high,6.5,61.5,Buckwheat,170286,71.5,10.0,,Buckwheat
+Corn / maize (fresh or dried),Grains & Starches,medium,3.9,16.32,"Corn, sweet, white, raw",168538,19.02,2.7,,sweet corn
+Cornflakes,Grains & Starches,low,2.15,16.32,"Corn, sweet, white, raw",168538,19.02,2.7,,corn flakes
+Cornstarch,Grains & Starches,high,6.5,90.37,Cornstarch,169698,91.27,0.9,,Cornstarch
+Wheat,Grains & Starches,low,3.35,61.27,"Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)",168893,71.97,10.7,,wheat flour
+Spelt,Grains & Starches,low,2.95,59.49,"Spelt, uncooked",169745,70.19,10.7,,Spelt
+Rye,Grains & Starches,medium,3.45,44.83,"Rye flour, dark",168885,68.63,23.8,,rye flour
+Barley,Grains & Starches,medium,3.4,62.12,"Barley, pearled, raw",170284,77.72,15.6,,Barley
+Barley malt,Grains & Starches,low,2.7,62.12,"Barley, pearled, raw",170284,77.72,15.6,,Barley malt
+Bread,Grains & Starches,medium,3.45,34.71,"Bread, white wheat",167532,43.91,9.2,,white bread
+Sourdough bread,Grains & Starches,low,2.25,45.5,"Bread, egg",172673,47.8,2.3,,Sourdough bread
+Baked goods (general),Grains & Starches,low,2.55,45.36,"Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",174990,47.06,1.7,,cakes
+Pasta (wheat),Grains & Starches,low,2.85,5.41,"Squash, winter, spaghetti, raw",169298,6.91,1.5,,spaghetti
+Tapioca / sago,Grains & Starches,low,2.4,87.79,"Tapioca, pearl, dry",169717,88.69,0.9,,tapioca
+Maltodextrin,Grains & Starches,NO-MATCH,,,,,,,,
+Chestnut,Grains & Starches,low,2.85,34.91,"Nuts, chestnuts, japanese, raw",169413,34.91,,,Chestnut
+Wheat germ,Grains & Starches,medium,3.45,38.6,"Wheat germ, crude",168892,51.8,13.2,,Wheat germ
+Gluten (isolated),Grains & Starches,high,6.5,13.19,Vital wheat gluten,168147,13.79,0.6,,vital wheat gluten
+Walnut,Nuts & Seeds,low,2.4,7.01,"Nuts, walnuts, english",170187,13.71,6.7,,Walnut
+Cashew nut,Nuts & Seeds,high,4.95,26.89,"Nuts, cashew nuts, raw",170162,30.19,3.3,,Cashew nut
+Peanut,Nuts & Seeds,medium,3.4,6.33,"Peanuts, spanish, raw",174263,15.83,9.5,,Peanut
+Peanut butter,Nuts & Seeds,medium,3.45,18.28,"Peanut Butter, smooth (Includes foods for USDA's Food Distribution Program)",174294,23.98,5.7,,Peanut butter
+Hazelnut,Nuts & Seeds,low,2.95,13.18,"Hazelnuts, beaked (Northern Plains Indians)",169827,22.98,9.8,,Hazelnut
+Almond,Nuts & Seeds,low,2.95,9.05,"Nuts, almonds",170567,21.55,12.5,,Almond
+Almond flour,Nuts & Seeds,low,2.7,0.04,"Chicken, ground, raw",171116,0.04,0.0,,ground almonds
+Brazil nut,Nuts & Seeds,low,2.7,37.6,"Nuts, ginkgo nuts, raw",170584,37.6,,,Brazil nut
+Macadamia,Nuts & Seeds,high,4.95,5.22,"Nuts, macadamia nuts, raw",170178,13.82,8.6,,macadamia nuts
+Pistachio,Nuts & Seeds,medium,3.4,16.57,"Nuts, pistachio nuts, raw",170184,27.17,10.6,,Pistachio
+Pine nuts,Nuts & Seeds,low,2.7,37.6,"Nuts, ginkgo nuts, raw",170584,37.6,,,Pine nuts
+Pecan,Nuts & Seeds,low,2.95,4.26,"Nuts, pecans",170182,13.86,9.6,,Pecan
+Nuts (general/mixed),Nuts & Seeds,medium,3.4,37.6,"Nuts, ginkgo nuts, raw",170584,37.6,,,Nuts (general/mixed)
+Sunflower seeds,Nuts & Seeds,low,2.9,17.62,"Seeds, sunflower seed butter, with salt added (Includes foods for USDA's Food Distribution Program)",168595,23.32,5.7,,Sunflower seeds
+Pumpkin seeds,Nuts & Seeds,medium,4.2,6.0,"Pumpkin, raw",168448,6.5,0.5,,Pumpkin seeds
+Sesame seeds,Nuts & Seeds,low,2.7,17.28,"Seeds, lotus seeds, raw",168591,17.28,,,Sesame seeds
+Chia seeds,Nuts & Seeds,low,2.7,17.28,"Seeds, lotus seeds, raw",168591,17.28,,,Chia seeds
+Flax seeds,Nuts & Seeds,low,2.95,1.58,"Seeds, flaxseed",169414,28.88,27.3,,flaxseed
+Hemp seeds,Nuts & Seeds,medium,3.45,4.67,"Seeds, hemp seed, hulled",170148,8.67,4.0,,Hemp seeds
+Poppy seeds,Nuts & Seeds,medium,3.45,8.63,"Spices, poppy seed",171330,28.13,19.5,,Poppy seeds
+Psyllium husk,Nuts & Seeds,NO-MATCH,,,,,,,,
+Pulses (general),Legumes,low,2.7,8.35,"Yardlong bean, raw",169222,8.35,,,dried beans
+"Beans (dried, all types)",Legumes,medium,3.4,8.35,"Yardlong bean, raw",169222,8.35,,,"Beans (dried, all types)"
+Borlotti beans,Legumes,medium,4.2,8.37,"Cranberries, raw",171722,11.97,3.6,,cranberry beans
+Broad beans,Legumes,low,3.35,10.13,"Beans, fava, in pod, raw",168574,17.63,7.5,,fava beans
+Chickpeas,Legumes,low,2.85,50.75,"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",173756,62.95,12.2,,Chickpeas
+Hummus,Legumes,high,4.5,9.5,"Hummus, commercial",174289,15.0,5.5,,Hummus
+Lentils,Legumes,high,4.95,52.65,"Lentils, raw",172420,63.35,10.7,,Lentils
+Green split peas,Legumes,high,4.45,8.75,"Peas, green, raw",170419,14.45,5.7,,Green split peas
+Yellow split peas,Legumes,low,2.7,2.28,"Tomatoes, yellow, raw",170096,2.98,0.7,,yellow peas
+Soybeans,Legumes,medium,3.45,16.42,"Soy flour, defatted",174275,33.92,17.5,,soy flour
+Tofu,Legumes,low,2.95,15.76,Tofu yogurt,167722,15.96,0.2,,Tofu
+Tempeh,Legumes,high,6.5,7.64,Tempeh,174272,7.64,,,Tempeh
+Edamame,Legumes,high,4.95,6.85,"Soybeans, green, raw",169282,11.05,4.2,,green soybeans
+Miso,Legumes,high,6.5,19.97,Miso,172442,25.37,5.4,,Miso
+Natto,Legumes,high,6.5,7.28,Natto,172443,12.68,5.4,,Natto
+Peanut (as legume),Legumes,medium,3.4,6.33,"Peanuts, spanish, raw",174263,15.83,9.5,,Peanut (as legume)
+Olive oil,Fats & Oils,low,2.9,0.0,"Oil, corn, peanut, and olive",167737,0.0,0.0,,Olive oil
+Coconut oil,Fats & Oils,high,4.5,0.0,"Oil, coconut",171412,0.0,0.0,,Coconut oil
+Canola oil,Fats & Oils,high,4.5,0.0,"Oil, canola",172336,0.0,0.0,,Canola oil
+Sunflower oil,Fats & Oils,medium,3.45,0.0,"Oil, sunflower, linoleic, (partially hydrogenated)",172328,0.0,0.0,,Sunflower oil
+Safflower oil,Fats & Oils,low,2.25,0.0,"Oil, walrus (Alaska Native)",168032,0.0,,,Safflower oil
+Pumpkin seed oil,Fats & Oils,medium,3.95,6.0,"Pumpkin, raw",168448,6.5,0.5,,Pumpkin seed oil
+Walnut oil,Fats & Oils,high,4.5,0.0,"Oil, walnut",171030,0.0,0.0,,Walnut oil
+Black seed oil,Fats & Oils,low,2.9,46.86,"Beans, black, mature seeds, raw",173734,62.36,15.5,,Black seed oil
+Palm oil,Fats & Oils,high,4.5,0.0,"Oil, palm",171015,0.0,0.0,,Palm oil
+Margarine,Fats & Oils,low,2.95,3.39,Liverwurst spread,174596,5.89,2.5,,spread
+Avocado oil,Fats & Oils,high,4.5,0.0,"Oil, avocado",173573,0.0,0.0,,Avocado oil
+Sesame oil,Fats & Oils,low,2.25,0.0,"Oil, walrus (Alaska Native)",168032,0.0,,,Sesame oil
+Flaxseed oil,Fats & Oils,low,2.9,0.0,"Oil, flaxseed, cold pressed",167702,0.0,0.0,,Flaxseed oil
+Butter (as fat),Fats & Oils,low,2.95,0.0,"Butter, Clarified butter (ghee)",171314,0.0,0.0,,Butter (as fat)
+Beef tallow,Fats & Oils,medium,3.45,0.0,"Fat, beef tallow",171400,0.0,0.0,,Beef tallow
+MCT oil,Fats & Oils,low,2.25,0.0,"Oil, walrus (Alaska Native)",168032,0.0,,,MCT oil
+Fish oil supplement,Fats & Oils,medium,3.7,0.0,"Fish oil, cod liver",173577,0.0,0.0,,cod liver oil
+Basil,Herbs & Spices,high,4.5,1.05,"Basil, fresh",172232,2.65,1.6,,Basil
+Oregano,Herbs & Spices,medium,3.45,26.42,"Spices, oregano, dried",171328,68.92,42.5,,dried oregano
+Parsley,Herbs & Spices,high,4.5,3.03,"Parsley, fresh",170416,6.33,3.3,,Parsley
+Rosemary,Herbs & Spices,high,4.5,6.6,"Rosemary, fresh",173473,20.7,14.1,,Rosemary
+Sage,Herbs & Spices,low,2.4,20.43,"Spices, sage, ground",170935,60.73,40.3,,Sage
+Thyme,Herbs & Spices,high,4.5,10.45,"Thyme, fresh",173470,24.45,14.0,,Thyme
+Mint,Herbs & Spices,high,4.5,1.61,"Spearmint, fresh",173475,8.41,6.8,,spearmint
+Chives,Herbs & Spices,high,4.95,1.85,"Chives, raw",169994,4.35,2.5,,Chives
+Dill,Herbs & Spices,high,4.5,4.92,"Dill weed, fresh",172233,7.02,2.1,,dill weed
+Cilantro / coriander leaf,Herbs & Spices,medium,3.4,0.87,"Coriander (cilantro) leaves, raw",169997,3.67,2.8,,fresh coriander
+Cinnamon,Herbs & Spices,medium,3.45,27.49,"Spices, cinnamon, ground",171320,80.59,53.1,,ground cinnamon
+Cloves,Herbs & Spices,low,2.7,0.72,"Egg, whole, raw, fresh",171287,0.72,0.0,,whole cloves
+Cardamom,Herbs & Spices,low,2.95,40.47,"Spices, cardamom",170919,68.47,28.0,,Cardamom
+Caraway,Herbs & Spices,medium,3.45,11.9,"Spices, caraway seed",170918,49.9,38.0,,caraway seed
+Cumin,Herbs & Spices,low,2.4,33.74,"Spices, cumin seed",170923,44.24,10.5,,Cumin
+Turmeric,Herbs & Spices,low,2.4,44.44,"Spices, turmeric, ground",172231,67.14,22.7,,Turmeric
+Ginger,Herbs & Spices,medium,3.45,57.52,"Spices, ginger, ground",170926,71.62,14.1,,ground ginger
+Nutmeg,Herbs & Spices,medium,3.45,28.49,"Spices, nutmeg, ground",171326,49.29,20.8,,ground nutmeg
+Black seed,Herbs & Spices,low,3.35,46.86,"Beans, black, mature seeds, raw",173734,62.36,15.5,,Black seed
+Sweet paprika,Herbs & Spices,low,2.95,19.09,"Spices, paprika",171329,53.99,34.9,,paprika
+Hot paprika,Herbs & Spices,low,2.45,4.35,"Sausage, turkey, hot, smoked",174606,4.65,0.3,,smoked hot paprika
+Black pepper,Herbs & Spices,medium,3.45,38.65,"Spices, pepper, black",170931,63.95,25.3,,Black pepper
+White pepper,Herbs & Spices,medium,3.45,42.41,"Spices, pepper, white",170933,68.61,26.2,,White pepper
+Cayenne pepper,Herbs & Spices,medium,3.45,14.9,"Spices, chili powder",171319,49.7,34.8,,chili powder
+Curry powder,Herbs & Spices,medium,3.45,2.63,"Spices, curry powder",170924,55.83,53.2,,Curry powder
+Mustard seed,Herbs & Spices,low,2.9,15.89,"Spices, mustard seed, ground",170929,28.09,12.2,,Mustard seed
+Fenugreek,Herbs & Spices,low,2.4,33.75,"Spices, fenugreek seed",171324,58.35,24.6,,Fenugreek
+Bay leaf,Herbs & Spices,medium,3.45,48.67,"Spices, bay leaf",170917,74.97,26.3,,Bay leaf
+Vanilla,Herbs & Spices,low,2.7,5.33,"Drumstick pods, raw",170483,8.53,3.2,,vanilla pod
+Vanilla extract,Herbs & Spices,high,6.5,12.65,Vanilla extract,173471,12.65,0.0,,Vanilla extract
+Liquorice root,Herbs & Spices,low,2.7,22.6,"Mashu roots, raw (Alaska Native)",167608,22.6,,,Liquorice root
+Salt,Herbs & Spices,high,4.5,0.0,"Salt, table",173468,0.0,0.0,,table salt
+Iodized table salt,Herbs & Spices,medium,4.0,0.0,"Salt, table",173468,0.0,0.0,,Iodized table salt
+Seasoned salt / herbal salt,Herbs & Spices,low,2.25,0.06,"Butter, without salt",173430,0.06,0.0,,herb salt
+Distilled white vinegar,Condiments & Sauces,medium,4.0,0.04,"Vinegar, distilled",172237,0.04,0.0,,Distilled white vinegar
+Apple cider vinegar,Condiments & Sauces,medium,4.0,0.93,"Vinegar, cider",173469,0.93,0.0,,Apple cider vinegar
+Balsamic vinegar,Condiments & Sauces,high,4.5,17.03,"Vinegar, balsamic",172241,17.03,,,Balsamic vinegar
+Red wine vinegar,Condiments & Sauces,high,4.5,0.27,"Vinegar, red wine",172240,0.27,0.0,,Red wine vinegar
+White wine vinegar,Condiments & Sauces,low,3.0,0.27,"Vinegar, red wine",172240,0.27,0.0,,White wine vinegar
+Rice vinegar,Condiments & Sauces,low,3.0,0.27,"Vinegar, red wine",172240,0.27,0.0,,rice wine vinegar
+Soy sauce,Condiments & Sauces,low,2.9,4.77,Soy sauce made from soy (tamari),174278,5.57,0.8,,Soy sauce
+Coconut aminos,Condiments & Sauces,low,2.15,6.23,"Nuts, coconut meat, raw",170169,15.23,9.0,,Coconut aminos
+Mustard (prepared),Condiments & Sauces,medium,3.4,1.47,"Mustard greens, raw",169256,4.67,3.2,,Mustard (prepared)
+Ketchup,Condiments & Sauces,high,6.5,27.1,Catsup,168556,27.4,0.3,,catsup
+Mayonnaise,Condiments & Sauces,low,2.4,1.96,"Mayonnaise, made with tofu",167695,3.06,1.1,,Mayonnaise
+Worcestershire sauce,Condiments & Sauces,high,4.5,19.17,"Sauce, worcestershire",171610,19.17,0.0,,Worcestershire sauce
+Fish sauce (condiment),Condiments & Sauces,low,2.7,0.0,"Fish, ling, raw",173670,0.0,0.0,,Fish sauce (condiment)
+Oyster sauce,Condiments & Sauces,low,2.7,3.79,"Mushrooms, oyster, raw",168580,6.09,2.3,,Oyster sauce
+Hot sauce,Condiments & Sauces,low,2.9,16.96,"Sauce, hot chile, sriracha",171186,19.16,2.2,,Hot sauce
+Barbecue sauce,Condiments & Sauces,high,4.5,39.87,"Sauce, barbecue",174523,40.77,0.9,,Barbecue sauce
+Salsa,Condiments & Sauces,low,1.75,10.44,"Dip, salsa con queso, cheese and salsa- medium",174068,11.14,0.7,,Salsa
+Pesto,Condiments & Sauces,medium,3.75,1.05,"Basil, fresh",172232,2.65,1.6,,basil pesto
+Bouillon / stock cubes,Condiments & Sauces,low,2.25,35.15,Baobab powder,167806,79.65,44.5,,broth powder
+Yeast extract,Condiments & Sauces,low,2.25,12.65,Vanilla extract,173471,12.65,0.0,,Yeast extract
+Seasoning from hydrolysed protein,Condiments & Sauces,low,2.0,40.8,"Bread, protein (includes gluten)",174917,43.8,3.0,,hydrolyzed vegetable protein
+Nutritional yeast,Condiments & Sauces,low,1.2,54.08,"Bread, pan dulce, sweet yeast bread",167935,56.38,2.3,,Nutritional yeast
+Cocoa powder,Condiments & Sauces,low,2.25,35.15,Baobab powder,167806,79.65,44.5,,Cocoa powder
+Dark chocolate,Condiments & Sauces,low,2.9,52.77,"Candies, chocolate, dark, NFS (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%)",170274,59.97,7.2,,Dark chocolate
+Milk chocolate,Condiments & Sauces,medium,3.45,56.0,"Candies, milk chocolate",167587,59.4,3.4,,Milk chocolate
+White chocolate,Condiments & Sauces,medium,3.45,59.04,"Candies, white chocolate",167571,59.24,0.2,,White chocolate
+Cocoa butter,Condiments & Sauces,low,2.25,0.0,"Butter, Clarified butter (ghee)",171314,0.0,0.0,,Cocoa butter
+Leftovers (refrigerated cooked food),Condiments & Sauces,low,1.95,35.89,"Soy meal, defatted, raw",172445,35.89,,,next-day meal
+Restaurant / canteen meals,Condiments & Sauces,low,2.15,35.89,"Soy meal, defatted, raw",172445,35.89,,,ready meal
+Canned or semi-finished products,Condiments & Sauces,low,2.25,1.69,"Capers, canned",172238,4.89,3.2,,canned food
+Table sugar,Sweeteners,medium,4.2,6.76,"Beets, raw",169145,9.56,2.8,,beet sugar
+Glucose / dextrose,Sweeteners,low,0.6,2.38,"Egg, whole, dried, stabilized, glucose reduced",173425,2.38,0.0,,glucose
+Fructose,Sweeteners,low,2.7,19.24,"Sugar-apples, (sweetsop), raw",168175,23.64,4.4,,fruit sugar
+Maltose,Sweeteners,low,2.7,19.24,"Sugar-apples, (sweetsop), raw",168175,23.64,4.4,,malt sugar
+Lactose,Sweeteners,low,2.7,19.24,"Sugar-apples, (sweetsop), raw",168175,23.64,4.4,,milk sugar
+Honey,Sweeteners,high,6.5,82.2,Honey,169640,82.4,0.2,,Honey
+Maple syrup,Sweeteners,high,4.5,67.04,"Syrups, maple",169661,67.04,0.0,,Maple syrup
+Agave syrup,Sweeteners,medium,4.2,9.63,"Agave, raw (Southwest)",169814,16.23,6.6,,Agave syrup
+Caramel (browned sugar),Sweeteners,low,2.95,77.0,"Candies, caramels",167974,77.0,0.0,,Caramel (browned sugar)
+Stevia,Sweeteners,low,2.15,1.57,"Lettuce, green leaf, raw",169249,2.87,1.3,,stevia leaf
+Xylitol,Sweeteners,low,2.7,19.24,"Sugar-apples, (sweetsop), raw",168175,23.64,4.4,,birch sugar
+Erythritol,Sweeteners,NO-MATCH,,,,,,,,
+Sorbitol,Sweeteners,NO-MATCH,,,,,,,,
+Mannitol,Sweeteners,NO-MATCH,,,,,,,,
+Sucralose,Sweeteners,low,1.9,91.17,"Sweeteners, tabletop, sucralose, SPLENDA packets",170257,91.17,0.0,,Sucralose
+Artificial sweeteners (general),Sweeteners,low,2.4,89.11,"Sweeteners, tabletop, saccharin (sodium saccharin)",169072,89.11,0.0,,saccharin
+Malt extract,Sweeteners,low,2.45,62.12,"Barley, pearled, raw",170284,77.72,15.6,,barley malt extract
+Palm sugar,Sweeteners,low,2.7,19.24,"Sugar-apples, (sweetsop), raw",168175,23.64,4.4,,Palm sugar
+Monk fruit sweetener,Sweeteners,low,2.45,2.81,"Chayote, fruit, raw",170402,4.51,1.7,,Monk fruit sweetener
+Tap water,Beverages,medium,3.4,1.03,"Water convolvulus,raw",169301,3.13,2.1,,water
+Still mineral water,Beverages,low,2.7,1.03,"Water convolvulus,raw",169301,3.13,2.1,,mineral water
+Carbonated water,Beverages,low,2.7,1.03,"Water convolvulus,raw",169301,3.13,2.1,,Carbonated water
+Coffee,Beverages,low,2.4,10.29,"SILK Coffee, soymilk",175224,10.29,0.0,,Coffee
+Espresso,Beverages,low,-3.05,1.67,"Beverages, coffee, brewed, espresso, restaurant-prepared",171891,1.67,0.0,,Espresso
+Black tea,Beverages,low,2.15,15.38,"Currants, european black, raw",173963,15.38,,,Black tea
+Green tea,Beverages,low,2.7,11.66,"Kiwifruit, green, raw",168153,14.66,3.0,,Green tea
+Mate tea,Beverages,low,1.4,0.0,"Tea, herbal, brewed, Hohoysi (Hopi)",169828,0.0,,,Mate tea
+Chamomile tea,Beverages,low,1.4,0.0,"Tea, herbal, brewed, Hohoysi (Hopi)",169828,0.0,,,Chamomile tea
+Peppermint tea,Beverages,medium,3.75,6.89,"Peppermint, fresh",173474,14.89,8.0,,Peppermint tea
+Rooibos tea,Beverages,low,2.45,5.27,"Cabbage, red, raw",169977,7.37,2.1,,red bush tea
+Sage tea,Beverages,low,1.7,20.43,"Spices, sage, ground",170935,60.73,40.3,,Sage tea
+Nettle tea,Beverages,low,3.0,0.59,"Stinging Nettles, blanched (Northern Plains Indians)",169819,7.49,6.9,,stinging nettle tea
+Herbal tea blends (medicinal),Beverages,low,2.45,0.0,"Tea, herbal, brewed, Hohoysi (Hopi)",169828,0.0,,,Herbal tea blends (medicinal)
+Kombucha,Beverages,low,1.4,0.0,"Tea, herbal, brewed, Hohoysi (Hopi)",169828,0.0,,,fermented tea
+Energy drinks,Beverages,low,2.7,5.27,"Cabbage, red, raw",169977,7.37,2.1,,red bull
+Cola drinks,Beverages,low,0.51,12.08,"Beverages, The COCA-COLA company, Minute Maid, Lemonade",171884,12.08,0.0,,coca-cola
+Soft drinks / soda,Beverages,low,2.1,0.0,"Leavening agents, baking soda",175040,0.0,0.0,,soda
+Lemonade,Beverages,low,2.7,5.64,"Squash, Indian, raw (Navajo)",168040,5.64,,,lemon squash
+Elderflower cordial,Beverages,low,2.25,66.91,"Syrups, grenadine",168088,66.91,0.0,,elderflower syrup
+Cranberry juice,Beverages,medium,4.2,8.37,"Cranberries, raw",171722,11.97,3.6,,Cranberry juice
+Apple juice,Beverages,medium,3.45,11.6,"Babyfood, juice, apple",170959,11.7,0.1,,Apple juice
+Tomato juice,Beverages,low,2.7,10.2,"Orange juice, raw (Includes foods for USDA's Food Distribution Program)",169098,10.4,0.2,,Tomato juice
+Oat milk,Beverages,medium,3.75,55.67,Oats (Includes foods for USDA's Food Distribution Program),169705,66.27,10.6,,Oat milk
+Rice milk,Beverages,low,2.7,68.7,"Wild rice, raw",169726,74.9,6.2,,Rice milk
+Soy milk,Beverages,low,2.9,5.3,"Milk, imitation, non-soy",167730,5.3,0.0,,Soy milk
+Almond milk (unsweetened),Beverages,low,2.9,47.2,"Candies, milk chocolate, with almonds",168754,53.4,6.2,,Almond milk (unsweetened)
+Coconut milk beverage,Beverages,medium,3.45,3.34,"Nuts, coconut milk, raw (liquid expressed from grated meat and water)",170172,5.54,2.2,,Coconut milk beverage
+Hot chocolate,Beverages,low,1.85,7.31,"Peppers, hot chili, red, raw",170106,8.81,1.5,,Hot chocolate
+Coconut water,Beverages,medium,3.45,2.61,"Nuts, coconut water (liquid from coconuts)",170174,3.71,1.1,,Coconut water
+Alcohol (pure ethanol),Alcohol,low,0.5,2.41,"Vanilla extract, imitation, alcohol",172235,2.41,0.0,,Alcohol (pure ethanol)
+Alcoholic beverages (general),Alcohol,medium,3.45,5.0,"Alcoholic beverage, rice (sake)",167723,5.0,0.0,,Alcoholic beverages (general)
+Red wine,Alcohol,medium,3.45,0.27,"Vinegar, red wine",172240,0.27,0.0,,Red wine
+White wine,Alcohol,low,2.7,0.73,"Egg, white, raw, fresh",172183,0.73,0.0,,White wine
+Rosé wine,Alcohol,low,2.7,5.7,"Rose-apples, raw",168171,5.7,,,rose wine
+Histamine-free wine,Alcohol,low,1.65,0.0,"Elk, free range, ground, raw (Shoshone Bannock)",168056,0.0,0.0,,Histamine-free wine
+Champagne,Alcohol,low,1.7,0.27,"Vinegar, red wine",172240,0.27,0.0,,sparkling wine
+Beer,Alcohol,low,2.1,2.06,"Beerwurst, beer salami, pork",171616,2.06,0.0,,Beer
+Wheat beer,Alcohol,low,2.25,44.79,"Bagels, wheat",167533,48.89,4.1,,Wheat beer
+Brandy,Alcohol,NO-MATCH,,,,,,,,
+Rum,Alcohol,low,2.7,0.73,"Egg, white, raw, fresh",172183,0.73,0.0,,white rum
+Clear spirits,Alcohol,low,2.7,0.73,"Egg, white, raw, fresh",172183,0.73,0.0,,white spirits
+Dark / cloudy spirits,Alcohol,low,2.1,0.15,"Turkey, whole, dark meat, meat only, raw",171090,0.15,0.0,,dark schnapps
+Liqueur,Alcohol,low,2.7,2.81,"Chayote, fruit, raw",170402,4.51,1.7,,fruit liqueur
+Cider,Alcohol,low,2.95,0.93,"Vinegar, cider",173469,0.93,0.0,,Cider
+Sake,Alcohol,low,2.7,68.7,"Wild rice, raw",169726,74.9,6.2,,rice wine
+Monosodium glutamate,Additives,NO-MATCH,,,,,,,,
+Glutamates (E620-E625),Additives,low,2.0,0.06,"Butter, without salt",173430,0.06,0.0,,glutamic acid salts
+Sulfites (E220-E228),Additives,low,1.7,1.8,"Frankfurter, low sodium",168131,1.8,0.0,,sodium metabisulfite
+Benzoates (E210-E213),Additives,low,1.7,5.12,"Whey, acid, fluid",170885,5.12,0.0,,benzoic acid
+Sorbates (E200-E203),Additives,low,1.7,5.12,"Whey, acid, fluid",170885,5.12,0.0,,sorbic acid
+Tartrazine,Additives,low,2.7,2.28,"Tomatoes, yellow, raw",170096,2.98,0.7,,yellow 5
+Sunset yellow FCF,Additives,low,2.7,2.28,"Tomatoes, yellow, raw",170096,2.98,0.7,,yellow 6
+Allura red,Additives,low,2.7,5.27,"Cabbage, red, raw",169977,7.37,2.1,,Allura red
+Annatto,Additives,low,0.15,0.0,"Seasoning mix, dry, sazon, coriander & annatto",172242,0.0,0.0,,Annatto
+Carrageenan,Additives,low,2.7,6.25,"Seaweed, agar, raw",169280,6.75,0.5,,processed seaweed
+Locust bean gum,Additives,low,2.45,8.35,"Yardlong bean, raw",169222,8.35,,,Locust bean gum
+Guar gum,Additives,low,2.25,94.3,Chewing gum,168771,96.7,2.4,,Guar gum
+Gum arabic,Additives,low,2.25,94.3,Chewing gum,168771,96.7,2.4,,Gum arabic
+Xanthan gum,Additives,low,2.25,94.3,Chewing gum,168771,96.7,2.4,,Xanthan gum
+Pectin,Additives,low,2.95,0.0,"Pectin, liquid",167682,2.1,2.1,,Pectin
+Lecithin,Additives,low,2.15,35.89,"Soy meal, defatted, raw",172445,35.89,,,soy lecithin
+Citric acid,Additives,low,1.7,5.12,"Whey, acid, fluid",170885,5.12,0.0,,Citric acid
+Ascorbic acid / vitamin C,Additives,low,2.55,20.82,"Babyfood, prunes, without vitamin c, strained",171340,23.52,2.7,,vitamin C
+Baking soda,Additives,low,2.9,0.0,"Leavening agents, baking soda",175040,0.0,0.0,,Baking soda
+Sodium nitrite,Additives,low,2.25,0.06,"Butter, without salt",173430,0.06,0.0,,curing salt
+BHA / BHT,Additives,NO-MATCH,,,,,,,,
+Quinine,Additives,low,2.7,1.03,"Water convolvulus,raw",169301,3.13,2.1,,tonic water
+Flavourings (unspecified),Additives,low,1.7,6.3,"Pate, truffle flavor",172967,6.3,,,natural flavors
+Salicylic acid / salicylates,Additives,low,1.5,5.12,"Whey, acid, fluid",170885,5.12,0.0,,Salicylic acid / salicylates
+Yeast (baker's or brewer's),Supplements & Other,low,2.25,66.1,"Litchis, dried",169087,70.7,4.6,,dried yeast
+Iodine,Supplements & Other,low,1.05,9.68,"Nutritional supplement for people with diabetes, liquid",170892,11.88,2.2,,iodine supplement
+Potassium iodide / iodate,Supplements & Other,low,1.2,2.59,"Soy protein isolate, potassium type",174302,2.59,0.0,,potassium iodide
+Folic acid,Supplements & Other,low,1.7,5.12,"Whey, acid, fluid",170885,5.12,0.0,,Folic acid
+Theobromine,Supplements & Other,NO-MATCH,,,,,,,,
+Vitamin E (tocopherols),Supplements & Other,low,1.65,38.42,"Milk, dry, whole, with added vitamin D",170876,38.42,0.0,,Vitamin E (tocopherols)
+Algae supplements,Supplements & Other,medium,3.4,2.02,"Seaweed, spirulina, raw",170091,2.42,0.4,,spirulina
+DAO enzyme supplement,Supplements & Other,low,0.85,9.68,"Nutritional supplement for people with diabetes, liquid",170892,11.88,2.2,,DAO enzyme supplement
+Vitamin B6,Supplements & Other,low,1.65,38.42,"Milk, dry, whole, with added vitamin D",170876,38.42,0.0,,Vitamin B6
+Quercetin,Supplements & Other,low,1.05,9.68,"Nutritional supplement for people with diabetes, liquid",170892,11.88,2.2,,quercetin supplement
+Probiotic supplements (mixed strains),Supplements & Other,low,1.05,9.68,"Nutritional supplement for people with diabetes, liquid",170892,11.88,2.2,,Probiotic supplements (mixed strains)
+Collagen peptides,Supplements & Other,low,2.25,35.15,Baobab powder,167806,79.65,44.5,,collagen powder
+Whey protein powder,Supplements & Other,low,2.25,40.8,"Bread, protein (includes gluten)",174917,43.8,3.0,,protein powder
+Vinegar-preserved products (general),Supplements & Other,low,2.25,7.27,"Eggplant, pickled",169892,9.77,2.5,,pickled products
+Smoked products (any),Supplements & Other,low,2.25,0.0,"Pectin, liquid",167682,2.1,2.1,,liquid smoke

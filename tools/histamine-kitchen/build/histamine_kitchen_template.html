@@ -130,6 +130,8 @@ select, input[type=text], textarea{
 .chip.keto{color:var(--accent); background:var(--accent-soft)}
 .chip.prep{color:var(--copper); background:color-mix(in srgb, var(--copper) 14%, transparent)}
 .chip.q{color:var(--muted); background:var(--surface-2)}
+.chip.trace{color:var(--muted); background:var(--surface-2); font-style:italic}
+.food .netc{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted); margin-top:2px}
 
 /* checker */
 .searchrow{display:flex; gap:10px; align-items:center; margin:18px 0 14px}
@@ -266,7 +268,7 @@ footer p{max-width:78ch; margin:0 0 8px}
 <section class="panel on" id="check">
   <div class="eyebrow">Reference lookup</div>
   <h1 style="font-size:31px; margin-top:4px">What's in this, and can I eat it?</h1>
-  <p class="lede">Search <span class="mono" id="count">0</span> foods, ingredients and additives scored on two independent scales &mdash; <b>H</b> for histamine, <b>L</b> for lectin &mdash; or paste a whole ingredient list and scan it at once.</p>
+  <p class="lede">Search <span class="mono" id="count">0</span> foods, ingredients and additives scored on three independent scales &mdash; <b>H</b> for histamine, <b>L</b> for lectin, <b>K</b> for net carbs &mdash; or paste a whole ingredient list and scan it at once.</p>
 
   <div class="seg" style="margin-top:18px">
     <button data-mode="search" aria-pressed="true">Search</button>
@@ -298,20 +300,35 @@ footer p{max-width:78ch; margin:0 0 8px}
         </div>
       </div>
       <div>
+        <span class="field-label" style="margin-bottom:4px">Max net carbs</span>
+        <div class="seg" id="kseg">
+          <button data-kmax="0" aria-pressed="false">0</button>
+          <button data-kmax="1" aria-pressed="false">0&ndash;1</button>
+          <button data-kmax="2" aria-pressed="false">0&ndash;2</button>
+          <button data-kmax="3" aria-pressed="true">All</button>
+        </div>
+      </div>
+      <div>
         <span class="field-label" style="margin-bottom:4px">Category</span>
         <select id="cat"><option value="">All categories</option></select>
       </div>
       <div style="display:flex; gap:14px; flex-wrap:wrap; align-self:flex-end; padding-bottom:5px">
         <label class="chk"><input type="checkbox" id="fketo"> Keto only</label>
         <label class="chk"><input type="checkbox" id="fmit"> Fixable by prep</label>
-        <label class="chk"><input type="checkbox" id="fconf"> Only where the two disagree</label>
+        <label class="chk"><input type="checkbox" id="fconf"> Only where H and L disagree</label>
+        <label class="chk"><input type="checkbox" id="fkconf"> Clean on H and L, breaks ketosis</label>
       </div>
     </div>
 
     <div class="legend">
       <div class="row"><span class="badge s0"><span class="k">H</span><span class="n">0</span></span> <span><b>Histamine</b> &mdash; the SIGHI compatibility scale</span></div>
       <div class="row"><span class="badge s0"><span class="k">L</span><span class="n">0</span></span> <span><b>Lectin</b> &mdash; Plant Paradox + measured lectin content</span></div>
-      <div class="row"><span>Both: <b class="s0" style="background:none;padding:0">0</b> clear &middot; <b class="s1" style="background:none;padding:0">1</b> small amounts &middot; <b class="s2" style="background:none;padding:0">2</b> avoid &middot; <b class="s3" style="background:none;padding:0">3</b> worst</span></div>
+      <div class="row"><span class="badge s0"><span class="k">K</span><span class="n">0</span></span> <span><b>Net carbs</b> &mdash; USDA FoodData Central, per 100&nbsp;g</span></div>
+      <div class="row"><span>H and L: <b class="s0" style="background:none;padding:0">0</b> clear &middot; <b class="s1" style="background:none;padding:0">1</b> small amounts &middot; <b class="s2" style="background:none;padding:0">2</b> avoid &middot; <b class="s3" style="background:none;padding:0">3</b> worst</span></div>
+      <div class="row"><span>K: <b class="s0" style="background:none;padding:0">0</b> under 3&nbsp;g &middot; <b class="s1" style="background:none;padding:0">1</b> 3&ndash;8&nbsp;g &middot; <b class="s2" style="background:none;padding:0">2</b> 8&ndash;20&nbsp;g &middot; <b class="s3" style="background:none;padding:0">3</b> over 20&nbsp;g</span></div>
+      <div class="row" style="grid-column:1/-1; border-top:1px solid var(--line); padding-top:8px; margin-top:2px">
+        <span><b style="color:var(--ink)">K is not the same kind of claim as H and L.</b> H and L estimate how badly a food affects <i>you</i>, on evidence that is contested. K is a measurement &mdash; the carb count is not in dispute. Whether ketosis is worth doing is a separate question this tool does not answer.</span></div>
+      <div class="row"><span class="chip trace">PER 100&nbsp;G</span> <span>a spice or condiment &mdash; the band describes the jar, not the spoonful, so the carb ceiling does not hide it</span></div>
       <div class="row"><span class="chip prep">FIXABLE BY PREP</span> <span>peeling, deseeding or pressure-cooking drops the lectin load</span></div>
       <div class="row"><span class="chip">LIBERATOR</span> <span>releases your own histamine</span></div>
       <div class="row"><span class="chip">DAO BLOCKER</span> <span>slows the enzyme that clears it</span></div>
@@ -377,6 +394,15 @@ footer p{max-width:78ch; margin:0 0 8px}
         </div>
       </div>
       <div class="grp">
+        <span class="field-label">Ketosis ceiling</span>
+        <div class="seg" id="kceilseg">
+          <button data-kceil="0" aria-pressed="false">Strict &mdash; 0</button>
+          <button data-kceil="1" aria-pressed="true">Allow 1</button>
+          <button data-kceil="2" aria-pressed="false">Allow 2</button>
+        </div>
+        <p style="font-size:11.5px; color:var(--muted); margin:6px 0 0">Highest net-carb band any single ingredient may reach. Spices and condiments are exempt &mdash; they are scored per 100&nbsp;g.</p>
+      </div>
+      <div class="grp">
         <label class="chk"><input type="checkbox" id="bketo" checked> Keto only</label>
       </div>
       <div class="grp">
@@ -436,12 +462,17 @@ const RECIPES = __RECIPES__;
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 const SLABEL = ["Clear","Small amounts","Avoid","Worst"];
+/* K is a carb threshold, not an intolerance rating, so it gets its own words. Sharing SLABEL
+   would have the tool calling a banana "Worst", which is a judgement it has no business making. */
+const KLABEL = ["Eat freely","Fits easily","Portion it","Breaks ketosis"];
+const LABELS = { H: SLABEL, L: SLABEL, K: KLABEL };
 const byName = {}; FOODS.forEach(f => byName[f.name] = f);
 
 function store(k, v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem("hk_"+k)); localStorage.setItem("hk_"+k, JSON.stringify(v)); }catch(e){ return null; } }
 function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 function badge(kind, n, full){
-  return `<span class="badge s${n}${full?" full":""}"><span class="k">${kind}</span><span class="n">${n}</span>${full?`<span style="font-weight:500">${SLABEL[n]}</span>`:""}</span>`;
+  const words = (LABELS[kind] || SLABEL)[n];
+  return `<span class="badge s${n}${full?" full":""}"><span class="k">${kind}</span><span class="n">${n}</span>${full?`<span style="font-weight:500">${words}</span>`:""}</span>`;
 }
 function flags(f){
   let o = "";
@@ -451,9 +482,16 @@ function flags(f){
   if(f.other) o += `<span class="chip">OTHER AMINES</span>`;
   if(f.keto) o += `<span class="chip keto">KETO</span>`;
   if(f.uncertain) o += `<span class="chip q">UNCERTAIN</span>`;
+  if(f.k_trace) o += `<span class="chip trace">PER 100 G</span>`;
   return o;
 }
 const conflicts = f => (f.h <= 1 && f.l >= 2) || (f.h >= 2 && f.l === 0);
+/* Clean on both intolerance scales and still off the table on carbs. This is the set nobody
+   predicts - garlic, leek, shallot, parsnip, sweet potato, and the whole apple-and-stone-fruit
+   family. Trace foods are excluded: a spice is not a carb problem at spoonful scale. */
+const kConflict = f => f.k !== null && !f.k_trace && f.h <= 1 && f.l <= 1 && f.k >= 2;
+/* Option C: a trace food shows its real K but is never hidden by the ceiling. */
+const passK = (f, max) => f.k === null || f.k_trace || f.k <= max;
 
 /* tabs */
 $$(".tab").forEach(t => t.onclick = () => {
@@ -463,7 +501,7 @@ $$(".tab").forEach(t => t.onclick = () => {
 });
 
 /* search */
-const state = { max:3, lmax:3, cat:"", keto:false, mit:false, conf:false, q:"" };
+const state = { max:3, lmax:3, kmax:3, cat:"", keto:false, mit:false, conf:false, kconf:false, q:"" };
 const CAT_ORDER = ["Vegetables","Fruit","Meat & Poultry","Fish & Seafood","Eggs","Dairy","Fats & Oils","Nuts & Seeds","Legumes","Grains & Starches","Herbs & Spices","Condiments & Sauces","Sweeteners","Beverages","Alcohol","Supplements & Other","Additives"];
 const catRank = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? 99 : i; };
 [...new Set(FOODS.map(f => f.category))].sort((a,b) => catRank(a)-catRank(b))
@@ -484,11 +522,12 @@ function score(f, q){
 function render(){
   const q = state.q.trim().toLowerCase();
   let list = FOODS.filter(f =>
-    f.h <= state.max && f.l <= state.lmax &&
+    f.h <= state.max && f.l <= state.lmax && passK(f, state.kmax) &&
     (!state.cat || f.category === state.cat) &&
     (!state.keto || f.keto) &&
     (!state.mit || f.l_mitigable) &&
-    (!state.conf || conflicts(f))
+    (!state.conf || conflicts(f)) &&
+    (!state.kconf || kConflict(f))
   );
   if(q){
     list = list.map(f => [score(f,q), f]).filter(p => p[0] > 0)
@@ -499,14 +538,16 @@ function render(){
   const shown = list.slice(0, q ? 200 : 120);
   $("#results").innerHTML = shown.map(f => `
     <article class="food">
-      <div class="stripe"><i style="background:var(--s${f.h})"></i><i style="background:var(--s${f.l})"></i></div>
+      <div class="stripe"><i style="background:var(--s${f.h})"></i><i style="background:var(--s${f.l})"></i>${f.k!==null?`<i style="background:var(--s${f.k})"></i>`:""}</div>
       <div class="hd">
-        <div><div class="nm">${esc(f.name)}</div><div class="cat">${esc(f.category)}</div></div>
-        <div class="scores">${badge("H", f.h, true)}${badge("L", f.l, true)}</div>
+        <div><div class="nm">${esc(f.name)}</div><div class="cat">${esc(f.category)}</div>${
+          f.net_carbs_100g!==null?`<div class="netc">${f.net_carbs_100g} g net carbs / 100 g</div>`:""}</div>
+        <div class="scores">${badge("H", f.h, true)}${badge("L", f.l, true)}${f.k!==null?badge("K", f.k, true):""}</div>
       </div>
       <div class="flags">${flags(f)}</div>
       ${f.note ? `<p class="note"><b>H.</b> ${esc(f.note)}</p>` : ""}
       ${f.l_note ? `<p class="note"><b>L.</b> ${esc(f.l_note)}</p>` : ""}
+      ${f.k_note ? `<p class="note"><b>K.</b> ${esc(f.k_note)}</p>` : ""}
       ${f.l_prep ? `<p class="prep">${esc(f.l_prep)}</p>` : ""}
     </article>`).join("");
   $("#noresults").style.display = list.length ? "none" : "block";
@@ -516,7 +557,13 @@ $("#q").oninput = e => { state.q = e.target.value; render(); };
 $("#cat").onchange = e => { state.cat = e.target.value; render(); };
 $("#fketo").onchange = e => { state.keto = e.target.checked; render(); };
 $("#fmit").onchange = e => { state.mit = e.target.checked; render(); };
-$("#fconf").onchange = e => { state.conf = e.target.checked; render(); };
+$("#fconf").onchange = e => { state.conf = e.target.checked; if(state.conf) { state.kconf = false; $("#fkconf").checked = false; } render(); };
+$("#fkconf").onchange = e => { state.kconf = e.target.checked; if(state.kconf) { state.conf = false; $("#fconf").checked = false; } render(); };
+$$("#kseg button").forEach(b => b.onclick = () => {
+  state.kmax = +b.dataset.kmax;
+  $$("#kseg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
 $$("#hseg button").forEach(b => b.onclick = () => {
   $$("#hseg button").forEach(x => x.setAttribute("aria-pressed", x === b));
   state.max = +b.dataset.max; render();
@@ -598,17 +645,28 @@ $("#scanbtn").onclick = () => {
     let L = f ? f.l : null;
     let lowered = false;
     if(f && pl.length && f.l_mitigable && f.l > 0){ L = Math.max(0, f.l - 2); lowered = true; }
-    return { raw, f, ph, pl, H, L, lowered };
+    /* Trace foods report their band but are not allowed to set the worst-in-list verdict -
+       a pinch of cinnamon is not what makes a plate high-carb. */
+    const K = f && f.k !== null ? f.k : null;
+    return { raw, f, ph, pl, H, L, K, lowered, kTrace: !!(f && f.k_trace) };
   });
 
   const hits = rows.filter(r => r.H !== null || r.L !== null);
   const wH = hits.length ? Math.max(...hits.map(r => r.H ?? 0)) : 0;
   const wL = hits.length ? Math.max(...hits.map(r => r.L ?? 0)) : 0;
+  const kHits = rows.filter(r => r.K !== null && !r.kTrace);
+  const wK = kHits.length ? Math.max(...kHits.map(r => r.K)) : 0;
+  const netTotal = Math.round(kHits.reduce((s, r) => s + (r.f.net_carbs_100g || 0), 0));
   const unknown = rows.filter(r => r.H === null && r.L === null).length;
   const lib = rows.filter(r => r.f && r.f.liberator).length;
   const dao = rows.filter(r => r.f && r.f.dao).length;
   const fixable = rows.filter(r => r.f && r.f.l_mitigable && r.L >= 2).length;
 
+  const kVerdict = n => !kHits.length ? "No carb data matched."
+    : n === 0 ? "Every ingredient here is under 3 g net carbs per 100 g."
+    : n === 1 ? "Low carb overall - fits inside a normal ketogenic day."
+    : n === 2 ? "One or more ingredients need portioning deliberately."
+    : "At least one ingredient breaks ketosis at any normal portion.";
   const verdict = (n, kind) => !hits.length ? "Nothing matched."
     : n === 0 ? (kind === "H" ? "Clean. Every matched ingredient scores 0 for histamine." : "Clean. Nothing here carries a meaningful lectin load.")
     : n === 1 ? "Mostly clear, with items to keep small."
@@ -629,6 +687,11 @@ $("#scanbtn").onclick = () => {
         <h3>${esc(verdict(wL,"L"))}</h3>
         <p>${fixable} still fixable by peeling, deseeding or pressure-cooking</p>
       </div>
+      <div class="verdict s${wK}" style="background:var(--s${wK}-bg)">
+        <div class="eyebrow" style="color:inherit; opacity:.75">Net carbs &mdash; worst in list</div>
+        <h3>${esc(kVerdict(wK))}</h3>
+        <p>${kHits.length} ingredient${kHits.length===1?"":"s"} with carb data &middot; ${netTotal} g net carbs per 100 g summed &mdash; not a serving figure</p>
+      </div>
     </div>
     <p style="font-size:12.5px; color:var(--muted); margin:0 0 10px">${rows.length - unknown} of ${rows.length} lines matched.</p>
     <div class="card">
@@ -638,7 +701,7 @@ $("#scanbtn").onclick = () => {
           <div class="raw">${esc(r.raw)} <span class="hit">&rarr; not in the list</span></div>
         </div>` : `
         <div class="scanline">
-          <div class="sc">${r.H !== null ? badge("H", r.H) : ""}${r.L !== null ? badge("L", r.L) : ""}</div>
+          <div class="sc">${r.H !== null ? badge("H", r.H) : ""}${r.L !== null ? badge("L", r.L) : ""}${r.K !== null ? badge("K", r.K) : ""}</div>
           <div class="raw"><span>${esc(r.raw)}</span> <span class="hit">&rarr; ${esc(r.f ? r.f.name : "preparation method")}${r.f && r.H > r.f.h ? ` (base H ${r.f.h})` : ""}${r.lowered ? ` (base L ${r.f.l}, lowered by prep)` : ""}</span></div>
           <div style="display:flex; gap:4px; flex-wrap:wrap; justify-content:flex-end">
             ${r.ph.map(p => `<span class="chip">${p.label}</span>`).join("")}
@@ -651,14 +714,18 @@ $("#scanbtn").onclick = () => {
 };
 
 /* ---- builder ---- */
-const bstate = { days:3, ceil:0, lceil:1, keto:true, slots:["breakfast","lunch","dinner"], excl:[] };
+const bstate = { days:3, ceil:0, lceil:1, kceil:1, keto:true, slots:["breakfast","lunch","dinner"], excl:[] };
 const saved = store("build");
 if(saved){ Object.assign(bstate, saved); }
+/* A settings object saved before the ketosis layer existed has no kceil, and `recK(r) > undefined`
+   is false, so the ceiling would silently never apply for every returning user. Repair it. */
+if(typeof bstate.kceil !== "number") bstate.kceil = 1;
 
 function syncControls(){
   $$("#daysseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.days === bstate.days));
   $$("#ceilseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.ceil === bstate.ceil));
   $$("#lceilseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.lceil === bstate.lceil));
+  $$("#kceilseg button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.kceil === bstate.kceil));
   $("#bketo").checked = bstate.keto;
   $$(".slot").forEach(c => c.checked = bstate.slots.includes(c.value));
   $("#excl").value = bstate.excl.join(", ");
@@ -667,6 +734,7 @@ syncControls();
 $$("#daysseg button").forEach(b => b.onclick = () => { bstate.days = +b.dataset.days; syncControls(); });
 $$("#ceilseg button").forEach(b => b.onclick = () => { bstate.ceil = +b.dataset.ceil; syncControls(); });
 $$("#lceilseg button").forEach(b => b.onclick = () => { bstate.lceil = +b.dataset.lceil; syncControls(); });
+$$("#kceilseg button").forEach(b => b.onclick = () => { bstate.kceil = +b.dataset.kceil; syncControls(); });
 $("#bketo").onchange = e => bstate.keto = e.target.checked;
 $$(".slot").forEach(c => c.onchange = () => bstate.slots = $$(".slot").filter(x => x.checked).map(x => x.value));
 $("#excl").oninput = e => bstate.excl = e.target.value.split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
@@ -677,6 +745,16 @@ function ingL(ing){
 }
 const recH = r => Math.max(0, ...r.ingredients.map(i => byName[i.item] ? byName[i.item].h : 0));
 const recL = r => Math.max(0, ...r.ingredients.map(ingL));
+/* Highest net-carb band among the ingredients that are actually eaten in quantity. Spices and
+   condiments are excluded - they are scored per 100 g and a pinch of cinnamon is not what makes
+   a dish high-carb.
+   NOTE: this is deliberately a BAND, not net carbs per serving. Per-serving grams cannot be
+   computed from this data - only 16 of 278 ingredient rows carry a weight, the rest read
+   "1 tbsp", "pinch", "3/4 cup". Computing a number from those would mean inventing one. */
+const recK = r => Math.max(0, ...r.ingredients
+  .map(i => byName[i.item])
+  .filter(f => f && f.k !== null && !f.k_trace)
+  .map(f => f.k));
 function recFlags(r){
   const fs = r.ingredients.map(i => byName[i.item]).filter(Boolean);
   return { lib: fs.some(f => f.liberator), dao: fs.some(f => f.dao), prep: r.ingredients.some(i => i.lprep) };
@@ -684,6 +762,7 @@ function recFlags(r){
 function recOk(r){
   if(recH(r) > bstate.ceil) return false;
   if(recL(r) > bstate.lceil) return false;
+  if(recK(r) > bstate.kceil) return false;
   if(bstate.keto && !r.keto) return false;
   if(bstate.excl.length){
     const hay = (r.name + " " + r.ingredients.map(i => i.display + " " + i.item).join(" ")).toLowerCase();
@@ -695,12 +774,14 @@ function recOk(r){
 function generate(){
   const seed = Math.floor(Math.random()*997);
   const days = [], usedIds = [];
+  const unfillable = new Set(), poolSize = {};
   for(let d = 0; d < bstate.days; d++){
     const meals = [];
     for(const slot of ["breakfast","lunch","dinner","snack"]){
       if(!bstate.slots.includes(slot)) continue;
       const pool = RECIPES.filter(r => r.meal.includes(slot) && recOk(r));
-      if(!pool.length) continue;
+      poolSize[slot] = pool.length;
+      if(!pool.length){ unfillable.add(slot); continue; }
       const fresh = pool.filter(r => !usedIds.includes(r.id));
       const src = fresh.length ? fresh : pool;
       const chosen = src[(seed + d*7 + slot.length*3) % src.length];
@@ -718,9 +799,22 @@ function generate(){
 
   let html = `<div class="card" style="padding:14px 18px; display:flex; gap:22px; align-items:center; flex-wrap:wrap">
     <div><span class="eyebrow">Plan</span><div style="font-weight:600">${bstate.days} day${bstate.days>1?"s":""} &middot; ${total} dishes</div></div>
-    <div><span class="eyebrow">Ceilings</span><div style="font-weight:600">H&nbsp;${bstate.ceil} &middot; L&nbsp;${bstate.lceil}</div></div>
+    <div><span class="eyebrow">Ceilings</span><div style="font-weight:600">H&nbsp;${bstate.ceil} &middot; L&nbsp;${bstate.lceil} &middot; K&nbsp;${bstate.kceil}</div></div>
     <div><span class="eyebrow">Pattern</span><div style="font-weight:600">${bstate.keto ? "Low-histamine + low-lectin + keto" : "Low-histamine + low-lectin"}</div></div>
   </div>`;
+
+  /* Say plainly what these ceilings could not fill, rather than quietly shipping a short plan. */
+  const thin = Object.keys(poolSize).filter(s => poolSize[s] > 0 && poolSize[s] < bstate.days);
+  if(unfillable.size || thin.length){
+    const bits = [];
+    if(unfillable.size) bits.push(`<b>No recipe in the current set fits ${[...unfillable].join(" or ")}</b> at these ceilings, so ${unfillable.size > 1 ? "those slots are" : "that slot is"} missing below.`);
+    if(thin.length) bits.push(`${thin.map(s => `<b>${s}</b> has only ${poolSize[s]} qualifying recipe${poolSize[s]>1?"s":""}`).join(", ")} &mdash; dishes repeat across the ${bstate.days} days.`);
+    html += `<div class="card" style="padding:13px 18px; margin-top:10px; border-left:3px solid var(--s2)">
+      <span class="eyebrow">What these settings could not fill</span>
+      <p style="margin:5px 0 0; font-size:13px; line-height:1.6">${bits.join(" ")}
+      Raising one ceiling by a single step usually fixes it &mdash; the recipe set is thin at the strictest corner, and that is a gap in the recipes, not a reason to loosen a score.</p>
+    </div>`;
+  }
 
   days.forEach((meals, i) => {
     const wH = Math.max(0, ...meals.map(m => recH(m.r)));
@@ -734,7 +828,7 @@ function generate(){
           <div class="scores">${badge("H", recH(m.r), true)}${badge("L", recL(m.r), true)}</div>
         </div>
         <p class="blurb">${esc(m.r.blurb)}</p>
-        <div class="meta"><span>${m.r.time} min</span><span>Serves ${m.r.servings}</span>${m.r.keto?'<span>Keto</span>':'<span>Higher carb</span>'}
+        <div class="meta"><span>${m.r.time} min</span><span>Serves ${m.r.servings}</span>${m.r.keto?'<span>Keto</span>':'<span>Higher carb</span>'}<span>${badge("K", recK(m.r))} highest ingredient</span>
           ${fl.lib?'<span class="chip">LIBERATOR</span>':""}${fl.dao?'<span class="chip">DAO</span>':""}${fl.prep?'<span class="chip prep">LECTIN PREP REQUIRED</span>':""}</div>
         <details><summary>Ingredients &amp; method</summary>
           <div class="body">
@@ -744,6 +838,7 @@ function generate(){
                 const marks = [];
                 if(f && f.h > 0) marks.push(`<span class="badge s${f.h}" style="padding:0 6px"><span class="k">H</span><span class="n">${f.h}</span></span>`);
                 if(le > 0) marks.push(`<span class="badge s${le}" style="padding:0 6px"><span class="k">L</span><span class="n">${le}</span></span>`);
+                if(f && f.k !== null && f.k > 0 && !f.k_trace) marks.push(`<span class="badge s${f.k}" style="padding:0 6px"><span class="k">K</span><span class="n">${f.k}</span></span>`);
                 if(ing.lprep) marks.push(`<span class="chip prep">PREP</span>`);
                 return `<li>${esc(ing.qty)} ${esc(ing.display)} ${marks.join(" ")}</li>`;
               }).join("")}</ul></div>

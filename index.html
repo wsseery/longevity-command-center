@@ -110,7 +110,7 @@
       margin: 0 auto;
       padding: 20px 24px 60px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
     .dash-card {
@@ -138,6 +138,8 @@
     .dash-card.card-finance::before { background: linear-gradient(90deg, var(--amber), var(--orange)); }
     .dash-card.card-news::before { background: linear-gradient(90deg, var(--purple), var(--pink)); }
     .dash-card.card-protocols::before { background: linear-gradient(90deg, var(--orange), var(--amber)); }
+    .dash-card.card-nutrition::before { background: linear-gradient(90deg, var(--green), var(--teal)); }
+    .dash-card.card-kitchen::before { background: linear-gradient(90deg, var(--teal), var(--cyan)); }
 
     .dash-card:hover {
       border-color: var(--border-bright);
@@ -158,6 +160,8 @@
     .card-finance .dash-card-icon { background: rgba(255, 176, 32, 0.06); }
     .card-news .dash-card-icon { background: rgba(168, 124, 255, 0.06); }
     .card-protocols .dash-card-icon { background: rgba(255, 140, 66, 0.06); }
+    .card-nutrition .dash-card-icon { background: rgba(0, 255, 136, 0.06); }
+    .card-kitchen .dash-card-icon { background: rgba(0, 255, 200, 0.06); }
 
     .dash-card-title {
       font-family: var(--font-heading);
@@ -192,6 +196,8 @@
     .card-finance .dash-stat-value { color: var(--amber); }
     .card-news .dash-stat-value { color: var(--purple); }
     .card-protocols .dash-stat-value { color: var(--orange); }
+    .card-nutrition .dash-stat-value { color: var(--green); }
+    .card-kitchen .dash-stat-value { color: var(--teal); }
     .dash-stat-label {
       font-family: var(--font-mono);
       font-size: 0.6rem;
@@ -215,6 +221,8 @@
     .card-finance .dash-card-cta { color: var(--amber); }
     .card-news .dash-card-cta { color: var(--purple); }
     .card-protocols .dash-card-cta { color: var(--orange); }
+    .card-nutrition .dash-card-cta { color: var(--green); }
+    .card-kitchen .dash-card-cta { color: var(--teal); }
     .dash-card:hover .dash-card-cta { opacity: 1; }
 
     /* Section headers */
@@ -493,7 +501,7 @@
   <!-- SECTION: DASHBOARD MODULES -->
   <div class="section-header">
     <h2>Command Modules</h2>
-    <p>Live dashboards tracking compounds, capital markets, and breaking research</p>
+    <p>Live dashboards tracking compounds, capital markets, breaking research, and what is on your plate</p>
   </div>
 
   <div class="dash-grid">
@@ -547,6 +555,33 @@
         <div class="dash-stat"><div class="dash-stat-value">50+</div><div class="dash-stat-label">Compounds</div></div>
       </div>
       <div class="dash-card-cta">Open Protocols &#8594;</div>
+    </a>
+
+    <!-- Nutrition Card -->
+    <a href="./nutrition.html" class="dash-card card-nutrition">
+      <div class="dash-card-icon">&#9673;</div>
+      <div class="dash-card-title">Food Intolerance Toolkit</div>
+      <div class="dash-card-desc">Every food scored on three independent scales &mdash; histamine (SIGHI), lectin, and net carbs from USDA &mdash; never averaged into one verdict. Where the protocols contradict each other, and how good the evidence is behind each one.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">440</div><div class="dash-stat-label">Foods Scored</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">3</div><div class="dash-stat-label">Scales</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">143</div><div class="dash-stat-label">H/L Conflicts</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">52</div><div class="dash-stat-label">Break Ketosis</div></div>
+      </div>
+      <div class="dash-card-cta">Read the Toolkit &#8594;</div>
+    </a>
+
+    <!-- Histamine Kitchen Card -->
+    <a href="./tools/histamine-kitchen/" class="dash-card card-kitchen">
+      <div class="dash-card-icon">&#9638;</div>
+      <div class="dash-card-title">Histamine Kitchen</div>
+      <div class="dash-card-desc">The tool itself. Look up any food on all three scales, paste a whole ingredient list and have it scanned line by line, or generate a menu that clears every ceiling at once &mdash; with a printable shopping list.</div>
+      <div class="dash-card-stats">
+        <div class="dash-stat"><div class="dash-stat-value">440</div><div class="dash-stat-label">Foods</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">46</div><div class="dash-stat-label">Recipes</div></div>
+        <div class="dash-stat"><div class="dash-stat-value">17</div><div class="dash-stat-label">Categories</div></div>
+      </div>
+      <div class="dash-card-cta">Open the Tool &#8594;</div>
     </a>
   </div>
 
