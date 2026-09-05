@@ -28,7 +28,12 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: "--max-turns 12"
+          # Forces tag mode. The action then builds real PR context (agent mode
+          # passes the prompt verbatim, leaving `gh pr *` with no PR to resolve),
+          # grants Read/Grep so whole-file rules are checkable, and posts through
+          # the redacting comment server instead of a raw `gh pr comment` shell.
+          track_progress: true
+          claude_args: "--max-turns 20"
           prompt: |
             Review ONLY the files changed in this pull request against the
             compliance rules below. Do not modify any code. Post one comment
