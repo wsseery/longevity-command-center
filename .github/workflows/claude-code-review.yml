@@ -1,0 +1,65 @@
+# Compliance review on every PR.
+#
+# Checks changed files against §6 of
+# G:\My Drive\Claude\BillSeery\00_Global\GLOBAL_INSTRUCTIONS.md and the
+# repo's CLAUDE.md. Review only — it never edits code, and it does not
+# replace Bill's "ship it" gate. It runs before that gate, not around it.
+#
+# Requires the CLAUDE_CODE_OAUTH_TOKEN repository secret.
+
+name: Claude Compliance Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--max-turns 12"
+          prompt: |
+            Review ONLY the files changed in this pull request against the
+            compliance rules below. Do not modify any code. Post one comment
+            with your findings.
+
+            Longevity Command Center is educational content about longevity.
+            It is NOT medical advice and NOT investment advice.
+
+            BLOCKING issues — flag each with file and line:
+            1. Any claim that something treats, cures, prevents, mitigates or
+               diagnoses a condition. Educational framing only.
+            2. A new or modified user-facing page that does NOT carry the
+               mandatory LCC medical disclaimer block at the top of its
+               <footer>. Every page must have it.
+            3. finance.html or index.html missing the "not investment advice"
+               block. Those two show figures; other pages must NOT carry it.
+            4. ANY reference to Florida licence G164863 or 3333692. Neither is
+               a medical or securities licence and neither may appear on this
+               site. This is an absolute rule.
+            5. Fabricated or uncited figures, statistics, studies or claims.
+               Numbers on the nutrition page must be computed from
+               histamine_data.json, not hand-written.
+            6. Hand edits to finance.html or news_data.json — both are written
+               by the weekly GitHub Action and hand edits get clobbered.
+            7. A nav or footer change that does not touch every nav-bearing
+               page AND sitemap.xml.
+            8. An og:image or canonical URL that is relative, or that points at
+               a netlify.app host instead of longevitycommandcenter.com.
+
+            Also note (non-blocking): line-ending churn — if a file shows as
+            fully rewritten with symmetric insert/delete counts, say so.
+
+            If nothing is wrong, reply with a single short line saying the diff
+            is clean. Be specific and brief; do not restate the rules back.
