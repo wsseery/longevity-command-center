@@ -1,22 +1,192 @@
 [
   {
-    "title": "NRF2 Downregulation in Oligodendrocytes as a Contributing Cause of Cognitive Decline in Mice",
+    "title": "Dogs Exhibit Comorbidity and Mortality Risk in Much the Same Way as Humans",
     "source": "Fight Aging!",
-    "date": "2026-09-01",
+    "date": "2026-09-08",
     "category": "Research",
     "importance": "normal",
-    "description": "Oligodendrocytes resident in the brain are responsible for maintaining the insulating myelin sheaths around axons that are required for the effective transmission of electrical impulses between neurons. Loss of myelin integrity is the cause of a number of debilitating…",
-    "url": "https://www.fightaging.org/archives/2026/09/nrf2-downregulation-in-oligodendrocytes-as-a-contributing-cause-of-cognitive-decline-in-mice/",
+    "description": "One of the goals of the Dog Aging Project is to better establish that the characteristics of aging in dogs are close enough to the characteristics of aging in humans to make the results of interventions on dog life span relevant to the development of human medicine. Thus the…",
+    "url": "https://www.fightaging.org/archives/2026/09/dogs-exhibit-comorbidity-and-mortality-risk-in-much-the-same-way-as-humans/",
     "top_development": false
   },
   {
-    "title": "Amyloid-β Seeding as a Basis for a Blood Test for Alzheimer's Disease",
+    "title": "Age Acceleration in Various Proteomic Clocks Correlates with Risk of Mortality and Age-Related Disease",
     "source": "Fight Aging!",
-    "date": "2026-09-01",
+    "date": "2026-09-08",
     "category": "Research",
     "importance": "normal",
-    "description": "Blood tests to assess Alzheimer's disease risk and progression exist, for example based on the presence of circulating varieties of tau protein, but there is a great deal of room for improvement. Researchers here provide evidence for an approach to the measurement of very small…",
-    "url": "https://www.fightaging.org/archives/2026/09/amyloid-%ce%b2-seeding-as-a-basis-for-a-blood-test-for-alzheimers-disease/",
+    "description": "In recent years, researchers have been gathering as much data as possible on the behavior of aging clocks of various sorts. The study here is an example of the type, in which multiple proteomic clocks were assessed in large epidemiological study populations. As one might expect…",
+    "url": "https://www.fightaging.org/archives/2026/09/age-acceleration-in-various-proteomic-clocks-correlates-with-risk-of-mortality-and-age-related-disease/",
+    "top_development": false
+  },
+  {
+    "title": "Late-Life GLP-1 Treatment Increases Lifespan in Female Mice",
+    "source": "Lifespan.io",
+    "date": "2026-09-08",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "In a new study, semaglutide given late in life increased median lifespan in female mice by more than 12% and improved various health markers. Semaglutide’s effect possibly went beyond caloric restriction [1]. Old mice, new drugs GLP-1 receptor […]",
+    "url": "https://lifespan.io/late-life-glp-1-treatment-increases-lifespan-in-female-mice/",
+    "top_development": false
+  },
+  {
+    "title": "Early statin use linked to 15% lower dementia risk",
+    "source": "ScienceDaily",
+    "date": "2026-09-08",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Starting statins soon after a type 2 diabetes diagnosis may do more than protect the heart. In a nationwide Danish study of more than 132,000 people, those who began statin treatment within a year of diagnosis had a 15% lower relative risk of developing dementia over 10 years…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260901070520.htm",
+    "top_development": false
+  },
+  {
+    "title": "The Challenge of Cheap Interventions and Expensive Clinical Trials",
+    "source": "Fight Aging!",
+    "date": "2026-09-07",
+    "category": "Research",
+    "importance": "high",
+    "description": "There are a good many affordable interventions that may well produce enough of an effect on aging to justify widespread use. At the more compelling end of the spectrum, based on a relatively large effect size in animal data and very limited supporting human data, we might…",
+    "url": "https://www.fightaging.org/archives/2026/09/the-challenge-of-cheap-interventions-and-expensive-clinical-trials/",
+    "top_development": true
+  },
+  {
+    "title": "Engineered Exosomes as a Treatment for Alzheimer's Disease",
+    "source": "Fight Aging!",
+    "date": "2026-09-07",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Exosomes are one category of extracellular vesicle secreted by cells, a membrane-wrapped package of molecules, one complex component of the extensive, incompletely mapped communication that takes place constantly between cells. Exosome therapies are conceptually similar to stem…",
+    "url": "https://www.fightaging.org/archives/2026/09/engineered-exosomes-as-a-treatment-for-alzheimers-disease/",
+    "top_development": false
+  },
+  {
+    "title": "Sizable Declines in Associative Memory Occur by Age 50",
+    "source": "Fight Aging!",
+    "date": "2026-09-07",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Some aspects of cognitive function exhibit marked declines relatively early in later life, by middle age. Here, researchers show that episodic and associative memory recall, meaning the ability to correctly link together and place in context specific individual memories, shows a…",
+    "url": "https://www.fightaging.org/archives/2026/09/sizable-declines-in-associative-memory-occur-by-age-50/",
+    "top_development": false
+  },
+  {
+    "title": "Mice With Growth Hormone Halted in Middle Age Live Longer",
+    "source": "Lifespan.io",
+    "date": "2026-09-07",
+    "category": "Research",
+    "importance": "high",
+    "description": "Researchers publishing in Aging Cell have described how stopping growth hormone receptor production in midlife significantly lengthens the lives of mice. Growth but diabetes […]",
+    "url": "https://lifespan.io/mice-with-growth-hormone-halted-in-middle-age-live-longer/",
+    "top_development": true
+  },
+  {
+    "title": "Popular brain supplement linked to shorter lifespan in men",
+    "source": "ScienceDaily",
+    "date": "2026-09-06",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A large study involving more than 270,000 people has linked higher blood levels of the amino acid tyrosine to a shorter lifespan in men. Using both observational data and genetic analysis, researchers found that elevated tyrosine could potentially reduce male life expectancy by…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260904000330.htm",
+    "top_development": false
+  },
+  {
+    "title": "Targeted Reduction of PTBP1 Reverses Cognitive Impairment in a Mouse Model of Alzheimer's Disease",
+    "source": "Fight Aging!",
+    "date": "2026-09-04",
+    "category": "Research",
+    "importance": "high",
+    "description": "Many of the more sophisticated forms of medicine, including gene therapies and immunotherapies, are challenging to deliver to the brain. At the very least there are far fewer practical options for delivery, and it is possible that none of that that exist fit a given desired use…",
+    "url": "https://www.fightaging.org/archives/2026/09/targeted-reduction-of-ptbp1-reverses-cognitive-impairment-in-a-mouse-model-of-alzheimers-disease/",
+    "top_development": true
+  },
+  {
+    "title": "Suggesting ERBB4 Overexpression as an Important Mechanism in Alzheimer's Disease",
+    "source": "Fight Aging!",
+    "date": "2026-09-04",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers here suggest that increased ERBB4 expression in neurons is an important driving mechanism in the onset and progression of Alzheimer's disease. One has to be cautious with such findings, even given the effort made by the researchers to show that human data is…",
+    "url": "https://www.fightaging.org/archives/2026/09/suggesting-erbb4-overexpression-as-an-important-mechanism-in-alzheimers-disease/",
+    "top_development": false
+  },
+  {
+    "title": "Offspring of Centenarians Exhibit Reduced Mortality and Risk of Age-Related Disease",
+    "source": "Fight Aging!",
+    "date": "2026-09-04",
+    "category": "Research",
+    "importance": "normal",
+    "description": "This is far from the only study to indicate that the children of long-lived individuals tend also to be long-lived. The open question is the degree to which this is genetic versus cultural transmission. The construction of very large population databases over the past few…",
+    "url": "https://www.fightaging.org/archives/2026/09/offspring-of-centenarians-exhibit-reduced-mortality-and-risk-of-age-related-disease/",
+    "top_development": false
+  },
+  {
+    "title": "Stanford scientists discover a seafood that can reverse signs of aging",
+    "source": "ScienceDaily",
+    "date": "2026-09-04",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A substance found in edible sea squirts appeared to reverse several signs of aging in older mice. Plasmalogen supplements improved memory and learning, strengthened connections between brain cells, reduced inflammation, and even helped the mice grow thicker, darker hair…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260902234518.htm",
+    "top_development": false
+  },
+  {
+    "title": "Medicines Discovery Catapult Backs Two U.K. Biotech Companies Tackling Chronic Diseases",
+    "source": "GEN",
+    "date": "2026-09-04",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Medicines Discovery Catapult provided its investment and expert support to help two biotech companies accelerate the development of new treatments for a range of autoimmune, inflammatory, and age-related diseases. The post Medicines Discovery Catapult Backs Two U.K. Biotech…",
+    "url": "https://www.genengnews.com/topics/drug-discovery/medicines-discovery-catapult-backs-two-u-k-biotech-companies-tackling-chronic-diseases/",
+    "top_development": true
+  },
+  {
+    "title": "Senescent Microglia Secrete DLK1, Which Causes Dysfunction in the Aging Brain",
+    "source": "Fight Aging!",
+    "date": "2026-09-03",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Senescent cells accumulate with age in tissues throughout the body, disrupting tissue structure and function with inflammatory secretions. The growing burden of senescent cells is an important contributing cause of degenerative aging. A cell becomes senescent in response to…",
+    "url": "https://www.fightaging.org/archives/2026/09/senescent-microglia-secrete-dlk1-which-causes-dysfunction-in-the-aging-brain/",
+    "top_development": false
+  },
+  {
+    "title": "The Last Generation to Die: Interview With Tim Maupin",
+    "source": "Lifespan.io",
+    "date": "2026-09-03",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Filmmaker Tim Maupin has spent a number of years developing The Last Generation to Die, a near-future film about what happens when […]",
+    "url": "https://lifespan.io/the-last-generation-to-die-interview-with-tim-maupin/",
+    "top_development": false
+  },
+  {
+    "title": "One immune switch may help drive aging across the body",
+    "source": "ScienceDaily",
+    "date": "2026-09-03",
+    "category": "Research",
+    "importance": "high",
+    "description": "Aging may be partly fueled by immune cells losing their ability to clear away damaged, inflammation-promoting cells. Blocking a single receptor restored that cleanup process in mice, reducing inflammation and helping their organs, muscles, and memory remain remarkably youthful.",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260901010717.htm",
+    "top_development": true
+  },
+  {
+    "title": "Invested in Her Campaign Extends Fundraising Deadline",
+    "source": "Lifespan.io",
+    "date": "2026-09-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Driven by ongoing support from their community, The Longevity Science Foundation is extending the deadline for the Invested in Her campaign to October 1, 2026, as they work toward a $250,000 fundraising […]",
+    "url": "https://lifespan.io/invested-in-her-campaign-extends-fundraising-deadline/",
+    "top_development": false
+  },
+  {
+    "title": "Alzheimer’s may leave a mark on the brain long before plaques appear",
+    "source": "ScienceDaily",
+    "date": "2026-09-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Brain changes associated with Alzheimer’s may begin at least seven years before amyloid plaques become detectable with current PET scans. Researchers uncovered the signal by tracking healthy older adults with repeated brain imaging over nearly 20 years. The discovery could help…",
+    "url": "https://www.sciencedaily.com/releases/2026/08/260831015144.htm",
     "top_development": false
   },
   {
@@ -25,7 +195,7 @@
     "date": "2026-09-01",
     "category": "Research",
     "importance": "normal",
-    "description": "Properly untangling aging means untangling its various counterbalances, sometimes on the individual level. Here’s what’s been investigated this month. Interviews Wei-Wu He: People Should Become the CEOs of Their Own Health: Wei-Wu He is an unusual combination […]",
+    "description": "Properly untangling aging means untangling its various counterbalances, sometimes on the individual level. Here’s what’s been investigated this month. Interviews Wei-Wu He: People Should Become the CEOs of Their Own Health: Wei-Wu He is […]",
     "url": "https://lifespan.io/rejuvenation-roundup-august-2026/",
     "top_development": false
   },
@@ -37,36 +207,6 @@
     "importance": "high",
     "description": "A study of people over 90 found that dementia risk remains strongly shaped by sex, race and genetics, with women and black participants facing notably higher risks. Intriguingly, some people stayed cognitively healthy despite carrying major risk factors, potentially offering…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260829235953.htm",
-    "top_development": true
-  },
-  {
-    "title": "What Can Be Learned About Aging Clocks from Existing Clinical Trial Data for Longevity Interventions?",
-    "source": "Fight Aging!",
-    "date": "2026-08-31",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Aging clocks can be readily produced by using what are by now well established machine learning techniques on any body of biological data that changes with age. Omics data is favored, as there are a great many databases of such data for large study populations, but clocks have…",
-    "url": "https://www.fightaging.org/archives/2026/08/what-can-be-learned-about-aging-clocks-from-existing-clinical-trial-data-for-longevity-interventions/",
-    "top_development": true
-  },
-  {
-    "title": "Bacterial Lipoic Acid Protein Ligase A Improves Mammalian Mitochondrial Function and Health",
-    "source": "Fight Aging!",
-    "date": "2026-08-31",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Here, researchers report on their investigation of gene therapy to introduce a bacterial enzyme, lipoic acid protein ligase A (LplA), into mammals in order to improve mitochondrial metabolism. LplA undertakes lipoylation of proteins, attaching lipoic acid to the protein, and…",
-    "url": "https://www.fightaging.org/archives/2026/08/bacterial-lipoic-acid-protein-ligase-a-improves-mammalian-mitochondrial-function-and-health/",
-    "top_development": false
-  },
-  {
-    "title": "Mistranslation Mutations in Flies Surprisingly Extend Life",
-    "source": "Fight Aging!",
-    "date": "2026-08-31",
-    "category": "Research",
-    "importance": "normal",
-    "description": "One might think that an alteration to the machinery of gene expression that systemically changes the amino acid components of proteins, in effect giving all proteins the possibility of multiple single nucleotide polymorphisms, would be quite harmful. But some forms of…",
-    "url": "https://www.fightaging.org/archives/2026/08/mistranslation-mutations-in-flies-surprisingly-extend-life/",
     "top_development": false
   },
   {
@@ -75,7 +215,7 @@
     "date": "2026-08-31",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have found that the sirtuin SIRT1 stabilizes the human genome by suppressing retrotransposition, which occurs when parts of the genome transcribe themselves […]",
+    "description": "Researchers have found that the sirtuin SIRT1 stabilizes the human genome by suppressing retrotransposition, which occurs when parts of the genome transcribe themselves onto other parts. When DNA modifies itself Long interspersed elements-1 (LINE-1) have existed […]",
     "url": "https://lifespan.io/a-mechanistic-explanation-for-sirt1s-effects/",
     "top_development": false
   },
@@ -97,36 +237,6 @@
     "importance": "high",
     "description": "Frequent micro-awakenings during sleep were linked to higher genetic risk for Alzheimer’s in healthy middle-aged adults who had no symptoms. The discovery raises the possibility that subtle changes during sleep could offer an early warning signal years before memory problems…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260828005218.htm",
-    "top_development": true
-  },
-  {
-    "title": "Physical Activity Correlates with Reductions in TMAO, Inflammation, and Harmful Bone Remodeling",
-    "source": "Fight Aging!",
-    "date": "2026-08-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Osteoporosis results from the slow loss of bone mineral density that occurs with advancing age, eventually leaving bones dangerously weak and prone to fracture. Bone extracellular matrix is constantly remodeled throughout life: osteoblast cells build up the matrix while…",
-    "url": "https://www.fightaging.org/archives/2026/08/physical-activity-correlates-with-reductions-in-tmao-inflammation-and-harmful-bone-remodeling/",
-    "top_development": false
-  },
-  {
-    "title": "Senolytic Treatments Clear Harmful Senescent Microglia from the Aging Brain",
-    "source": "Fight Aging!",
-    "date": "2026-08-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers here show that a few different senolytic approaches improve the state of the population of microglia in the white matter of the brain in aged mice. This is much as one might expect, given past work into the effects of clearing senescent cells on cognitive function…",
-    "url": "https://www.fightaging.org/archives/2026/08/senolytic-treatments-clear-harmful-senescent-microglia-from-the-aging-brain/",
-    "top_development": false
-  },
-  {
-    "title": "MERKT is Involved in Enabling Microglia to Kill Motor Neurons in ALS",
-    "source": "Fight Aging!",
-    "date": "2026-08-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Amyotrophic lateral sclerosis (ALS) is characterized by the loss of motor neurons. Aggregation of TDP-43 is thought to be involved in producing cell death in the brain. Here researchers present evidence in a mouse model of ALS for microglia to destroy motor neurons, and identify…",
-    "url": "https://www.fightaging.org/archives/2026/08/merkt-is-involved-in-enabling-microglia-to-kill-motor-neurons-in-als/",
     "top_development": false
   },
   {
@@ -135,18 +245,8 @@
     "date": "2026-08-28",
     "category": "Research",
     "importance": "normal",
-    "description": "Michael Snyder, Director of the Center for Genomics and Personalized Medicine at Stanford University, is obsessed with health-tracking wearables. During our interview, he wore four wrist-worn devices – watches and bands – […]",
+    "description": "Michael Snyder, Director of the Center for Genomics and Personalized Medicine at Stanford University, is obsessed with health-tracking wearables. During our interview, he wore four wrist-worn devices – watches and bands – and two rings. He […]",
     "url": "https://lifespan.io/michael-snyder-we-need-to-track-health-not-disease/",
-    "top_development": false
-  },
-  {
-    "title": "Restoration of Autophagy in Retinal Cells Protects Against Glaucoma",
-    "source": "Fight Aging!",
-    "date": "2026-08-27",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Glaucoma is a condition of progressive blindness driven by the death of retinal cells and degeneration of the optic nerve. It is driven by increased pressure in the aqueous humor, which fills a fluid compartment behind the cornea and also flows into the rest of the interior of…",
-    "url": "https://www.fightaging.org/archives/2026/08/restoration-of-autophagy-in-retinal-cells-protects-against-glaucoma/",
     "top_development": false
   },
   {
@@ -155,7 +255,7 @@
     "date": "2026-08-27",
     "category": "Research",
     "importance": "normal",
-    "description": "A recent study has examined whether senescence might allow cancer cells to survive oncogene withdrawal and become even more dangerous [1]. Some blocking techniques are temporary Many cancers depend heavily on a particular […]",
+    "description": "A recent study has examined whether senescence might allow cancer cells to survive oncogene withdrawal and become even more dangerous [1]. Some blocking techniques are temporary Many cancers depend heavily on a particular oncogenic […]",
     "url": "https://lifespan.io/why-turning-off-cancer-genes-doesnt-always-work/",
     "top_development": false
   },
@@ -165,7 +265,7 @@
     "date": "2026-08-26",
     "category": "Protocols",
     "importance": "normal",
-    "description": "A new study compared high-intensity sprint-interval exercise with moderate-intensity exercise. The former produced larger changes in circulating protein and metabolite levels than the latter and stimulated proteins associated with cardiometabolic health benefits [1]. […]",
+    "description": "A new study compared high-intensity sprint-interval exercise with moderate-intensity exercise. The former produced larger changes in circulating protein and metabolite levels […]",
     "url": "https://lifespan.io/short-intense-exercise-elicits-beneficial-metabolic-changes/",
     "top_development": false
   },
@@ -177,7 +277,7 @@
     "importance": "high",
     "description": "Moderate calorie restriction lowered an immune protein called C3 that appears to help drive chronic inflammation as the body ages. Blocking the same protein reduced age related inflammation in mice, raising the possibility that future treatments could mimic some benefits of…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260826055508.htm",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "Shingles vaccine linked to 24% lower dementia risk",
@@ -187,106 +287,6 @@
     "importance": "normal",
     "description": "Older adults who received the Shingrix shingles vaccine were 24% less likely to be diagnosed with dementia over four years in a study of more than 500,000 people. Researchers estimate the difference could amount to roughly one dementia case prevented for every 17 people…",
     "url": "https://www.sciencedaily.com/releases/2026/08/260823015013.htm",
-    "top_development": false
-  },
-  {
-    "title": "A Tougher Extracellular Matrix Strengthens Tendons in Rats",
-    "source": "Lifespan.io",
-    "date": "2026-08-24",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers have found that an upstream promoter of two extracellular matrix proteins increases healing and strength capabilities in the tendons of rats. Tendon injuries in older people Previous research has found that, like with […]",
-    "url": "https://lifespan.io/a-tougher-extracellular-matrix-strengthens-tendons-in-rats/",
-    "top_development": false
-  },
-  {
-    "title": "Too much or too little sleep may make your body age faster",
-    "source": "ScienceDaily",
-    "date": "2026-08-24",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Both too little and too much sleep may be linked to faster aging throughout the body. Researchers analyzing 23 biological aging clocks found the lowest aging levels among people sleeping about 6.4 to 7.8 hours per day. Short or long sleep was also associated with numerous…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260823094156.htm",
-    "top_development": false
-  },
-  {
-    "title": "A major Alzheimer’s risk gene may shrink brain cells years before symptoms",
-    "source": "ScienceDaily",
-    "date": "2026-08-23",
-    "category": "Research",
-    "importance": "high",
-    "description": "Researchers have uncovered a possible reason why the Alzheimer’s risk gene APOE4 can disrupt the brain long before memory problems begin. In mice, APOE4 increased a protein called Nell2, shrinking neurons and making memory circuits unusually active. That early hyperactivity…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260821012234.htm",
-    "top_development": true
-  },
-  {
-    "title": "This shark can live 400 years. Its eyes barely seem to age",
-    "source": "ScienceDaily",
-    "date": "2026-08-23",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Greenland sharks may live for 400 years without suffering the kind of retinal decline normally associated with aging. Researchers found healthy eye tissue and active proteins specially adapted for seeing blue light in the dim Arctic depths. DNA repair mechanisms may help keep…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260821012232.htm",
-    "top_development": false
-  },
-  {
-    "title": "In ALS, Microglia Eat Living Neurons, Mistaking Them for Dead",
-    "source": "Lifespan.io",
-    "date": "2026-08-21",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A new study suggests that in amyotrophic lateral sclerosis – and possibly other neurodegenerative diseases – the brain’s immune cells devour stressed but still living […]",
-    "url": "https://lifespan.io/in-als-microglia-eat-living-neurons-mistaking-them-for-dead/",
-    "top_development": false
-  },
-  {
-    "title": "How Old Fat Cells Trigger Inflammation and Raise Risks",
-    "source": "Lifespan.io",
-    "date": "2026-08-20",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Using cohort studies and a mouse model, researchers have found that the circulating factor ANGPTL8, which is produced by senescent […]",
-    "url": "https://lifespan.io/how-old-fat-cells-trigger-inflammation-and-raise-risks/",
-    "top_development": false
-  },
-  {
-    "title": "GenBio Launches a “Virtual Cell” AI Model",
-    "source": "Lifespan.io",
-    "date": "2026-08-18",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "This AI startup, which lists Nobel laureate David Baker among its co-founders, has announced a “world model” of a cell that […]",
-    "url": "https://lifespan.io/genbio-launches-a-virtual-cell-ai-model/",
-    "top_development": false
-  },
-  {
-    "title": "How Senescence Spreads Between Brain Cells",
-    "source": "Lifespan.io",
-    "date": "2026-08-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers have gone into deep detail regarding how each of five senescent brain cell types expresses and receives factors that encourage other cells to become senescent. […]",
-    "url": "https://lifespan.io/how-senescence-spreads-between-brain-cells/",
-    "top_development": false
-  },
-  {
-    "title": "A little-known protein may be fueling Alzheimer’s — and scientists found a way to block it",
-    "source": "ScienceDaily",
-    "date": "2026-08-17",
-    "category": "Funding",
-    "importance": "high",
-    "description": "An experimental Alzheimer’s compound prevented damaging protein clumps from forming in the brains of mice, helping nerve cells survive longer and reducing amyloid buildup. The treatment also appeared to improve heart health and slow some signs of aging, raising hopes for an…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814235856.htm",
-    "top_development": false
-  },
-  {
-    "title": "Women taking estrogen had fewer signs of Alzheimer’s in their brains",
-    "source": "ScienceDaily",
-    "date": "2026-08-14",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Women who used estrogen-only hormone therapy later in life were less likely to develop dementia and showed fewer signs of Alzheimer’s disease in their brains, according to a large study of more than 21,000 participants. Hormone therapy use was linked to 39% lower odds of a…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260814011028.htm",
     "top_development": false
   }
 ]
