@@ -41,14 +41,19 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
 - **A nav change touches 9 pages plus `sitemap.xml`.** Never edit one page's nav alone.
 - `og:image` must be an **absolute** URL on the custom domain, or every social card breaks
   silently.
-- The Histamine Kitchen is self-hosted at `tools/histamine-kitchen/`. Its data is built, not
-  hand-written — provenance in `tools/histamine-kitchen/build/usda/`.
+- The Crosscheck Kitchen is self-hosted at `tools/histamine-kitchen/`. Its data is built, not
+  hand-written — provenance in `tools/histamine-kitchen/build/usda/`. It was called the Histamine
+  Kitchen until 2026-09-11; the rename is **display-name only** — the folder and the live URL
+  `/tools/histamine-kitchen/` deliberately stay as they are, so no redirect is needed.
+- `tools/histamine-kitchen/index.html` is **generated** from `build/histamine_kitchen_template.html`
+  by `build/build_histamine_kitchen.py`. Any edit to the built file must be made in the template
+  too, or the next build silently reverts it.
 
 ## Open work
 
 - `feat/netlify-app-redirect` — 301 the netlify.app host to the custom domain. Unmerged; the
   clone is currently parked on this branch.
-- Histamine Kitchen ketosis layer: data (K band, `net_carbs_100g`, `k_note`) is in the working
+- Crosscheck Kitchen ketosis layer: data (K band, `net_carbs_100g`, `k_note`) is in the working
   tree **uncommitted**. Outstanding: the tool UI (K ceiling, K badges, net carbs per serving),
   the `nutrition.html` ketosis section, and the two home cards.
 

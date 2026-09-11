@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# PURPOSE: Match Histamine Kitchen food names to USDA SR Legacy rows and compute net carbs
+# PURPOSE: Match Crosscheck Kitchen food names to USDA SR Legacy rows and compute net carbs
 #          per 100 g (carbohydrate by difference - fibre - sugar alcohols).
 # TRIGGER: python match2.py   -> usda_mapping.csv / .json for human review.
 # OUTPUT:  One reviewable row per food. Nothing enters the dataset from here directly.
