@@ -210,14 +210,23 @@ def refresh_prices():
             r"(ticker:\s*'" + re.escape(t) + r"'[\s\S]{0,400}?price:\s*)[-\d.]+"
             r"([\s\S]{0,80}?change:\s*)[-\d.]+"
             r"([\s\S]{0,80}?changePct:\s*)[-\d.]+"
-            r"([\s\S]{0,80}?aum:\s*')[^']+(')")
+            r"([\s\S]{0,80}?aum:\s*')([^']+)(')")
         repl = (lambda m: f"{m.group(1)}{price}{m.group(2)}{change}"
-                f"{m.group(3)}{pct}{m.group(4)}{aum or m.group(0)}{m.group(5)}")
+                f"{m.group(3)}{pct}{m.group(4)}{aum or m.group(5)}{m.group(6)}")
         src, k = pat.subn(repl, src, count=1)
         if k == 1:
             updated += 1
         else:
             print(f"WARNING: could not locate {t} block in finance.html", file=sys.stderr)
+    if updated == 0:
+        # Every quote failed. Rewriting now would stamp today's date onto last
+        # week's prices and commit that as a fresh update.
+        print(f"::warning::finance: 0/{len(TICKERS)} ETF prices updated; "
+              "finance.html left untouched and the dashboard is stale")
+        return
+    if updated < len(TICKERS):
+        print(f"::warning::finance: only {updated}/{len(TICKERS)} ETF prices updated; "
+              "the rest carry forward last week's figures")
     src = re.sub(r"Jan 2 to [A-Z][a-z]+ \d{1,2}, \d{4}", f"Jan 2 to {TODAY:%b %-d, %Y}", src)
     open("finance.html", "w").write(src)
     print(f"finance: {updated}/{len(TICKERS)} ETF prices updated; date refs -> Jan 2 to {TODAY:%b %-d, %Y}")
