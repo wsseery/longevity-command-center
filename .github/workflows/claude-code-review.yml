@@ -33,11 +33,23 @@ jobs:
           # grants Read/Grep so whole-file rules are checkable, and posts through
           # the redacting comment server instead of a raw `gh pr comment` shell.
           track_progress: true
-          claude_args: "--max-turns 20"
+          # --allowedTools replaces the mode defaults, so every tool the review
+          # needs is listed. The git write tools the default set grants (add,
+          # commit, rm, push) are deliberately left out: this job is review-only.
+          # Bash(git diff:*) is the one that matters — without it the review has
+          # no way to see the diff, spends every turn being denied, and dies on
+          # max-turns having reviewed nothing. actions/checkout above uses
+          # fetch-depth: 0 so origin/main is present to diff against.
+          claude_args: >-
+            --max-turns 30
+            --allowedTools "Glob,Grep,LS,Read,mcp__github_comment__update_claude_comment,Bash(git diff:*),Bash(git log:*),Bash(git show:*)"
           prompt: |
             Review ONLY the files changed in this pull request against the
             compliance rules below. Do not modify any code. Post one comment
             with your findings.
+
+            Get the changed files with `git diff --stat origin/main...HEAD`,
+            then read the diff or the files themselves as needed.
 
             Longevity Command Center is educational content about longevity.
             It is NOT medical advice and NOT investment advice.
