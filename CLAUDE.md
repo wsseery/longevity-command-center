@@ -51,11 +51,15 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
 
 ## Open work
 
-- `feat/netlify-app-redirect` — 301 the netlify.app host to the custom domain. Unmerged; the
-  clone is currently parked on this branch.
-- Crosscheck Kitchen ketosis layer: data (K band, `net_carbs_100g`, `k_note`) is in the working
-  tree **uncommitted**. Outstanding: the tool UI (K ceiling, K badges, net carbs per serving),
-  the `nutrition.html` ketosis section, and the two home cards.
+Nothing outstanding as of 2026-09-11. Both items that used to sit here had already landed:
+the netlify.app 301 is in `netlify.toml`, and the ketosis layer is complete — K data, the K
+ceiling and badges in the tool, `nutrition.html` section 04, and both home cards.
+
+One decision from that work is worth not re-litigating: the tool shows a net-carb **band, not
+grams per serving**. Only 16 of 278 recipe ingredient rows carry a weight, so a per-serving
+figure would have to be invented. The 55 entries marked **per 100 g** (cinnamon, bay leaf and
+the like) show their real number but are excluded from the count of 52 foods that break
+ketosis, because a threshold measured per 100 g describes the jar, not the spoonful.
 
 ## Working agreement
 
