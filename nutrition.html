@@ -21,11 +21,13 @@
   <link rel="stylesheet" href="./style.css">
   <style>
     /* ===== NUTRITION PAGE SPECIFIC ===== */
-    .hero-eyebrow, .hero-title, .hero-subtitle, .hero-intro, .hero-updated {
+    .hero-eyebrow, .hero-title, .hero-subtitle, .hero-intro, .hero-cta, .hero-updated {
       opacity: 1 !important;
       transform: translateY(0) !important;
       animation: fadeUp 0.8s ease forwards !important;
     }
+    .hero-cta { margin: 26px 0 6px; }
+    .hero-cta .cta-note { margin-top: 12px; }
     .nutri-wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
     .nutri-section { padding: 54px 0 6px; }
     .nutri-section h2 {
@@ -177,6 +179,10 @@
       <h1 class="hero-title">FOOD INTOLERANCE <span class="highlight">TOOLKIT</span></h1>
       <p class="hero-subtitle">Two Scales, Scored Separately — Because They Disagree</p>
       <p class="hero-intro">Most elimination diets hand you one list and one verdict. This one carries three independent 0–3 scores for every food — histamine, lectin and net carbs — and refuses to average them, because 143 of the 440 foods score well on one of the first two and badly on the other, and another 52 are clean on both and still break ketosis. The three do not rest on the same kind of evidence, and the tool says so on every screen that shows them.</p>
+      <div class="hero-cta">
+        <a class="cta-btn" href="./tools/histamine-kitchen/">Open the Crosscheck Kitchen &rarr;</a>
+        <p class="cta-note">Runs entirely in your browser. Nothing you type is sent anywhere.</p>
+      </div>
       <div class="hero-updated">
         <span class="pulse-dot"></span>
         440 FOODS · 3 SCALES · 46 RECIPES · UPDATED SEPTEMBER 2026
@@ -340,7 +346,7 @@
       <p><b>Build a menu.</b> One, three or seven days from 46 recipes, with independent histamine and lectin ceilings, a keto filter and free-text exclusions. Every dish is re-scored at generation time. Recipes that depend on a lectin-reducing preparation are marked <span class="fixchip">LECTIN PREP REQUIRED</span> — in those, the peeling or pressure-cooking is doing the work and is not optional. Output includes a consolidated shopping list and a print stylesheet.</p>
 
       <div class="cta-block">
-        <a class="cta-btn" href="./tools/histamine-kitchen/">Open the Histamine Kitchen →</a>
+        <a class="cta-btn" href="./tools/histamine-kitchen/">Open the Crosscheck Kitchen →</a>
         <p class="cta-note">Runs entirely in your browser. Nothing you type is sent anywhere.</p>
       </div>
     </section>

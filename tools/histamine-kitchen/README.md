@@ -1,4 +1,4 @@
-# Histamine Kitchen
+# Crosscheck Kitchen
 
 A dual-scale food reference. Every food carries two **independent** 0–3 scores:
 **H** (histamine, from the SIGHI Food Compatibility List) and **L** (lectin, from Plant
