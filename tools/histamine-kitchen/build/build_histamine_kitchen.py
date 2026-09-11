@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# PURPOSE: Build the Histamine Kitchen single-file web app from its template + the two
+# PURPOSE: Build the Crosscheck Kitchen single-file web app from its template + the two
 #          JSON datasets. The built file is what the site serves.
 # TRIGGER: Run by hand after editing data/histamine_data.json or data/recipes.json:
 #              python tools/histamine-kitchen/build/build_histamine_kitchen.py
