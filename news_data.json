@@ -1,31 +1,321 @@
 [
   {
-    "title": "Dogs Exhibit Comorbidity and Mortality Risk in Much the Same Way as Humans",
+    "title": "Asymptomatic Persistent Infection as a Contribution to Degenerative Aging",
     "source": "Fight Aging!",
-    "date": "2026-09-08",
+    "date": "2026-09-15",
     "category": "Research",
     "importance": "normal",
-    "description": "One of the goals of the Dog Aging Project is to better establish that the characteristics of aging in dogs are close enough to the characteristics of aging in humans to make the results of interventions on dog life span relevant to the development of human medicine. Thus the…",
-    "url": "https://www.fightaging.org/archives/2026/09/dogs-exhibit-comorbidity-and-mortality-risk-in-much-the-same-way-as-humans/",
+    "description": "Persistent infections such as cytomegalovirus and other herpesviruses most likely accelerate aging, primarily via harmful effects on the immune system that lead to earlier immunosenescence and chronic inflammation than would otherwise be the case. A range of mechanistic and…",
+    "url": "https://www.fightaging.org/archives/2026/09/asymptomatic-persistent-infection-as-a-contribution-to-degenerative-aging/",
     "top_development": false
   },
   {
-    "title": "Age Acceleration in Various Proteomic Clocks Correlates with Risk of Mortality and Age-Related Disease",
+    "title": "P2RX7 Antagonism Reduces Macrophage Senescence in the Aging Kidney",
     "source": "Fight Aging!",
-    "date": "2026-09-08",
+    "date": "2026-09-15",
     "category": "Research",
     "importance": "normal",
-    "description": "In recent years, researchers have been gathering as much data as possible on the behavior of aging clocks of various sorts. The study here is an example of the type, in which multiple proteomic clocks were assessed in large epidemiological study populations. As one might expect…",
-    "url": "https://www.fightaging.org/archives/2026/09/age-acceleration-in-various-proteomic-clocks-correlates-with-risk-of-mortality-and-age-related-disease/",
+    "description": "Cells become senescent constantly throughout life in response to various forms of damage and stress, ceasing replication and generating a potent mix of inflammatory signals. In youth, these cells are promptly cleared by the immune system, but with advancing age they begin to…",
+    "url": "https://www.fightaging.org/archives/2026/09/p2rx7-antagonism-reduces-macrophage-senescence-in-the-aging-kidney/",
+    "top_development": false
+  },
+  {
+    "title": "HexemBio raises $15.5m to rejuvenate aging stem cells",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Berkeley biotech’s stem cell rejuvenation platform, built for transplant medicine, is branching into an injectable and a skin treatment. A little over a year ago, HexemBio was a single-idea company: take a patient’s own aging blood stem cells, briefly place them back in a…",
+    "url": "https://longevity.technology/news/hexembio-raises-15-5m-to-rejuvenate-aging-stem-cells/",
+    "top_development": true
+  },
+  {
+    "title": "Japan lab’s tiny couriers chase 15 extra years with XPRIZE",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Research",
+    "importance": "high",
+    "description": "A Tohoku University team just won $1 million in a global healthspan prize for particles engineered to hunt down the cells that make us old. Part of a ten-part series profiling each of the $101 million XPRIZE Healthspan competition’s Milestone 2 Awardees. Across the series…",
+    "url": "https://longevity.technology/news/japan-labs-tiny-couriers-chase-15-extra-years-with-xprize/",
+    "top_development": true
+  },
+  {
+    "title": "Canada agrees to help pay for Alzheimer’s drug LEQEMBI",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Research",
+    "importance": "normal",
+    "description": "After reconsidering, Canada’s Drug Agency issued a final recommendation supporting public reimbursement of lecanemab, sold as LEQEMBI. Getting a drug approved is the easy half of the job. Getting someone else to pay for it is the half that actually determines who takes it…",
+    "url": "https://longevity.technology/news/canada-agrees-to-help-pay-for-alzheimers-drug-leqembi/",
+    "top_development": false
+  },
+  {
+    "title": "Rapalogix opens its own longevity skin lab in Princeton",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "New Princeton lab gives skincare-focused biotech direct control over research behind its flagship rapalog serum, rather than renting it out. Most young biotechs outsource their early research, borrowing lab time, equipment and staff from wherever they can get it cheaply…",
+    "url": "https://longevity.technology/news/rapalogix-opens-its-own-longevity-skin-lab-in-princeton/",
+    "top_development": false
+  },
+  {
+    "title": "The overlooked leak draining longevity clinic revenue",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Tulu Health has launched in the US, betting that AI built for patient relationships can plug the churn draining membership clinics. Dr Adil Khan didn’t set out to build a healthcare company in the US first. Tulu Health, the AI-driven platform he runs as CEO, started in India…",
+    "url": "https://longevity.technology/news/the-overlooked-leak-draining-longevity-clinic-revenue/",
+    "top_development": true
+  },
+  {
+    "title": "PhytoGaia puts palm fruit at the heart of healthy aging",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Research",
+    "importance": "normal",
+    "description": "PhytoGaia spotlights new clinical data on ingredients for healthy aging, liver support and, notably, pet wellness. Walk the floor of a nutraceutical trade show, and you’ll find plenty of companies promising the next big thing in healthy aging. What makes PhytoGaia’s pitch at…",
+    "url": "https://longevity.technology/news/phytogaia-puts-palm-fruit-at-the-heart-of-healthy-aging/",
+    "top_development": false
+  },
+  {
+    "title": "FDA approves ISEMBYLD to treat spinal muscular atrophy",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Research",
+    "importance": "high",
+    "description": "The U.S. Food and Drug Administration approved ISEMBYLD (apitegromab-mstn) to treat spinal muscular atrophy in adults and children aged 2 years and older who are receiving a survival motor neuron 2 targeted treatment. According to Scholar Rock Inc., approval was based on the…",
+    "url": "https://longevity.technology/news/fda-approves-isembyld-to-treat-spinal-muscular-atrophy/",
+    "top_development": true
+  },
+  {
+    "title": "OncoC4-BioNTech drug shows promising survival gains in late-stage lung cancer trial",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "BioNTech and OncoC4 reported updated results from stage 1 of the PRESERVE-003 Phase 3 trial in previously treated metastatic squamous non-small cell lung cancer, showing gotistobart achieved a median overall survival of 18.5 months versus 10.0 months with docetaxel. The company…",
+    "url": "https://longevity.technology/news/oncoc4-biontech-drug-shows-promising-survival-gains-in-late-stage-lung-cancer-trial/",
+    "top_development": true
+  },
+  {
+    "title": "Telomir-Zn inhibits bone cancer cell growth in early study",
+    "source": "Longevity.Technology",
+    "date": "2026-09-15",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Telomir announced a collaboration with The Ohio State University College of Veterinary Medicine, reporting preclinical in vitro findings that Telomir-Zn inhibited cell growth in human and canine osteosarcoma models. The study, conducted under Shay Bracha, evaluated Telomir-Zn…",
+    "url": "https://longevity.technology/news/telomir-zn-inhibits-bone-cancer-cell-growth-in-early-study/",
+    "top_development": false
+  },
+  {
+    "title": "Midlife Growth Hormone Receptor Ablation Modestly Slows Aging in Mice",
+    "source": "Fight Aging!",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "high",
+    "description": "Despite considerable and growing effort put towards the development of novel means to slow and reverse aging over the past thirty years, the longest lived laboratory mice remain those lineages first established in the 1990s with mutations that disable growth hormone metabolism…",
+    "url": "https://www.fightaging.org/archives/2026/09/midlife-growth-hormone-receptor-ablation-modestly-slows-aging-in-mice/",
+    "top_development": false
+  },
+  {
+    "title": "Growth Hormone Receptor Antagonism Modestly Slows Aging in Mice",
+    "source": "Fight Aging!",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers here run a much larger than usual mouse study to show a ~10% slowing of aging, depending on how one slices the data, in mice genetically engineered to exhibit a growth hormone mutation that changes the interaction of circulating growth hormone with the growth hormone…",
+    "url": "https://www.fightaging.org/archives/2026/09/growth-hormone-receptor-antagonism-modestly-slows-aging-in-mice/",
+    "top_development": false
+  },
+  {
+    "title": "RUNX2 Inhibition as a Potential Treatment for Osteoporosis",
+    "source": "Fight Aging!",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers have been working towards practical approaches to inhibiting RUNX2 activity as a way to slow age-related loss of bone mineral density. Bone extracellular matrix is constantly remodeled throughout life, created by osteoblast cells and destroyed by osteoclast cells. In…",
+    "url": "https://www.fightaging.org/archives/2026/09/runx2-inhibition-as-a-potential-treatment-for-osteoporosis/",
+    "top_development": false
+  },
+  {
+    "title": "Mitochondrial Performance May Strongly Influence Learning",
+    "source": "Lifespan.io",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A team of researchers has discovered that mitochondrial health and location may be critical to why cognitive plasticity decreases with age. Old mammals and new tricks The adage ‘you can’t teach an old dog new tricks’ is true across a […]",
+    "url": "https://lifespan.io/mitochondrial-performance-may-strongly-influence-learning/",
+    "top_development": false
+  },
+  {
+    "title": "Next Generation Longevity heads to Osaka",
+    "source": "Longevity.Technology",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "NGL 2026 will bring clinicians, scientists, founders and investors together to turn healthspan ideas into clinical action. Next Generation Longevity 2026 will convene in Osaka, Japan, on 15–16 October, bringing together an international group of clinicians, researchers…",
+    "url": "https://longevity.technology/news/next-generation-longevity-heads-to-osaka/",
+    "top_development": false
+  },
+  {
+    "title": "Can we make the brain age backwards?",
+    "source": "Longevity.Technology",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A new functional brain-age clock is attempting to measure how well the brain is aging and whether interventions can change its trajectory. What if your brain could have its own biological age and, more importantly, what if that number could change? That is the question behind…",
+    "url": "https://longevity.technology/news/can-we-make-the-brain-age-backwards/",
+    "top_development": false
+  },
+  {
+    "title": "Tracking eye movement to fight Parkinson’s",
+    "source": "Longevity.Technology",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Mission Therapeutics pairs brain-penetrant mitochondria drug with NeuraLight’s eye-tracking biomarkers in a multi-country Parkinson’s trial. There’s a cleanup job happening inside your cells right now, and most of the time you’d never notice it. Mitochondria wear out. When they…",
+    "url": "https://longevity.technology/news/tracking-eye-movement-to-fight-parkinsons/",
+    "top_development": false
+  },
+  {
+    "title": "Cancer is rising in younger adults. Faster biological aging may help explain why",
+    "source": "ScienceDaily",
+    "date": "2026-09-14",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Cancer rates are rising in adults under 55, and new research suggests accelerated biological aging may be one piece of the puzzle. Scientists found that people from more recent generations tended to have bodies that appeared biologically older than those of earlier generations…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260913082200.htm",
+    "top_development": false
+  },
+  {
+    "title": "Scientists find a new layer of Alzheimer’s hidden in the genome",
+    "source": "ScienceDaily",
+    "date": "2026-09-13",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Scientists found that the 3D organization of DNA is disrupted in several types of brain cells affected by Alzheimer’s disease, altering how important genes are switched on and off. The discovery reveals a previously underexplored layer of the disease that could open new paths…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912220051.htm",
+    "top_development": false
+  },
+  {
+    "title": "Scientists find Ozempic may slow aging itself",
+    "source": "ScienceDaily",
+    "date": "2026-09-12",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Semaglutide helped older healthy mice live longer while improving memory, muscle function, blood sugar control, and several biological signs of aging. Its effects went beyond those seen with calorie restriction, raising the possibility that GLP-1 drugs could tap into a separate…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260911214238.htm",
+    "top_development": false
+  },
+  {
+    "title": "Dendritic Cell Antigen Presentation Enables T Cells to Enter the Brain and Contribute to Tau Pathology",
+    "source": "Fight Aging!",
+    "date": "2026-09-11",
+    "category": "Research",
+    "importance": "high",
+    "description": "The immune systems of the body and brain are distinct and separate, or at least largely separate, influencing one another via signaling. The blood-brain barrier keeps the vast majority of immune cells in the body out of the brain, and vice versa. A few channels have been…",
+    "url": "https://www.fightaging.org/archives/2026/09/dendritic-cell-antigen-presentation-enables-t-cells-to-enter-the-brain-and-contribute-to-tau-pathology/",
+    "top_development": false
+  },
+  {
+    "title": "Inflammation Driven by Fat Cells as a Contribution to Atherosclerosis",
+    "source": "Fight Aging!",
+    "date": "2026-09-11",
+    "category": "Research",
+    "importance": "high",
+    "description": "Atherosclerosis is the largest cause of human mortality, producing stroke and heart attack when fatty plaques obstructing arteries rupture. There is accordingly a great deal of research aimed at influencing the course of the condition. Reversal of plaque growth to clear arteries…",
+    "url": "https://www.fightaging.org/archives/2026/09/inflammation-driven-by-fat-cells-as-a-contribution-to-atherosclerosis/",
+    "top_development": false
+  },
+  {
+    "title": "Aging is Complex, So Expect High Variance in the Details Between Individuals",
+    "source": "Fight Aging!",
+    "date": "2026-09-11",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Aging is a complex stochastic process of damage accumulation, shaped at the detail level by choices made, environments encountered, and the responses and interactions of countless cells. As the paper here notes, this gives rise to a sizable variance between individuals, even…",
+    "url": "https://www.fightaging.org/archives/2026/09/aging-is-complex-so-expect-high-variance-in-the-details-between-individuals/",
+    "top_development": false
+  },
+  {
+    "title": "Lung Fibrosis Drug Lowers Biological Age Estimates",
+    "source": "Lifespan.io",
+    "date": "2026-09-11",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Six different aging clocks detected younger blood protein profiles in patients taking the experimental lung-fibrosis drug rentosertib. This suggests possible anti-aging effects, […]",
+    "url": "https://lifespan.io/lung-fibrosis-drug-lowers-biological-age-estimates/",
+    "top_development": false
+  },
+  {
+    "title": "Your Personal Longevity Assistant: Evipedia Grok Bot",
+    "source": "Lifespan.io",
+    "date": "2026-09-11",
+    "category": "Research",
+    "importance": "normal",
+    "description": "With Grok Bot, SpaceXAi has created something really special and helpful. And the Evipedia Grok Bot turns this gem into something even more precious. A specialized AI assistant offering an evidence-based 2nd opinion on health […]",
+    "url": "https://lifespan.io/your-personal-longevity-assistant-evipedia-grok-bot/",
+    "top_development": false
+  },
+  {
+    "title": "CloudScope Enables Continuous Remote Monitoring of Brain Activity in Freely Moving Mice",
+    "source": "GEN",
+    "date": "2026-09-11",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Johns Hopkins researchers developed CloudScope, a cloud-based microscope enabling continuous, remote brain imaging in freely moving mice, revealing disease progression, seizures, cellular changes and behavior over extended periods. The post CloudScope Enables Continuous Remote…",
+    "url": "https://www.genengnews.com/topics/translational-medicine/cloudscope-enables-continuous-remote-monitoring-of-brain-activity-in-freely-moving-mice/",
+    "top_development": false
+  },
+  {
+    "title": "Suggesting the Longevity Community Follow the Cardiovascular Community's Model for Public Messaging",
+    "source": "Fight Aging!",
+    "date": "2026-09-10",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Every field of specialist knowledge consists of a series of concentric circles, the greatest knowledge at the center, the scientists advancing the state of the art, and the least knowledge at the outskirts, the public at large. In between we find lesser scientists, patient…",
+    "url": "https://www.fightaging.org/archives/2026/09/suggesting-the-longevity-community-follow-the-cardiovascular-communitys-model-for-public-messaging/",
+    "top_development": false
+  },
+  {
+    "title": "From World Cup Champions to Longevity Champions",
+    "source": "Lifespan.io",
+    "date": "2026-09-10",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Fresh from Spain’s spectacular victory in the 2026 FIFA World Cup, Madrid is preparing for another kind of world-class gathering: one focused not on winning more years of sporting glory, but on winning more healthy years of life. On September […]",
+    "url": "https://lifespan.io/from-world-cup-champions-to-longevity-champions/",
+    "top_development": false
+  },
+  {
+    "title": "Calcium Mishandling Contributes to Muscle Loss",
+    "source": "Lifespan.io",
+    "date": "2026-09-10",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers have discovered and explained how calcium mishandling in muscle cells leads to long-term muscle weakness in older people. Calcium is not just for bones Skeletal muscle cells use calcium ions to control how and when they contract. This activity […]",
+    "url": "https://lifespan.io/calcium-mishandling-contributes-to-muscle-loss/",
+    "top_development": false
+  },
+  {
+    "title": "Comparing the Responsiveness of Epigenetic Aging Biomarkers",
+    "source": "Lifespan.io",
+    "date": "2026-09-09",
+    "category": "Research",
+    "importance": "normal",
+    "description": "In a recent study, researchers have evaluated how responsive several DNA methylation (DNAm) biomarkers are to a range of longevity interventions [1]. Waiting too long Testing lifespan-extending interventions in humans has a […]",
+    "url": "https://lifespan.io/comparing-the-responsiveness-of-epigenetic-aging-biomarkers/",
     "top_development": false
   },
   {
     "title": "Late-Life GLP-1 Treatment Increases Lifespan in Female Mice",
     "source": "Lifespan.io",
     "date": "2026-09-08",
-    "category": "Protocols",
+    "category": "Research",
     "importance": "normal",
-    "description": "In a new study, semaglutide given late in life increased median lifespan in female mice by more than 12% and improved various health markers. Semaglutide’s effect possibly went beyond caloric restriction [1]. Old mice, new drugs GLP-1 receptor […]",
+    "description": "In a new study, semaglutide given late in life increased median lifespan in female mice by more than 12% and improved various health markers. Semaglutide’s […]",
     "url": "https://lifespan.io/late-life-glp-1-treatment-increases-lifespan-in-female-mice/",
     "top_development": false
   },
@@ -40,44 +330,14 @@
     "top_development": false
   },
   {
-    "title": "The Challenge of Cheap Interventions and Expensive Clinical Trials",
-    "source": "Fight Aging!",
-    "date": "2026-09-07",
-    "category": "Research",
-    "importance": "high",
-    "description": "There are a good many affordable interventions that may well produce enough of an effect on aging to justify widespread use. At the more compelling end of the spectrum, based on a relatively large effect size in animal data and very limited supporting human data, we might…",
-    "url": "https://www.fightaging.org/archives/2026/09/the-challenge-of-cheap-interventions-and-expensive-clinical-trials/",
-    "top_development": true
-  },
-  {
-    "title": "Engineered Exosomes as a Treatment for Alzheimer's Disease",
-    "source": "Fight Aging!",
-    "date": "2026-09-07",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Exosomes are one category of extracellular vesicle secreted by cells, a membrane-wrapped package of molecules, one complex component of the extensive, incompletely mapped communication that takes place constantly between cells. Exosome therapies are conceptually similar to stem…",
-    "url": "https://www.fightaging.org/archives/2026/09/engineered-exosomes-as-a-treatment-for-alzheimers-disease/",
-    "top_development": false
-  },
-  {
-    "title": "Sizable Declines in Associative Memory Occur by Age 50",
-    "source": "Fight Aging!",
-    "date": "2026-09-07",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Some aspects of cognitive function exhibit marked declines relatively early in later life, by middle age. Here, researchers show that episodic and associative memory recall, meaning the ability to correctly link together and place in context specific individual memories, shows a…",
-    "url": "https://www.fightaging.org/archives/2026/09/sizable-declines-in-associative-memory-occur-by-age-50/",
-    "top_development": false
-  },
-  {
     "title": "Mice With Growth Hormone Halted in Middle Age Live Longer",
     "source": "Lifespan.io",
     "date": "2026-09-07",
     "category": "Research",
     "importance": "high",
-    "description": "Researchers publishing in Aging Cell have described how stopping growth hormone receptor production in midlife significantly lengthens the lives of mice. Growth but diabetes […]",
+    "description": "Researchers publishing in Aging Cell have described how stopping growth hormone receptor production in midlife significantly lengthens the lives of mice. Growth but diabetes Growth hormone […]",
     "url": "https://lifespan.io/mice-with-growth-hormone-halted-in-middle-age-live-longer/",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "Popular brain supplement linked to shorter lifespan in men",
@@ -87,206 +347,6 @@
     "importance": "normal",
     "description": "A large study involving more than 270,000 people has linked higher blood levels of the amino acid tyrosine to a shorter lifespan in men. Using both observational data and genetic analysis, researchers found that elevated tyrosine could potentially reduce male life expectancy by…",
     "url": "https://www.sciencedaily.com/releases/2026/09/260904000330.htm",
-    "top_development": false
-  },
-  {
-    "title": "Targeted Reduction of PTBP1 Reverses Cognitive Impairment in a Mouse Model of Alzheimer's Disease",
-    "source": "Fight Aging!",
-    "date": "2026-09-04",
-    "category": "Research",
-    "importance": "high",
-    "description": "Many of the more sophisticated forms of medicine, including gene therapies and immunotherapies, are challenging to deliver to the brain. At the very least there are far fewer practical options for delivery, and it is possible that none of that that exist fit a given desired use…",
-    "url": "https://www.fightaging.org/archives/2026/09/targeted-reduction-of-ptbp1-reverses-cognitive-impairment-in-a-mouse-model-of-alzheimers-disease/",
-    "top_development": true
-  },
-  {
-    "title": "Suggesting ERBB4 Overexpression as an Important Mechanism in Alzheimer's Disease",
-    "source": "Fight Aging!",
-    "date": "2026-09-04",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers here suggest that increased ERBB4 expression in neurons is an important driving mechanism in the onset and progression of Alzheimer's disease. One has to be cautious with such findings, even given the effort made by the researchers to show that human data is…",
-    "url": "https://www.fightaging.org/archives/2026/09/suggesting-erbb4-overexpression-as-an-important-mechanism-in-alzheimers-disease/",
-    "top_development": false
-  },
-  {
-    "title": "Offspring of Centenarians Exhibit Reduced Mortality and Risk of Age-Related Disease",
-    "source": "Fight Aging!",
-    "date": "2026-09-04",
-    "category": "Research",
-    "importance": "normal",
-    "description": "This is far from the only study to indicate that the children of long-lived individuals tend also to be long-lived. The open question is the degree to which this is genetic versus cultural transmission. The construction of very large population databases over the past few…",
-    "url": "https://www.fightaging.org/archives/2026/09/offspring-of-centenarians-exhibit-reduced-mortality-and-risk-of-age-related-disease/",
-    "top_development": false
-  },
-  {
-    "title": "Stanford scientists discover a seafood that can reverse signs of aging",
-    "source": "ScienceDaily",
-    "date": "2026-09-04",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A substance found in edible sea squirts appeared to reverse several signs of aging in older mice. Plasmalogen supplements improved memory and learning, strengthened connections between brain cells, reduced inflammation, and even helped the mice grow thicker, darker hair…",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260902234518.htm",
-    "top_development": false
-  },
-  {
-    "title": "Medicines Discovery Catapult Backs Two U.K. Biotech Companies Tackling Chronic Diseases",
-    "source": "GEN",
-    "date": "2026-09-04",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Medicines Discovery Catapult provided its investment and expert support to help two biotech companies accelerate the development of new treatments for a range of autoimmune, inflammatory, and age-related diseases. The post Medicines Discovery Catapult Backs Two U.K. Biotech…",
-    "url": "https://www.genengnews.com/topics/drug-discovery/medicines-discovery-catapult-backs-two-u-k-biotech-companies-tackling-chronic-diseases/",
-    "top_development": true
-  },
-  {
-    "title": "Senescent Microglia Secrete DLK1, Which Causes Dysfunction in the Aging Brain",
-    "source": "Fight Aging!",
-    "date": "2026-09-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Senescent cells accumulate with age in tissues throughout the body, disrupting tissue structure and function with inflammatory secretions. The growing burden of senescent cells is an important contributing cause of degenerative aging. A cell becomes senescent in response to…",
-    "url": "https://www.fightaging.org/archives/2026/09/senescent-microglia-secrete-dlk1-which-causes-dysfunction-in-the-aging-brain/",
-    "top_development": false
-  },
-  {
-    "title": "The Last Generation to Die: Interview With Tim Maupin",
-    "source": "Lifespan.io",
-    "date": "2026-09-03",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Filmmaker Tim Maupin has spent a number of years developing The Last Generation to Die, a near-future film about what happens when […]",
-    "url": "https://lifespan.io/the-last-generation-to-die-interview-with-tim-maupin/",
-    "top_development": false
-  },
-  {
-    "title": "One immune switch may help drive aging across the body",
-    "source": "ScienceDaily",
-    "date": "2026-09-03",
-    "category": "Research",
-    "importance": "high",
-    "description": "Aging may be partly fueled by immune cells losing their ability to clear away damaged, inflammation-promoting cells. Blocking a single receptor restored that cleanup process in mice, reducing inflammation and helping their organs, muscles, and memory remain remarkably youthful.",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260901010717.htm",
-    "top_development": true
-  },
-  {
-    "title": "Invested in Her Campaign Extends Fundraising Deadline",
-    "source": "Lifespan.io",
-    "date": "2026-09-02",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Driven by ongoing support from their community, The Longevity Science Foundation is extending the deadline for the Invested in Her campaign to October 1, 2026, as they work toward a $250,000 fundraising […]",
-    "url": "https://lifespan.io/invested-in-her-campaign-extends-fundraising-deadline/",
-    "top_development": false
-  },
-  {
-    "title": "Alzheimer’s may leave a mark on the brain long before plaques appear",
-    "source": "ScienceDaily",
-    "date": "2026-09-02",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Brain changes associated with Alzheimer’s may begin at least seven years before amyloid plaques become detectable with current PET scans. Researchers uncovered the signal by tracking healthy older adults with repeated brain imaging over nearly 20 years. The discovery could help…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260831015144.htm",
-    "top_development": false
-  },
-  {
-    "title": "Rejuvenation Roundup August 2026",
-    "source": "Lifespan.io",
-    "date": "2026-09-01",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Properly untangling aging means untangling its various counterbalances, sometimes on the individual level. Here’s what’s been investigated this month. Interviews Wei-Wu He: People Should Become the CEOs of Their Own Health: Wei-Wu He is […]",
-    "url": "https://lifespan.io/rejuvenation-roundup-august-2026/",
-    "top_development": false
-  },
-  {
-    "title": "Reaching 90 without dementia doesn’t mean you’re in the clear",
-    "source": "ScienceDaily",
-    "date": "2026-09-01",
-    "category": "Research",
-    "importance": "high",
-    "description": "A study of people over 90 found that dementia risk remains strongly shaped by sex, race and genetics, with women and black participants facing notably higher risks. Intriguingly, some people stayed cognitively healthy despite carrying major risk factors, potentially offering…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260829235953.htm",
-    "top_development": false
-  },
-  {
-    "title": "A Mechanistic Explanation for SIRT1’s Effects",
-    "source": "Lifespan.io",
-    "date": "2026-08-31",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers have found that the sirtuin SIRT1 stabilizes the human genome by suppressing retrotransposition, which occurs when parts of the genome transcribe themselves onto other parts. When DNA modifies itself Long interspersed elements-1 (LINE-1) have existed […]",
-    "url": "https://lifespan.io/a-mechanistic-explanation-for-sirt1s-effects/",
-    "top_development": false
-  },
-  {
-    "title": "Dogs may hold surprising clues to human longevity",
-    "source": "ScienceDaily",
-    "date": "2026-08-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Dogs and humans may have more in common when it comes to aging than scientists realized. Researchers with the Dog Aging Project found that patterns of small molecules in dogs’ blood were linked to longer or shorter lifespans in remarkably similar ways to those seen in people…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260828082341.htm",
-    "top_development": false
-  },
-  {
-    "title": "Your sleep may be hiding an early clue to Alzheimer’s",
-    "source": "ScienceDaily",
-    "date": "2026-08-29",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Frequent micro-awakenings during sleep were linked to higher genetic risk for Alzheimer’s in healthy middle-aged adults who had no symptoms. The discovery raises the possibility that subtle changes during sleep could offer an early warning signal years before memory problems…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260828005218.htm",
-    "top_development": false
-  },
-  {
-    "title": "Michael Snyder: We Need to Track Health, Not Disease",
-    "source": "Lifespan.io",
-    "date": "2026-08-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Michael Snyder, Director of the Center for Genomics and Personalized Medicine at Stanford University, is obsessed with health-tracking wearables. During our interview, he wore four wrist-worn devices – watches and bands – and two rings. He […]",
-    "url": "https://lifespan.io/michael-snyder-we-need-to-track-health-not-disease/",
-    "top_development": false
-  },
-  {
-    "title": "Why Turning Off Cancer Genes Doesn’t Always Work",
-    "source": "Lifespan.io",
-    "date": "2026-08-27",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A recent study has examined whether senescence might allow cancer cells to survive oncogene withdrawal and become even more dangerous [1]. Some blocking techniques are temporary Many cancers depend heavily on a particular oncogenic […]",
-    "url": "https://lifespan.io/why-turning-off-cancer-genes-doesnt-always-work/",
-    "top_development": false
-  },
-  {
-    "title": "Short, Intense Exercise Elicits Beneficial Metabolic Changes",
-    "source": "Lifespan.io",
-    "date": "2026-08-26",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A new study compared high-intensity sprint-interval exercise with moderate-intensity exercise. The former produced larger changes in circulating protein and metabolite levels […]",
-    "url": "https://lifespan.io/short-intense-exercise-elicits-beneficial-metabolic-changes/",
-    "top_development": false
-  },
-  {
-    "title": "Scientists may have found a shortcut to calorie restriction’s anti-aging benefits",
-    "source": "ScienceDaily",
-    "date": "2026-08-26",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Moderate calorie restriction lowered an immune protein called C3 that appears to help drive chronic inflammation as the body ages. Blocking the same protein reduced age related inflammation in mice, raising the possibility that future treatments could mimic some benefits of…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260826055508.htm",
-    "top_development": false
-  },
-  {
-    "title": "Shingles vaccine linked to 24% lower dementia risk",
-    "source": "ScienceDaily",
-    "date": "2026-08-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Older adults who received the Shingrix shingles vaccine were 24% less likely to be diagnosed with dementia over four years in a study of more than 500,000 people. Researchers estimate the difference could amount to roughly one dementia case prevented for every 17 people…",
-    "url": "https://www.sciencedaily.com/releases/2026/08/260823015013.htm",
     "top_development": false
   }
 ]
