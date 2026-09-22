@@ -1,7 +1,7 @@
 name: Weekly Longevity Update
 on:
   schedule:
-    - cron: "0 13 * * 2"   # Tue 09:00 ET (UTC; ~1h DST drift, acceptable per spec §2)
+    - cron: "52 12 * * 2"   # Tue ~08:52 ET. Off-the-hour on purpose: "0 13" is congested
   workflow_dispatch: {}     # allow manual run from the Actions tab
 permissions:
   contents: write
