@@ -24,7 +24,8 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
 ## No-touch zones
 
 - **`finance.html` is machine-written** by `.github/workflows/weekly-update.yml` every Tuesday
-  09:00 ET. Do not hand-edit it, and always work from a freshly pulled clone — a stale local copy
+  morning ET (cron `52 12 * * 2`; GitHub queues scheduled runs, so the time drifts). Do not
+  hand-edit it, and always work from a freshly pulled clone — a stale local copy
   will clobber a week of updates.
 - `news_data.json` is likewise written by that workflow (public RSS via `feedparser`).
 - ⚠️ **Do not add an `ANTHROPIC_API_KEY` secret.** The news path is RSS and needs no key. An
