@@ -10,9 +10,20 @@ on:
 
 jobs:
   claude:
+    # Two guards, evaluated left to right.
+    #
+    # 1. Actor. Every netlify and claude comment on a PR fires this workflow,
+    #    and a Claude reply that ever quoted "@claude" back would re-enter it.
+    #    Bot logins all end in "[bot]", so one check covers both cases.
+    #    This does NOT remove the grey skipped entries from the Actions list:
+    #    GitHub records a run for every matching event and `on:` has no actor
+    #    filter. It guarantees no bot ever spends a real run, nothing more.
+    # 2. Body. The mention itself, read from whichever payload the event has -
+    #    `issue.body` for an issue, `comment.body` for either comment event.
     if: >-
-      (github.event_name == 'issues' && contains(github.event.issue.body, '@claude')) ||
-      (github.event_name != 'issues' && contains(github.event.comment.body, '@claude'))
+      !endsWith(github.actor, '[bot]') &&
+      ((github.event_name == 'issues' && contains(github.event.issue.body, '@claude')) ||
+      (github.event_name != 'issues' && contains(github.event.comment.body, '@claude')))
     runs-on: ubuntu-latest
     permissions:
       contents: write
