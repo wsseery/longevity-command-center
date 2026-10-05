@@ -13,3 +13,48 @@
   to = "https://longevitycommandcenter.com/:splat"
   status = 301
   force = true
+
+# PURPOSE: Do not serve repo-internal files on the public site.
+# TRIGGER: Every Netlify deploy of this repo.
+# OUTPUT:  404 for the paths below; the files stay in the repo.
+#
+# Added 2026-10-05. Netlify publishes the repo root, so /CLAUDE.md was served
+# with HTTP 200, and it names Bill's FL licences, which this site must never
+# show. No page links to any of these. force = true for the same reason as
+# above: the files exist, and without it Netlify serves them.
+
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/build_news.py"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/tools/histamine-kitchen/README.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/tools/histamine-kitchen/build/*"
+  to = "/404"
+  status = 404
+  force = true
