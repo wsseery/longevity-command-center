@@ -1,0 +1,137 @@
+# Site safety checks: report-only, never blocking.
+#
+# Runs on every PR, every push to main, and after every Weekly Longevity
+# Update. The weekly update pushes with GITHUB_TOKEN, and a push made with
+# that token never triggers other workflows, so `push` alone would miss the
+# one change that lands every week. Nothing here gates a merge: there is no
+# branch protection behind it. When a check fails on main, the alert job opens
+# (or comments on) one "site-check" issue.
+#
+#   playwright       pages the change touches, plus the homepage, before and
+#                    after the change; fails only on problems it INTRODUCES.
+#   compliance-grep  Bill's FL licences, other ventures and their tags, SSN-
+#                    shaped strings, new medical-claim wording ("cures",
+#                    "treats", "prevents", "mitigates", "reverses aging"),
+#                    and a missing or removed disclaimer block.
+#
+# Logic in .github/checks/. This repo is PUBLIC: never add show_full_output.
+
+name: Site checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_run:
+    workflows: ["Weekly Longevity Update"]
+    types: [completed]
+
+# One run per commit; a later commit never cancels an earlier one's check.
+concurrency:
+  group: site-checks-${{ github.event_name }}-${{ github.sha }}
+
+permissions:
+  contents: read
+
+jobs:
+  playwright:
+    name: playwright
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Find the before commit
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: bash .github/checks/before-commit.sh
+
+      # A changed page is checked directly. A data file is checked through the
+      # page it feeds; a shared stylesheet or script through every page.
+      - name: Pages this change touches
+        id: pages
+        run: |
+          pages=$(git diff --name-only --diff-filter=AMR "$BASE" HEAD | grep -v '^\.github/' | while read -r f; do
+            case "$f" in
+              */build/*) ;;
+              *.html) echo "$f" ;;
+              news_data.json) echo news.html ;;
+              style.css|app.js) ls *.html ;;
+              *) d=$(dirname "$f")
+                 while [ "$d" != . ] && [ ! -f "$d/index.html" ]; do d=$(dirname "$d"); done
+                 [ "$d" != . ] && echo "$d/index.html" ;;
+            esac
+          done | sort -u | tr '\n' ' ')
+          echo "list=$pages" >> "$GITHUB_OUTPUT"
+          echo "Pages: ${pages:-none (homepage smoke test only)}"
+
+      - name: Install Playwright
+        working-directory: .github/checks
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0 @axe-core/playwright@4.13.0
+          npx playwright install --with-deps chromium
+
+      # Paths go in through env, not ${{ }} in the script: a file name is
+      # change-controlled text and must never be pasted into shell source.
+      - name: Check pages, before and after
+        env:
+          PAGES: ${{ steps.pages.outputs.list }}
+        run: |
+          git worktree add --detach /tmp/before "$BASE"
+          python3 -m http.server 8080 --bind 127.0.0.1 >/dev/null 2>&1 &
+          python3 -m http.server 8081 --bind 127.0.0.1 --directory /tmp/before >/dev/null 2>&1 &
+          sleep 1
+          node .github/checks/site-check.mjs 8080 8081 $PAGES
+
+  compliance-grep:
+    name: compliance-grep
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+      - name: Find the before commit
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: bash .github/checks/before-commit.sh
+      - run: python3 .github/checks/safety_checks.py "$BASE"
+
+  # On main only: a failed check opens one tracking issue, or comments on it
+  # if it is already open. Deliberately no at-mention anywhere, so it never
+  # starts the Claude workflow.
+  alert:
+    needs: [playwright, compliance-grep]
+    if: failure() && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SHA: ${{ github.sha }}
+          EVENT: ${{ github.event_name }}
+          PW: ${{ needs.playwright.result }}
+          CG: ${{ needs.compliance-grep.result }}
+        run: |
+          gh label create site-check --color B60205 --description "Site checks failed on main" 2>/dev/null || true
+          what="commit \`${SHA:0:7}\`"
+          [ "$EVENT" = workflow_run ] && what="the Weekly Longevity Update (\`${SHA:0:7}\`)"
+          body=$(printf 'Site checks failed on %s, which is already live on longevitycommandcenter.com.\n\n- playwright: %s\n- compliance-grep: %s\n\nDetails: %s\n\nClose this issue once it is fixed.' "$what" "$PW" "$CG" "$RUN_URL")
+          open=$(gh issue list --label site-check --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body "$body"
+          else
+            gh issue create --title "Site checks failed on main" --label site-check --body "$body"
+          fi
