@@ -1,32 +1,222 @@
 [
   {
-    "title": "Don't View mTOR as a Single Pharmaceutical Target, as Context Matters",
+    "title": "Reduced Cardiolipin Levels as a Cause of Mitochondrial Dysfunction and Muscle Remodeling",
     "source": "Fight Aging!",
-    "date": "2026-09-29",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Of the many varied approaches to mimic some of the beneficial metabolic response to calorie restriction, mTOR inhibition is arguably the most well studied. Countless animal studies have been conducted, and early clinical trials for novel mTOR inhibitors have taken place. The…",
-    "url": "https://www.fightaging.org/archives/2026/09/dont-view-mtor-as-a-single-pharmaceutical-target-as-context-matters/",
-    "top_development": true
-  },
-  {
-    "title": "The Peptide Catestatin Reduces Tau Pathology in Mice",
-    "source": "Fight Aging!",
-    "date": "2026-09-29",
-    "category": "Research",
+    "date": "2026-10-06",
+    "category": "Biotech",
     "importance": "normal",
-    "description": "Later stages of Alzheimer's disease and other tauopathies are characterized by the aggregation of altered tau protein, and a toxic surrounding biochemistry that provokes inflammation and destroys neurons. So far little headway has been made towards therapies that can halt tau…",
-    "url": "https://www.fightaging.org/archives/2026/09/the-peptide-catestatin-reduces-tau-pathology-in-mice/",
+    "description": "Hundreds of mitochondria in every cell work to produce adenosine triphosphate (ATP), a chemical energy store molecule needed to power cell activities. Mitochondria evolved from symbiotic bacteria, and are now fully integrated as components of the cell, with much of their…",
+    "url": "https://www.fightaging.org/archives/2026/10/reduced-cardiolipin-levels-as-a-cause-of-mitochondrial-dysfunction-and-muscle-remodeling/",
     "top_development": false
   },
   {
-    "title": "Light Sensitive Nanoparticles Bypass Dysfunctional Photoreceptor Cells",
+    "title": "Anti-CXCR3 Therapy Reduces Harmful Immune Cell Infiltration into the Brain",
     "source": "Fight Aging!",
-    "date": "2026-09-29",
+    "date": "2026-10-06",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers here provide an initial proof of concept demonstration of a novel foundation for replacing lost visual capacity in cases of retinal degeneration, without addressing the underlying pathology that causes loss of function in photoreceptor cells. Recall that direct…",
-    "url": "https://www.fightaging.org/archives/2026/09/light-sensitive-nanoparticles-bypass-dysfunctional-photoreceptor-cells/",
+    "description": "The immune system of the brain and body are distinct from one another, separated by the blood-brain barrier that lines blood vessels passing through the central nervous system. In health and youth, only small numbers of immune cells from the body pass in the brain, but this…",
+    "url": "https://www.fightaging.org/archives/2026/10/anti-cxcr3-therapy-reduces-harmful-immune-cell-infiltration-into-the-brain/",
+    "top_development": false
+  },
+  {
+    "title": "Chronic Inflammation in the Aging of Bone and Brain Tissue",
+    "source": "Fight Aging!",
+    "date": "2026-10-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers here discuss the chronic inflammation of aging as a contribution to the bidirectional relationship between the loss of bone mineral density leading to osteoporosis and neurodegenerative pathology leading to cognitive impairment. As they point out, the best…",
+    "url": "https://www.fightaging.org/archives/2026/10/chronic-inflammation-in-the-aging-of-bone-and-brain-tissue/",
+    "top_development": false
+  },
+  {
+    "title": "Declining Autophagy Impairs Senescent Cell Clearance",
+    "source": "Lifespan.io",
+    "date": "2026-10-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A new study links an age-related decline in cellular maintenance to impaired immune clearance. Activating the pathway reduced signs of senescence in […]",
+    "url": "https://lifespan.io/declining-autophagy-impairs-senescent-cell-clearance/",
+    "top_development": false
+  },
+  {
+    "title": "What are hospital longevity programs, and what can they tell you about your health?",
+    "source": "STAT News",
+    "date": "2026-10-06",
+    "category": "Research",
+    "importance": "normal",
+    "description": "What can hospital longevity clinics can tell you about your health? STAT's Sarah Todd went to one to find out.",
+    "url": "https://www.statnews.com/2026/10/06/hospital-longevity-programs-health-status-report-alex-hogan/?utm_campaign=rss",
+    "top_development": false
+  },
+  {
+    "title": "STAT+: Can you live longer for $5,500? Longevity clinics are the buzzy new trend at nonprofit hospitals",
+    "source": "STAT News",
+    "date": "2026-10-06",
+    "category": "Research",
+    "importance": "high",
+    "description": "Longevity clinics promise personalized health advice and cutting-edge tests. Now major hospitals are entering the business, at costs reaching $45,000 a year.",
+    "url": "https://www.statnews.com/2026/10/06/hospitals-longevity-clinics-healthy-aging-wellness-trend/?utm_campaign=rss",
+    "top_development": true
+  },
+  {
+    "title": "Fat Infiltration into Muscle Tissue as a Biomarker of Aging",
+    "source": "Fight Aging!",
+    "date": "2026-10-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "An important goal in the research community is to build a robust measure of biological age, the burden of age-related damage and dysfunction contributing to disease and mortality, that can be used to rapidly assess the quality of any potential intervention to slow or reverse…",
+    "url": "https://www.fightaging.org/archives/2026/10/fat-infiltration-into-muscle-tissue-as-a-biomarker-of-aging/",
+    "top_development": false
+  },
+  {
+    "title": "An Aging Clock Based on Images of Hematopoietic Stem Cell Nuclei",
+    "source": "Fight Aging!",
+    "date": "2026-10-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Any sufficiently complex biological data that changes with age can be used to construct an aging clock. Here, researchers report on a clock derived from images of the nuclei of hematopoietic stem cells. Nuclear DNA exhibits structural changes in response to circumstances…",
+    "url": "https://www.fightaging.org/archives/2026/10/an-aging-clock-based-on-images-of-hematopoietic-stem-cell-nuclei/",
+    "top_development": false
+  },
+  {
+    "title": "K21 Improves Mitochondrial Function in Macrophages, Extending Life in Nematode Worms",
+    "source": "Fight Aging!",
+    "date": "2026-10-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The antimicrobial drug K21 acts via disruption of bacterial membranes, but is also known to produce improved wound healing, which suggests the involvement of mechanisms other than antimicrobial activity. Here, K21 is shown to favorably modulate macrophage activity, in that…",
+    "url": "https://www.fightaging.org/archives/2026/10/k21-improves-mitochondrial-function-in-macrophages-extending-life-in-nematode-worms/",
+    "top_development": false
+  },
+  {
+    "title": "The Biomarkers That Predict Mortality Risk",
+    "source": "Lifespan.io",
+    "date": "2026-10-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers have discovered key biomarkers that are strongly linked to all-cause mortality and identified four measurements with independent predictive power. Biological versus chronological This paper opens with a discussion of a familiar fact for people interested in living…",
+    "url": "https://lifespan.io/the-biomarkers-that-predict-mortality-risk/",
+    "top_development": false
+  },
+  {
+    "title": "STAT+: Nobel-winning optogenetics research has led to experimental treatments for blindness and Alzheimer’s",
+    "source": "STAT News",
+    "date": "2026-10-05",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Optogenetics is now the foundational way through which we are able to understand how the brain works",
+    "url": "https://www.statnews.com/2026/10/05/2026-nobel-prize-winning-optogenetics-research-explained/?utm_campaign=rss",
+    "top_development": false
+  },
+  {
+    "title": "Anti-Inflammatory Drug Target for Alzheimer’s, TBI, and Neurodegenerative Disease Identified",
+    "source": "GEN",
+    "date": "2026-10-05",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "A study in human monocyte-derived microglia and human brain tissue slices suggests that inflammatory brain conditions, including traumatic brain injury and neurodegenerative diseases such as Alzheimer's disease, could be treated using an existing drug candidate targeting P2X7R…",
+    "url": "https://www.genengnews.com/topics/drug-discovery/anti-inflammatory-drug-target-for-alzheimers-tbi-and-neurodegenerative-disease-identified/",
+    "top_development": false
+  },
+  {
+    "title": "Your gut may be making a molecule that raises Alzheimer’s risk",
+    "source": "ScienceDaily",
+    "date": "2026-10-03",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Scientists have linked a gut bacterial compound called ImP to greater Alzheimer’s risk, harmful brain protein buildup, and faster cognitive decline. The finding raises the possibility that reducing ImP in the blood could one day help slow or prevent dementia.",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260930225459.htm",
+    "top_development": true
+  },
+  {
+    "title": "Accelerated Epigenetic Aging Correlates with Later Loss of Memory Function",
+    "source": "Fight Aging!",
+    "date": "2026-10-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Aging clocks have yet to fulfill their promise, which is to produce a robust measure of biological aging that can be used to rapidly assess the results of potential therapies to slow or reverse the progression of aging, such as via repair of underlying cell and tissue damage…",
+    "url": "https://www.fightaging.org/archives/2026/10/accelerated-epigenetic-aging-correlates-with-later-loss-of-memory-function/",
+    "top_development": false
+  },
+  {
+    "title": "Where Next For Present Stem Cell Therapies?",
+    "source": "Fight Aging!",
+    "date": "2026-10-02",
+    "category": "Research",
+    "importance": "high",
+    "description": "First generation stem cell therapies have become widespread; they are readily accessed in medical tourism clinics, and are also available for a range of issues in more regulated parts of the world. Initially it was hoped that transplanted cells would engraft and survive to…",
+    "url": "https://www.fightaging.org/archives/2026/10/where-next-for-present-stem-cell-therapies/",
+    "top_development": true
+  },
+  {
+    "title": "Polyamines from the Gut Microbiome Affect Life Span in Flies",
+    "source": "Fight Aging!",
+    "date": "2026-10-02",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The commensal microbes of the gut microbiome generate a range of metabolites that are beneficial or necessary to cell function. Levels of a number of these metabolites have been shown to decline with age as the composition of the gut microbiome changes for the worse. Overall the…",
+    "url": "https://www.fightaging.org/archives/2026/10/polyamines-from-the-gut-microbiome-affect-life-span-in-flies/",
+    "top_development": false
+  },
+  {
+    "title": "FDA Leaders Name Longevity a Priority at ARDD",
+    "source": "Lifespan.io",
+    "date": "2026-10-02",
+    "category": "Research",
+    "importance": "high",
+    "description": "At a panel in Boston, senior officials announced plans to include aging in the agency’s regulatory science agenda and discussed how therapies could move toward approval. Longevity has a partner […]",
+    "url": "https://lifespan.io/fda-leaders-name-longevity-a-priority-at-ardd/",
+    "top_development": true
+  },
+  {
+    "title": "Global Leaders in Geroscience Convene for Biomarkers of Aging",
+    "source": "Lifespan.io",
+    "date": "2026-10-01",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "The Biomarkers of Aging Consortium will host its fourth annual Biomarkers of Aging Conference on October 5 and 6, 2026, at the Joseph B. Martin Conference Center at Harvard Medical School. The meeting brings together academic, clinical, industry, regulatory, and […]",
+    "url": "https://lifespan.io/global-leaders-in-geroscience-convene-for-biomarkers-of-aging/",
+    "top_development": false
+  },
+  {
+    "title": "Rejuvenation Roundup September 2026",
+    "source": "Lifespan.io",
+    "date": "2026-10-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Which generation will be considered “the last to die” of age-related diseases is ultimately a question of technological development and deployment. Here’s what’s been done on that front in September. […]",
+    "url": "https://lifespan.io/rejuvenation-roundup-september-2026/",
+    "top_development": false
+  },
+  {
+    "title": "This diet may slow brain aging by 2.5 years",
+    "source": "ScienceDaily",
+    "date": "2026-10-01",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "People who followed the MIND diet more closely showed slower brain shrinkage and less grey matter loss over time, with the strongest differences equivalent to about 2.5 years of delayed brain aging. Berries and poultry were linked with healthier brain changes, while sweets and…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260930225503.htm",
+    "top_development": false
+  },
+  {
+    "title": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
+    "source": "ScienceDaily",
+    "date": "2026-10-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets for Alzheimer’s, Parkinson’s, and other…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
+    "top_development": false
+  },
+  {
+    "title": "1 in 13 adults under 30 already had hidden artery plaque",
+    "source": "ScienceDaily",
+    "date": "2026-10-01",
+    "category": "Research",
+    "importance": "normal",
+    "description": "More than half of 16,000 apparently healthy adults had signs of atherosclerosis, with arterial plaques already detectable in about 1 in 13 people ages 18 to 29. Researchers say directly imaging the arteries could reveal hidden cardiovascular disease years or even decades before…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260929053541.htm",
     "top_development": false
   },
   {
@@ -35,118 +225,8 @@
     "date": "2026-09-29",
     "category": "Research",
     "importance": "normal",
-    "description": "A new preprint study suggests that transplanted hearts’ epigenetic age and possibly function are influenced by their recipients’ age. The findings can be relevant to both expanding the donor pool and rejuvenation through organ replacement [1]. The heart of the […]",
+    "description": "A new preprint study suggests that transplanted hearts’ epigenetic age and possibly function are influenced by their recipients’ age. The […]",
     "url": "https://lifespan.io/transplanted-hearts-shift-toward-recipients-molecular-age/",
-    "top_development": false
-  },
-  {
-    "title": "Junevity takes gene-network reset into skincare",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "Amorepacific deal puts therapeutic target discovery to work on skin aging – and Junevity sees scope for an ‘Ozempic moment’. San Francisco biotech Junevity is taking its gene-network approach to aging into skincare through a collaboration with Korean beauty and wellness group…",
-    "url": "https://longevity.technology/news/junevity-takes-gene-network-reset-into-skincare/",
-    "top_development": false
-  },
-  {
-    "title": "Johns Hopkins team wins $1m XPRIZE for immune aging research",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Funding",
-    "importance": "high",
-    "description": "Dr Sean Leng and the Johns Hopkins-SunInflam team land a $1 million XPRIZE Healthspan Milestone 2 award for aging research. Part of a ten-part series profiling each of the $101 million XPRIZE Healthspan competition’s Milestone 2 Awardees. Across the series, Longevity.Technology…",
-    "url": "https://longevity.technology/news/johns-hopkins-team-wins-1m-xprize-for-immune-aging-research/",
-    "top_development": true
-  },
-  {
-    "title": "Lysoway drug tackles two brain diseases in mice",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "LW-1017, an oral drug that switches the brain’s cleanup system back on, reduced Parkinson’s and Alzheimer’s pathology in aged mouse models. Inside almost every cell there are small compartments called lysosomes, and they work a bit like a recycling plant. Worn-out parts and…",
-    "url": "https://longevity.technology/news/lysoway-drug-tackles-two-brain-diseases-in-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Heartseed eyes Japan approval for heart cell therapy",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "One-year results for the open-chest version look promising, the company says, and a catheter-based method is now enrolling patients. Current treatments for severe heart failure can help manage symptoms and slow progression. Replacing heart muscle that has already been lost is a…",
-    "url": "https://longevity.technology/news/heartseed-eyes-japan-approval-for-heart-cell-therapy/",
-    "top_development": true
-  },
-  {
-    "title": "AbbVie Juvmo approved by FDA for Parkinson’s disease",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "AbbVie announced that the FDA has approved Juvmo (tavapadon) tablets to treat adults with Parkinson’s disease. The company says Juvmo is the first and only selective d1/d5 receptor agonist approved for this use and can be taken once daily with or without levodopa. According to…",
-    "url": "https://longevity.technology/news/abbvie-juvmo-approved-by-fda-for-parkinsons-disease/",
-    "top_development": true
-  },
-  {
-    "title": "Arvinas advances new oral immunotherapy into Phase 1 clinical trial",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Arvinas announced that the first participant has been dosed in its Phase 1/2 clinical trial of ARV-6723, an investigational oral PROTAC designed to degrade hematopoietic progenitor kinase 1 in adults with advanced solid tumors. The ARV-6723-101 trial is a global, multicenter…",
-    "url": "https://longevity.technology/news/arvinas-advances-new-oral-immunotherapy-into-phase-1-clinical-trial/",
-    "top_development": true
-  },
-  {
-    "title": "4DMT advances 4D-150 into Phase 3 for diabetic macular edema",
-    "source": "Longevity.Technology",
-    "date": "2026-09-29",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "4DMT has enrolled first patients in its 4SIGHT global Phase 3 trial evaluating 4D-150 in treatment-naïve diabetic macular edema. The randomized, double-masked, aflibercept 2 mg (Q8W) comparator-controlled study will enroll 514 patients with a primary endpoint of non-inferiority…",
-    "url": "https://longevity.technology/news/4dmt-advances-4d-150-into-phase-3-for-diabetic-macular-edema/",
-    "top_development": false
-  },
-  {
-    "title": "How Cells Respond Differently to a Cancer-Causing Gene",
-    "source": "GEN",
-    "date": "2026-09-29",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Chemotherapies frequently cause cancer cells to enter senescence, but do not fully eliminate these cells. Therefore, it is useful to target these therapy-induced senescent cells with senolytics that eliminate them. The post How Cells Respond Differently to a Cancer-Causing Gene…",
-    "url": "https://www.genengnews.com/topics/cancer/how-cells-respond-differently-to-a-cancer-causing-gene/",
-    "top_development": false
-  },
-  {
-    "title": "PD-L1 Blockade in the Brain Restores Measures of Glial Cell Function",
-    "source": "Fight Aging!",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "high",
-    "description": "PD-L1 found on the surface of cells is a well known immune checkpoint protein. When it binds to the receptor PD-1 found on the surface of T cells and B cells, it acts to suppress immune activity. This is a necessary brake to avoid runaway immune reactions, but because it is also…",
-    "url": "https://www.fightaging.org/archives/2026/09/pd-l1-blockade-in-the-brain-restores-measures-of-glial-cell-function/",
-    "top_development": false
-  },
-  {
-    "title": "Raman Microscopy as a Potential Basis for Non-Invasive Assessment of the Burden of Senescent Cells",
-    "source": "Fight Aging!",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers here provide a proof of concept for the use of Raman spectroscopy to non-invasively measure the burden of senescent cells in an imaged tissue. This works because Raman imaging can provide distinct signatures of different molecules via scattering of photons. Provided…",
-    "url": "https://www.fightaging.org/archives/2026/09/raman-microscopy-as-a-potential-basis-for-non-invasive-assessment-of-the-burden-of-senescent-cells/",
-    "top_development": false
-  },
-  {
-    "title": "Is Repeated DNA Damage Response Activation a Meaningful Cause of Aging?",
-    "source": "Fight Aging!",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "One of the more interesting new concepts in aging research is that repeated activation of the DNA damage response may cause epigenetic changes in the management of nuclear DNA structure that are characteristic of aging. It neatly explains how stochastic DNA damage to unused DNA…",
-    "url": "https://www.fightaging.org/archives/2026/09/is-repeated-dna-damage-response-activation-a-meaningful-cause-of-aging/",
     "top_development": false
   },
   {
@@ -155,58 +235,8 @@
     "date": "2026-09-28",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have created a deep learning-based biomarker, SASP Score, that evaluates the combined effects of the senescence-associated secretory phenotype (SASP) circulating in the bloodstream. Measuring an overall […]",
+    "description": "Researchers have created a deep learning-based biomarker, SASP Score, that evaluates the combined effects of the senescence-associated secretory phenotype (SASP) circulating in the bloodstream. Measuring […]",
     "url": "https://lifespan.io/a-new-metric-for-overall-senescent-cell-burden/",
-    "top_development": false
-  },
-  {
-    "title": "Longevity clinics come of age in a growing, global field",
-    "source": "Longevity.Technology",
-    "date": "2026-09-28",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "The 4th Roundtable of Longevity Clinics meets at the Buck Institute to shape the evidence and standards longevity medicine still needs. The Roundtable of Longevity Clinics returns to Novato this October for its fourth outing, and the invitation this time carries a slightly…",
-    "url": "https://longevity.technology/news/longevity-clinics-come-of-age-in-a-growing-global-field/",
-    "top_development": false
-  },
-  {
-    "title": "When supplements don’t make it past the gut",
-    "source": "Longevity.Technology",
-    "date": "2026-09-28",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "As longevity moves toward increasingly personalized interventions, bioavailability could become as important as the compounds themselves. The longevity industry has become very good at asking what we should take. Less attention is paid to a more basic question: where does it…",
-    "url": "https://longevity.technology/news/when-supplements-dont-make-it-past-the-gut/",
-    "top_development": false
-  },
-  {
-    "title": "Longevity biotech’s $173 billion in waiting",
-    "source": "Longevity.Technology",
-    "date": "2026-09-28",
-    "category": "Funding",
-    "importance": "high",
-    "description": "A further $173 billion a year is real on paper – but only once three separate regulatory clocks finish running down. With thanks to MuseCell Innovations, sponsor of the Longevity Biotech Report. The $230 billion pipeline needs nothing from anyone. It exists inside disease…",
-    "url": "https://longevity.technology/news/longevity-biotechs-173-billion-in-waiting/",
-    "top_development": false
-  },
-  {
-    "title": "Serina’s new Parkinson’s therapy clears first safety hurdle",
-    "source": "Longevity.Technology",
-    "date": "2026-09-28",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "Slow-release apomorphine patch just passed first blinded review, and company says the early numbers already look like what it hoped for. There’s a moment in advanced Parkinson’s disease that doctors call “OFF” time. It’s when the pills stop working mid-cycle, and a person who…",
-    "url": "https://longevity.technology/news/serinas-new-parkinsons-therapy-clears-first-safety-hurdle/",
-    "top_development": false
-  },
-  {
-    "title": "Liver disease trial finishes dosing all patients",
-    "source": "Longevity.Technology",
-    "date": "2026-09-28",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Resolution Therapeutics has treated its last EMERALD trial patient, putting macrophage-based therapy on track for results before year’s end. Liver transplants save lives, but there simply aren’t enough livers to go around. For patients with end-stage liver disease, that scarcity…",
-    "url": "https://longevity.technology/news/liver-disease-trial-finishes-dosing-all-patients/",
     "top_development": false
   },
   {
@@ -220,36 +250,6 @@
     "top_development": false
   },
   {
-    "title": "STAT+: AbbVie wins FDA nod for Parkinson’s pill",
-    "source": "STAT News",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "high",
-    "description": "The FDA has approved AbbVie’s once-daily Parkinson’s pill for sales, based on a late-stage study that showed the drug helped improve symptoms.",
-    "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/?utm_campaign=rss",
-    "top_development": false
-  },
-  {
-    "title": "Antibody Blocks T Cell Infiltration and Limits Neurodegeneration in Alzheimer’s Mice",
-    "source": "GEN",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Researchers developed a potential antibody-based approach to reducing neurodegeneration in tauopathies, with studies showing that in a mouse Alzheimer’s model anti-CXCR3-treated animals retained more brain tissue and had better memory, even though tau levels stayed the same. The…",
-    "url": "https://www.genengnews.com/topics/translational-medicine/antibody-blocks-t-cell-infiltration-and-limits-neurodegeneration-in-alzheimers-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Scientists Observe Enzymes Breaking Down DNA in Real Time",
-    "source": "GEN",
-    "date": "2026-09-28",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The research may be useful for the development of DNA-based therapeutics and gene-delivery systems. Packaging genetic material into structures that restrict nuclease access could potentially increase its resistance to degradation. The post Scientists Observe Enzymes Breaking…",
-    "url": "https://www.genengnews.com/topics/omics/scientists-observe-enzymes-breaking-down-dna-in-real-time/",
-    "top_development": false
-  },
-  {
     "title": "Glucosamine, a popular joint supplement, linked to faster Alzheimer’s progression",
     "source": "ScienceDaily",
     "date": "2026-09-27",
@@ -260,42 +260,12 @@
     "top_development": false
   },
   {
-    "title": "A Unified Cause for Loss of Type 1 Dendritic Cell Function in Aging, Cancer, and Chronic Infection",
-    "source": "Fight Aging!",
-    "date": "2026-09-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Type 1 conventional dendritic cells are a subclass of dendritic cell known to be an important component of the immune response to pathogens and cancerous cells, particularly focused on stimulating the activity of cytotoxic T cells. The cancer research community, as is often the…",
-    "url": "https://www.fightaging.org/archives/2026/09/a-unified-cause-for-loss-of-type-1-dendritic-cell-function-in-aging-cancer-and-chronic-infection/",
-    "top_development": false
-  },
-  {
-    "title": "Known Cancer-Associated Genetic Sequences are More Conserved in Long-Lived Species",
-    "source": "Fight Aging!",
-    "date": "2026-09-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Suppression of cancer is a necessary component of species longevity, and finding out how exactly cancer incidence is in some cases dramatically reduced is one of the primary goals for the field of comparative biology. Here, researchers survey known cancer-associated sequences…",
-    "url": "https://www.fightaging.org/archives/2026/09/known-cancer-associated-genetic-sequences-are-more-conserved-in-long-lived-species/",
-    "top_development": false
-  },
-  {
-    "title": "Arguing for Some Age-Related Changes in Cognitive Function to be Adaptive and Programmed",
-    "source": "Fight Aging!",
-    "date": "2026-09-25",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Here find a small slice of programmed aging consideration focused on some of the changes in cognitive function that take place in later life. The researchers argue that a shift in focus to integration of information, characterized by a loss of precision in episodic memory, is…",
-    "url": "https://www.fightaging.org/archives/2026/09/arguing-for-some-age-related-changes-in-cognitive-function-to-be-adaptive-and-programmed/",
-    "top_development": false
-  },
-  {
     "title": "Creatine Protects Lean Mass Even Without Exercise",
     "source": "Lifespan.io",
     "date": "2026-09-25",
     "category": "Protocols",
     "importance": "normal",
-    "description": "According to a new study, creatine supplementation might help maintain and increase lean mass even without diet or exercise. It also enhanced the effects of a combined diet and exercise intervention [1]. How to lose weight […]",
+    "description": "According to a new study, creatine supplementation might help maintain and increase lean mass even without diet or exercise. It also enhanced […]",
     "url": "https://lifespan.io/creatine-protects-lean-mass-even-without-exercise/",
     "top_development": false
   },
@@ -315,7 +285,7 @@
     "date": "2026-09-24",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have discovered that BNIP3, which regulates mitochondrial maintenance, is increased with aging, harming the heart’s ability to process energy. Mitochondrial transplantation was found to be effective against this increase in a mouse model. The heart needs […]",
+    "description": "Researchers have discovered that BNIP3, which regulates mitochondrial maintenance, is increased with aging, harming the heart’s ability to process energy. Mitochondrial transplantation was found to be effective against this increase in a mouse model. The heart […]",
     "url": "https://lifespan.io/giving-cells-fresh-mitochondria-helps-clear-damaged-ones/",
     "top_development": false
   },
@@ -325,7 +295,7 @@
     "date": "2026-09-23",
     "category": "Research",
     "importance": "normal",
-    "description": "Results from a recent study suggest a delay in ovarian aging in mice following treadmill training; this effect was mediated by adiponectin. Pharmacologically […]",
+    "description": "Results from a recent study suggest a delay in ovarian aging in mice following treadmill training; this effect was mediated by adiponectin. Pharmacologically activating adiponectin receptors extended reproductive span in mice. [1] Beyond reproduction The female reproductive…",
     "url": "https://lifespan.io/physical-activity-delays-ovarian-aging-in-mice/",
     "top_development": false
   },
@@ -337,16 +307,6 @@
     "importance": "high",
     "description": "A topical drug that removes aging, damaged cells helped older mice heal skin wounds significantly faster. The treatment appeared to reactivate repair pathways involved in inflammation, collagen production, and new blood vessel growth.",
     "url": "https://www.sciencedaily.com/releases/2026/09/260922223008.htm",
-    "top_development": false
-  },
-  {
-    "title": "Transplanted Immune Cells Donate Mitochondria to Neighbors",
-    "source": "Lifespan.io",
-    "date": "2026-09-22",
-    "category": "Research",
-    "importance": "normal",
-    "description": "According to a new study using a mouse model of a rare disease, transplanted immune cells donate their mitochondria to neighboring donor cells, improving energy production and rescuing […]",
-    "url": "https://lifespan.io/transplanted-immune-cells-donate-mitochondria-to-neighbors/",
-    "top_development": false
+    "top_development": true
   }
 ]
