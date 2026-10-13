@@ -2,6 +2,11 @@ name: Weekly Longevity Update
 on:
   schedule:
     - cron: "52 12 * * 2"   # Tue ~08:52 ET. Off-the-hour on purpose: "0 13" is congested
+    # Backups. GitHub delays scheduled runs by hours and sometimes drops them outright
+    # (no run at all on 2026-09-22). Each backup skips itself if an update already landed
+    # in the last 3 days, so on a normal week they do nothing.
+    - cron: "17 20 * * 2"   # Tue ~16:17 ET
+    - cron: "23 13 * * 3"   # Wed ~09:23 ET
   workflow_dispatch: {}     # allow manual run from the Actions tab
 permissions:
   contents: write
@@ -14,16 +19,40 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with: { fetch-depth: 50 }   # history for the backup guard below
+      # Backup runs skip if a weekly update commit is under 72h old, so they only act
+      # when the primary was dropped or is still stuck in GitHub's queue. The primary
+      # and manual runs (workflow_dispatch) always proceed.
+      - name: Skip backup if this week's update already landed
+        id: guard
+        if: github.event_name == 'schedule' && github.event.schedule != '52 12 * * 2'
+        shell: bash
+        run: |
+          # Fetch: a run queued behind another (concurrency group) checked out an older sha.
+          git fetch --quiet origin main
+          last=$(git log -1 --format=%ct --grep='^Weekly update — ' FETCH_HEAD || true)
+          now=$(date +%s)
+          if [ -n "$last" ] && [ $(( now - last )) -lt $(( 72 * 3600 )) ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Backup skipped: last weekly update was $(( (now - last) / 3600 ))h ago." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "Backup running: no weekly update in the last 72h." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - uses: actions/setup-python@v6
+        if: steps.guard.outputs.skip != 'true'
         with: { python-version: "3.12" }
       # No ANTHROPIC_API_KEY needed — news is scraped from public RSS feeds.
       - run: pip install feedparser yfinance
+        if: steps.guard.outputs.skip != 'true'
       - name: Refresh dashboard data
+        if: steps.guard.outputs.skip != 'true'
         shell: bash
         run: |
           set -o pipefail
           python scripts/update_dashboard.py 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Commit & push if changed
+        if: steps.guard.outputs.skip != 'true'
         shell: bash
         run: |
           git config user.name "wsseery"
