@@ -1,5 +1,15 @@
 [
   {
+    "title": "A Review of Differences Identified in Gut Microbiome Composition Between Young, Old, and Long-Lived Individuals",
+    "source": "Fight Aging!",
+    "date": "2026-10-13",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The gut microbiome changes with age in ways that are not favorable to health. Microbes that provoke inflammation and tissue dysfunction grow in number, replacing those microbes that generate beneficial metabolites. There are many plausible contributions to this process of…",
+    "url": "https://www.fightaging.org/archives/2026/10/a-review-of-differences-identified-in-gut-microbiome-composition-between-young-old-and-long-lived-individuals/",
+    "top_development": false
+  },
+  {
     "title": "Second Century Foundation Launches to Advocate for Longevity Research",
     "source": "Fight Aging!",
     "date": "2026-10-13",
@@ -25,9 +35,39 @@
     "date": "2026-10-13",
     "category": "Protocols",
     "importance": "normal",
-    "description": "A human trial found that even without caloric restriction, a low-fat, plant-based diet improved blood sugar control, reduced liver fat, and lowered the quantity of advanced glycation end products (AGEs) in the skin [1]. An all-you-can-eat vegan buffet […]",
+    "description": "A human trial found that even without caloric restriction, a low-fat, plant-based diet improved blood sugar control, reduced liver fat, and lowered the quantity of advanced glycation end […]",
     "url": "https://lifespan.io/low-fat-vegan-diet-shows-benefits-in-type-2-diabetes/",
     "top_development": false
+  },
+  {
+    "title": "Rubedo reports younger skin age in Phase 1b trial",
+    "source": "Longevity.Technology",
+    "date": "2026-10-13",
+    "category": "Funding",
+    "importance": "high",
+    "description": "GPX4-targeting therapy reduces epigenetic age markers and circulating inflammation, raising questions about effects beyond treated skin. Rubedo Life Sciences has reported a statistically significant reduction in measured skin epigenetic age following treatment with its…",
+    "url": "https://longevity.technology/news/rubedo-reports-younger-skin-age-in-phase-1b-trial/",
+    "top_development": true
+  },
+  {
+    "title": "Abu Dhabi puts biological age to the test",
+    "source": "Longevity.Technology",
+    "date": "2026-10-13",
+    "category": "Industry",
+    "importance": "normal",
+    "description": "A two-year partnership with Ultrahuman aims to connect clinical biomarkers and wearable data, bringing aging assessment into public health. Ask a longevity clinic how old you really are and the answer tends to arrive as a single, faintly flattering number. Ask a government how…",
+    "url": "https://longevity.technology/news/abu-dhabi-puts-biological-age-to-the-test/",
+    "top_development": false
+  },
+  {
+    "title": "Variant Bio extends AI genetics deal to the heart",
+    "source": "Longevity.Technology",
+    "date": "2026-10-13",
+    "category": "Industry",
+    "importance": "high",
+    "description": "Boehringer Ingelheim widens its kidney-disease partnership to cardiovascular targets, in a deal that could exceed $250 million. Some people seem to have gotten lucky with their genes. They stay healthy in situations where others don’t, and drug hunters have long wondered what…",
+    "url": "https://longevity.technology/news/variant-bio-extends-ai-genetics-deal-to-the-heart/",
+    "top_development": true
   },
   {
     "title": "Function, Google partner to connect habits with body data",
@@ -67,7 +107,7 @@
     "importance": "high",
     "description": "Scientists have discovered that the body's cellular recycling system behaves very differently during aging than previously believed, with higher activity sometimes linked to worse physical health. A small study suggests that even gentle exercise could help restore more youthful…",
     "url": "https://www.sciencedaily.com/releases/2026/10/261012185009.htm",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "Age-Related Decline in Chaperone-Mediated Autophagy Impairs Clearance of Senescence Cells",
@@ -87,7 +127,7 @@
     "importance": "high",
     "description": "Functional connectivity is a measure of neuronal activity over time in different parts of the brain, assessed using MRI to detect the increased blood flow that accompanies increased neuronal activity. Researchers here demonstrate that changes in functional connectivity observed…",
     "url": "https://www.fightaging.org/archives/2026/10/functional-connectivity-changes-in-the-aging-brain-are-different-in-alzheimers-disease-patients/",
-    "top_development": true
+    "top_development": false
   },
   {
     "title": "Transcriptomic Approaches to Guiding the Discovery of Geroprotective Compounds",
@@ -105,7 +145,7 @@
     "date": "2026-10-12",
     "category": "Research",
     "importance": "high",
-    "description": "In Aging Cell, a team of researchers has described how a little-known gene, ZNF865, has a significant influence on back pain through the regulation of cellular senescence. Lower back pain and senescence are related The link […]",
+    "description": "In Aging Cell, a team of researchers has described how a little-known gene, ZNF865, has a significant influence on back pain through the regulation of cellular senescence. Lower […]",
     "url": "https://lifespan.io/an-anti-senescence-gene-may-fight-spinal-disc-deterioration/",
     "top_development": false
   },
@@ -170,36 +210,6 @@
     "top_development": false
   },
   {
-    "title": "Avaí Bio, Austrianova, Ospedale San Raffaele launch joint diabetes research program",
-    "source": "Longevity.Technology",
-    "date": "2026-10-12",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Avaí Bio and Austrianova held a first joint steering committee meeting with Ospedale San Raffaele on 7 October 2026 to align an initial research program evaluating an encapsulated beta-cell replacement approach for insulin-dependent diabetes. The meeting brought together…",
-    "url": "https://longevity.technology/news/avai-bio-austrianova-ospedale-san-raffaele-launch-joint-diabetes-research-program/",
-    "top_development": false
-  },
-  {
-    "title": "Restore, Niagen Bioscience launch Longevity Month to promote healthspan",
-    "source": "Longevity.Technology",
-    "date": "2026-10-12",
-    "category": "Industry",
-    "importance": "high",
-    "description": "Restore Hyper Wellness and Niagen Bioscience have launched a joint initiative declaring October as Longevity Month to emphasize healthspan over lifespan. The program pairs Restore, which the company describes as the nation’s largest provider of science-backed, personalized…",
-    "url": "https://longevity.technology/news/restore-niagen-bioscience-launch-longevity-month-to-promote-healthspan/",
-    "top_development": false
-  },
-  {
-    "title": "Experimental eye treatment shows early promise in small glaucoma trial",
-    "source": "Longevity.Technology",
-    "date": "2026-10-12",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Life Biosciences released interim Phase 1 data from an ongoing open-label trial of ER-100 in three adults with open-angle glaucoma. The company reported that a single intravitreal administration of Dose Level 1 ER-100 (2×10^11 vg) combined with daily oral doxycycline to induce…",
-    "url": "https://longevity.technology/news/experimental-eye-treatment-shows-early-promise-in-small-glaucoma-trial/",
-    "top_development": false
-  },
-  {
     "title": "Scientists find hidden driver of aging and a simple amino acid that fights memory loss in mice",
     "source": "ScienceDaily",
     "date": "2026-10-12",
@@ -245,7 +255,7 @@
     "date": "2026-10-09",
     "category": "Biotech",
     "importance": "normal",
-    "description": "A new study highlights a fatty acid produced by a particular genus of bacteria as a “natural statin,” suggesting a new way of treating atherosclerosis [1]. Bacteria and cholesterol Atherosclerosis […]",
+    "description": "A new study highlights a fatty acid produced by a particular genus of bacteria as a “natural statin,” suggesting a new way of treating atherosclerosis [1]. Bacteria and cholesterol Atherosclerosis develops when cholesterol-rich particles accumulate in […]",
     "url": "https://lifespan.io/gut-bacteria-molecule-slows-atherosclerosis-in-mice/",
     "top_development": false
   },
@@ -260,16 +270,6 @@
     "top_development": false
   },
   {
-    "title": "STAT+: Will MAHA survive the midterms?",
-    "source": "STAT News",
-    "date": "2026-10-09",
-    "category": "Research",
-    "importance": "normal",
-    "description": "As the midterm elections draw near, the MAHA movement is nearly invisible on the campaign trail and struggling to find a financial or messaging foothold in key races.",
-    "url": "https://www.statnews.com/2026/10/09/maha-movement-rfk-jr-campaign-trail-midterm-elections/?utm_campaign=rss",
-    "top_development": false
-  },
-  {
     "title": "Immune Cell Atlas Charts How People’s Aging Paths Diverge",
     "source": "GEN",
     "date": "2026-10-09",
@@ -280,32 +280,12 @@
     "top_development": false
   },
   {
-    "title": "Trends in NGS",
-    "source": "GEN",
-    "date": "2026-10-09",
-    "category": "Research",
-    "importance": "high",
-    "description": "Next-gen sequencing is leveraging AI, multiomics assays, streamlined workflows and other approaches to deliver richer content at ever-lower overall costs. The post Trends in NGS appeared first on GEN - Genetic Engineering and Biotechnology News.",
-    "url": "https://www.genengnews.com/topics/omics/trends-in-ngs/",
-    "top_development": false
-  },
-  {
-    "title": "Succinate Dehydrogenase as a Regulator of the Regenerative Capacity of the Heart",
-    "source": "Fight Aging!",
-    "date": "2026-10-08",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The tissues of the mammalian body span a broad range of regenerative capacity, from the highly regenerative liver to the minimal regenerative capabilities of the brain and the heart. We might speculate that the evolutionary road to a reduced capability of regeneration in the…",
-    "url": "https://www.fightaging.org/archives/2026/10/succinate-dehydrogenase-as-a-regulator-of-the-regenerative-capacity-of-the-heart/",
-    "top_development": false
-  },
-  {
     "title": "Untangling Differences in Senescent Cellular Signaling",
     "source": "Lifespan.io",
     "date": "2026-10-08",
     "category": "Research",
     "importance": "normal",
-    "description": "In Aging, researchers have described the differences between the secretions of cells driven senescent through a cancer gene and cells that stopped proliferating due […]",
+    "description": "In Aging, researchers have described the differences between the secretions of cells driven senescent through a cancer gene and cells that stopped proliferating due to p16 expression. A difference of kind The SASP […]",
     "url": "https://lifespan.io/untangling-differences-in-senescent-cellular-signaling/",
     "top_development": false
   },
@@ -315,7 +295,7 @@
     "date": "2026-10-07",
     "category": "Research",
     "importance": "normal",
-    "description": "With more than 860 evidence reviews on health and longevity interventions, Evipedia is now probably one of the deepest online sources in this […]",
+    "description": "With more than 860 evidence reviews on health and longevity interventions, Evipedia is now probably one of the deepest online sources in this area. We have always been extremely open to sharing our data […]",
     "url": "https://lifespan.io/evipedia-goes-hugging-face/",
     "top_development": false
   },
@@ -325,7 +305,7 @@
     "date": "2026-10-06",
     "category": "Research",
     "importance": "normal",
-    "description": "A new study links an age-related decline in cellular maintenance to impaired immune clearance. Activating the pathway reduced signs of senescence in aged mice [1]. Senescence and autophagy Cellular […]",
+    "description": "A new study links an age-related decline in cellular maintenance to impaired immune clearance. Activating the pathway reduced signs of senescence in aged […]",
     "url": "https://lifespan.io/declining-autophagy-impairs-senescent-cell-clearance/",
     "top_development": false
   },
@@ -335,7 +315,7 @@
     "date": "2026-10-05",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers have discovered key biomarkers that are strongly linked to all-cause mortality and identified four measurements with independent predictive power. […]",
+    "description": "Researchers have discovered key biomarkers that are strongly linked to all-cause mortality and identified four measurements with independent predictive power. Biological versus chronological This paper opens with a discussion of a familiar fact […]",
     "url": "https://lifespan.io/the-biomarkers-that-predict-mortality-risk/",
     "top_development": false
   },
