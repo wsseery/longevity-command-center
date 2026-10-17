@@ -83,6 +83,12 @@ CLAIM = re.compile(r"\b(cures?|treats|prevents|mitigates|revers(?:es|ing) (?:agi
 LCC = ("Longevity Command Center is educational content only. It is not medical advice, "
        "diagnosis, or treatment. Always consult your physician before starting any supplement, "
        "exercise, or health intervention. Nothing here has been evaluated by the FDA.")
+# The FDA structure/function disclaimer, required on any page offering the
+# Precision Nutrition service (LEGAL_DISCLAIMERS.md, added 2026-10-10). It says
+# supplements are "not intended to ... cure", the opposite of a claim. Only this
+# sentence is skipped, so the rest of that block is still checked.
+FDA = ("Dietary supplements are not intended to diagnose, treat, cure, or prevent "
+       "any disease.")
 INVEST = ("The financial information on this page is provided for general informational and "
           "educational purposes only and is not investment advice.")
 INVEST_PAGES = {"finance.html", "index.html"}
@@ -120,9 +126,10 @@ def main():
             failures.append(f"`{path}`: adds something shaped like an SSN (###-##-####)")
 
         # Claims: compare the readable text, with the disclaimer itself removed
-        # (it says "not ... treatment", which is the opposite of a claim).
-        read_after = (visible(after) if is_page else after).replace(LCC, "")
-        read_before = (visible(before) if is_page else before).replace(LCC, "")
+        # (it says "not ... treatment", which is the opposite of a claim), and
+        # likewise the FDA sentence.
+        read_after = (visible(after) if is_page else after).replace(LCC, "").replace(FDA, "")
+        read_before = (visible(before) if is_page else before).replace(LCC, "").replace(FDA, "")
         words_before = [m.group(0).lower() for m in CLAIM.finditer(read_before)]
         for word in sorted({m.group(0).lower() for m in CLAIM.finditer(read_after)}):
             hits = [m for m in CLAIM.finditer(read_after) if m.group(0).lower() == word]
