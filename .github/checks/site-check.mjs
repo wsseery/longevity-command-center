@@ -46,9 +46,13 @@ const linkCache = new Map();
 
 // A problem's identity, stable across unrelated edits: list positions and
 // pixel counts move whenever a news item is added, so they are not part of it.
+// Nor is a link's href in an axe selector: axe picks whatever fragment is
+// unique ($="news.html", ="/blog-x", $="x"), so renaming a URL re-keys every
+// old problem on that link. The page, element path and message still are.
 const keyOf = (text) => text
   .replace(/:nth-child\(\d+\)/g, ':nth-child(n)')
-  .replace(/\d+px/g, 'Npx');
+  .replace(/\d+px/g, 'Npx')
+  .replace(/\[href[$^*]?="[^"]*"\]/g, '[href]');
 
 async function checkLink(request, href, external) {
   if (linkCache.has(href)) return linkCache.get(href);
