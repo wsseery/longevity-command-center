@@ -25,8 +25,9 @@ import { AxeBuilder } from '@axe-core/playwright';
 
 const [headPort, basePort, ...paths] = process.argv.slice(2);
 const base = 'http://longevitycommandcenter.com';
+// Pages are checked at their canonical clean URL (news.html -> /news), as linked.
 const toUrl = (p) => (p === 'index.html' ? '/' : p.endsWith('/index.html')
-  ? '/' + p.slice(0, -'index.html'.length) : '/' + p);
+  ? '/' + p.slice(0, -'index.html'.length) : '/' + p.replace(/\.html$/, ''));
 const pages = [...new Set(['/', ...paths.map(toUrl)])];
 const changed = new Set(paths.map(toUrl));
 

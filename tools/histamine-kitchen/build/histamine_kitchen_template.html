@@ -22,6 +22,11 @@
 <meta property="og:description" content="440 foods, each carrying an independent histamine and lectin score. 143 of them disagree.">
 <meta property="og:url" content="https://longevitycommandcenter.com/tools/histamine-kitchen/">
 <meta property="og:image" content="https://longevitycommandcenter.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Longevity Command Center">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://longevitycommandcenter.com/og-image.png">
 <title>Crosscheck Kitchen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -229,16 +234,38 @@ textarea#paste{width:100%; min-height:240px; resize:vertical; line-height:1.7; f
 footer{border-top:1px solid var(--line); margin-top:44px; padding:20px 0 40px; font-size:12px; color:var(--muted)}
 footer p{max-width:78ch; margin:0 0 8px}
 
+/* Site links back to Longevity Command Center (SEO audit 2026-10-14: the tool linked nowhere). */
+.sitebar{background:var(--surface-2); border-bottom:1px solid var(--line); font-size:13px}
+.sitebar .wrap{display:flex; flex-wrap:wrap; align-items:center; gap:4px 16px; padding-top:7px; padding-bottom:7px}
+.sitebar a{color:var(--muted); text-decoration:none}
+.sitebar a:hover{color:var(--accent); text-decoration:underline}
+.sitebar .home{color:var(--ink); font-weight:600; margin-right:auto}
+footer .sitelinks{margin-top:14px; font-size:13px}
+footer .sitelinks a{color:var(--accent)}
+
 @media print{
-  header.top,.controls,.tabs,.rules,.btn,footer,#scanpanel{display:none!important}
+  .sitebar,header.top,.controls,.tabs,.rules,.btn,footer,#scanpanel{display:none!important}
   body{background:#fff; color:#000; font-size:11pt}
   .buildgrid{grid-template-columns:1fr}
   .rec,.card{box-shadow:none; border-color:#bbb; break-inside:avoid}
   .shopcols{columns:3}
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://longevitycommandcenter.com/tools/histamine-kitchen/#app","name":"Crosscheck Kitchen","url":"https://longevitycommandcenter.com/tools/histamine-kitchen/","description":"Free food checker: look up 440 foods on independent histamine (SIGHI), lectin and net-carb 0-3 scales, scan an ingredient list or build a menu. Runs in the browser. Educational, not medical advice.","applicationCategory":"LifestyleApplication","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","@id":"https://longevitycommandcenter.com/#organization","name":"Longevity Command Center"},"isPartOf":{"@id":"https://longevitycommandcenter.com/#website"},"inLanguage":"en"}
+</script>
 </head>
 <body>
+<nav class="sitebar" aria-label="Longevity Command Center">
+  <div class="wrap">
+    <a class="home" href="/">Longevity Command Center</a>
+    <a href="/nutrition">Food intolerance toolkit</a>
+    <a href="/blog">Blog</a>
+    <a href="/news">News</a>
+    <a href="/protocols">Protocols</a>
+    <a href="/compounds">Compounds</a>
+  </div>
+</nav>
 <header class="top">
   <div class="wrap topbar">
     <div class="mark">
@@ -364,7 +391,7 @@ footer p{max-width:78ch; margin:0 0 8px}
 <!-- ================= BUILD ================= -->
 <section class="panel" id="build">
   <div class="eyebrow">Menu generator</div>
-  <h1 style="font-size:31px; margin-top:4px">Build a menu that clears both scales</h1>
+  <h2 style="font-size:31px; margin-top:4px">Build a menu that clears both scales</h2>
   <p class="lede">Every dish is assembled only from ingredients that pass both ceilings, then re-scored at generation time. Where a recipe already specifies the peeling, deseeding or pressure-cooking, its lectin score reflects that.</p>
 
   <div class="buildgrid" style="margin-top:20px">
@@ -461,6 +488,7 @@ footer p{max-width:78ch; margin:0 0 8px}
   <p><b>Educational content only.</b> This tool is not medical advice, diagnosis, or treatment. Both intolerances are highly individual &mdash; the lists here are a starting point for an elimination-and-reintroduction protocol, not a verdict on any one person. Consult your physician before changing your diet, and keep your own food-and-symptom log as the final authority.</p>
   <p><b>Histamine (H)</b> ratings come from the SIGHI (Swiss Interest Group Histamine Intolerance) Food Compatibility List, cross-checked against the SIGHI elimination-diet leaflet. Entries marked <span class="chip q">UNCERTAIN</span> are printed with a "?" by SIGHI, derived from the nearest listed category, or disputed between sources.</p>
   <p><b>Lectin (L)</b> ratings are built from Dr. Steven Gundry's Plant Paradox food lists cross-checked against published lectin-content literature &mdash; phytohaemagglutinin in legumes, wheat germ agglutinin in grains, nightshade and cucurbit lectins, and A1 casein in cow dairy. This is a materially weaker and more contested evidence base than the histamine list, and the clinical significance of dietary lectins for most people remains disputed. Where a rating is unmeasured or disputed for a given food, the note says so.</p>
+  <p class="sitelinks">Part of <a href="/">Longevity Command Center</a> &middot; <a href="/nutrition">Food intolerance toolkit</a> &middot; <a href="/blog-crosscheck-kitchen">Inside the Crosscheck Kitchen</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/news">Longevity research news</a></p>
   <p style="margin-top:14px">Bill Seery &middot; <span class="mono">/BillSeery/09_Wellness/</span> &middot; v02</p>
 </footer>
 
