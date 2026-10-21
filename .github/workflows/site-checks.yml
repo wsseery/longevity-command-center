@@ -84,8 +84,9 @@ jobs:
           PAGES: ${{ steps.pages.outputs.list }}
         run: |
           git worktree add --detach /tmp/before "$BASE"
-          python3 -m http.server 8080 --bind 127.0.0.1 >/dev/null 2>&1 &
-          python3 -m http.server 8081 --bind 127.0.0.1 --directory /tmp/before >/dev/null 2>&1 &
+          # serve.py resolves /news to news.html, as Netlify does (links are clean URLs).
+          python3 .github/checks/serve.py 8080 . >/dev/null 2>&1 &
+          python3 .github/checks/serve.py 8081 /tmp/before >/dev/null 2>&1 &
           sleep 1
           node .github/checks/site-check.mjs 8080 8081 $PAGES
 

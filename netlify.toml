@@ -58,3 +58,82 @@
   to = "/404"
   status = 404
   force = true
+
+# PURPOSE: One URL per page. Clean URLs (/news, /blog-...) are canonical; the .html form
+#          301s to them so search engines stop indexing both.
+# TRIGGER: Every Netlify deploy of this repo.
+# OUTPUT:  301 from /<page>.html -> /<page>. /index.html is left alone: no link uses it, and a
+#          forced rule on the file that answers / is not worth the risk to the homepage.
+#
+# Added 2026-10-20 (SEO audit 2026-10-14, P1 #6). Netlify already serves /news from
+# news.html, so both forms returned 200 and Search Console counted the clean form as an
+# alternate of the .html canonical. Canonicals, og:url, sitemap.xml and every internal link
+# now use the clean form. force = true for the same reason as above: the .html files exist.
+# One rule per page because Netlify placeholders match whole path segments only.
+# A new page needs a rule here, a clean canonical and a clean sitemap entry.
+
+[[redirects]]
+  from = "/compounds.html"
+  to = "/compounds"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/finance.html"
+  to = "/finance"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/news.html"
+  to = "/news"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/protocols.html"
+  to = "/protocols"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nutrition.html"
+  to = "/nutrition"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-cellular-repair.html"
+  to = "/blog-cellular-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-crosscheck-kitchen.html"
+  to = "/blog-crosscheck-kitchen"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-epigenetic-reprogramming.html"
+  to = "/blog-epigenetic-reprogramming"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-hallmarks-drug-repurposing.html"
+  to = "/blog-hallmarks-drug-repurposing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-nutrient-sensing-blind-spot.html"
+  to = "/blog-nutrient-sensing-blind-spot"
+  status = 301
+  force = true
