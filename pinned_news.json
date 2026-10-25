@@ -1,0 +1,12 @@
+[
+  {
+    "title": "An open benchmark and language models for AI in aging biology",
+    "source": "Cell",
+    "date": "2026-09-17",
+    "category": "Research",
+    "importance": "high",
+    "description": "Insilico Medicine researchers tested 18 leading AI models on LongevityBench, 17 aging-biology tasks built from real clinical, DNA-methylation, gene-expression and blood-protein data. No general model won outright, and small models trained on aging data (0.6B-9B parameters) took the top three spots. Benchmark, models and tools are open.",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00999-2",
+    "top_development": true
+  }
+]

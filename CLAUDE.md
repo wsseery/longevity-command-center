@@ -28,6 +28,8 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
   hand-edit it, and always work from a freshly pulled clone — a stale local copy
   will clobber a week of updates.
 - `news_data.json` is likewise written by that workflow (public RSS via `feedparser`).
+  To keep a hand-picked item through the weekly rebuild, add it to `pinned_news.json`
+  (same 8 fields), never to `news_data.json` — a hand edit there lasts one week.
 - ⚠️ **Do not add an `ANTHROPIC_API_KEY` secret.** The news path is RSS and needs no key. An
   earlier version silently skipped the news step for three weeks because that secret was assumed
   to exist. A successful run is one whose commit message reads `news refreshed (N items)` and
