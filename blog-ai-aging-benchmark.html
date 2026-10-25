@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI knows the aging textbook. It still struggles to read your aging data.</title>
+  <meta name="description" content="A September 2026 Cell paper tested 18 leading AI models on 17 aging-biology tasks built from real lab data. No general model won outright, and small models trained on aging data beat them. What that means before you paste your lab results into a chatbot.">
+  <link rel="canonical" href="https://longevitycommandcenter.com/blog-ai-aging-benchmark.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:site_name" content="Longevity Command Center">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI knows the aging textbook. It still struggles to read your aging data.">
+  <meta property="og:description" content="A September 2026 Cell paper tested 18 leading AI models on 17 aging-biology tasks built from real lab data. No general model won outright, and small models trained on aging data beat them.">
+  <meta property="og:url" content="https://longevitycommandcenter.com/blog-ai-aging-benchmark.html">
+  <meta property="og:image" content="https://longevitycommandcenter.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://longevitycommandcenter.com/og-image.png">
+  <meta name="twitter:title" content="AI knows the aging textbook. It still struggles to read your aging data.">
+  <meta name="twitter:description" content="18 leading AI models, 17 aging-biology tasks built from real lab data, and a clear result: general chatbots are uneven, and small models trained on aging data beat them.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"AI knows the aging textbook. It still struggles to read your aging data.","description":"A September 2026 Cell paper tested 18 leading AI models on 17 aging-biology tasks built from real lab data. No general model won outright, and small models trained on aging data beat them. What that means before you paste your lab results into a chatbot.","datePublished":"2026-10-25","dateModified":"2026-10-25","author":{"@type":"Person","name":"Bill Seery"},"publisher":{"@type":"Organization","name":"Longevity Command Center"},"mainEntityOfPage":"https://longevitycommandcenter.com/blog-ai-aging-benchmark.html"}
+  </script>
+  <meta name="author" content="Bill Seery">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Fallback so the page reads correctly when opened without ./style.css (Drive or chat preview). Zero specificity: the site stylesheet wins on the live site. */
+    :where(:root){--bg-deep:#0a0e1a;--bg-card:#141a2e;--border:rgba(0,221,255,0.08);--border-bright:rgba(0,221,255,0.2);--cyan:#00ddff;--cyan-dim:#00a8c4;--teal:#00ffc8;--text-primary:#e8edf5;--text-secondary:#8892a8;--text-dim:#556080;--font-mono:'JetBrains Mono','Fira Code','Courier New',monospace;--font-heading:'Outfit','Inter',sans-serif;--radius:6px}
+    :where(html,body){background:var(--bg-deep);color:var(--text-primary)}
+    .hero-eyebrow,.hero-title,.hero-subtitle,.hero-intro,.hero-updated{opacity:1!important;transform:translateY(0)!important;animation:fadeUp 0.8s ease forwards!important}
+    .article-wrap{max-width:760px;margin:0 auto;padding:40px 24px 20px}
+    .article-meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+    .article-tag{display:inline-block;font-family:var(--font-heading);font-size:0.6rem;font-weight:600;padding:2px 10px;border-radius:100px;letter-spacing:0.3px;text-transform:uppercase;background:rgba(0,221,255,0.12);color:#66eeff;border:1px solid rgba(0,221,255,0.25)}
+    .article-title{font-family:var(--font-heading);font-size:2rem;font-weight:800;line-height:1.2;color:var(--text-primary);margin-bottom:14px;letter-spacing:-0.5px}
+    .article-standfirst{font-family:var(--font-heading);font-size:1.05rem;line-height:1.6;color:#d4dbe8;margin-bottom:28px;font-weight:400}
+    .article-body{font-family:var(--font-mono);font-size:0.9rem;line-height:1.85;color:var(--text-primary)}
+    .article-body h2{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--cyan);margin:36px 0 12px;letter-spacing:0.2px}
+    .article-body p{margin-bottom:18px;color:#e8edf5}
+    .article-body strong{color:var(--text-primary);font-weight:600}
+    .article-body a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,221,255,0.3)}
+    .article-body a:hover{color:var(--teal)}
+    .article-body ul{margin:0 0 18px 0;padding-left:20px;color:#e8edf5}
+    .article-body li{margin-bottom:8px}
+    .callout{background:var(--bg-card);border:1px solid var(--border-bright);border-left:3px solid var(--cyan);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-family:var(--font-mono);font-size:0.82rem;line-height:1.7;color:#d4dbe8}
+    .callout strong{color:var(--cyan)}
+    .scoretable{width:100%;border-collapse:collapse;margin:22px 0;font-family:var(--font-mono);font-size:0.78rem}
+    .scoretable th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border-bright);color:#66eeff;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;font-size:0.68rem}
+    .scoretable td{padding:8px 10px;border-bottom:1px solid var(--border);color:#e8edf5;vertical-align:top}
+    .tablewrap{overflow-x:auto}
+    .disclaimer{background:rgba(255,176,32,0.06);border:1px solid rgba(255,176,32,0.25);border-radius:var(--radius);padding:14px 18px;margin:32px 0 0;font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:#ffcc66}
+    .sources{margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
+    .sources h3{font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:12px}
+    .sources ol{font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:var(--text-secondary);padding-left:18px}
+    .sources a{color:var(--cyan-dim);text-decoration:none}
+    .sources a:hover{color:var(--cyan)}
+    .share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:28px 0 0;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}
+    .share-btn{font-family:var(--font-mono);font-size:0.68rem;color:var(--cyan);text-decoration:none;padding:6px 14px;border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s}
+    .share-btn:hover{background:rgba(0,221,255,0.1);border-color:var(--cyan)}
+    .backlink{display:inline-block;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);text-decoration:none;margin-bottom:24px;letter-spacing:0.5px}
+    .backlink:hover{color:var(--cyan)}
+    @media(max-width:600px){.article-title{font-size:1.5rem}}
+.backlink,.article-meta,.share-row>span,.site-footer p{color:var(--text-secondary)}
+  </style>
+</head>
+<body>
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,221,255,0.1);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-family:'JetBrains Mono',monospace;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <span style="font-size:0.85rem;font-weight:700;color:#00ddff;text-shadow:0 0 12px rgba(0,221,255,0.3);letter-spacing:1px;">LONGEVITY COMMAND CENTER</span>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;">
+        <a href="./index.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Home</a>
+        <a href="./compounds.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Compounds</a>
+        <a href="./finance.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Finance</a>
+        <a href="./news.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">News</a>
+        <a href="./blog.html" style="font-size:0.7rem;color:#e8edf5;text-decoration:none;padding:6px 14px;background:rgba(0,221,255,0.1);border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;">Blog</a>
+        <a href="./protocols.html" style="font-size:0.7rem;color:#8892a8;text-decoration:none;padding:6px 14px;background:transparent;border:1px solid rgba(0,221,255,0.08);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;" onmouseover="this.style.color='#00ddff'" onmouseout="this.style.color='#8892a8'">Protocols</a>
+      </div>
+    </div>
+  </nav>
+  <div style="height:52px;"></div>
+  <article class="article-wrap">
+    <a class="backlink" href="./blog.html">&larr; All posts</a>
+    <div class="article-meta">
+      <span class="article-tag">Research &middot; AI</span>
+      <span>October 25, 2026</span>
+      <span>By Bill Seery</span>
+    </div>
+    <h1 class="article-title">AI knows the aging textbook. It still struggles to <span class="highlight">read your aging data</span>.</h1>
+    <p class="article-standfirst">A new paper in <em>Cell</em> gave 18 of the best-known AI models a test built from real lab measurements of human aging. None of them won outright, several did no better than a coin flip on some tasks, and a set of small models trained on aging data beat them all. Here is what the study found, in plain English, and what I take from it.</p>
+    <div class="article-body">
+      <p>I build with AI models most days, and I spend a lot of my reading time on aging science. Those two worlds now meet in a very ordinary moment: someone gets back an epigenetic age test or a blood panel, pastes the numbers into a chatbot, and asks what it means. The answer comes back fluent and confident. The question nobody could answer well until now is whether it is actually right.</p>
+      <p>On September 17, 2026, a team led by Alex Zhavoronkov and Fedor Galkin of Insilico Medicine, with aging researcher Vadim Gladyshev among the co-authors, published the first serious attempt to measure that, in <a href="https://www.cell.com/cell/fulltext/S0092-8674(26)00999-2" target="_blank" rel="noopener noreferrer"><em>Cell</em></a>. It is open access, and it is worth understanding even if you never read past the abstract.</p>
+
+      <h2>What they tested: a report card called LongevityBench</h2>
+      <p>Most AI benchmarks you see in product launches test general knowledge, coding or chat quality. The ones that touch biology mostly ask questions whose answers already sit in published text, so a model can do well by remembering rather than reasoning. This team wanted the opposite: hand the model raw measurements and ask it to draw a biological conclusion, in one shot, with no web search or helper tools.</p>
+      <p>They built <strong>LongevityBench</strong>: <strong>17 tasks</strong> and <strong>25,457 questions</strong> drawn from five kinds of aging data.</p>
+      <div class="tablewrap">
+      <table class="scoretable">
+        <tr><th>Data type</th><th>In plain English</th><th>Example question</th></tr>
+        <tr><td>Clinical records</td><td>Routine bloodwork and health survey data (the U.S. NHANES survey)</td><td>Which of these two people is older? Who lived longer after the survey?</td></tr>
+        <tr><td>DNA methylation</td><td>Chemical tags on DNA &mdash; the raw material of &ldquo;epigenetic clocks&rdquo;</td><td>Which of two methylation profiles belongs to the older person?</td></tr>
+        <tr><td>Gene expression</td><td>Which genes are switched on, by tissue (the GTEx project)</td><td>Which decade of life does this tissue sample come from?</td></tr>
+        <tr><td>Blood proteins</td><td>Thousands of proteins measured in plasma (Olink panels)</td><td>Estimate this person's age from their protein profile.</td></tr>
+        <tr><td>Genetics</td><td>Aging-gene databases, with the gene's name hidden</td><td>Does this unnamed gene go up or down with age?</td></tr>
+      </table>
+      </div>
+      <p>Two design choices matter. The test questions were held back from the data the authors later used for training, so a model can't simply have seen the answer. And the gene questions hide the gene's name, which blocks the &ldquo;I remember this from a paper&rdquo; shortcut.</p>
+
+      <h2>What happened: the big models were uneven</h2>
+      <p>They ran <strong>18 frontier models from six developers</strong> &mdash; OpenAI, Google, Anthropic, xAI, DeepSeek and Moonshot AI. Two OpenAI reasoning models (o3 and o4-mini) gave a usable answer to fewer than 80% of the questions and were set aside, leaving 16 in the main ranking.</p>
+      <ul>
+        <li><strong>No clear winner.</strong> Google's Gemini-3.1-Pro ranked highest among commercial models, but its range overlapped with four others (Anthropic's Claude Opus-4.6, Opus-4.5 and Sonnet-4.6, and Moonshot's Kimi-K2.5). Statistically, the top group could not be told apart.</li>
+        <li><strong>Strongest on clinical data, weakest on raw molecular data.</strong> Medical bloodwork shows up constantly in published case reports, so models have seen lots of it. Gene-by-gene comparisons between individuals almost never appear in text.</li>
+        <li><strong>Some tasks were close to a coin flip.</strong> Asked which of two gene-expression samples came from the older donor, no frontier model scored above 0.56, where 0.50 is pure chance, and several scored below 0.50.</li>
+        <li><strong>A simple purpose-built tool beat them on blood proteins.</strong> A standard protein aging clock picked the older donor with a score of 0.749; the best general model reached 0.703.</li>
+      </ul>
+
+      <h2>The twist: small, specialized models came out on top</h2>
+      <p>The authors then took small open-source models &mdash; 0.6 billion to 9 billion parameters, a tiny fraction of the size of the commercial systems &mdash; and trained them on aging data. They call them <strong>Longevity-LLMs</strong>.</p>
+      <ul>
+        <li>The <strong>top three places</strong> out of 26 models went to Longevity-LLMs, and the best one (9 billion parameters) was the only model in the whole test to separate cleanly from the pack.</li>
+        <li>Even the <strong>smallest, at 0.6 billion parameters, placed sixth</strong> &mdash; ahead of every commercial model except Gemini-3.1-Pro and Claude Opus-4.6.</li>
+        <li>On estimating age from a blood-protein panel, that smallest model was off by an average of <strong>5.7 years</strong>, against <strong>10.1 years</strong> for the best commercial model. A plain statistical model fitted to the same proteins still did better, at <strong>3.9 years</strong>.</li>
+      </ul>
+      <p>The authors' reading, and mine: on this kind of work, <strong>the right training data beat sheer size</strong>. A side benefit they point out is that models this small can run on a lab's own computers, which matters when patient data can't be sent to an outside company.</p>
+
+      <div class="callout"><strong>The tell: textbook versus data.</strong> As a control, the authors asked a question the big models should find easy &mdash; whether a gene promotes or blocks cellular aging, as described in published papers. Gemini-3.1-Pro got 95.9% right and GPT-5 got 94.9%. The small aging-trained models averaged 71.4%. So the big models know the literature; what they can't yet do reliably is read <em>your</em> numbers. Those are two different skills, and being good at one does not predict the other.</div>
+
+      <h2>An AI research assistant, with a big asterisk</h2>
+      <p>The team also wrapped their best small model in a research tool they call <strong>Longevity Claw</strong> and asked it to suggest new drug targets for aging. It produced <strong>328 candidate genes</strong>. Twelve of them matched a list of 300 aging targets from an earlier, independent 2022 study &mdash; about 2.4 times more overlap than chance would give. One suggestion, a gene called <strong>KDM1A</strong>, was later shown in other work to extend lifespan in tiny laboratory worms (<em>C. elegans</em>).</p>
+      <p>That is interesting, but keep it in proportion. The authors themselves describe it as a demonstration, not a discovery: the target scores were generated by the model and not tested in a lab, and they note the overlap figure may be inflated. Worm results are a very long way from people.</p>
+
+      <h2>Read the fine print</h2>
+      <ul>
+        <li><strong>Who made it.</strong> Most of the authors work for Insilico Medicine, an AI drug-discovery company, and its founder leads the paper. Co-authors from Liquid AI develop the LFM2 models that two of the Longevity-LLMs were built on. The paper discloses that the benchmark, models and tool may be used in Insilico's commercial work. None of that makes the results wrong &mdash; the data and models are public so others can check &mdash; but it is worth knowing.</li>
+        <li><strong>What it doesn't test.</strong> By the authors' own account, the benchmark measures prediction, not cause-and-effect reasoning. It does not check fairness across sex, age or ethnicity, and it cannot fully rule out that commercial models saw some of the public source data during training.</li>
+        <li><strong>A snapshot.</strong> These are the model versions available when the study ran. The models will change; the authors keep a public leaderboard at <a href="https://longevitybenchmarks.org/" target="_blank" rel="noopener noreferrer">longevitybenchmarks.org</a> so the comparison can be rerun.</li>
+      </ul>
+
+      <h2>What I take from it</h2>
+      <ul>
+        <li><strong>Use general chatbots to understand the science, not to read your raw results.</strong> They are good at explaining what an epigenetic clock is. This study says they are unreliable at turning a list of methylation or gene values into an age, and sometimes no better than guessing.</li>
+        <li><strong>Trust the validated tool behind your test.</strong> If a lab reports a biological age, that number comes from a clock built and checked for that purpose. A chatbot's second opinion on the raw data is not a better measurement.</li>
+        <li><strong>Watch for specialized aging models.</strong> The bigger story here is that small models trained on the right data can do this job far better, cheaply and privately. Expect that to show up in research tools before it shows up in consumer apps.</li>
+        <li><strong>Take results to a clinician.</strong> Whatever a tool tells you about your biology, act on it with a physician who can put it in context.</li>
+      </ul>
+    </div>
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Zhavoronkov A, Naumov V, Sidorenko D, &hellip; Miftakhutdinov Z, Gladyshev VN, Galkin F. <a href="https://www.cell.com/cell/fulltext/S0092-8674(26)00999-2" target="_blank" rel="noopener noreferrer">&ldquo;An open benchmark and language models for AI in aging biology.&rdquo;</a> <em>Cell</em> 189(19):5980&ndash;5994.e8 (September 17, 2026). Open access. Source of every figure in this article, including the earlier 2022 target list it compares against (cited in the paper as Pun et al., 2022).</li>
+        <li>LongevityBench evaluation datasets, Hugging Face. <a href="https://dx.doi.org/10.57967/hf/8851" target="_blank" rel="noopener noreferrer">doi:10.57967/hf/8851</a>.</li>
+        <li>LongevityBench public leaderboard. <a href="https://longevitybenchmarks.org/" target="_blank" rel="noopener noreferrer">longevitybenchmarks.org</a>.</li>
+        <li>Longevity Claw source code. <a href="https://github.com/Insilico-org/longeclaw" target="_blank" rel="noopener noreferrer">github.com/Insilico-org/longeclaw</a>.</li>
+      </ol>
+    </div>
+    <div class="share-row">
+      <span>Share:</span>
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://longevitycommandcenter.com/blog-ai-aging-benchmark.html%3Futm_source%3Dlinkedin%26utm_medium%3Dsocial%26utm_campaign%3Dblog-ai-aging-benchmark%26utm_content%3Dai-aging-benchmark" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://longevitycommandcenter.com/blog-ai-aging-benchmark.html%3Futm_source%3Dx%26utm_medium%3Dsocial%26utm_campaign%3Dblog-ai-aging-benchmark%26utm_content%3Dai-aging-benchmark&text=AI%20knows%20the%20aging%20textbook.%20It%20still%20struggles%20to%20read%20your%20aging%20data." target="_blank" rel="noopener noreferrer">X / Twitter</a>
+    </div>
+    <div class="disclaimer"><strong>Educational only.</strong> This article summarizes published research for informational purposes. It is not medical advice, diagnosis, or treatment, and no test, model or tool described here is offered as a way to diagnose or manage any condition. AI tools can produce confident but incorrect interpretations of health data. Consult your physician before acting on any test result or starting any health intervention.</div>
+  </article>
+  <footer class="site-footer">
+    <p class="lcc-disclaimer">Longevity Command Center is educational content only. It is not medical advice, diagnosis, or treatment. Always consult your physician before starting any supplement, exercise, or health intervention. Nothing here has been evaluated by the FDA.</p>
+    <p>Editorial and educational content on longevity and aging science. For informational purposes only &mdash; not medical, health, or investment advice. Always consult a qualified professional before acting on health information.</p>
+    <div class="footer-links">
+      <a href="./index.html">Home</a><span class="footer-sep">&middot;</span>
+      <a href="./news.html">News Feed</a><span class="footer-sep">&middot;</span>
+      <a href="./blog.html">Blog</a><span class="footer-sep">&middot;</span>
+      <a href="./nutrition.html">Nutrition</a><span class="footer-sep">&middot;</span>
+      <a href="https://longevity.technology" target="_blank" rel="noopener noreferrer">Longevity.Technology</a><span class="footer-sep">&middot;</span>
+      <a href="https://lifespan.io" target="_blank" rel="noopener noreferrer">Lifespan.io</a>
+    </div>
+  </footer>
+</body>
+</html>
