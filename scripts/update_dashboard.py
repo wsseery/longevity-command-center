@@ -2,7 +2,8 @@
 """
 Longevity Command Center — weekly dashboard refresh (NO API KEY REQUIRED).
 
-Step 1: rebuild news_data.json by scraping public RSS feeds (feedparser).
+Step 1: rebuild news_data.json by scraping public RSS feeds (feedparser), then add
+any hand-picked items from pinned_news.json (kept every run, outside the scrape window).
 No Anthropic API key needed. NON-FATAL: never blocks the Step 2 price refresh.
 Step 2: refresh 11 ETF prices in finance.html and bump the "Jan 2 to <date>" refs (yfinance).
 
@@ -62,6 +63,14 @@ TARGET_MIN, TARGET_MAX = 29, 35
 MIN_KEEP = 12
 
 ROUNDUP_RE = re.compile(r"\b(newsletter|weekly roundup|week in review|digest)\b", re.I)
+
+# Hand-picked items, same 8 fields as news_data.json. The rebuild below replaces
+# news_data.json wholesale, so an item added there by hand lasts one week; one added
+# here stays until it is deleted from this file.
+PINNED = "pinned_news.json"
+FIELDS = ("title", "source", "date", "category", "importance", "description", "url",
+          "top_development")
+CATEGORIES = ("Clinical Trials", "Research", "Biotech", "Funding", "Industry", "Protocols")
 
 def _clean(text, limit):
     text = re.sub(r"<[^>]+>", "", text or "")
@@ -141,6 +150,24 @@ def _collect(feedparser, window_days):
     items.sort(key=lambda x: x["date"], reverse=True)
     return items
 
+def _pinned():
+    if not os.path.exists(PINNED):
+        return []
+    try:
+        data = json.load(open(PINNED, encoding="utf-8"))
+    except Exception as e:  # noqa
+        print(f"WARNING: {PINNED} unreadable ({e}); no pinned items this run", file=sys.stderr)
+        return []
+    keep = []
+    for it in data if isinstance(data, list) else []:
+        if (isinstance(it, dict) and set(it) == set(FIELDS)
+                and it["category"] in CATEGORIES and it["importance"] in ("high", "normal")
+                and str(it["url"]).startswith("http")):
+            keep.append({k: it[k] for k in FIELDS})
+        else:
+            print(f"WARNING: skipping malformed item in {PINNED}: {str(it)[:120]}", file=sys.stderr)
+    return keep
+
 def refresh_news():
     try:
         import feedparser
@@ -165,6 +192,13 @@ def refresh_news():
         it["top_development"] = bool(flagged < 5 and it["importance"] == "high")
         if it["top_development"]:
             flagged += 1
+    # After the TARGET_MAX cut, so a pinned item is never the one trimmed. A pinned item
+    # the feeds also returned this week is not added twice; the scraped copy stays.
+    scraped = {i["url"].split("?")[0].rstrip("/") for i in items}
+    pinned = [p for p in _pinned() if p["url"].split("?")[0].rstrip("/") not in scraped]
+    if pinned:
+        items = sorted(items + pinned, key=lambda x: x["date"], reverse=True)
+        print(f"news: {len(pinned)} pinned item(s) added from {PINNED}")
     n_high = sum(1 for i in items if i["importance"] == "high")
     cats = sorted({i["category"] for i in items})
     if len(items) < TARGET_MIN:
