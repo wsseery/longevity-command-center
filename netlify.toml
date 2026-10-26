@@ -137,3 +137,9 @@
   to = "/blog-nutrient-sensing-blind-spot"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-ai-aging-benchmark.html"
+  to = "/blog-ai-aging-benchmark"
+  status = 301
+  force = true
