@@ -69,3 +69,22 @@ ketosis, because a threshold measured per 100 g describes the jar, not the spoon
 Draft, do not ship. Nothing goes public without Bill's explicit "ship it". Commits and pushes are
 Bill's from GitHub Desktop or an approved Claude Code run — never through the Cowork device
 bridge, which leaves a `.git/index.lock` GitHub Desktop cannot clear.
+
+## Content auto-merge (GLOBAL §8a)
+
+Who may merge is set by GLOBAL_INSTRUCTIONS §8a: a content-only PR merges itself once its
+required checks pass; every other PR needs Bill. Never merge by hand, never use `--admin`.
+The gate is `.github/workflows/content-automerge.yml` (classification and the auto-merge
+switch), `site-checks.yml` (`playwright`, `compliance-grep`) and `content-rules.yml`, with the
+logic in `.github/checks/`. `python .github/checks/classify.py --git main HEAD` shows how a
+branch would be classified. It stays off until `main` requires all four checks.
+
+What keeps a post a content PR, learned from the classifier:
+- **No `BlogPosting` or other new JSON-LD**, and no `<style>` or `<script>` block that is not a
+  byte-for-byte copy of one already on the site. Only a pure FAQPage block is content.
+- New pages need exactly one CTA (a `*-cta` box such as `.tool-cta`, a `btn` link, or `data-cta`),
+  the LCC block verbatim, and a `## Sourced figures` table in the PR body
+  (`# | Figure | Source | Link`) listing every number on the page.
+- Edits to existing pages stay out of `<head>`, `<nav>` and `<footer>`. `news_data.json`,
+  `pinned_news.json`, `finance.html`, `tools/` and anything that takes money or markets
+  PrecisionNutrition (GLOBAL §6a item 9) are code — Bill merges.

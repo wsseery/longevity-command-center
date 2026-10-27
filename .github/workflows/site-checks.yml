@@ -1,11 +1,15 @@
-# Site safety checks: report-only, never blocking.
+# Site safety checks.
 #
 # Runs on every PR, every push to main, and after every Weekly Longevity
 # Update. The weekly update pushes with GITHUB_TOKEN, and a push made with
 # that token never triggers other workflows, so `push` alone would miss the
-# one change that lands every week. Nothing here gates a merge: there is no
-# branch protection behind it. When a check fails on main, the alert job opens
-# (or comments on) one "site-check" issue.
+# one change that lands every week. When a check fails on main, the alert job
+# opens (or comments on) one "site-check" issue.
+#
+# On PRs, playwright and compliance-grep are two of the four checks that
+# content auto-merge waits on (GLOBAL_INSTRUCTIONS.md §8a; content-automerge.yml).
+# They only block a merge once main is protected and requires them; until then
+# they report. Keep the job names: protection matches them by name.
 #
 #   playwright       pages the change touches, plus the homepage, before and
 #                    after the change; fails only on problems it INTRODUCES.
