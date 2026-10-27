@@ -1,22 +1,312 @@
 [
   {
-    "title": "Evidence for Peroxisome Dysfunction to be Important in Alzheimer's Disease is Not Conclusive",
+    "title": "miR-3155b is a Senomorphic MicroRNA, Reducing Senescent Cell Inflammatory Signaling",
     "source": "Fight Aging!",
-    "date": "2026-10-20",
+    "date": "2026-10-27",
     "category": "Research",
     "importance": "normal",
-    "description": "Peroxisomes in cells are responsible for helping to maintain oxidative metabolism via making and removing hydrogen peroxide, but are also involved in numerous aspects of lipid metabolism, breaking down or converting various lipids necessary to cell function. They have other…",
-    "url": "https://www.fightaging.org/archives/2026/10/evidence-for-peroxisome-dysfunction-to-be-important-in-alzheimers-disease-is-not-conclusive/",
+    "description": "Senescent cells accumulate with age to drive the onset and progression of age-related disease and loss of function. Over the past decade, a broad range of research and development efforts have emerged to attempt to address this cause of aging. Senostatic therapies reduce the…",
+    "url": "https://www.fightaging.org/archives/2026/10/mir-3155b-is-a-senomorphic-microrna-reducing-senescent-cell-inflammatory-signaling/",
     "top_development": false
   },
   {
-    "title": "Cellular Senescence in Liver Aging",
+    "title": "Engineered Peptide that Suppresses Amyloid-β Aggregation Found to Exist in the Body",
     "source": "Fight Aging!",
-    "date": "2026-10-20",
+    "date": "2026-10-27",
     "category": "Research",
     "importance": "normal",
-    "description": "Senescent cells accumulate with age, perhaps primarily because the aged immune system becomes less able to efficiently destroy senescent cells as it does in youth. When a cell becomes senescent it ceases to replicate, grows in size, and secretes a potent mix of pro-inflammatory…",
-    "url": "https://www.fightaging.org/archives/2026/10/cellular-senescence-in-liver-aging/",
+    "description": "Researchers here relate an interesting story: they designed and synthesized a small peptide that is intended to interfere with an interaction between amyloid-β and zinc ions, with the aim of suppressing a necessary part of the process of amyloid-β aggregation. This amyloid-β…",
+    "url": "https://www.fightaging.org/archives/2026/10/engineered-peptide-that-suppresses-amyloid-%ce%b2-aggregation-found-to-exist-in-the-body/",
+    "top_development": false
+  },
+  {
+    "title": "Life Biosciences Announces First-in-Human Phase 1 Trial Data",
+    "source": "Lifespan.io",
+    "date": "2026-10-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Life Biosciences (“Life Bio”), a biotechnology company pioneering cellular rejuvenation medicines to reverse diseases of aging, announced interim data from its Phase 1 clinical trial of ER-100 in three participants with […]",
+    "url": "https://lifespan.io/life-biosciences-announces-first-in-human-phase-1-trial-data/",
+    "top_development": true
+  },
+  {
+    "title": "Ferring moves to acquire Gameto in $1.38b deal",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Swiss fertility heavyweight bets on stem-cell-derived egg maturation – and on ovarian biology as a market worth owning. Fifty-odd years into the business of helping people build families, Ferring would now like to own some of the cells as well. The Swiss pharmaceutical group has…",
+    "url": "https://longevity.technology/news/ferring-moves-to-acquire-gameto-in-1-38b-deal/",
+    "top_development": true
+  },
+  {
+    "title": "XellSmart’s Parkinson’s cell shot adds 5 good hours a day",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "XellSmart’s off-the-shelf XS411 lifted motor scores in nine patients, and its 30-person Phase II trial has finished enrolling. The nine people in XellSmart’s Phase I trial had lived with Parkinson’s for about ten years each. Their drugs wore off between doses; they sat at stages…",
+    "url": "https://longevity.technology/news/xellsmarts-parkinsons-cell-shot-adds-5-good-hours-a-day/",
+    "top_development": true
+  },
+  {
+    "title": "Weight regain after GLP-1s: A gut procedure’s test",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Research",
+    "importance": "high",
+    "description": "Fractyl Health’s Revita beat a sham procedure on its six-month goal in a pivotal trial, but the FDA’s 12-month bar is the real test. In Fractyl Health’s pivotal trial, everyone regained weight after stopping tirzepatide. The question was how much, and whether a one-time…",
+    "url": "https://longevity.technology/news/weight-regain-after-glp-1s-a-gut-procedures-test/",
+    "top_development": true
+  },
+  {
+    "title": "Cognito builds brain health testbed in Rhode Island",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Cognito Therapeutics and the state’s Life Science Hub are building a statewide platform around its Alzheimer’s therapy, Spectris. Cognito Therapeutics expects to report results from its pivotal HOPE trial later this year. Rhode Island is already making room for the company. On…",
+    "url": "https://longevity.technology/news/cognito-builds-brain-health-testbed-in-rhode-island/",
+    "top_development": false
+  },
+  {
+    "title": "Can an NAD+ booster protect muscle on semaglutide?",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Sironax is about halfway to its enrollment target in a Phase 2 trial of an oral NAMPT activator for adults with obesity. Weight-loss drugs come with a side story that gets less attention than the number on the scale. Some of the weight loss is muscle. Sironax is now testing a…",
+    "url": "https://longevity.technology/news/can-an-nad-booster-protect-muscle-on-semaglutide/",
+    "top_development": true
+  },
+  {
+    "title": "Rapalogix tests longevity face serum on 47 women",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Rapalogix reports firmer, more elastic skin in a double-blind study of its longevity serum, and the details are worth a close read. Forty-seven women spent 12 weeks applying a serum to their faces twice a day. Thirty-one of them got the real formulation. The other 16 got a…",
+    "url": "https://longevity.technology/news/rapalogix-tests-longevity-face-serum-on-47-women/",
+    "top_development": false
+  },
+  {
+    "title": "Insilico reports positive early human trial results for mesothelioma drug",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Insilico Medicine presented first-in-human Phase 1 data for ISM6331 at the European Society for Medical Oncology Congress 2026. Among response-evaluable mesothelioma participants, the company reported a 40.0% objective response rate at 130 mg once daily (two of five evaluable)…",
+    "url": "https://longevity.technology/news/insilico-reports-positive-early-human-trial-results-for-mesothelioma-drug/",
+    "top_development": false
+  },
+  {
+    "title": "Updated Phase 2b data show fewer major cardiac events in HLHS",
+    "source": "Longevity.Technology",
+    "date": "2026-10-27",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Longeveron released updated results from ELPIS II, its Phase 2b randomized trial of Laromestrocel given as an adjunct during Stage II palliative surgery in 40 infants with hypoplastic left heart syndrome. The trial did not meet its primary efficacy endpoint of change in right…",
+    "url": "https://longevity.technology/news/updated-phase-2b-data-show-fewer-major-cardiac-events-in-hlhs/",
+    "top_development": false
+  },
+  {
+    "title": "Scientists discover a surprising clue to why some brains resist Alzheimer’s",
+    "source": "ScienceDaily",
+    "date": "2026-10-27",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Why do some people stay mentally sharp even when their brains show signs of Alzheimer’s disease? Scientists in the Netherlands may have uncovered an important clue hidden in a rare group of immature brain cells. Researchers discovered that these cells remain present even in…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261025222538.htm",
+    "top_development": false
+  },
+  {
+    "title": "How Important is Lipid Metabolism Dysfunction in the Aging of Microglia?",
+    "source": "Fight Aging!",
+    "date": "2026-10-26",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Microglia are innate immune cells of the brain, similar in behavior to tissue resident macrophages elsewhere in the body, but with an additional portfolio of duties relating to maintenance of neural networks. Like macrophages, microglia can adopt packages of behavior, and switch…",
+    "url": "https://www.fightaging.org/archives/2026/10/how-important-is-lipid-metabolism-dysfunction-in-the-aging-of-microglia/",
+    "top_development": false
+  },
+  {
+    "title": "Holistically Considering Amyloid-β in the Whole Body in the Context of Alzheimer's Disease",
+    "source": "Fight Aging!",
+    "date": "2026-10-26",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "Despite the only small benefits shown to Alzheimer's patients following clearance of amyloid-β aggregates in the aging brain, the consensus remains that a slow accumulation of amyloid-β aggregates over years is the inciting form of dysfunction that gives rise to the later tau…",
+    "url": "https://www.fightaging.org/archives/2026/10/holistically-considering-amyloid-%ce%b2-in-the-whole-body-in-the-context-of-alzheimers-disease/",
+    "top_development": false
+  },
+  {
+    "title": "Pig Kidneys Remain Functional After Vitrification with Iron Oxide Nanoparticles, Rewarming, and Transplantion",
+    "source": "Fight Aging!",
+    "date": "2026-10-26",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Recovery and transplantation of organs following vitrification using cryoprotectant is an important step along the road to the future technological capability of whole body vitrification and recovery - and recovery of those individuals already preserved at low temperature by the…",
+    "url": "https://www.fightaging.org/archives/2026/10/pig-kidneys-remain-functional-after-vitrification-with-iron-oxide-nanoparticles-rewarming-and-transplantion/",
+    "top_development": false
+  },
+  {
+    "title": "The Regulatory Bottleneck in Aging Biology",
+    "source": "Lifespan.io",
+    "date": "2026-10-26",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers are developing biomedical repair therapies to address multiple age-related diseases at once, yet they are forced to put them through regulatory pathways built for single-disease drugs. The result is […]",
+    "url": "https://lifespan.io/the-regulatory-bottleneck-in-aging-biology/",
+    "top_development": false
+  },
+  {
+    "title": "Women’s health – built in rather than bolted on",
+    "source": "Longevity.Technology",
+    "date": "2026-10-26",
+    "category": "Research",
+    "importance": "high",
+    "description": "As the FDA begins lifting hormone therapy warnings, Longevitix argues the next gap is a clinical system designed around the whole woman. For more than two decades, menopausal hormone therapy carried the most prominent safety warning the FDA can print. In February, the agency…",
+    "url": "https://longevity.technology/news/womens-health-built-in-rather-than-bolted-on/",
+    "top_development": false
+  },
+  {
+    "title": "The $101 million question isn’t who wins",
+    "source": "Longevity.Technology",
+    "date": "2026-10-26",
+    "category": "Funding",
+    "importance": "high",
+    "description": "Inside XPRIZE Healthspan’s $101m race: how teams are judged, why measurement matters, and what the field gains beyond a single winner. When a prize carries a $101 million price tag, you expect the conversation to be about the winner. On the latest episode of Longevity.Technology…",
+    "url": "https://longevity.technology/news/the-101-million-question-isnt-who-wins/",
+    "top_development": false
+  },
+  {
+    "title": "Mounjaro tops Ozempic in real-world diabetes data",
+    "source": "Longevity.Technology",
+    "date": "2026-10-26",
+    "category": "Research",
+    "importance": "normal",
+    "description": "GlobalData says more adults with type 2 diabetes in England hit blood sugar and weight targets on tirzepatide than on semaglutide. About one in four. That’s how many people with type 2 diabetes (T2D) on tirzepatide had lost at least 15% of their body weight a year after…",
+    "url": "https://longevity.technology/news/mounjaro-tops-ozempic-in-real-world-diabetes-data/",
+    "top_development": false
+  },
+  {
+    "title": "Carnyx’s sleep candidate adds 1.5-2 hours in rats",
+    "source": "Longevity.Technology",
+    "date": "2026-10-26",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Indianapolis-based Carnyx says its oral drug boosted NREM sleep in aged animals, and it has hired Chris Brearley as chief medical officer. The Food and Drug Administration recently took a look at Epitalon and a handful of other peptides, as part of its evaluation of substances…",
+    "url": "https://longevity.technology/news/carnyxs-sleep-candidate-adds-1-5-2-hours-in-rats/",
+    "top_development": false
+  },
+  {
+    "title": "Low-dose aspirin linked to 70% lower dementia risk, but there's a catch",
+    "source": "ScienceDaily",
+    "date": "2026-10-25",
+    "category": "Research",
+    "importance": "normal",
+    "description": "A common, inexpensive medication could hold an unexpected clue to preventing dementia. Researchers found that older adults with a specific genetic profile had a 70% lower relative risk of dementia when taking low-dose aspirin, even though previous studies found no overall…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261024222026.htm",
+    "top_development": false
+  },
+  {
+    "title": "Mediterranean diet may boost tiny proteins that protect the heart and brain",
+    "source": "ScienceDaily",
+    "date": "2026-10-25",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "Scientists have uncovered a surprising new clue to why the Mediterranean diet is so good for the heart, brain, and healthy aging. Researchers at USC found that older adults who closely followed the diet had higher levels of two tiny proteins, humanin and SHMOOSE, produced by the…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261023003337.htm",
+    "top_development": false
+  },
+  {
+    "title": "A Micropeptide that Inhibits Vascular Calcification via PKM2 Degradation",
+    "source": "Fight Aging!",
+    "date": "2026-10-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "The vascular system is prone to calcification with advancing age. Cells in the vasculature inappropriately take on the features and behavior of the osteoblast cells responsible for building bone extracellular matrix. These errant vascular cells deposit calcium phosphate…",
+    "url": "https://www.fightaging.org/archives/2026/10/a-micropeptide-that-inhibits-vascular-calcification-via-pkm2-degradation/",
+    "top_development": false
+  },
+  {
+    "title": "PLA2G2F is Protective of Memory Function in the Aging Brain",
+    "source": "Fight Aging!",
+    "date": "2026-10-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Researchers here identify the gene PLA2G2F as a regulator of compensatory responses to some of the damage and dysfunction of aging. The researchers were primarily investigating a population of neurons found in the hippocampus, involved in memory function, but find that the gene…",
+    "url": "https://www.fightaging.org/archives/2026/10/pla2g2f-is-protective-of-memory-function-in-the-aging-brain/",
+    "top_development": false
+  },
+  {
+    "title": "The APOEε4 Variant Interferes in Myelination in the Aging Brain",
+    "source": "Fight Aging!",
+    "date": "2026-10-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Of the common variants of the APOE gene, APOEε4 presents the greatest risk of Alzheimer's disease. APOE is involved in lipid metabolism, and APOEε4 is associated with lipid-related contributions to inflammation in microglia, suggesting a primarily inflammatory mechanism for the…",
+    "url": "https://www.fightaging.org/archives/2026/10/the-apoe%ce%b54-variant-interferes-in-myelination-in-the-aging-brain/",
+    "top_development": false
+  },
+  {
+    "title": "Laura Minquini on the Quest for Female Longevity",
+    "source": "Lifespan.io",
+    "date": "2026-10-23",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Laura Minquini is not a scientist, but that hasn’t stopped her from joining the front lines of the war on aging: specifically, […]",
+    "url": "https://lifespan.io/laura-minquini-on-the-quest-for-female-longevity/",
+    "top_development": false
+  },
+  {
+    "title": "Topical Urolithin A to Improve Aged Skin Function",
+    "source": "Fight Aging!",
+    "date": "2026-10-22",
+    "category": "Biotech",
+    "importance": "normal",
+    "description": "Mitochondria are the power plants of the cell, creating the chemical energy store molecule adenosine triphosphate used to power cellular processes. Mitochondrial function declines with age, and the research community is engaged in a variety of approaches that might at least…",
+    "url": "https://www.fightaging.org/archives/2026/10/topical-urolithin-a-to-improve-aged-skin-function/",
+    "top_development": false
+  },
+  {
+    "title": "How Some Neuronal Cilia May Affect the Whole Body",
+    "source": "Lifespan.io",
+    "date": "2026-10-22",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A team of researchers has written a paper with a surprising finding: that many of the benefits of caloric restriction and increased NAD+ […]",
+    "url": "https://lifespan.io/how-some-neuronal-cilia-may-affect-the-whole-body/",
+    "top_development": false
+  },
+  {
+    "title": "Millions take fish oil for brain health. A two-year study found no benefit",
+    "source": "ScienceDaily",
+    "date": "2026-10-22",
+    "category": "Clinical Trials",
+    "importance": "high",
+    "description": "A surprising two-year clinical trial found that fish oil supplements successfully delivered omega-3s to the brain but failed to improve memory or protect against Alzheimer's-related brain shrinkage. Researchers suspect that getting these nutrients through a healthy diet may…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020085427.htm",
+    "top_development": false
+  },
+  {
+    "title": "Too much RNA can starve cells of energy, scientists discover",
+    "source": "ScienceDaily",
+    "date": "2026-10-21",
+    "category": "Research",
+    "importance": "normal",
+    "description": "Scientists have uncovered an unexpected danger lurking inside cells: too much RNA can damage the structures responsible for producing energy. A new study found that excess RNA, including the normally essential messenger RNA (mRNA), can directly disrupt mitochondria without…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261020085023.htm",
+    "top_development": false
+  },
+  {
+    "title": "Scientists find 10 different diets linked to slower aging",
+    "source": "ScienceDaily",
+    "date": "2026-10-21",
+    "category": "Protocols",
+    "importance": "normal",
+    "description": "A study by DZNE finds that healthy eating is associated with slower biological aging—and that there is more than one way to eat healthily. The researchers examined ten dietary patterns considered healthy, including the Mediterranean, Nordic, and a plant-based diet, as well as…",
+    "url": "https://www.sciencedaily.com/releases/2026/10/261019093439.htm",
     "top_development": false
   },
   {
@@ -28,76 +318,6 @@
     "description": "A new study suggests that CT scans can provide information about a wide range of conditions, including some not typically diagnosed through imaging. Direct comparison with human radiologists is the next step [1]. Getting more from a scan […]",
     "url": "https://lifespan.io/ai-extracts-broader-health-insights-from-routine-ct-scans/",
     "top_development": false
-  },
-  {
-    "title": "Cala’s tremor wearable tunes itself before every session",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Cala Health’s kIQ Plus now offers three stimulation modes and a calibration before each use, and it’s available across the US. Picture a bowl of soup and a hand that won’t stay put. People with essential tremor or Parkinson’s disease know that scene well, and it’s roughly the…",
-    "url": "https://longevity.technology/news/calas-tremor-wearable-tunes-itself-before-every-session/",
-    "top_development": false
-  },
-  {
-    "title": "Measure, treat, repeat: the push to standardize longevity medicine",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Industry",
-    "importance": "normal",
-    "description": "Buck Institute’s Eric Verdin joins clinic leaders to tackle the ‘luxury diagnostic’ trap and the push for standardized care. At this weekend’s Roundtable chaired by Buck Institute CEO Eric Verdin MD, leading clinic founders agreed that the longevity sector has reached an…",
-    "url": "https://longevity.technology/news/measure-treat-repeat-the-push-to-standardize-longevity-medicine/",
-    "top_development": false
-  },
-  {
-    "title": "Alterity reanalysis puts MSA drug at 52% slowing",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Adjusting for how advanced patients’ disease was at the start lifts the Phase 2 result. The method was added after the trial began. Alterity Therapeutics has a number it would like you to remember, and the number is 52. That’s the percentage by which its experimental drug ATH434…",
-    "url": "https://longevity.technology/news/alterity-reanalysis-puts-msa-drug-at-52-slowing/",
-    "top_development": true
-  },
-  {
-    "title": "Parkinson’s test-and-drug duo wins CPHI award",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Biotech",
-    "importance": "normal",
-    "description": "German biotech MODAG won for pairing a CE-marked diagnostic with a drug candidate that targets the same protein. The jury at CPHI Milan had a pattern to break. For three years running, the API Development and Innovation award had gone to manufacturers with new production…",
-    "url": "https://longevity.technology/news/parkinsons-test-and-drug-duo-wins-cphi-award/",
-    "top_development": false
-  },
-  {
-    "title": "Donated human brains may soon be studied for two weeks",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Biotech",
-    "importance": "high",
-    "description": "An up to $28.3 million ARPA-H award aims to stretch Bexorg’s human brain platform from 24 hours to two weeks. A day is a long time to study a donated human brain. Bexorg thinks it’s still too short. On 7 October, the Connecticut-based company announced that it has been awarded…",
-    "url": "https://longevity.technology/news/donated-human-brains-may-soon-be-studied-for-two-weeks/",
-    "top_development": true
-  },
-  {
-    "title": "Veradermics to discuss Phase 3 ‘304’ topline results on call",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Veradermics announced it will host a conference call and live webcast on 19 October 2026 at 8:00 am ET to review Part A topline results from its randomized, double-blind, placebo-controlled phase 3 study 304 evaluating VDPHL01 in 536 males with mild-to-moderate pattern hair…",
-    "url": "https://longevity.technology/news/veradermics-to-discuss-phase-3-304-topline-results-on-call/",
-    "top_development": true
-  },
-  {
-    "title": "XellSmart reports Phase I Parkinson’s cell therapy data",
-    "source": "Longevity.Technology",
-    "date": "2026-10-20",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "New clinical data for XellSmart’s off-the-shelf cell therapy XS411 were presented at the International Congress of Parkinson’s Disease and Movement Disorders on 18 Oct. 2026. The Phase I single-arm, open-label dose‑escalation study enrolled nine participants with…",
-    "url": "https://longevity.technology/news/xellsmart-reports-phase-i-parkinsons-cell-therapy-data/",
-    "top_development": true
   },
   {
     "title": "Your aging brain may be trading memory for something more valuable",
@@ -120,233 +340,13 @@
     "top_development": false
   },
   {
-    "title": "Life Biosciences Reports Initial Results from the First Reprogramming Trial",
-    "source": "Fight Aging!",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "high",
-    "description": "Partial epigenetic reprogramming involves exposing cells to some or all of the Yamanaka factors for a long enough period of time to reset epigenetic decorations on nuclear DNA and its supporting structures to a youthful state, but not so long as to risk dedifferentiation, and…",
-    "url": "https://www.fightaging.org/archives/2026/10/life-biosciences-reports-initial-results-from-the-first-reprogramming-trial/",
-    "top_development": true
-  },
-  {
-    "title": "Predicting Inflammation and Disease Risk with Gut Microbiome Composition",
-    "source": "Fight Aging!",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The gut microbiome changes with age, and evidence suggests that this provides a meaningful contribution to degeneration and disease. Microbial populations that provoke chronic inflammation grow in size at the expense of populations that produce beneficial metabolites…",
-    "url": "https://www.fightaging.org/archives/2026/10/predicting-inflammation-and-disease-risk-with-gut-microbiome-composition/",
-    "top_development": false
-  },
-  {
-    "title": "Insights from the Genome of the Aldabra Giant Tortoise",
-    "source": "Fight Aging!",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The oldest land animal with an established age is an Aldabra giant tortoise, at 194 years. Researchers have sequenced the genomes of an old and young Aldabra giant tortoise to compare with other long-lived species and with less long-lived giant tortoises, part of a continuing…",
-    "url": "https://www.fightaging.org/archives/2026/10/insights-from-the-genome-of-the-aldabra-giant-tortoise/",
-    "top_development": false
-  },
-  {
     "title": "An RNA Regulator Mitigates Senescence in Blood Vessels",
     "source": "Lifespan.io",
     "date": "2026-10-19",
     "category": "Research",
     "importance": "normal",
-    "description": "Researchers publishing in Aging Cell have found that the regulatory protein MTR4 fights DNA damage in the blood vessel lining but decreases with aging. Vulnerable by nature This paper begins by noting the properties, […]",
+    "description": "Researchers publishing in Aging Cell have found that the regulatory protein MTR4 fights DNA damage in the blood vessel lining but decreases with aging. Vulnerable by nature This paper begins by noting the properties, and aging, of vascular endothelial cells […]",
     "url": "https://lifespan.io/an-rna-regulator-mitigates-senescence-in-blood-vessels/",
-    "top_development": false
-  },
-  {
-    "title": "Resveratrol Parkinson’s trial doses first patient",
-    "source": "Longevity.Technology",
-    "date": "2026-10-19",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "Jupiter Neurosciences also hired an adviser to explore a sale or licensing of its assets while the 30-person trial gets underway. Two pieces of news arrived in one press release from Jupiter Neurosciences earlier this month, and they pull in somewhat different directions. The…",
-    "url": "https://longevity.technology/news/resveratrol-parkinsons-trial-doses-first-patient/",
-    "top_development": false
-  },
-  {
-    "title": "Intrinsic capacity: A new way to measure healthy aging",
-    "source": "Longevity.Technology",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Forget the diagnosis count. The researcher who helped the WHO reframe aging says function, not disease, is the better yardstick. Ask most health systems how healthy you are, and they start counting: diagnoses, prescriptions, conditions on a chart. It is a ledger of what has gone…",
-    "url": "https://longevity.technology/news/intrinsic-capacity-a-new-way-to-measure-healthy-aging/",
-    "top_development": false
-  },
-  {
-    "title": "29% of long-term GLP-1 users lack nutrient confidence",
-    "source": "Longevity.Technology",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A Censuswide survey commissioned by PortionIQ finds confidence is lower among longer-term users, though it’s a snapshot from one brand. Everybody seems to be Googling GLP-1 lately. Searches for the term ran 120% higher over the past year than the year before, according to Google…",
-    "url": "https://longevity.technology/news/29-of-long-term-glp-1-users-lack-nutrient-confidence/",
-    "top_development": false
-  },
-  {
-    "title": "Amprion and Prema link memory tests to biomarkers",
-    "source": "Longevity.Technology",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A quick digital memory test and a lab assay for brain disease are teaming up to flag neurodegeneration earlier. Walk into a kitchen, forget why you’re there, laugh it off. Most of us have done it. But some people notice their memory slipping in ways that feel different, then sit…",
-    "url": "https://longevity.technology/news/amprion-and-prema-link-memory-tests-to-biomarkers/",
-    "top_development": false
-  },
-  {
-    "title": "VectorY triples ALS trial before efficacy data",
-    "source": "Longevity.Technology",
-    "date": "2026-10-19",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "VectorY is growing PIONEER-ALS from 12 to 36 participants to test VTx-002, an antibody therapy aimed at the protein TDP-43. VectorY Therapeutics has just tripled the size of its ALS trial, and it did so before seeing any efficacy data. The Phase 1/2 PIONEER-ALS study of VTx-002…",
-    "url": "https://longevity.technology/news/vectory-triples-als-trial-before-efficacy-data/",
-    "top_development": false
-  },
-  {
-    "title": "Just 3,000 steps a day may help slow Alzheimer's, scientists find",
-    "source": "ScienceDaily",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Walking just 3,000 steps a day could help slow Alzheimer’s-related brain changes, according to new research. Scientists discovered that physical activity was linked to less buildup of harmful tau proteins and nearly half the cognitive and functional decline, even in people…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261018205058.htm",
-    "top_development": false
-  },
-  {
-    "title": "Why some people escape Alzheimer’s despite carrying a high-risk gene",
-    "source": "ScienceDaily",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Scientists have discovered why some people with a high genetic risk of Alzheimer’s remain mentally sharp into their 80s, uncovering a rare mutation that protects the brain from harmful protein buildup. The findings reveal a potential new way to prevent early brain damage and…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261018205044.htm",
-    "top_development": false
-  },
-  {
-    "title": "\"Mind-blowing\" Alzheimer’s breakthrough: Two hours of sleep restored without clearing brain plaques",
-    "source": "ScienceDaily",
-    "date": "2026-10-19",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Scientists have uncovered an unexpected culprit behind sleep loss in Alzheimer’s disease: overactive immune cells in the brain. By temporarily removing these cells, researchers restored more than two hours of sleep per day in mice, revealing a promising new target for treatment.",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261018084421.htm",
-    "top_development": false
-  },
-  {
-    "title": "Two former Republican lawmakers say the GOP’s vaccine position is a liability",
-    "source": "STAT News",
-    "date": "2026-10-19",
-    "category": "Research",
-    "importance": "normal",
-    "description": "The Republican party’s confusing messaging on vaccines is going to hurt candidates in the midterms, two former GOP congressmen argue.",
-    "url": "https://www.statnews.com/2026/10/19/health-news-two-former-republican-congressmen-against-gop-vaccine-liability/?utm_campaign=rss",
-    "top_development": false
-  },
-  {
-    "title": "Brain cells meant to protect us may be fueling cognitive decline",
-    "source": "ScienceDaily",
-    "date": "2026-10-17",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Scientists have uncovered a surprising cause of age-related cognitive decline involving brain cells previously thought to be entirely beneficial. As these cells become dysfunctional, they can produce abnormal amounts of myelin, disrupting nerve fibers and potentially…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261015073222.htm",
-    "top_development": false
-  },
-  {
-    "title": "How Much of the Correlation Between Socioeconomic Status and Life Expectancy Results from Lifestyle Choice?",
-    "source": "Fight Aging!",
-    "date": "2026-10-16",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Mediation analysis is a statistical technique can be used in an attempt to shed some light on why a correlation between two variables might exist, by involving a third variable that might be causative. In today's open access paper, the correlation of interest is between…",
-    "url": "https://www.fightaging.org/archives/2026/10/how-much-of-the-correlation-between-socioeconomic-status-and-life-expectancy-results-from-lifestyle-choice/",
-    "top_development": false
-  },
-  {
-    "title": "Immune Aging as a Shared Cause of Osteoporosis and Osteoarthritis",
-    "source": "Fight Aging!",
-    "date": "2026-10-16",
-    "category": "Research",
-    "importance": "high",
-    "description": "The aging of the immune system arises from the underlying causes of aging, but in and of itself causes significant further pathology. Here, for example, researchers discuss immune aging as a shared underlying cause of degenerative conditions of bone and joint tissues, and how…",
-    "url": "https://www.fightaging.org/archives/2026/10/immune-aging-as-a-shared-cause-of-osteoporosis-and-osteoarthritis/",
-    "top_development": false
-  },
-  {
-    "title": "Epigenetic Aging is Accelerated in Large Dogs versus Small Dogs",
-    "source": "Fight Aging!",
-    "date": "2026-10-16",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Smaller dog breeds live for longer than larger dog breeds, which perhaps allows some insight into mechanisms of aging. Researchers here find that age-related change in the epigenetic regulation of nuclear DNA structure and gene expression proceeds more rapidly in larger dogs…",
-    "url": "https://www.fightaging.org/archives/2026/10/epigenetic-aging-is-accelerated-in-large-dogs-versus-small-dogs/",
-    "top_development": false
-  },
-  {
-    "title": "Blocking STING Helps Preserve Bone in Aging Mice",
-    "source": "Lifespan.io",
-    "date": "2026-10-16",
-    "category": "Research",
-    "importance": "normal",
-    "description": "A new study links STING-mediated signals from marrow fat cells to inflammation and declining NAD⁺ levels in bone-forming cells. Interrupting this pathway helped preserve aging bone [1]. Making old bones Our […]",
-    "url": "https://lifespan.io/blocking-sting-helps-preserve-bone-in-aging-mice/",
-    "top_development": false
-  },
-  {
-    "title": "Scientists discover how exercise reverses muscle aging",
-    "source": "ScienceDaily",
-    "date": "2026-10-16",
-    "category": "Protocols",
-    "importance": "high",
-    "description": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the muscles’ ability to clear damaged proteins and…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
-    "top_development": false
-  },
-  {
-    "title": "Interactions of the Gut Microbiome and Exercise in the Context of Muscle Aging Leading to Frailty",
-    "source": "Fight Aging!",
-    "date": "2026-10-15",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "Animal studies suggest that the composition and activities of the gut microbiome are as influential on long-term health and the progression of degenerative aging as is the case for lifestyle choices such as degree of physical fitness and level of physical activity. The gut…",
-    "url": "https://www.fightaging.org/archives/2026/10/interactions-of-the-gut-microbiome-and-exercise-in-the-context-of-muscle-aging-leading-to-frailty/",
-    "top_development": false
-  },
-  {
-    "title": "Making SIRT1 and NAD+ Therapies Work in People",
-    "source": "Lifespan.io",
-    "date": "2026-10-15",
-    "category": "Research",
-    "importance": "normal",
-    "description": "Reviewers publishing in Biology have elucidated SIRT1 functional reserve as an aspect of aging, describing how its depletion is an upstream cause of age-related disorders at the cellular level and explaining why many prospective therapies that increase SIRT1 and NAD+ […]",
-    "url": "https://lifespan.io/making-sirt1-and-nad-therapies-work-in-people/",
-    "top_development": false
-  },
-  {
-    "title": "A 47-year study reveals the age when your body starts losing strength",
-    "source": "ScienceDaily",
-    "date": "2026-10-15",
-    "category": "Protocols",
-    "importance": "normal",
-    "description": "A 47-year study has uncovered a surprising turning point in physical aging: fitness and strength begin declining around age 35, even among people who exercise regularly. Researchers found that this decline accelerates as people get older, but starting to exercise in adulthood…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261014000912.htm",
-    "top_development": false
-  },
-  {
-    "title": "Rare study reveals a striking divide inside an Alzheimer’s patient’s brain",
-    "source": "ScienceDaily",
-    "date": "2026-10-15",
-    "category": "Clinical Trials",
-    "importance": "high",
-    "description": "A rare examination of an Alzheimer’s patient’s brain revealed that regions cleared of amyloid plaques had remarkably little of the harmful tau buildup associated with memory loss, while neighboring areas showed extensive damage. The discovery suggests that removing amyloid may…",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261013015814.htm",
     "top_development": false
   },
   {
