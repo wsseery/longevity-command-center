@@ -143,3 +143,9 @@
   to = "/blog-ai-aging-benchmark"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-sauna-zone2-vo2max.html"
+  to = "/blog-sauna-zone2-vo2max"
+  status = 301
+  force = true
