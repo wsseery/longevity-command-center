@@ -28,6 +28,10 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # The weekly funds check (funds-check.yml) opens its PRs as the Claude app, and the
+          # action refuses bot actors unless they are named here. Only that bot: this job is
+          # read-only and posts one comment, so reviewing its PRs is the point.
+          allowed_bots: "claude"
           # Forces tag mode. The action then builds real PR context (agent mode
           # passes the prompt verbatim, leaving `gh pr *` with no PR to resolve),
           # grants Read/Grep so whole-file rules are checkable, and posts through
