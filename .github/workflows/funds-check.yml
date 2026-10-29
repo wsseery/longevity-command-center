@@ -56,10 +56,13 @@ jobs:
         if: steps.open.outputs.count == '0'
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # Cost guard. Eight funds at two or three searches each fit well inside it.
+          # Cost guard: eight funds at two or three searches each fit well inside 80 turns.
+          # The branch, push and PR rules are exact commands, not wildcards: a `git push *` rule
+          # would also allow pushing to main, or a `<branch>:main` refspec. Only today's
+          # content/funds-check branch can be created and pushed.
           claude_args: >-
             --max-turns 80
-            --allowedTools "Read,Grep,Edit,WebSearch,WebFetch,Bash(git diff:*),Bash(git status:*),Bash(git checkout:*),Bash(git add finance.html),Bash(git commit:*),Bash(git push:*),Bash(gh pr create:*)"
+            --allowedTools "Read,Grep,Edit,WebSearch,WebFetch,Bash(git diff *),Bash(git status),Bash(git checkout -b content/funds-check-${{ steps.open.outputs.today }}),Bash(git add finance.html),Bash(git commit -m *),Bash(git push -u origin content/funds-check-${{ steps.open.outputs.today }}),Bash(gh pr create --base main *)"
           prompt: |
             Today is ${{ steps.open.outputs.today }}. Check the private funds on the Finance page
             against published sources, and propose corrections as a pull request.
