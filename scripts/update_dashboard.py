@@ -5,7 +5,9 @@ Longevity Command Center — weekly dashboard refresh (NO API KEY REQUIRED).
 Step 1: rebuild news_data.json by scraping public RSS feeds (feedparser), then add
 any hand-picked items from pinned_news.json (kept every run, outside the scrape window).
 No Anthropic API key needed. NON-FATAL: never blocks the Step 2 price refresh.
-Step 2: refresh 11 ETF prices in finance.html and bump the "Jan 2 to <date>" refs (yfinance).
+Step 2: refresh the 11 ETFs in finance.html (price, fund assets, name, expense ratio, 52-week
+range, top holdings, turnover, YTD return and daily closes for the charts), the watchlist stocks'
+market caps, and the "Jan 2 to <date>" refs (yfinance).
 
 Runs inside a GitHub Action; the workflow commits/pushes any changes.
 Output schema per item (consumed by news.html):
@@ -212,8 +214,61 @@ except Exception as e:  # noqa
     print(f"WARNING: news refresh failed ({e}); keeping existing news_data.json", file=sys.stderr)
 
 # ----------------------------------------------------------------------------
-# STEP 2: ETF PRICES -> finance.html (unchanged; yfinance, no API key)
+# STEP 2: ETF DATA AND STOCK MARKET CAPS -> finance.html (yfinance, no API key)
 # ----------------------------------------------------------------------------
+def _js(v):
+    """A Python value as the JS literal finance.html uses."""
+    if v is None:
+        return "null"
+    if isinstance(v, str):
+        return "'" + v.replace("\\", "\\\\").replace("'", "\\'") + "'"
+    if isinstance(v, list):
+        return "[" + ", ".join(_js(x) for x in v) + "]"
+    return repr(v)
+
+def _value_end(s, i):
+    """End of the JS literal that starts at s[i]: a 'string', a [...] list or a number."""
+    if s[i] == "'":
+        j = i + 1
+        while s[j] != "'":
+            j += 2 if s[j] == "\\" else 1
+        return j + 1
+    if s[i] == "[":
+        depth, quote, j = 0, False, i
+        while True:
+            c = s[j]
+            if quote:
+                if c == "\\":
+                    j += 1
+                elif c == "'":
+                    quote = False
+            elif c == "'":
+                quote = True
+            elif c == "[":
+                depth += 1
+            elif c == "]":
+                depth -= 1
+                if depth == 0:
+                    return j + 1
+            j += 1
+    return i + re.match(r"-?[\d.]+", s[i:]).end()
+
+def _set(block, key, js):
+    """Set `key: <literal>` at the top level of one ETF block, adding it before url: if absent."""
+    m = re.search(r"\n(\s*)" + key + r":\s*", block)
+    if not m:
+        u = re.search(r"\n(\s*)url:", block)
+        return block[:u.start()] + f"\n{u.group(1)}{key}: {js}," + block[u.start():]
+    return block[:m.end()] + js + block[_value_end(block, m.end()):]
+
+def _etf_block(src, t):
+    """(start, end) of ticker t's object in ETF_DATA, from its opening { to its closing }."""
+    m = re.search(r"\{\s*\n\s*ticker:\s*'" + re.escape(t) + r"'", src)
+    if not m:
+        return None
+    end = re.compile(r"\n\s*url:\s*'[^']*'\s*\n\s*\}").search(src, m.end())
+    return (m.start(), end.end()) if end else None
+
 def refresh_prices():
     import yfinance as yf
     TICKERS = ["AGNG", "ARKG", "IBB", "XBI", "XLV", "SBIO", "BBH", "IHI", "IDNA", "HTEC", "THNR"]
@@ -227,43 +282,119 @@ def refresh_prices():
         print("WARNING: finance.html not found; skipping price refresh", file=sys.stderr)
         return
     src = open("finance.html").read()
-    updated = 0
+
+    # Pass 1: fetch. Any field that fails keeps last week's value (it is simply not set).
+    fetched, histories = {}, {}
     for t in TICKERS:
         try:
             tk = yf.Ticker(t)
             fi = tk.fast_info
             price = round(fi["last_price"], 2)
             prev = fi["previous_close"]
+            if not (price > 0 and prev > 0):
+                raise ValueError(f"no price ({price}, previous {prev})")
             change = round(price - prev, 2)
-            pct = round(change / prev * 100, 2)
-            aum = fmt_aum(tk.get_info().get("totalAssets"))
+            f = {"price": price, "change": change, "changePct": round(change / prev * 100, 2)}
         except Exception as e:  # noqa
             print(f"WARNING: quote failed for {t}: {e}; carrying forward", file=sys.stderr)
             continue
-        pat = re.compile(
-            r"(ticker:\s*'" + re.escape(t) + r"'[\s\S]{0,400}?price:\s*)[-\d.]+"
-            r"([\s\S]{0,80}?change:\s*)[-\d.]+"
-            r"([\s\S]{0,80}?changePct:\s*)[-\d.]+"
-            r"([\s\S]{0,80}?aum:\s*')([^']+)(')")
-        repl = (lambda m: f"{m.group(1)}{price}{m.group(2)}{change}"
-                f"{m.group(3)}{pct}{m.group(4)}{aum or m.group(5)}{m.group(6)}")
-        src, k = pat.subn(repl, src, count=1)
-        if k == 1:
-            updated += 1
-        else:
-            print(f"WARNING: could not locate {t} block in finance.html", file=sys.stderr)
-    if updated == 0:
+        try:
+            low, high = fi["year_low"], fi["year_high"]
+            if low == low and high == high:  # not NaN
+                f["low52"], f["high52"] = round(low, 2), round(high, 2)
+            info = tk.get_info()
+            if info.get("longName"):
+                f["name"] = info["longName"]
+            if fmt_aum(info.get("totalAssets")):
+                f["aum"] = fmt_aum(info["totalAssets"])
+            if info.get("netExpenseRatio") is not None:
+                f["expense"] = f"{info['netExpenseRatio']:.2f}%"
+        except Exception as e:  # noqa
+            print(f"WARNING: fund details failed for {t}: {e}; carrying forward", file=sys.stderr)
+        try:
+            fd = tk.funds_data
+            top = fd.top_holdings.head(5)
+            if len(top):
+                f["topHoldings"] = [(str(r["Name"]), f"{r['Holding Percent'] * 100:.1f}%") for _, r in top.iterrows()]
+            turnover = fd.fund_operations.loc["Annual Holdings Turnover", t]
+            if turnover == turnover:  # not NaN
+                f["turnover"] = f"{turnover * 100:.0f}%"
+        except Exception as e:  # noqa
+            print(f"WARNING: holdings failed for {t}: {e}; carrying forward", file=sys.stderr)
+        try:
+            closes = tk.history(start=f"{TODAY.year}-01-01", auto_adjust=False)["Close"].dropna()
+            if len(closes) >= 2:
+                closes.index = [d.date().isoformat() for d in closes.index]
+                histories[t] = closes
+                f["ytd"] = f"{(closes.iloc[-1] / closes.iloc[0] - 1) * 100:+.1f}%"
+        except Exception as e:  # noqa
+            print(f"WARNING: price history failed for {t}: {e}; carrying forward", file=sys.stderr)
+        fetched[t] = f
+
+    if not fetched:
         # Every quote failed. Rewriting now would stamp today's date onto last
         # week's prices and commit that as a fresh update.
         print(f"::warning::finance: 0/{len(TICKERS)} ETF prices updated; "
               "finance.html left untouched and the dashboard is stale")
         return
-    if updated < len(TICKERS):
-        print(f"::warning::finance: only {updated}/{len(TICKERS)} ETF prices updated; "
+
+    # One date axis for every chart: the trading days any ETF has this year. An ETF missing a
+    # day (a late listing, a halt) carries its previous close; days before its first close stay null.
+    dates = sorted({d for h in histories.values() for d in h.index})
+    for t, h in histories.items():
+        fetched[t]["closes"] = [None if v != v else round(float(v), 2) for v in h.reindex(dates).ffill()]
+
+    # Pass 2: write.
+    for t, f in fetched.items():
+        span = _etf_block(src, t)
+        if not span:
+            print(f"WARNING: could not locate {t} block in finance.html", file=sys.stderr)
+            continue
+        a, b = span
+        block = src[a:b]
+        indent = re.search(r"\n(\s*)ticker:", block).group(1)
+        for key, v in f.items():
+            if key == "topHoldings":
+                rows = ",\n".join(f"{indent}  {{ name: {_js(n)}, pct: {_js(p)} }}" for n, p in v)
+                js = f"[\n{rows}\n{indent}]"
+            else:
+                js = _js(v)
+            block = _set(block, key, js)
+        src = src[:a] + block + src[b:]
+
+    if dates:
+        line = "  const ETF_DATES = " + _js(dates) + ";\n"
+        m = re.search(r"  const ETF_DATES = \[[^\]]*\];\n", src)
+        src = src[:m.start()] + line + src[m.end():] if m else src.replace("  const ETF_DATA = [", line + "\n  const ETF_DATA = [", 1)
+
+    # Stocks: every ticker in WATCHLIST_DATA gets mcapB (market cap, $B). A ticker with no
+    # quote (delisted, renamed) keeps whatever it had, and the page leaves it out of the sum.
+    wl = re.search(r"const WATCHLIST_DATA = \[([\s\S]*?)\n\s*\];", src)
+    stocks = re.findall(r"\{ ticker: '([^']+)'", wl.group(1)) if wl else []
+    caps_updated = 0
+    for t in stocks:
+        try:
+            info = yf.Ticker(t).get_info()
+            cap = info.get("marketCap") if info.get("currency") == "USD" else None
+        except Exception as e:  # noqa
+            cap = None
+            print(f"WARNING: market cap failed for {t}: {e}", file=sys.stderr)
+        if not cap:
+            print(f"WARNING: no USD market cap for {t}; carrying forward", file=sys.stderr)
+            continue
+        pat = re.compile(r"(\{ ticker: '" + re.escape(t) + r"'[^\n]*?)(, mcapB: [\d.]+)? \}")
+        src, k = pat.subn(lambda m: f"{m.group(1)}, mcapB: {cap / 1e9:.2f} }}", src, count=1)
+        caps_updated += k
+
+    if len(fetched) < len(TICKERS):
+        print(f"::warning::finance: only {len(fetched)}/{len(TICKERS)} ETF prices updated; "
               "the rest carry forward last week's figures")
-    src = re.sub(r"Jan 2 to [A-Z][a-z]+ \d{1,2}, \d{4}", f"Jan 2 to {TODAY:%b %-d, %Y}", src)
+    as_of = datetime.date.fromisoformat(dates[-1]) if dates else TODAY  # the last close shown, not run day
+    src = re.sub(r"Jan 2 to [A-Z][a-z]+ \d{1,2}, \d{4}", f"Jan 2 to {as_of:%b %-d, %Y}", src)
     open("finance.html", "w").write(src)
-    print(f"finance: {updated}/{len(TICKERS)} ETF prices updated; date refs -> Jan 2 to {TODAY:%b %-d, %Y}")
+    print(f"finance: {len(fetched)}/{len(TICKERS)} ETFs updated ({len(histories)} with price history, "
+          f"{len(dates)} trading days); {caps_updated}/{len(stocks)} stock market caps; "
+          f"date refs -> Jan 2 to {as_of:%b %-d, %Y}")
 
 try:
     refresh_prices()

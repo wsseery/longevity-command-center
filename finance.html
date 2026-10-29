@@ -212,7 +212,7 @@
       font-size: 0.62rem;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: var(--text-dim);
+      color: #8892a8;  /* --text-dim is 2.8:1 on this card; this is 5.5:1 */
       margin-bottom: 4px;
     }
     .etf-charts-stat-value {
@@ -814,7 +814,7 @@
       <p class="hero-intro">The longevity economy is converging — public ETFs tracking aging populations and genomics, venture capital pouring billions into cellular reprogramming and senolytics, and a new class of pure-play longevity stocks. This dashboard maps the full investment landscape in one view.</p>
       <div class="hero-live">
         <span class="pulse-dot-cyan"></span>
-        LIVE MARKET DATA
+        MARKET DATA UPDATED WEEKLY
       </div>
     </div>
   </header>
@@ -824,20 +824,20 @@
        ============================================================ -->
   <section class="fin-stats-strip" id="finStatsStrip">
     <div class="stat-cell" data-delay="0">
-      <div class="stat-value fin-stat" data-target="$62B+">$0</div>
-      <div class="stat-label">Total ETF Market Cap</div>
+      <div class="stat-value fin-stat" id="stripETFAssets" data-target="&mdash;">&mdash;</div>
+      <div class="stat-label">Total ETF Assets</div>
     </div>
     <div class="stat-cell" data-delay="100">
-      <div class="stat-value fin-stat" data-target="19">0</div>
-      <div class="stat-label">Funds Tracked (11 ETF + 8 VC)</div>
+      <div class="stat-value fin-stat" id="stripFunds" data-target="&mdash;">&mdash;</div>
+      <div class="stat-label">Funds Tracked</div>
     </div>
     <div class="stat-cell" data-delay="200">
-      <div class="stat-value fin-stat" data-target="$8.5B">$0</div>
-      <div class="stat-label">2024 Longevity Capital</div>
+      <div class="stat-value fin-stat" id="stripStocks" data-target="&mdash;">&mdash;</div>
+      <div class="stat-label">Stocks Tracked</div>
     </div>
     <div class="stat-cell" data-delay="300">
-      <div class="stat-value fin-stat" data-target="$600B">$0</div>
-      <div class="stat-label">Projected Market 2035</div>
+      <div class="stat-value fin-stat" id="stripYTD" data-target="&mdash;">&mdash;</div>
+      <div class="stat-label">Avg ETF YTD</div>
     </div>
   </section>
 
@@ -849,7 +849,7 @@
       <div class="section-icon" style="background:rgba(0,255,200,0.12);border:1px solid rgba(0,255,200,0.25);">&#9652;</div>
       <div>
         <div class="fin-section-title">ETF PERFORMANCE &mdash; INDIVIDUAL CHARTS</div>
-        <div class="fin-section-subtitle">YTD price trends for each tracked longevity ETF &mdash; Jan 2 to Oct 27, 2026</div>
+        <div class="fin-section-subtitle">YTD price trends for each tracked longevity ETF &mdash; Jan 2 to Oct 28, 2026</div>
       </div>
     </div>
     <div class="etf-charts-stats">
@@ -866,7 +866,7 @@
         <div class="etf-charts-stat-value" style="color:var(--amber);text-shadow:0 0 16px var(--amber-glow);" id="mcapStockTotal">&mdash;</div>
       </div>
       <div class="etf-charts-stat">
-        <div class="etf-charts-stat-label">YTD Change</div>
+        <div class="etf-charts-stat-label">Avg ETF YTD</div>
         <div class="etf-charts-stat-value" id="mcapYTDChange">&mdash;</div>
       </div>
     </div>
@@ -899,7 +899,7 @@
       <div class="section-icon private">&#9830;</div>
       <div>
         <div class="fin-section-title">PRIVATE MARKETS &mdash; LONGEVITY VENTURE CAPITAL</div>
-        <div class="fin-section-subtitle">8 private funds and labs dedicated to extending human healthspan and lifespan</div>
+        <div class="fin-section-subtitle"><span id="vcCount">&mdash;</span> private funds and labs dedicated to extending human healthspan and lifespan</div>
       </div>
     </div>
     <div class="vc-grid" id="vcGrid">
@@ -965,28 +965,31 @@
   // ============================================================
   // DATA
   // ============================================================
+  const ETF_DATES = ['2026-01-02', '2026-01-05', '2026-01-06', '2026-01-07', '2026-01-08', '2026-01-09', '2026-01-12', '2026-01-13', '2026-01-14', '2026-01-15', '2026-01-16', '2026-01-20', '2026-01-21', '2026-01-22', '2026-01-23', '2026-01-26', '2026-01-27', '2026-01-28', '2026-01-29', '2026-01-30', '2026-02-02', '2026-02-03', '2026-02-04', '2026-02-05', '2026-02-06', '2026-02-09', '2026-02-10', '2026-02-11', '2026-02-12', '2026-02-13', '2026-02-17', '2026-02-18', '2026-02-19', '2026-02-20', '2026-02-23', '2026-02-24', '2026-02-25', '2026-02-26', '2026-02-27', '2026-03-02', '2026-03-03', '2026-03-04', '2026-03-05', '2026-03-06', '2026-03-09', '2026-03-10', '2026-03-11', '2026-03-12', '2026-03-13', '2026-03-16', '2026-03-17', '2026-03-18', '2026-03-19', '2026-03-20', '2026-03-23', '2026-03-24', '2026-03-25', '2026-03-26', '2026-03-27', '2026-03-30', '2026-03-31', '2026-04-01', '2026-04-02', '2026-04-06', '2026-04-07', '2026-04-08', '2026-04-09', '2026-04-10', '2026-04-13', '2026-04-14', '2026-04-15', '2026-04-16', '2026-04-17', '2026-04-20', '2026-04-21', '2026-04-22', '2026-04-23', '2026-04-24', '2026-04-27', '2026-04-28', '2026-04-29', '2026-04-30', '2026-05-01', '2026-05-04', '2026-05-05', '2026-05-06', '2026-05-07', '2026-05-08', '2026-05-11', '2026-05-12', '2026-05-13', '2026-05-14', '2026-05-15', '2026-05-18', '2026-05-19', '2026-05-20', '2026-05-21', '2026-05-22', '2026-05-26', '2026-05-27', '2026-05-28', '2026-05-29', '2026-06-01', '2026-06-02', '2026-06-03', '2026-06-04', '2026-06-05', '2026-06-08', '2026-06-09', '2026-06-10', '2026-06-11', '2026-06-12', '2026-06-15', '2026-06-16', '2026-06-17', '2026-06-18', '2026-06-22', '2026-06-23', '2026-06-24', '2026-06-25', '2026-06-26', '2026-06-29', '2026-06-30', '2026-07-01', '2026-07-02', '2026-07-06', '2026-07-07', '2026-07-08', '2026-07-09', '2026-07-10', '2026-07-13', '2026-07-14', '2026-07-15', '2026-07-16', '2026-07-17', '2026-07-20', '2026-07-21', '2026-07-22', '2026-07-23', '2026-07-24', '2026-07-27', '2026-07-28', '2026-07-29', '2026-07-30', '2026-07-31', '2026-08-03', '2026-08-04', '2026-08-05', '2026-08-06', '2026-08-07', '2026-08-10', '2026-08-11', '2026-08-12', '2026-08-13', '2026-08-14', '2026-08-17', '2026-08-18', '2026-08-19', '2026-08-20', '2026-08-21', '2026-08-24', '2026-08-25', '2026-08-26', '2026-08-27', '2026-08-28', '2026-08-31', '2026-09-01', '2026-09-02', '2026-09-03', '2026-09-04', '2026-09-08', '2026-09-09', '2026-09-10', '2026-09-11', '2026-09-14', '2026-09-15', '2026-09-16', '2026-09-17', '2026-09-18', '2026-09-21', '2026-09-22', '2026-09-23', '2026-09-24', '2026-09-25', '2026-09-28', '2026-09-29', '2026-09-30', '2026-10-01', '2026-10-02', '2026-10-05', '2026-10-06', '2026-10-07', '2026-10-08', '2026-10-09', '2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-19', '2026-10-20', '2026-10-21', '2026-10-22', '2026-10-23', '2026-10-26', '2026-10-27', '2026-10-28'];
+
   const ETF_DATA = [
     {
       ticker: 'AGNG',
       name: 'Global X Aging Population ETF',
       tag: 'aging',
       focus: 'Invests in companies positioned to serve the aging population, including senior living, healthcare services, pharmaceuticals, and biotech focused on age-related diseases.',
-      price: 38.38,
-      change: -0.18,
-      changePct: -0.47,
+      price: 38.56,
+      change: 0.16,
+      changePct: 0.42,
       aum: '$88.9M',
       expense: '0.50%',
-      ytd: '+1.8%',
-      holdings: 69,
-      low52: 29.40,
-      high52: 37.20,
+      ytd: '+7.0%',
+      low52: 33.63,
+      high52: 39.48,
       topHoldings: [
-        { name: 'UnitedHealth Group', pct: '5.2%' },
-        { name: 'Abbott Laboratories', pct: '4.8%' },
-        { name: 'Medtronic', pct: '4.1%' },
-        { name: 'CVS Health', pct: '3.7%' },
-        { name: 'Humana', pct: '3.4%' }
+        { name: 'AbbVie Inc', pct: '3.7%' },
+        { name: 'Eli Lilly and Co', pct: '3.6%' },
+        { name: 'Amgen Inc', pct: '3.5%' },
+        { name: 'Merck & Co Inc', pct: '3.5%' },
+        { name: 'Welltower Inc', pct: '3.3%' }
       ],
+      turnover: '10%',
+      closes: [36.05, 36.13, 36.8, 37.17, 37.02, 37.05, 36.88, 36.75, 37.03, 36.85, 36.82, 36.47, 36.94, 37.16, 37.09, 37.3, 37.35, 36.83, 36.93, 36.93, 37.09, 36.85, 37.04, 36.96, 37.56, 37.55, 37.54, 37.83, 37.85, 38.1, 38.3, 38.28, 38.2, 38.23, 38.44, 38.34, 38.43, 37.99, 38.35, 37.94, 37.28, 37.36, 36.52, 36.37, 36.73, 36.67, 36.43, 35.87, 35.56, 36.01, 36.06, 35.36, 35.11, 34.53, 34.55, 34.66, 35.1, 34.7, 34.67, 34.77, 35.6, 36.09, 35.96, 35.85, 35.7, 36.42, 36.42, 36.2, 36.26, 36.51, 36.49, 36.31, 36.81, 36.45, 35.51, 35.56, 35.53, 35.49, 35.12, 34.91, 34.36, 35.24, 35.09, 34.91, 34.89, 35.26, 35.06, 34.96, 34.79, 35.22, 35.28, 35.27, 34.81, 34.95, 35.1, 35.53, 35.41, 35.83, 35.6, 35.32, 35.2, 35.1, 34.53, 34.04, 34.18, 34.88, 34.92, 34.56, 35.04, 34.84, 35.17, 35.17, 34.88, 34.89, 34.57, 34.47, 34.63, 34.94, 35.43, 35.7, 36.24, 36.37, 36.02, 35.99, 37.06, 36.99, 37.23, 36.82, 36.61, 36.51, 36.49, 36.03, 36.2, 36.83, 36.71, 36.4, 36.54, 36.3, 36.48, 36.9, 37.09, 37.73, 37.81, 37.56, 37.19, 37.09, 37.12, 37.22, 37.28, 37.92, 38.35, 38.21, 38.14, 38.21, 38.07, 38.04, 38.34, 39.21, 38.75, 38.97, 38.83, 39.1, 38.8, 38.51, 38.24, 38.12, 38.14, 38.44, 38.63, 38.2, 37.26, 37.07, 36.68, 36.59, 37.09, 36.89, 36.85, 37.01, 36.92, 37.08, 37.29, 36.89, 36.74, 36.89, 36.92, 36.68, 36.61, 36.12, 35.94, 36.1, 36.09, 36.06, 35.86, 36.22, 36.42, 36.15, 36.56, 37.4, 37.42, 37.24, 38.11, 37.96, 38.71, 38.63, 38.65, 38.4, 38.56],
       url: 'https://finance.yahoo.com/quote/AGNG/'
     },
     {
@@ -994,22 +997,23 @@
       name: 'ARK Genomic Revolution ETF',
       tag: 'genomics',
       focus: 'Focuses on companies advancing genomics, including CRISPR gene editing, targeted therapeutics, bioinformatics, and molecular diagnostics relevant to aging.',
-      price: 51.65,
-      change: 2.63,
-      changePct: 5.37,
+      price: 54.82,
+      change: 3.12,
+      changePct: 6.03,
       aum: '$2.22B',
       expense: '0.75%',
-      ytd: '-8.3%',
-      holdings: 32,
-      low52: 18.50,
-      high52: 31.20,
+      ytd: '+87.9%',
+      low52: 24.6,
+      high52: 58.83,
       topHoldings: [
-        { name: 'Exact Sciences', pct: '9.1%' },
-        { name: 'Twist Bioscience', pct: '7.8%' },
-        { name: 'Intellia Therapeutics', pct: '6.4%' },
-        { name: 'Pacific Biosciences', pct: '5.9%' },
-        { name: 'Caribou Biosciences', pct: '5.2%' }
+        { name: 'Twist Bioscience Corp', pct: '10.3%' },
+        { name: '10x Genomics Inc Ordinary Shares - Class A', pct: '10.0%' },
+        { name: 'Tempus AI Inc Class A common stock', pct: '8.9%' },
+        { name: 'CRISPR Therapeutics AG', pct: '5.2%' },
+        { name: 'Absci Corp', pct: '5.1%' }
       ],
+      turnover: '34%',
+      closes: [29.18, 29.98, 31.5, 32.09, 30.91, 30.55, 31.8, 31.96, 32.53, 32.06, 31.82, 31.61, 32.4, 34.24, 32.63, 32.48, 32.42, 31.48, 31.35, 30.43, 30.62, 30.32, 29.18, 27.49, 28.79, 29.08, 29.13, 28.74, 27.85, 28.36, 28.93, 29.66, 29.87, 28.81, 28.73, 29.51, 29.24, 30.56, 29.98, 29.91, 29.07, 29.51, 28.78, 28.12, 28.81, 27.93, 27.67, 26.17, 26.36, 26.55, 27.2, 26.34, 26.7, 26.05, 26.63, 26.64, 26.86, 26.51, 25.01, 24.82, 26.42, 27.09, 27.36, 27.26, 27.16, 27.81, 27.07, 26.68, 27.9, 29.3, 29.94, 29.84, 30.79, 31.24, 30.71, 30.88, 29.8, 29.54, 29.91, 29.58, 28.53, 29.87, 30.3, 30.58, 29.78, 31.06, 30.38, 30.48, 29.94, 29.72, 29.63, 29.18, 28.15, 28.11, 28.12, 29.54, 30.53, 30.67, 31.3, 32.06, 34.12, 34.64, 34.75, 34.0, 33.92, 36.27, 33.41, 33.15, 33.56, 32.85, 33.65, 33.47, 35.1, 34.88, 35.04, 36.86, 36.4, 36.01, 38.58, 40.11, 41.43, 42.36, 42.06, 42.62, 42.91, 43.57, 42.6, 41.87, 43.0, 41.32, 40.59, 41.05, 41.22, 40.09, 39.87, 38.28, 39.56, 38.85, 38.82, 37.81, 37.79, 37.82, 37.5, 39.26, 38.56, 39.62, 40.7, 41.24, 40.55, 43.04, 44.31, 44.55, 44.69, 44.32, 43.45, 44.04, 43.21, 47.73, 47.64, 49.45, 48.01, 50.06, 49.45, 49.87, 47.64, 47.23, 46.84, 47.15, 47.2, 47.14, 46.85, 46.31, 45.38, 45.56, 46.8, 47.71, 47.85, 51.59, 51.64, 51.81, 52.87, 50.92, 53.53, 53.36, 53.35, 53.95, 54.22, 53.17, 54.0, 56.77, 51.75, 50.14, 49.29, 51.3, 49.48, 48.51, 48.28, 49.24, 46.7, 47.37, 48.65, 49.85, 47.87, 48.16, 48.72, 51.65, 54.82],
       url: 'https://finance.yahoo.com/quote/ARKG/'
     },
     {
@@ -1017,68 +1021,71 @@
       name: 'iShares Biotechnology ETF',
       tag: 'biotech',
       focus: 'Broad-market biotech ETF tracking the ICE Biotechnology Index, covering large and mid-cap biotech companies including many with aging-related pipelines.',
-      price: 210.63,
-      change: 1.43,
-      changePct: 0.68,
+      price: 216.35,
+      change: 3.65,
+      changePct: 1.72,
       aum: '$11.20B',
       expense: '0.44%',
-      ytd: '-4.2%',
-      holdings: 271,
-      low52: 140.10,
-      high52: 178.90,
+      ytd: '+28.0%',
+      low52: 154.62,
+      high52: 217.12,
       topHoldings: [
-        { name: 'Vertex Pharmaceuticals', pct: '8.9%' },
-        { name: 'Regeneron', pct: '8.2%' },
-        { name: 'Gilead Sciences', pct: '7.6%' },
-        { name: 'Amgen', pct: '7.1%' },
-        { name: 'Moderna', pct: '4.3%' }
+        { name: 'Gilead Sciences Inc', pct: '8.1%' },
+        { name: 'Amgen Inc', pct: '7.8%' },
+        { name: 'Vertex Pharmaceuticals Inc', pct: '7.6%' },
+        { name: 'Regeneron Pharmaceuticals Inc', pct: '5.3%' },
+        { name: 'Moderna Inc', pct: '4.9%' }
       ],
+      turnover: '27%',
+      closes: [169.0, 167.34, 171.24, 176.74, 172.26, 172.39, 171.4, 171.32, 172.83, 170.56, 169.96, 170.72, 175.16, 177.64, 175.33, 175.85, 176.9, 174.03, 174.25, 172.43, 174.14, 173.8, 174.05, 170.04, 174.98, 174.37, 172.06, 172.7, 170.64, 172.5, 174.02, 174.76, 175.03, 174.39, 175.1, 176.36, 175.3, 173.88, 175.37, 173.92, 170.1, 172.97, 168.67, 167.56, 171.29, 172.27, 170.87, 166.23, 165.51, 167.14, 167.17, 163.78, 164.46, 161.65, 162.69, 161.64, 165.75, 165.26, 160.41, 161.86, 168.85, 170.13, 169.43, 168.83, 168.5, 171.86, 172.16, 169.37, 172.19, 175.85, 175.99, 174.12, 176.66, 175.76, 173.99, 174.36, 171.53, 169.78, 169.02, 167.81, 165.38, 168.69, 167.27, 170.16, 170.34, 173.87, 170.1, 169.94, 170.0, 172.28, 172.65, 171.33, 166.83, 164.03, 164.19, 167.91, 169.06, 168.79, 169.42, 169.88, 172.24, 172.18, 169.37, 164.27, 167.5, 171.43, 168.44, 166.92, 169.36, 165.93, 170.49, 170.66, 172.17, 171.44, 173.44, 173.64, 177.0, 178.09, 181.53, 183.67, 187.36, 189.79, 190.19, 190.12, 195.7, 195.31, 198.23, 196.34, 197.34, 192.06, 189.55, 188.67, 189.9, 189.51, 189.76, 186.53, 189.31, 187.0, 188.98, 188.14, 188.33, 190.52, 188.53, 189.96, 186.41, 185.91, 190.15, 191.8, 192.97, 197.71, 200.02, 199.74, 200.72, 198.94, 198.26, 201.93, 203.56, 216.96, 210.83, 213.56, 212.53, 216.4, 215.23, 214.8, 208.95, 209.05, 210.82, 213.8, 213.81, 211.92, 207.33, 205.49, 202.64, 202.93, 204.6, 202.0, 202.4, 207.07, 204.56, 207.16, 210.81, 206.6, 209.25, 209.77, 210.71, 211.04, 210.53, 205.96, 205.29, 207.96, 203.1, 203.34, 200.48, 206.49, 204.26, 200.02, 203.25, 207.41, 201.99, 204.06, 210.5, 211.55, 209.54, 207.74, 208.69, 212.2, 216.35],
       url: 'https://finance.yahoo.com/quote/IBB/'
     },
     {
       ticker: 'XBI',
-      name: 'SPDR S&P Biotech ETF',
+      name: 'State Street SPDR S&P Biotech ETF',
       tag: 'biotech',
       focus: 'Equal-weighted biotech ETF with heavy small/mid-cap exposure, capturing emerging longevity biotech companies alongside established names.',
-      price: 153.79,
-      change: 3.35,
-      changePct: 2.23,
+      price: 157.51,
+      change: 3.01,
+      changePct: 1.95,
       aum: '$10.36B',
       expense: '0.35%',
-      ytd: '-6.8%',
-      holdings: 141,
-      low52: 98.20,
-      high52: 138.40,
+      ytd: '+29.6%',
+      low52: 106.3,
+      high52: 169.89,
       topHoldings: [
-        { name: 'Natera', pct: '2.1%' },
-        { name: 'Halozyme Therapeutics', pct: '1.9%' },
-        { name: 'Exact Sciences', pct: '1.8%' },
-        { name: 'Karuna Therapeutics', pct: '1.7%' },
-        { name: 'Prometheus Biosciences', pct: '1.6%' }
+        { name: 'Twist Bioscience Corp', pct: '2.2%' },
+        { name: 'Moderna Inc', pct: '2.0%' },
+        { name: 'Natera Inc', pct: '1.8%' },
+        { name: 'Iovance Biotherapeutics Inc', pct: '1.6%' },
+        { name: 'Amgen Inc', pct: '1.5%' }
       ],
+      turnover: '71%',
+      closes: [121.52, 120.15, 122.09, 126.43, 123.71, 124.5, 123.93, 123.85, 126.82, 124.35, 124.18, 125.29, 128.18, 131.57, 128.04, 127.86, 128.53, 125.94, 126.74, 124.75, 127.35, 127.65, 125.29, 120.72, 125.51, 126.11, 125.34, 124.65, 123.18, 122.86, 124.63, 125.6, 126.74, 124.78, 126.97, 129.16, 128.28, 127.67, 127.37, 126.55, 123.5, 126.42, 123.9, 124.0, 127.12, 127.43, 126.38, 122.62, 121.83, 123.91, 124.19, 121.11, 122.33, 120.31, 121.7, 119.54, 123.92, 123.9, 119.59, 118.78, 127.73, 128.55, 128.96, 128.8, 128.85, 130.65, 131.82, 129.44, 132.05, 135.72, 136.45, 135.46, 138.67, 137.79, 136.39, 137.31, 134.49, 133.28, 133.04, 131.16, 128.9, 131.33, 130.42, 133.5, 133.79, 137.68, 133.66, 134.71, 134.75, 134.91, 135.85, 134.85, 130.69, 127.67, 126.79, 131.71, 132.78, 131.66, 133.35, 134.45, 135.99, 136.69, 133.62, 127.76, 129.83, 133.42, 128.67, 128.43, 131.38, 128.85, 132.74, 133.79, 136.4, 135.34, 139.39, 140.72, 145.86, 147.03, 149.71, 151.59, 155.38, 158.31, 158.25, 156.55, 160.46, 160.81, 163.87, 162.97, 164.28, 159.03, 155.34, 155.45, 156.22, 152.0, 154.26, 150.94, 154.5, 152.11, 152.23, 150.48, 150.59, 149.78, 147.91, 151.46, 147.01, 147.31, 151.88, 153.01, 154.5, 157.37, 158.03, 158.07, 159.39, 156.86, 157.41, 159.53, 160.11, 169.55, 163.38, 165.73, 164.17, 169.1, 168.39, 168.23, 162.38, 162.5, 163.4, 165.37, 164.38, 163.81, 161.93, 159.38, 156.82, 156.2, 157.6, 154.03, 154.18, 158.25, 156.72, 158.23, 161.87, 155.2, 156.05, 155.03, 156.61, 156.81, 157.68, 154.51, 154.43, 156.19, 150.9, 150.23, 149.29, 153.77, 151.4, 146.8, 146.77, 149.78, 144.32, 147.86, 153.24, 152.78, 151.64, 149.54, 150.47, 154.84, 157.51],
       url: 'https://finance.yahoo.com/quote/XBI/'
     },
     {
       ticker: 'XLV',
-      name: 'Health Care Select Sector SPDR Fund',
+      name: 'State Street Health Care Select Sector SPDR ETF',
       tag: 'healthcare',
       focus: 'Largest healthcare sector ETF tracking S&P 500 healthcare companies, providing broad exposure to pharma, biotech, medical devices, and healthcare services.',
-      price: 179.06,
-      change: -0.06,
-      changePct: -0.03,
+      price: 179.72,
+      change: 0.66,
+      changePct: 0.37,
       aum: '$43.39B',
-      expense: '0.09%',
-      ytd: '-1.9%',
-      holdings: 61,
-      low52: 130.80,
-      high52: 156.40,
+      expense: '0.08%',
+      ytd: '+15.6%',
+      low52: 141.97,
+      high52: 182.25,
       topHoldings: [
-        { name: 'Eli Lilly', pct: '11.8%' },
-        { name: 'UnitedHealth Group', pct: '9.4%' },
-        { name: 'Johnson & Johnson', pct: '7.2%' },
-        { name: 'AbbVie', pct: '6.8%' },
-        { name: 'Merck', pct: '5.9%' }
+        { name: 'Eli Lilly and Co', pct: '15.1%' },
+        { name: 'Johnson & Johnson', pct: '10.4%' },
+        { name: 'AbbVie Inc', pct: '7.5%' },
+        { name: 'Merck & Co Inc', pct: '5.8%' },
+        { name: 'UnitedHealth Group Inc', pct: '5.4%' }
       ],
+      turnover: '2%',
+      closes: [155.51, 155.04, 158.09, 159.66, 158.12, 157.31, 157.38, 156.74, 157.86, 156.96, 155.74, 155.4, 158.26, 158.29, 157.48, 158.1, 155.45, 154.31, 153.82, 154.74, 155.69, 154.1, 156.03, 154.84, 157.71, 156.32, 155.33, 156.25, 156.0, 157.67, 157.37, 157.67, 157.26, 156.82, 158.54, 157.87, 157.83, 157.42, 160.2, 158.53, 156.74, 157.05, 153.91, 152.7, 154.26, 153.15, 152.85, 150.16, 149.79, 151.01, 149.64, 147.14, 146.61, 145.33, 144.77, 144.79, 146.24, 145.74, 143.26, 143.82, 146.61, 147.73, 146.81, 146.28, 146.57, 149.67, 149.33, 147.31, 147.97, 148.83, 147.77, 146.61, 148.8, 147.42, 145.92, 146.38, 146.24, 144.18, 143.46, 143.84, 142.84, 145.99, 145.16, 144.73, 145.3, 145.4, 144.72, 143.49, 143.04, 145.85, 146.71, 146.63, 145.1, 145.72, 147.32, 147.13, 148.15, 149.89, 148.51, 148.79, 150.88, 149.47, 147.84, 146.4, 147.55, 152.08, 153.01, 152.65, 154.57, 152.85, 154.09, 153.81, 152.89, 152.94, 150.71, 149.4, 150.06, 152.18, 153.35, 155.63, 160.34, 160.74, 158.66, 159.54, 163.74, 161.96, 164.44, 162.3, 162.17, 160.84, 161.41, 158.29, 158.29, 161.8, 161.09, 159.25, 160.25, 159.43, 161.44, 162.57, 163.4, 167.26, 166.24, 163.52, 162.55, 162.24, 162.1, 164.16, 164.45, 165.68, 168.44, 168.01, 168.44, 168.38, 167.37, 167.05, 169.73, 175.68, 172.39, 174.62, 174.7, 175.29, 173.54, 171.58, 171.16, 170.54, 171.67, 172.95, 173.26, 171.45, 167.13, 166.58, 165.66, 165.36, 167.75, 167.66, 167.77, 168.81, 168.39, 169.01, 169.89, 168.8, 169.87, 170.7, 171.26, 170.73, 168.42, 166.2, 166.18, 167.37, 167.09, 168.81, 168.16, 170.81, 171.99, 169.66, 173.96, 177.19, 176.71, 175.65, 179.82, 178.94, 181.3, 179.28, 179.28, 179.18, 179.72],
       url: 'https://finance.yahoo.com/quote/XLV/'
     },
     {
@@ -1086,22 +1093,23 @@
       name: 'ALPS Medical Breakthroughs ETF',
       tag: 'clinical',
       focus: 'Invests in small and mid-cap biotech companies with drugs in Phase II or Phase III clinical trials, capturing potential breakthrough aging therapies before approval.',
-      price: 55.07,
-      change: 1.29,
-      changePct: 2.4,
+      price: 56.09,
+      change: 0.61,
+      changePct: 1.1,
       aum: '$211.6M',
       expense: '0.50%',
-      ytd: '-5.1%',
-      holdings: 88,
-      low52: 39.80,
-      high52: 55.60,
+      ytd: '+11.8%',
+      low52: 43.1,
+      high52: 70.85,
       topHoldings: [
-        { name: 'Halozyme Therapeutics', pct: '3.8%' },
-        { name: 'Neurocrine Biosciences', pct: '3.4%' },
-        { name: 'BioAtla', pct: '2.9%' },
-        { name: 'Corcept Therapeutics', pct: '2.6%' },
-        { name: 'Blueprint Medicines', pct: '2.3%' }
+        { name: 'CG Oncology Inc', pct: '3.9%' },
+        { name: 'Travere Therapeutics Inc Ordinary Shares', pct: '3.5%' },
+        { name: 'Oruka Therapeutics Inc', pct: '3.5%' },
+        { name: 'Definium Therapeutics Inc Ordinary Shares', pct: '3.2%' },
+        { name: 'Veradermics Inc', pct: '3.2%' }
       ],
+      turnover: '58%',
+      closes: [50.16, 48.96, 49.18, 51.45, 50.57, 51.37, 50.95, 50.86, 52.48, 51.22, 51.07, 51.97, 52.98, 54.18, 52.55, 52.52, 53.05, 51.94, 52.36, 51.25, 52.51, 52.44, 51.32, 48.92, 50.99, 51.17, 51.41, 50.61, 50.29, 49.72, 50.4, 50.61, 51.11, 50.91, 51.73, 52.63, 52.23, 52.06, 51.56, 50.88, 49.48, 50.72, 49.41, 49.86, 51.29, 51.88, 51.7, 50.18, 49.81, 50.67, 50.69, 49.08, 49.47, 48.33, 48.85, 48.16, 50.0, 49.9, 48.36, 48.06, 52.34, 52.86, 53.49, 53.56, 53.78, 54.35, 55.06, 53.98, 55.08, 56.16, 56.67, 56.37, 57.6, 56.76, 55.87, 56.21, 54.59, 54.41, 54.26, 53.54, 52.6, 53.61, 53.53, 55.19, 55.29, 56.38, 55.21, 55.52, 55.27, 55.14, 55.72, 55.11, 53.39, 51.56, 50.92, 52.83, 53.8, 53.3, 53.55, 53.82, 54.21, 54.44, 52.81, 50.31, 51.02, 52.22, 50.52, 50.34, 51.5, 50.52, 52.09, 52.76, 53.5, 53.26, 54.25, 55.11, 58.66, 59.14, 60.84, 61.37, 63.25, 64.59, 64.65, 63.35, 64.9, 64.84, 67.84, 68.31, 68.94, 67.22, 65.33, 65.29, 65.53, 63.44, 65.2, 63.6, 64.98, 64.1, 64.33, 63.77, 64.48, 63.52, 63.14, 65.2, 63.36, 63.53, 65.58, 66.29, 67.2, 67.61, 67.12, 67.1, 67.77, 66.92, 67.28, 67.82, 69.09, 70.79, 68.56, 69.11, 68.64, 70.33, 69.66, 69.51, 67.09, 66.82, 66.86, 67.89, 67.31, 67.66, 66.82, 65.2, 63.8, 63.29, 63.71, 62.54, 62.38, 63.73, 62.2, 62.38, 63.35, 59.85, 58.55, 57.56, 57.93, 57.94, 58.3, 56.64, 56.15, 56.26, 54.38, 54.13, 53.94, 55.04, 53.85, 51.64, 51.2, 52.22, 50.12, 52.11, 54.81, 54.57, 54.55, 53.38, 53.78, 55.48, 56.09],
       url: 'https://finance.yahoo.com/quote/SBIO/'
     },
     {
@@ -1109,22 +1117,23 @@
       name: 'VanEck Biotech ETF',
       tag: 'biotech',
       focus: 'Concentrated biotech ETF holding 25 of the largest U.S.-listed biotech companies, including major players in aging research and longevity therapeutics.',
-      price: 247.93,
-      change: 2.2,
-      changePct: 0.9,
+      price: 253.27,
+      change: 3.47,
+      changePct: 1.39,
       aum: '$487.7M',
       expense: '0.35%',
-      ytd: '-3.7%',
-      holdings: 25,
-      low52: 158.20,
-      high52: 201.40,
+      ytd: '+33.1%',
+      low52: 177.35,
+      high52: 254.75,
       topHoldings: [
-        { name: 'Regeneron', pct: '10.2%' },
-        { name: 'Vertex Pharmaceuticals', pct: '9.8%' },
-        { name: 'Gilead Sciences', pct: '9.1%' },
-        { name: 'Amgen', pct: '8.7%' },
-        { name: 'Moderna', pct: '5.4%' }
+        { name: 'Amgen Inc', pct: '15.7%' },
+        { name: 'Gilead Sciences Inc', pct: '13.3%' },
+        { name: 'Vertex Pharmaceuticals Inc', pct: '8.2%' },
+        { name: 'Regeneron Pharmaceuticals Inc', pct: '6.4%' },
+        { name: 'Moderna Inc', pct: '6.4%' }
       ],
+      turnover: '19%',
+      closes: [190.23, 189.62, 194.81, 199.6, 193.77, 193.29, 191.93, 191.89, 192.29, 190.52, 190.88, 191.1, 197.2, 198.8, 197.91, 200.03, 201.11, 198.56, 198.23, 196.65, 197.12, 195.0, 197.88, 194.77, 199.35, 198.09, 194.3, 195.72, 191.78, 195.12, 195.83, 197.1, 197.16, 197.11, 196.8, 197.28, 196.57, 194.53, 197.98, 196.36, 192.33, 195.04, 190.41, 188.93, 192.94, 192.76, 192.04, 187.02, 186.6, 187.52, 187.65, 184.13, 184.27, 181.47, 182.56, 182.22, 185.37, 184.83, 180.06, 182.94, 188.02, 189.33, 187.79, 186.62, 186.17, 190.04, 189.57, 186.53, 190.27, 193.85, 194.15, 191.66, 193.78, 192.63, 190.87, 190.78, 187.94, 185.67, 184.15, 183.84, 182.15, 185.3, 183.15, 185.61, 186.35, 189.15, 185.45, 184.6, 185.15, 188.4, 187.39, 185.99, 181.78, 179.9, 181.12, 182.86, 184.03, 184.76, 183.98, 184.68, 188.27, 188.64, 185.94, 181.73, 185.77, 189.49, 188.0, 186.05, 187.49, 183.08, 187.88, 187.56, 188.13, 187.97, 188.1, 187.64, 189.37, 190.83, 194.96, 196.51, 201.08, 203.74, 203.24, 204.46, 211.34, 210.33, 212.39, 209.28, 210.13, 205.55, 204.46, 202.83, 203.99, 206.25, 204.78, 202.29, 203.42, 201.15, 204.03, 203.57, 204.07, 210.1, 208.64, 208.01, 205.55, 204.28, 208.03, 210.49, 210.67, 216.58, 219.79, 219.72, 220.27, 219.64, 218.04, 222.29, 224.48, 244.02, 237.11, 241.23, 240.41, 243.73, 242.67, 241.99, 236.48, 236.4, 239.49, 242.79, 243.73, 241.12, 232.34, 231.22, 228.64, 229.39, 232.02, 230.7, 231.17, 236.72, 234.14, 237.72, 242.03, 240.21, 243.78, 245.36, 245.34, 245.64, 244.58, 238.74, 237.45, 240.53, 236.3, 237.87, 234.03, 240.47, 239.22, 235.92, 241.07, 246.49, 241.36, 241.14, 248.78, 250.46, 248.41, 246.57, 247.39, 249.8, 253.27],
       url: 'https://finance.yahoo.com/quote/BBH/'
     },
     {
@@ -1132,22 +1141,23 @@
       name: 'iShares U.S. Medical Devices ETF',
       tag: 'devices',
       focus: 'Broad exposure to U.S. medical device companies including diagnostic equipment, implantable devices, and monitoring technology central to extended healthspan.',
-      price: 54.73,
-      change: -0.31,
-      changePct: -0.56,
+      price: 54.64,
+      change: 0.07,
+      changePct: 0.13,
       aum: '$3.45B',
-      expense: '0.40%',
-      ytd: '-6.2%',
-      holdings: 63,
-      low52: 46.20,
-      high52: 65.80,
+      expense: '0.37%',
+      ytd: '-11.7%',
+      low52: 47.37,
+      high52: 64.71,
       topHoldings: [
-        { name: 'Abbott Laboratories', pct: '11.2%' },
-        { name: 'Intuitive Surgical', pct: '10.8%' },
-        { name: 'Becton Dickinson', pct: '8.4%' },
-        { name: 'Boston Scientific', pct: '8.1%' },
-        { name: 'Dexcom', pct: '6.3%' }
+        { name: 'Abbott Laboratories', pct: '17.8%' },
+        { name: 'Intuitive Surgical Inc', pct: '14.9%' },
+        { name: 'Medtronic PLC', pct: '11.5%' },
+        { name: 'IDEXX Laboratories Inc', pct: '4.6%' },
+        { name: 'DexCom Inc', pct: '4.6%' }
       ],
+      turnover: '12%',
+      closes: [61.89, 62.77, 64.4, 64.3, 64.2, 63.94, 63.19, 62.36, 62.55, 62.42, 61.83, 61.41, 61.85, 60.78, 60.28, 60.74, 60.44, 60.06, 59.5, 60.08, 59.64, 59.05, 57.96, 57.93, 58.36, 58.09, 58.42, 58.62, 57.36, 57.99, 58.58, 59.45, 59.12, 59.36, 59.54, 59.41, 59.67, 60.32, 60.2, 59.63, 59.0, 58.81, 57.88, 56.76, 57.34, 56.41, 56.28, 54.97, 54.66, 55.58, 55.95, 55.14, 54.87, 54.44, 54.5, 54.1, 54.38, 54.29, 53.18, 52.6, 53.35, 53.43, 53.24, 53.28, 53.19, 54.35, 53.8, 53.24, 53.92, 54.35, 54.24, 53.23, 54.22, 53.86, 52.29, 53.3, 53.01, 52.81, 52.72, 52.02, 50.33, 51.06, 50.5, 49.93, 49.79, 49.71, 50.0, 49.01, 47.55, 48.7, 48.51, 48.76, 48.46, 49.78, 50.28, 50.9, 50.54, 50.57, 50.37, 49.17, 49.35, 48.96, 48.84, 48.19, 48.53, 49.87, 50.08, 49.86, 50.94, 49.72, 49.67, 49.67, 49.65, 49.91, 48.4, 49.07, 48.34, 49.12, 49.62, 50.15, 51.03, 50.67, 49.41, 49.98, 51.88, 52.11, 52.25, 51.26, 51.28, 51.34, 51.34, 49.22, 49.86, 52.2, 50.51, 50.58, 49.95, 49.41, 49.44, 50.23, 51.37, 52.69, 53.3, 52.74, 52.51, 54.21, 54.11, 53.72, 54.11, 54.38, 55.45, 55.98, 56.08, 56.11, 55.76, 55.08, 55.44, 56.64, 55.45, 56.17, 55.88, 55.71, 55.39, 54.62, 55.19, 54.97, 54.29, 54.42, 53.91, 53.63, 51.74, 51.48, 50.9, 50.88, 51.86, 51.78, 51.9, 51.7, 51.77, 51.95, 52.3, 51.78, 51.34, 51.6, 51.96, 51.79, 51.15, 50.65, 50.45, 51.59, 50.93, 50.95, 51.1, 51.74, 52.79, 52.69, 52.71, 54.01, 53.74, 53.76, 54.27, 53.42, 54.87, 54.92, 55.04, 54.53, 54.64],
       url: 'https://finance.yahoo.com/quote/IHI/'
     },
     {
@@ -1155,68 +1165,71 @@
       name: 'iShares Genomics Immunology and Healthcare ETF',
       tag: 'genomics',
       focus: 'Targets companies in genomics, immunology, and healthcare innovation, including gene therapy, immunotherapy, and precision medicine companies tackling aging.',
-      price: 41.76,
-      change: 0.83,
-      changePct: 2.03,
+      price: 43.47,
+      change: 1.22,
+      changePct: 2.89,
       aum: '$299.0M',
       expense: '0.47%',
-      ytd: '-4.6%',
-      holdings: 115,
-      low52: 22.80,
-      high52: 33.10,
+      ytd: '+65.8%',
+      low52: 24.29,
+      high52: 43.79,
       topHoldings: [
-        { name: 'AstraZeneca', pct: '5.1%' },
-        { name: 'Roche', pct: '4.6%' },
-        { name: 'Illumina', pct: '3.8%' },
-        { name: 'CRISPR Therapeutics', pct: '3.2%' },
-        { name: 'Moderna', pct: '2.9%' }
+        { name: 'Moderna Inc', pct: '11.2%' },
+        { name: 'Twist Bioscience Corp', pct: '7.7%' },
+        { name: 'Iovance Biotherapeutics Inc', pct: '5.0%' },
+        { name: 'Genmab AS', pct: '4.0%' },
+        { name: 'Revolution Medicines Inc Ordinary Shares', pct: '3.8%' }
       ],
+      turnover: '49%',
+      closes: [26.22, 26.19, 26.99, 27.94, 27.52, 27.82, 27.64, 27.87, 28.55, 28.19, 28.38, 28.54, 29.5, 30.12, 29.52, 29.43, 29.65, 28.9, 29.09, 28.51, 28.86, 28.87, 28.89, 28.24, 29.0, 29.21, 29.01, 28.95, 28.76, 29.06, 29.51, 29.75, 30.0, 29.63, 30.43, 31.09, 30.8, 30.89, 31.13, 30.91, 29.83, 30.47, 29.64, 29.58, 30.24, 29.85, 29.96, 28.91, 28.78, 29.46, 29.58, 28.7, 28.83, 28.28, 28.59, 28.11, 28.88, 28.51, 27.96, 27.81, 29.05, 29.19, 29.25, 29.06, 28.92, 29.52, 29.63, 29.32, 30.17, 30.84, 30.97, 30.66, 31.21, 31.22, 30.83, 30.88, 30.27, 29.98, 29.63, 29.39, 28.92, 29.39, 29.32, 29.65, 29.52, 30.44, 29.55, 29.88, 29.78, 29.98, 29.8, 29.54, 28.81, 28.52, 28.37, 29.2, 29.48, 29.45, 29.75, 29.81, 30.08, 29.88, 29.32, 28.68, 28.89, 29.96, 29.14, 29.06, 29.2, 28.65, 29.52, 29.77, 29.96, 29.87, 30.39, 30.56, 30.7, 31.17, 31.71, 32.29, 33.07, 33.58, 33.75, 33.61, 34.91, 34.68, 34.72, 34.25, 34.5, 33.55, 32.95, 32.82, 33.12, 32.65, 32.8, 32.26, 32.84, 32.39, 32.35, 32.03, 32.24, 32.45, 32.15, 32.79, 32.33, 32.42, 32.91, 33.34, 33.58, 34.78, 35.26, 35.2, 35.42, 35.24, 35.23, 35.86, 35.98, 40.75, 39.29, 40.08, 39.67, 41.48, 40.63, 40.6, 39.29, 39.26, 39.67, 40.2, 40.29, 39.77, 39.23, 38.6, 37.88, 38.06, 38.74, 38.59, 38.7, 40.0, 39.83, 40.63, 41.74, 40.78, 41.69, 41.77, 41.79, 42.63, 42.32, 41.64, 41.65, 42.72, 40.87, 40.88, 40.42, 42.17, 41.56, 40.79, 41.28, 42.05, 40.54, 40.96, 42.58, 42.7, 41.04, 40.91, 40.95, 42.0, 43.47],
       url: 'https://finance.yahoo.com/quote/IDNA/'
     },
     {
       ticker: 'HTEC',
-      name: 'ROBO Global Healthcare Technology & Innovation ETF',
+      name: 'Robo Global Healthcare Technology and Innovation ETF',
       tag: 'healthtech',
       focus: 'Invests in healthcare technology and innovation companies spanning AI-driven diagnostics, robotic surgery, telehealth, and digital health platforms advancing longevity.',
-      price: 45.22,
-      change: 0.56,
-      changePct: 1.25,
+      price: 46.01,
+      change: 0.8,
+      changePct: 1.77,
       aum: '$76.3M',
       expense: '0.68%',
-      ytd: '-3.2%',
-      holdings: 80,
-      low52: 26.50,
-      high52: 37.80,
+      ytd: '+29.9%',
+      low52: 31.84,
+      high52: 46.19,
       topHoldings: [
-        { name: 'Intuitive Surgical', pct: '4.8%' },
-        { name: 'Veeva Systems', pct: '4.2%' },
-        { name: 'iRhythm Technologies', pct: '3.6%' },
-        { name: 'Tandem Diabetes Care', pct: '3.1%' },
-        { name: 'Inspire Medical Systems', pct: '2.8%' }
+        { name: 'Twist Bioscience Corp', pct: '3.0%' },
+        { name: 'GRAIL Inc', pct: '2.8%' },
+        { name: 'Natera Inc', pct: '2.4%' },
+        { name: 'Tempus AI Inc Class A common stock', pct: '2.3%' },
+        { name: 'Illumina Inc', pct: '2.2%' }
       ],
+      turnover: '38%',
+      closes: [35.4, 36.16, 37.36, 37.57, 37.28, 37.26, 37.42, 37.16, 37.38, 37.44, 37.23, 37.05, 37.89, 38.06, 37.39, 37.66, 37.5, 37.01, 36.77, 36.52, 36.72, 36.24, 35.86, 35.07, 35.6, 35.44, 35.55, 35.24, 34.7, 34.96, 35.26, 35.98, 35.99, 35.53, 35.2, 35.28, 35.54, 35.79, 35.77, 35.31, 34.76, 35.15, 34.52, 33.81, 34.12, 33.7, 33.56, 32.41, 32.36, 32.76, 33.14, 32.49, 32.48, 32.1, 32.47, 32.71, 33.2, 32.98, 31.85, 31.92, 33.02, 33.35, 33.26, 33.16, 33.58, 33.69, 33.16, 32.6, 33.38, 34.18, 34.48, 34.15, 34.88, 34.74, 34.17, 34.21, 33.3, 33.56, 33.63, 33.08, 32.27, 33.41, 33.43, 33.24, 33.44, 34.31, 34.1, 33.65, 33.33, 33.63, 33.44, 33.41, 32.8, 33.05, 33.14, 34.08, 34.24, 34.17, 34.32, 34.11, 34.93, 34.83, 34.49, 34.05, 34.28, 35.62, 34.72, 34.59, 35.26, 34.73, 35.12, 34.9, 35.12, 35.1, 34.75, 35.08, 34.69, 35.13, 36.24, 36.82, 38.25, 37.67, 37.29, 37.97, 38.68, 38.93, 38.68, 37.95, 38.67, 38.28, 38.02, 37.63, 38.03, 38.39, 38.13, 37.59, 37.47, 37.14, 37.49, 37.53, 37.77, 38.35, 38.43, 38.68, 38.47, 39.26, 39.45, 39.85, 39.64, 40.62, 41.32, 41.11, 41.23, 41.19, 40.86, 41.05, 40.69, 43.32, 42.56, 43.58, 42.77, 43.69, 43.44, 43.51, 42.71, 42.49, 42.3, 42.73, 42.69, 42.35, 41.7, 41.16, 40.42, 40.73, 41.44, 41.52, 41.72, 42.67, 42.41, 43.15, 43.64, 43.34, 44.17, 44.36, 44.37, 44.37, 44.36, 43.29, 43.45, 44.54, 43.23, 42.57, 42.12, 43.03, 43.0, 42.84, 42.88, 43.77, 42.74, 42.93, 44.06, 44.46, 44.33, 44.42, 44.53, 45.21, 46.01],
       url: 'https://finance.yahoo.com/quote/HTEC/'
     },
     {
       ticker: 'THNR',
-      name: 'Thunder Bridge Capital Partners IV ETF',
-      tag: 'clinical',
-      focus: 'Focused on clinical-stage biotech and health innovation companies with near-term catalysts, including longevity-related drug development and therapeutic platforms.',
-      price: 24.01,
-      change: -0.65,
-      changePct: -2.64,
+      name: 'Amplify Weight Loss Drug & Treatment ETF',
+      tag: 'healthcare',
+      focus: 'Tracks an index of global companies expected to benefit from weight-loss drug development: drug makers, makers of combination therapies, and telehealth providers that give patients access to these treatments.',
+      price: 24.72,
+      change: 0.1,
+      changePct: 0.41,
       aum: '$5.8M',
-      expense: '0.65%',
+      expense: '0.59%',
       ytd: '-2.8%',
-      holdings: 35,
-      low52: 19.40,
-      high52: 28.90,
+      low52: 22.89,
+      high52: 27.94,
       topHoldings: [
-        { name: 'BioAge Labs', pct: '5.8%' },
-        { name: 'Unity Biotechnology', pct: '4.9%' },
-        { name: 'Juvenescence', pct: '4.2%' },
-        { name: 'Rubedo Life Sciences', pct: '3.6%' },
-        { name: 'Oisin Biotechnologies', pct: '3.1%' }
+        { name: 'Eli Lilly and Co', pct: '10.1%' },
+        { name: 'Novo Nordisk AS ADR', pct: '8.4%' },
+        { name: 'CSPC Pharmaceutical Group Ltd', pct: '5.8%' },
+        { name: 'Amgen Inc', pct: '5.7%' },
+        { name: 'Pfizer Inc', pct: '5.4%' }
       ],
+      turnover: '70%',
+      closes: [25.42, 25.51, 25.82, 26.27, 26.11, 26.11, 26.18, 25.98, 26.15, 25.83, 25.99, 25.75, 26.05, 26.44, 26.45, 26.62, 26.69, 26.12, 26.3, 26.2, 26.37, 25.65, 25.97, 25.36, 25.97, 26.12, 26.03, 26.16, 26.31, 26.54, 26.54, 26.53, 26.38, 26.48, 26.26, 26.14, 26.0, 25.63, 25.96, 25.61, 25.08, 25.41, 24.77, 24.66, 25.11, 25.09, 25.03, 24.41, 24.3, 24.66, 24.65, 23.95, 23.9, 23.48, 23.5, 23.48, 23.89, 23.67, 23.66, 23.84, 24.58, 24.97, 24.9, 24.67, 24.6, 24.96, 24.92, 24.66, 24.62, 24.83, 25.04, 24.87, 25.05, 24.91, 24.38, 24.47, 24.41, 24.48, 23.98, 23.91, 23.59, 24.5, 24.62, 24.68, 24.75, 25.12, 24.75, 24.64, 24.8, 24.93, 25.03, 24.92, 24.43, 24.02, 24.12, 24.42, 24.53, 24.77, 24.62, 24.75, 24.89, 24.92, 24.26, 23.91, 23.79, 24.49, 24.31, 23.94, 24.03, 23.99, 24.53, 24.42, 24.38, 24.26, 24.26, 24.12, 24.44, 24.67, 24.88, 24.94, 25.36, 25.86, 25.69, 25.6, 26.41, 26.55, 26.75, 26.32, 26.24, 25.93, 25.64, 25.45, 25.9, 25.83, 25.72, 25.8, 25.69, 25.64, 25.67, 25.65, 25.75, 26.08, 25.77, 25.86, 25.4, 25.29, 25.54, 25.78, 26.0, 26.43, 26.77, 26.61, 26.5, 26.45, 26.16, 26.22, 26.46, 27.53, 27.25, 27.54, 27.55, 27.91, 27.73, 27.52, 26.96, 26.69, 26.7, 27.0, 27.19, 27.01, 26.36, 26.0, 25.7, 25.59, 25.77, 25.29, 25.07, 25.46, 25.37, 25.67, 26.34, 26.0, 25.68, 25.69, 25.33, 25.12, 25.15, 24.69, 24.56, 24.47, 24.49, 24.7, 24.25, 24.52, 24.43, 24.03, 24.17, 24.74, 24.5, 24.4, 25.06, 24.92, 24.95, 24.7, 24.66, 24.62, 24.72],
       url: 'https://finance.yahoo.com/quote/THNR/'
     }
   ].filter(e => !e.hidden);
@@ -1313,18 +1326,15 @@
   ];
 
   const WATCHLIST_DATA = [
-    { ticker: 'NVTA', name: 'Invitae Corporation', focus: 'Genetic testing & precision medicine', url: 'https://finance.yahoo.com/quote/NVTA/' },
-    { ticker: 'GRPH', name: 'Graphite Bio', focus: 'Gene editing & stem cell therapy', url: 'https://finance.yahoo.com/quote/GRPH/' },
-    { ticker: 'NTLA', name: 'Intellia Therapeutics', focus: 'In vivo CRISPR gene editing', url: 'https://finance.yahoo.com/quote/NTLA/' },
-    { ticker: 'CRSP', name: 'CRISPR Therapeutics', focus: 'Gene editing therapies', url: 'https://finance.yahoo.com/quote/CRSP/' },
-    { ticker: 'EDIT', name: 'Editas Medicine', focus: 'Genome editing platform', url: 'https://finance.yahoo.com/quote/EDIT/' },
-    { ticker: 'FATE', name: 'Fate Therapeutics', focus: 'iPSC-derived cell therapy', url: 'https://finance.yahoo.com/quote/FATE/' },
-    { ticker: 'NKTR', name: 'Nektar Therapeutics', focus: 'Immunology & longevity pathways', url: 'https://finance.yahoo.com/quote/NKTR/' },
-    { ticker: 'AGEN', name: 'Agenus Inc.', focus: 'Immuno-oncology antibodies', url: 'https://finance.yahoo.com/quote/AGEN/' },
-    { ticker: 'SRTX', name: 'Sartorius AG', focus: 'Bioprocess tools for longevity research', url: 'https://finance.yahoo.com/quote/SRTX/' },
-    { ticker: 'SDGR', name: 'Schrödinger Inc.', focus: 'Computational drug discovery platform', url: 'https://finance.yahoo.com/quote/SDGR/' },
-    { ticker: 'RXRX', name: 'Recursion Pharmaceuticals', focus: 'AI-driven drug discovery', url: 'https://finance.yahoo.com/quote/RXRX/' },
-    { ticker: 'DNA', name: 'Ginkgo Bioworks', focus: 'Synthetic biology platform', url: 'https://finance.yahoo.com/quote/DNA/' }
+    { ticker: 'NTLA', name: 'Intellia Therapeutics', focus: 'In vivo CRISPR gene editing', url: 'https://finance.yahoo.com/quote/NTLA/', mcapB: 1.87 },
+    { ticker: 'CRSP', name: 'CRISPR Therapeutics', focus: 'Gene editing therapies', url: 'https://finance.yahoo.com/quote/CRSP/', mcapB: 5.23 },
+    { ticker: 'EDIT', name: 'Editas Medicine', focus: 'Genome editing platform', url: 'https://finance.yahoo.com/quote/EDIT/', mcapB: 0.45 },
+    { ticker: 'FATE', name: 'Fate Therapeutics', focus: 'iPSC-derived cell therapy', url: 'https://finance.yahoo.com/quote/FATE/', mcapB: 0.26 },
+    { ticker: 'NKTR', name: 'Nektar Therapeutics', focus: 'Immunology & longevity pathways', url: 'https://finance.yahoo.com/quote/NKTR/', mcapB: 1.32 },
+    { ticker: 'AGEN', name: 'Agenus Inc.', focus: 'Immuno-oncology antibodies', url: 'https://finance.yahoo.com/quote/AGEN/', mcapB: 0.32 },
+    { ticker: 'SDGR', name: 'Schrödinger Inc.', focus: 'Computational drug discovery platform', url: 'https://finance.yahoo.com/quote/SDGR/', mcapB: 2.31 },
+    { ticker: 'RXRX', name: 'Recursion Pharmaceuticals', focus: 'AI-driven drug discovery', url: 'https://finance.yahoo.com/quote/RXRX/', mcapB: 2.60 },
+    { ticker: 'DNA', name: 'Ginkgo Bioworks', focus: 'Synthetic biology platform', url: 'https://finance.yahoo.com/quote/DNA/', mcapB: 0.90 }
   ];
 
   const LANDSCAPE_DATA = [
@@ -1369,7 +1379,7 @@
             <div class="etf-metric"><span class="etf-metric-label">AUM</span><span class="etf-metric-value">${etf.aum}</span></div>
             <div class="etf-metric"><span class="etf-metric-label">Expense</span><span class="etf-metric-value">${etf.expense}</span></div>
             <div class="etf-metric"><span class="etf-metric-label">YTD</span><span class="etf-metric-value">${etf.ytd}</span></div>
-            <div class="etf-metric"><span class="etf-metric-label">Holdings</span><span class="etf-metric-value">${etf.holdings}</span></div>
+            <div class="etf-metric"><span class="etf-metric-label">Turnover</span><span class="etf-metric-value">${etf.turnover || '&mdash;'}</span></div>
           </div>
           ${ etf.low52 > 0 ? `
           <div class="range-52w">
@@ -1411,6 +1421,7 @@
   // ============================================================
   function renderVCCards() {
     const grid = document.getElementById('vcGrid');
+    document.getElementById('vcCount').textContent = VC_DATA.length;
     VC_DATA.forEach(vc => {
       const card = document.createElement('div');
       card.className = 'vc-card' + (vc.curator ? ' curator-highlight' : '');
@@ -1469,76 +1480,10 @@
   // INDIVIDUAL ETF MINI-CHARTS
   // ============================================================
 
-  // Simple seeded pseudo-random number generator (mulberry32)
-  function seededRNG(seed) {
-    let s = seed >>> 0;
-    return function() {
-      s += 0x6D2B79F5;
-      let t = Math.imul(s ^ (s >>> 15), 1 | s);
-      t ^= t + Math.imul(t ^ (t >>> 7), 61 | t);
-      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-    };
-  }
-
-  // Hash a ticker string to a stable integer seed
-  function tickerSeed(ticker) {
-    let h = 0x811c9dc5;
-    for (let i = 0; i < ticker.length; i++) {
-      h ^= ticker.charCodeAt(i);
-      h = Math.imul(h, 0x01000193);
-    }
-    return h >>> 0;
-  }
-
-  // Generate trading day labels from Jan 2 to Oct 27, 2026
+  // Chart x-axis: the trading days in ETF_DATES; each ETF's line is its real daily closes
+  // (etf.closes). Both are written weekly by scripts/update_dashboard.py.
   function tradingDayLabels() {
-    const labels = [];
-    const startDate = new Date('2026-01-02');
-    const endDate   = new Date('2026-04-10');
-    let cur = new Date(startDate);
-    while (cur <= endDate) {
-      const d = cur.getDay();
-      if (d !== 0 && d !== 6) {
-        labels.push(cur.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
-      }
-      cur.setDate(cur.getDate() + 1);
-    }
-    return labels;
-  }
-
-  // Generate a seeded random-walk price series for an ETF
-  // Starts at the back-calculated Jan 2 price, ends at etf.price
-  function generatePriceSeries(etf, nDays) {
-    const rng = seededRNG(tickerSeed(etf.ticker));
-
-    // Parse ytd percentage (e.g. "+2.1%" or "-8.3%")
-    const ytdPct = parseFloat(etf.ytd) / 100; // e.g. 0.021 or -0.083
-    const endPrice = etf.price;
-    const startPrice = endPrice / (1 + ytdPct);
-
-    // Generate a raw random walk of (nDays - 1) increments
-    const raw = [0];
-    for (let i = 1; i < nDays; i++) {
-      const step = (rng() - 0.5) * 2 * 0.015; // ±1.5% max per day
-      raw.push(raw[raw.length - 1] + step);
-    }
-
-    // Normalize so raw[0]=0 and raw[last]=1, then scale to [startPrice, endPrice]
-    const rawMin = Math.min(...raw);
-    const rawMax = Math.max(...raw);
-    const rawSpan = rawMax - rawMin || 1;
-
-    // We need raw[0] to map to startPrice and raw[last] to map to endPrice
-    // Use linear rescaling: price[i] = startPrice + (raw[i] - raw[0]) / (raw[last] - raw[0]) * (endPrice - startPrice)
-    // But clamp so the path remains within a plausible range
-    const rawFirst = raw[0];   // 0
-    const rawLast  = raw[nDays - 1];
-    const rawRange = rawLast - rawFirst || 1;
-
-    return raw.map(r => {
-      const price = startPrice + ((r - rawFirst) / rawRange) * (endPrice - startPrice);
-      return parseFloat(price.toFixed(2));
-    });
+    return ETF_DATES.map(d => new Date(d + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
   }
 
   function parseAUMToNumber(aumStr) {
@@ -1571,13 +1516,28 @@
     const avgYTD = totalYTDWeightedPct / visibleETFs.length;
     const avgYTDDisplay = (avgYTD >= 0 ? '+' : '') + (avgYTD * 100).toFixed(1) + '%';
 
-    // Stock market cap placeholder (kept from original context)
-    const stockCapB = 33.6;
-    const currentTotalB = totalAUM + stockCapB;
+    // Stock market cap: the sum of WATCHLIST_DATA mcapB, written weekly by scripts/update_dashboard.py.
+    // A ticker with no quote has no mcapB; it is left out and the label says so.
+    const pricedStocks = WATCHLIST_DATA.filter(s => s.mcapB > 0);
+    const stockCapB = pricedStocks.reduce((sum, s) => sum + s.mcapB, 0);
+    if (pricedStocks.length < WATCHLIST_DATA.length) {
+      document.getElementById('mcapStockTotal').previousElementSibling.textContent =
+        `Stock Market Cap (${pricedStocks.length} of ${WATCHLIST_DATA.length})`;
+    }
 
-    document.getElementById('mcapCurrentTotal').textContent = '$' + currentTotalB.toFixed(1) + 'B';
+    if (pricedStocks.length) {
+      document.getElementById('mcapCurrentTotal').textContent = '$' + (totalAUM + stockCapB).toFixed(1) + 'B';
+      document.getElementById('mcapStockTotal').textContent = '$' + stockCapB.toFixed(1) + 'B';
+    }
     document.getElementById('mcapETFTotal').textContent = '$' + totalAUM.toFixed(1) + 'B';
-    document.getElementById('mcapStockTotal').textContent = '$' + stockCapB.toFixed(1) + 'B';
+
+    // Header strip (animateCounters shows each data-target): the same lists, the same arithmetic.
+    document.getElementById('stripETFAssets').dataset.target = '$' + totalAUM.toFixed(1) + 'B';
+    document.getElementById('stripFunds').dataset.target = visibleETFs.length + VC_DATA.length;
+    document.getElementById('stripFunds').nextElementSibling.textContent =
+      `Funds Tracked (${visibleETFs.length} ETF + ${VC_DATA.length} VC)`;
+    document.getElementById('stripStocks').dataset.target = WATCHLIST_DATA.length;
+    document.getElementById('stripYTD').dataset.target = avgYTDDisplay;
     document.getElementById('mcapYTDChange').textContent = avgYTDDisplay;
     document.getElementById('mcapYTDChange').style.color = avgYTD >= 0 ? 'var(--green)' : 'var(--red)';
 
@@ -1590,7 +1550,7 @@
       const isUp     = etf.change >= 0;
       const ytdNum   = parseFloat(etf.ytd);
       const ytdUp    = ytdNum >= 0;
-      const prices   = generatePriceSeries(etf, nDays);
+      const prices   = etf.closes || [];
       const pos52w   = etf.low52 > 0
         ? ((etf.price - etf.low52) / (etf.high52 - etf.low52) * 100).toFixed(1)
         : 50;
