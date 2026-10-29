@@ -1,10 +1,12 @@
 # Site safety checks.
 #
 # Runs on every PR, every push to main, and after every Weekly Longevity
-# Update. The weekly update pushes with GITHUB_TOKEN, and a push made with
-# that token never triggers other workflows, so `push` alone would miss the
-# one change that lands every week. When a check fails on main, the alert job
-# opens (or comments on) one "site-check" issue.
+# Update. The weekly update pushes with a deploy key, which does trigger
+# `push`; if its MAIN_PUSH_DEPLOY_KEY secret is missing it falls back to
+# GITHUB_TOKEN, whose pushes trigger nothing, and `workflow_run` covers that
+# case. With the key both fire, so the weekly commit is checked twice. When a
+# check fails on main, the alert job opens (or comments on) one "site-check"
+# issue.
 #
 # On PRs, playwright and compliance-grep are two of the four checks that
 # content auto-merge waits on (GLOBAL_INSTRUCTIONS.md §8a; content-automerge.yml).
