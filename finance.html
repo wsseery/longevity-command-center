@@ -602,6 +602,13 @@
       padding-top: 6px;
       border-top: 1px solid rgba(255, 255, 255, 0.04);
     }
+    .vc-sources {
+      font-size: 0.7rem;
+      color: #8892a8;
+      margin-bottom: 10px;
+    }
+    .vc-sources a { color: var(--cyan); text-decoration: none; }
+    .vc-sources a:hover { text-decoration: underline; }
     .vc-link {
       display: inline-block;
       font-family: var(--font-mono);
@@ -1234,94 +1241,127 @@
     }
   ].filter(e => !e.hidden);
 
+  // Every claim below is from the sources listed with it (checked 2026-10-29).
   const VC_DATA = [
     {
       name: 'Altos Labs',
-      year: '2021',
-      type: 'Research Institute',
-      focus: 'Altos is laser-focused on cellular rejuvenation programming — using partial epigenetic reprogramming to reverse the biological age of cells and ultimately restore tissue and organ function.',
-      totalFunding: '$3.0B raised',
-      backers: 'Jeff Bezos, Yuri Milner, ARCH Venture Partners, SoftBank',
-      note: 'Largest longevity funding round in history. Bezos invested alongside Milner via Breakthrough Prize foundation.',
+      year: '2022',
+      type: 'Biotech Company',
+      focus: 'Cellular rejuvenation programming: using partial epigenetic reprogramming to restore cell health and resilience, with the aim of reversing disease.',
+      totalFunding: '$3.0B committed at launch',
+      backers: 'ARCH Venture Partners; a Breakthrough Foundation vehicle (Yuri and Julia Milner); Jeff Bezos (reported)',
+      note: 'Launched in January 2022 with $3 billion committed, led by CEO Hal Barron. Bezos\'s stake was reported in the press but not confirmed by the company.',
       link: 'https://www.altoslabs.com/',
-      curator: true
+      curator: true,
+      sources: [
+        'https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo',
+        'https://en.wikipedia.org/wiki/Altos_Labs'
+      ]
     },
     {
       name: 'Retro Biosciences',
-      year: '2021',
+      year: '2022',
       type: 'Biotech Startup',
-      focus: 'Adding 10 healthy years to human lifespan through autophagy enhancement, plasma-inspired interventions, and cellular reprogramming. Focused on practical, near-term healthspan gains.',
-      totalFunding: '$1.0B raised',
-      backers: 'Sam Altman ($180M personal investment), undisclosed institutional',
-      note: 'Sam Altman invested $180M of his own capital — one of the largest personal bets on longevity research.',
+      focus: 'Aims to add 10 years of healthy human lifespan through programs in autophagy, plasma-inspired therapies and cellular reprogramming.',
+      totalFunding: '$180M seed; $1B Series A in progress',
+      backers: 'Sam Altman (funded the entire $180M seed); Sandro Salsano (leading the Series A, reported)',
+      note: 'In January 2025 the Financial Times reported a $1 billion Series A to fund clinical trials of three drug candidates. The close has not been confirmed.',
       link: 'https://www.retrobiosciences.com/',
-      curator: true
+      curator: true,
+      sources: [
+        'https://techcrunch.com/?p=2953383',
+        'https://fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan'
+      ]
     },
     {
       name: 'NewLimit',
       year: '2021',
       type: 'Biotech Startup',
-      focus: 'Using epigenetic reprogramming to expand human healthspan by studying and modifying the epigenetic changes that accumulate during aging.',
-      totalFunding: '$130M raised',
-      backers: 'Brian Armstrong (Coinbase CEO), Blake Byers',
-      note: 'Founded by Coinbase CEO Brian Armstrong. Combines epigenetics research with ML to identify reprogramming targets.',
+      focus: 'Epigenetic reprogramming to restore youthful function in aged cells, using human cell screens and machine learning to find reprogramming targets.',
+      totalFunding: '$565M+ raised (Series B and C)',
+      backers: 'Founders Fund, Kleiner Perkins, Khosla Ventures, Thrive Capital, Eli Lilly Ventures',
+      note: 'Co-founded by Coinbase CEO Brian Armstrong, Blake Byers and Jacob Kimmel. $130M Series B (May 2025); $435M Series C at a $3.1B valuation (June 2026), with human trials targeted for 2027.',
       link: 'https://www.newlimit.com/',
-      curator: false
+      curator: false,
+      sources: [
+        'https://fortune.com/article/kleiner-perkins-leads-130m-round-in-coinbase-founders-anti-aging-startup-newlimit',
+        'https://www.statnews.com/2026/06/02/longevity-startup-newlimit-announces-435-million-clinical-trial-financing/'
+      ]
     },
     {
       name: 'Hevolution Foundation',
       year: '2022',
       type: 'Non-Profit Foundation',
-      focus: 'Saudi Arabian foundation funding geroscience research globally. Focuses on targeting the biology of aging to extend healthspan and compress morbidity.',
-      totalFunding: '$1B/yr endowment',
-      backers: 'Saudi Royal Family (sovereign wealth)',
-      note: 'Committing up to $1 billion per year to longevity science — the largest sustained public/philanthropic commitment in the field.',
+      focus: 'Riyadh-based foundation funding geroscience worldwide, granting to researchers and startups that target the biology of aging to extend healthspan.',
+      totalFunding: 'Up to $1B/yr planned',
+      backers: 'Saudi government (established by royal decree)',
+      note: 'Established by royal decree in 2018, operating since 2022, and chaired by Crown Prince Mohammed bin Salman. It plans to give up to $1 billion a year to outside research rather than run its own labs.',
       link: 'https://hevolution.com/',
-      curator: true
+      curator: true,
+      sources: [
+        'https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-',
+        'https://www.bostonglobe.com/2023/09/14/business/saudi-fund-sets-up-boston-plow-1-billion-year-into-life-extending-research-drugs'
+      ]
     },
     {
       name: 'Longevity Vision Fund',
       year: '2019',
       type: 'VC Fund',
-      focus: 'Dedicated longevity VC fund investing in companies extending human healthspan through AI, genomics, regenerative medicine, and aging diagnostics.',
-      totalFunding: '$100M+ AUM',
-      backers: 'Sergey Young, institutional LPs',
-      note: 'Founded by Sergey Young with a personal $25M commitment to democratize life extension.',
+      focus: 'Invests from seed to Series B in therapeutics that extend healthy lifespan, plus the IT products, services and infrastructure that support life-sciences work.',
+      totalFunding: '$100M target ($50M first close)',
+      backers: 'Founded by Sergey Young',
+      note: 'Launched in London in February 2019 by Sergey Young, then longevity partner at BOLD Capital and a development sponsor of the Longevity XPRIZE.',
       link: 'https://longevity.vc/',
-      curator: false
+      curator: false,
+      sources: [
+        'https://www.biocentury.com/article/300765',
+        'https://endpts.com/peter-diamandis-right-hand-man-sergey-young-wants-to-reverse-aging-via-his-100m-longevity-vision-fund/'
+      ]
     },
     {
       name: 'Apollo Health Ventures',
-      year: '2018',
+      year: '2017',
       type: 'VC Fund',
-      focus: 'European longevity VC building and funding companies targeting the biology of aging with a focus on scientific rigor and translational programs.',
-      totalFunding: '€150M AUM',
-      backers: 'European institutional investors, family offices',
-      note: 'One of the few dedicated longevity VCs in Europe with a portfolio spanning senolytics, NAD+ metabolism, and epigenetic reprogramming.',
+      focus: 'Transatlantic early-stage VC that co-founds and invests in companies targeting the biology of aging and age-related diseases.',
+      totalFunding: '$180M Fund II (2021)',
+      backers: 'Not publicly itemized',
+      note: 'Offices in Berlin and Boston. Fund II closed oversubscribed at $180M (€157.5M) in December 2021, for both venture creation and outside deals.',
       link: 'https://apollo.vc/',
-      curator: false
+      curator: false,
+      sources: [
+        'https://lifespan.io/news/apollo-health-ventures-closes-180-million-fund/',
+        'https://bioworld.com/articles/513878-apollo-health-ventures-closes-180m-fund-for-tackling-age-related-diseases'
+      ]
     },
     {
       name: 'Methuselah Fund',
       year: '2017',
       type: 'VC Fund',
-      focus: 'Longevity-focused VC investing in companies that can make 90 the new 50. Portfolio spans tissue engineering, organ replacement, and regenerative medicine.',
-      totalFunding: '$40M+ deployed',
-      backers: 'Peter Diamandis, Dave Gobel, strategic LPs',
-      note: 'Sister organization to the Methuselah Foundation, which pioneered the SENS research agenda for defeating aging.',
+      focus: 'Early-stage longevity venture fund run by the Methuselah Foundation, whose mission is to make 90 the new 50.',
+      totalFunding: 'Size not disclosed',
+      backers: 'Methuselah Foundation donors and community investors',
+      note: 'An LLC subsidiary of the Methuselah Foundation (David Gobel), set up so long-time donors could invest. It closed its founders\' round in 2018 and runs to 2030. The foundation earlier led Organovo\'s seed round.',
       link: 'https://www.methuselahfund.com/',
-      curator: false
+      curator: false,
+      sources: [
+        'https://www.mfoundation.org/news/2018/9/18/the-methuselah-foundation-successfully-closes-its-boutique-venture-fund',
+        'https://www.fightaging.org/archives/2017/03/methuselah-foundation-launches-methuselah-fund/'
+      ]
     },
     {
       name: 'a16z Bio + Health',
-      year: '2020',
+      year: '2015',
       type: 'VC Fund',
-      focus: 'Andreessen Horowitz\'s dedicated biology and health fund investing across computational biology, genomics, longevity biotech, and digital health platforms.',
-      totalFunding: '$2.5B+ AUM',
+      focus: 'Andreessen Horowitz\'s biology and health practice, investing across computational biology, drug discovery and digital health.',
+      totalFunding: '$3.2B across four funds',
       backers: 'Andreessen Horowitz LPs',
-      note: 'One of the most active top-tier VCs in longevity. Portfolio includes Unity Biotechnology (senolytics) and multiple epigenetic reprogramming startups.',
+      note: 'Founded by Vijay Pande with a $200M first fund in 2015; Fund IV closed at $1.5B in 2022. Pande stepped down in 2025.',
       link: 'https://a16z.com/bio-health/',
-      curator: false
+      curator: false,
+      sources: [
+        'https://www.genengnews.com/gen-edge/engineering-biology-a16zs-vijay-pande-discusses-shift-from-bespoke-drugs/',
+        'https://en.wikipedia.org/wiki/Vijay_S._Pande'
+      ]
     }
   ];
 
@@ -1437,6 +1477,7 @@
         <div class="vc-funding">${vc.totalFunding}</div>
         <div class="vc-backers"><strong>Backed by:</strong> ${vc.backers}</div>
         ${vc.note ? `<div class="vc-note">${vc.note}</div>` : ''}
+        <div class="vc-sources">Sources: ${vc.sources.map((u, i) => `<a href="${u}" target="_blank" rel="noopener">[${i + 1}]</a>`).join(' ')}</div>
         <a href="${vc.link}" target="_blank" class="vc-link">&#9656; Visit Fund</a>
       `;
       grid.appendChild(card);
