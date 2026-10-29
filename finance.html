@@ -849,7 +849,7 @@
       <div class="section-icon" style="background:rgba(0,255,200,0.12);border:1px solid rgba(0,255,200,0.25);">&#9652;</div>
       <div>
         <div class="fin-section-title">ETF PERFORMANCE &mdash; INDIVIDUAL CHARTS</div>
-        <div class="fin-section-subtitle">YTD price trends for each tracked longevity ETF &mdash; Jan 2 to Oct 27, 2026</div>
+        <div class="fin-section-subtitle">YTD price trends for each tracked longevity ETF &mdash; Jan 2 to Oct 28, 2026</div>
       </div>
     </div>
     <div class="etf-charts-stats">
@@ -862,11 +862,11 @@
         <div class="etf-charts-stat-value" style="color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">&mdash;</div>
       </div>
       <div class="etf-charts-stat">
-        <div class="etf-charts-stat-label">Stock Market Cap</div>
+        <div class="etf-charts-stat-label" id="mcapStockLabel">Stock Market Cap</div>
         <div class="etf-charts-stat-value" style="color:var(--amber);text-shadow:0 0 16px var(--amber-glow);" id="mcapStockTotal">&mdash;</div>
       </div>
       <div class="etf-charts-stat">
-        <div class="etf-charts-stat-label">YTD Change</div>
+        <div class="etf-charts-stat-label">Avg ETF YTD</div>
         <div class="etf-charts-stat-value" id="mcapYTDChange">&mdash;</div>
       </div>
     </div>
@@ -899,7 +899,7 @@
       <div class="section-icon private">&#9830;</div>
       <div>
         <div class="fin-section-title">PRIVATE MARKETS &mdash; LONGEVITY VENTURE CAPITAL</div>
-        <div class="fin-section-subtitle">8 private funds and labs dedicated to extending human healthspan and lifespan</div>
+        <div class="fin-section-subtitle"><span id="vcCount">&mdash;</span> private funds and labs dedicated to extending human healthspan and lifespan</div>
       </div>
     </div>
     <div class="vc-grid" id="vcGrid">
@@ -971,12 +971,12 @@
       name: 'Global X Aging Population ETF',
       tag: 'aging',
       focus: 'Invests in companies positioned to serve the aging population, including senior living, healthcare services, pharmaceuticals, and biotech focused on age-related diseases.',
-      price: 38.38,
-      change: -0.18,
-      changePct: -0.47,
+      price: 38.56,
+      change: 0.16,
+      changePct: 0.42,
       aum: '$88.9M',
       expense: '0.50%',
-      ytd: '+1.8%',
+      ytd: '+7.0%',
       holdings: 69,
       low52: 29.40,
       high52: 37.20,
@@ -994,12 +994,12 @@
       name: 'ARK Genomic Revolution ETF',
       tag: 'genomics',
       focus: 'Focuses on companies advancing genomics, including CRISPR gene editing, targeted therapeutics, bioinformatics, and molecular diagnostics relevant to aging.',
-      price: 51.65,
-      change: 2.63,
-      changePct: 5.37,
+      price: 54.82,
+      change: 3.12,
+      changePct: 6.03,
       aum: '$2.22B',
       expense: '0.75%',
-      ytd: '-8.3%',
+      ytd: '+87.9%',
       holdings: 32,
       low52: 18.50,
       high52: 31.20,
@@ -1017,12 +1017,12 @@
       name: 'iShares Biotechnology ETF',
       tag: 'biotech',
       focus: 'Broad-market biotech ETF tracking the ICE Biotechnology Index, covering large and mid-cap biotech companies including many with aging-related pipelines.',
-      price: 210.63,
-      change: 1.43,
-      changePct: 0.68,
+      price: 216.35,
+      change: 3.65,
+      changePct: 1.72,
       aum: '$11.20B',
       expense: '0.44%',
-      ytd: '-4.2%',
+      ytd: '+28.0%',
       holdings: 271,
       low52: 140.10,
       high52: 178.90,
@@ -1040,12 +1040,12 @@
       name: 'SPDR S&P Biotech ETF',
       tag: 'biotech',
       focus: 'Equal-weighted biotech ETF with heavy small/mid-cap exposure, capturing emerging longevity biotech companies alongside established names.',
-      price: 153.79,
-      change: 3.35,
-      changePct: 2.23,
+      price: 157.51,
+      change: 3.01,
+      changePct: 1.95,
       aum: '$10.36B',
       expense: '0.35%',
-      ytd: '-6.8%',
+      ytd: '+29.6%',
       holdings: 141,
       low52: 98.20,
       high52: 138.40,
@@ -1063,12 +1063,12 @@
       name: 'Health Care Select Sector SPDR Fund',
       tag: 'healthcare',
       focus: 'Largest healthcare sector ETF tracking S&P 500 healthcare companies, providing broad exposure to pharma, biotech, medical devices, and healthcare services.',
-      price: 179.06,
-      change: -0.06,
-      changePct: -0.03,
+      price: 179.72,
+      change: 0.66,
+      changePct: 0.37,
       aum: '$43.39B',
       expense: '0.09%',
-      ytd: '-1.9%',
+      ytd: '+15.6%',
       holdings: 61,
       low52: 130.80,
       high52: 156.40,
@@ -1086,12 +1086,12 @@
       name: 'ALPS Medical Breakthroughs ETF',
       tag: 'clinical',
       focus: 'Invests in small and mid-cap biotech companies with drugs in Phase II or Phase III clinical trials, capturing potential breakthrough aging therapies before approval.',
-      price: 55.07,
-      change: 1.29,
-      changePct: 2.4,
+      price: 56.09,
+      change: 0.61,
+      changePct: 1.1,
       aum: '$211.6M',
       expense: '0.50%',
-      ytd: '-5.1%',
+      ytd: '+11.8%',
       holdings: 88,
       low52: 39.80,
       high52: 55.60,
@@ -1109,12 +1109,12 @@
       name: 'VanEck Biotech ETF',
       tag: 'biotech',
       focus: 'Concentrated biotech ETF holding 25 of the largest U.S.-listed biotech companies, including major players in aging research and longevity therapeutics.',
-      price: 247.93,
-      change: 2.2,
-      changePct: 0.9,
+      price: 253.27,
+      change: 3.47,
+      changePct: 1.39,
       aum: '$487.7M',
       expense: '0.35%',
-      ytd: '-3.7%',
+      ytd: '+33.1%',
       holdings: 25,
       low52: 158.20,
       high52: 201.40,
@@ -1132,12 +1132,12 @@
       name: 'iShares U.S. Medical Devices ETF',
       tag: 'devices',
       focus: 'Broad exposure to U.S. medical device companies including diagnostic equipment, implantable devices, and monitoring technology central to extended healthspan.',
-      price: 54.73,
-      change: -0.31,
-      changePct: -0.56,
+      price: 54.64,
+      change: 0.07,
+      changePct: 0.13,
       aum: '$3.45B',
       expense: '0.40%',
-      ytd: '-6.2%',
+      ytd: '-11.7%',
       holdings: 63,
       low52: 46.20,
       high52: 65.80,
@@ -1155,12 +1155,12 @@
       name: 'iShares Genomics Immunology and Healthcare ETF',
       tag: 'genomics',
       focus: 'Targets companies in genomics, immunology, and healthcare innovation, including gene therapy, immunotherapy, and precision medicine companies tackling aging.',
-      price: 41.76,
-      change: 0.83,
-      changePct: 2.03,
+      price: 43.47,
+      change: 1.22,
+      changePct: 2.89,
       aum: '$299.0M',
       expense: '0.47%',
-      ytd: '-4.6%',
+      ytd: '+65.8%',
       holdings: 115,
       low52: 22.80,
       high52: 33.10,
@@ -1178,12 +1178,12 @@
       name: 'ROBO Global Healthcare Technology & Innovation ETF',
       tag: 'healthtech',
       focus: 'Invests in healthcare technology and innovation companies spanning AI-driven diagnostics, robotic surgery, telehealth, and digital health platforms advancing longevity.',
-      price: 45.22,
-      change: 0.56,
-      changePct: 1.25,
+      price: 46.01,
+      change: 0.8,
+      changePct: 1.77,
       aum: '$76.3M',
       expense: '0.68%',
-      ytd: '-3.2%',
+      ytd: '+29.9%',
       holdings: 80,
       low52: 26.50,
       high52: 37.80,
@@ -1201,9 +1201,9 @@
       name: 'Thunder Bridge Capital Partners IV ETF',
       tag: 'clinical',
       focus: 'Focused on clinical-stage biotech and health innovation companies with near-term catalysts, including longevity-related drug development and therapeutic platforms.',
-      price: 24.01,
-      change: -0.65,
-      changePct: -2.64,
+      price: 24.72,
+      change: 0.1,
+      changePct: 0.41,
       aum: '$5.8M',
       expense: '0.65%',
       ytd: '-2.8%',
@@ -1315,16 +1315,16 @@
   const WATCHLIST_DATA = [
     { ticker: 'NVTA', name: 'Invitae Corporation', focus: 'Genetic testing & precision medicine', url: 'https://finance.yahoo.com/quote/NVTA/' },
     { ticker: 'GRPH', name: 'Graphite Bio', focus: 'Gene editing & stem cell therapy', url: 'https://finance.yahoo.com/quote/GRPH/' },
-    { ticker: 'NTLA', name: 'Intellia Therapeutics', focus: 'In vivo CRISPR gene editing', url: 'https://finance.yahoo.com/quote/NTLA/' },
-    { ticker: 'CRSP', name: 'CRISPR Therapeutics', focus: 'Gene editing therapies', url: 'https://finance.yahoo.com/quote/CRSP/' },
-    { ticker: 'EDIT', name: 'Editas Medicine', focus: 'Genome editing platform', url: 'https://finance.yahoo.com/quote/EDIT/' },
-    { ticker: 'FATE', name: 'Fate Therapeutics', focus: 'iPSC-derived cell therapy', url: 'https://finance.yahoo.com/quote/FATE/' },
-    { ticker: 'NKTR', name: 'Nektar Therapeutics', focus: 'Immunology & longevity pathways', url: 'https://finance.yahoo.com/quote/NKTR/' },
-    { ticker: 'AGEN', name: 'Agenus Inc.', focus: 'Immuno-oncology antibodies', url: 'https://finance.yahoo.com/quote/AGEN/' },
+    { ticker: 'NTLA', name: 'Intellia Therapeutics', focus: 'In vivo CRISPR gene editing', url: 'https://finance.yahoo.com/quote/NTLA/', mcapB: 1.87 },
+    { ticker: 'CRSP', name: 'CRISPR Therapeutics', focus: 'Gene editing therapies', url: 'https://finance.yahoo.com/quote/CRSP/', mcapB: 5.23 },
+    { ticker: 'EDIT', name: 'Editas Medicine', focus: 'Genome editing platform', url: 'https://finance.yahoo.com/quote/EDIT/', mcapB: 0.45 },
+    { ticker: 'FATE', name: 'Fate Therapeutics', focus: 'iPSC-derived cell therapy', url: 'https://finance.yahoo.com/quote/FATE/', mcapB: 0.26 },
+    { ticker: 'NKTR', name: 'Nektar Therapeutics', focus: 'Immunology & longevity pathways', url: 'https://finance.yahoo.com/quote/NKTR/', mcapB: 1.32 },
+    { ticker: 'AGEN', name: 'Agenus Inc.', focus: 'Immuno-oncology antibodies', url: 'https://finance.yahoo.com/quote/AGEN/', mcapB: 0.32 },
     { ticker: 'SRTX', name: 'Sartorius AG', focus: 'Bioprocess tools for longevity research', url: 'https://finance.yahoo.com/quote/SRTX/' },
-    { ticker: 'SDGR', name: 'Schrödinger Inc.', focus: 'Computational drug discovery platform', url: 'https://finance.yahoo.com/quote/SDGR/' },
-    { ticker: 'RXRX', name: 'Recursion Pharmaceuticals', focus: 'AI-driven drug discovery', url: 'https://finance.yahoo.com/quote/RXRX/' },
-    { ticker: 'DNA', name: 'Ginkgo Bioworks', focus: 'Synthetic biology platform', url: 'https://finance.yahoo.com/quote/DNA/' }
+    { ticker: 'SDGR', name: 'Schrödinger Inc.', focus: 'Computational drug discovery platform', url: 'https://finance.yahoo.com/quote/SDGR/', mcapB: 2.31 },
+    { ticker: 'RXRX', name: 'Recursion Pharmaceuticals', focus: 'AI-driven drug discovery', url: 'https://finance.yahoo.com/quote/RXRX/', mcapB: 2.60 },
+    { ticker: 'DNA', name: 'Ginkgo Bioworks', focus: 'Synthetic biology platform', url: 'https://finance.yahoo.com/quote/DNA/', mcapB: 0.90 }
   ];
 
   const LANDSCAPE_DATA = [
@@ -1411,6 +1411,7 @@
   // ============================================================
   function renderVCCards() {
     const grid = document.getElementById('vcGrid');
+    document.getElementById('vcCount').textContent = VC_DATA.length;
     VC_DATA.forEach(vc => {
       const card = document.createElement('div');
       card.className = 'vc-card' + (vc.curator ? ' curator-highlight' : '');
@@ -1490,7 +1491,7 @@
     return h >>> 0;
   }
 
-  // Generate trading day labels from Jan 2 to Oct 27, 2026
+  // Generate trading day labels from Jan 2 to Oct 28, 2026
   function tradingDayLabels() {
     const labels = [];
     const startDate = new Date('2026-01-02');
@@ -1571,13 +1572,20 @@
     const avgYTD = totalYTDWeightedPct / visibleETFs.length;
     const avgYTDDisplay = (avgYTD >= 0 ? '+' : '') + (avgYTD * 100).toFixed(1) + '%';
 
-    // Stock market cap placeholder (kept from original context)
-    const stockCapB = 33.6;
-    const currentTotalB = totalAUM + stockCapB;
+    // Stock market cap: the sum of WATCHLIST_DATA mcapB, written weekly by scripts/update_dashboard.py.
+    // A ticker with no quote has no mcapB; it is left out and the label says so.
+    const pricedStocks = WATCHLIST_DATA.filter(s => s.mcapB > 0);
+    const stockCapB = pricedStocks.reduce((sum, s) => sum + s.mcapB, 0);
+    if (pricedStocks.length < WATCHLIST_DATA.length) {
+      document.getElementById('mcapStockLabel').textContent =
+        `Stock Market Cap (${pricedStocks.length} of ${WATCHLIST_DATA.length})`;
+    }
 
-    document.getElementById('mcapCurrentTotal').textContent = '$' + currentTotalB.toFixed(1) + 'B';
+    if (pricedStocks.length) {
+      document.getElementById('mcapCurrentTotal').textContent = '$' + (totalAUM + stockCapB).toFixed(1) + 'B';
+      document.getElementById('mcapStockTotal').textContent = '$' + stockCapB.toFixed(1) + 'B';
+    }
     document.getElementById('mcapETFTotal').textContent = '$' + totalAUM.toFixed(1) + 'B';
-    document.getElementById('mcapStockTotal').textContent = '$' + stockCapB.toFixed(1) + 'B';
     document.getElementById('mcapYTDChange').textContent = avgYTDDisplay;
     document.getElementById('mcapYTDChange').style.color = avgYTD >= 0 ? 'var(--green)' : 'var(--red)';
 

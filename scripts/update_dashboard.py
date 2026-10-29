@@ -5,7 +5,8 @@ Longevity Command Center — weekly dashboard refresh (NO API KEY REQUIRED).
 Step 1: rebuild news_data.json by scraping public RSS feeds (feedparser), then add
 any hand-picked items from pinned_news.json (kept every run, outside the scrape window).
 No Anthropic API key needed. NON-FATAL: never blocks the Step 2 price refresh.
-Step 2: refresh 11 ETF prices in finance.html and bump the "Jan 2 to <date>" refs (yfinance).
+Step 2: refresh 11 ETF prices and YTD returns, and the watchlist stocks' market caps, in
+finance.html, and bump the "Jan 2 to <date>" refs (yfinance).
 
 Runs inside a GitHub Action; the workflow commits/pushes any changes.
 Output schema per item (consumed by news.html):
@@ -212,7 +213,7 @@ except Exception as e:  # noqa
     print(f"WARNING: news refresh failed ({e}); keeping existing news_data.json", file=sys.stderr)
 
 # ----------------------------------------------------------------------------
-# STEP 2: ETF PRICES -> finance.html (unchanged; yfinance, no API key)
+# STEP 2: ETF PRICES + YTD, STOCK MARKET CAPS -> finance.html (yfinance, no API key)
 # ----------------------------------------------------------------------------
 def refresh_prices():
     import yfinance as yf
@@ -227,7 +228,7 @@ def refresh_prices():
         print("WARNING: finance.html not found; skipping price refresh", file=sys.stderr)
         return
     src = open("finance.html").read()
-    updated = 0
+    updated = ytd_updated = 0
     for t in TICKERS:
         try:
             tk = yf.Ticker(t)
@@ -252,6 +253,37 @@ def refresh_prices():
             updated += 1
         else:
             print(f"WARNING: could not locate {t} block in finance.html", file=sys.stderr)
+            continue
+        # YTD: last close against the year's first close (the "Jan 2 to <date>" the page shows).
+        try:
+            closes = tk.history(start=f"{TODAY.year}-01-01", auto_adjust=False)["Close"].dropna()
+            ytd = f"{(closes.iloc[-1] / closes.iloc[0] - 1) * 100:+.1f}%" if len(closes) >= 2 else None
+        except Exception as e:  # noqa
+            ytd = None
+            print(f"WARNING: YTD history failed for {t}: {e}; carrying forward", file=sys.stderr)
+        if ytd:
+            pat = re.compile(r"(ticker:\s*'" + re.escape(t) + r"'[\s\S]{0,800}?ytd:\s*')([^']+)(')")
+            src, k = pat.subn(lambda m: f"{m.group(1)}{ytd}{m.group(3)}", src, count=1)
+            ytd_updated += k
+
+    # Stocks: every ticker in WATCHLIST_DATA gets mcapB (market cap, $B). A ticker with no
+    # quote (delisted, renamed) keeps whatever it had, and the page leaves it out of the sum.
+    wl = re.search(r"const WATCHLIST_DATA = \[([\s\S]*?)\n\s*\];", src)
+    stocks = re.findall(r"\{ ticker: '([^']+)'", wl.group(1)) if wl else []
+    caps_updated = 0
+    for t in stocks:
+        try:
+            info = yf.Ticker(t).get_info()
+            cap = info.get("marketCap") if info.get("currency") == "USD" else None
+        except Exception as e:  # noqa
+            cap = None
+            print(f"WARNING: market cap failed for {t}: {e}", file=sys.stderr)
+        if not cap:
+            print(f"WARNING: no USD market cap for {t}; carrying forward", file=sys.stderr)
+            continue
+        pat = re.compile(r"(\{ ticker: '" + re.escape(t) + r"'[^\n]*?)(, mcapB: [\d.]+)? \}")
+        src, k = pat.subn(lambda m: f"{m.group(1)}, mcapB: {cap / 1e9:.2f} }}", src, count=1)
+        caps_updated += k
     if updated == 0:
         # Every quote failed. Rewriting now would stamp today's date onto last
         # week's prices and commit that as a fresh update.
@@ -263,7 +295,8 @@ def refresh_prices():
               "the rest carry forward last week's figures")
     src = re.sub(r"Jan 2 to [A-Z][a-z]+ \d{1,2}, \d{4}", f"Jan 2 to {TODAY:%b %-d, %Y}", src)
     open("finance.html", "w").write(src)
-    print(f"finance: {updated}/{len(TICKERS)} ETF prices updated; date refs -> Jan 2 to {TODAY:%b %-d, %Y}")
+    print(f"finance: {updated}/{len(TICKERS)} ETF prices, {ytd_updated} YTD returns, "
+          f"{caps_updated}/{len(stocks)} stock market caps updated; date refs -> Jan 2 to {TODAY:%b %-d, %Y}")
 
 try:
     refresh_prices()

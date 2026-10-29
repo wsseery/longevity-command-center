@@ -536,9 +536,9 @@
       <div class="dash-card-title">Longevity Investment Tracker</div>
       <div class="dash-card-desc">Public ETFs, private venture capital, and pure-play longevity stocks &mdash; mapping where capital flows in the aging science economy. Weekly ETF price and fund-asset tracking with drill-down to holdings.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">$97B</div><div class="dash-stat-label">Total Market Cap</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="financeTotal">&mdash;</div><div class="dash-stat-label">Total Market Cap</div></div>
         <div class="dash-stat"><div class="dash-stat-value" id="financeCount">&mdash;</div><div class="dash-stat-label">Funds &amp; Stocks</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">+$11B</div><div class="dash-stat-label">YTD Change</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="financeYTD">&mdash;</div><div class="dash-stat-label">Avg ETF YTD</div></div>
       </div>
       <div class="dash-card-cta">Open Tracker &#8594;</div>
     </a>
@@ -678,16 +678,33 @@
       return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
     }
 
-    // Finance card "Funds & Stocks": counted from the lists finance.html renders (ETF_DATA
-    // without hidden rows, VC_DATA, WATCHLIST_DATA), so it cannot drift from that page.
+    // Finance card stats, from the lists finance.html renders (ETF_DATA without hidden rows,
+    // VC_DATA, WATCHLIST_DATA) and with that page's arithmetic, so they cannot drift from it.
     fetch('/finance')
       .then(function(r) { if (!r.ok) throw new Error('finance ' + r.status); return r.text(); })
       .then(function(src) {
         var etfs = financeList(src, 'ETF_DATA').filter(function(e) { return !e.hidden; });
+        var stocks = financeList(src, 'WATCHLIST_DATA');
         document.getElementById('financeCount').textContent =
-          etfs.length + financeList(src, 'VC_DATA').length + financeList(src, 'WATCHLIST_DATA').length;
+          etfs.length + financeList(src, 'VC_DATA').length + stocks.length;
+
+        var aum = 0, ytd = 0;
+        etfs.forEach(function(e) { aum += billions(e.aum); ytd += parseFloat(e.ytd) / 100 || 0; });
+        var priced = stocks.filter(function(s) { return s.mcapB > 0; });
+        var stockCap = priced.reduce(function(sum, s) { return sum + s.mcapB; }, 0);
+        if (priced.length) document.getElementById('financeTotal').textContent = '$' + Math.round(aum + stockCap) + 'B';
+        var avg = ytd / etfs.length;
+        document.getElementById('financeYTD').textContent = (avg >= 0 ? '+' : '') + (avg * 100).toFixed(1) + '%';
       })
-      .catch(function(e) { console.warn('Funds & Stocks count unavailable:', e.message); });
+      .catch(function(e) { console.warn('Finance card stats unavailable:', e.message); });
+
+    // "$1.01B" / "$340M" -> billions, as finance.html's parseAUMToNumber does.
+    function billions(aum) {
+      var s = String(aum || '').replace('$', '').trim();
+      if (/B$/.test(s)) return parseFloat(s);
+      if (/M$/.test(s)) return parseFloat(s) / 1000;
+      return 0;
+    }
 
     // The array literal that follows "const NAME = [" in finance.html, read as data.
     function financeList(src, name) {
