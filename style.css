@@ -858,3 +858,52 @@ tr.peer-reviewed { border-left: 2px solid rgba(182, 120, 255, 0.4); }
   .hero { padding-top: 118px !important; }
   .article-wrap { padding-top: 70px !important; }
 }
+
+/* ===== Blog posts (blog-<slug>.html from _templates/blog-post.html.tpl) =====
+   Posts made from the template carry no <style> block of their own: these rules
+   replace the per-post block (copied from blog-sauna-zone2-vo2max.html, the
+   newest post), so a new post stays a content PR (GLOBAL §8a). Scoped to
+   <main class="post-page">, which only template posts carry, so the older posts
+   (each with its own inline block) render exactly as before. */
+.post-page .article-wrap{max-width:760px;margin:0 auto;padding:40px 24px 20px}
+.post-page .article-meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.post-page .article-tag{display:inline-block;font-family:var(--font-heading);font-size:0.6rem;font-weight:600;padding:2px 10px;border-radius:100px;letter-spacing:0.3px;text-transform:uppercase;background:rgba(0,221,255,0.12);color:#66eeff;border:1px solid rgba(0,221,255,0.25)}
+.post-page .article-title{font-family:var(--font-heading);font-size:2rem;font-weight:800;line-height:1.2;color:var(--text-primary);margin-bottom:14px;letter-spacing:-0.5px}
+.post-page .article-standfirst{font-family:var(--font-heading);font-size:1.05rem;line-height:1.6;color:#d4dbe8;margin-bottom:28px;font-weight:400}
+.post-page .article-body{font-family:var(--font-mono);font-size:0.9rem;line-height:1.85;color:var(--text-primary)}
+.post-page .article-body h2{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--cyan);margin:36px 0 12px;letter-spacing:0.2px}
+.post-page .article-body p{margin-bottom:18px;color:#e8edf5}
+.post-page .article-body strong{color:var(--text-primary);font-weight:600}
+.post-page .article-body a{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,221,255,0.3)}
+.post-page .article-body a:hover{color:var(--teal)}
+.post-page .article-body ul{margin:0 0 18px 0;padding-left:20px;color:#e8edf5}
+.post-page .article-body li{margin-bottom:8px}
+.post-page .callout{background:var(--bg-card);border:1px solid var(--border-bright);border-left:3px solid var(--cyan);border-radius:var(--radius);padding:16px 20px;margin:24px 0;font-family:var(--font-mono);font-size:0.82rem;line-height:1.7;color:#d4dbe8}
+.post-page .callout strong{color:var(--cyan)}
+.post-page .scoretable{width:100%;border-collapse:collapse;margin:22px 0;font-family:var(--font-mono);font-size:0.78rem}
+.post-page .scoretable th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border-bright);color:#66eeff;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;font-size:0.68rem}
+.post-page .scoretable td{padding:8px 10px;border-bottom:1px solid var(--border);color:#e8edf5;vertical-align:top}
+.post-page .tablewrap{overflow-x:auto}
+.post-page .scoretable{min-width:0}
+.post-page .scoretable td:first-child{white-space:nowrap;padding-right:14px}
+@media(max-width:600px){.post-page .scoretable td:first-child{white-space:normal}}
+.post-page .disclaimer{background:rgba(255,176,32,0.06);border:1px solid rgba(255,176,32,0.25);border-radius:var(--radius);padding:14px 18px;margin:32px 0 0;font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:#ffcc66}
+.post-page .sources{margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
+.post-page .sources h3{font-family:var(--font-heading);font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:12px}
+.post-page .sources ol{font-family:var(--font-mono);font-size:0.72rem;line-height:1.7;color:var(--text-secondary);padding-left:18px}
+.post-page .sources a{color:var(--cyan-dim);text-decoration:none}
+.post-page .sources a:hover{color:var(--cyan)}
+.post-page .share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:28px 0 0;font-family:var(--font-mono);font-size:0.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}
+.post-page .share-btn{font-family:var(--font-mono);font-size:0.68rem;color:var(--cyan);text-decoration:none;padding:6px 14px;border:1px solid rgba(0,221,255,0.25);border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s}
+.post-page .share-btn:hover{background:rgba(0,221,255,0.1);border-color:var(--cyan)}
+.post-page .backlink{display:inline-block;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);text-decoration:none;margin-bottom:24px;letter-spacing:0.5px}
+.post-page .backlink:hover{color:var(--cyan)}
+@media(max-width:600px){.post-page .article-title{font-size:1.5rem}}
+.post-page .backlink,.post-page .article-meta,.post-page .share-row>span,.post-page~.site-footer p{color:var(--text-secondary)}
+
+/* The post's single call to action (data-cta). The box class must not contain
+   "cta": the classifier counts any *-cta class as a CTA of its own. */
+.post-page .post-next{background:var(--bg-card);border:1px solid var(--border-bright);border-radius:var(--radius);padding:20px 22px;margin:32px 0 0;font-family:var(--font-mono);font-size:0.82rem;line-height:1.7;color:#d4dbe8}
+.post-page .post-next strong{display:block;font-family:var(--font-heading);font-size:1rem;color:var(--text-primary);margin-bottom:6px}
+.post-page .post-next a[data-cta]{display:inline-block;margin-top:10px;color:var(--bg-deep);background:var(--cyan);font-weight:600;text-decoration:none;padding:8px 18px;border-radius:4px;letter-spacing:0.5px;text-transform:uppercase;font-size:0.72rem}
+.post-page .post-next a[data-cta]:hover{background:var(--teal)}
