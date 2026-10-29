@@ -418,6 +418,31 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
   renderTable();
 });
 
+// ===== STATS STRIP =====
+// Counted from `compounds` above, so the strip cannot drift from the table. Peer-Reviewed Only
+// matches the "Peer-Reviewed" badge (no ITP result); In Human Trials is Phase 1-3.
+function fillStats() {
+  let best = null;
+  compounds.forEach(c => [c.bestMale, c.bestFemale].forEach(v => {
+    if (v != null && (!best || v > best.v)) best = { v, c };
+  }));
+  const stats = {
+    total: compounds.length,
+    itp: compounds.filter(c => c.itpResult !== 'not_tested').length,
+    peer: compounds.filter(c => c.itpResult === 'not_tested').length,
+    fda: compounds.filter(c => c.humanPhase === 'FDA Approved').length,
+    trials: compounds.filter(c => /^Phase/.test(c.humanPhase)).length,
+    best: best ? best.v : 0,
+    enrollment: Math.max(...compounds.map(c => c.totalEnrollment || 0)),
+  };
+  document.querySelectorAll('.stat-value[data-stat]').forEach(el => { el.dataset.count = stats[el.dataset.stat]; });
+  const bestLabel = document.querySelector('.stat-value[data-stat="best"] + .stat-label');
+  if (best && bestLabel) {
+    const short = best.c.name.match(/\(([^)]+)\)/);
+    bestLabel.textContent = `Best \u0394% (${short ? short[1] : best.c.name})`;
+  }
+}
+
 // ===== STATS COUNTER ANIMATION =====
 function animateCounters() {
   const cells = document.querySelectorAll('.stat-cell');
@@ -433,7 +458,8 @@ function animateCounters() {
         const progress = Math.min(elapsed / duration, 1);
         // easeOutExpo
         const ease = 1 - Math.pow(2, -10 * progress);
-        valEl.textContent = Math.round(target * ease);
+        // easeOutExpo stops at 0.999, so the last frame shows the exact target.
+        valEl.textContent = progress < 1 ? Math.round(target * ease) : target;
         if (progress < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
@@ -617,6 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (defaultTh) defaultTh.classList.add('sorted-desc');
 
   renderTable();
+  fillStats();
   animateCounters();
   setupScrollAnimations();
   initCharts();
