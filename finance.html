@@ -862,7 +862,7 @@
         <div class="etf-charts-stat-value" style="color:var(--cyan);text-shadow:0 0 16px var(--cyan-glow);" id="mcapETFTotal">&mdash;</div>
       </div>
       <div class="etf-charts-stat">
-        <div class="etf-charts-stat-label" id="mcapStockLabel">Stock Market Cap</div>
+        <div class="etf-charts-stat-label">Stock Market Cap</div>
         <div class="etf-charts-stat-value" style="color:var(--amber);text-shadow:0 0 16px var(--amber-glow);" id="mcapStockTotal">&mdash;</div>
       </div>
       <div class="etf-charts-stat">
@@ -1577,7 +1577,7 @@
     const pricedStocks = WATCHLIST_DATA.filter(s => s.mcapB > 0);
     const stockCapB = pricedStocks.reduce((sum, s) => sum + s.mcapB, 0);
     if (pricedStocks.length < WATCHLIST_DATA.length) {
-      document.getElementById('mcapStockLabel').textContent =
+      document.getElementById('mcapStockTotal').previousElementSibling.textContent =
         `Stock Market Cap (${pricedStocks.length} of ${WATCHLIST_DATA.length})`;
     }
 
