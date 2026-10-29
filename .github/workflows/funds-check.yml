@@ -53,6 +53,7 @@ jobs:
           git config user.email "wsseery@gmail.com"
 
       - uses: anthropics/claude-code-action@v1
+        id: claude
         if: steps.open.outputs.count == '0'
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -112,3 +113,19 @@ jobs:
                 - a "For Bill" list for anything needing a decision (a fund closed, conflicting
                   sources);
                 - the last line: "Hand edit to VC_DATA by the weekly funds check. Bill merges."
+
+      # The action hides Claude's output in this public repo's logs (show_full_output must stay
+      # off). This prints only the closing line and any denied commands to the run summary, so
+      # a "no PR" run can be told apart from a run that tried and was blocked.
+      - name: Run summary
+        if: always() && steps.open.outputs.count == '0'
+        env:
+          OUT: ${{ steps.claude.outputs.execution_file }}
+        run: |
+          [ -n "$OUT" ] && [ -f "$OUT" ] || { echo "No execution file." >> "$GITHUB_STEP_SUMMARY"; exit 0; }
+          jq -r '[.[] | select(.type == "result")] | last |
+                 "**Result:** \((.result // "(none)") | .[0:1500])\n\nTurns: \(.num_turns), cost: $\(.total_cost_usd), permission denials: \((.permission_denials // []) | length)\n"' \
+            "$OUT" >> "$GITHUB_STEP_SUMMARY"
+          jq -r '[.[] | select(.type == "result")] | last | (.permission_denials // [])[] |
+                 "- denied `\(.tool_name)`: `\(.tool_input | tostring | .[0:200])`"' \
+            "$OUT" >> "$GITHUB_STEP_SUMMARY"
