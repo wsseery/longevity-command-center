@@ -537,7 +537,7 @@
       <div class="dash-card-desc">Public ETFs, private venture capital, and pure-play longevity stocks &mdash; mapping where capital flows in the aging science economy. Weekly ETF price and fund-asset tracking with drill-down to holdings.</div>
       <div class="dash-card-stats">
         <div class="dash-stat"><div class="dash-stat-value">$97B</div><div class="dash-stat-label">Total Market Cap</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">19</div><div class="dash-stat-label">Funds &amp; Stocks</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="financeCount">&mdash;</div><div class="dash-stat-label">Funds &amp; Stocks</div></div>
         <div class="dash-stat"><div class="dash-stat-value">+$11B</div><div class="dash-stat-label">YTD Change</div></div>
       </div>
       <div class="dash-card-cta">Open Tracker &#8594;</div>
@@ -676,6 +676,32 @@
       var d = new Date(dateStr + 'T00:00:00');
       var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
       return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+    }
+
+    // Finance card "Funds & Stocks": counted from the lists finance.html renders (ETF_DATA
+    // without hidden rows, VC_DATA, WATCHLIST_DATA), so it cannot drift from that page.
+    fetch('/finance')
+      .then(function(r) { if (!r.ok) throw new Error('finance ' + r.status); return r.text(); })
+      .then(function(src) {
+        var etfs = financeList(src, 'ETF_DATA').filter(function(e) { return !e.hidden; });
+        document.getElementById('financeCount').textContent =
+          etfs.length + financeList(src, 'VC_DATA').length + financeList(src, 'WATCHLIST_DATA').length;
+      })
+      .catch(function(e) { console.warn('Funds & Stocks count unavailable:', e.message); });
+
+    // The array literal that follows "const NAME = [" in finance.html, read as data.
+    function financeList(src, name) {
+      var at = src.indexOf('const ' + name + ' = [');
+      if (at < 0) throw new Error(name + ' not found');
+      var start = src.indexOf('[', at), depth = 0, quote = null;
+      for (var k = start; k < src.length; k++) {
+        var c = src[k];
+        if (quote) { if (c === '\\') k++; else if (c === quote) quote = null; continue; }
+        if (c === "'" || c === '"' || c === '`') quote = c;
+        else if (c === '[') depth++;
+        else if (c === ']' && --depth === 0) return Function('return ' + src.slice(start, k + 1))();
+      }
+      throw new Error(name + ' not closed');
     }
 
     fetch('./news_data.json')
