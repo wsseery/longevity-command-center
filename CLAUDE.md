@@ -27,7 +27,10 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
   morning ET (cron `52 12 * * 2`; GitHub queues scheduled runs, so the time drifts). Do not
   hand-edit it, and always work from a freshly pulled clone — a stale local copy
   will clobber a week of updates.
-- `news_data.json` is likewise written by that workflow (public RSS via `feedparser`).
+- `VC_DATA` in `finance.html` (the private funds) is the one hand-maintained part of that page. Every
+  claim carries its sources. `.github/workflows/funds-check.yml` re-checks it against published
+  reporting every Wednesday and proposes changes as a `content/funds-check-<date>` PR, never a push.
+- `news_data.json` is likewise written by the weekly update (public RSS via `feedparser`).
   To keep a hand-picked item through the weekly rebuild, add it to `pinned_news.json`
   (same 8 fields), never to `news_data.json` — a hand edit there lasts one week.
 - ⚠️ **Do not add an `ANTHROPIC_API_KEY` secret.** The news path is RSS and needs no key. An

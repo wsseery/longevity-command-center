@@ -1,0 +1,114 @@
+# Weekly source check of the private funds on the Finance page (VC_DATA in finance.html).
+#
+# The Weekly Longevity Update fetches every ETF and stock figure from market data, but no
+# feed covers private funding rounds. This job keeps VC_DATA true the way it was first
+# checked (2026-10-29): Claude searches published reporting for each fund, changes a claim
+# only when a source it cites says so, and keeps each card's sources list. It never pushes
+# to main. Any change arrives as a PR for Bill, with a Was / Now / Source table.
+#
+# Requires the CLAUDE_CODE_OAUTH_TOKEN repository secret (the same one claude.yml uses).
+# No ANTHROPIC_API_KEY: see CLAUDE.md.
+
+name: Weekly private-funds check
+
+on:
+  schedule:
+    - cron: "41 14 * * 3"   # Wed ~10:41 ET, a day after the weekly update has landed
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: funds-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      # One open check at a time: if last week's PR is still waiting for Bill, skip.
+      - name: Skip if a funds-check PR is already open
+        id: open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh pr list --state open --json headRefName \
+                -q '[.[] | select(.headRefName | startswith("content/funds-check-"))] | length')
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "today=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          [ "$n" = 0 ] || echo "Skipped: a funds-check PR is already open." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Git identity
+        if: steps.open.outputs.count == '0'
+        run: |
+          git config user.name "wsseery"
+          git config user.email "wsseery@gmail.com"
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.open.outputs.count == '0'
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Cost guard: eight funds at two or three searches each fit well inside 80 turns.
+          # The branch, push and PR rules are exact commands, not wildcards: a `git push *` rule
+          # would also allow pushing to main, or a `<branch>:main` refspec. Only today's
+          # content/funds-check branch can be created and pushed.
+          claude_args: >-
+            --max-turns 80
+            --allowedTools "Read,Grep,Edit,WebSearch,WebFetch,Bash(git diff *),Bash(git status),Bash(git checkout -b content/funds-check-${{ steps.open.outputs.today }}),Bash(git add finance.html),Bash(git commit -m *),Bash(git push -u origin content/funds-check-${{ steps.open.outputs.today }}),Bash(gh pr create --base main *)"
+          prompt: |
+            Today is ${{ steps.open.outputs.today }}. Check the private funds on the Finance page
+            against published sources, and propose corrections as a pull request.
+
+            SCOPE
+            - Only the `const VC_DATA = [ ... ];` array in finance.html. Never edit anything else
+              in finance.html or any other file. The rest of finance.html is written by the weekly
+              update workflow.
+            - Each entry has: name, year, type, focus, totalFunding, backers, note, link, curator,
+              sources (a list of URLs). Keep every field and the existing JS formatting. Strings use
+              single quotes; escape an apostrophe as \'.
+
+            METHOD (apply it to every entry)
+            1. Search for news on the fund since the date in the comment above VC_DATA
+               ("checked YYYY-MM-DD"): new funding rounds, closes, fund sizes, leadership changes,
+               a reported round that has now closed or been abandoned, a company shutting down.
+            2. Change a field only when a published source states the new fact: a news outlet, the
+               company's or fund's own announcement, or a regulatory filing. Fetch the page and
+               read it; a search snippet is not enough. Never infer, estimate, round up, or add
+               together figures from different sources.
+            3. Keep "reported" wording for anything a source reports but the company has not
+               confirmed. A round that was "in progress" becomes "raised" only when a source says
+               it closed.
+            4. Every changed claim needs a supporting URL in that entry's `sources`. Keep at most
+               three; drop the least relevant if needed. Remove a source only if it no longer
+               supports what the card says.
+            5. Also fix anything already on a card that its sources do not support. If a claim
+               has no source, remove the claim rather than guess.
+            6. No superlatives ("largest", "first", "most active") unless a source says exactly
+               that. The site is educational only: name no disease or treatment and make no health
+               claim. Never mention any licence.
+            7. Don't add or remove funds. If a fund has closed, shut down or merged, say so in
+               its note, with a source, and mention it in the PR so Bill can decide.
+
+            IF NOTHING CHANGED: stop. Make no commit and no PR, and say "No changes" in one line.
+
+            IF SOMETHING CHANGED
+            - Update the comment above VC_DATA to "checked ${{ steps.open.outputs.today }}".
+            - git checkout -b content/funds-check-${{ steps.open.outputs.today }}
+            - git add finance.html
+            - git commit -m "Private funds: source check ${{ steps.open.outputs.today }}"
+            - git push -u origin content/funds-check-${{ steps.open.outputs.today }}
+            - gh pr create --base main --title "Private funds: source check ${{ steps.open.outputs.today }}"
+              --body with:
+                - a table: Fund | Field | Was | Now | Source (the URL that supports it);
+                - a "Removed: no source" list, if any;
+                - a "For Bill" list for anything needing a decision (a fund closed, conflicting
+                  sources);
+                - the last line: "Hand edit to VC_DATA by the weekly funds check. Bill merges."
