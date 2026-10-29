@@ -14,6 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]   # tools/histamine-kitchen/
 TEMPLATE = ROOT / "build" / "histamine_kitchen_template.html"
 FOODS    = ROOT / "data" / "histamine_data.json"
 RECIPES  = ROOT / "data" / "recipes.json"
+STATS    = ROOT / "data" / "stats.json"   # read by the homepage cards; written on every build
 OUTPUT   = ROOT / "index.html"
 
 CATEGORIES = None   # populated from the data; set to a frozen list to enforce a fixed vocabulary
@@ -182,6 +183,20 @@ def headline_coverage(recipes, names):
     return out
 
 
+def stats(foods, recipes):
+    """The counts the homepage shows. Definitions mirror conflicts() and kConflict() in the template."""
+    return {
+        "foods": len(foods),
+        "recipes": len(recipes),
+        "categories": len({f["category"] for f in foods}),
+        "hl_conflicts": sum((f["h"] <= 1 and f["l"] >= 2) or (f["h"] >= 2 and f["l"] == 0) for f in foods),
+        "breaks_ketosis": sum(f["k"] is not None and not f.get("k_trace") and f["h"] <= 1 and f["l"] <= 1
+                              and f["k"] >= 2 for f in foods),
+        "uncertain": sum(bool(f.get("uncertain")) for f in foods),
+        "fixable_by_prep": sum(bool(f.get("l_mitigable")) for f in foods),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser(description="Build tools/histamine-kitchen/index.html")
     ap.add_argument("--out", default=None, help="override the output path")
@@ -231,6 +246,9 @@ def main():
     out = pathlib.Path(a.out) if a.out else OUTPUT
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
+    if not a.out:
+        STATS.write_text(json.dumps(stats(foods, recipes), indent=2) + "\n", encoding="utf-8")
+        print(f"wrote {STATS.name}: {stats(foods, recipes)}")
     print(f"wrote {out.relative_to(ROOT.parents[1]) if out.is_relative_to(ROOT.parents[1]) else out}  ({len(html):,} bytes)")
 
 

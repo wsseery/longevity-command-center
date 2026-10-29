@@ -522,10 +522,10 @@
       <div class="dash-card-title">Aging Compound Scoreboard</div>
       <div class="dash-card-desc">Every compound tested by the NIA Interventions Testing Program for lifespan extension in mice, plus peer-reviewed longevity compounds &mdash; cross-referenced with human clinical trial status.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">52</div><div class="dash-stat-label">Compounds</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">32</div><div class="dash-stat-label">ITP Tested</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">26</div><div class="dash-stat-label">In Human Trials</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">3</div><div class="dash-stat-label">FDA Approved</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="compoundsTotal">&mdash;</div><div class="dash-stat-label">Compounds</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="compoundsITP">&mdash;</div><div class="dash-stat-label">ITP Tested</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="compoundsTrials">&mdash;</div><div class="dash-stat-label">In Human Trials</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="compoundsFDA">&mdash;</div><div class="dash-stat-label">FDA Approved</div></div>
       </div>
       <div class="dash-card-cta">Open Scoreboard &#8594;</div>
     </a>
@@ -549,9 +549,9 @@
       <div class="dash-card-title">Anti-Aging News Feed</div>
       <div class="dash-card-desc">Curated intelligence from 16+ specialized sources &mdash; clinical trials, research breakthroughs, biotech funding, and protocol developments across the longevity landscape.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">25</div><div class="dash-stat-label">Articles</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">16+</div><div class="dash-stat-label">Sources</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">7</div><div class="dash-stat-label">Categories</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="newsCount">&mdash;</div><div class="dash-stat-label">Articles</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="newsSources">&mdash;</div><div class="dash-stat-label">Sources</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="newsCategories">&mdash;</div><div class="dash-stat-label">Categories</div></div>
       </div>
       <div class="dash-card-cta">Open News Feed &#8594;</div>
     </a>
@@ -562,7 +562,7 @@
       <div class="dash-card-title">Longevity Protocols</div>
       <div class="dash-card-desc">Published supplement stacks and lifestyle regimens from leading researchers and biohackers &mdash; Bryan Johnson, David Sinclair, Peter Attia, Andrew Huberman, and more.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">8</div><div class="dash-stat-label">Protocols</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="protocolCount">&mdash;</div><div class="dash-stat-label">Protocols</div></div>
         <div class="dash-stat"><div class="dash-stat-value">50+</div><div class="dash-stat-label">Compounds</div></div>
       </div>
       <div class="dash-card-cta">Open Protocols &#8594;</div>
@@ -574,10 +574,10 @@
       <div class="dash-card-title">Food Intolerance Toolkit</div>
       <div class="dash-card-desc">Every food scored on three independent scales &mdash; histamine (SIGHI), lectin, and net carbs from USDA &mdash; never averaged into one verdict. Where the protocols contradict each other, and how good the evidence is behind each one.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">440</div><div class="dash-stat-label">Foods Scored</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="nutriFoods">&mdash;</div><div class="dash-stat-label">Foods Scored</div></div>
         <div class="dash-stat"><div class="dash-stat-value">3</div><div class="dash-stat-label">Scales</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">143</div><div class="dash-stat-label">H/L Conflicts</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">52</div><div class="dash-stat-label">Break Ketosis</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="nutriConflicts">&mdash;</div><div class="dash-stat-label">H/L Conflicts</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="nutriKeto">&mdash;</div><div class="dash-stat-label">Break Ketosis</div></div>
       </div>
       <div class="dash-card-cta">Read the Toolkit &#8594;</div>
     </a>
@@ -588,9 +588,9 @@
       <div class="dash-card-title">Crosscheck Kitchen</div>
       <div class="dash-card-desc">The tool itself. Look up any food on all three scales, paste a whole ingredient list and have it scanned line by line, or generate a menu that clears every ceiling at once &mdash; with a printable shopping list.</div>
       <div class="dash-card-stats">
-        <div class="dash-stat"><div class="dash-stat-value">440</div><div class="dash-stat-label">Foods</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">46</div><div class="dash-stat-label">Recipes</div></div>
-        <div class="dash-stat"><div class="dash-stat-value">17</div><div class="dash-stat-label">Categories</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="kitchenFoods">&mdash;</div><div class="dash-stat-label">Foods</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="kitchenRecipes">&mdash;</div><div class="dash-stat-label">Recipes</div></div>
+        <div class="dash-stat"><div class="dash-stat-value" id="kitchenCategories">&mdash;</div><div class="dash-stat-label">Categories</div></div>
       </div>
       <div class="dash-card-cta">Open the Tool &#8594;</div>
     </a>
@@ -683,10 +683,10 @@
     fetch('/finance')
       .then(function(r) { if (!r.ok) throw new Error('finance ' + r.status); return r.text(); })
       .then(function(src) {
-        var etfs = financeList(src, 'ETF_DATA').filter(function(e) { return !e.hidden; });
-        var stocks = financeList(src, 'WATCHLIST_DATA');
+        var etfs = jsList(src, 'const ETF_DATA = [').filter(function(e) { return !e.hidden; });
+        var stocks = jsList(src, 'const WATCHLIST_DATA = [');
         document.getElementById('financeCount').textContent =
-          etfs.length + financeList(src, 'VC_DATA').length + stocks.length;
+          etfs.length + jsList(src, 'const VC_DATA = [').length + stocks.length;
 
         var aum = 0, ytd = 0;
         etfs.forEach(function(e) { aum += billions(e.aum); ytd += parseFloat(e.ytd) / 100 || 0; });
@@ -706,10 +706,49 @@
       return 0;
     }
 
-    // The array literal that follows "const NAME = [" in finance.html, read as data.
-    function financeList(src, name) {
-      var at = src.indexOf('const ' + name + ' = [');
-      if (at < 0) throw new Error(name + ' not found');
+    // Every other card's stats, from the data its page uses, so none can drift from that page.
+    function setStat(id, value) { document.getElementById(id).textContent = value; }
+    function getText(url) {
+      return fetch(url).then(function(r) { if (!r.ok) throw new Error(url + ' ' + r.status); return r.text(); });
+    }
+    function distinct(items, key) {
+      var seen = {};
+      items.forEach(function(i) { seen[i[key]] = true; });
+      return Object.keys(seen).length;
+    }
+    function warn(what) { return function(e) { console.warn(what + ' unavailable:', e.message); }; }
+
+    // Compound Scoreboard: the compounds list in app.js, counted as the compounds page counts it.
+    getText('/app.js').then(function(src) {
+      var c = jsList(src, 'const compounds = [');
+      setStat('compoundsTotal', c.length);
+      setStat('compoundsITP', c.filter(function(x) { return x.itpResult !== 'not_tested'; }).length);
+      setStat('compoundsTrials', c.filter(function(x) { return /^Phase/.test(x.humanPhase); }).length);
+      setStat('compoundsFDA', c.filter(function(x) { return x.humanPhase === 'FDA Approved'; }).length);
+    }).catch(warn('Compound stats'));
+
+    // Protocols: the protocol cards on /protocols.
+    getText('/protocols').then(function(src) {
+      setStat('protocolCount', (src.match(/class="protocol-name"/g) || []).length);
+    }).catch(warn('Protocol count'));
+
+    // Nutrition and Crosscheck Kitchen: stats.json, written by the kitchen build from its data.
+    fetch('/tools/histamine-kitchen/data/stats.json')
+      .then(function(r) { if (!r.ok) throw new Error('stats.json ' + r.status); return r.json(); })
+      .then(function(s) {
+        setStat('nutriFoods', s.foods);
+        setStat('nutriConflicts', s.hl_conflicts);
+        setStat('nutriKeto', s.breaks_ketosis);
+        setStat('kitchenFoods', s.foods);
+        setStat('kitchenRecipes', s.recipes);
+        setStat('kitchenCategories', s.categories);
+      })
+      .catch(warn('Nutrition stats'));
+
+    // The array literal that follows `decl` (e.g. "const ETF_DATA = [") in a page or script, read as data.
+    function jsList(src, decl) {
+      var at = src.indexOf(decl);
+      if (at < 0) throw new Error(decl + ' not found');
       var start = src.indexOf('[', at), depth = 0, quote = null;
       for (var k = start; k < src.length; k++) {
         var c = src[k];
@@ -718,7 +757,7 @@
         else if (c === '[') depth++;
         else if (c === ']' && --depth === 0) return Function('return ' + src.slice(start, k + 1))();
       }
-      throw new Error(name + ' not closed');
+      throw new Error(decl + ' not closed');
     }
 
     fetch('./news_data.json')
@@ -729,6 +768,9 @@
       });
 
     function buildTicker(articles) {
+      setStat('newsCount', articles.length);
+      setStat('newsSources', distinct(articles, 'source'));
+      setStat('newsCategories', distinct(articles, 'category'));
       var track = document.getElementById('tickerTrack');
       var html = '';
       for (var i = 0; i < articles.length; i++) {
