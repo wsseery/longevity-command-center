@@ -21,10 +21,10 @@
 # never checks out or executes PR code: it reads the PR's files through the API.
 #
 # Copied from alphagen-website's content-automerge.yml (2026-10-26). One
-# difference: rulesets count as well as classic branch protection. The Weekly
-# Longevity Update pushes straight to main with the workflow token, so whichever
-# form of protection is chosen must still let that push land; this gate does
-# not force the choice.
+# difference: rulesets count as well as classic branch protection. main is
+# protected by a ruleset whose bypass list is deploy keys (the Weekly Longevity
+# Update pushes with the MAIN_PUSH_DEPLOY_KEY secret) and the repository-admin
+# role (Bill).
 #
 # This repo is PUBLIC: never add show_full_output anywhere.
 

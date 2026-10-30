@@ -51,9 +51,18 @@ jobs:
         run: |
           set -o pipefail
           python scripts/update_dashboard.py 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
+      # main's ruleset requires the four content-gate checks, which a direct
+      # push never has. Its bypass list holds deploy keys, so this push uses the
+      # MAIN_PUSH_DEPLOY_KEY secret (the private half of the repo's only write
+      # deploy key). The key is written to disk in this step only, after the
+      # third-party pip packages above have finished running. Without the
+      # secret the push falls back to the workflow token, which main rejects
+      # once the ruleset is on.
       - name: Commit & push if changed
         if: steps.guard.outputs.skip != 'true'
         shell: bash
+        env:
+          MAIN_PUSH_KEY: ${{ secrets.MAIN_PUSH_DEPLOY_KEY }}
         run: |
           git config user.name "wsseery"
           git config user.email "wsseery@gmail.com"
@@ -75,6 +84,18 @@ jobs:
           # run), which previously made a bare 'git push' fail non-fast-forward and lose
           # the whole update (run #6, 2026-08-19). Rebase our freshly regenerated data
           # files onto the latest main (ours wins any conflict) and retry.
+          if [ -n "$MAIN_PUSH_KEY" ]; then
+            key="$RUNNER_TEMP/main_push_key"
+            trap 'rm -f "$key"' EXIT
+            (umask 077; printf '%s\n' "$MAIN_PUSH_KEY" > "$key")
+            # GitHub's published host key (docs: "GitHub's SSH key fingerprints").
+            echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl" > "$RUNNER_TEMP/known_hosts"
+            export GIT_SSH_COMMAND="ssh -i $key -o IdentitiesOnly=yes -o UserKnownHostsFile=$RUNNER_TEMP/known_hosts -o StrictHostKeyChecking=yes"
+            # Push only: fetches in the retry loop still use the workflow token.
+            git remote set-url --push origin "git@github.com:${GITHUB_REPOSITORY}.git"
+          else
+            echo "::warning::MAIN_PUSH_DEPLOY_KEY is not set; pushing with the workflow token."
+          fi
           pushed=false
           for i in 1 2 3 4 5; do
             if git push origin HEAD:main; then pushed=true; break; fi

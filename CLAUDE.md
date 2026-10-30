@@ -83,11 +83,18 @@ logic in `.github/checks/`. `python .github/checks/classify.py --git main HEAD` 
 branch would be classified. It stays off until `main` requires all four checks.
 
 What keeps a post a content PR, learned from the classifier:
-- **No `BlogPosting` or other new JSON-LD**, and no `<style>` or `<script>` block that is not a
-  byte-for-byte copy of one already on the site. Only a pure FAQPage block is content.
-- New pages need exactly one CTA (a `*-cta` box such as `.tool-cta`, a `btn` link, or `data-cta`),
-  the LCC block verbatim, and a `## Sourced figures` table in the PR body
-  (`# | Figure | Source | Link`) listing every number on the page.
+- **Start every new post from `_templates/blog-post.html.tpl`.** Its header comment lists the rules.
+  (`netlify.toml` 404s `/_templates/*`; Python on Windows needs `PYTHONUTF8=1` to run the checks.)
+- **No `BlogPosting` or other new JSON-LD.** Only a pure FAQPage block is content. Existing posts
+  keep their BlogPosting blocks; don't touch them.
+- **No per-post `<style>` or `<script>`.** Post styles live in `style.css` under `.post-page`
+  (the template's `<main>` class). The Google tag snippet is site-wide and stays byte-for-byte.
+- New pages need exactly one CTA, marked `data-cta` (the template's `.post-next` link; any class
+  containing `cta`, a `btn` link or a form would count as another), the LCC block verbatim, and a
+  `## Sourced figures` table in the PR body (`# | Figure | Source | Link`) listing every number.
+- A new post's PR is the page, its `blog.html` card, its `sitemap.xml` entry and its OG image.
+  These are code and go in their own PR: the `netlify.toml` 301 for `/blog-<slug>.html`, the
+  `blog.html` ItemList JSON-LD entry, and the `pinned_news.json` item.
 - Edits to existing pages stay out of `<head>`, `<nav>` and `<footer>`. `news_data.json`,
   `pinned_news.json`, `finance.html`, `tools/` and anything that takes money or markets
   PrecisionNutrition (GLOBAL §6a item 9) are code — Bill merges.

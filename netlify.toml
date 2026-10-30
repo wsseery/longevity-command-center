@@ -59,6 +59,13 @@
   status = 404
   force = true
 
+# The blog post template (added 2026-10-29) is a source file, not a page.
+[[redirects]]
+  from = "/_templates/*"
+  to = "/404"
+  status = 404
+  force = true
+
 # PURPOSE: One URL per page. Clean URLs (/news, /blog-...) are canonical; the .html form
 #          301s to them so search engines stop indexing both.
 # TRIGGER: Every Netlify deploy of this repo.
