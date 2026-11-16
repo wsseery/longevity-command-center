@@ -156,3 +156,15 @@
   to = "/blog-sauna-zone2-vo2max"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-bryan-johnson-ips-cells.html"
+  to = "/blog-bryan-johnson-ips-cells"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-ultrasound-senescent-cells.html"
+  to = "/blog-ultrasound-senescent-cells"
+  status = 301
+  force = true
