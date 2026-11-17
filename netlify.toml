@@ -168,3 +168,9 @@
   to = "/blog-ultrasound-senescent-cells"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-binaural-beats-research.html"
+  to = "/blog-binaural-beats-research"
+  status = 301
+  force = true
