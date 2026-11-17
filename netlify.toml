@@ -104,6 +104,12 @@
   force = true
 
 [[redirects]]
+  from = "/sound.html"
+  to = "/sound"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/nutrition.html"
   to = "/nutrition"
   status = 301
