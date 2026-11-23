@@ -14,6 +14,9 @@
   - Exactly ONE call to action in <main>: the data-cta link in .post-next. No
     btn / btn-* link, no class containing "cta" (e.g. tool-cta) and no form
     anywhere else in <main>. share-btn links are not CTAs.
+  - The newsletter box between </main> and <footer> (.lcc-newsletter, its form
+    and the /assets/js/newsletter.js tag) is site-wide: keep it byte-for-byte,
+    outside <main>, so it is neither a second CTA nor a new form block.
   - Keep the footer's LCC block verbatim (00_Global/LEGAL_DISCLAIMERS.md).
     Educational only: never claim anything treats, cures, prevents or mitigates
     a condition. Never cite either FL licence. Never mention PrecisionNutrition
@@ -118,6 +121,20 @@
     </div>
   </article>
   </main>
+  <section class="lcc-newsletter" id="newsletter" aria-labelledby="newsletter-h" hidden>
+    <h2 id="newsletter-h">Get the Longevity Command Center research email</h2>
+    <form class="lcc-newsletter-form" method="GET">
+      <input type="hidden" name="tags" value="lcc-newsletter">
+      <div class="lcc-newsletter-row">
+        <label for="newsletter-email">Email</label>
+        <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        <input type="submit" value="Sign up">
+      </div>
+      <p class="lcc-newsletter-consent">Occasional email from Bill Seery, Longevity Command Center: new studies, trials and tools in plain English. Educational only, not medical advice. Unsubscribe anytime.</p>
+      <p class="lcc-newsletter-sent" role="status" hidden>Thanks. You're on the list.</p>
+    </form>
+  </section>
+  <script defer src="/assets/js/newsletter.js"></script>
   <footer class="site-footer">
     <p class="lcc-disclaimer">Longevity Command Center is educational content only. It is not medical advice, diagnosis, or treatment. Always consult your physician before starting any supplement, exercise, or health intervention. Nothing here has been evaluated by the FDA.</p>
     <p>Editorial and educational content on longevity and aging science. For informational purposes only &mdash; not medical, health, or investment advice. Always consult a qualified professional before acting on health information.</p>
