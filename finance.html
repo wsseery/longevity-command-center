@@ -960,15 +960,9 @@
   </section>
 
   <!-- Newsletter sign-up (static markup: scripts/update_dashboard.py only rewrites the data blocks) -->
-  <section class="lcc-newsletter" id="newsletter" aria-labelledby="newsletter-h">
+  <section class="lcc-newsletter" id="newsletter" aria-labelledby="newsletter-h" hidden>
     <h2 id="newsletter-h">Get the Longevity Command Center research email</h2>
-    <form class="lcc-newsletter-form" action="https://savingsre.agilecrm.com/formsubmit" method="GET">
-      <input type="hidden" name="_agile_form_name" value="Website Listings Inquiry">
-      <input type="hidden" name="_agile_domain" value="savingsre">
-      <input type="hidden" name="_agile_api" value="o8d0am3m1ras18l8f0r0qai4hq">
-      <input type="hidden" name="_agile_form_id" value="6520129726382080">
-      <input type="hidden" name="_agile_redirect_url" value="https://longevitycommandcenter.com/?newsletter=sent">
-      <input type="hidden" name="_agile_confirmation_msg" value="Thanks. You're on the list.">
+    <form class="lcc-newsletter-form" method="GET">
       <input type="hidden" name="tags" value="lcc-newsletter">
       <div class="lcc-newsletter-row">
         <label for="newsletter-email">Email</label>

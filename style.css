@@ -910,6 +910,7 @@ tr.peer-reviewed { border-left: 2px solid rgba(182, 120, 255, 0.4); }
 
 /* Newsletter sign-up box: site-wide, outside <main> (blog posts, /finance).
    Markup: _templates/blog-post.html.tpl; submit handler: assets/js/newsletter.js. */
+.lcc-newsletter[hidden]{display:none}
 .lcc-newsletter{max-width:760px;margin:24px auto 40px;padding:24px;border:1px solid rgba(0,221,255,0.2);border-radius:8px;background:var(--bg-card);font-family:var(--font-mono)}
 .lcc-newsletter h2{font-family:var(--font-heading);font-size:1.15rem;font-weight:700;color:var(--text-primary);margin:0 0 14px}
 .lcc-newsletter-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
