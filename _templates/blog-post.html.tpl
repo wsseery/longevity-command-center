@@ -128,7 +128,7 @@
       <div class="lcc-newsletter-row">
         <label for="newsletter-email">Email</label>
         <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
-        <button type="submit">Sign up</button>
+        <input type="submit" value="Sign up">
       </div>
       <p class="lcc-newsletter-consent">Occasional email from Bill Seery, Longevity Command Center: new studies, trials and tools in plain English. Educational only, not medical advice. Unsubscribe anytime.</p>
       <p class="lcc-newsletter-sent" role="status" hidden>Thanks. You're on the list.</p>

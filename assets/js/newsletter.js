@@ -34,7 +34,7 @@
       if (!window.fetch || !window.URLSearchParams || !window.FormData) return;
       ev.preventDefault();
       var btn = f.querySelector('[type=submit]');
-      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      if (btn) { btn.disabled = true; btn.value = 'Sending…'; }
       var url = f.action + '?' + new URLSearchParams(new FormData(f)).toString();
       var shown = false;
       function done() {
