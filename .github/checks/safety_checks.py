@@ -91,6 +91,11 @@ INVEST_PAGES = {"finance.html", "index.html"}
 # "prevents" something is the source's claim, quoted; it is noted, not failed.
 MACHINE_WRITTEN = {"news_data.json", "finance.html"}
 
+# Per-file allowances: (path, term) pairs that may add a FAIL_TERM.
+# Bill 2026-11-23: LCC newsletter posts to the shared Agile account savingsre.agilecrm.com;
+# same pattern as alphagen-website site.js GATE C. Exactly this file, exactly this term.
+ALLOWED = {("assets/js/newsletter.js", "savingsre")}
+
 SSN = re.compile(r"(?<!\d)\d{3}-\d{2}-\d{4}(?!\d)")
 
 
@@ -111,6 +116,8 @@ def main():
         is_page = path.endswith(".html") and "/build/" not in path
 
         for term, why in FAIL_TERMS.items():
+            if (path, term) in ALLOWED:
+                continue
             rx = re.compile(re.escape(term), re.I)
             added = count(rx, after) - count(rx, before)
             if added > 0:
