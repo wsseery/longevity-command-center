@@ -186,3 +186,9 @@
   to = "/blog-genetics-food-reactions"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-biotech-mutual-funds-vs-longevity-funds.html"
+  to = "/blog-biotech-mutual-funds-vs-longevity-funds"
+  status = 301
+  force = true
