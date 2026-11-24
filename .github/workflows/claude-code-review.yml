@@ -65,7 +65,9 @@ jobs:
                mandatory LCC medical disclaimer block at the top of its
                <footer>. Every page must have it.
             3. finance.html or index.html missing the "not investment advice"
-               block. Those two show figures; other pages must NOT carry it.
+               block, or any other page that shows fund or market figures
+               missing it. Pages with no fund or market figures must NOT
+               carry it.
             4. ANY reference to Florida licence G164863 or 3333692. Neither is
                a medical or securities licence and neither may appear on this
                site. This is an absolute rule.
