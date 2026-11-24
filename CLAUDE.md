@@ -14,8 +14,10 @@ on push to `main`). `longevitycommandcenter.netlify.app` is a *different site* �
 - **Every page carries the LCC block from `00_Global/LEGAL_DISCLAIMERS.md`** at the top of its
   `<footer>`. 10/10 pages were compliant as of 2026-08-25 — keep it that way when adding a page.
 - `finance.html` and `index.html` additionally carry the *not investment advice* block, because
-  they are the only two pages showing figures. Do not add it site-wide; a securities disclaimer
-  on a page about senolytics is noise that makes every disclaimer easier to ignore.
+  they show fund figures. **Any other page that shows fund or market figures carries it too**
+  (Bill, 2026-11-24), e.g. `blog-biotech-mutual-funds-vs-longevity-funds.html`, in its footer
+  right after the LCC block. Do not add it site-wide; a securities disclaimer on a page about
+  senolytics is noise that makes every disclaimer easier to ignore.
 - ⛔ **Never reference Bill's FL licences (insurance G164863, real estate 3333692) anywhere on
   this site.** Neither is a securities or medical licence.
 - Never fabricate figures, studies or citations. Every number on the nutrition page is computed
